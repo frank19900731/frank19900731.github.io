@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Blog of Taiji Ru]]></title>
+  <link href="http://frank19900731.github.io/feed" rel="self"/>
+  <link href="http://frank19900731.github.io/"/>
+  <updated>2014-06-15T14:12:42+08:00</updated>
+  <id>http://frank19900731.github.io/</id>
+  <author>
+    <name><![CDATA[Frank Song]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[my first blog]]></title>
+    <link href="http://frank19900731.github.io/blog/2014/06/04/my-first-blog/"/>
+    <updated>2014-06-04T20:42:11+08:00</updated>
+    <id>http://frank19900731.github.io/blog/2014/06/04/my-first-blog</id>
+    <content type="html"><![CDATA[<p>I have nothing to say but thanks.</p>
+]]></content>
+  </entry>
+  
+</feed>
