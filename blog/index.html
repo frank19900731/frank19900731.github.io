@@ -1,5 +1,6 @@
 <!-- layout/default.html -->
 
+<!-- head.html -->
 <!DOCTYPE html>
 <!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
 <!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
@@ -7,12 +8,11 @@
 <head>
   <meta charset="utf-8">
   <!-- 标签页标题 -->
-  <title>Blog of Taiji Ru</title>
+  <title>Blog of 太极儒</title>
   <meta name="author" content="Frank Song">
   <!-- 定义description变量，如果有则用，没有则是正文，前150字 -->
   
-  <meta name="description" content="Computer, Mac, Vision My First Post This is my first blog and I’m so happy. int main() { return 0;
-} Hello My Dear Friend! Hello My Dear Friend! &hellip;">
+  <meta name="description" content=" Blog Archives Recent Posts Tags ">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -27,26 +27,34 @@
   <!-- 网站样式文件 -->
   <link href="/stylesheets/styles.css" media="screen, projection" rel="stylesheet" type="text/css">
 
-  <link href="/atom.xml" rel="alternate" title="Blog of Taiji Ru" type="application/atom+xml">
-  <script src="/javascripts/modernizr-2.0.js"></script>
+  <link href="/atom.xml" rel="alternate" title="Blog of 太极儒" type="application/atom+xml">
 
+  <script src="/javascripts/modernizr.custom.js"></script>
   <!-- jQuery -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+
   <!-- 其它js代码 -->
   <script src="/javascripts/octopress.js" type="text/javascript"></script>
   <script src="/javascripts/jquery.sidr.min.js"></script>
   <script src="/javascripts/ah-blue.js"></script>
-  <!-- markdown代码支持 -->
-  <link rel="stylesheet" href="http://yandex.st/highlightjs/8.0/styles/monokai_sublime.min.css">
-  <script src="http://yandex.st/highlightjs/8.0/highlight.min.js"></script>
-  <script>
-      hljs.configure({tabReplace: '    '});
-      hljs.initHighlightingOnLoad();
-  </script>
+
+  <link href="/stylesheets/component.css" rel="stylesheet" type="text/css">
 
   <!-- custom/head.html -->
   <!-- google_analytics.html -->
+
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-51950124-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
 
 
 </head> 
@@ -55,14 +63,38 @@
   <!-- header.html -->
 <!-- custom/header.html -->
 <!-- 搜索和菜单导航 -->
+<!--
 <div class="aux-container">
     <a id="nav-toggle" href="#sidr"></a>
     <a id="search-toggle"></a>
+</div> -->
+
+<div id="dl-menu" class="dl-menuwrapper">
+    <button>Open Menu</button>
+    <ul class="dl-menu">
+        <li><a href="/">Home</a></li>
+        <li><a href="/archives">Archives</a></li>
+        <li>
+            <a href="#">Categories (0)</a>
+            <ul class="dl-submenu">
+                <li class="dl-back"><a href="#">Back</a></li>
+                <li><a href="/blog/categories">All Categories (0)</a>
+                
+
+            </ul>
+        </li>
+        <li><a href="/blog/tags">All Tags (0)</a>
+        <li><a href="/about">About</a></li>
+    </ul>
+</div><!-- /dl-menuwrapper -->
+
+<div class="aux-container">
+
 </div>
 
 <!-- 头像位置 -->
 <header class="header-container clearfix">
-        <a href="/"><img src="/images/ah-frame.png" onerror="this.onerror=null; this.src='ah-frame.png'"></a>
+    <p style="font-size: 16pt; color: white">This is a separater.</p>
 </header>
 
   <div class="main-container">
@@ -80,38 +112,42 @@
 					</form>
 				</div>
 			
-		  <!-- navigation.html -->
+            <!-- navigation.html -->
 <!-- custom/navigation.html -->
 <div id="main-nav">
     <nav>
         <ul>
         	<li>
-        		
-					<!-- asides/recent_posts.html -->
+        		<ul>
+                    <li><a href="http://songchengru.eicp.net" target="_blank">Personal Page</a>
+        			<li>Sina Blog - <a href="http://blog.sina.com/frank19900731" target="_blank">士不可以不弘毅</a></li>
+                    <li>Sina Weibo - <a href="http://weibo.sina.com/frank19900731" target="_blank">@太极儒</a></li>
+                    <li>Github - <a href="http://github.com/frank19900731" target="_blank">frank19900731</a></li>
+                    <li>Mail to Me - <a href="mailto:scr_0731@126.com" target="_blank">scr at 126</a></li>
+        		</ul>
+        	</li>
+
+                
+                <!-- asides/recent_posts.html -->
+        <li>
 <!-- 最近发布的文章 -->
 <h3>Recent Posts</h3>
 <ul>
 	
-    <li>
-    	<a href="/blog/2014/06/15/my-first-post/">My First Post</a>
-    </li>
-    
 </ul>
+        </li>
+<li>
+    <h3>Tags</h3>
+    <ul class="tag-cloud">
+        
+    </ul>
+</li>
 
 
 
 
+                
 
-				
-        	</li>
-        	<li>
-        		<ul>
-                    <li>Projects - <a href="http://www.alexharr.is" target="_blank">alexharr.is</a>
-        			<li>Github - <a href="http://www.github.com/alexharris" target="_blank">github.com/alexharris</a></li>
-                    <li>Twitter - <a href="http://www.twitter.com/alexharris6" target="_blank">@alexharris6</a></li>
-                    <li>Email - <a href="mailto:alexharris6@gmail.com" target="_blank">alexharris6 at gmail</a></li>
-        		</ul>
-        	</li>
         </ul>
     </nav>
 </div>
@@ -119,132 +155,6 @@
 		
       <div class="blog-index">
   
-  
-  
-    <article>
-      <!-- article.html -->
-<!-- 文章展示，区分在索引页和文章页 -->
-<header>
-  <div class="article-tags">
-      <!-- post/categories.html -->
-<!-- 文章类别展示 -->
-
-
-<span class="categories">
-  
-    <a class='category' href='/blog/categories/computer/'>Computer</a>, <a class='category' href='/blog/categories/mac/'>Mac</a>, <a class='category' href='/blog/categories/vision/'>Vision</a>
-  
-</span>
-
-
-  </div>
-  
-    <h1><a href="/blog/2014/06/15/my-first-post/">
-      My First Post
-    </a></h1>
-  
-</header>
-<!-- 如果在索引中 -->
-
-  <section><p>This is my first blog and I’m so happy.</p>
-
-<pre><code>int main() {
-	return 0;
-}
-</code></pre>
-
-<p>Hello My Dear Friend!	
-Hello My Dear Friend!
-Hello My Dear Friend!
-Hello My Dear Friend!
-Hello My Dear Friend!
-Hello My Dear Friend!
-Hello My Dear Friend!
-Hello My Dear Friend!
-Hello My Dear Friend!
-Hello My Dear Friend!
-Hello My Dear Friend!
-Hello My Dear Friend!
-Hello My Dear Friend!
-Hello My Dear Friend!
-Hello My Dear Friend!
-Hello My Dear Friend!</p>
-
-<p>Hello My Dear Friend!
-Hello My Dear Friend!
-Hello My Dear Friend!
-Hello My Dear Friend!
-Hello My Dear Friend!
-Hello My Dear Friend!
-Hello My Dear Friend!
-Hello My Dear Friend!
-Hello My Dear Friend!
-Hello My Dear Friend!
-Hello My Dear Friend!
-Hello My Dear Friend!
-Hello My Dear Friend!
-Hello My Dear Friend!
-Hello My Dear Friend!
-Hello My Dear Friend!</p>
-
-<p>Hello My Dear Friend!
-Hello My Dear Friend!
-Hello My Dear Friend!
-Hello My Dear Friend!
-Hello My Dear Friend!
-Hello My Dear Friend!
-Hello My Dear Friend!
-Hello My Dear Friend!
-Hello My Dear Friend!
-Hello My Dear Friend!
-Hello My Dear Friend!
-Hello My Dear Friend!
-Hello My Dear Friend!
-Hello My Dear Friend!
-Hello My Dear Friend!
-Hello My Dear Friend!</p>
-
-<p>Hello My Dear Friend!
-Hello My Dear Friend!
-Hello My Dear Friend!
-Hello My Dear Friend!
-Hello My Dear Friend!
-Hello My Dear Friend!
-Hello My Dear Friend!
-Hello My Dear Friend!
-Hello My Dear Friend!
-Hello My Dear Friend!
-Hello My Dear Friend!
-Hello My Dear Friend!
-Hello My Dear Friend!
-Hello My Dear Friend!
-Hello My Dear Friend!
-Hello My Dear Friend!</p>
-
-<p>Hello My Dear Friend!
-Hello My Dear Friend!
-Hello My Dear Friend!
-Hello My Dear Friend!
-Hello My Dear Friend!
-Hello My Dear Friend!
-Hello My Dear Friend!
-Hello My Dear Friend!
-Hello My Dear Friend!
-Hello My Dear Friend!
-Hello My Dear Friend!
-Hello My Dear Friend!
-Hello My Dear Friend!
-Hello My Dear Friend!
-Hello My Dear Friend!
-Hello My Dear Friend!</p>
-</section>
-  
-  <!-- 如果被截取了，就得加上发布时间之类的 -->
-  
-
-
-
-    </article>
   
   <div class="pagination">
     
@@ -255,16 +165,19 @@ Hello My Dear Friend!</p>
 <aside class="sidebar">
   
     <!-- asides/recent_posts.html -->
+        <li>
 <!-- 最近发布的文章 -->
 <h3>Recent Posts</h3>
 <ul>
 	
-    <li>
-    	<a href="/blog/2014/06/15/my-first-post/">My First Post</a>
-    </li>
-    
 </ul>
-
+        </li>
+<li>
+    <h3>Tags</h3>
+    <ul class="tag-cloud">
+        
+    </ul>
+</li>
 
 
 
@@ -277,8 +190,7 @@ Hello My Dear Friend!</p>
   <!-- footer.html -->
 <!-- custom/footer.html -->
 <!-- 页脚 -->
-<footer class="main-footer">
-</footer>
+
 
   <!-- after_footer.html -->
 <!-- custom/after_footer.html -->
@@ -308,5 +220,11 @@ Hello My Dear Friend!</p>
 
 
 
+  <script src="/javascripts/jquery.dlmenu.js"></script>
+<script type="text/javascript">
+    $(function() {
+        $('#dl-menu').dlmenu();
+    });
+</script>
 </body>
 </html>
