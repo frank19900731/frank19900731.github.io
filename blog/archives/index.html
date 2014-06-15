@@ -1,3 +1,4 @@
+<!-- layout/default.html -->
 
 <!DOCTYPE html>
 <!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
@@ -11,7 +12,7 @@
   <!-- 定义description变量，如果有则用，没有则是正文，前150字 -->
   
   <meta name="description" content=" Blog Archive 2014 My First Post
-Jun 15 2014 posted in Computer, Mac,, Vision ">
+Jun 15 2014 posted in Computer, Mac, Vision ">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -44,13 +45,16 @@ Jun 15 2014 posted in Computer, Mac,, Vision ">
       hljs.initHighlightingOnLoad();
   </script>
 
-  
-  
+  <!-- custom/head.html -->
+  <!-- google_analytics.html -->
+
 
 </head> 
 
 <body   >
-  <!-- 搜索和菜单导航 -->
+  <!-- header.html -->
+<!-- custom/header.html -->
+<!-- 搜索和菜单导航 -->
 <div class="aux-container">
     <a id="nav-toggle" href="#sidr"></a>
     <a id="search-toggle"></a>
@@ -69,19 +73,22 @@ Jun 15 2014 posted in Computer, Mac,, Vision ">
 			  	<div class="search-container">
 					<form action="http://google.com/search" method="get">
 						<fieldset role="search">
-							<input type="hidden" name="q" value="site:blog.alexharr.is" />
+							<input type="hidden" name="q" value="site:frank19900731.github.io" />
 							<input class="search-field" type="text" name="q" results="0" placeholder=""/>
 							<input class="submit" type="submit" value=""/>
 						</fieldset>
 					</form>
 				</div>
 			
-		  <div id="main-nav">
+		  <!-- navigation.html -->
+<!-- custom/navigation.html -->
+<div id="main-nav">
     <nav>
         <ul>
         	<li>
         		
-					<!-- 最近发布的文章 -->
+					<!-- asides/recent_posts.html -->
+<!-- 最近发布的文章 -->
 <h3>Recent Posts</h3>
 <ul>
 	
@@ -110,7 +117,9 @@ Jun 15 2014 posted in Computer, Mac,, Vision ">
 </div>
 		</aside>
 		
-      <div>
+      <!-- layouts/page.html -->
+<!-- 不带内容 -->
+<div>
 <article role="article">
   
   <header>
@@ -125,13 +134,14 @@ Jun 15 2014 posted in Computer, Mac,, Vision ">
   <h2>2014</h2>
 
 <article>
-  <!-- archive中的文章展示 -->
+  <!-- archive_post.html -->
+<!-- archive中的文章展示 -->
 
 <h1><a href="/blog/2014/06/15/my-first-post/">My First Post</a></h1>
 <time datetime="2014-06-15T14:34:15+08:00" pubdate><span class='month'>Jun</span> <span class='day'>15</span> <span class='year'>2014</span></time>
 
 <footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/computer/'>Computer</a>, <a class='category' href='/blog/categories/mac/'>Mac,</a>, <a class='category' href='/blog/categories/vision/'>Vision</a></span>
+  <span class="categories">posted in <a class='category' href='/blog/categories/computer/'>Computer</a>, <a class='category' href='/blog/categories/mac/'>Mac</a>, <a class='category' href='/blog/categories/vision/'>Vision</a></span>
 </footer>
 
 
@@ -144,11 +154,15 @@ Jun 15 2014 posted in Computer, Mac,, Vision ">
 </div>
     </div>
   </div>
-  <!-- 页脚 -->
+  <!-- footer.html -->
+<!-- custom/footer.html -->
+<!-- 页脚 -->
 <footer class="main-footer">
 </footer>
 
-  <!-- 加入评论 -->
+  <!-- after_footer.html -->
+<!-- custom/after_footer.html -->
+<!-- 加入评论 -->
 
 
 
