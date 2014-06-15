@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Blog of Taiji Ru]]></title>
-  <link href="http://frank19900731.github.io/feed" rel="self"/>
+  <title><![CDATA[Category: Computer | Blog of Taiji Ru]]></title>
+  <link href="http://frank19900731.github.io/blog/categories/computer/atom.xml" rel="self"/>
   <link href="http://frank19900731.github.io/"/>
   <updated>2014-06-15T14:40:38+08:00</updated>
   <id>http://frank19900731.github.io/</id>
