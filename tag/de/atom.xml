@@ -1,16 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
 
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        
-        <title>RealJenius.com - Tag: de</title>
-        
-        <link>http://realjenius.com</link>
-        <description>I'm a software developer in the game industry, and have been (for better or worse) coding on the Java platform for the last decade. I also do all my own stunts.</description>
-        <language>en-us</language>
-        <managingEditor>R.J. Lorimer</managingEditor>
-        <atom:link href="rss" rel="self" type="application/rss+xml" />
-        
 <item>
     <title>总结</title>
     <link>http://realjenius.com/blog/2014/08/24/zong-jie/</link>
@@ -466,6 +454,3 @@
 
   ]]></description>
 </item>
-
-    </channel>
-</rss>
