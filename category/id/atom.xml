@@ -1,24 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: id | Blog of 太极儒]]></title>
-  <link href="http://frank19900731.github.io/category/id/atom.xml" rel="self"/>
-  <link href="http://frank19900731.github.io/"/>
-  <updated>2014-08-24T20:14:37+08:00</updated>
-  <id>http://frank19900731.github.io/</id>
-  <author>
-    <name><![CDATA[Frank Song]]></name>
-    <email><![CDATA[scr_0731@126.com]]></email>
-  </author>
-  <generator uri="http://octopress.org/">Octopress</generator>
-
-  
-  <entry>
-    <title type="html"><![CDATA[总结]]></title>
-    <link href="http://frank19900731.github.io/blog/2014/08/24/zong-jie/"/>
-    <updated>2014-08-24T15:30:43+08:00</updated>
-    <id>http://frank19900731.github.io/blog/2014/08/24/zong-jie</id>
-    <content type="html"><![CDATA[<!-- excerpt start -->
+<item>
+    <title>总结</title>
+    <link>http://realjenius.com/blog/2014/08/24/zong-jie/</link>
+    <author>R.J. Lorimer</author>
+    <pubDate>2014-08-24T15:30:43+08:00</pubDate>
+    <guid>http://realjenius.com/blog/2014/08/24/zong-jie/</guid>
+    <description><![CDATA[
+     <!-- excerpt start -->
 
 
 <h2>第二周（8.11-8.17）</h2>
@@ -58,15 +46,18 @@
 
 <p><strong>就业发展</strong>
 开始关注诸如360、小米等企业；大众点评内推，学长很照顾；阿里这边两面完成，等待下周的技术提前面。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[总结]]></title>
-    <link href="http://frank19900731.github.io/blog/2013/08/24/zong-jie/"/>
-    <updated>2013-08-24T15:30:43+08:00</updated>
-    <id>http://frank19900731.github.io/blog/2013/08/24/zong-jie</id>
-    <content type="html"><![CDATA[<h2>第二周（8.11-8.17）</h2>
+
+  ]]></description>
+</item>
+
+<item>
+    <title>总结</title>
+    <link>http://realjenius.com/blog/2013/08/24/zong-jie/</link>
+    <author>R.J. Lorimer</author>
+    <pubDate>2013-08-24T15:30:43+08:00</pubDate>
+    <guid>http://realjenius.com/blog/2013/08/24/zong-jie/</guid>
+    <description><![CDATA[
+     <h2>第二周（8.11-8.17）</h2>
 
 <h3><strong>大事记</strong></h3>
 
@@ -100,15 +91,18 @@
 
 <p><strong>就业发展</strong>
 开始关注诸如360、小米等企业；大众点评内推，学长很照顾；阿里这边两面完成，等待下周的技术提前面。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[总结]]></title>
-    <link href="http://frank19900731.github.io/blog/2013/08/23/zong-jie/"/>
-    <updated>2013-08-23T15:30:43+08:00</updated>
-    <id>http://frank19900731.github.io/blog/2013/08/23/zong-jie</id>
-    <content type="html"><![CDATA[<h2>第二周（8.11-8.17）</h2>
+
+  ]]></description>
+</item>
+
+<item>
+    <title>总结</title>
+    <link>http://realjenius.com/blog/2013/08/23/zong-jie/</link>
+    <author>R.J. Lorimer</author>
+    <pubDate>2013-08-23T15:30:43+08:00</pubDate>
+    <guid>http://realjenius.com/blog/2013/08/23/zong-jie/</guid>
+    <description><![CDATA[
+     <h2>第二周（8.11-8.17）</h2>
 
 <h3><strong>大事记</strong></h3>
 
@@ -142,15 +136,18 @@
 
 <p><strong>就业发展</strong>
 开始关注诸如360、小米等企业；大众点评内推，学长很照顾；阿里这边两面完成，等待下周的技术提前面。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[总结]]></title>
-    <link href="http://frank19900731.github.io/blog/2013/08/22/zong-jie/"/>
-    <updated>2013-08-22T15:30:43+08:00</updated>
-    <id>http://frank19900731.github.io/blog/2013/08/22/zong-jie</id>
-    <content type="html"><![CDATA[<h2>第二周（8.11-8.17）</h2>
+
+  ]]></description>
+</item>
+
+<item>
+    <title>总结</title>
+    <link>http://realjenius.com/blog/2013/08/22/zong-jie/</link>
+    <author>R.J. Lorimer</author>
+    <pubDate>2013-08-22T15:30:43+08:00</pubDate>
+    <guid>http://realjenius.com/blog/2013/08/22/zong-jie/</guid>
+    <description><![CDATA[
+     <h2>第二周（8.11-8.17）</h2>
 
 <h3><strong>大事记</strong></h3>
 
@@ -184,15 +181,18 @@
 
 <p><strong>就业发展</strong>
 开始关注诸如360、小米等企业；大众点评内推，学长很照顾；阿里这边两面完成，等待下周的技术提前面。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[总结]]></title>
-    <link href="http://frank19900731.github.io/blog/2013/08/21/zong-jie/"/>
-    <updated>2013-08-21T15:30:43+08:00</updated>
-    <id>http://frank19900731.github.io/blog/2013/08/21/zong-jie</id>
-    <content type="html"><![CDATA[<h2>第二周（8.11-8.17）</h2>
+
+  ]]></description>
+</item>
+
+<item>
+    <title>总结</title>
+    <link>http://realjenius.com/blog/2013/08/21/zong-jie/</link>
+    <author>R.J. Lorimer</author>
+    <pubDate>2013-08-21T15:30:43+08:00</pubDate>
+    <guid>http://realjenius.com/blog/2013/08/21/zong-jie/</guid>
+    <description><![CDATA[
+     <h2>第二周（8.11-8.17）</h2>
 
 <h3><strong>大事记</strong></h3>
 
@@ -226,7 +226,231 @@
 
 <p><strong>就业发展</strong>
 开始关注诸如360、小米等企业；大众点评内推，学长很照顾；阿里这边两面完成，等待下周的技术提前面。</p>
-]]></content>
-  </entry>
-  
-</feed>
+
+  ]]></description>
+</item>
+
+<item>
+    <title>总结</title>
+    <link>http://realjenius.com/blog/2013/08/20/zong-jie/</link>
+    <author>R.J. Lorimer</author>
+    <pubDate>2013-08-20T15:30:43+08:00</pubDate>
+    <guid>http://realjenius.com/blog/2013/08/20/zong-jie/</guid>
+    <description><![CDATA[
+     <h2>第二周（8.11-8.17）</h2>
+
+<h3><strong>大事记</strong></h3>
+
+<ol>
+<li>参加百度技术沙龙（8.16）
+
+<ul>
+<li>今后要保持，车库咖啡环境不错，忽的感觉工作不是强迫，不是苦累，而是赚钱的同时学习，赚钱的同时开阔视野，赚钱的同时实现自我满足的一个过程。不要觉得自己是给别人干，一直是在为自己学。</li>
+<li>如果能够找到工作、学习、生活的balance，就是最美妙的感觉了，如果还能插入健康，那简直就是人生大赢家了。</li>
+</ul>
+</li>
+</ol>
+
+
+<h3><strong>自我评价</strong></h3>
+
+<p>对陌陌的这则广告赞口不绝：</p>
+
+<blockquote><p>别和陌生人说话 别做新鲜事 继续过平常的生活 胆小一点 别好奇 就玩你会的 离冒险远远的 有些事想想就好 没必要改变 待在熟悉的地方 最好待在家里 听一样的音乐 见一样的人 重复同样的话题 心思别太活 梦想要实际 不要什么都尝试 就这样活着吧</p></blockquote>
+
+<p>不管年轻还是年老，封闭自我，拒绝知识体系的更新，就是人生凋零的开始。</p>
+
+<p><strong>百度沙龙</strong>
+参加百度技术沙龙感觉真的很棒，[网上的资源]也非常的丰富，这种业界的交流对自己的思路扩展和对产业、技术的认识的加深有良好的促进作用。</p>
+
+<p><strong>身体健康</strong>
+这一周自己的生活状态很健康，不过因为大雨+办公室冷气+吃辣、油腻，导致自己在周五的时候发烧腹泻，必须引以为戒。</p>
+
+<p><strong>工作梳理</strong>
+工作方面逐步找到调试方法，对代码的理解逐步加深。下周是一个过渡，阿里这边收尾，开始考虑实验室方面的工作。</p>
+
+<p><strong>就业发展</strong>
+开始关注诸如360、小米等企业；大众点评内推，学长很照顾；阿里这边两面完成，等待下周的技术提前面。</p>
+
+  ]]></description>
+</item>
+
+<item>
+    <title>总结</title>
+    <link>http://realjenius.com/blog/2013/08/19/zong-jie/</link>
+    <author>R.J. Lorimer</author>
+    <pubDate>2013-08-19T15:30:43+08:00</pubDate>
+    <guid>http://realjenius.com/blog/2013/08/19/zong-jie/</guid>
+    <description><![CDATA[
+     <h2>第二周（8.11-8.17）</h2>
+
+<h3><strong>大事记</strong></h3>
+
+<ol>
+<li>参加百度技术沙龙（8.16）
+
+<ul>
+<li>今后要保持，车库咖啡环境不错，忽的感觉工作不是强迫，不是苦累，而是赚钱的同时学习，赚钱的同时开阔视野，赚钱的同时实现自我满足的一个过程。不要觉得自己是给别人干，一直是在为自己学。</li>
+<li>如果能够找到工作、学习、生活的balance，就是最美妙的感觉了，如果还能插入健康，那简直就是人生大赢家了。</li>
+</ul>
+</li>
+</ol>
+
+
+<h3><strong>自我评价</strong></h3>
+
+<p>对陌陌的这则广告赞口不绝：</p>
+
+<blockquote><p>别和陌生人说话 别做新鲜事 继续过平常的生活 胆小一点 别好奇 就玩你会的 离冒险远远的 有些事想想就好 没必要改变 待在熟悉的地方 最好待在家里 听一样的音乐 见一样的人 重复同样的话题 心思别太活 梦想要实际 不要什么都尝试 就这样活着吧</p></blockquote>
+
+<p>不管年轻还是年老，封闭自我，拒绝知识体系的更新，就是人生凋零的开始。</p>
+
+<p><strong>百度沙龙</strong>
+参加百度技术沙龙感觉真的很棒，[网上的资源]也非常的丰富，这种业界的交流对自己的思路扩展和对产业、技术的认识的加深有良好的促进作用。</p>
+
+<p><strong>身体健康</strong>
+这一周自己的生活状态很健康，不过因为大雨+办公室冷气+吃辣、油腻，导致自己在周五的时候发烧腹泻，必须引以为戒。</p>
+
+<p><strong>工作梳理</strong>
+工作方面逐步找到调试方法，对代码的理解逐步加深。下周是一个过渡，阿里这边收尾，开始考虑实验室方面的工作。</p>
+
+<p><strong>就业发展</strong>
+开始关注诸如360、小米等企业；大众点评内推，学长很照顾；阿里这边两面完成，等待下周的技术提前面。</p>
+
+  ]]></description>
+</item>
+
+<item>
+    <title>总结</title>
+    <link>http://realjenius.com/blog/2013/08/17/zong-jie/</link>
+    <author>R.J. Lorimer</author>
+    <pubDate>2013-08-17T15:30:43+08:00</pubDate>
+    <guid>http://realjenius.com/blog/2013/08/17/zong-jie/</guid>
+    <description><![CDATA[
+     <h2>第二周（8.11-8.17）</h2>
+
+<h3><strong>大事记</strong></h3>
+
+<ol>
+<li>参加百度技术沙龙（8.16）
+
+<ul>
+<li>今后要保持，车库咖啡环境不错，忽的感觉工作不是强迫，不是苦累，而是赚钱的同时学习，赚钱的同时开阔视野，赚钱的同时实现自我满足的一个过程。不要觉得自己是给别人干，一直是在为自己学。</li>
+<li>如果能够找到工作、学习、生活的balance，就是最美妙的感觉了，如果还能插入健康，那简直就是人生大赢家了。</li>
+</ul>
+</li>
+</ol>
+
+
+<h3><strong>自我评价</strong></h3>
+
+<p>对陌陌的这则广告赞口不绝：</p>
+
+<blockquote><p>别和陌生人说话 别做新鲜事 继续过平常的生活 胆小一点 别好奇 就玩你会的 离冒险远远的 有些事想想就好 没必要改变 待在熟悉的地方 最好待在家里 听一样的音乐 见一样的人 重复同样的话题 心思别太活 梦想要实际 不要什么都尝试 就这样活着吧</p></blockquote>
+
+<p>不管年轻还是年老，封闭自我，拒绝知识体系的更新，就是人生凋零的开始。</p>
+
+<p><strong>百度沙龙</strong>
+参加百度技术沙龙感觉真的很棒，[网上的资源]也非常的丰富，这种业界的交流对自己的思路扩展和对产业、技术的认识的加深有良好的促进作用。</p>
+
+<p><strong>身体健康</strong>
+这一周自己的生活状态很健康，不过因为大雨+办公室冷气+吃辣、油腻，导致自己在周五的时候发烧腹泻，必须引以为戒。</p>
+
+<p><strong>工作梳理</strong>
+工作方面逐步找到调试方法，对代码的理解逐步加深。下周是一个过渡，阿里这边收尾，开始考虑实验室方面的工作。</p>
+
+<p><strong>就业发展</strong>
+开始关注诸如360、小米等企业；大众点评内推，学长很照顾；阿里这边两面完成，等待下周的技术提前面。</p>
+
+  ]]></description>
+</item>
+
+<item>
+    <title>总结</title>
+    <link>http://realjenius.com/blog/2013/08/17/zong-jie/</link>
+    <author>R.J. Lorimer</author>
+    <pubDate>2013-08-17T15:30:43+08:00</pubDate>
+    <guid>http://realjenius.com/blog/2013/08/17/zong-jie/</guid>
+    <description><![CDATA[
+     <h2>第二周（8.11-8.17）</h2>
+
+<h3><strong>大事记</strong></h3>
+
+<ol>
+<li>参加百度技术沙龙（8.16）
+
+<ul>
+<li>今后要保持，车库咖啡环境不错，忽的感觉工作不是强迫，不是苦累，而是赚钱的同时学习，赚钱的同时开阔视野，赚钱的同时实现自我满足的一个过程。不要觉得自己是给别人干，一直是在为自己学。</li>
+<li>如果能够找到工作、学习、生活的balance，就是最美妙的感觉了，如果还能插入健康，那简直就是人生大赢家了。</li>
+</ul>
+</li>
+</ol>
+
+
+<h3><strong>自我评价</strong></h3>
+
+<p>对陌陌的这则广告赞口不绝：</p>
+
+<blockquote><p>别和陌生人说话 别做新鲜事 继续过平常的生活 胆小一点 别好奇 就玩你会的 离冒险远远的 有些事想想就好 没必要改变 待在熟悉的地方 最好待在家里 听一样的音乐 见一样的人 重复同样的话题 心思别太活 梦想要实际 不要什么都尝试 就这样活着吧</p></blockquote>
+
+<p>不管年轻还是年老，封闭自我，拒绝知识体系的更新，就是人生凋零的开始。</p>
+
+<p><strong>百度沙龙</strong>
+参加百度技术沙龙感觉真的很棒，[网上的资源]也非常的丰富，这种业界的交流对自己的思路扩展和对产业、技术的认识的加深有良好的促进作用。</p>
+
+<p><strong>身体健康</strong>
+这一周自己的生活状态很健康，不过因为大雨+办公室冷气+吃辣、油腻，导致自己在周五的时候发烧腹泻，必须引以为戒。</p>
+
+<p><strong>工作梳理</strong>
+工作方面逐步找到调试方法，对代码的理解逐步加深。下周是一个过渡，阿里这边收尾，开始考虑实验室方面的工作。</p>
+
+<p><strong>就业发展</strong>
+开始关注诸如360、小米等企业；大众点评内推，学长很照顾；阿里这边两面完成，等待下周的技术提前面。</p>
+
+  ]]></description>
+</item>
+
+<item>
+    <title>总结</title>
+    <link>http://realjenius.com/blog/2013/08/17/zong-jie/</link>
+    <author>R.J. Lorimer</author>
+    <pubDate>2013-08-17T15:30:43+08:00</pubDate>
+    <guid>http://realjenius.com/blog/2013/08/17/zong-jie/</guid>
+    <description><![CDATA[
+     <h2>第二周（8.11-8.17）</h2>
+
+<h3><strong>大事记</strong></h3>
+
+<ol>
+<li>参加百度技术沙龙（8.16）
+
+<ul>
+<li>今后要保持，车库咖啡环境不错，忽的感觉工作不是强迫，不是苦累，而是赚钱的同时学习，赚钱的同时开阔视野，赚钱的同时实现自我满足的一个过程。不要觉得自己是给别人干，一直是在为自己学。</li>
+<li>如果能够找到工作、学习、生活的balance，就是最美妙的感觉了，如果还能插入健康，那简直就是人生大赢家了。</li>
+</ul>
+</li>
+</ol>
+
+
+<h3><strong>自我评价</strong></h3>
+
+<p>对陌陌的这则广告赞口不绝：</p>
+
+<blockquote><p>别和陌生人说话 别做新鲜事 继续过平常的生活 胆小一点 别好奇 就玩你会的 离冒险远远的 有些事想想就好 没必要改变 待在熟悉的地方 最好待在家里 听一样的音乐 见一样的人 重复同样的话题 心思别太活 梦想要实际 不要什么都尝试 就这样活着吧</p></blockquote>
+
+<p>不管年轻还是年老，封闭自我，拒绝知识体系的更新，就是人生凋零的开始。</p>
+
+<p><strong>百度沙龙</strong>
+参加百度技术沙龙感觉真的很棒，[网上的资源]也非常的丰富，这种业界的交流对自己的思路扩展和对产业、技术的认识的加深有良好的促进作用。</p>
+
+<p><strong>身体健康</strong>
+这一周自己的生活状态很健康，不过因为大雨+办公室冷气+吃辣、油腻，导致自己在周五的时候发烧腹泻，必须引以为戒。</p>
+
+<p><strong>工作梳理</strong>
+工作方面逐步找到调试方法，对代码的理解逐步加深。下周是一个过渡，阿里这边收尾，开始考虑实验室方面的工作。</p>
+
+<p><strong>就业发展</strong>
+开始关注诸如360、小米等企业；大众点评内推，学长很照顾；阿里这边两面完成，等待下周的技术提前面。</p>
+
+  ]]></description>
+</item>

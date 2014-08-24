@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Tag: abc | Blog of 太极儒]]></title>
-  <link href="http://frank19900731.github.io/tags/abc/atom.xml" rel="self"/>
+  <title><![CDATA[Category: cate | Blog of 太极儒]]></title>
+  <link href="http://frank19900731.github.io/blog/category/cate/atom.xml" rel="self"/>
   <link href="http://frank19900731.github.io/"/>
   <updated>2014-08-24T20:31:03+08:00</updated>
   <id>http://frank19900731.github.io/</id>
