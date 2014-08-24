@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Blog of 太极儒]]></title>
-  <link href="http://frank19900731.github.io/feed" rel="self"/>
+  <title><![CDATA[Tag: octopress | Blog of 太极儒]]></title>
+  <link href="http://frank19900731.github.io/tags/octopress/atom.xml" rel="self"/>
   <link href="http://frank19900731.github.io/"/>
   <updated>2014-08-24T22:37:18+08:00</updated>
   <id>http://frank19900731.github.io/</id>
@@ -36,25 +36,22 @@
 <p>When I set out to move my site over to Jekyll, one of my key goals was to still support all of the key navigation my site was capable of with my custom platform code, and Wordpress before it. That pretty much amounts to:</p>
 
 <ul>
-  <li>A date descending paging root for all blog entries (<a href="http://frank19900731.github.io/index.html">/index.html</a>).</li>
+  <li>A date descending paging root for all blog entries (<a href="/index.html">/index.html</a>).</li>
   <li>A matching Atom feed for the root index.</li>
-  <li>Static pages like <a href="http://frank19900731.github.io/about.html">About</a> and <a href="http://frank19900731.github.io/contact.html">Contact</a>.</li>
+  <li>Static pages like <a href="/about.html">About</a> and <a href="/contact.html">Contact</a>.</li>
   <li>Individual blog pages (I suppose this one is obvious).</li>
-  <li>Date desceding paging indexes for all categories and tags I use (for example: <a href="http://frank19900731.github.io/category/article">/category/article/</a> and <a href="http://frank19900731.github.io/tag/jruby/">/tag/jruby/</a>).</li>
-  <li>Matching atom feeds for each of the paging indexes above (for example: <a href="http://frank19900731.github.io/category/article/atom.xml">/category/article/atom.xml</a> and <a href="http://frank19900731.github.io/tag/jruby/atom.xml">/tag/jruby/atom.xml</a>).
-<img class="left" src="http://placekitten.com/320/250" title="Place Kitten #2" /></li>
+  <li>Date desceding paging indexes for all categories and tags I use (for example: <a href="/category/article">/category/article/</a> and <a href="/tag/jruby/">/tag/jruby/</a>).</li>
+  <li>Matching atom feeds for each of the paging indexes above (for example: <a href="/category/article/atom.xml">/category/article/atom.xml</a> and <a href="/tag/jruby/atom.xml">/tag/jruby/atom.xml</a>).
+<img class="left" src="http://placekitten.com/320/250" title="Place Kitten #2" ></li>
 </ul>
 
-<p><span class="pullquote-right" data-pullquote="surround it like this">
-Surround your paragraph with the pull quote tags. Then when you come to
-the text you want to pull, surround it like this and that’s all there is to it.
-</span></p>
+<p>Surround your pullquote like this {" text to be quoted "}</p>
 
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>Javascript Array Syntax</span><a href="http://j.mp/pPUUmW">MDN Documentation </a></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-</pre></td><td class="code"><pre><code class="js"><span class="line"><span class="kd">var</span> <span class="nx">arr1</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Array</span><span class="p">(</span><span class="nx">arrayLength</span><span class="p">);</span>
-</span><span class="line"><span class="kd">var</span> <span class="nx">arr2</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Array</span><span class="p">(</span><span class="nx">element0</span><span class="p">,</span> <span class="nx">element1</span><span class="p">,</span> <span class="p">...,</span> <span class="nx">elementN</span><span class="p">);</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>Javascript Array Syntax</span><a href='http://j.mp/pPUUmW'>MDN Documentation </a></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="kd">var</span> <span class="nx">arr1</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Array</span><span class="p">(</span><span class="nx">arrayLength</span><span class="p">);</span>
+</span><span class='line'><span class="kd">var</span> <span class="nx">arr2</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Array</span><span class="p">(</span><span class="nx">element0</span><span class="p">,</span> <span class="nx">element1</span><span class="p">,</span> <span class="err">…</span><span class="p">,</span> <span class="nx">elementN</span><span class="p">);</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <table>
   <thead>

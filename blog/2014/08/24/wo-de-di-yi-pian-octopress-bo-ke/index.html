@@ -8,12 +8,12 @@
 <head>
   <meta charset="utf-8">
   <!-- 标签页标题 -->
-  <title>Blog of 太极儒</title>
+  <title>我的第一篇 Octopress 博客 - Blog of 太极儒</title>
   <meta name="author" content="Frank Song">
   <!-- 定义description变量，如果有则用，没有则是正文，前150字 -->
   
-  <meta name="description" content=" 我的第一篇 Octopress 博客 Aug 24th, 2014 继续阅读&nbsp;&nbsp;&nbsp;&nbsp; Tags: octopress, 插件 Recent Posts 我的第一篇 Octopress 博客 Tags octopress
-插件 ">
+  <meta name="description" content="我的第一篇 Octopress 博客 Aug 24th, 2014 random variables from % <![CDATA[ \begin{align}
+\mbox{Union: } & A\cup B = \{x\mid x\in A \mbox{ or } x\in B &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -22,7 +22,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://frank19900731.github.io/blog">
+  <link rel="canonical" href="http://frank19900731.github.io/blog/2014/08/24/wo-de-di-yi-pian-octopress-bo-ke">
   <!-- 网站小图标 -->
   <link href="/favicon.ico" rel="icon">
   <!-- 网站样式文件 -->
@@ -175,12 +175,11 @@
 </div>
 		</aside>
 		
-      <div class="blog-index">
-  
-  
-  
-    <article>
-      <!-- article.html -->
+      <!-- layouts/post.html -->
+<!-- 带内容 -->
+<div>
+<article>
+	<!-- article.html -->
 <!-- 文章展示，区分在索引页和文章页 -->
 <header>
   <div class="article-tags">
@@ -191,9 +190,9 @@
 
   </div>
   
-    <h1><a href="/blog/2014/08/24/wo-de-di-yi-pian-octopress-bo-ke/">
+    <h1>
       我的第一篇 Octopress 博客
-    </a></h1>
+    </h1>
   
   <!-- 给出发布时间 -->
   <div class="article-date">
@@ -216,8 +215,76 @@
 <hr />
 <!-- 如果在索引中 -->
 
-  <section></section>
-  <a href="/blog/2014/08/24/wo-de-di-yi-pian-octopress-bo-ke/">继续阅读</a>&nbsp;&nbsp;&nbsp;&nbsp;
+  <!-- 直接展示出内容 -->
+  <section><p>random variables <script type="math/tex">X_1, X_2, X_3</script> from</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+
+\begin{align}
+\mbox{Union: } & A\cup B = \{x\mid x\in A \mbox{ or } x\in B\} \\
+\mbox{Concatenation: } & A\circ B  = \{xy\mid x\in A \mbox{ and } y\in B\} \\
+\mbox{Star: } & A^\star  = \{x_1x_2\ldots x_k \mid  k\geq 0 \mbox{ and each } x_i\in A\} \\
+\end{align}
+ %]]></script>
+
+<p><a href="http://www.jekyllrb.com">Jekyll</a> is a very popular and very powerful static blog generator. Out of the box it’s able to generate sophisticated site structures, and has a ton of configurability. One of the areas where I feel that Jekyll lacks some sophistication is around the handling of categories and tags; these are two data-sets that are core to Jekyll, but there isn’t a lot of functionality actually built around them. This is in contrast to dynamic blogging platforms like <a href="http://www.wordpress.com">WordPress</a>, or possibly <a href="http://www.drupal.org">Drupal</a>, where these two data points are used to drive a lot of central navigation for the site.</p>
+
+<p>To be fair, Jekyll is really intended to be a framework for expansion into larger degrees of customization and sophistication, and thankfully it has a very powerful plugin model. Higher-level frameworks like <a href="http://www.octopress.org">Octopress</a> and <a href="http://www.jekyllbootstrap.com">Jekyll Bootstrap</a> have shown what you can do with a little extra tweaking - as have the long list of <a href="https://github.com/mojombo/jekyll/wiki/Plugins">Jekyll plugins</a>.</p>
+
+<p>When I set out to move my site over to Jekyll, one of my key goals was to still support all of the key navigation my site was capable of with my custom platform code, and Wordpress before it. That pretty much amounts to:</p>
+
+<ul>
+  <li>A date descending paging root for all blog entries (<a href="/index.html">/index.html</a>).</li>
+  <li>A matching Atom feed for the root index.</li>
+  <li>Static pages like <a href="/about.html">About</a> and <a href="/contact.html">Contact</a>.</li>
+  <li>Individual blog pages (I suppose this one is obvious).</li>
+  <li>Date desceding paging indexes for all categories and tags I use (for example: <a href="/category/article">/category/article/</a> and <a href="/tag/jruby/">/tag/jruby/</a>).</li>
+  <li>Matching atom feeds for each of the paging indexes above (for example: <a href="/category/article/atom.xml">/category/article/atom.xml</a> and <a href="/tag/jruby/atom.xml">/tag/jruby/atom.xml</a>).
+<img class="left" src="http://placekitten.com/320/250" title="Place Kitten #2" /></li>
+</ul>
+
+<p><span class="pullquote-right" data-pullquote="surround it like this">
+Surround your paragraph with the pull quote tags. Then when you come to
+the text you want to pull, surround it like this and that’s all there is to it.
+</span></p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>Javascript Array Syntax</span><a href="http://j.mp/pPUUmW">MDN Documentation </a></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+</pre></td><td class="code"><pre><code class="js"><span class="line"><span class="kd">var</span> <span class="nx">arr1</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Array</span><span class="p">(</span><span class="nx">arrayLength</span><span class="p">);</span>
+</span><span class="line"><span class="kd">var</span> <span class="nx">arr2</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Array</span><span class="p">(</span><span class="nx">element0</span><span class="p">,</span> <span class="nx">element1</span><span class="p">,</span> <span class="p">...,</span> <span class="nx">elementN</span><span class="p">);</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Default aligned</th>
+      <th style="text-align: left">Left aligned</th>
+      <th style="text-align: center">Center aligned</th>
+      <th style="text-align: right">Right aligned</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>First body part</td>
+      <td style="text-align: left">Second cell</td>
+      <td style="text-align: center">Third cell</td>
+      <td style="text-align: right">fourth cell</td>
+    </tr>
+    <tr>
+      <td>Second line</td>
+      <td style="text-align: left">foo</td>
+      <td style="text-align: center"><strong>strong</strong></td>
+      <td style="text-align: right">baz</td>
+    </tr>
+    <tr>
+      <td>Third line</td>
+      <td style="text-align: left">quux</td>
+      <td style="text-align: center">baz</td>
+      <td style="text-align: right">bar</td>
+    </tr>
+  </tbody>
+</table>
+</section>
 
 <!-- post/tags.html -->
 <!-- 文章标签展示 -->
@@ -233,41 +300,25 @@
 
 
 
-    </article>
-  
-  <div class="pagination">
-    
-    
-  </div>
-</div>
-<aside class="sidebar">
-  
-    <!-- asides/recent_posts.html -->
-        <li>
-<!-- 最近发布的文章 -->
-<h3>Recent Posts</h3>
-<ul>
+
+    <div style="width: 100%; margin-top: 20px;">
+        <span style="float:left">
+            
+        </span>
+        <span style="float:right">
+            
+        </span>
+    </div>
+
 	
-    <li>
-    	<a href="/blog/2014/08/24/wo-de-di-yi-pian-octopress-bo-ke/">我的第一篇 Octopress 博客</a>
-    </li>
-    
-</ul>
-        </li>
-<li>
-    <h3>Tags</h3>
-    <ul class="tag-cloud">
-        <a style="font-size: 210%" href="/tags/octopress/">octopress</a>
-<a style="font-size: 210%" href="/tags/cha-jian/">插件</a>
-
-    </ul>
-</li>
-
-
-
-
-  
-</aside>
+	  <section class="comments">
+	    <div id="disqus_thread" aria-live="polite"><!-- post/disqus_thread.html -->
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+	  </section>
+	
+</article>
+</div>
 
     </div>
   </div>
@@ -286,7 +337,10 @@
       var disqus_shortname = 'frank-octopress';
       
         
-        var disqus_script = 'count.js';
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://frank19900731.github.io/blog/2014/08/24/wo-de-di-yi-pian-octopress-bo-ke/';
+        var disqus_url = 'http://frank19900731.github.io/blog/2014/08/24/wo-de-di-yi-pian-octopress-bo-ke/';
+        var disqus_script = 'embed.js';
       
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

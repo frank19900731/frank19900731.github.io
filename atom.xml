@@ -4,7 +4,7 @@
   <title><![CDATA[Blog of 太极儒]]></title>
   <link href="http://frank19900731.github.io/atom.xml" rel="self"/>
   <link href="http://frank19900731.github.io/"/>
-  <updated>2014-08-24T21:40:42+08:00</updated>
+  <updated>2014-08-24T22:37:18+08:00</updated>
   <id>http://frank19900731.github.io/</id>
   <author>
     <name><![CDATA[Frank Song]]></name>
@@ -14,638 +14,78 @@
 
   
   <entry>
-    <title type="html"><![CDATA[总结]]></title>
-    <link href="http://frank19900731.github.io/blog/2014/08/24/zong-jie/"/>
-    <updated>2014-08-24T15:30:43+08:00</updated>
-    <id>http://frank19900731.github.io/blog/2014/08/24/zong-jie</id>
-    <content type="html"><![CDATA[<!-- excerpt start -->
+    <title type="html"><![CDATA[我的第一篇 Octopress 博客]]></title>
+    <link href="http://frank19900731.github.io/blog/2014/08/24/wo-de-di-yi-pian-octopress-bo-ke/"/>
+    <updated>2014-08-24T21:50:56+08:00</updated>
+    <id>http://frank19900731.github.io/blog/2014/08/24/wo-de-di-yi-pian-octopress-bo-ke</id>
+    <content type="html"><![CDATA[<p>random variables <script type="math/tex">X_1, X_2, X_3</script> from</p>
 
+<script type="math/tex; mode=display">% &lt;![CDATA[
 
-<h2>第二周（8.11-8.17）</h2>
+\begin{align}
+\mbox{Union: } & A\cup B = \{x\mid x\in A \mbox{ or } x\in B\} \\
+\mbox{Concatenation: } & A\circ B  = \{xy\mid x\in A \mbox{ and } y\in B\} \\
+\mbox{Star: } & A^\star  = \{x_1x_2\ldots x_k \mid  k\geq 0 \mbox{ and each } x_i\in A\} \\
+\end{align}
+ %]]&gt;</script>
 
-<h3><strong>大事记</strong></h3>
+<p><a href="http://www.jekyllrb.com">Jekyll</a> is a very popular and very powerful static blog generator. Out of the box it’s able to generate sophisticated site structures, and has a ton of configurability. One of the areas where I feel that Jekyll lacks some sophistication is around the handling of categories and tags; these are two data-sets that are core to Jekyll, but there isn’t a lot of functionality actually built around them. This is in contrast to dynamic blogging platforms like <a href="http://www.wordpress.com">WordPress</a>, or possibly <a href="http://www.drupal.org">Drupal</a>, where these two data points are used to drive a lot of central navigation for the site.</p>
 
-<ol>
-<li>参加百度技术沙龙（8.16）
+<p>To be fair, Jekyll is really intended to be a framework for expansion into larger degrees of customization and sophistication, and thankfully it has a very powerful plugin model. Higher-level frameworks like <a href="http://www.octopress.org">Octopress</a> and <a href="http://www.jekyllbootstrap.com">Jekyll Bootstrap</a> have shown what you can do with a little extra tweaking - as have the long list of <a href="https://github.com/mojombo/jekyll/wiki/Plugins">Jekyll plugins</a>.</p>
 
-<ul>
-<li>今后要保持，车库咖啡环境不错，忽的感觉工作不是强迫，不是苦累，而是赚钱的同时学习，赚钱的同时开阔视野，赚钱的同时实现自我满足的一个过程。不要觉得自己是给别人干，一直是在为自己学。</li>
-<li>如果能够找到工作、学习、生活的balance，就是最美妙的感觉了，如果还能插入健康，那简直就是人生大赢家了。</li>
-</ul>
-</li>
-</ol>
-
-
-<h3><strong>自我评价</strong></h3>
-
-<p>对陌陌的这则广告赞口不绝：</p>
-
-<blockquote><p>别和陌生人说话 别做新鲜事 继续过平常的生活 胆小一点 别好奇 就玩你会的 离冒险远远的 有些事想想就好 没必要改变 待在熟悉的地方 最好待在家里 听一样的音乐 见一样的人 重复同样的话题 心思别太活 梦想要实际 不要什么都尝试 就这样活着吧</p></blockquote>
-
-<p>不管年轻还是年老，封闭自我，拒绝知识体系的更新，就是人生凋零的开始。</p>
-
-<!-- excerpt end -->
-
-
-<p><strong>百度沙龙</strong>
-参加百度技术沙龙感觉真的很棒，[网上的资源]也非常的丰富，这种业界的交流对自己的思路扩展和对产业、技术的认识的加深有良好的促进作用。</p>
-
-<p><strong>身体健康</strong>
-这一周自己的生活状态很健康，不过因为大雨+办公室冷气+吃辣、油腻，导致自己在周五的时候发烧腹泻，必须引以为戒。</p>
-
-<p><strong>工作梳理</strong>
-工作方面逐步找到调试方法，对代码的理解逐步加深。下周是一个过渡，阿里这边收尾，开始考虑实验室方面的工作。</p>
-
-<p><strong>就业发展</strong>
-开始关注诸如360、小米等企业；大众点评内推，学长很照顾；阿里这边两面完成，等待下周的技术提前面。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[总结]]></title>
-    <link href="http://frank19900731.github.io/blog/2013/08/24/zong-jie/"/>
-    <updated>2013-08-24T15:30:43+08:00</updated>
-    <id>http://frank19900731.github.io/blog/2013/08/24/zong-jie</id>
-    <content type="html"><![CDATA[<h2>第二周（8.11-8.17）</h2>
-
-<h3><strong>大事记</strong></h3>
-
-<ol>
-<li>参加百度技术沙龙（8.16）
+<p>When I set out to move my site over to Jekyll, one of my key goals was to still support all of the key navigation my site was capable of with my custom platform code, and Wordpress before it. That pretty much amounts to:</p>
 
 <ul>
-<li>今后要保持，车库咖啡环境不错，忽的感觉工作不是强迫，不是苦累，而是赚钱的同时学习，赚钱的同时开阔视野，赚钱的同时实现自我满足的一个过程。不要觉得自己是给别人干，一直是在为自己学。</li>
-<li>如果能够找到工作、学习、生活的balance，就是最美妙的感觉了，如果还能插入健康，那简直就是人生大赢家了。</li>
+  <li>A date descending paging root for all blog entries (<a href="http://frank19900731.github.io/index.html">/index.html</a>).</li>
+  <li>A matching Atom feed for the root index.</li>
+  <li>Static pages like <a href="http://frank19900731.github.io/about.html">About</a> and <a href="http://frank19900731.github.io/contact.html">Contact</a>.</li>
+  <li>Individual blog pages (I suppose this one is obvious).</li>
+  <li>Date desceding paging indexes for all categories and tags I use (for example: <a href="http://frank19900731.github.io/category/article">/category/article/</a> and <a href="http://frank19900731.github.io/tag/jruby/">/tag/jruby/</a>).</li>
+  <li>Matching atom feeds for each of the paging indexes above (for example: <a href="http://frank19900731.github.io/category/article/atom.xml">/category/article/atom.xml</a> and <a href="http://frank19900731.github.io/tag/jruby/atom.xml">/tag/jruby/atom.xml</a>).
+<img class="left" src="http://placekitten.com/320/250" title="Place Kitten #2" /></li>
 </ul>
-</li>
-</ol>
 
-
-<h3><strong>自我评价</strong></h3>
-
-<p>对陌陌的这则广告赞口不绝：</p>
-
-<blockquote><p>别和陌生人说话 别做新鲜事 继续过平常的生活 胆小一点 别好奇 就玩你会的 离冒险远远的 有些事想想就好 没必要改变 待在熟悉的地方 最好待在家里 听一样的音乐 见一样的人 重复同样的话题 心思别太活 梦想要实际 不要什么都尝试 就这样活着吧</p></blockquote>
-
-<p>不管年轻还是年老，封闭自我，拒绝知识体系的更新，就是人生凋零的开始。</p>
-
-<p><strong>百度沙龙</strong>
-参加百度技术沙龙感觉真的很棒，[网上的资源]也非常的丰富，这种业界的交流对自己的思路扩展和对产业、技术的认识的加深有良好的促进作用。</p>
-
-<p><strong>身体健康</strong>
-这一周自己的生活状态很健康，不过因为大雨+办公室冷气+吃辣、油腻，导致自己在周五的时候发烧腹泻，必须引以为戒。</p>
-
-<p><strong>工作梳理</strong>
-工作方面逐步找到调试方法，对代码的理解逐步加深。下周是一个过渡，阿里这边收尾，开始考虑实验室方面的工作。</p>
-
-<p><strong>就业发展</strong>
-开始关注诸如360、小米等企业；大众点评内推，学长很照顾；阿里这边两面完成，等待下周的技术提前面。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[总结]]></title>
-    <link href="http://frank19900731.github.io/blog/2013/08/23/zong-jie/"/>
-    <updated>2013-08-23T15:30:43+08:00</updated>
-    <id>http://frank19900731.github.io/blog/2013/08/23/zong-jie</id>
-    <content type="html"><![CDATA[<h2>第二周（8.11-8.17）</h2>
-
-<h3><strong>大事记</strong></h3>
-
-<ol>
-<li>参加百度技术沙龙（8.16）
-
-<ul>
-<li>今后要保持，车库咖啡环境不错，忽的感觉工作不是强迫，不是苦累，而是赚钱的同时学习，赚钱的同时开阔视野，赚钱的同时实现自我满足的一个过程。不要觉得自己是给别人干，一直是在为自己学。</li>
-<li>如果能够找到工作、学习、生活的balance，就是最美妙的感觉了，如果还能插入健康，那简直就是人生大赢家了。</li>
-</ul>
-</li>
-</ol>
-
-
-<h3><strong>自我评价</strong></h3>
-
-<p>对陌陌的这则广告赞口不绝：</p>
-
-<blockquote><p>别和陌生人说话 别做新鲜事 继续过平常的生活 胆小一点 别好奇 就玩你会的 离冒险远远的 有些事想想就好 没必要改变 待在熟悉的地方 最好待在家里 听一样的音乐 见一样的人 重复同样的话题 心思别太活 梦想要实际 不要什么都尝试 就这样活着吧</p></blockquote>
-
-<p>不管年轻还是年老，封闭自我，拒绝知识体系的更新，就是人生凋零的开始。</p>
-
-<p><strong>百度沙龙</strong>
-参加百度技术沙龙感觉真的很棒，[网上的资源]也非常的丰富，这种业界的交流对自己的思路扩展和对产业、技术的认识的加深有良好的促进作用。</p>
-
-<p><strong>身体健康</strong>
-这一周自己的生活状态很健康，不过因为大雨+办公室冷气+吃辣、油腻，导致自己在周五的时候发烧腹泻，必须引以为戒。</p>
-
-<p><strong>工作梳理</strong>
-工作方面逐步找到调试方法，对代码的理解逐步加深。下周是一个过渡，阿里这边收尾，开始考虑实验室方面的工作。</p>
-
-<p><strong>就业发展</strong>
-开始关注诸如360、小米等企业；大众点评内推，学长很照顾；阿里这边两面完成，等待下周的技术提前面。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[总结]]></title>
-    <link href="http://frank19900731.github.io/blog/2013/08/22/zong-jie/"/>
-    <updated>2013-08-22T15:30:43+08:00</updated>
-    <id>http://frank19900731.github.io/blog/2013/08/22/zong-jie</id>
-    <content type="html"><![CDATA[<h2>第二周（8.11-8.17）</h2>
-
-<h3><strong>大事记</strong></h3>
-
-<ol>
-<li>参加百度技术沙龙（8.16）
-
-<ul>
-<li>今后要保持，车库咖啡环境不错，忽的感觉工作不是强迫，不是苦累，而是赚钱的同时学习，赚钱的同时开阔视野，赚钱的同时实现自我满足的一个过程。不要觉得自己是给别人干，一直是在为自己学。</li>
-<li>如果能够找到工作、学习、生活的balance，就是最美妙的感觉了，如果还能插入健康，那简直就是人生大赢家了。</li>
-</ul>
-</li>
-</ol>
-
-
-<h3><strong>自我评价</strong></h3>
-
-<p>对陌陌的这则广告赞口不绝：</p>
-
-<blockquote><p>别和陌生人说话 别做新鲜事 继续过平常的生活 胆小一点 别好奇 就玩你会的 离冒险远远的 有些事想想就好 没必要改变 待在熟悉的地方 最好待在家里 听一样的音乐 见一样的人 重复同样的话题 心思别太活 梦想要实际 不要什么都尝试 就这样活着吧</p></blockquote>
-
-<p>不管年轻还是年老，封闭自我，拒绝知识体系的更新，就是人生凋零的开始。</p>
-
-<p><strong>百度沙龙</strong>
-参加百度技术沙龙感觉真的很棒，[网上的资源]也非常的丰富，这种业界的交流对自己的思路扩展和对产业、技术的认识的加深有良好的促进作用。</p>
-
-<p><strong>身体健康</strong>
-这一周自己的生活状态很健康，不过因为大雨+办公室冷气+吃辣、油腻，导致自己在周五的时候发烧腹泻，必须引以为戒。</p>
-
-<p><strong>工作梳理</strong>
-工作方面逐步找到调试方法，对代码的理解逐步加深。下周是一个过渡，阿里这边收尾，开始考虑实验室方面的工作。</p>
-
-<p><strong>就业发展</strong>
-开始关注诸如360、小米等企业；大众点评内推，学长很照顾；阿里这边两面完成，等待下周的技术提前面。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[总结]]></title>
-    <link href="http://frank19900731.github.io/blog/2013/08/21/zong-jie/"/>
-    <updated>2013-08-21T15:30:43+08:00</updated>
-    <id>http://frank19900731.github.io/blog/2013/08/21/zong-jie</id>
-    <content type="html"><![CDATA[<h2>第二周（8.11-8.17）</h2>
-
-<h3><strong>大事记</strong></h3>
-
-<ol>
-<li>参加百度技术沙龙（8.16）
-
-<ul>
-<li>今后要保持，车库咖啡环境不错，忽的感觉工作不是强迫，不是苦累，而是赚钱的同时学习，赚钱的同时开阔视野，赚钱的同时实现自我满足的一个过程。不要觉得自己是给别人干，一直是在为自己学。</li>
-<li>如果能够找到工作、学习、生活的balance，就是最美妙的感觉了，如果还能插入健康，那简直就是人生大赢家了。</li>
-</ul>
-</li>
-</ol>
-
-
-<h3><strong>自我评价</strong></h3>
-
-<p>对陌陌的这则广告赞口不绝：</p>
-
-<blockquote><p>别和陌生人说话 别做新鲜事 继续过平常的生活 胆小一点 别好奇 就玩你会的 离冒险远远的 有些事想想就好 没必要改变 待在熟悉的地方 最好待在家里 听一样的音乐 见一样的人 重复同样的话题 心思别太活 梦想要实际 不要什么都尝试 就这样活着吧</p></blockquote>
-
-<p>不管年轻还是年老，封闭自我，拒绝知识体系的更新，就是人生凋零的开始。</p>
-
-<p><strong>百度沙龙</strong>
-参加百度技术沙龙感觉真的很棒，[网上的资源]也非常的丰富，这种业界的交流对自己的思路扩展和对产业、技术的认识的加深有良好的促进作用。</p>
-
-<p><strong>身体健康</strong>
-这一周自己的生活状态很健康，不过因为大雨+办公室冷气+吃辣、油腻，导致自己在周五的时候发烧腹泻，必须引以为戒。</p>
-
-<p><strong>工作梳理</strong>
-工作方面逐步找到调试方法，对代码的理解逐步加深。下周是一个过渡，阿里这边收尾，开始考虑实验室方面的工作。</p>
-
-<p><strong>就业发展</strong>
-开始关注诸如360、小米等企业；大众点评内推，学长很照顾；阿里这边两面完成，等待下周的技术提前面。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[总结]]></title>
-    <link href="http://frank19900731.github.io/blog/2013/08/20/zong-jie/"/>
-    <updated>2013-08-20T15:30:43+08:00</updated>
-    <id>http://frank19900731.github.io/blog/2013/08/20/zong-jie</id>
-    <content type="html"><![CDATA[<h2>第二周（8.11-8.17）</h2>
-
-<h3><strong>大事记</strong></h3>
-
-<ol>
-<li>参加百度技术沙龙（8.16）
-
-<ul>
-<li>今后要保持，车库咖啡环境不错，忽的感觉工作不是强迫，不是苦累，而是赚钱的同时学习，赚钱的同时开阔视野，赚钱的同时实现自我满足的一个过程。不要觉得自己是给别人干，一直是在为自己学。</li>
-<li>如果能够找到工作、学习、生活的balance，就是最美妙的感觉了，如果还能插入健康，那简直就是人生大赢家了。</li>
-</ul>
-</li>
-</ol>
-
-
-<h3><strong>自我评价</strong></h3>
-
-<p>对陌陌的这则广告赞口不绝：</p>
-
-<blockquote><p>别和陌生人说话 别做新鲜事 继续过平常的生活 胆小一点 别好奇 就玩你会的 离冒险远远的 有些事想想就好 没必要改变 待在熟悉的地方 最好待在家里 听一样的音乐 见一样的人 重复同样的话题 心思别太活 梦想要实际 不要什么都尝试 就这样活着吧</p></blockquote>
-
-<p>不管年轻还是年老，封闭自我，拒绝知识体系的更新，就是人生凋零的开始。</p>
-
-<p><strong>百度沙龙</strong>
-参加百度技术沙龙感觉真的很棒，[网上的资源]也非常的丰富，这种业界的交流对自己的思路扩展和对产业、技术的认识的加深有良好的促进作用。</p>
-
-<p><strong>身体健康</strong>
-这一周自己的生活状态很健康，不过因为大雨+办公室冷气+吃辣、油腻，导致自己在周五的时候发烧腹泻，必须引以为戒。</p>
-
-<p><strong>工作梳理</strong>
-工作方面逐步找到调试方法，对代码的理解逐步加深。下周是一个过渡，阿里这边收尾，开始考虑实验室方面的工作。</p>
-
-<p><strong>就业发展</strong>
-开始关注诸如360、小米等企业；大众点评内推，学长很照顾；阿里这边两面完成，等待下周的技术提前面。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[总结]]></title>
-    <link href="http://frank19900731.github.io/blog/2013/08/19/zong-jie/"/>
-    <updated>2013-08-19T15:30:43+08:00</updated>
-    <id>http://frank19900731.github.io/blog/2013/08/19/zong-jie</id>
-    <content type="html"><![CDATA[<h2>第二周（8.11-8.17）</h2>
-
-<h3><strong>大事记</strong></h3>
-
-<ol>
-<li>参加百度技术沙龙（8.16）
-
-<ul>
-<li>今后要保持，车库咖啡环境不错，忽的感觉工作不是强迫，不是苦累，而是赚钱的同时学习，赚钱的同时开阔视野，赚钱的同时实现自我满足的一个过程。不要觉得自己是给别人干，一直是在为自己学。</li>
-<li>如果能够找到工作、学习、生活的balance，就是最美妙的感觉了，如果还能插入健康，那简直就是人生大赢家了。</li>
-</ul>
-</li>
-</ol>
-
-
-<h3><strong>自我评价</strong></h3>
-
-<p>对陌陌的这则广告赞口不绝：</p>
-
-<blockquote><p>别和陌生人说话 别做新鲜事 继续过平常的生活 胆小一点 别好奇 就玩你会的 离冒险远远的 有些事想想就好 没必要改变 待在熟悉的地方 最好待在家里 听一样的音乐 见一样的人 重复同样的话题 心思别太活 梦想要实际 不要什么都尝试 就这样活着吧</p></blockquote>
-
-<p>不管年轻还是年老，封闭自我，拒绝知识体系的更新，就是人生凋零的开始。</p>
-
-<p><strong>百度沙龙</strong>
-参加百度技术沙龙感觉真的很棒，[网上的资源]也非常的丰富，这种业界的交流对自己的思路扩展和对产业、技术的认识的加深有良好的促进作用。</p>
-
-<p><strong>身体健康</strong>
-这一周自己的生活状态很健康，不过因为大雨+办公室冷气+吃辣、油腻，导致自己在周五的时候发烧腹泻，必须引以为戒。</p>
-
-<p><strong>工作梳理</strong>
-工作方面逐步找到调试方法，对代码的理解逐步加深。下周是一个过渡，阿里这边收尾，开始考虑实验室方面的工作。</p>
-
-<p><strong>就业发展</strong>
-开始关注诸如360、小米等企业；大众点评内推，学长很照顾；阿里这边两面完成，等待下周的技术提前面。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[总结]]></title>
-    <link href="http://frank19900731.github.io/blog/2013/08/17/zong-jie/"/>
-    <updated>2013-08-17T15:30:43+08:00</updated>
-    <id>http://frank19900731.github.io/blog/2013/08/17/zong-jie</id>
-    <content type="html"><![CDATA[<h2>第二周（8.11-8.17）</h2>
-
-<h3><strong>大事记</strong></h3>
-
-<ol>
-<li>参加百度技术沙龙（8.16）
-
-<ul>
-<li>今后要保持，车库咖啡环境不错，忽的感觉工作不是强迫，不是苦累，而是赚钱的同时学习，赚钱的同时开阔视野，赚钱的同时实现自我满足的一个过程。不要觉得自己是给别人干，一直是在为自己学。</li>
-<li>如果能够找到工作、学习、生活的balance，就是最美妙的感觉了，如果还能插入健康，那简直就是人生大赢家了。</li>
-</ul>
-</li>
-</ol>
-
-
-<h3><strong>自我评价</strong></h3>
-
-<p>对陌陌的这则广告赞口不绝：</p>
-
-<blockquote><p>别和陌生人说话 别做新鲜事 继续过平常的生活 胆小一点 别好奇 就玩你会的 离冒险远远的 有些事想想就好 没必要改变 待在熟悉的地方 最好待在家里 听一样的音乐 见一样的人 重复同样的话题 心思别太活 梦想要实际 不要什么都尝试 就这样活着吧</p></blockquote>
-
-<p>不管年轻还是年老，封闭自我，拒绝知识体系的更新，就是人生凋零的开始。</p>
-
-<p><strong>百度沙龙</strong>
-参加百度技术沙龙感觉真的很棒，[网上的资源]也非常的丰富，这种业界的交流对自己的思路扩展和对产业、技术的认识的加深有良好的促进作用。</p>
-
-<p><strong>身体健康</strong>
-这一周自己的生活状态很健康，不过因为大雨+办公室冷气+吃辣、油腻，导致自己在周五的时候发烧腹泻，必须引以为戒。</p>
-
-<p><strong>工作梳理</strong>
-工作方面逐步找到调试方法，对代码的理解逐步加深。下周是一个过渡，阿里这边收尾，开始考虑实验室方面的工作。</p>
-
-<p><strong>就业发展</strong>
-开始关注诸如360、小米等企业；大众点评内推，学长很照顾；阿里这边两面完成，等待下周的技术提前面。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[总结]]></title>
-    <link href="http://frank19900731.github.io/blog/2013/08/17/zong-jie/"/>
-    <updated>2013-08-17T15:30:43+08:00</updated>
-    <id>http://frank19900731.github.io/blog/2013/08/17/zong-jie</id>
-    <content type="html"><![CDATA[<h2>第二周（8.11-8.17）</h2>
-
-<h3><strong>大事记</strong></h3>
-
-<ol>
-<li>参加百度技术沙龙（8.16）
-
-<ul>
-<li>今后要保持，车库咖啡环境不错，忽的感觉工作不是强迫，不是苦累，而是赚钱的同时学习，赚钱的同时开阔视野，赚钱的同时实现自我满足的一个过程。不要觉得自己是给别人干，一直是在为自己学。</li>
-<li>如果能够找到工作、学习、生活的balance，就是最美妙的感觉了，如果还能插入健康，那简直就是人生大赢家了。</li>
-</ul>
-</li>
-</ol>
-
-
-<h3><strong>自我评价</strong></h3>
-
-<p>对陌陌的这则广告赞口不绝：</p>
-
-<blockquote><p>别和陌生人说话 别做新鲜事 继续过平常的生活 胆小一点 别好奇 就玩你会的 离冒险远远的 有些事想想就好 没必要改变 待在熟悉的地方 最好待在家里 听一样的音乐 见一样的人 重复同样的话题 心思别太活 梦想要实际 不要什么都尝试 就这样活着吧</p></blockquote>
-
-<p>不管年轻还是年老，封闭自我，拒绝知识体系的更新，就是人生凋零的开始。</p>
-
-<p><strong>百度沙龙</strong>
-参加百度技术沙龙感觉真的很棒，[网上的资源]也非常的丰富，这种业界的交流对自己的思路扩展和对产业、技术的认识的加深有良好的促进作用。</p>
-
-<p><strong>身体健康</strong>
-这一周自己的生活状态很健康，不过因为大雨+办公室冷气+吃辣、油腻，导致自己在周五的时候发烧腹泻，必须引以为戒。</p>
-
-<p><strong>工作梳理</strong>
-工作方面逐步找到调试方法，对代码的理解逐步加深。下周是一个过渡，阿里这边收尾，开始考虑实验室方面的工作。</p>
-
-<p><strong>就业发展</strong>
-开始关注诸如360、小米等企业；大众点评内推，学长很照顾；阿里这边两面完成，等待下周的技术提前面。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[总结]]></title>
-    <link href="http://frank19900731.github.io/blog/2013/08/17/zong-jie/"/>
-    <updated>2013-08-17T15:30:43+08:00</updated>
-    <id>http://frank19900731.github.io/blog/2013/08/17/zong-jie</id>
-    <content type="html"><![CDATA[<h2>第二周（8.11-8.17）</h2>
-
-<h3><strong>大事记</strong></h3>
-
-<ol>
-<li>参加百度技术沙龙（8.16）
-
-<ul>
-<li>今后要保持，车库咖啡环境不错，忽的感觉工作不是强迫，不是苦累，而是赚钱的同时学习，赚钱的同时开阔视野，赚钱的同时实现自我满足的一个过程。不要觉得自己是给别人干，一直是在为自己学。</li>
-<li>如果能够找到工作、学习、生活的balance，就是最美妙的感觉了，如果还能插入健康，那简直就是人生大赢家了。</li>
-</ul>
-</li>
-</ol>
-
-
-<h3><strong>自我评价</strong></h3>
-
-<p>对陌陌的这则广告赞口不绝：</p>
-
-<blockquote><p>别和陌生人说话 别做新鲜事 继续过平常的生活 胆小一点 别好奇 就玩你会的 离冒险远远的 有些事想想就好 没必要改变 待在熟悉的地方 最好待在家里 听一样的音乐 见一样的人 重复同样的话题 心思别太活 梦想要实际 不要什么都尝试 就这样活着吧</p></blockquote>
-
-<p>不管年轻还是年老，封闭自我，拒绝知识体系的更新，就是人生凋零的开始。</p>
-
-<p><strong>百度沙龙</strong>
-参加百度技术沙龙感觉真的很棒，[网上的资源]也非常的丰富，这种业界的交流对自己的思路扩展和对产业、技术的认识的加深有良好的促进作用。</p>
-
-<p><strong>身体健康</strong>
-这一周自己的生活状态很健康，不过因为大雨+办公室冷气+吃辣、油腻，导致自己在周五的时候发烧腹泻，必须引以为戒。</p>
-
-<p><strong>工作梳理</strong>
-工作方面逐步找到调试方法，对代码的理解逐步加深。下周是一个过渡，阿里这边收尾，开始考虑实验室方面的工作。</p>
-
-<p><strong>就业发展</strong>
-开始关注诸如360、小米等企业；大众点评内推，学长很照顾；阿里这边两面完成，等待下周的技术提前面。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[总结]]></title>
-    <link href="http://frank19900731.github.io/blog/2013/08/17/zong-jie/"/>
-    <updated>2013-08-17T15:30:43+08:00</updated>
-    <id>http://frank19900731.github.io/blog/2013/08/17/zong-jie</id>
-    <content type="html"><![CDATA[<h2>第二周（8.11-8.17）</h2>
-
-<h3><strong>大事记</strong></h3>
-
-<ol>
-<li>参加百度技术沙龙（8.16）
-
-<ul>
-<li>今后要保持，车库咖啡环境不错，忽的感觉工作不是强迫，不是苦累，而是赚钱的同时学习，赚钱的同时开阔视野，赚钱的同时实现自我满足的一个过程。不要觉得自己是给别人干，一直是在为自己学。</li>
-<li>如果能够找到工作、学习、生活的balance，就是最美妙的感觉了，如果还能插入健康，那简直就是人生大赢家了。</li>
-</ul>
-</li>
-</ol>
-
-
-<h3><strong>自我评价</strong></h3>
-
-<p>对陌陌的这则广告赞口不绝：</p>
-
-<blockquote><p>别和陌生人说话 别做新鲜事 继续过平常的生活 胆小一点 别好奇 就玩你会的 离冒险远远的 有些事想想就好 没必要改变 待在熟悉的地方 最好待在家里 听一样的音乐 见一样的人 重复同样的话题 心思别太活 梦想要实际 不要什么都尝试 就这样活着吧</p></blockquote>
-
-<p>不管年轻还是年老，封闭自我，拒绝知识体系的更新，就是人生凋零的开始。</p>
-
-<p><strong>百度沙龙</strong>
-参加百度技术沙龙感觉真的很棒，[网上的资源]也非常的丰富，这种业界的交流对自己的思路扩展和对产业、技术的认识的加深有良好的促进作用。</p>
-
-<p><strong>身体健康</strong>
-这一周自己的生活状态很健康，不过因为大雨+办公室冷气+吃辣、油腻，导致自己在周五的时候发烧腹泻，必须引以为戒。</p>
-
-<p><strong>工作梳理</strong>
-工作方面逐步找到调试方法，对代码的理解逐步加深。下周是一个过渡，阿里这边收尾，开始考虑实验室方面的工作。</p>
-
-<p><strong>就业发展</strong>
-开始关注诸如360、小米等企业；大众点评内推，学长很照顾；阿里这边两面完成，等待下周的技术提前面。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[总结]]></title>
-    <link href="http://frank19900731.github.io/blog/2013/08/17/zong-jie/"/>
-    <updated>2013-08-17T15:30:43+08:00</updated>
-    <id>http://frank19900731.github.io/blog/2013/08/17/zong-jie</id>
-    <content type="html"><![CDATA[<h2>第二周（8.11-8.17）</h2>
-
-<h3><strong>大事记</strong></h3>
-
-<ol>
-<li>参加百度技术沙龙（8.16）
-
-<ul>
-<li>今后要保持，车库咖啡环境不错，忽的感觉工作不是强迫，不是苦累，而是赚钱的同时学习，赚钱的同时开阔视野，赚钱的同时实现自我满足的一个过程。不要觉得自己是给别人干，一直是在为自己学。</li>
-<li>如果能够找到工作、学习、生活的balance，就是最美妙的感觉了，如果还能插入健康，那简直就是人生大赢家了。</li>
-</ul>
-</li>
-</ol>
-
-
-<h3><strong>自我评价</strong></h3>
-
-<p>对陌陌的这则广告赞口不绝：</p>
-
-<blockquote><p>别和陌生人说话 别做新鲜事 继续过平常的生活 胆小一点 别好奇 就玩你会的 离冒险远远的 有些事想想就好 没必要改变 待在熟悉的地方 最好待在家里 听一样的音乐 见一样的人 重复同样的话题 心思别太活 梦想要实际 不要什么都尝试 就这样活着吧</p></blockquote>
-
-<p>不管年轻还是年老，封闭自我，拒绝知识体系的更新，就是人生凋零的开始。</p>
-
-<p><strong>百度沙龙</strong>
-参加百度技术沙龙感觉真的很棒，[网上的资源]也非常的丰富，这种业界的交流对自己的思路扩展和对产业、技术的认识的加深有良好的促进作用。</p>
-
-<p><strong>身体健康</strong>
-这一周自己的生活状态很健康，不过因为大雨+办公室冷气+吃辣、油腻，导致自己在周五的时候发烧腹泻，必须引以为戒。</p>
-
-<p><strong>工作梳理</strong>
-工作方面逐步找到调试方法，对代码的理解逐步加深。下周是一个过渡，阿里这边收尾，开始考虑实验室方面的工作。</p>
-
-<p><strong>就业发展</strong>
-开始关注诸如360、小米等企业；大众点评内推，学长很照顾；阿里这边两面完成，等待下周的技术提前面。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[总结]]></title>
-    <link href="http://frank19900731.github.io/blog/2013/08/17/zong-jie/"/>
-    <updated>2013-08-17T15:30:43+08:00</updated>
-    <id>http://frank19900731.github.io/blog/2013/08/17/zong-jie</id>
-    <content type="html"><![CDATA[<h2>第二周（8.11-8.17）</h2>
-
-<h3><strong>大事记</strong></h3>
-
-<ol>
-<li>参加百度技术沙龙（8.16）
-
-<ul>
-<li>今后要保持，车库咖啡环境不错，忽的感觉工作不是强迫，不是苦累，而是赚钱的同时学习，赚钱的同时开阔视野，赚钱的同时实现自我满足的一个过程。不要觉得自己是给别人干，一直是在为自己学。</li>
-<li>如果能够找到工作、学习、生活的balance，就是最美妙的感觉了，如果还能插入健康，那简直就是人生大赢家了。</li>
-</ul>
-</li>
-</ol>
-
-
-<h3><strong>自我评价</strong></h3>
-
-<p>对陌陌的这则广告赞口不绝：</p>
-
-<blockquote><p>别和陌生人说话 别做新鲜事 继续过平常的生活 胆小一点 别好奇 就玩你会的 离冒险远远的 有些事想想就好 没必要改变 待在熟悉的地方 最好待在家里 听一样的音乐 见一样的人 重复同样的话题 心思别太活 梦想要实际 不要什么都尝试 就这样活着吧</p></blockquote>
-
-<p>不管年轻还是年老，封闭自我，拒绝知识体系的更新，就是人生凋零的开始。</p>
-
-<p><strong>百度沙龙</strong>
-参加百度技术沙龙感觉真的很棒，[网上的资源]也非常的丰富，这种业界的交流对自己的思路扩展和对产业、技术的认识的加深有良好的促进作用。</p>
-
-<p><strong>身体健康</strong>
-这一周自己的生活状态很健康，不过因为大雨+办公室冷气+吃辣、油腻，导致自己在周五的时候发烧腹泻，必须引以为戒。</p>
-
-<p><strong>工作梳理</strong>
-工作方面逐步找到调试方法，对代码的理解逐步加深。下周是一个过渡，阿里这边收尾，开始考虑实验室方面的工作。</p>
-
-<p><strong>就业发展</strong>
-开始关注诸如360、小米等企业；大众点评内推，学长很照顾；阿里这边两面完成，等待下周的技术提前面。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[总结]]></title>
-    <link href="http://frank19900731.github.io/blog/2013/08/17/zong-jie/"/>
-    <updated>2013-08-17T15:30:43+08:00</updated>
-    <id>http://frank19900731.github.io/blog/2013/08/17/zong-jie</id>
-    <content type="html"><![CDATA[<h2>第二周（8.11-8.17）</h2>
-
-<h3><strong>大事记</strong></h3>
-
-<ol>
-<li>参加百度技术沙龙（8.16）
-
-<ul>
-<li>今后要保持，车库咖啡环境不错，忽的感觉工作不是强迫，不是苦累，而是赚钱的同时学习，赚钱的同时开阔视野，赚钱的同时实现自我满足的一个过程。不要觉得自己是给别人干，一直是在为自己学。</li>
-<li>如果能够找到工作、学习、生活的balance，就是最美妙的感觉了，如果还能插入健康，那简直就是人生大赢家了。</li>
-</ul>
-</li>
-</ol>
-
-
-<h3><strong>自我评价</strong></h3>
-
-<p>对陌陌的这则广告赞口不绝：</p>
-
-<blockquote><p>别和陌生人说话 别做新鲜事 继续过平常的生活 胆小一点 别好奇 就玩你会的 离冒险远远的 有些事想想就好 没必要改变 待在熟悉的地方 最好待在家里 听一样的音乐 见一样的人 重复同样的话题 心思别太活 梦想要实际 不要什么都尝试 就这样活着吧</p></blockquote>
-
-<p>不管年轻还是年老，封闭自我，拒绝知识体系的更新，就是人生凋零的开始。</p>
-
-<p><strong>百度沙龙</strong>
-参加百度技术沙龙感觉真的很棒，[网上的资源]也非常的丰富，这种业界的交流对自己的思路扩展和对产业、技术的认识的加深有良好的促进作用。</p>
-
-<p><strong>身体健康</strong>
-这一周自己的生活状态很健康，不过因为大雨+办公室冷气+吃辣、油腻，导致自己在周五的时候发烧腹泻，必须引以为戒。</p>
-
-<p><strong>工作梳理</strong>
-工作方面逐步找到调试方法，对代码的理解逐步加深。下周是一个过渡，阿里这边收尾，开始考虑实验室方面的工作。</p>
-
-<p><strong>就业发展</strong>
-开始关注诸如360、小米等企业；大众点评内推，学长很照顾；阿里这边两面完成，等待下周的技术提前面。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[总结]]></title>
-    <link href="http://frank19900731.github.io/blog/2013/08/17/zong-jie/"/>
-    <updated>2013-08-17T15:30:43+08:00</updated>
-    <id>http://frank19900731.github.io/blog/2013/08/17/zong-jie</id>
-    <content type="html"><![CDATA[<h2>第二周（8.11-8.17）</h2>
-
-<h3><strong>大事记</strong></h3>
-
-<ol>
-<li>参加百度技术沙龙（8.16）
-
-<ul>
-<li>今后要保持，车库咖啡环境不错，忽的感觉工作不是强迫，不是苦累，而是赚钱的同时学习，赚钱的同时开阔视野，赚钱的同时实现自我满足的一个过程。不要觉得自己是给别人干，一直是在为自己学。</li>
-<li>如果能够找到工作、学习、生活的balance，就是最美妙的感觉了，如果还能插入健康，那简直就是人生大赢家了。</li>
-</ul>
-</li>
-</ol>
-
-
-<h3><strong>自我评价</strong></h3>
-
-<p>对陌陌的这则广告赞口不绝：</p>
-
-<blockquote><p>别和陌生人说话 别做新鲜事 继续过平常的生活 胆小一点 别好奇 就玩你会的 离冒险远远的 有些事想想就好 没必要改变 待在熟悉的地方 最好待在家里 听一样的音乐 见一样的人 重复同样的话题 心思别太活 梦想要实际 不要什么都尝试 就这样活着吧</p></blockquote>
-
-<p>不管年轻还是年老，封闭自我，拒绝知识体系的更新，就是人生凋零的开始。</p>
-
-<p><strong>百度沙龙</strong>
-参加百度技术沙龙感觉真的很棒，[网上的资源]也非常的丰富，这种业界的交流对自己的思路扩展和对产业、技术的认识的加深有良好的促进作用。</p>
-
-<p><strong>身体健康</strong>
-这一周自己的生活状态很健康，不过因为大雨+办公室冷气+吃辣、油腻，导致自己在周五的时候发烧腹泻，必须引以为戒。</p>
-
-<p><strong>工作梳理</strong>
-工作方面逐步找到调试方法，对代码的理解逐步加深。下周是一个过渡，阿里这边收尾，开始考虑实验室方面的工作。</p>
-
-<p><strong>就业发展</strong>
-开始关注诸如360、小米等企业；大众点评内推，学长很照顾；阿里这边两面完成，等待下周的技术提前面。</p>
+<p><span class="pullquote-right" data-pullquote="surround it like this">
+Surround your paragraph with the pull quote tags. Then when you come to
+the text you want to pull, surround it like this and that’s all there is to it.
+</span></p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>Javascript Array Syntax</span><a href="http://j.mp/pPUUmW">MDN Documentation </a></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+</pre></td><td class="code"><pre><code class="js"><span class="line"><span class="kd">var</span> <span class="nx">arr1</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Array</span><span class="p">(</span><span class="nx">arrayLength</span><span class="p">);</span>
+</span><span class="line"><span class="kd">var</span> <span class="nx">arr2</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Array</span><span class="p">(</span><span class="nx">element0</span><span class="p">,</span> <span class="nx">element1</span><span class="p">,</span> <span class="p">...,</span> <span class="nx">elementN</span><span class="p">);</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Default aligned</th>
+      <th style="text-align: left">Left aligned</th>
+      <th style="text-align: center">Center aligned</th>
+      <th style="text-align: right">Right aligned</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>First body part</td>
+      <td style="text-align: left">Second cell</td>
+      <td style="text-align: center">Third cell</td>
+      <td style="text-align: right">fourth cell</td>
+    </tr>
+    <tr>
+      <td>Second line</td>
+      <td style="text-align: left">foo</td>
+      <td style="text-align: center"><strong>strong</strong></td>
+      <td style="text-align: right">baz</td>
+    </tr>
+    <tr>
+      <td>Third line</td>
+      <td style="text-align: left">quux</td>
+      <td style="text-align: center">baz</td>
+      <td style="text-align: right">bar</td>
+    </tr>
+  </tbody>
+</table>
 ]]></content>
   </entry>
   
