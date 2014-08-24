@@ -4,7 +4,7 @@
   <title><![CDATA[Blog of 太极儒]]></title>
   <link href="http://frank19900731.github.io/atom.xml" rel="self"/>
   <link href="http://frank19900731.github.io/"/>
-  <updated>2014-08-24T22:37:18+08:00</updated>
+  <updated>2014-08-25T01:07:58+08:00</updated>
   <id>http://frank19900731.github.io/</id>
   <author>
     <name><![CDATA[Frank Song]]></name>
@@ -18,7 +18,29 @@
     <link href="http://frank19900731.github.io/blog/2014/08/24/wo-de-di-yi-pian-octopress-bo-ke/"/>
     <updated>2014-08-24T21:50:56+08:00</updated>
     <id>http://frank19900731.github.io/blog/2014/08/24/wo-de-di-yi-pian-octopress-bo-ke</id>
-    <content type="html"><![CDATA[<p>random variables <script type="math/tex">X_1, X_2, X_3</script> from</p>
+    <content type="html"><![CDATA[<h1 id="section">1</h1>
+
+<h2 id="section-1">2</h2>
+
+<h3 id="section-2">3</h3>
+
+<blockquote><p>Wheeee!</p><footer><strong>Bobby Willis</strong> <cite><a href="http://google.com/search?q=pants">The Search for Bobby&#8217;s Pants</a></cite></footer></blockquote>
+
+<pre><code class="language-haskell">main = putStrLn "Hello world"
+-- kramdown's tilde fencing
+</code></pre>
+
+<ul id="markdown-toc">
+  <li><a href="#section">1</a>    <ul>
+      <li><a href="#section-1">2</a>        <ul>
+          <li><a href="#section-2">3</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p>random variables <script type="math/tex">X_1, X_2, X_3</script> from</p>
 
 <script type="math/tex; mode=display">% &lt;![CDATA[
 
@@ -41,9 +63,10 @@
   <li>Static pages like <a href="http://frank19900731.github.io/about.html">About</a> and <a href="http://frank19900731.github.io/contact.html">Contact</a>.</li>
   <li>Individual blog pages (I suppose this one is obvious).</li>
   <li>Date desceding paging indexes for all categories and tags I use (for example: <a href="http://frank19900731.github.io/category/article">/category/article/</a> and <a href="http://frank19900731.github.io/tag/jruby/">/tag/jruby/</a>).</li>
-  <li>Matching atom feeds for each of the paging indexes above (for example: <a href="http://frank19900731.github.io/category/article/atom.xml">/category/article/atom.xml</a> and <a href="http://frank19900731.github.io/tag/jruby/atom.xml">/tag/jruby/atom.xml</a>).
-<img class="left" src="http://placekitten.com/320/250" title="Place Kitten #2" /></li>
+  <li>Matching atom feeds for each of the paging indexes above (for example: <a href="http://frank19900731.github.io/category/article/atom.xml">/category/article/atom.xml</a> and <a href="http://frank19900731.github.io/tag/jruby/atom.xml">/tag/jruby/atom.xml</a>).</li>
 </ul>
+
+<p><img class="left" src="http://placekitten.com/320/250" title="Place Kitten #2" /></p>
 
 <p><span class="pullquote-right" data-pullquote="surround it like this">
 Surround your paragraph with the pull quote tags. Then when you come to
@@ -86,6 +109,7 @@ the text you want to pull, surround it like this and that’s all there is to it
     </tr>
   </tbody>
 </table>
+
 ]]></content>
   </entry>
   
