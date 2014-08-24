@@ -4,7 +4,7 @@
   <title><![CDATA[Blog of 太极儒]]></title>
   <link href="http://frank19900731.github.io/atom.xml" rel="self"/>
   <link href="http://frank19900731.github.io/"/>
-  <updated>2014-08-25T01:20:11+08:00</updated>
+  <updated>2014-08-25T02:07:32+08:00</updated>
   <id>http://frank19900731.github.io/</id>
   <author>
     <name><![CDATA[Frank Song]]></name>
@@ -79,37 +79,39 @@ the text you want to pull, surround it like this and that’s all there is to it
 </span><span class="line"><span class="kd">var</span> <span class="nx">arr2</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Array</span><span class="p">(</span><span class="nx">element0</span><span class="p">,</span> <span class="nx">element1</span><span class="p">,</span> <span class="p">...,</span> <span class="nx">elementN</span><span class="p">);</span>
 </span></code></pre></td></tr></table></div></figure></notextile></div>
 
-<table>
-  <thead>
-    <tr>
-      <th>Default aligned</th>
-      <th style="text-align: left">Left aligned</th>
-      <th style="text-align: center">Center aligned</th>
-      <th style="text-align: right">Right aligned</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>First body part</td>
-      <td style="text-align: left">Second cell</td>
-      <td style="text-align: center">Third cell</td>
-      <td style="text-align: right">fourth cell</td>
-    </tr>
-    <tr>
-      <td>Second line</td>
-      <td style="text-align: left">foo</td>
-      <td style="text-align: center"><strong>strong</strong></td>
-      <td style="text-align: right">baz</td>
-    </tr>
-    <tr>
-      <td>Third line</td>
-      <td style="text-align: left">quux</td>
-      <td style="text-align: center">baz</td>
-      <td style="text-align: right">bar</td>
-    </tr>
-  </tbody>
-</table>
+<div class="foo">
+  <table>
+    <thead>
+      <tr>
+        <th>Default aligned</th>
+        <th style="text-align: left">Left aligned</th>
+        <th style="text-align: center">Center aligned</th>
+        <th style="text-align: right">Right aligned</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>First body part</td>
+        <td style="text-align: left">Second cell</td>
+        <td style="text-align: center">Third cell</td>
+        <td style="text-align: right">fourth cell</td>
+      </tr>
+      <tr>
+        <td>Second line</td>
+        <td style="text-align: left">foo</td>
+        <td style="text-align: center"><strong>strong</strong></td>
+        <td style="text-align: right">baz</td>
+      </tr>
+      <tr>
+        <td>Third line</td>
+        <td style="text-align: left">quux</td>
+        <td style="text-align: center">baz</td>
+        <td style="text-align: right">bar</td>
+      </tr>
+    </tbody>
+  </table>
 
+</div>
 ]]></content>
   </entry>
   
