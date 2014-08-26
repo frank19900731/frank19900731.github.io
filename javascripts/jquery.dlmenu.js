@@ -153,10 +153,12 @@
 
 		},
 		_closeMenu : function() {
+
 			var self = this,
 				onTransitionEndFn = function() {
 					self.$menu.off( self.transEndEventName );
 					self._resetMenu();
+                    $('#dl-menu').css("max-width", "45px");
 				};
 
 			this.$menu.removeClass( 'dl-menuopen' );
@@ -172,12 +174,17 @@
 
 			this.open = false;
 		},
+
 		_openMenu : function() {
+
+            $('#dl-menu').css("max-width", "300px");
+
 			this.$menu.addClass( 'dl-menuopen dl-menu-toggle' ).on( this.transEndEventName, function() {
 				$( this ).removeClass( 'dl-menu-toggle' );
 			} );
 			this.$trigger.addClass( 'dl-active' );
 			this.open = true;
+
 		},
 		// resets the menu to its original state (first level of options)
 		_resetMenu : function() {
