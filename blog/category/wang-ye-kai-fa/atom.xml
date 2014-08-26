@@ -4,7 +4,7 @@
   <title><![CDATA[Category: 网页开发 | Blog of 太极儒]]></title>
   <link href="http://frank19900731.github.io/blog/category/wang-ye-kai-fa/atom.xml" rel="self"/>
   <link href="http://frank19900731.github.io/"/>
-  <updated>2014-08-25T02:07:32+08:00</updated>
+  <updated>2014-08-26T22:40:51+08:00</updated>
   <id>http://frank19900731.github.io/</id>
   <author>
     <name><![CDATA[Frank Song]]></name>
@@ -18,11 +18,156 @@
     <link href="http://frank19900731.github.io/blog/2014/08/24/wo-de-di-yi-pian-octopress-bo-ke/"/>
     <updated>2014-08-24T21:50:56+08:00</updated>
     <id>http://frank19900731.github.io/blog/2014/08/24/wo-de-di-yi-pian-octopress-bo-ke</id>
-    <content type="html"><![CDATA[<h1 id="section">1</h1>
+    <content type="html"><![CDATA[<h2 id="section">代码展示</h2>
+<p>``` objc Obj-C 用例 https://github.com/frank19900731/ObjcDemo/blob/master/ObjcDemo/Animal.m Github
+#import “Animal.h”</p>
 
-<h2 id="section-1">2</h2>
+<p>@implementation Animal
+@synthesize name, birthday;</p>
 
-<h3 id="section-2">3</h3>
+<ul>
+  <li>
+    <p>(Animal *)initWithParams:(NSString *)n birthday:(NSDate *)b
+{
+  [self setName:n];
+  [self setBirthday:b];
+  return self;
+}</p>
+  </li>
+  <li>
+    <p>(void)description
+{
+  NSLog(@”I’m a cute animal.”);
+}</p>
+  </li>
+  <li>
+    <p>(void)eat
+{
+  NSLog(@”%@ : eat delicious food”, self.name);
+}</p>
+  </li>
+  <li>
+    <p>(void)sleep
+{
+  NSLog(@”%@ : sleep for a while”, self.name);
+}</p>
+  </li>
+</ul>
+
+<p>@end
+```</p>
+
+<p>[支持的语言]http://pygments.org/docs/lexers/ <sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup></p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>Test.js for download (test.js)</span> <a href='/downloads/code/test.js'>download</a></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="cm">/**</span>
+</span><span class='line'><span class="cm"> sample javascript from xui</span>
+</span><span class='line'><span class="cm"> */</span>
+</span><span class='line'>
+</span><span class='line'><span class="kd">var</span> <span class="kc">undefined</span><span class="p">,</span>
+</span><span class='line'>    <span class="nx">xui</span><span class="p">,</span>
+</span><span class='line'>    <span class="nb">window</span>     <span class="o">=</span> <span class="k">this</span><span class="p">,</span>
+</span><span class='line'>    <span class="nx">string</span>     <span class="o">=</span> <span class="k">new</span> <span class="nb">String</span><span class="p">(</span><span class="s1">&#39;string&#39;</span><span class="p">),</span>
+</span><span class='line'>    <span class="nb">document</span>   <span class="o">=</span> <span class="nb">window</span><span class="p">.</span><span class="nb">document</span><span class="p">,</span>
+</span><span class='line'>    <span class="nx">simpleExpr</span> <span class="o">=</span> <span class="sr">/^#?([\w-]+)$/</span><span class="p">,</span>
+</span><span class='line'>    <span class="nx">idExpr</span>     <span class="o">=</span> <span class="sr">/^#/</span><span class="p">,</span>
+</span><span class='line'>    <span class="nx">tagExpr</span>    <span class="o">=</span> <span class="sr">/&lt;([\w:]+)/</span><span class="p">,</span>
+</span><span class='line'>    <span class="nx">slice</span>      <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span> <span class="k">return</span> <span class="p">[].</span><span class="nx">slice</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="nx">e</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span> <span class="p">};</span>
+</span><span class='line'><span class="k">try</span> <span class="p">{</span> <span class="kd">var</span> <span class="nx">a</span> <span class="o">=</span> <span class="nx">slice</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">documentElement</span><span class="p">.</span><span class="nx">childNodes</span><span class="p">)[</span><span class="mi">0</span><span class="p">].</span><span class="nx">nodeType</span><span class="p">;</span> <span class="p">}</span>
+</span><span class='line'><span class="k">catch</span><span class="p">(</span><span class="nx">e</span><span class="p">){</span> <span class="nx">slice</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span> <span class="kd">var</span> <span class="nx">ret</span><span class="o">=</span><span class="p">[];</span> <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="nx">e</span><span class="p">[</span><span class="nx">i</span><span class="p">];</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span>
+</span><span class='line'>    <span class="nx">ret</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">e</span><span class="p">[</span><span class="nx">i</span><span class="p">]);</span> <span class="k">return</span> <span class="nx">ret</span><span class="p">;</span> <span class="p">};</span> <span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="nb">window</span><span class="p">.</span><span class="nx">x$</span> <span class="o">=</span> <span class="nb">window</span><span class="p">.</span><span class="nx">xui</span> <span class="o">=</span> <span class="nx">xui</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">q</span><span class="p">,</span> <span class="nx">context</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="k">return</span> <span class="k">new</span> <span class="nx">xui</span><span class="p">.</span><span class="nx">fn</span><span class="p">.</span><span class="nx">find</span><span class="p">(</span><span class="nx">q</span><span class="p">,</span> <span class="nx">context</span><span class="p">);</span>
+</span><span class='line'><span class="p">};</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p><div><script src='https://gist.github.com/4321346.js?file=gistfile1.diff'></script>
+<noscript><pre><code>@@ -590,7 +590,7 @@ class SpritesTest &lt; Test::Unit::TestCase
+  it &quot;should generate a sprite from nested folders&quot; do
+    css = render &lt;&lt;-SCSS
+-     @import &quot;nested/*.png&quot;;
++     @import &quot;nested/**/*.png&quot;;
+      @include all-nested-sprites;
+    SCSS
+    assert_correct css, &lt;&lt;-CSS</code></pre></noscript></div>
+</p>
+
+<p><div><script src='https://gist.github.com/1059334.js?file=svg_bullets.rb'></script>
+<noscript><pre><code>require &#39;sass&#39;
+
+module Sass::Script::Functions
+  def svg_circle(radius, color, circle_type)
+    img = if circle_type.value == &quot;disc&quot;
+      %Q{&lt;circle cx=&quot;#{radius.value}&quot; cy=&quot;#{radius.value}&quot; r=&quot;#{radius.value}&quot;
+                          stroke-width=&quot;0&quot; fill=&quot;#{color}&quot;/&gt;}
+    else
+      %Q{&lt;circle cx=&quot;#{radius.value}&quot; cy=&quot;#{radius.value}&quot; r=&quot;#{radius.value}&quot;
+                          stroke=&quot;#{color}&quot; stroke-width=&quot;1&quot; fill=&quot;white&quot;/&gt;}
+    end
+    inline_image_string(svg_circle_envelope(img).gsub(/  +/, &#39; &#39;), &#39;image/svg+xml&#39;)
+  end
+  private
+  def svg_circle_envelope(content)
+    %Q{&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt; &lt;svg version=&quot;1.1&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;#{content}&lt;/svg&gt;}
+  end
+end
+</code></pre></noscript></div>
+
+<div><script src='https://gist.github.com/1059334.js?file=usage.scss'></script>
+<noscript><pre><code>// Draw a list style image in svg using the radius and color specified.
+@mixin colored-bullet($radius, $color, $type: disc) {
+  list-style-type: $type;
+  list-style-image: svg-circle($radius, $color, $type);
+}
+
+
+ul {
+  @include colored-bullet(2px, $green, disc);
+  ul {
+    @include colored-bullet(2px, $green, circle);
+  }
+}
+</code></pre></noscript></div>
+</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>Coffeescript Tricks </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'># Given an alphabet:
+</span><span class='line'>alphabet = ‘abcdefghijklmnopqrstuvwxyz’&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;h1 id="iterate-over-part-of-the-alphabet">Iterate over part of the alphabet:&lt;/h1>
+</span><span class='line'>&lt;p>console.log letter for letter in alphabet[4..8]</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<h1 id="section-1">1</h1>
+
+<h2 id="section-2">2</h2>
+
+<h3 id="section-3">3</h3>
 
 <p><blockquote><p>Wheeee!</p><footer><strong>Bobby Willis</strong> <cite><a href='http://google.com/search?q=pants'>The Search for Bobby’s Pants</a></cite></footer></blockquote></p>
 
@@ -31,9 +176,11 @@
 </code></pre>
 
 <ul id="markdown-toc">
-  <li><a href="#section">1</a>    <ul>
-      <li><a href="#section-1">2</a>        <ul>
-          <li><a href="#section-2">3</a></li>
+  <li><a href="#section">代码展示</a></li>
+  <li><a href="#iterate-over-part-of-the-alphabet">Iterate over part of the alphabet:</a></li>
+  <li><a href="#section-1">1</a>    <ul>
+      <li><a href="#section-2">2</a>        <ul>
+          <li><a href="#section-3">3</a></li>
         </ul>
       </li>
     </ul>
@@ -70,12 +217,6 @@
 
 <p>Surround your pullquote like this {" text to be quoted "}</p>
 
-<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>Javascript Array Syntax</span><a href='http://j.mp/pPUUmW'>MDN Documentation </a></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="kd">var</span> <span class="nx">arr1</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Array</span><span class="p">(</span><span class="nx">arrayLength</span><span class="p">);</span>
-</span><span class='line'><span class="kd">var</span> <span class="nx">arr2</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Array</span><span class="p">(</span><span class="nx">element0</span><span class="p">,</span> <span class="nx">element1</span><span class="p">,</span> <span class="err">…</span><span class="p">,</span> <span class="nx">elementN</span><span class="p">);</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div></p>
-
 <div class="foo">
   <table>
     <thead>
@@ -108,6 +249,16 @@
     </tbody>
   </table>
 
+</div>
+
+<hr />
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>脚注<a href="#fnref:1" rel="reference">&#8617;</a></p>
+    </li>
+  </ol>
 </div>
 ]]></content>
   </entry>
