@@ -4,7 +4,7 @@
   <title><![CDATA[Blog of 太极儒]]></title>
   <link href="http://frank19900731.github.io/atom.xml" rel="self"/>
   <link href="http://frank19900731.github.io/"/>
-  <updated>2014-08-27T01:10:37+08:00</updated>
+  <updated>2014-08-28T15:22:32+08:00</updated>
   <id>http://frank19900731.github.io/</id>
   <author>
     <name><![CDATA[Frank Song]]></name>
@@ -46,7 +46,6 @@
 <span class="line-number">25</span>
 <span class="line-number">26</span>
 <span class="line-number">27</span>
-<span class="line-number">28</span>
 </pre></td><td class="code"><pre><code class="objc"><span class="line"><span class="cp">#import &quot;Animal.h&quot;</span>
 </span><span class="line">
 </span><span class="line"><span class="k">@implementation</span> <span class="nc">Animal</span>
@@ -73,7 +72,6 @@
 </span><span class="line"><span class="p">{</span>
 </span><span class="line">    <span class="n">NSLog</span><span class="p">(</span><span class="s">@&quot;%@ : sleep for a while&quot;</span><span class="p">,</span> <span class="n">self</span><span class="p">.</span><span class="n">name</span><span class="p">);</span>
 </span><span class="line"><span class="p">}</span>
-</span><span class="line">
 </span><span class="line"><span class="k">@end</span>
 </span></code></pre></td></tr></table></div></figure></notextile></div>
 
