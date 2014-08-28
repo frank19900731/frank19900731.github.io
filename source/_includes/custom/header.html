@@ -1,6 +1,22 @@
-<hgroup>
-  <h1><a href="{{ root_url }}/">{{ site.title }}</a></h1>
-  {% if site.subtitle %}
-    <h2>{{ site.subtitle }}</h2>
-  {% endif %}
-</hgroup>
+<!-- custom/header.html -->
+<!-- 搜索和菜单导航 -->
+<!--
+<div class="aux-container">
+    <a id="nav-toggle" href="#sidr"></a>
+    <a id="search-toggle"></a>
+</div> -->
+
+{% include custom/dlmenu.html %}
+
+<div class="aux-container">
+
+</div>
+
+{% if index %}
+<!-- 头像位置 -->
+<header class="header-container clearfix">
+    <p style="font-size: 16pt; color: white">This is a separater.</p>
+</header>
+{% else %}
+<div style="height: 30px;"></div>
+{% endif %}

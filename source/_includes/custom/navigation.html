@@ -1,4 +1,23 @@
-<ul class="main-navigation">
-  <li><a href="{{ root_url }}/">Blog</a></li>
-  <li><a href="{{ root_url }}/blog/archives">Archives</a></li>
-</ul>
+<!-- custom/navigation.html -->
+<div id="main-nav">
+    <nav>
+        <ul>
+        	<li>
+        		<ul>
+                    <li><a href="http://songchengru.eicp.net" target="_blank">Personal Page</a>
+        			<li>Sina Blog - <a href="http://blog.sina.com/frank19900731" target="_blank">士不可以不弘毅</a></li>
+                    <li>Sina Weibo - <a href="http://weibo.sina.com/frank19900731" target="_blank">@太极儒</a></li>
+                    <li>Github - <a href="http://github.com/frank19900731" target="_blank">frank19900731</a></li>
+                    <li>Mail to Me - <a href="mailto:scr_0731@126.com" target="_blank">scr at 126</a></li>
+        		</ul>
+        	</li>
+
+                {% if site.blog_index_asides.size %}
+                {% include_array blog_index_asides %}
+                {% else %}
+                {% include_array default_asides %}
+                {% endif %}
+
+        </ul>
+    </nav>
+</div>

@@ -1,0 +1,19 @@
+---
+layout: page
+footer: false
+---
+
+<!-- layouts/tag_index.html -->
+<div id="blog-archives" class="tag">
+<div style="height: 40px;"></div>
+{% for post in site.tags[page.tag] %}
+{% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
+<article>
+  {% unless year == this_year %}
+    {% assign year = this_year %}
+    <h2 style="color: gray;font-size: 20px;">{{ year }}</h2>
+  {% endunless %}
+  {% include archive_post.html %}
+</article>
+{% endfor %}
+</div>

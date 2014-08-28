@@ -1,0 +1,19 @@
+<div id="dl-menu" class="dl-menuwrapper">
+    <button>Open Menu</button>
+    <ul class="dl-menu">
+        <li><a href="/">Home</a></li>
+        <li><a href="/archives/">Archives</a></li>
+        <li>
+            <a href="#">Categories ({{ site.categories | size }})</a>
+            <ul class="dl-submenu">
+                <li class="dl-back"><a href="#">Back</a></li>
+                <li><a href="/blog/categories">All Categories ({{ site.categories | size }})</a>
+                <li style="color: #CCCCCC; line-height: 150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Top 5</li>
+
+                {% top_category_list [counter:true] %}
+            </ul>
+        </li>
+        <li><a href="/blog/tags">All Tags ({{ site.tags | size }})</a>
+        <li><a href="/about">About</a></li>
+    </ul>
+</div><!-- /dl-menuwrapper -->

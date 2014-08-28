@@ -1,10 +1,14 @@
+<!-- post/categories.html -->
+<!-- 文章类别展示 -->
 {% capture category %}{% if post %}{{ post.categories | category_links | size }}{% else %}{{ page.categories | category_links | size }}{% endif %}{% endcapture %}
 {% unless category == '0' %}
-<span class="categories">
+<span class="categories" style="font-size: 16px;">
+  Categories:
   {% if post %}
     {{ post.categories | category_links }}
   {% else %}
     {{ page.categories | category_links }}
   {% endif %}
+
 </span>
 {% endunless %}

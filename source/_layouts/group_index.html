@@ -1,0 +1,49 @@
+---
+layout: page
+footer: false
+---
+
+<header>
+{% if page.grouptype == 'tag' %}
+    <h1 class="entry-title">Tag: {{page.tag}}</h1>
+{% elsif page.grouptype == 'category' %}
+    <h1 class="entry-title">Category: {{page.category}}</h1>
+{% endif %}
+</header>
+
+<div id="blog-archives" class="category">
+<div style="height: 40px;"></div>
+{% for post in paginator.posts %}
+{% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
+<article>
+    {% unless year == this_year %}
+    {% assign year = this_year %}
+    <h2 style="color: gray;font-size: 20px;">{{ year }}</h2>
+    {% endunless %}
+
+    {% include archive_post.html %}
+</article>
+{% endfor %}
+</div>
+
+{% if page.grouptype == 'tag' %}
+{% capture paging_root %}/tag/{{page.tag}}/{% endcapture %}
+{% elsif page.grouptype == 'category' %}
+{% capture paging_root %}/category/{{page.category}}/{% endcapture %}
+{% else %}
+{% capture paging_root %}/{% endcapture %}
+{% endif %}
+
+<div class="pagination">
+    {% if paginator.next_page %}
+    <a class="next" href="{{paging_root}}{{paginator.next_page}}">&larr; Older</a>
+    {% endif %}
+
+    {% if paginator.previous_page %}
+    {% if paginator.page == 2 %}
+    <a class="prev" href="{{paging_root}}">Newer  &rarr;</a>
+    {% else %}
+    <a class="prev" href="{{paging_root}}{{paginator.previous_page}}">Newer &rarr;</a>
+    {% endif %}
+    {% endif %}
+</div>
