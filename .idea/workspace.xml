@@ -1,7 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="c0d76ca4-948a-4929-8db0-ae6edece3084" name="Default" comment="" />
+=======
+    <list default="true" id="c0d76ca4-948a-4929-8db0-ae6edece3084" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/assets/images/ah-frame.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/_layouts/archives_index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/_includes/atom_post.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/category_list.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/category_list_tag.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/_includes/asides/comment.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/stylesheets/component.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/_layouts/default2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/_includes/dlmenu.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/_includes/custom/dlmenu.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/_includes/duoshuo.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/_layouts/group_atom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/_layouts/group_index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/blog/categories/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/blog/tags/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/javascripts/jquery.dlmenu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/javascripts/modernizr.custom.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/stylesheets/my.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/pagination_archive.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/_includes/asides/recent_visitors.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/tag_cloud.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/_includes/custom/tag_feed.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/tag_generator.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/_layouts/tag_index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/tag_list.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/_includes/asides/tags.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/_includes/post/tags.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/downloads/code/test.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/blog/2014/05/28/first-blog/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/blog/archives/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/favicon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/source/blog/archives/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/source/favicon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/stylesheets/screen.css" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/custom/_colors.scss" afterPath="$PROJECT_DIR$/sass/custom/_colors.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_config.yml" afterPath="$PROJECT_DIR$/_config.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/custom/_fonts.scss" afterPath="$PROJECT_DIR$/sass/custom/_fonts.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/custom/_layout.scss" afterPath="$PROJECT_DIR$/sass/custom/_layout.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/partials/_sidebar.scss" afterPath="$PROJECT_DIR$/sass/partials/_sidebar.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/custom/_styles.scss" afterPath="$PROJECT_DIR$/sass/custom/_styles.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/base/_theme.scss" afterPath="$PROJECT_DIR$/sass/base/_theme.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_includes/custom/asides/about.html" afterPath="$PROJECT_DIR$/source/_includes/custom/asides/about.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_includes/after_footer.html" afterPath="$PROJECT_DIR$/source/_includes/after_footer.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_includes/custom/after_footer.html" afterPath="$PROJECT_DIR$/source/_includes/custom/after_footer.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_includes/archive_post.html" afterPath="$PROJECT_DIR$/source/_includes/archive_post.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_includes/article.html" afterPath="$PROJECT_DIR$/source/_includes/article.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/atom.xml" afterPath="$PROJECT_DIR$/source/atom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_includes/post/author.html" afterPath="$PROJECT_DIR$/source/_includes/post/author.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_includes/post/categories.html" afterPath="$PROJECT_DIR$/source/_includes/post/categories.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_includes/custom/category_feed.xml" afterPath="$PROJECT_DIR$/source/_includes/custom/category_feed.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/category_generator.rb" afterPath="$PROJECT_DIR$/plugins/category_generator.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_layouts/category_index.html" afterPath="$PROJECT_DIR$/source/_layouts/category_index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_includes/post/date.html" afterPath="$PROJECT_DIR$/source/_includes/post/date.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_layouts/default.html" afterPath="$PROJECT_DIR$/source/_layouts/default.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_includes/disqus.html" afterPath="$PROJECT_DIR$/source/_includes/disqus.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_includes/post/disqus_thread.html" afterPath="$PROJECT_DIR$/source/_includes/post/disqus_thread.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_includes/footer.html" afterPath="$PROJECT_DIR$/source/_includes/footer.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_includes/custom/footer.html" afterPath="$PROJECT_DIR$/source/_includes/custom/footer.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_includes/google_analytics.html" afterPath="$PROJECT_DIR$/source/_includes/google_analytics.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_includes/head.html" afterPath="$PROJECT_DIR$/source/_includes/head.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_includes/custom/head.html" afterPath="$PROJECT_DIR$/source/_includes/custom/head.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_includes/header.html" afterPath="$PROJECT_DIR$/source/_includes/header.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_includes/custom/header.html" afterPath="$PROJECT_DIR$/source/_includes/custom/header.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/index.html" afterPath="$PROJECT_DIR$/source/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_includes/navigation.html" afterPath="$PROJECT_DIR$/source/_includes/navigation.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_includes/custom/navigation.html" afterPath="$PROJECT_DIR$/source/_includes/custom/navigation.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_layouts/page.html" afterPath="$PROJECT_DIR$/source/_layouts/page.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/pagination.rb" afterPath="$PROJECT_DIR$/plugins/pagination.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_layouts/post.html" afterPath="$PROJECT_DIR$/source/_layouts/post.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_includes/asides/recent_posts.html" afterPath="$PROJECT_DIR$/source/_includes/asides/recent_posts.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/screen.scss" afterPath="$PROJECT_DIR$/sass/screen.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_includes/post/sharing.html" afterPath="$PROJECT_DIR$/source/_includes/post/sharing.html" />
+    </list>
+>>>>>>> 4c21ca536a237da6ba61a704fa9218a476a828e5
     <ignored path="octopress.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,10 +105,15 @@
       <file leaf-file-name="dlmenu.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/_includes/custom/dlmenu.html">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state line="13" column="13" selection-start="643" selection-end="643" vertical-scroll-proportion="0.71181554" vertical-offset="0" max-vertical-offset="456">
               <folding>
                 <element signature="n#style#0;n#li#2;n#ul#0;n#li#2;n#ul#0;n#div#0;n#!!top" expanded="true" />
               </folding>
+=======
+            <state line="10" column="34" selection-start="499" selection-end="499" vertical-scroll-proportion="0.3374778" vertical-offset="0" max-vertical-offset="563">
+              <folding />
+>>>>>>> 4c21ca536a237da6ba61a704fa9218a476a828e5
             </state>
           </provider>
         </entry>
@@ -293,18 +377,31 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
+<<<<<<< HEAD
     <frame x="0" y="22" width="1280" height="714" extended-state="7" />
     <editor active="false" />
+=======
+    <frame x="0" y="22" width="1280" height="714" extended-state="6" />
+    <editor active="true" />
+>>>>>>> 4c21ca536a237da6ba61a704fa9218a476a828e5
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29140624" sideWeight="0.67205167" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32899022" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3279483" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+=======
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29140624" sideWeight="0.6720497" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32899022" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3279503" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+>>>>>>> 4c21ca536a237da6ba61a704fa9218a476a828e5
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -314,6 +411,28 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
     </layout>
+<<<<<<< HEAD
+=======
+    <layout-to-restore>
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32899022" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32899022" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29140624" sideWeight="0.6720497" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3279503" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
+>>>>>>> 4c21ca536a237da6ba61a704fa9218a476a828e5
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -431,10 +550,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/_includes/custom/dlmenu.html">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state line="13" column="13" selection-start="643" selection-end="643" vertical-scroll-proportion="0.71181554" vertical-offset="0" max-vertical-offset="456">
           <folding>
             <element signature="n#style#0;n#li#2;n#ul#0;n#li#2;n#ul#0;n#div#0;n#!!top" expanded="true" />
           </folding>
+=======
+        <state line="10" column="34" selection-start="499" selection-end="499" vertical-scroll-proportion="0.3374778" vertical-offset="0" max-vertical-offset="563">
+          <folding />
+>>>>>>> 4c21ca536a237da6ba61a704fa9218a476a828e5
         </state>
       </provider>
     </entry>
