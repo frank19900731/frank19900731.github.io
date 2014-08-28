@@ -1,0 +1,52 @@
+/*
+Syntax error: File to import not found or unreadable: compass.
+              Load path: /Users/frank/git/octopress/sass/syntax
+        on line 1 of syntax.scss
+
+1: @import "compass";
+2: @import "utilities";
+3: @import "solarized";
+4: @import "highlight";
+
+Backtrace:
+syntax.scss:1
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.19/lib/sass/tree/import_node.rb:67:in `rescue in import'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.19/lib/sass/tree/import_node.rb:45:in `import'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.19/lib/sass/tree/import_node.rb:28:in `imported_file'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.19/lib/sass/tree/import_node.rb:37:in `css_import?'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:217:in `visit_import'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:128:in `visit_root'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:7:in `visit'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.19/lib/sass/tree/root_node.rb:20:in `render'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.19/lib/sass/engine.rb:315:in `_render'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.19/lib/sass/engine.rb:262:in `render'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.19/lib/sass/plugin/compiler.rb:362:in `update_stylesheet'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.19/lib/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.19/lib/sass/plugin/compiler.rb:201:in `each'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.19/lib/sass/plugin/compiler.rb:201:in `update_stylesheets'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.19/lib/sass/plugin.rb:81:in `update_stylesheets'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.19/lib/sass/exec.rb:443:in `watch_or_update'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.19/lib/sass/exec.rb:326:in `process_result'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.19/lib/sass/exec.rb:41:in `parse'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.19/lib/sass/exec.rb:21:in `parse!'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.19/bin/scss:13:in `<top (required)>'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/bin/scss:23:in `load'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/bin/scss:23:in `<main>'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/bin/ruby_executable_hooks:15:in `eval'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/bin/ruby_executable_hooks:15:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: File to import not found or unreadable: compass.\A               Load path: /Users/frank/git/octopress/sass/syntax\A         on line 1 of syntax.scss\A \A 1: @import \"compass\";\A 2: @import \"utilities\";\A 3: @import \"solarized\";\A 4: @import \"highlight\";"; }
