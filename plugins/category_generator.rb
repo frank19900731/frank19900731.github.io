@@ -172,9 +172,44 @@ ERR
     # Returns string
     #
     def category_link(category)
-      dir = @context.registers[:site].config['category_dir']
-      "<a class='category' href='/#{dir}/#{category.to_url}/'>#{category}</a>"
+      #dir = @context.registers[:site].config['category_dir']
+      dir = "category"
+      #"<a class='category' href='/#{dir}/#{category.to_url}/'>#{category}</a>"
+      "<a class='category' href='/#{dir}/#{category}/'>#{category}</a>"
     end
+
+    #Tags
+    # Outputs a list of categories as comma-separated <a> links. This is used
+    # to output the category list for each post on a category page.
+    #
+    #  +categories+ is the list of categories to format.
+    #
+    # Returns string
+    #
+    def tag_links(tags)
+      tags = tags.sort!.map { |c| tag_link c }
+
+      case tags.length
+      when 0
+        ""
+      when 1
+        tags[0].to_s
+      else
+        "#{tags[0...-1].join(', ')}, #{tags[-1]}"
+      end
+    end
+
+    # Outputs a single category as an <a> link.
+    #
+    #  +category+ is a category string to format as an <a> link
+    #
+    # Returns string
+    #
+    def tag_link(tag)
+      dir = @context.registers[:site].config['tag_dir']
+      "<a class='tag' href='/#{dir}/#{tag.to_url}/'>#{tag}</a>"
+    end
+
 
     # Outputs the post.date as formatted html, with hooks for CSS styling.
     #

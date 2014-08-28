@@ -1,0 +1,15 @@
+<!-- post/tags.html -->
+<!-- 文章标签展示 -->
+{% capture tag %}{% if post %}{{ post.tags | tag_links | size }}{% else %}{{ page.tags | tag_links | size }}{% endif %}{% endcapture %}
+{% unless tag == '0' %}
+<span class="tags">
+  <font color="gray">Tags: </font>
+  {% if post %}
+    {{ post.tags | tag_links }}
+  {% else %}
+    {{ page.tags | tag_links }}
+  {% endif %}
+</span>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<span class="ds-thread-count" data-thread-key="{{ post.url }}" style="color: gray;"></span>
+{% endunless %}

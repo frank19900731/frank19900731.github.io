@@ -1,14 +1,31 @@
+<!-- layout/default.html -->
 {% capture root_url %}{{ site.root | strip_slash }}{% endcapture %}
 {% include head.html %}
 <body {% if page.body_id %} id="{{ page.body_id }}" {% endif %} {% if page.sidebar == false %} class="no-sidebar" {% endif %} {% if page.sidebar == 'collapse' or site.sidebar == 'collapse' %} class="collapse-sidebar sidebar-footer" {% endif %}>
-  <header role="banner">{% include header.html %}</header>
-  <nav role="navigation">{% include navigation.html %}</nav>
-  <div id="main">
-    <div id="content">
+  {% include header.html %}
+  <div class="main-container">
+    <div class="main wrapper clearfix">
+    	{% unless page.sidebar == false %}
+    	<aside>
+			{% if site.simple_search %}
+			  	<div class="search-container">
+					<form action="http://google.com/search" method="get">
+						<fieldset role="search">
+							<input type="hidden" name="q" value="site:frank19900731.github.io" />
+							<input class="search-field" type="text" name="q" results="0" placeholder=""/>
+							<input class="submit" type="submit" value=""/>
+						</fieldset>
+					</form>
+				</div>
+			{% endif %}
+            {% include navigation.html %}
+		</aside>
+		{% endunless %}
       {{ content | expand_urls: root_url }}
     </div>
   </div>
-  <footer role="contentinfo">{% include footer.html %}</footer>
+  {% include footer.html %}
   {% include after_footer.html %}
+  {% include dlmenu.html %}
 </body>
 </html>

@@ -1,0 +1,66 @@
+/*
+Syntax error: Undefined mixin 'transition'.
+        on line 108 of _styles.scss, in `transition'
+        from line 108 of _styles.scss
+
+103:   padding: 0 5.591px;
+104:   padding: 0 0.28rem;
+105: }
+106: 
+107: .button {
+108:   @include transition(all 0.3s ease 0s);
+109:   border-radius: $border-radius-size;
+110:   background-color: $accent-color;
+111:   color: #fff;
+112:   
+113:   &:hover {
+
+Backtrace:
+_styles.scss:108:in `transition'
+_styles.scss:108
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:253:in `visit_mixin'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:320:in `visit_rule'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:128:in `visit_root'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:7:in `visit'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.9/lib/sass/tree/root_node.rb:20:in `render'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.9/lib/sass/engine.rb:315:in `_render'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.9/lib/sass/engine.rb:262:in `render'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.9/lib/sass/plugin/compiler.rb:362:in `update_stylesheet'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.9/lib/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.9/lib/sass/plugin/compiler.rb:201:in `each'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.9/lib/sass/plugin/compiler.rb:201:in `update_stylesheets'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.9/lib/sass/plugin.rb:81:in `update_stylesheets'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.9/lib/sass/exec.rb:432:in `watch_or_update'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.9/lib/sass/exec.rb:315:in `process_result'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.9/lib/sass/exec.rb:41:in `parse'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.9/lib/sass/exec.rb:21:in `parse!'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.9/bin/scss:9:in `<top (required)>'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/bin/scss:23:in `load'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/bin/scss:23:in `<main>'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/bin/ruby_executable_hooks:15:in `eval'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/bin/ruby_executable_hooks:15:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Undefined mixin 'transition'.\A         on line 108 of _styles.scss, in `transition'\A         from line 108 of _styles.scss\A \A 103:   padding: 0 5.591px;\A 104:   padding: 0 0.28rem;\A 105: }\A 106: \A 107: .button {\A 108:   @include transition(all 0.3s ease 0s);\A 109:   border-radius: $border-radius-size;\A 110:   background-color: $accent-color;\A 111:   color: #fff;\A 112:   \A 113:   &:hover {"; }

@@ -1,0 +1,17 @@
+.main-container {
+    margin-top: 265px;
+    background: white
+}
+
+.hero {
+    position: fixed;
+    top: 0;
+    background-attachment: scroll;
+    background-color: white;
+    margin-top: 65px;
+    width: 100%;
+    z-index: -1;
+    height: 200px;
+    text-align: center;
+    color: white
+}

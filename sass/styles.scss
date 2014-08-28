@@ -1,0 +1,51 @@
+@import "compass";
+@include global-reset;
+
+@import "base/theme_kramdown";
+@import "base/typography_kramdown";
+
+// Includes
+@import "variables";
+@import "mixins";
+
+// Plugins
+@import "code.scss";
+//@import "coderay.scss";
+@import "sidr.scss";
+
+//General Stuff
+@import "boilerplate.scss";
+@import "structure.scss";
+@import "theme.scss";
+@import "typography.scss";
+
+.foo table{
+  font-size:16px;
+  text-align:left;
+  border-collapse:collapse;
+  margin:20px auto;
+}
+
+.foo th {
+  font-size:18px;
+  font-weight:bold;
+  color:#DD3000;
+  border-bottom: 3px solid #e8edff;
+  padding:12px 15px;
+}
+
+.foo td {
+  color:#DA3E10;
+  border-top:1px solid #e8edff;
+  padding:10px 15px;
+}
+
+.foo tr:hover td {
+  color:#FFFFFF;
+  background:#DA3E10;
+}
+
+#dl-menu {
+  z-index: 999;
+  max-width: 45px;
+}

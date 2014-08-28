@@ -1,0 +1,36 @@
+---
+layout: page
+title: Blog Archive
+footer: false
+---
+
+<div class="blog-archives">
+<div style="height: 40px;"></div>
+    {% for post in paginator.posts %}
+    {% assign content = post.content %}
+    {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
+    <article>
+        {% unless year == this_year %}
+            {% assign year = this_year %}
+            <h2 style="color: gray;font-size: 20px;">{{ year }}</h2>
+        {% endunless %}
+        {% include archive_post.html %}
+    </article>
+    {% endfor %}
+</div>
+
+{% capture paging_root %}/archives/{% endcapture %}
+
+<div class="pagination">
+    {% if paginator.next_page %}
+    <a class="next" href="{{paging_root}}{{paginator.next_page}}">&larr; Older</a>
+    {% endif %}
+
+    {% if paginator.previous_page %}
+    {% if paginator.page == 2 %}
+    <a class="prev" href="{{paging_root}}">Newer  &rarr;</a>
+    {% else %}
+    <a class="prev" href="{{paging_root}}{{paginator.previous_page}}">Newer &rarr;</a>
+    {% endif %}
+    {% endif %}
+</div>
