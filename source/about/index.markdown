@@ -1,5 +1,6 @@
 ---
 layout: page
+exclude_from_search: true
 ---
 
 #About Me - Song Chengru

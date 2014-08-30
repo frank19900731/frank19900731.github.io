@@ -104,7 +104,7 @@ module Jekyll
       if self.layouts.key? 'tag_index'
         dir = self.config['tag_dir'] || 'tags'
         self.tags.keys.each do |tag|
-          self.write_tag_index(File.join(dir, tag.to_url), tag)
+          #self.write_tag_index(File.join(dir, tag.to_url), tag)
         end
 
       # Throw an exception if the layout couldn't be found.

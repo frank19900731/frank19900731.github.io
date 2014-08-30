@@ -25,6 +25,15 @@
 						</fieldset>
 					</form>
 				</div>
+            {% else %}
+                <div class="search-container">
+                    <form action="/search" method="get">
+                        <fieldset role="search">
+                            <input type="text" class="search-field" id="search-query" name="q" placeholder="Search" autocomplete="off">
+                            <input class="submit" type="submit" value=""/>
+                        </fieldset>
+                    </form>
+                </div>
 			{% endif %}
 		  {% include navigation.html %}
 		</aside>

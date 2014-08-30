@@ -2,8 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c0d76ca4-948a-4929-8db0-ae6edece3084" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/_variables.scss" afterPath="$PROJECT_DIR$/sass/_variables.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_includes/head.html" afterPath="$PROJECT_DIR$/source/_includes/head.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/javascripts/URI.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/javascripts/date.format.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/jekyll_lunr_js_search.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/javascripts/jquery.lunr.search.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/javascripts/lunr.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/javascripts/mustache.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_config.yml" afterPath="$PROJECT_DIR$/_config.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/assets/bootstrap/docs/about.html" afterPath="$PROJECT_DIR$/source/assets/bootstrap/docs/about.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_layouts/archives_index.html" afterPath="$PROJECT_DIR$/source/_layouts/archives_index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/assets/bootstrap/docs/components.html" afterPath="$PROJECT_DIR$/source/assets/bootstrap/docs/components.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/assets/bootstrap/docs/css.html" afterPath="$PROJECT_DIR$/source/assets/bootstrap/docs/css.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/assets/bootstrap/docs/customize.html" afterPath="$PROJECT_DIR$/source/assets/bootstrap/docs/customize.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_layouts/default.html" afterPath="$PROJECT_DIR$/source/_layouts/default.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_layouts/default2.html" afterPath="$PROJECT_DIR$/source/_layouts/default2.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/assets/bootstrap/docs/getting-started.html" afterPath="$PROJECT_DIR$/source/assets/bootstrap/docs/getting-started.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_layouts/group_index.html" afterPath="$PROJECT_DIR$/source/_layouts/group_index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/index.html" afterPath="$PROJECT_DIR$/source/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/archives/index.html" afterPath="$PROJECT_DIR$/source/archives/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/assets/bootstrap/docs/index.html" afterPath="$PROJECT_DIR$/source/assets/bootstrap/docs/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/blog/index.html" afterPath="$PROJECT_DIR$/source/blog/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/blog/categories/index.html" afterPath="$PROJECT_DIR$/source/blog/categories/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/blog/tags/index.html" afterPath="$PROJECT_DIR$/source/blog/tags/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/about/index.markdown" afterPath="$PROJECT_DIR$/source/about/index.markdown" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/assets/bootstrap/docs/javascript.html" afterPath="$PROJECT_DIR$/source/assets/bootstrap/docs/javascript.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/assets/bootstrap/docs/migration.html" afterPath="$PROJECT_DIR$/source/assets/bootstrap/docs/migration.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/search.html" afterPath="$PROJECT_DIR$/source/search.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/tag_generator.rb" afterPath="$PROJECT_DIR$/plugins/tag_generator.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="octopress.iws" />
@@ -26,7 +53,35 @@
     <favorites_list name="octopress" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="jekyll_lunr_js_search.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/plugins/jekyll_lunr_js_search.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="170" column="11" selection-start="5232" selection-end="5232" vertical-scroll-proportion="-10.769231" vertical-offset="2950" max-vertical-offset="3515">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jquery.lunr.search.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/javascripts/jquery.lunr.search.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="124" column="46" selection-start="3983" selection-end="3983" vertical-scroll-proportion="-90.61539" vertical-offset="0" max-vertical-offset="3496">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lunr.min.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/source/javascripts/lunr.min.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="188" column="11" selection-start="5425" selection-end="5425" vertical-scroll-proportion="4.8401084" vertical-offset="0" max-vertical-offset="35872">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -44,30 +99,29 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/source/_includes/article.html" />
-        <option value="$PROJECT_DIR$/plugins/tag_cloud.rb" />
-        <option value="$PROJECT_DIR$/source/_includes/asides/comment.html" />
-        <option value="$PROJECT_DIR$/_config.yml" />
-        <option value="$PROJECT_DIR$/source/_includes/asides/recent_visitors.html" />
-        <option value="$PROJECT_DIR$/source/_includes/custom/after_footer.html" />
-        <option value="$PROJECT_DIR$/source/_includes/post/tags.html" />
-        <option value="$PROJECT_DIR$/source/_includes/post/disqus_thread.html" />
-        <option value="$PROJECT_DIR$/source/_includes/duoshuo.html" />
-        <option value="$PROJECT_DIR$/source/javascripts/jquery.dlmenu.js" />
-        <option value="$PROJECT_DIR$/plugins/category_sort.rb" />
-        <option value="$PROJECT_DIR$/plugins/category_list.rb" />
-        <option value="$PROJECT_DIR$/source/_includes/custom/dlmenu.html" />
-        <option value="$PROJECT_DIR$/source/_includes/head.html" />
-        <option value="$PROJECT_DIR$/sass/styles.scss" />
-        <option value="$PROJECT_DIR$/sass/_variables.scss" />
+        <option value="$PROJECT_DIR$/source/assets/bootstrap/docs/javascript.html" />
+        <option value="$PROJECT_DIR$/source/assets/bootstrap/docs/migration.html" />
+        <option value="$PROJECT_DIR$/source/search.html" />
+        <option value="$PROJECT_DIR$/source/search/index.markdown" />
+        <option value="$PROJECT_DIR$/source/_layouts/archives_index.html" />
+        <option value="$PROJECT_DIR$/plugins/tag_generator.rb" />
+        <option value="$PROJECT_DIR$/source/blog/categories/index.html" />
+        <option value="$PROJECT_DIR$/source/blog/tags/index.html" />
+        <option value="$PROJECT_DIR$/source/blog/index.html" />
+        <option value="$PROJECT_DIR$/source/index.html" />
+        <option value="$PROJECT_DIR$/source/_layouts/category_index.html" />
+        <option value="$PROJECT_DIR$/source/_layouts/tag_index.html" />
+        <option value="$PROJECT_DIR$/source/_layouts/group_index.html" />
+        <option value="$PROJECT_DIR$/plugins/jekyll_lunr_js_search.rb" />
+        <option value="$PROJECT_DIR$/source/javascripts/lunr.min.js" />
+        <option value="$PROJECT_DIR$/source/javascripts/jquery.lunr.search.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1680" />
-    <option name="y" value="-250" />
-    <option name="width" value="1680" />
-    <option name="height" value="1050" />
+    <option name="x" value="-1440" />
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -113,6 +167,52 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="octopress" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="octopress" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="source" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="octopress" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="octopress" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="source" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javascripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="octopress" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="octopress" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="plugins" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -125,16 +225,16 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../octopress_test" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/source/_includes/custom" />
+      <recent name="$PROJECT_DIR$/source" />
+      <recent name="$PROJECT_DIR$/plugins" />
       <recent name="$PROJECT_DIR$/sass" />
       <recent name="$PROJECT_DIR$/source/_layouts" />
-      <recent name="$PROJECT_DIR$/plugins" />
-      <recent name="$PROJECT_DIR$/source/_posts" />
-      <recent name="$PROJECT_DIR$/source/_includes/post" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/source/_includes/asides" />
@@ -144,6 +244,14 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
+      <method />
+    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -154,23 +262,15 @@
       <option name="showConsoleOnStdOut" value="false" />
       <method />
     </configuration>
-    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
-      <option name="VMOptions" />
-      <option name="arguments" />
-      <option name="filePath" />
-      <option name="scope" value="ALL" />
-      <option name="testName" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
-      <envs />
-      <method />
-    </configuration>
     <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
       <setting name="configLocationType" value="CONFIG_FILE" />
       <setting name="settingsFile" value="" />
       <setting name="serverType" value="INTERNAL" />
       <setting name="preferredDebugBrowser" value="CHROME" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
@@ -209,18 +309,18 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1680" y="-250" width="1680" height="1050" extended-state="6" />
-    <editor active="false" />
+    <frame x="-1440" y="0" width="1440" height="900" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22202381" sideWeight="0.6722513" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29140624" sideWeight="0.49434572" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32899022" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3277487" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3277487" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -230,6 +330,25 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32899022" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32899022" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29140624" sideWeight="0.49434572" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3277487" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -244,118 +363,114 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/source/javascripts/jquery.dlmenu.js">
+    <entry file="file://$PROJECT_DIR$/source/_includes/asides/tags.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="219" column="28" selection-start="5914" selection-end="5914" vertical-scroll-proportion="2.0270271" vertical-offset="2190" max-vertical-offset="4351">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="591">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/_includes/dlmenu.html">
+    <entry file="file://$PROJECT_DIR$/source/_includes/custom/tag_feed.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="25" selection-start="144" selection-end="144" vertical-scroll-proportion="0.063403785" vertical-offset="0" max-vertical-offset="899">
+        <state line="16" column="0" selection-start="572" selection-end="572" vertical-scroll-proportion="0.52595156" vertical-offset="0" max-vertical-offset="627">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/tag_cloud.rb">
+    <entry file="file://$PROJECT_DIR$/source/_includes/post/tags.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="100" column="26" selection-start="3169" selection-end="3169" vertical-scroll-proportion="-15.769231" vertical-offset="1490" max-vertical-offset="3572">
+        <state line="14" column="15" selection-start="502" selection-end="502" vertical-scroll-proportion="0.48363635" vertical-offset="0" max-vertical-offset="550">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/blockquote.rb">
+    <entry file="file://$PROJECT_DIR$/tags/cha-jian/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1672">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5472">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/tag_generator.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="109" column="8" selection-start="3837" selection-end="3837" vertical-scroll-proportion="0.5126812" vertical-offset="1788" max-vertical-offset="3401">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/blog/categories/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="9" selection-start="80" selection-end="80" vertical-scroll-proportion="0.1687389" vertical-offset="0" max-vertical-offset="563">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/blog/tags/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="25" selection-start="90" selection-end="90" vertical-scroll-proportion="0.1687389" vertical-offset="0" max-vertical-offset="563">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/blog/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="25" selection-start="45" selection-end="45" vertical-scroll-proportion="0.07037037" vertical-offset="0" max-vertical-offset="665">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="3" selection-start="50" selection-end="50" vertical-scroll-proportion="0.10555556" vertical-offset="0" max-vertical-offset="551">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_layouts/category_index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="13" selection-start="30" selection-end="30" vertical-scroll-proportion="0.06749556" vertical-offset="0" max-vertical-offset="563">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_layouts/tag_index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="13" selection-start="30" selection-end="30" vertical-scroll-proportion="0.07037037" vertical-offset="0" max-vertical-offset="540">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_layouts/group_index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="14" selection-start="169" selection-end="169" vertical-scroll-proportion="0.3109091" vertical-offset="0" max-vertical-offset="1045">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/plugins/cat_and_tag_generator.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1539">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.0519031" vertical-offset="608" max-vertical-offset="1539">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/category_list_tag.rb">
+    <entry file="file://$PROJECT_DIR$/plugins/jekyll_lunr_js_search.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="33" selection-start="377" selection-end="377" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="437">
+        <state line="170" column="11" selection-start="5232" selection-end="5232" vertical-scroll-proportion="-10.769231" vertical-offset="2950" max-vertical-offset="3515">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/excerptfilter.rb">
+    <entry file="file://$PROJECT_DIR$/source/javascripts/jquery.lunr.search.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="13" selection-start="216" selection-end="216" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
+        <state line="124" column="46" selection-start="3983" selection-end="3983" vertical-scroll-proportion="-90.61539" vertical-offset="0" max-vertical-offset="3496">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/_includes/custom/dlmenu.html">
+    <entry file="file://$PROJECT_DIR$/source/javascripts/lunr.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="21" selection-start="486" selection-end="486" vertical-scroll-proportion="-6.785714" vertical-offset="0" max-vertical-offset="456">
-          <folding>
-            <element signature="n#style#0;n#li#2;n#ul#0;n#li#2;n#ul#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_includes/head.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="50" selection-start="1696" selection-end="1696" vertical-scroll-proportion="-18.071428" vertical-offset="83" max-vertical-offset="969">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/category_list.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="133" column="23" selection-start="4119" selection-end="4119" vertical-scroll-proportion="0.85374147" vertical-offset="2025" max-vertical-offset="2926">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javascripts/jquery.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="92630" selection-end="92630" vertical-scroll-proportion="-3.6538463" vertical-offset="0" max-vertical-offset="209">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stylesheets/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="20268" selection-end="20268" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="133">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/stylesheets/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="2" selection-start="2" selection-end="2" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1159">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sass/styles.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="18" selection-start="141" selection-end="141" vertical-scroll-proportion="-4.75" vertical-offset="0" max-vertical-offset="1064">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sass/_variables.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="288" selection-end="288" vertical-scroll-proportion="-10.178572" vertical-offset="0" max-vertical-offset="532">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sass/custom/_fonts.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="56" selection-start="683" selection-end="683" vertical-scroll-proportion="0.45392492" vertical-offset="0" max-vertical-offset="586">
+        <state line="188" column="11" selection-start="5425" selection-end="5425" vertical-scroll-proportion="4.8401084" vertical-offset="0" max-vertical-offset="35872">
           <folding />
         </state>
       </provider>
