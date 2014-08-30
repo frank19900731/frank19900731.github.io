@@ -8,11 +8,11 @@
 <head>
   <meta charset="utf-8">
   <!-- 标签页标题 -->
-  <title>Tag: 插件 - Blog of 太极儒</title>
+  <title>search - Blog of 太极儒</title>
   <meta name="author" content="Frank Song">
   <!-- 定义description变量，如果有则用，没有则是正文，前150字 -->
   
-  <meta name="description" content="Tag: 插件">
+  <meta name="description" content="Search Search results {{#entries}} {{#date}}{{displaydate}}{{/date}} {{title}} {{/entries}} $(function() { $('#search-query').lunrSearch({ indexUrl &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -21,7 +21,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://frank19900731.github.iotags/cha-jian">
+  <link rel="canonical" href="http://frank19900731.github.io/search">
   <!-- 网站小图标 -->
   <link href="/favicon.ico" rel="icon">
   <!-- 网站样式文件 -->
@@ -43,20 +43,6 @@
   <link href="/stylesheets/component.css" rel="stylesheet" type="text/css">
 
   <!-- custom/head.html -->
-
-<script id="search-results-template" type="text/x-handlebars-template">
-  {{#entries}}
-    <article>
-      <h3>
-         <small><time datetime="{{date}}" pubdate>{{date}}</time></small>
-         <a href="{{url}}">{{title}}</a>
-         <p>tagged: {{ tags }} | category: <a href="/categories/{{category }}">{{category}}</a></p>
-      </h3>
-    </article>
-  {{/entries}}
-</script>
-
-
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
       jax: ["input/TeX", "output/HTML-CSS"],
@@ -133,14 +119,15 @@
     	
     	<aside>
 			
-            
-                <form action="/search" method="get">
-  <fieldset role ="search">
-    <input type="text" id="search-query" name="q" placeholder="Search" autocomplete="off" class="search" />
-  </fieldset>
-</form>
-
-            
+                <div class="search-container">
+                    <form action="/search" method="get">
+                        <fieldset role="search">
+                            <input type="text" class="search-field" id="search-query" name="q" placeholder="Search" autocomplete="off">
+                            <input class="submit" type="submit" value=""/>
+                        </fieldset>
+                    </form>
+                </div>
+			
             <!-- navigation.html -->
 <!-- custom/navigation.html -->
 <div id="main-nav">
@@ -197,33 +184,47 @@
 <article role="article">
   
   <header>
-    <h1 class="entry-title">Tag: 插件</h1>
+    <h1 class="entry-title">Search</h1>
   </header>
   
-  <!-- layouts/tag_index.html -->
-<div id="blog-archives" class="tag">
-<div style="height: 40px;"></div>
+  <section id="search-results" style="display: none;">
+  <p>Search results</p>
+  <div class="entries">
+  </div>
+</section>
 
+<script src="/javascripts/lunr.min.js" type="text/javascript" charset="utf-8"></script>
 
-<article>
-  
-    
-    <h2 style="color: gray;font-size: 20px;">2014</h2>
-  
-  <!-- archive_post.html -->
-<!-- archive中的文章展示 -->
+<script src="/javascripts/mustache.js" type="text/javascript" charset="utf-8"></script>
 
-<h1><a href="/blog/2014/08/24/wo-de-di-yi-pian-octopress-bo-ke/">我的第一篇 Octopress 博客</a></h1>
-<time datetime="2014-08-24T21:50:56+08:00" pubdate><span class='month'>Aug</span> <span class='day'>24</span> <span class='year'>2014</span></time>
+<script src="/javascripts/date.format.js" type="text/javascript" charset="utf-8"></script>
 
-<footer>
-  <span class="categories">posted in <a class='category' href='/category/网页开发/'>网页开发</a></span>
-</footer>
+<script src="/javascripts/URI.min.js" type="text/javascript" charset="utf-8"></script>
 
+<script src="/javascripts/jquery.lunr.search.js" type="text/javascript" charset="utf-8"></script>
 
-</article>
+<script id="search-results-template" type="text/mustache">
+  {{#entries}}
+    <article>
+      <h3>
+        {{#date}}<small><time datetime="{{pubdate}}" pubdate>{{displaydate}}</time></small>{{/date}}
+        <a href="{{url}}">{{title}}</a>
+      </h3>
+    </article>
+  {{/entries}}
+</script>
 
-</div>
+<script type="text/javascript">
+  $(function() {
+    $('#search-query').lunrSearch({
+      indexUrl: '/search.json',             // URL of the `search.json` index data for your site
+      results:  '#search-results',          // jQuery selector for the search results container
+      entries:  '.entries',                 // jQuery selector for the element to contain the results list, must be a child of the results element above.
+      template: '#search-results-template'  // jQuery selector for the Mustache.js template
+    });
+  });
+</script>
+
 
 
   
@@ -260,19 +261,6 @@
 
 <!--
 
-
-<script type="text/javascript">
-      var disqus_shortname = 'frank-octopress';
-      
-        
-        var disqus_script = 'count.js';
-      
-    (function () {
-      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
-      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    }());
-</script>
 
 
 
