@@ -4,35 +4,35 @@
         <loc>
             http://frank19900731.github.io/blog/2014/08/24/wo-de-di-yi-pian-octopress-bo-ke/
         </loc>
-        <lastmod>2014-08-28T15:21:27+08:00</lastmod>
+        <lastmod>2014-08-30T23:37:07+08:00</lastmod>
     </url>
     <url>
         <loc>http://frank19900731.github.io/about/</loc>
-        <lastmod>2014-08-24T16:17:30+08:00</lastmod>
+        <lastmod>2014-08-30T23:37:07+08:00</lastmod>
     </url>
     <url>
         <loc>http://frank19900731.github.io/archives/</loc>
-        <lastmod>2014-08-28T15:21:27+08:00</lastmod>
+        <lastmod>2014-08-30T23:37:07+08:00</lastmod>
     </url>
     <url>
         <loc>http://frank19900731.github.io/assets/bootstrap/docs/about.html</loc>
-        <lastmod>2014-06-16T00:28:33+08:00</lastmod>
+        <lastmod>2014-08-30T23:37:07+08:00</lastmod>
     </url>
     <url>
         <loc>http://frank19900731.github.io/assets/bootstrap/docs/components.html</loc>
-        <lastmod>2014-06-16T00:28:33+08:00</lastmod>
+        <lastmod>2014-08-30T23:37:07+08:00</lastmod>
     </url>
     <url>
         <loc>http://frank19900731.github.io/assets/bootstrap/docs/css.html</loc>
-        <lastmod>2014-06-16T00:28:33+08:00</lastmod>
+        <lastmod>2014-08-30T23:37:07+08:00</lastmod>
     </url>
     <url>
         <loc>http://frank19900731.github.io/assets/bootstrap/docs/customize.html</loc>
-        <lastmod>2014-06-16T00:28:33+08:00</lastmod>
+        <lastmod>2014-08-30T23:37:07+08:00</lastmod>
     </url>
     <url>
         <loc>http://frank19900731.github.io/assets/bootstrap/docs/getting-started.html</loc>
-        <lastmod>2014-06-16T00:28:33+08:00</lastmod>
+        <lastmod>2014-08-30T23:37:07+08:00</lastmod>
     </url>
     <url>
         <loc>http://frank19900731.github.io/assets/bootstrap/docs/</loc>
@@ -40,23 +40,23 @@
     </url>
     <url>
         <loc>http://frank19900731.github.io/assets/bootstrap/docs/javascript.html</loc>
-        <lastmod>2014-06-16T00:28:33+08:00</lastmod>
+        <lastmod>2014-08-30T23:37:07+08:00</lastmod>
     </url>
     <url>
         <loc>http://frank19900731.github.io/assets/bootstrap/docs/migration.html</loc>
-        <lastmod>2014-06-16T00:28:33+08:00</lastmod>
+        <lastmod>2014-08-30T23:37:07+08:00</lastmod>
     </url>
     <url>
         <loc>http://frank19900731.github.io/blog/categories/</loc>
-        <lastmod>2014-08-28T15:21:27+08:00</lastmod>
+        <lastmod>2014-08-30T23:37:07+08:00</lastmod>
     </url>
     <url>
         <loc>http://frank19900731.github.io/blog/</loc>
-        <lastmod>2014-08-28T16:48:02+08:00</lastmod>
+        <lastmod>2014-08-30T23:37:07+08:00</lastmod>
     </url>
     <url>
         <loc>http://frank19900731.github.io/blog/tags/</loc>
-        <lastmod>2014-08-28T15:21:27+08:00</lastmod>
+        <lastmod>2014-08-30T23:37:07+08:00</lastmod>
     </url>
     <url>
         <loc>http://frank19900731.github.io/feed/index.xml</loc>
@@ -64,7 +64,7 @@
     </url>
     <url>
         <loc>http://frank19900731.github.io/</loc>
-        <lastmod>2014-08-28T15:21:27+08:00</lastmod>
+        <lastmod>2014-08-30T23:37:16+08:00</lastmod>
     </url>
     <url>
         <loc>http://frank19900731.github.io/robots.txt</loc>
@@ -72,6 +72,10 @@
     </url>
     <url>
         <loc>http://frank19900731.github.io/search.html</loc>
-        <lastmod>2014-06-16T00:28:33+08:00</lastmod>
+        <lastmod>2014-08-30T23:37:07+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://frank19900731.github.io/archives//</loc>
+        <lastmod>2014-08-30T23:37:07+08:00</lastmod>
     </url>
 </urlset>

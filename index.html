@@ -43,6 +43,20 @@
   <link href="/stylesheets/component.css" rel="stylesheet" type="text/css">
 
   <!-- custom/head.html -->
+
+<script id="search-results-template" type="text/x-handlebars-template">
+  {{#entries}}
+    <article>
+      <h3>
+         <small><time datetime="{{date}}" pubdate>{{date}}</time></small>
+         <a href="{{url}}">{{title}}</a>
+         <p>tagged: {{ tags }} | category: <a href="/categories/{{category }}">{{category}}</a></p>
+      </h3>
+    </article>
+  {{/entries}}
+</script>
+
+
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
       jax: ["input/TeX", "output/HTML-CSS"],
@@ -108,16 +122,14 @@
     	
     	<aside>
 			
-			  	<div class="search-container">
-					<form action="http://google.com/search" method="get">
-						<fieldset role="search">
-							<input type="hidden" name="q" value="site:frank19900731.github.io" />
-							<input class="search-field" type="text" name="q" results="0" placeholder=""/>
-							<input class="submit" type="submit" value=""/>
-						</fieldset>
-					</form>
-				</div>
-			
+            
+                <form action="/search" method="get">
+  <fieldset role ="search">
+    <input type="text" id="search-query" name="q" placeholder="Search" autocomplete="off" class="search" />
+  </fieldset>
+</form>
+
+            
 		  <!-- navigation.html -->
 <!-- custom/navigation.html -->
 <div id="main-nav">
