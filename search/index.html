@@ -91,13 +91,13 @@
         <li><a href="/">Home</a></li>
         <li><a href="/archives/">Archives</a></li>
         <li>
-            <a href="#">Categories (1)</a>
+            <a href="#">Categories (2)</a>
             <ul class="dl-submenu">
                 <li class="dl-back"><a href="#">Back</a></li>
-                <li><a href="/blog/categories">All Categories (1)</a>
+                <li><a href="/blog/categories">All Categories (2)</a>
                 <li style="color: #CCCCCC; line-height: 150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Top 5</li>
 
-                <li><a href='/category/网页开发'>网页开发 (1)</a></li>
+                <li><a href='/category/个人总结'>个人总结 (1)</a></li><li><a href='/category/网页开发'>网页开发 (1)</a></li>
             </ul>
         </li>
         <li><a href="/blog/tags">All Tags (2)</a>
@@ -151,6 +151,10 @@
 <ul>
 	
     <li>
+    	<a href="/blog/2014/08/31/2014nian-8yue-fen-di-4zhou-zong-jie/">2014年8月份第4周总结</a>
+    </li>
+    
+    <li>
     	<a href="/blog/2014/08/24/wo-de-di-yi-pian-octopress-bo-ke/">我的第一篇 Octopress 博客</a>
     </li>
     
@@ -189,7 +193,7 @@
   
   <section id="search-results" style="display: none;">
   <p>Search results</p>
-  <div class="entries">
+  <div class="entries" style="margin-top: 25px;">
   </div>
 </section>
 
@@ -205,7 +209,7 @@
 
 <script id="search-results-template" type="text/mustache">
   {{#entries}}
-    <article>
+    <article style="margin-bottom: 10px;">
       <h3>
         {{#date}}<small><time datetime="{{pubdate}}" pubdate>{{displaydate}}</time></small>{{/date}}
         <a href="{{url}}">{{title}}</a>
