@@ -4,7 +4,7 @@
   <title><![CDATA[Blog of 太极儒]]></title>
   <link href="http://frank19900731.github.io/feed" rel="self"/>
   <link href="http://frank19900731.github.io/"/>
-  <updated>2014-08-31T13:26:31+08:00</updated>
+  <updated>2014-08-31T13:29:40+08:00</updated>
   <id>http://frank19900731.github.io/</id>
   <author>
     <name><![CDATA[Frank Song]]></name>
@@ -18,9 +18,7 @@
     <link href="http://frank19900731.github.io/blog/2014/08/31/2014nian-8yue-fen-di-4zhou-zong-jie/"/>
     <updated>2014-08-31T10:35:49+08:00</updated>
     <id>http://frank19900731.github.io/blog/2014/08/31/2014nian-8yue-fen-di-4zhou-zong-jie</id>
-    <content type="html"><![CDATA[<p><input type="hidden" value="2014年8月份第4周总结" /></p>
-
-<h2 id="section">代码展示</h2>
+    <content type="html"><![CDATA[<h2 id="section">代码展示</h2>
 <div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>Obj-C 用例</span><a href="https://github.com/frank19900731/ObjcDemo/blob/master/ObjcDemo/Animal.m">Github</a></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
 <span class="line-number">2</span>
 <span class="line-number">3</span>
@@ -288,9 +286,7 @@ the text you want to pull, surround it like this and that’s all there is to it
     <link href="http://frank19900731.github.io/blog/2014/08/24/wo-de-di-yi-pian-octopress-bo-ke/"/>
     <updated>2014-08-24T21:50:56+08:00</updated>
     <id>http://frank19900731.github.io/blog/2014/08/24/wo-de-di-yi-pian-octopress-bo-ke</id>
-    <content type="html"><![CDATA[<p><input type="hidden" value="我的第一篇 Octopress 博客" /></p>
-
-<h2 id="section">代码展示</h2>
+    <content type="html"><![CDATA[<h2 id="section">代码展示</h2>
 <div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>Obj-C 用例</span><a href="https://github.com/frank19900731/ObjcDemo/blob/master/ObjcDemo/Animal.m">Github</a></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
 <span class="line-number">2</span>
 <span class="line-number">3</span>
