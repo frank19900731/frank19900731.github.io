@@ -10,7 +10,7 @@ exclude_from_search: true
 
 <section id="search-results" style="display: none;">
   <p>Search results</p>
-  <div class="entries">
+  <div class="entries" style="margin-top: 25px;">
   </div>
 </section>
 
@@ -23,7 +23,7 @@ exclude_from_search: true
 {% raw %}
 <script id="search-results-template" type="text/mustache">
   {{#entries}}
-    <article>
+    <article style="margin-bottom: 10px;">
       <h3>
         {{#date}}<small><time datetime="{{pubdate}}" pubdate>{{displaydate}}</time></small>{{/date}}
         <a href="{{url}}">{{title}}</a>
