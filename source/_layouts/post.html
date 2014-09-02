@@ -9,17 +9,17 @@ single: true
 <article>
 	{% include article.html %}
 
-    <div style="width: 100%; margin-top: 20px;">
+    <div style="width: 100%; margin-top: 30px;">
         <span style="float:left">
-            {% if page.previous %} <a href="{{ page.previous.url }}">« {{ page.previous.title | truncate:10 }}</a> {% endif %}
+            {% if page.previous %} <a href="{{ page.previous.url }}">« {{ page.previous.title | truncate:24 }}</a> {% endif %}
         </span>
         <span style="float:right">
-            {% if page.next %} <a href="{{ page.next.url }}">{{ page.next.title | truncate:10 }} » </a> {% endif %}
+            {% if page.next %} <a href="{{ page.next.url }}">{{ page.next.title | truncate:24 }} » </a> {% endif %}
         </span>
     </div>
 
 	{% if site.disqus_short_name and page.comments == true %}
-	  <section class="comments">
+	  <section class="comments" style="padding-top: 30px;">
 	    <div id="disqus_thread" aria-live="polite">{% include post/disqus_thread.html %}</div>
 	  </section>
 	{% endif %}
