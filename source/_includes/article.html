@@ -20,11 +20,11 @@
 <hr />
 <!-- 如果在索引中 -->
 {% if index %}
-  <section>{{ content | extract_excerpt }}</section>
+  <section class="article-index">{{ content | extract_excerpt }}</section>
   <a href="{{ root_url }}{{ post.url }}">继续阅读</a>&nbsp;&nbsp;&nbsp;&nbsp;
 {% else %}
   <!-- 直接展示出内容 -->
-  <section style="margin-bottom: 20px;">{{ content }}</section>
+  <section class="article-detail" style="margin-bottom: 20px;">{{ content }}</section>
 {% endif %}
 
 {% include post/tags.html %}

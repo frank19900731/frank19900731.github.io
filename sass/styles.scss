@@ -49,3 +49,84 @@
   z-index: 999;
   max-width: 45px;
 }
+
+.article-detail h1, .article-detail h2, .article-detail h3,
+.article-detail h4, .article-detail h5, .article-detail h6 {
+  border-radius: 20px;
+  padding-left: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background: -webkit-linear-gradient(left, rgba(184,214,224,1) , rgba(255,255,255,0)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, rgba(184,214,224,1) , rgba(255,255,255,0)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, rgba(184,214,224,1) , rgba(255,255,255,0)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, rgba(184,214,224,1) , rgba(255,255,255,0)); /* Standard syntax */
+}
+
+.article-detail h1 {
+  width: 100%;
+}
+
+.article-detail h2 {
+  width: 85%;
+}
+
+.article-detail h3 {
+  width: 65%;
+}
+
+.article-detail h4 {
+  width: 50%;
+}
+
+.article-detail h5 {
+  width: 40%;
+}
+
+.article-detail h6 {
+  width: 30%;
+}
+
+#gotop{
+  display:block;
+  width:60px;
+  height:60px;
+  position:fixed;
+  bottom:50px;
+  right:40px;
+  border-radius:10px 10px 10px 10px;
+  text-decoration:none;
+  display:none;
+  background-color:#999999;
+}
+
+#gotop span{
+  display:block;
+  width:60px;
+  color:#dddddd;
+}
+#gotop span:hover{
+  color:#cccccc;
+}
+#gotop span{
+  font-size:40px;
+  text-align:center;
+  margin-top:4px;
+}
+
+#float-index {
+  display:block;
+  width:250px;
+  position:fixed;
+  bottom:40px;
+  right:150px;
+  border-radius:10px 10px 10px 10px;
+  text-decoration:none;
+  display:none;
+  border-radius: 10px;
+  border: 2px solid rgba(234,62,10,1);
+}
+
+#float-index #markdown-toc {
+  margin-top: 10px;
+  margin-left: 30px;
+}
