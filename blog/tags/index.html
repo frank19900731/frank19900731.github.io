@@ -12,9 +12,10 @@
   <meta name="author" content="Frank Song">
   <!-- 定义description变量，如果有则用，没有则是正文，前150字 -->
   
-  <meta name="description" content=" Blog Tags octopress (1)
-插件 (1)
-校招链接 (1) ">
+  <meta name="description" content=" Blog Tags kramdown syntax (1)
+octopress (1)
+校招链接 (1)
+雷达图 (1) ">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -102,7 +103,7 @@
                 <li><a href='/category/就业'>就业 (1)</a></li><li><a href='/category/个人总结'>个人总结 (1)</a></li><li><a href='/category/网页开发'>网页开发 (1)</a></li>
             </ul>
         </li>
-        <li><a href="/blog/tags">All Tags (3)</a>
+        <li><a href="/blog/tags">All Tags (4)</a>
         <li><a href="/about">About</a></li>
     </ul>
 </div><!-- /dl-menuwrapper -->
@@ -169,9 +170,10 @@
 <li>
     <h3>Tags</h3>
     <ul class="tag-cloud">
-        <a style="font-size: 140%" href="/tag/octopress/">octopress</a>
-<a style="font-size: 140%" href="/tag/插件/">插件</a>
+        <a style="font-size: 140%" href="/tag/kramdown syntax/">kramdown syntax</a>
+<a style="font-size: 140%" href="/tag/octopress/">octopress</a>
 <a style="font-size: 140%" href="/tag/校招链接/">校招链接</a>
+<a style="font-size: 140%" href="/tag/雷达图/">雷达图</a>
 
     </ul>
 </li><li>
@@ -201,9 +203,10 @@
   <div id="blog-tags">
     <hr>
     <ul>
-        <li class='tag'><a href='/tag/octopress/'>octopress (1)</a></li>
-<li class='tag'><a href='/tag/插件/'>插件 (1)</a></li>
+        <li class='tag'><a href='/tag/kramdown-syntax/'>kramdown syntax (1)</a></li>
+<li class='tag'><a href='/tag/octopress/'>octopress (1)</a></li>
 <li class='tag'><a href='/tag/校招链接/'>校招链接 (1)</a></li>
+<li class='tag'><a href='/tag/雷达图/'>雷达图 (1)</a></li>
 
     </ul>
 </div>
@@ -257,6 +260,36 @@
 <script type="text/javascript">
     $(function() {
         $('#dl-menu').dlmenu();
+    });
+</script>
+  <a id="gotop" href="#">
+    <span>▲</span>
+</a>
+
+<div id="float-index">
+</div>
+
+<script type="text/javascript">
+    $(function(){
+        $(window).scroll(function(){  //只要窗口滚动,就触发下面代码
+            var scrollt = document.documentElement.scrollTop + document.body.scrollTop; //获取滚动后的高度
+            if( scrollt >300 ){  //判断滚动后高度超过200px,就显示
+                $("#gotop").fadeIn(400); //淡出
+            }else{
+                $("#gotop").stop().fadeOut(400); //如果返回或者没有超过,就淡入.必须加上stop()停止之前动画,否则会出现闪动
+            }
+
+            if(scrollt > 1000) {
+                $("#float-index").fadeIn(400);
+            } else {
+                $("#float-index").stop().fadeOut(10);
+            }
+        });
+        $("#gotop").click(function(){ //当点击标签的时候,使用animate在200毫秒的时间内,滚到顶部
+            $("html,body").animate({scrollTop:"0px"},200);
+        });
+
+        $("#markdown-toc").clone(true).appendTo("#float-index");
     });
 </script>
 </body>
