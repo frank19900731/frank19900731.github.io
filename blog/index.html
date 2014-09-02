@@ -611,7 +611,6 @@ also possible.</p>
   <a id="gotop" href="#">
     <span>▲</span>
 </a>
-
 <div id="float-index">
 </div>
 
@@ -635,7 +634,11 @@ also possible.</p>
             $("html,body").animate({scrollTop:"0px"},200);
         });
 
-        $("#markdown-toc").clone(true).appendTo("#float-index");
+        if ($("#markdown-toc").length > 0) {
+            $("#markdown-toc").clone(true).appendTo("#float-index");
+        } else {
+            $("#float-index").remove();
+        }
     });
 </script>
 </body>

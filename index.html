@@ -182,7 +182,7 @@
 
 
 
-<article style="background-color: rgba(244, 244, 244, 0.5); padding: 15px 15px 15px 15px; border-radius: 20px;">
+<article style="background-color: rgba(222, 222, 222, 0.5); padding: 15px 15px 15px 15px; border-radius: 20px;">
 	<!-- article.html -->
 <!-- 文章展示，区分在索引页和文章页 -->
 <header>
@@ -277,7 +277,7 @@
 </article>
 
 
-<article style="background-color: rgba(244, 244, 244, 0.5); padding: 15px 15px 15px 15px; border-radius: 20px;">
+<article style="background-color: rgba(222, 222, 222, 0.5); padding: 15px 15px 15px 15px; border-radius: 20px;">
 	<!-- article.html -->
 <!-- 文章展示，区分在索引页和文章页 -->
 <header>
@@ -346,7 +346,7 @@
 </article>
 
 
-<article style="background-color: rgba(244, 244, 244, 0.5); padding: 15px 15px 15px 15px; border-radius: 20px;">
+<article style="background-color: rgba(222, 222, 222, 0.5); padding: 15px 15px 15px 15px; border-radius: 20px;">
 	<!-- article.html -->
 <!-- 文章展示，区分在索引页和文章页 -->
 <header>
@@ -560,7 +560,6 @@ also possible.</p>
   <a id="gotop" href="#">
     <span>▲</span>
 </a>
-
 <div id="float-index">
 </div>
 
@@ -584,7 +583,11 @@ also possible.</p>
             $("html,body").animate({scrollTop:"0px"},200);
         });
 
-        $("#markdown-toc").clone(true).appendTo("#float-index");
+        if ($("#markdown-toc").length > 0) {
+            $("#markdown-toc").clone(true).appendTo("#float-index");
+        } else {
+            $("#float-index").remove();
+        }
     });
 </script>
 </body>
