@@ -4,7 +4,7 @@
   <title><![CDATA[Blog of 太极儒]]></title>
   <link href="http://frank19900731.github.io/atom.xml" rel="self"/>
   <link href="http://frank19900731.github.io/"/>
-  <updated>2014-09-02T16:07:16+08:00</updated>
+  <updated>2014-09-03T02:07:02+08:00</updated>
   <id>http://frank19900731.github.io/</id>
   <author>
     <name><![CDATA[Frank Song]]></name>
@@ -37,6 +37,8 @@
 
 <p><a href="http://campus.sogou.com/?show.page/achieve">搜狗</a></p>
 
+<p><a href="http://www.hotjob.cn/wt/sina/web/templet1000/index/corpwebPosition1000sina!getPostListByCondition?positionType=0&amp;brandCode=1&amp;useForm=0&amp;recruitType=1&amp;showComp=true&amp;urlCorpEdition=null&amp;operational=D28977237630A659C96DE14A5560C16A73AEF91683DCD19467A5A42F190422AF112707A59F14B926BC3E5DEB86BD4C85EEC3CF644D58CF9DE37FE924995A8EF706808FC2E27ACB42CC43C5E1CF97C10E7DAB212D459955EECF690AE889A2A346D7EAE896601F0B27046BFE007E94869EC33B7F9E5E5DD3B813365609223FDAC148FAC99C32F7DBDAF52A5EA0525AE56ABC349E2123F95B4261272A09DD89AE8B3E693A75666D12221CABFE777C5EE8196D1AEE5BF1E6E4E0F6EE1446BE21ADD8">新浪微博</a></p>
+
 <p><a href="http://www.hotjob.cn/wt/meituan/web/index">美团</a></p>
 
 <p><a href="http://campus.chinahr.com/2014/pages/msfte/ch/jobs.asp">微软</a></p>
@@ -50,266 +52,7 @@
     <link href="http://frank19900731.github.io/blog/2014/08/31/2014nian-8yue-fen-di-4zhou-zong-jie/"/>
     <updated>2014-08-31T10:35:49+08:00</updated>
     <id>http://frank19900731.github.io/blog/2014/08/31/2014nian-8yue-fen-di-4zhou-zong-jie</id>
-    <content type="html"><![CDATA[<h2 id="section">代码展示</h2>
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>Obj-C 用例</span><a href="https://github.com/frank19900731/ObjcDemo/blob/master/ObjcDemo/Animal.m">Github</a></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-<span class="line-number">5</span>
-<span class="line-number">6</span>
-<span class="line-number">7</span>
-<span class="line-number">8</span>
-<span class="line-number">9</span>
-<span class="line-number">10</span>
-<span class="line-number">11</span>
-<span class="line-number">12</span>
-<span class="line-number">13</span>
-<span class="line-number">14</span>
-<span class="line-number">15</span>
-<span class="line-number">16</span>
-<span class="line-number">17</span>
-<span class="line-number">18</span>
-<span class="line-number">19</span>
-<span class="line-number">20</span>
-<span class="line-number">21</span>
-<span class="line-number">22</span>
-<span class="line-number">23</span>
-<span class="line-number">24</span>
-<span class="line-number">25</span>
-<span class="line-number">26</span>
-<span class="line-number">27</span>
-</pre></td><td class="code"><pre><code class="objc"><span class="line"><span class="cp">#import &quot;Animal.h&quot;</span>
-</span><span class="line">
-</span><span class="line"><span class="k">@implementation</span> <span class="nc">Animal</span>
-</span><span class="line"><span class="k">@synthesize</span> <span class="n">name</span><span class="p">,</span> <span class="n">birthday</span><span class="p">;</span>
-</span><span class="line">
-</span><span class="line"><span class="k">-</span> <span class="p">(</span><span class="n">Animal</span> <span class="o">*</span><span class="p">)</span><span class="nf">initWithParams:</span><span class="p">(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">n</span> <span class="nf">birthday:</span><span class="p">(</span><span class="n">NSDate</span> <span class="o">*</span><span class="p">)</span><span class="nv">b</span>
-</span><span class="line"><span class="p">{</span>
-</span><span class="line">    <span class="p">[</span><span class="n">self</span> <span class="nl">setName:</span><span class="n">n</span><span class="p">];</span>
-</span><span class="line">    <span class="p">[</span><span class="n">self</span> <span class="nl">setBirthday:</span><span class="n">b</span><span class="p">];</span>
-</span><span class="line">    <span class="k">return</span> <span class="n">self</span><span class="p">;</span>
-</span><span class="line"><span class="p">}</span>
-</span><span class="line">
-</span><span class="line"><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">description</span>
-</span><span class="line"><span class="p">{</span>
-</span><span class="line">    <span class="n">NSLog</span><span class="p">(</span><span class="s">@&quot;I&#39;m a cute animal.&quot;</span><span class="p">);</span>
-</span><span class="line"><span class="p">}</span>
-</span><span class="line">
-</span><span class="line"><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">eat</span>
-</span><span class="line"><span class="p">{</span>
-</span><span class="line">    <span class="n">NSLog</span><span class="p">(</span><span class="s">@&quot;%@ : eat delicious food&quot;</span><span class="p">,</span> <span class="n">self</span><span class="p">.</span><span class="n">name</span><span class="p">);</span>
-</span><span class="line"><span class="p">}</span>
-</span><span class="line">
-</span><span class="line"><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">sleep</span>
-</span><span class="line"><span class="p">{</span>
-</span><span class="line">    <span class="n">NSLog</span><span class="p">(</span><span class="s">@&quot;%@ : sleep for a while&quot;</span><span class="p">,</span> <span class="n">self</span><span class="p">.</span><span class="n">name</span><span class="p">);</span>
-</span><span class="line"><span class="p">}</span>
-</span><span class="line"><span class="k">@end</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<p>[支持的语言]http://pygments.org/docs/lexers/ <sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup></p>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>Test.js for download (test.js)</span> <a href="http://frank19900731.github.io/downloads/code/test.js">download</a></figcaption>
-<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-<span class="line-number">5</span>
-<span class="line-number">6</span>
-<span class="line-number">7</span>
-<span class="line-number">8</span>
-<span class="line-number">9</span>
-<span class="line-number">10</span>
-<span class="line-number">11</span>
-<span class="line-number">12</span>
-<span class="line-number">13</span>
-<span class="line-number">14</span>
-<span class="line-number">15</span>
-<span class="line-number">16</span>
-<span class="line-number">17</span>
-<span class="line-number">18</span>
-<span class="line-number">19</span>
-<span class="line-number">20</span>
-</pre></td><td class="code"><pre><code class="js"><span class="line"><span class="cm">/**</span>
-</span><span class="line"><span class="cm"> sample javascript from xui</span>
-</span><span class="line"><span class="cm"> */</span>
-</span><span class="line">
-</span><span class="line"><span class="kd">var</span> <span class="kc">undefined</span><span class="p">,</span>
-</span><span class="line">    <span class="nx">xui</span><span class="p">,</span>
-</span><span class="line">    <span class="nb">window</span>     <span class="o">=</span> <span class="k">this</span><span class="p">,</span>
-</span><span class="line">    <span class="nx">string</span>     <span class="o">=</span> <span class="k">new</span> <span class="nb">String</span><span class="p">(</span><span class="s1">&#39;string&#39;</span><span class="p">),</span>
-</span><span class="line">    <span class="nb">document</span>   <span class="o">=</span> <span class="nb">window</span><span class="p">.</span><span class="nb">document</span><span class="p">,</span>
-</span><span class="line">    <span class="nx">simpleExpr</span> <span class="o">=</span> <span class="sr">/^#?([\w-]+)$/</span><span class="p">,</span>
-</span><span class="line">    <span class="nx">idExpr</span>     <span class="o">=</span> <span class="sr">/^#/</span><span class="p">,</span>
-</span><span class="line">    <span class="nx">tagExpr</span>    <span class="o">=</span> <span class="sr">/&lt;([\w:]+)/</span><span class="p">,</span>
-</span><span class="line">    <span class="nx">slice</span>      <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span> <span class="k">return</span> <span class="p">[].</span><span class="nx">slice</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="nx">e</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span> <span class="p">};</span>
-</span><span class="line"><span class="k">try</span> <span class="p">{</span> <span class="kd">var</span> <span class="nx">a</span> <span class="o">=</span> <span class="nx">slice</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">documentElement</span><span class="p">.</span><span class="nx">childNodes</span><span class="p">)[</span><span class="mi">0</span><span class="p">].</span><span class="nx">nodeType</span><span class="p">;</span> <span class="p">}</span>
-</span><span class="line"><span class="k">catch</span><span class="p">(</span><span class="nx">e</span><span class="p">){</span> <span class="nx">slice</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span> <span class="kd">var</span> <span class="nx">ret</span><span class="o">=</span><span class="p">[];</span> <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="nx">e</span><span class="p">[</span><span class="nx">i</span><span class="p">];</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span>
-</span><span class="line">    <span class="nx">ret</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">e</span><span class="p">[</span><span class="nx">i</span><span class="p">]);</span> <span class="k">return</span> <span class="nx">ret</span><span class="p">;</span> <span class="p">};</span> <span class="p">}</span>
-</span><span class="line">
-</span><span class="line"><span class="nb">window</span><span class="p">.</span><span class="nx">x$</span> <span class="o">=</span> <span class="nb">window</span><span class="p">.</span><span class="nx">xui</span> <span class="o">=</span> <span class="nx">xui</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">q</span><span class="p">,</span> <span class="nx">context</span><span class="p">)</span> <span class="p">{</span>
-</span><span class="line">    <span class="k">return</span> <span class="k">new</span> <span class="nx">xui</span><span class="p">.</span><span class="nx">fn</span><span class="p">.</span><span class="nx">find</span><span class="p">(</span><span class="nx">q</span><span class="p">,</span> <span class="nx">context</span><span class="p">);</span>
-</span><span class="line"><span class="p">};</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<div><script src="https://gist.github.com/4321346.js?file=gistfile1.diff"></script>
-<noscript><pre><code>@@ -590,7 +590,7 @@ class SpritesTest &lt; Test::Unit::TestCase
-  it &quot;should generate a sprite from nested folders&quot; do
-    css = render &lt;&lt;-SCSS
--     @import &quot;nested/*.png&quot;;
-+     @import &quot;nested/**/*.png&quot;;
-      @include all-nested-sprites;
-    SCSS
-    assert_correct css, &lt;&lt;-CSS</code></pre></noscript></div>
-
-<div><script src="https://gist.github.com/1059334.js?file=svg_bullets.rb"></script>
-<noscript><pre><code>require &#39;sass&#39;
-
-module Sass::Script::Functions
-  def svg_circle(radius, color, circle_type)
-    img = if circle_type.value == &quot;disc&quot;
-      %Q{&lt;circle cx=&quot;#{radius.value}&quot; cy=&quot;#{radius.value}&quot; r=&quot;#{radius.value}&quot;
-                          stroke-width=&quot;0&quot; fill=&quot;#{color}&quot;/&gt;}
-    else
-      %Q{&lt;circle cx=&quot;#{radius.value}&quot; cy=&quot;#{radius.value}&quot; r=&quot;#{radius.value}&quot;
-                          stroke=&quot;#{color}&quot; stroke-width=&quot;1&quot; fill=&quot;white&quot;/&gt;}
-    end
-    inline_image_string(svg_circle_envelope(img).gsub(/  +/, &#39; &#39;), &#39;image/svg+xml&#39;)
-  end
-  private
-  def svg_circle_envelope(content)
-    %Q{&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt; &lt;svg version=&quot;1.1&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;#{content}&lt;/svg&gt;}
-  end
-end
-</code></pre></noscript></div>
-
-<div><script src="https://gist.github.com/1059334.js?file=usage.scss"></script>
-<noscript><pre><code>// Draw a list style image in svg using the radius and color specified.
-@mixin colored-bullet($radius, $color, $type: disc) {
-  list-style-type: $type;
-  list-style-image: svg-circle($radius, $color, $type);
-}
-
-
-ul {
-  @include colored-bullet(2px, $green, disc);
-  ul {
-    @include colored-bullet(2px, $green, circle);
-  }
-}
-</code></pre></noscript></div>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>Coffeescript Tricks </span></figcaption>
-<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-<span class="line-number">5</span>
-</pre></td><td class="code"><pre><code class=""><span class="line"># Given an alphabet:
-</span><span class="line">alphabet = 'abcdefghijklmnopqrstuvwxyz'
-</span><span class="line">
-</span><span class="line"># Iterate over part of the alphabet:
-</span><span class="line">console.log letter for letter in alphabet[4..8]</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<h1 id="section-1">1</h1>
-
-<h2 id="section-2">2</h2>
-
-<h3 id="section-3">3</h3>
-
-<blockquote><p>Wheeee!</p><footer><strong>Bobby Willis</strong> <cite><a href="http://google.com/search?q=pants">The Search for Bobby&#8217;s Pants</a></cite></footer></blockquote>
-
-<pre><code class="language-haskell">main = putStrLn "Hello world"
--- kramdown's tilde fencing
-</code></pre>
-
-<ul id="markdown-toc">
-  <li><a href="#section">代码展示</a></li>
-  <li><a href="#section-1">1</a>    <ul>
-      <li><a href="#section-2">2</a>        <ul>
-          <li><a href="#section-3">3</a></li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-</ul>
-
-<p>random variables <script type="math/tex">X_1, X_2, X_3</script> from</p>
-
-<script type="math/tex; mode=display">% &lt;![CDATA[
-
-\begin{align}
-\mbox{Union: } & A\cup B = \{x\mid x\in A \mbox{ or } x\in B\} \\
-\mbox{Concatenation: } & A\circ B  = \{xy\mid x\in A \mbox{ and } y\in B\} \\
-\mbox{Star: } & A^\star  = \{x_1x_2\ldots x_k \mid  k\geq 0 \mbox{ and each } x_i\in A\} \\
-\end{align}
- %]]&gt;</script>
-
-<p><a href="http://www.jekyllrb.com">Jekyll</a> is a very popular and very powerful static blog generator. Out of the box it’s able to generate sophisticated site structures, and has a ton of configurability. One of the areas where I feel that Jekyll lacks some sophistication is around the handling of categories and tags; these are two data-sets that are core to Jekyll, but there isn’t a lot of functionality actually built around them. This is in contrast to dynamic blogging platforms like <a href="http://www.wordpress.com">WordPress</a>, or possibly <a href="http://www.drupal.org">Drupal</a>, where these two data points are used to drive a lot of central navigation for the site.</p>
-
-<p>To be fair, Jekyll is really intended to be a framework for expansion into larger degrees of customization and sophistication, and thankfully it has a very powerful plugin model. Higher-level frameworks like <a href="http://www.octopress.org">Octopress</a> and <a href="http://www.jekyllbootstrap.com">Jekyll Bootstrap</a> have shown what you can do with a little extra tweaking - as have the long list of <a href="https://github.com/mojombo/jekyll/wiki/Plugins">Jekyll plugins</a>.</p>
-
-<p>When I set out to move my site over to Jekyll, one of my key goals was to still support all of the key navigation my site was capable of with my custom platform code, and Wordpress before it. That pretty much amounts to:</p>
-
-<ul>
-  <li>A date descending paging root for all blog entries (<a href="http://frank19900731.github.io/index.html">/index.html</a>).</li>
-  <li>A matching Atom feed for the root index.</li>
-  <li>Static pages like <a href="http://frank19900731.github.io/about.html">About</a> and <a href="http://frank19900731.github.io/contact.html">Contact</a>.</li>
-  <li>Individual blog pages (I suppose this one is obvious).</li>
-  <li>Date desceding paging indexes for all categories and tags I use (for example: <a href="http://frank19900731.github.io/category/article">/category/article/</a> and <a href="http://frank19900731.github.io/tag/jruby/">/tag/jruby/</a>).</li>
-  <li>Matching atom feeds for each of the paging indexes above (for example: <a href="http://frank19900731.github.io/category/article/atom.xml">/category/article/atom.xml</a> and <a href="http://frank19900731.github.io/tag/jruby/atom.xml">/tag/jruby/atom.xml</a>).</li>
-</ul>
-
-<p><img class="left" src="http://placekitten.com/320/250" title="Place Kitten #2" /></p>
-
-<p><span class="pullquote-right" data-pullquote="surround it like this">
-Surround your paragraph with the pull quote tags. Then when you come to
-the text you want to pull, surround it like this and that’s all there is to it.
-</span></p>
-
-<div class="foo">
-  <table>
-    <thead>
-      <tr>
-        <th>Default aligned</th>
-        <th style="text-align: left">Left aligned</th>
-        <th style="text-align: center">Center aligned</th>
-        <th style="text-align: right">Right aligned</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>First body part</td>
-        <td style="text-align: left">Second cell</td>
-        <td style="text-align: center">Third cell</td>
-        <td style="text-align: right">fourth cell</td>
-      </tr>
-      <tr>
-        <td>Second line</td>
-        <td style="text-align: left">foo</td>
-        <td style="text-align: center"><strong>strong</strong></td>
-        <td style="text-align: right">baz</td>
-      </tr>
-      <tr>
-        <td>Third line</td>
-        <td style="text-align: left">quux</td>
-        <td style="text-align: center">baz</td>
-        <td style="text-align: right">bar</td>
-      </tr>
-    </tbody>
-  </table>
-
-</div>
-
-<hr />
-
-<div class="footnotes">
-  <ol>
-    <li id="fn:1">
-      <p>脚注<a href="#fnref:1" rel="reference">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
+    <content type="html"><![CDATA[<p>暂无。</p>
 ]]></content>
   </entry>
   
@@ -318,8 +61,147 @@ the text you want to pull, surround it like this and that’s all there is to it
     <link href="http://frank19900731.github.io/blog/2014/08/24/wo-de-di-yi-pian-octopress-bo-ke/"/>
     <updated>2014-08-24T21:50:56+08:00</updated>
     <id>http://frank19900731.github.io/blog/2014/08/24/wo-de-di-yi-pian-octopress-bo-ke</id>
-    <content type="html"><![CDATA[<h2 id="section">代码展示</h2>
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>Obj-C 用例</span><a href="https://github.com/frank19900731/ObjcDemo/blob/master/ObjcDemo/Animal.m">Github</a></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+    <content type="html"><![CDATA[<p><strong>目录</strong></p>
+
+<ul id="markdown-toc">
+  <li><a href="#section">段落分级</a></li>
+  <li><a href="#blockquote">BlockQuote</a></li>
+  <li><a href="#section-1">代码展示</a></li>
+  <li><a href="#inline-code">使用 Inline Code</a></li>
+  <li><a href="#section-2">使用脚注</a></li>
+  <li><a href="#section-3">使用目录</a></li>
+  <li><a href="#section-4">使用数学公式</a></li>
+  <li><a href="#section-5">使用链接</a></li>
+  <li><a href="#section-6">使用图片</a></li>
+  <li><a href="#pullquote">使用 pullquote</a></li>
+  <li><a href="#section-7">使用表格</a></li>
+  <li><a href="#horizontal-rules">使用 Horizontal Rules</a></li>
+  <li><a href="#section-8">使用列表</a></li>
+  <li><a href="#section-9">使用定义列表</a></li>
+  <li><a href="#attribute">为块级元素添加 attribute</a></li>
+  <li><a href="#inline--attribute">为 inline 元素添加 attribute</a></li>
+  <li><a href="#section-10">使用扩展</a></li>
+  <li><a href="#section-11">使用文字修饰</a></li>
+  <li><a href="#typographic-symbols">使用 Typographic Symbols</a></li>
+</ul>
+
+<h1 id="section">段落分级</h1>
+<p>以 # 的个数表示段落层次。</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>段落分级</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+</pre></td><td class="code"><pre><code class="objc"><span class="line"><span class="cp"># 第一级目录</span>
+</span><span class="line"><span class="cp">## 第二级目录</span>
+</span><span class="line"><span class="cp">### 第三级目录</span>
+</span><span class="line"><span class="cp">#### 第四级目录</span>
+</span><span class="line"><span class="cp">##### 第五级目录</span>
+</span><span class="line"><span class="cp">###### 第六级目录</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+<p>还可以表示为</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>段落分级</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+</pre></td><td class="code"><pre><code class="objc"><span class="line"><span class="err">第一级标题</span>
+</span><span class="line"><span class="o">===============</span>
+</span><span class="line">
+</span><span class="line"><span class="err">第二级标题</span>
+</span><span class="line"><span class="o">---------------</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<h1 id="blockquote">BlockQuote</h1>
+<ul>
+  <li>方法一： 使用 &gt;</li>
+</ul>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>使用 &gt;</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+</pre></td><td class="code"><pre><code class="objc"><span class="line"><span class="o">&gt;</span> <span class="n">A</span> <span class="n">sample</span> <span class="n">blockquote</span><span class="p">.</span>
+</span><span class="line"><span class="o">&gt;</span>
+</span><span class="line"><span class="o">&gt;</span> <span class="o">&gt;</span><span class="n">Nested</span> <span class="n">blockquotes</span> <span class="n">are</span>
+</span><span class="line"><span class="o">&gt;</span> <span class="o">&gt;</span><span class="n">also</span> <span class="n">possible</span><span class="p">.</span>
+</span><span class="line"><span class="o">&gt;</span>
+</span><span class="line"><span class="o">&gt;</span> <span class="n">This</span> <span class="n">is</span> <span class="n">the</span> <span class="n">outer</span> <span class="n">quote</span> <span class="n">again</span><span class="p">.</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<blockquote>
+  <p>A sample blockquote.</p>
+
+  <blockquote>
+    <p>Nested blockquotes are
+also possible.</p>
+  </blockquote>
+
+  <p>This is the outer quote again.</p>
+</blockquote>
+
+<p>在 blockquote 中添加诸如 header 等的块级元素无妨。</p>
+
+<ul>
+  <li>方法二：使用 blockquote 作标记</li>
+</ul>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>使用 blockquote 标签</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+</pre></td><td class="code"><pre><code class="objc"><span class="line"><span class="p">{</span><span class="o">%</span> <span class="n">blockquote</span> <span class="n">Bobby</span> <span class="n">Willis</span> <span class="nl">http:</span><span class="c1">//google.com/search?q=pants the search for bobby&#39;s pants %}</span>
+</span><span class="line"><span class="n">Wheeee</span><span class="o">!</span>
+</span><span class="line"><span class="p">{</span><span class="o">%</span> <span class="n">endblockquote</span> <span class="o">%</span><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<blockquote><p>Wheeee!</p><footer><strong>Bobby Willis</strong> <cite><a href="http://google.com/search?q=pants">The Search for Bobby&#8217;s Pants</a></cite></footer></blockquote>
+
+<h1 id="section-1">代码展示</h1>
+<ul>
+  <li>方法一：缩进一个 tab</li>
+</ul>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>使用缩进展示代码</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class="objc"><span class="line"><span class="n">System</span><span class="p">.</span><span class="n">out</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;Hello World!&quot;</span><span class="p">);</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<pre><code>System.out.println("Hello World!");
+</code></pre>
+
+<ul>
+  <li>方法二：使用波浪线</li>
+</ul>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>使用波浪线展示代码</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+</pre></td><td class="code"><pre><code class="objc"><span class="line"><span class="o">~~~~~~</span>
+</span><span class="line"><span class="n">This</span> <span class="n">is</span> <span class="n">also</span> <span class="n">a</span> <span class="n">code</span> <span class="n">block</span><span class="p">.</span>
+</span><span class="line"><span class="o">~~~</span>
+</span><span class="line"><span class="n">Ending</span> <span class="n">lines</span> <span class="n">must</span> <span class="n">have</span> <span class="n">at</span> <span class="n">least</span> <span class="n">as</span>
+</span><span class="line"><span class="n">many</span> <span class="n">tildes</span> <span class="n">as</span> <span class="n">the</span> <span class="n">starting</span> <span class="n">line</span><span class="p">.</span>
+</span><span class="line"><span class="o">~~~~~~~~~~~~</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<pre><code>This is also a code block.
+~~~
+Ending lines must have at least as
+many tildes as the starting line.
+</code></pre>
+
+<ul>
+  <li>方法三：使用连续 3 个 ` 作标记</li>
+</ul>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>使用连续3个 ` 展示代码</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
 <span class="line-number">2</span>
 <span class="line-number">3</span>
 <span class="line-number">4</span>
@@ -330,52 +212,48 @@ the text you want to pull, surround it like this and that’s all there is to it
 <span class="line-number">9</span>
 <span class="line-number">10</span>
 <span class="line-number">11</span>
-<span class="line-number">12</span>
-<span class="line-number">13</span>
-<span class="line-number">14</span>
-<span class="line-number">15</span>
-<span class="line-number">16</span>
-<span class="line-number">17</span>
-<span class="line-number">18</span>
-<span class="line-number">19</span>
-<span class="line-number">20</span>
-<span class="line-number">21</span>
-<span class="line-number">22</span>
-<span class="line-number">23</span>
-<span class="line-number">24</span>
-<span class="line-number">25</span>
-<span class="line-number">26</span>
-<span class="line-number">27</span>
-</pre></td><td class="code"><pre><code class="objc"><span class="line"><span class="cp">#import &quot;Animal.h&quot;</span>
+</pre></td><td class="code"><pre><code class="objc"><span class="line"><span class="mi">3</span><span class="err">`</span> <span class="n">objc</span> <span class="n">Obj</span><span class="o">-</span><span class="n">C</span> <span class="err">用例</span> <span class="nl">https:</span><span class="c1">//github.com/frank19900731/ObjcDemo/blob/master/ObjcDemo/Animal.m Github</span>
+</span><span class="line"><span class="cp">#import &quot;Animal.h&quot;</span>
 </span><span class="line">
 </span><span class="line"><span class="k">@implementation</span> <span class="nc">Animal</span>
-</span><span class="line"><span class="k">@synthesize</span> <span class="n">name</span><span class="p">,</span> <span class="n">birthday</span><span class="p">;</span>
-</span><span class="line">
-</span><span class="line"><span class="k">-</span> <span class="p">(</span><span class="n">Animal</span> <span class="o">*</span><span class="p">)</span><span class="nf">initWithParams:</span><span class="p">(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">n</span> <span class="nf">birthday:</span><span class="p">(</span><span class="n">NSDate</span> <span class="o">*</span><span class="p">)</span><span class="nv">b</span>
-</span><span class="line"><span class="p">{</span>
-</span><span class="line">    <span class="p">[</span><span class="n">self</span> <span class="nl">setName:</span><span class="n">n</span><span class="p">];</span>
-</span><span class="line">    <span class="p">[</span><span class="n">self</span> <span class="nl">setBirthday:</span><span class="n">b</span><span class="p">];</span>
-</span><span class="line">    <span class="k">return</span> <span class="n">self</span><span class="p">;</span>
-</span><span class="line"><span class="p">}</span>
 </span><span class="line">
 </span><span class="line"><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">description</span>
 </span><span class="line"><span class="p">{</span>
 </span><span class="line">    <span class="n">NSLog</span><span class="p">(</span><span class="s">@&quot;I&#39;m a cute animal.&quot;</span><span class="p">);</span>
 </span><span class="line"><span class="p">}</span>
+</span><span class="line"><span class="k">@end</span>
+</span><span class="line"><span class="mi">3</span><span class="err">`</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>Obj-C 用例</span><a href="https://github.com/frank19900731/ObjcDemo/blob/master/ObjcDemo/Animal.m">Github</a></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+</pre></td><td class="code"><pre><code class="objc"><span class="line"><span class="cp">#import &quot;Animal.h&quot;</span>
 </span><span class="line">
-</span><span class="line"><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">eat</span>
-</span><span class="line"><span class="p">{</span>
-</span><span class="line">    <span class="n">NSLog</span><span class="p">(</span><span class="s">@&quot;%@ : eat delicious food&quot;</span><span class="p">,</span> <span class="n">self</span><span class="p">.</span><span class="n">name</span><span class="p">);</span>
-</span><span class="line"><span class="p">}</span>
+</span><span class="line"><span class="k">@implementation</span> <span class="nc">Animal</span>
 </span><span class="line">
-</span><span class="line"><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">sleep</span>
+</span><span class="line"><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">description</span>
 </span><span class="line"><span class="p">{</span>
-</span><span class="line">    <span class="n">NSLog</span><span class="p">(</span><span class="s">@&quot;%@ : sleep for a while&quot;</span><span class="p">,</span> <span class="n">self</span><span class="p">.</span><span class="n">name</span><span class="p">);</span>
+</span><span class="line">    <span class="n">NSLog</span><span class="p">(</span><span class="s">@&quot;I&#39;m a cute animal.&quot;</span><span class="p">);</span>
 </span><span class="line"><span class="p">}</span>
 </span><span class="line"><span class="k">@end</span>
 </span></code></pre></td></tr></table></div></figure></notextile></div>
 
-<p>[支持的语言]http://pygments.org/docs/lexers/ <sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup></p>
+<p><a href="http://pygments.org/docs/lexers/">支持的语言</a> </p>
+
+<ul>
+  <li>方法四：导入文件中的代码</li>
+</ul>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>导入文件中的代码</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class="objc"><span class="line"><span class="p">{</span><span class="o">%</span> <span class="n">include_code</span> <span class="n">Test</span><span class="p">.</span><span class="n">js</span> <span class="k">for</span> <span class="n">download</span> <span class="n">test</span><span class="p">.</span><span class="n">js</span> <span class="o">%</span><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
 
 <div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>Test.js for download (test.js)</span> <a href="http://frank19900731.github.io/downloads/code/test.js">download</a></figcaption>
 <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
@@ -420,6 +298,14 @@ the text you want to pull, surround it like this and that’s all there is to it
 </span><span class="line"><span class="p">};</span>
 </span></code></pre></td></tr></table></div></figure></notextile></div>
 
+<ul>
+  <li>方法五：导入 gist 中的代码</li>
+</ul>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>导入 gist 中的代码</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class="objc"><span class="line"><span class="p">{</span><span class="o">%</span> <span class="n">gist</span> <span class="mi">4321346</span> <span class="n">gistfile1</span><span class="p">.</span><span class="n">diff</span> <span class="o">%</span><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
 <div><script src="https://gist.github.com/4321346.js?file=gistfile1.diff"></script>
 <noscript><pre><code>@@ -590,7 +590,7 @@ class SpritesTest &lt; Test::Unit::TestCase
   it &quot;should generate a sprite from nested folders&quot; do
@@ -429,6 +315,12 @@ the text you want to pull, surround it like this and that’s all there is to it
       @include all-nested-sprites;
     SCSS
     assert_correct css, &lt;&lt;-CSS</code></pre></noscript></div>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>导入 gist 中的代码</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+</pre></td><td class="code"><pre><code class="objc"><span class="line"><span class="p">{</span><span class="o">%</span> <span class="n">gist</span> <span class="mi">1059334</span> <span class="n">svg_bullets</span><span class="p">.</span><span class="n">rb</span> <span class="o">%</span><span class="p">}</span>
+</span><span class="line"><span class="p">{</span><span class="o">%</span> <span class="n">gist</span> <span class="mi">1059334</span> <span class="n">usage</span><span class="p">.</span><span class="n">scss</span> <span class="o">%</span><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
 
 <div><script src="https://gist.github.com/1059334.js?file=svg_bullets.rb"></script>
 <noscript><pre><code>require &#39;sass&#39;
@@ -467,6 +359,28 @@ ul {
 }
 </code></pre></noscript></div>
 
+<ul>
+  <li>方法六：使用 codeblock 作标记</li>
+</ul>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>使用 codeblock 展示代码</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+</pre></td><td class="code"><pre><code class="objc"><span class="line"><span class="p">{</span><span class="o">%</span> <span class="n">codeblock</span> <span class="n">Coffeescript</span> <span class="n">Tricks</span> <span class="o">%</span><span class="p">}</span>
+</span><span class="line">
+</span><span class="line"><span class="cp"># Given an alphabet:</span>
+</span><span class="line"><span class="n">alphabet</span> <span class="o">=</span> <span class="err">&#39;</span><span class="n">abcdefghijklmnopqrstuvwxyz</span><span class="err">&#39;</span>
+</span><span class="line">
+</span><span class="line"><span class="cp"># Iterate over part of the alphabet:</span>
+</span><span class="line"><span class="n">console</span><span class="p">.</span><span class="n">log</span> <span class="n">letter</span> <span class="k">for</span> <span class="n">letter</span> <span class="k">in</span> <span class="n">alphabet</span><span class="p">[</span><span class="mf">4..8</span><span class="p">]</span>
+</span><span class="line"><span class="p">{</span><span class="o">%</span> <span class="n">endcodeblock</span> <span class="o">%</span><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
 <div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>Coffeescript Tricks </span></figcaption>
 <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
 <span class="line-number">2</span>
@@ -479,28 +393,66 @@ ul {
 </span><span class="line"># Iterate over part of the alphabet:
 </span><span class="line">console.log letter for letter in alphabet[4..8]</span></code></pre></td></tr></table></div></figure></notextile></div>
 
-<h1 id="section-1">1</h1>
+<h1 id="inline-code">使用 Inline Code</h1>
 
-<h2 id="section-2">2</h2>
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>使用 Inline Code</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+</pre></td><td class="code"><pre><code class="objc"><span class="line"><span class="n">Use</span> <span class="err">`</span><span class="n">Kramdown</span><span class="o">::</span><span class="n">Document</span><span class="p">.</span><span class="n">new</span><span class="p">(</span><span class="n">text</span><span class="p">).</span><span class="n">to_html</span><span class="err">`</span>
+</span><span class="line"><span class="n">to</span> <span class="n">convert</span> <span class="n">the</span> <span class="err">`</span><span class="n">text</span><span class="err">`</span> <span class="k">in</span> <span class="n">kramdown</span>
+</span><span class="line"><span class="n">syntax</span> <span class="n">to</span> <span class="n">HTML</span><span class="p">.</span>
+</span><span class="line">
+</span><span class="line"><span class="n">Use</span> <span class="n">backticks</span> <span class="n">to</span> <span class="n">markup</span> <span class="n">code</span><span class="p">,</span>
+</span><span class="line"><span class="n">e</span><span class="p">.</span><span class="n">g</span><span class="p">.</span> <span class="err">``</span> <span class="err">`</span><span class="n">code</span><span class="err">`</span> <span class="err">``</span><span class="p">.</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
 
-<h3 id="section-3">3</h3>
+<p>Use <code>Kramdown::Document.new(text).to_html</code>
+to convert the <code>text</code> in kramdown
+syntax to HTML.</p>
 
-<blockquote><p>Wheeee!</p><footer><strong>Bobby Willis</strong> <cite><a href="http://google.com/search?q=pants">The Search for Bobby&#8217;s Pants</a></cite></footer></blockquote>
+<p>Use backticks to markup code,
+e.g. <code>`code`</code>.</p>
 
-<pre><code class="language-haskell">main = putStrLn "Hello world"
--- kramdown's tilde fencing
-</code></pre>
+<h1 id="section-2">使用脚注</h1>
 
-<ul id="markdown-toc">
-  <li><a href="#section">代码展示</a></li>
-  <li><a href="#section-1">1</a>    <ul>
-      <li><a href="#section-2">2</a>        <ul>
-          <li><a href="#section-3">3</a></li>
-        </ul>
-      </li>
-    </ul>
-  </li>
+<p>我的脚注<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup></p>
+
+<h1 id="section-3">使用目录</h1>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>使用目录</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+</pre></td><td class="code"><pre><code class="objc"><span class="line"><span class="o">*</span> <span class="n">list</span> <span class="n">element</span> <span class="n">with</span> <span class="n">functor</span> <span class="n">item</span>
+</span><span class="line"><span class="p">{</span><span class="o">:</span><span class="n">toc</span><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<ul>
+  <li>list element with functor item</li>
 </ul>
+
+<h1 id="section-4">使用数学公式</h1>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>使用数学公式</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+</pre></td><td class="code"><pre><code class="objc"><span class="line"><span class="n">random</span> <span class="n">variables</span> <span class="n">$$X_1</span><span class="p">,</span> <span class="n">X_2</span><span class="p">,</span> <span class="n">X_3$$</span> <span class="n">from</span>
+</span><span class="line">
+</span><span class="line"><span class="n">$$</span>
+</span><span class="line"><span class="err">\</span><span class="n">begin</span><span class="p">{</span><span class="n">align</span><span class="p">}</span>
+</span><span class="line"><span class="err">\</span><span class="n">mbox</span><span class="p">{</span><span class="nl">Union:</span> <span class="p">}</span> <span class="o">&amp;</span> <span class="n">A</span><span class="err">\</span><span class="n">cup</span> <span class="n">B</span> <span class="o">=</span> <span class="err">\</span><span class="p">{</span><span class="n">x</span><span class="err">\</span><span class="n">mid</span> <span class="n">x</span><span class="err">\</span><span class="k">in</span> <span class="n">A</span> <span class="err">\</span><span class="n">mbox</span><span class="p">{</span> <span class="n">or</span> <span class="p">}</span> <span class="n">x</span><span class="err">\</span><span class="k">in</span> <span class="n">B</span><span class="err">\</span><span class="p">}</span> <span class="err">\</span>\
+</span><span class="line"><span class="err">\</span><span class="n">mbox</span><span class="p">{</span><span class="nl">Concatenation:</span> <span class="p">}</span> <span class="o">&amp;</span> <span class="n">A</span><span class="err">\</span><span class="n">circ</span> <span class="n">B</span>  <span class="o">=</span> <span class="err">\</span><span class="p">{</span><span class="n">xy</span><span class="err">\</span><span class="n">mid</span> <span class="n">x</span><span class="err">\</span><span class="k">in</span> <span class="n">A</span> <span class="err">\</span><span class="n">mbox</span><span class="p">{</span> <span class="n">and</span> <span class="p">}</span> <span class="n">y</span><span class="err">\</span><span class="k">in</span> <span class="n">B</span><span class="err">\</span><span class="p">}</span> <span class="err">\</span>\
+</span><span class="line"><span class="err">\</span><span class="n">mbox</span><span class="p">{</span><span class="nl">Star:</span> <span class="p">}</span> <span class="o">&amp;</span> <span class="n">A</span><span class="o">^</span><span class="err">\</span><span class="n">star</span>  <span class="o">=</span> <span class="err">\</span><span class="p">{</span><span class="n">x_1x_2</span><span class="err">\</span><span class="n">ldots</span> <span class="n">x_k</span> <span class="err">\</span><span class="n">mid</span>  <span class="n">k</span><span class="err">\</span><span class="n">geq</span> <span class="mi">0</span> <span class="err">\</span><span class="n">mbox</span><span class="p">{</span> <span class="n">and</span> <span class="n">each</span> <span class="p">}</span> <span class="n">x_i</span><span class="err">\</span><span class="k">in</span> <span class="n">A</span><span class="err">\</span><span class="p">}</span> <span class="err">\</span>\
+</span><span class="line"><span class="err">\</span><span class="n">end</span><span class="p">{</span><span class="n">align</span><span class="p">}</span>
+</span><span class="line"><span class="n">$$</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
 
 <p>random variables <script type="math/tex">X_1, X_2, X_3</script> from</p>
 
@@ -513,27 +465,84 @@ ul {
 \end{align}
  %]]&gt;</script>
 
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+</pre></td><td class="code"><pre><code class="objc"><span class="line"><span class="n">The</span> <span class="n">following</span> <span class="n">is</span> <span class="n">a</span> <span class="n">math</span> <span class="nl">block:</span>
+</span><span class="line">
+</span><span class="line"><span class="n">$$</span> <span class="mi">5</span> <span class="o">+</span> <span class="mi">5</span> <span class="n">$$</span>
+</span><span class="line">
+</span><span class="line"><span class="n">But</span> <span class="n">next</span> <span class="n">comes</span> <span class="n">a</span> <span class="n">paragraph</span> <span class="n">with</span> <span class="n">an</span> <span class="kr">inline</span> <span class="n">math</span> <span class="nl">statement:</span>
+</span><span class="line">
+</span><span class="line"><span class="err">\</span><span class="n">$$</span> <span class="mi">5</span> <span class="o">+</span> <span class="mi">5</span> <span class="n">$$</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>The following is a math block:</p>
+
+<script type="math/tex; mode=display"> 5 + 5 </script>
+
+<p>But next comes a paragraph with an inline math statement:</p>
+
+<p><script type="math/tex"> 5 + 5 </script></p>
+
+<h1 id="section-5">使用链接</h1>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>使用链接</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class="objc"><span class="line"><span class="p">[</span><span class="n">Jekyll</span><span class="p">](</span><span class="nl">http:</span><span class="c1">//www.jekyllrb.com) is a very popular and very powerful static blog generator. Out of the box it&#39;s able to generate sophisticated site structures, and has a ton of configurability. One of the areas where I feel that Jekyll lacks some sophistication is around the handling of categories and tags; these are two data-sets that are core to Jekyll, but there isn&#39;t a lot of functionality actually built around them. This is in contrast to dynamic blogging platforms like [WordPress](http://www.wordpress.com), or possibly [Drupal](http://www.drupal.org), where these two data points are used to drive a lot of central navigation for the site.</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
 <p><a href="http://www.jekyllrb.com">Jekyll</a> is a very popular and very powerful static blog generator. Out of the box it’s able to generate sophisticated site structures, and has a ton of configurability. One of the areas where I feel that Jekyll lacks some sophistication is around the handling of categories and tags; these are two data-sets that are core to Jekyll, but there isn’t a lot of functionality actually built around them. This is in contrast to dynamic blogging platforms like <a href="http://www.wordpress.com">WordPress</a>, or possibly <a href="http://www.drupal.org">Drupal</a>, where these two data points are used to drive a lot of central navigation for the site.</p>
 
-<p>To be fair, Jekyll is really intended to be a framework for expansion into larger degrees of customization and sophistication, and thankfully it has a very powerful plugin model. Higher-level frameworks like <a href="http://www.octopress.org">Octopress</a> and <a href="http://www.jekyllbootstrap.com">Jekyll Bootstrap</a> have shown what you can do with a little extra tweaking - as have the long list of <a href="https://github.com/mojombo/jekyll/wiki/Plugins">Jekyll plugins</a>.</p>
+<h1 id="section-6">使用图片</h1>
 
-<p>When I set out to move my site over to Jekyll, one of my key goals was to still support all of the key navigation my site was capable of with my custom platform code, and Wordpress before it. That pretty much amounts to:</p>
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>使用图片</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class="objc"><span class="line"><span class="p">{</span><span class="o">%</span> <span class="n">img</span> <span class="n">left</span> <span class="nl">http:</span><span class="c1">//placekitten.com/320/250 Place Kitten #2 %}</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
 
-<ul>
-  <li>A date descending paging root for all blog entries (<a href="http://frank19900731.github.io/index.html">/index.html</a>).</li>
-  <li>A matching Atom feed for the root index.</li>
-  <li>Static pages like <a href="http://frank19900731.github.io/about.html">About</a> and <a href="http://frank19900731.github.io/contact.html">Contact</a>.</li>
-  <li>Individual blog pages (I suppose this one is obvious).</li>
-  <li>Date desceding paging indexes for all categories and tags I use (for example: <a href="http://frank19900731.github.io/category/article">/category/article/</a> and <a href="http://frank19900731.github.io/tag/jruby/">/tag/jruby/</a>).</li>
-  <li>Matching atom feeds for each of the paging indexes above (for example: <a href="http://frank19900731.github.io/category/article/atom.xml">/category/article/atom.xml</a> and <a href="http://frank19900731.github.io/tag/jruby/atom.xml">/tag/jruby/atom.xml</a>).</li>
-</ul>
+<p><img class="left" src="http://placekitten.com/320/250" title="Place Kitten" /></p>
 
-<p><img class="left" src="http://placekitten.com/320/250" title="Place Kitten #2" /></p>
+<h1 id="pullquote">使用 pullquote</h1>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>使用 pullquote</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+</pre></td><td class="code"><pre><code class="objc"><span class="line"><span class="p">{</span><span class="o">%</span> <span class="n">pullquote</span> <span class="o">%</span><span class="p">}</span>
+</span><span class="line"><span class="n">Surround</span> <span class="n">your</span> <span class="n">paragraph</span> <span class="n">with</span> <span class="n">the</span> <span class="n">pull</span> <span class="n">quote</span> <span class="n">tags</span><span class="p">.</span> <span class="n">Then</span> <span class="n">when</span> <span class="n">you</span> <span class="n">come</span> <span class="n">to</span>
+</span><span class="line"><span class="n">the</span> <span class="n">text</span> <span class="n">you</span> <span class="n">want</span> <span class="n">to</span> <span class="n">pull</span><span class="p">,</span> <span class="p">{</span><span class="s">&quot; surround it like this &quot;</span><span class="p">}</span> <span class="n">and</span> <span class="n">that</span><span class="err">&#39;</span><span class="n">s</span> <span class="n">all</span> <span class="n">there</span> <span class="n">is</span> <span class="n">to</span> <span class="n">it</span><span class="p">.</span>
+</span><span class="line"><span class="p">{</span><span class="o">%</span> <span class="n">endpullquote</span> <span class="o">%</span><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
 
 <p><span class="pullquote-right" data-pullquote="surround it like this">
 Surround your paragraph with the pull quote tags. Then when you come to
 the text you want to pull, surround it like this and that’s all there is to it.
 </span></p>
+
+<h1 id="section-7">使用表格</h1>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>使用表格</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+</pre></td><td class="code"><pre><code class="objc"><span class="line"><span class="o">&lt;</span><span class="n">div</span> <span class="n">markdown</span><span class="o">=</span><span class="sc">&#39;1&#39;</span> <span class="n">class</span><span class="o">=</span><span class="err">&#39;</span><span class="n">foo</span><span class="err">&#39;</span><span class="o">&gt;|-----------------+------------+-----------------+----------------|</span>
+</span><span class="line"><span class="o">|</span> <span class="n">Default</span> <span class="n">aligned</span> <span class="o">|</span><span class="n">Left</span> <span class="n">aligned</span><span class="o">|</span> <span class="n">Center</span> <span class="n">aligned</span>  <span class="o">|</span> <span class="n">Right</span> <span class="n">aligned</span>  <span class="o">|</span>
+</span><span class="line"><span class="o">|-----------------|:-----------|:---------------:|---------------:|</span>
+</span><span class="line"><span class="o">|</span> <span class="n">First</span> <span class="n">body</span> <span class="n">part</span> <span class="o">|</span><span class="n">Second</span> <span class="n">cell</span> <span class="o">|</span> <span class="n">Third</span> <span class="n">cell</span>      <span class="o">|</span> <span class="n">fourth</span> <span class="n">cell</span>    <span class="o">|</span>
+</span><span class="line"><span class="o">|</span> <span class="n">Second</span> <span class="n">line</span>     <span class="o">|</span><span class="n">foo</span>         <span class="o">|</span> <span class="o">**</span><span class="n">strong</span><span class="o">**</span>      <span class="o">|</span> <span class="n">baz</span>            <span class="o">|</span>
+</span><span class="line"><span class="o">|</span> <span class="n">Third</span> <span class="n">line</span>      <span class="o">|</span><span class="n">quux</span>        <span class="o">|</span> <span class="n">baz</span>             <span class="o">|</span> <span class="n">bar</span>            <span class="o">|</span>
+</span><span class="line"><span class="o">|-----------------+------------+-----------------+----------------|</span>
+</span><span class="line">
+</span><span class="line"><span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
 
 <div class="foo">
   <table>
@@ -569,12 +578,238 @@ the text you want to pull, surround it like this and that’s all there is to it
 
 </div>
 
+<h1 id="horizontal-rules">使用 Horizontal Rules</h1>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>使用 Horizontal Rules</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+</pre></td><td class="code"><pre><code class="objc"><span class="line"><span class="o">*</span> <span class="o">*</span> <span class="o">*</span>
+</span><span class="line">
+</span><span class="line"><span class="o">---</span>
+</span><span class="line">
+</span><span class="line">  <span class="n">_</span>  <span class="n">_</span>  <span class="n">_</span>  <span class="n">_</span>
+</span><span class="line">
+</span><span class="line"><span class="o">---------------</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<hr />
+
+<hr />
+
+<hr />
+
+<hr />
+
+<h1 id="section-8">使用列表</h1>
+
+<ul>
+  <li>方法一：使用数字</li>
+</ul>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>使用数字</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+</pre></td><td class="code"><pre><code class="objc"><span class="line"><span class="mf">1.</span> <span class="n">Item</span> <span class="n">one</span>
+</span><span class="line">   <span class="mf">1.</span> <span class="n">sub</span> <span class="n">item</span> <span class="n">one</span>
+</span><span class="line">   <span class="mf">2.</span> <span class="n">sub</span> <span class="n">item</span> <span class="n">two</span>
+</span><span class="line">   <span class="mf">3.</span> <span class="n">sub</span> <span class="n">item</span> <span class="n">three</span>
+</span><span class="line"><span class="mf">2.</span> <span class="n">Item</span> <span class="n">two</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<ol>
+  <li>Item one
+    <ol>
+      <li>sub item one</li>
+      <li>sub item two</li>
+      <li>sub item three</li>
+    </ol>
+  </li>
+  <li>Item two</li>
+</ol>
+
+<ul>
+  <li>方法二：使用 *</li>
+</ul>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>使用 */+/-</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+</pre></td><td class="code"><pre><code class="objc"><span class="line"><span class="o">*</span> <span class="n">Item</span> <span class="n">one</span>
+</span><span class="line"><span class="o">+</span> <span class="n">Item</span> <span class="n">two</span>
+</span><span class="line"><span class="o">-</span> <span class="n">Item</span> <span class="n">three</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<ul>
+  <li>Item one</li>
+  <li>Item two</li>
+  <li>Item three</li>
+</ul>
+
+<h1 id="section-9">使用定义列表</h1>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>使用定义列表</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+</pre></td><td class="code"><pre><code class="objc"><span class="line"><span class="n">term</span>
+</span><span class="line"><span class="o">:</span> <span class="n">definition</span>
+</span><span class="line"><span class="o">:</span> <span class="n">another</span> <span class="n">definition</span>
+</span><span class="line">
+</span><span class="line"><span class="n">another</span> <span class="n">term</span>
+</span><span class="line"><span class="n">and</span> <span class="n">another</span> <span class="n">term</span>
+</span><span class="line"><span class="o">:</span> <span class="n">and</span> <span class="n">a</span> <span class="n">definition</span> <span class="k">for</span> <span class="n">the</span> <span class="n">term</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<dl>
+  <dt>term</dt>
+  <dd>definition</dd>
+  <dd>another definition</dd>
+  <dt>another term</dt>
+  <dt>and another term</dt>
+  <dd>and a definition for the term</dd>
+</dl>
+
+<h1 id="attribute">为块级元素添加 attribute</h1>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>添加一个属性</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+</pre></td><td class="code"><pre><code class="objc"><span class="line"><span class="o">&gt;</span> <span class="n">A</span> <span class="n">nice</span> <span class="n">blockquote</span>
+</span><span class="line"><span class="p">{</span><span class="o">:</span> <span class="p">.</span><span class="n">class1</span> <span class="p">.</span><span class="n">class2</span><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<blockquote class="class1 class2">
+  <p>A nice blockquote</p>
+</blockquote>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>添加多个属性</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+</pre></td><td class="code"><pre><code class="objc"><span class="line"><span class="p">{</span><span class="o">:</span><span class="nl">refdef:</span> <span class="p">.</span><span class="n">c1</span> <span class="err">#</span><span class="kt">id</span> <span class="p">.</span><span class="n">c2</span> <span class="n">title</span><span class="o">=</span><span class="s">&quot;title&quot;</span><span class="p">}</span>
+</span><span class="line"><span class="n">paragraph</span>
+</span><span class="line"><span class="p">{</span><span class="o">:</span> <span class="n">refdef</span> <span class="p">.</span><span class="n">c3</span> <span class="n">title</span><span class="o">=</span><span class="s">&quot;t&quot;</span> <span class="err">#</span><span class="n">para</span><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p class="c1 c2 c3" id="para" title="t">paragraph</p>
+
+<h1 id="inline--attribute">为 inline 元素添加 attribute</h1>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>为内嵌元素添加 attribute</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class="objc"><span class="line"><span class="n">This</span> <span class="n">is</span> <span class="o">*</span><span class="n">red</span><span class="o">*</span><span class="p">{</span><span class="o">:</span> <span class="n">style</span><span class="o">=</span><span class="s">&quot;color: red&quot;</span><span class="p">}.</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>This is <em style="color: red">red</em>.</p>
+
+<h1 id="section-10">使用扩展</h1>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>使用扩展</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+</pre></td><td class="code"><pre><code class="objc"><span class="line"><span class="n">This</span> <span class="n">is</span> <span class="n">a</span> <span class="n">paragraph</span>
+</span><span class="line"><span class="p">{</span><span class="o">::</span><span class="n">comment</span><span class="p">}</span>
+</span><span class="line"><span class="n">This</span> <span class="n">is</span> <span class="n">a</span> <span class="n">comment</span> <span class="n">which</span> <span class="n">is</span>
+</span><span class="line"><span class="n">completely</span> <span class="n">ignored</span><span class="p">.</span>
+</span><span class="line"><span class="p">{</span><span class="o">:/</span><span class="n">comment</span><span class="p">}</span>
+</span><span class="line"><span class="p">...</span> <span class="n">paragraph</span> <span class="n">continues</span> <span class="n">here</span><span class="p">.</span>
+</span><span class="line">
+</span><span class="line"><span class="n">Extensions</span> <span class="n">can</span> <span class="n">also</span> <span class="n">be</span> <span class="n">used</span>
+</span><span class="line"><span class="kr">inline</span> <span class="p">{</span><span class="o">::</span><span class="n">nomarkdown</span><span class="p">}</span><span class="o">**</span><span class="n">see</span><span class="o">**</span><span class="p">{</span><span class="o">:/</span><span class="p">}</span><span class="o">!</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>This is a paragraph
+<!-- 
+This is a comment which is
+completely ignored.
+ -->
+… paragraph continues here.</p>
+
+<p>Extensions can also be used
+inline **see**!</p>
+
+<p><strong>Notes</strong></p>
+
+<ul>
+  <li>comment
+    <ul>
+      <li>Treat the body text as a comment which does not show in the output.</li>
+    </ul>
+  </li>
+  <li>nomarkdown
+    <ul>
+      <li>Don’t process the body with kramdown but output it as-is. The attribute type specifies which converters should output the body: if the attribute is missing, all converters should output it. Otherwise the attribute value has to be a space separated list of converter names and these converters should output the body.</li>
+    </ul>
+  </li>
+  <li>options
+    <ul>
+      <li>Should be used without a body since the body is ignored. Is used for setting the global options for the kramdown processor (for example, to disable automatic header ID generation). Note that options that are used by the parser are immediately effective whereas all other options are not! This means, for example, that it is not possible to set converter options only for some part of a kramdown document.</li>
+    </ul>
+  </li>
+</ul>
+
+<h1 id="section-11">使用文字修饰</h1>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>使用文字修饰</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+</pre></td><td class="code"><pre><code class="objc"><span class="line"><span class="o">*</span><span class="n">Emphasized</span><span class="o">*</span>
+</span><span class="line"><span class="n">_Emphasized_</span>
+</span><span class="line"><span class="o">**</span><span class="n">Strong</span><span class="o">**</span>
+</span><span class="line"><span class="n">__Strong__</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p><em>Emphasized</em></p>
+
+<p><em>Emphasized</em></p>
+
+<p><strong>Strong</strong></p>
+
+<p><strong>Strong</strong></p>
+
+<h1 id="typographic-symbols">使用 Typographic Symbols</h1>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>使用 Typographic Symbols</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+</pre></td><td class="code"><pre><code class="objc"><span class="line"><span class="o">---</span> <span class="n">will</span> <span class="n">become</span> <span class="n">an</span> <span class="n">em</span><span class="o">-</span><span class="n">dash</span> <span class="p">(</span><span class="n">like</span> <span class="n">this</span> <span class="err">—</span><span class="p">)</span>
+</span><span class="line"><span class="o">--</span> <span class="n">will</span> <span class="n">become</span> <span class="n">an</span> <span class="n">en</span><span class="o">-</span><span class="n">dash</span> <span class="p">(</span><span class="n">like</span> <span class="n">this</span> <span class="err">–</span><span class="p">)</span>
+</span><span class="line"><span class="p">...</span> <span class="n">will</span> <span class="n">become</span> <span class="n">an</span> <span class="n">ellipsis</span> <span class="p">(</span><span class="n">like</span> <span class="n">this</span> <span class="err">…</span><span class="p">)</span>
+</span><span class="line"><span class="o">&lt;&lt;</span> <span class="n">will</span> <span class="n">become</span> <span class="n">a</span> <span class="n">left</span> <span class="n">guillemet</span> <span class="p">(</span><span class="n">like</span> <span class="n">this</span> <span class="err">«</span><span class="p">)</span> <span class="err">–</span> <span class="n">an</span> <span class="n">optional</span> <span class="n">following</span> <span class="n">space</span> <span class="n">will</span> <span class="n">become</span> <span class="n">a</span> <span class="n">non</span><span class="o">-</span><span class="n">breakable</span> <span class="n">space</span>
+</span><span class="line"><span class="o">&gt;&gt;</span> <span class="n">will</span> <span class="n">become</span> <span class="n">a</span> <span class="n">right</span> <span class="n">guillemet</span> <span class="p">(</span><span class="n">like</span> <span class="n">this</span> <span class="err">»</span><span class="p">)</span> <span class="err">–</span> <span class="n">an</span> <span class="n">optional</span> <span class="n">leading</span> <span class="n">space</span> <span class="n">will</span> <span class="n">become</span> <span class="n">a</span> <span class="n">non</span><span class="o">-</span><span class="n">breakable</span> <span class="n">space</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>— will become an em-dash (like this —)</p>
+
+<p>– will become an en-dash (like this –)</p>
+
+<p>… will become an ellipsis (like this …)</p>
+
+<p>&lt;&lt; will become a left guillemet (like this «) – an optional following space will become a non-breakable space</p>
+
+<p>&gt;&gt; will become a right guillemet (like this ») – an optional leading space will become a non-breakable space</p>
+
 <hr />
 
 <div class="footnotes">
   <ol>
     <li id="fn:1">
-      <p>脚注<a href="#fnref:1" rel="reference">&#8617;</a></p>
+      <p>我的脚注<a href="#fnref:1" rel="reference">&#8617;</a></p>
     </li>
   </ol>
 </div>
