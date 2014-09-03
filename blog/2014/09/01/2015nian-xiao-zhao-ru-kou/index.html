@@ -76,7 +76,7 @@
 
 </head> 
 
-<body   >
+<body onload="onLoadSet()"   >
   <!-- header.html -->
 <!-- custom/header.html -->
 <!-- 搜索和菜单导航 -->
@@ -375,6 +375,18 @@
     $(function() {
         $('#dl-menu').dlmenu();
     });
+
+    function onLoadSet() {
+        if ($(".imgleft")) {
+            $(".imgleft").parent().css("text-align", "left");
+        }
+        if ($(".imgright")) {
+            $(".imgright").parent().css("text-align", "right");
+        }
+        if ($(".imgcenter")) {
+            $(".imgcenter").parent().css("text-align", "center");
+        }
+    }
 </script>
   <a id="gotop" href="#">
     <span>▲</span>

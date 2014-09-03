@@ -77,7 +77,7 @@
 </head> 
 
 <link href="/stylesheets/my.css" rel="stylesheet" type="text/css">
-<body   >
+<body onload="onLoadSet()"   >
   <div id="dl-menu" class="dl-menuwrapper">
     <button>Open Menu</button>
     <ul class="dl-menu">
@@ -484,6 +484,18 @@ also possible.</p>
     $(function() {
         $('#dl-menu').dlmenu();
     });
+
+    function onLoadSet() {
+        if ($(".imgleft")) {
+            $(".imgleft").parent().css("text-align", "left");
+        }
+        if ($(".imgright")) {
+            $(".imgright").parent().css("text-align", "right");
+        }
+        if ($(".imgcenter")) {
+            $(".imgcenter").parent().css("text-align", "center");
+        }
+    }
 </script>
   <a id="gotop" href="#">
     <span>▲</span>

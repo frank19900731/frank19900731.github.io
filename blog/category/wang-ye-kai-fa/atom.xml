@@ -4,7 +4,7 @@
   <title><![CDATA[Category: 网页开发 | Blog of 太极儒]]></title>
   <link href="http://frank19900731.github.io/blog/category/wang-ye-kai-fa/atom.xml" rel="self"/>
   <link href="http://frank19900731.github.io/"/>
-  <updated>2014-09-03T23:08:34+08:00</updated>
+  <updated>2014-09-03T23:46:33+08:00</updated>
   <id>http://frank19900731.github.io/</id>
   <author>
     <name><![CDATA[Frank Song]]></name>
@@ -499,10 +499,22 @@ The following is a math block:</p>
 <h1 id="section-7">使用图片</h1>
 
 <p><code>objc 使用图片
-<img class="left" src="http://placekitten.com/320/250" title="Place Kitten #2" >
+<img class="imgright" src="http://placekitten.com/320/250" title="Place Kitten #2" >
 </code></p>
 
-<p><img class="left" src="http://placekitten.com/320/250" title="Place Kitten" ></p>
+<p><img class="imgright" src="http://placekitten.com/320/250" title="Place Kitten" ></p>
+
+<p><code>objc 使用图片
+<img class="imgcenter" src="http://placekitten.com/300/500" width="150" height="250" title="Place Kitten #4" alt="An image of a very cute kitten">
+</code></p>
+
+<p><img class="imgcenter" src="http://placekitten.com/300/500" width="150" height="250" title="‘Place Kitten #4’ ‘An image of a very cute kitten’" ></p>
+
+<p><code>objc 使用图片
+<img class="imgleft" src="/img/portrait.jpg" width="379" height="481" title="'My Cartoon Portrait'" >
+</code></p>
+
+<p><img class="imgleft" src="/img/portrait.jpg" width="379" height="481" title="‘My Cartoon Portrait’" ></p>
 
 <h1 id="pullquote">使用 pullquote</h1>
 
