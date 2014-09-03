@@ -4,7 +4,7 @@
   <title><![CDATA[Blog of 太极儒]]></title>
   <link href="http://frank19900731.github.io/feed" rel="self"/>
   <link href="http://frank19900731.github.io/"/>
-  <updated>2014-09-03T02:51:28+08:00</updated>
+  <updated>2014-09-03T09:28:00+08:00</updated>
   <id>http://frank19900731.github.io/</id>
   <author>
     <name><![CDATA[Frank Song]]></name>
@@ -45,8 +45,9 @@
 
 <p><a href="http://campus.chinahr.com/2014/pages/msfte/ch/jobs.asp">微软</a></p>
 
-<p><a href="http://www.ibmcampus.com/">IBM</a>
-<!-- excerpt end --></p>
+<p><a href="http://www.ibmcampus.com/">IBM</a></p>
+
+<!-- excerpt end -->
 ]]></content>
   </entry>
   
@@ -56,8 +57,10 @@
     <updated>2014-08-31T10:35:49+08:00</updated>
     <id>http://frank19900731.github.io/blog/2014/08/31/2014nian-8yue-fen-di-4zhou-zong-jie</id>
     <content type="html"><![CDATA[<!-- excerpt start -->
-<p>暂无。
-<!-- excerpt end --></p>
+
+<p>暂无。</p>
+
+<!-- excerpt end -->
 ]]></content>
   </entry>
   
@@ -69,29 +72,31 @@
     <content type="html"><![CDATA[<p><strong>目录</strong></p>
 
 <ul id="markdown-toc">
+  <li><a href="#section">段落分级</a></li>
   <li><a href="#blockquote">BlockQuote</a></li>
-  <li><a href="#section">代码展示</a></li>
+  <li><a href="#section-1">代码展示</a></li>
   <li><a href="#inline-code">使用 Inline Code</a></li>
-  <li><a href="#section-1">使用脚注</a></li>
-  <li><a href="#section-2">使用目录</a></li>
-  <li><a href="#section-3">使用数学公式</a></li>
-  <li><a href="#section-4">使用链接</a></li>
-  <li><a href="#section-5">使用图片</a></li>
+  <li><a href="#section-2">使用脚注</a></li>
+  <li><a href="#section-3">使用目录</a></li>
+  <li><a href="#section-4">使用数学公式</a></li>
+  <li><a href="#section-5">使用链接</a></li>
+  <li><a href="#section-6">使用图片</a></li>
   <li><a href="#pullquote">使用 pullquote</a></li>
-  <li><a href="#section-6">使用表格</a></li>
+  <li><a href="#section-7">使用表格</a></li>
   <li><a href="#horizontal-rules">使用 Horizontal Rules</a></li>
-  <li><a href="#section-7">使用列表</a></li>
-  <li><a href="#section-8">使用定义列表</a></li>
+  <li><a href="#section-8">使用列表</a></li>
+  <li><a href="#section-9">使用定义列表</a></li>
   <li><a href="#attribute">为块级元素添加 attribute</a></li>
   <li><a href="#inline--attribute">为 inline 元素添加 attribute</a></li>
-  <li><a href="#section-9">使用扩展</a></li>
-  <li><a href="#section-10">使用文字修饰</a></li>
+  <li><a href="#section-10">使用扩展</a></li>
+  <li><a href="#section-11">使用文字修饰</a></li>
   <li><a href="#typographic-symbols">使用 Typographic Symbols</a></li>
 </ul>
 
 <!-- excerpt start -->
-<p>#段落分级
-以 # 的个数表示段落层次。</p>
+
+<h1 id="section">段落分级</h1>
+<p>以 # 的个数表示段落层次。</p>
 
 <div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>段落分级</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
 <span class="line-number">2</span>
@@ -168,7 +173,7 @@ also possible.</p>
 
 <!-- excerpt end -->
 
-<h1 id="section">代码展示</h1>
+<h1 id="section-1">代码展示</h1>
 <ul>
   <li>方法一：缩进一个 tab</li>
 </ul>
@@ -423,11 +428,11 @@ syntax to HTML.</p>
 <p>Use backticks to markup code,
 e.g. <code>`code`</code>.</p>
 
-<h1 id="section-1">使用脚注</h1>
+<h1 id="section-2">使用脚注</h1>
 
 <p>我的脚注<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup></p>
 
-<h1 id="section-2">使用目录</h1>
+<h1 id="section-3">使用目录</h1>
 
 <div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>使用目录</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
 <span class="line-number">2</span>
@@ -439,7 +444,7 @@ e.g. <code>`code`</code>.</p>
   <li>list element with functor item</li>
 </ul>
 
-<h1 id="section-3">使用数学公式</h1>
+<h1 id="section-4">使用数学公式</h1>
 
 <div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>使用数学公式</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
 <span class="line-number">2</span>
@@ -496,7 +501,7 @@ e.g. <code>`code`</code>.</p>
 
 <p><script type="math/tex"> 5 + 5 </script></p>
 
-<h1 id="section-4">使用链接</h1>
+<h1 id="section-5">使用链接</h1>
 
 <div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>使用链接</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
 </pre></td><td class="code"><pre><code class="objc"><span class="line"><span class="p">[</span><span class="n">Jekyll</span><span class="p">](</span><span class="nl">http:</span><span class="c1">//www.jekyllrb.com) is a very popular and very powerful static blog generator. Out of the box it&#39;s able to generate sophisticated site structures, and has a ton of configurability. One of the areas where I feel that Jekyll lacks some sophistication is around the handling of categories and tags; these are two data-sets that are core to Jekyll, but there isn&#39;t a lot of functionality actually built around them. This is in contrast to dynamic blogging platforms like [WordPress](http://www.wordpress.com), or possibly [Drupal](http://www.drupal.org), where these two data points are used to drive a lot of central navigation for the site.</span>
@@ -504,7 +509,7 @@ e.g. <code>`code`</code>.</p>
 
 <p><a href="http://www.jekyllrb.com">Jekyll</a> is a very popular and very powerful static blog generator. Out of the box it’s able to generate sophisticated site structures, and has a ton of configurability. One of the areas where I feel that Jekyll lacks some sophistication is around the handling of categories and tags; these are two data-sets that are core to Jekyll, but there isn’t a lot of functionality actually built around them. This is in contrast to dynamic blogging platforms like <a href="http://www.wordpress.com">WordPress</a>, or possibly <a href="http://www.drupal.org">Drupal</a>, where these two data points are used to drive a lot of central navigation for the site.</p>
 
-<h1 id="section-5">使用图片</h1>
+<h1 id="section-6">使用图片</h1>
 
 <div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>使用图片</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
 </pre></td><td class="code"><pre><code class="objc"><span class="line"><span class="p">{</span><span class="o">%</span> <span class="n">img</span> <span class="n">left</span> <span class="nl">http:</span><span class="c1">//placekitten.com/320/250 Place Kitten #2 %}</span>
@@ -529,7 +534,7 @@ Surround your paragraph with the pull quote tags. Then when you come to
 the text you want to pull, surround it like this and that’s all there is to it.
 </span></p>
 
-<h1 id="section-6">使用表格</h1>
+<h1 id="section-7">使用表格</h1>
 
 <div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>使用表格</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
 <span class="line-number">2</span>
@@ -611,7 +616,7 @@ the text you want to pull, surround it like this and that’s all there is to it
 
 <hr />
 
-<h1 id="section-7">使用列表</h1>
+<h1 id="section-8">使用列表</h1>
 
 <ul>
   <li>方法一：使用数字</li>
@@ -658,7 +663,7 @@ the text you want to pull, surround it like this and that’s all there is to it
   <li>Item three</li>
 </ul>
 
-<h1 id="section-8">使用定义列表</h1>
+<h1 id="section-9">使用定义列表</h1>
 
 <div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>使用定义列表</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
 <span class="line-number">2</span>
@@ -715,7 +720,7 @@ the text you want to pull, surround it like this and that’s all there is to it
 
 <p>This is <em style="color: red">red</em>.</p>
 
-<h1 id="section-9">使用扩展</h1>
+<h1 id="section-10">使用扩展</h1>
 
 <div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>使用扩展</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
 <span class="line-number">2</span>
@@ -767,7 +772,7 @@ inline **see**!</p>
   </li>
 </ul>
 
-<h1 id="section-10">使用文字修饰</h1>
+<h1 id="section-11">使用文字修饰</h1>
 
 <div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>使用文字修饰</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
 <span class="line-number">2</span>
