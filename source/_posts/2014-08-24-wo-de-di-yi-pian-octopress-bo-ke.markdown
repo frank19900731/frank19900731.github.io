@@ -12,7 +12,9 @@ __目录__
 * list element with functor item
 {:toc}
 
-#段落分级
+<!-- excerpt start -->
+
+##段落分级
 以 # 的个数表示段落层次。
 
 ``` objc 段落分级
@@ -33,7 +35,7 @@ __目录__
 ---------------
 ```
 
-# BlockQuote
+##BlockQuote
 * 方法一： 使用 >
 
 ``` objc 使用 >
@@ -66,7 +68,9 @@ Wheeee!
 Wheeee!
 {% endblockquote %}
 
-# 代码展示
+<!-- excerpt end -->
+
+##代码展示
 * 方法一：缩进一个 tab
 
 ``` objc 使用缩进展示代码
@@ -169,7 +173,7 @@ alphabet = 'abcdefghijklmnopqrstuvwxyz'
 console.log letter for letter in alphabet[4..8]
 {% endcodeblock %}
 
-# 使用 Inline Code
+##使用 Inline Code
 
 ``` objc 使用 Inline Code
 Use `Kramdown::Document.new(text).to_html`
@@ -187,11 +191,11 @@ syntax to HTML.
 Use backticks to markup code,
 e.g. `` `code` ``.
 
-# 使用脚注
+##使用脚注
 
 我的脚注[^1]
 
-# 使用目录
+##使用目录
 
 ``` objc 使用目录
 * list element with functor item
@@ -201,7 +205,7 @@ e.g. `` `code` ``.
 * list element with functor item
 {:toc}
 
-# 使用数学公式
+##使用数学公式
 
 ``` objc 使用数学公式
 random variables $$X_1, X_2, X_3$$ from
@@ -243,7 +247,7 @@ But next comes a paragraph with an inline math statement:
 
 \$$ 5 + 5 $$
 
-# 使用链接
+##使用链接
 
 ``` objc 使用链接
 [Jekyll](http://www.jekyllrb.com) is a very popular and very powerful static blog generator. Out of the box it's able to generate sophisticated site structures, and has a ton of configurability. One of the areas where I feel that Jekyll lacks some sophistication is around the handling of categories and tags; these are two data-sets that are core to Jekyll, but there isn't a lot of functionality actually built around them. This is in contrast to dynamic blogging platforms like [WordPress](http://www.wordpress.com), or possibly [Drupal](http://www.drupal.org), where these two data points are used to drive a lot of central navigation for the site.
@@ -251,15 +255,27 @@ But next comes a paragraph with an inline math statement:
 
 [Jekyll](http://www.jekyllrb.com) is a very popular and very powerful static blog generator. Out of the box it's able to generate sophisticated site structures, and has a ton of configurability. One of the areas where I feel that Jekyll lacks some sophistication is around the handling of categories and tags; these are two data-sets that are core to Jekyll, but there isn't a lot of functionality actually built around them. This is in contrast to dynamic blogging platforms like [WordPress](http://www.wordpress.com), or possibly [Drupal](http://www.drupal.org), where these two data points are used to drive a lot of central navigation for the site.
 
-# 使用图片
+##使用图片
 
 ``` objc 使用图片
-{% img left http://placekitten.com/320/250 Place Kitten #2 %}
+{% img imgright http://placekitten.com/320/250 Place Kitten #2 %}
 ```
 
-{% img left http://placekitten.com/320/250 Place Kitten %}
+{% img imgright http://placekitten.com/320/250 Place Kitten %}
 
-# 使用 pullquote
+``` objc 使用图片
+{% img imgcenter http://placekitten.com/300/500 150 250 'Place Kitten #4' 'An image of a very cute kitten' %}
+```
+
+{% img imgcenter http://placekitten.com/300/500 150 250 'Place Kitten #4' 'An image of a very cute kitten' %}
+
+``` objc 使用图片
+{% img imgleft /img/portrait.jpg 379 481 'My Cartoon Portrait' %}
+```
+
+{% img imgleft /img/portrait.jpg 379 481 'My Cartoon Portrait' %}
+
+##使用 pullquote
 
 ``` objc 使用 pullquote
 {% pullquote %}
@@ -273,7 +289,7 @@ Surround your paragraph with the pull quote tags. Then when you come to
 the text you want to pull, {" surround it like this "} and that's all there is to it.
 {% endpullquote %}
 
-# 使用表格
+##使用表格
 
 ``` objc 使用表格
 <div markdown='1' class='foo'>|-----------------+------------+-----------------+----------------|
@@ -297,7 +313,7 @@ the text you want to pull, {" surround it like this "} and that's all there is t
 
 </div>
 
-# 使用 Horizontal Rules
+##使用 Horizontal Rules
 
 ``` objc 使用 Horizontal Rules
 * * *
@@ -317,7 +333,7 @@ the text you want to pull, {" surround it like this "} and that's all there is t
 
 ---------------
 
-# 使用列表
+##使用列表
 
 * 方法一：使用数字
 
@@ -347,7 +363,7 @@ the text you want to pull, {" surround it like this "} and that's all there is t
 + Item two
 - Item three
 
-# 使用定义列表
+##使用定义列表
 
 ``` objc 使用定义列表
 term
@@ -367,7 +383,7 @@ another term
 and another term
 : and a definition for the term
 
-# 为块级元素添加 attribute
+##为块级元素添加 attribute
 
 ``` objc 添加一个属性
 > A nice blockquote
@@ -387,7 +403,7 @@ paragraph
 paragraph
 {: refdef .c3 title="t" #para}
 
-# 为 inline 元素添加 attribute
+##为 inline 元素添加 attribute
 
 ``` objc 为内嵌元素添加 attribute
 This is *red*{: style="color: red"}.
@@ -395,7 +411,7 @@ This is *red*{: style="color: red"}.
 
 This is *red*{: style="color: red"}.
 
-# 使用扩展
+##使用扩展
 
 ``` objc 使用扩展
 This is a paragraph
@@ -430,7 +446,7 @@ inline {::nomarkdown}**see**{:/}!
 * options
 	* Should be used without a body since the body is ignored. Is used for setting the global options for the kramdown processor (for example, to disable automatic header ID generation). Note that options that are used by the parser are immediately effective whereas all other options are not! This means, for example, that it is not possible to set converter options only for some part of a kramdown document.
 
-# 使用文字修饰
+##使用文字修饰
 
 ``` objc 使用文字修饰
 *Emphasized*
@@ -447,7 +463,7 @@ _Emphasized_
 
 __Strong__
 
-# 使用 Typographic Symbols
+##使用 Typographic Symbols
 
 ``` objc 使用 Typographic Symbols
 --- will become an em-dash (like this —)

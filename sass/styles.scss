@@ -64,10 +64,12 @@
 
 .article-detail h1 {
   width: 100%;
+  margin-left: -60px;
 }
 
 .article-detail h2 {
   width: 85%;
+  margin-left: -30px;
 }
 
 .article-detail h3 {
@@ -84,6 +86,11 @@
 
 .article-detail h6 {
   width: 30%;
+}
+
+.article-detail img {
+  border: 5px solid #EEEEEE;
+  border-radius: 10px;
 }
 
 #gotop{

@@ -7,7 +7,11 @@ categories: [就业]
 tags: [校招链接]
 ---
 
-##计算机相关
+<!-- excerpt start -->
+
+#Interest List
+
+##Computer Related
 [百度](http://talent.baidu.com/baidu/web/templet1000/index/corpwebPosition1000baidu!getPostListByConditionBaidu?positionType=0&brandCode=1&useForm=0&recruitType=1&request_locale=zh_CN)
 
 [阿里巴巴](http://campus.alibaba.com/index.htm)
@@ -18,18 +22,50 @@ tags: [校招链接]
 
 [小米](http://hr.xiaomi.com/user/resume)
 
+[京东](http://www.dajie.com/corp/1005750/custom/campus/outerLink/26560894)
+
 [网易有道](http://campus.youdao.com/campus/post_list.php?t1=campus)
 
 [网易游戏](http://game.campus.163.com/)
+
+[新浪微博](http://www.hotjob.cn/wt/sina/web/templet1000/index/corpwebPosition1000sina!getPostListByCondition?positionType=0&brandCode=1&useForm=0&recruitType=1&showComp=true&urlCorpEdition=null&operational=D28977237630A659C96DE14A5560C16A73AEF91683DCD19467A5A42F190422AF112707A59F14B926BC3E5DEB86BD4C85EEC3CF644D58CF9DE37FE924995A8EF706808FC2E27ACB42CC43C5E1CF97C10E7DAB212D459955EECF690AE889A2A346D7EAE896601F0B27046BFE007E94869EC33B7F9E5E5DD3B813365609223FDAC148FAC99C32F7DBDAF52A5EA0525AE56ABC349E2123F95B4261272A09DD89AE8B3E693A75666D12221CABFE777C5EE8196D1AEE5BF1E6E4E0F6EE1446BE21ADD8)
+
+[搜狐](http://www.sohucampus.com/sohu/index)
 
 [大众点评](http://campus.dianping.com/#!/resume)
 
 [搜狗](http://campus.sogou.com/?show.page/achieve)
 
-[新浪微博](http://www.hotjob.cn/wt/sina/web/templet1000/index/corpwebPosition1000sina!getPostListByCondition?positionType=0&brandCode=1&useForm=0&recruitType=1&showComp=true&urlCorpEdition=null&operational=D28977237630A659C96DE14A5560C16A73AEF91683DCD19467A5A42F190422AF112707A59F14B926BC3E5DEB86BD4C85EEC3CF644D58CF9DE37FE924995A8EF706808FC2E27ACB42CC43C5E1CF97C10E7DAB212D459955EECF690AE889A2A346D7EAE896601F0B27046BFE007E94869EC33B7F9E5E5DD3B813365609223FDAC148FAC99C32F7DBDAF52A5EA0525AE56ABC349E2123F95B4261272A09DD89AE8B3E693A75666D12221CABFE777C5EE8196D1AEE5BF1E6E4E0F6EE1446BE21ADD8)
-
 [美团](http://www.hotjob.cn/wt/meituan/web/index)
 
-[微软](http://campus.chinahr.com/2014/pages/msfte/ch/jobs.asp)
+[华为](http://career.huawei.com/recruitment/portal_index.html)
 
-[IBM](http://www.ibmcampus.com/)
+[微软](http://www.joinms.com/index.html)
+
+* [BBS答疑](http://bbs.yingjiesheng.com/forum-228-1.html)
+
+[IBM](http://campus.51job.com/ibmcampus/)
+
+[IDG](http://campus.idgvc.ourats.com/about-us/recruit-process)
+
+[亚马逊](http://www.dajie.com/corp/1010142/)
+
+[爱奇艺](http://campus.iqiyi.com/html/campus1.html)
+
+[飞维美地](http://campus.chinahr.com/2015/pages/feiweimd/jobs.asp)
+
+##Finance Related
+
+[摩根士丹利全球量化部门]()
+
+* Enshi.Chen@morganstanley.com
+
+[世坤](http://www.worldquant.com/join-the-team/careers/?region=int)
+
+* WQChinajobs@worldquant.com
+
+[宜信](http://cbdic.creditease.cn/jobs.html)
+
+* campus2014.bigdata@creditease.cn
+
+<!-- excerpt end -->

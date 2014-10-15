@@ -14,9 +14,11 @@ $turquoise: #2aa198;
 
 //@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic,700italic);
 
-$bodyFont: 'Source Sans Pro';
+//$bodyFont: 'Source Sans Pro';
+$bodyFont: "Hiragino Sans GB", "Microsoft YaHei", "STXihei", "SimHei", Arial, sans-serif !default;
 $mono: Menlo, Monaco, "Andale Mono", "lucida console", "Courier New", monospace !default;
-$sans: "PT Sans", "Helvetica Neue", Arial, sans-serif !default;
+//$sans: "PT Sans", "Helvetica Neue", Arial, sans-serif !default;
+$sans: "Hiragino Sans GB", "Microsoft YaHei", "STXihei", "SimHei", Arial, sans-serif !default;
 
 $fontSize: 1em;
 $fontSizeSmall: 0.8em;

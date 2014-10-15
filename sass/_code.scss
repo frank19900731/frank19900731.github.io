@@ -5,7 +5,8 @@ $base00:          #657b83 !default; //dark gray
 $base0:           #839496 !default; //medium gray
 $base1:           #93a1a1 !default; //medium light gray
 $base2:           #eee8d5 !default; //cream
-$base3:           #fdf6e3 !default; //white
+//$base3:           #fdf6e3 !default; //white
+$base3:           #eeeeee !default; //white
 $solar-yellow:    #b58900 !default;
 $solar-orange:    #cb4b16 !default;
 $solar-red:       #dc322f !default;
@@ -120,7 +121,8 @@ html .gist .gist-file {
     a[href*='#file'] {
       // 原来right是-10
       position: absolute; top: 0; left:0; right:0px;
-      color: #474747 !important;
+      //color: #474747 !important;
+      color: #ffffff !important;
       @extend .code-title;
       // &:hover { color: $link-color !important; }
     }
@@ -290,26 +292,22 @@ figure.code {
   text-align: center;
   font-size: 13px;
   line-height: 2em;
-  text-shadow: #cbcccc 0 1px 0;
-  color: #474747;
+  color: #ffffff;
   font-weight: normal;
   margin-bottom: 0;
   // @include border-top-radius(5px);
   font-family: "Helvetica Neue", Arial, "Lucida Grande", "Lucida Sans Unicode", Lucida, sans-serif;
-  background: #aaaaaa image-url("code_bg.png") top repeat-x;
-  border: 1px solid #565656;
-  border-top-color: #cbcbcb;
-  border-left-color: #a5a5a5;
-  border-right-color: #a5a5a5;
-  border-bottom: 0;
+  //background: #aaaaaa image-url("code_bg.png") top repeat-x;
+  //background-color: #fdb933;
+  background-color: #7bbfea;
+  border-radius: 8px 8px 0px 0px;
 }
 
 .download-source {
   position: absolute; right: .8em;
   // @include hover-link;
-  color: #666 !important;
+  color: #ffffff !important;
   z-index: 1;
   font-size: 13px;
-  text-shadow: #cbcccc 0 1px 0;
   padding-left: 3em;
 }

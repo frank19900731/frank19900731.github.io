@@ -75,7 +75,7 @@
 
 </head> 
 
-<body   >
+<body onload="onLoadSet()"   >
   <!-- header.html -->
 <!-- custom/header.html -->
 <!-- 搜索和菜单导航 -->
@@ -91,16 +91,16 @@
         <li><a href="/">Home</a></li>
         <li><a href="/archives/">Archives</a></li>
         <li>
-            <a href="#">Categories (3)</a>
+            <a href="#">Categories (2)</a>
             <ul class="dl-submenu">
                 <li class="dl-back"><a href="#">Back</a></li>
-                <li><a href="/blog/categories">All Categories (3)</a>
+                <li><a href="/blog/categories">All Categories (2)</a>
                 <li style="color: #CCCCCC; line-height: 150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Top 5</li>
 
-                <li><a href='/category/就业'>就业 (1)</a></li><li><a href='/category/个人总结'>个人总结 (1)</a></li><li><a href='/category/网页开发'>网页开发 (1)</a></li>
+                <li><a href='/category/就业'>就业 (1)</a></li><li><a href='/category/网页开发'>网页开发 (1)</a></li>
             </ul>
         </li>
-        <li><a href="/blog/tags">All Tags (4)</a>
+        <li><a href="/blog/tags">All Tags (3)</a>
         <li><a href="/about">About</a></li>
     </ul>
 </div><!-- /dl-menuwrapper -->
@@ -155,10 +155,6 @@
     </li>
     
     <li>
-    	<a href="/blog/2014/08/31/2014nian-8yue-fen-di-4zhou-zong-jie/">2014年8月份第4周总结</a>
-    </li>
-    
-    <li>
     	<a href="/blog/2014/08/24/wo-de-di-yi-pian-octopress-bo-ke/">我的第一篇 Octopress 博客</a>
     </li>
     
@@ -170,7 +166,6 @@
         <a style="font-size: 140%" href="/tag/kramdown syntax/">kramdown syntax</a>
 <a style="font-size: 140%" href="/tag/octopress/">octopress</a>
 <a style="font-size: 140%" href="/tag/校招链接/">校招链接</a>
-<a style="font-size: 140%" href="/tag/雷达图/">雷达图</a>
 
     </ul>
 </li><li>
@@ -265,11 +260,22 @@
     $(function() {
         $('#dl-menu').dlmenu();
     });
+
+    function onLoadSet() {
+        if ($(".imgleft")) {
+            $(".imgleft").parent().css("text-align", "left");
+        }
+        if ($(".imgright")) {
+            $(".imgright").parent().css("text-align", "right");
+        }
+        if ($(".imgcenter")) {
+            $(".imgcenter").parent().css("text-align", "center");
+        }
+    }
 </script>
   <a id="gotop" href="#">
     <span>▲</span>
 </a>
-
 <div id="float-index">
 </div>
 
@@ -293,7 +299,11 @@
             $("html,body").animate({scrollTop:"0px"},200);
         });
 
-        $("#markdown-toc").clone(true).appendTo("#float-index");
+        if ($("#markdown-toc").length > 0) {
+            $("#markdown-toc").clone(true).appendTo("#float-index");
+        } else {
+            $("#float-index").remove();
+        }
     });
 </script>
 </body>
