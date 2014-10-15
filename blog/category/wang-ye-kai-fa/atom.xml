@@ -4,7 +4,7 @@
   <title><![CDATA[Category: 网页开发 | Blog of 太极儒]]></title>
   <link href="http://frank19900731.github.io/blog/category/wang-ye-kai-fa/atom.xml" rel="self"/>
   <link href="http://frank19900731.github.io/"/>
-  <updated>2014-10-16T01:25:38+08:00</updated>
+  <updated>2014-10-16T01:41:10+08:00</updated>
   <id>http://frank19900731.github.io/</id>
   <author>
     <name><![CDATA[Frank Song]]></name>
@@ -21,37 +21,37 @@
     <content type="html"><![CDATA[<p><strong>目录</strong></p>
 
 <ul id="markdown-toc">
-  <li><a href="#section">段落分级</a>    <ul>
-      <li><a href="#section-1">第二级标题</a></li>
-    </ul>
-  </li>
+  <li><a href="#section">段落分级</a></li>
+  <li><a href="#section-1">第二级标题</a></li>
   <li><a href="#blockquote">BlockQuote</a></li>
   <li><a href="#section-2">代码展示</a></li>
   <li><a href="#given-an-alphabet">Given an alphabet:</a></li>
   <li><a href="#iterate-over-part-of-the-alphabet">Iterate over part of the alphabet:</a></li>
   <li><a href="#given-an-alphabet-1">Given an alphabet:</a></li>
-  <li><a href="#iterate-over-part-of-the-alphabet-1">Iterate over part of the alphabet:</a></li>
-  <li><a href="#inline-code">使用 Inline Code</a></li>
-  <li><a href="#section-3">使用脚注</a></li>
-  <li><a href="#section-4">使用目录</a></li>
-  <li><a href="#section-5">使用数学公式</a></li>
-  <li><a href="#section-6">使用链接</a></li>
-  <li><a href="#section-7">使用图片</a></li>
-  <li><a href="#pullquote">使用 pullquote</a></li>
-  <li><a href="#section-8">使用表格</a></li>
-  <li><a href="#horizontal-rules">使用 Horizontal Rules</a></li>
-  <li><a href="#section-9">使用列表</a></li>
-  <li><a href="#section-10">使用定义列表</a></li>
-  <li><a href="#attribute">为块级元素添加 attribute</a></li>
-  <li><a href="#inline--attribute">为 inline 元素添加 attribute</a></li>
-  <li><a href="#section-11">使用扩展</a></li>
-  <li><a href="#section-12">使用文字修饰</a></li>
-  <li><a href="#typographic-symbols">使用 Typographic Symbols</a></li>
+  <li><a href="#iterate-over-part-of-the-alphabet-1">Iterate over part of the alphabet:</a>    <ul>
+      <li><a href="#inline-code">使用 Inline Code</a></li>
+      <li><a href="#section-3">使用脚注</a></li>
+      <li><a href="#section-4">使用目录</a></li>
+      <li><a href="#section-5">使用数学公式</a></li>
+      <li><a href="#section-6">使用链接</a></li>
+      <li><a href="#section-7">使用图片</a></li>
+      <li><a href="#pullquote">使用 pullquote</a></li>
+      <li><a href="#section-8">使用表格</a></li>
+      <li><a href="#horizontal-rules">使用 Horizontal Rules</a></li>
+      <li><a href="#section-9">使用列表</a></li>
+      <li><a href="#section-10">使用定义列表</a></li>
+      <li><a href="#attribute">为块级元素添加 attribute</a></li>
+      <li><a href="#inline--attribute">为 inline 元素添加 attribute</a></li>
+      <li><a href="#section-11">使用扩展</a></li>
+      <li><a href="#section-12">使用文字修饰</a></li>
+      <li><a href="#typographic-symbols">使用 Typographic Symbols</a></li>
+    </ul>
+  </li>
 </ul>
 
 <!-- excerpt start -->
 
-<h1 id="section">段落分级</h1>
+<h2 id="section">段落分级</h2>
 <p>以 # 的个数表示段落层次。</p>
 
 <p><code>objc 段落分级
@@ -71,7 +71,7 @@
 <h2 id="section-1">第二级标题</h2>
 <p>```</p>
 
-<h1 id="blockquote">BlockQuote</h1>
+<h2 id="blockquote">BlockQuote</h2>
 <ul>
   <li>方法一： 使用 &gt;</li>
 </ul>
@@ -110,7 +110,7 @@ also possible.</p>
 
 <!-- excerpt end -->
 
-<h1 id="section-2">代码展示</h1>
+<h2 id="section-2">代码展示</h2>
 <ul>
   <li>方法一：缩进一个 tab</li>
 </ul>
@@ -413,7 +413,7 @@ ul {
 </span><span class='line'>&lt;h1 id="iterate-over-part-of-the-alphabet-1">Iterate over part of the alphabet:&lt;/h1>
 </span><span class='line'>&lt;p>console.log letter for letter in alphabet[4..8]</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
-<h1 id="inline-code">使用 Inline Code</h1>
+<h2 id="inline-code">使用 Inline Code</h2>
 
 <p>``` objc 使用 Inline Code
 Use <code>Kramdown::Document.new(text).to_html</code>
@@ -431,11 +431,11 @@ syntax to HTML.</p>
 <p>Use backticks to markup code,
 e.g. <code>`code`</code>.</p>
 
-<h1 id="section-3">使用脚注</h1>
+<h2 id="section-3">使用脚注</h2>
 
 <p>我的脚注<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup></p>
 
-<h1 id="section-4">使用目录</h1>
+<h2 id="section-4">使用目录</h2>
 
 <p>``` objc 使用目录
 * list element with functor item</p>
@@ -445,7 +445,7 @@ e.g. <code>`code`</code>.</p>
   <li>list element with functor item</li>
 </ul>
 
-<h1 id="section-5">使用数学公式</h1>
+<h2 id="section-5">使用数学公式</h2>
 
 <p>``` objc 使用数学公式
 random variables <script type="math/tex">X_1, X_2, X_3</script> from</p>
@@ -488,7 +488,7 @@ The following is a math block:</p>
 
 <p><script type="math/tex"> 5 + 5 </script></p>
 
-<h1 id="section-6">使用链接</h1>
+<h2 id="section-6">使用链接</h2>
 
 <p><code>objc 使用链接
 [Jekyll](http://www.jekyllrb.com) is a very popular and very powerful static blog generator. Out of the box it's able to generate sophisticated site structures, and has a ton of configurability. One of the areas where I feel that Jekyll lacks some sophistication is around the handling of categories and tags; these are two data-sets that are core to Jekyll, but there isn't a lot of functionality actually built around them. This is in contrast to dynamic blogging platforms like [WordPress](http://www.wordpress.com), or possibly [Drupal](http://www.drupal.org), where these two data points are used to drive a lot of central navigation for the site.
@@ -496,7 +496,7 @@ The following is a math block:</p>
 
 <p><a href="http://www.jekyllrb.com">Jekyll</a> is a very popular and very powerful static blog generator. Out of the box it’s able to generate sophisticated site structures, and has a ton of configurability. One of the areas where I feel that Jekyll lacks some sophistication is around the handling of categories and tags; these are two data-sets that are core to Jekyll, but there isn’t a lot of functionality actually built around them. This is in contrast to dynamic blogging platforms like <a href="http://www.wordpress.com">WordPress</a>, or possibly <a href="http://www.drupal.org">Drupal</a>, where these two data points are used to drive a lot of central navigation for the site.</p>
 
-<h1 id="section-7">使用图片</h1>
+<h2 id="section-7">使用图片</h2>
 
 <p><code>objc 使用图片
 <img class="imgright" src="http://placekitten.com/320/250" title="Place Kitten #2" >
@@ -516,7 +516,7 @@ The following is a math block:</p>
 
 <p><img class="imgleft" src="/img/portrait.jpg" width="379" height="481" title="‘My Cartoon Portrait’" ></p>
 
-<h1 id="pullquote">使用 pullquote</h1>
+<h2 id="pullquote">使用 pullquote</h2>
 
 <p><code>objc 使用 pullquote
 <span class='pullquote-right' data-pullquote='surround it like this'>
@@ -527,7 +527,7 @@ the text you want to pull, surround it like this and that's all there is to it.
 
 <p>Surround your pullquote like this {" text to be quoted "}</p>
 
-<h1 id="section-8">使用表格</h1>
+<h2 id="section-8">使用表格</h2>
 
 <p>``` objc 使用表格
 &lt;div markdown='1' class='foo'&gt;|—————–+————+—————–+—————-|
@@ -575,7 +575,7 @@ the text you want to pull, surround it like this and that's all there is to it.
 
 </div>
 
-<h1 id="horizontal-rules">使用 Horizontal Rules</h1>
+<h2 id="horizontal-rules">使用 Horizontal Rules</h2>
 
 <p>``` objc 使用 Horizontal Rules
 * * *</p>
@@ -595,7 +595,7 @@ the text you want to pull, surround it like this and that's all there is to it.
 
 <hr />
 
-<h1 id="section-9">使用列表</h1>
+<h2 id="section-9">使用列表</h2>
 
 <ul>
   <li>方法一：使用数字</li>
@@ -636,7 +636,7 @@ the text you want to pull, surround it like this and that's all there is to it.
   <li>Item three</li>
 </ul>
 
-<h1 id="section-10">使用定义列表</h1>
+<h2 id="section-10">使用定义列表</h2>
 
 <dl>
   <dt>``` objc 使用定义列表</dt>
@@ -655,7 +655,7 @@ the text you want to pull, surround it like this and that's all there is to it.
   <dd>and a definition for the term</dd>
 </dl>
 
-<h1 id="attribute">为块级元素添加 attribute</h1>
+<h2 id="attribute">为块级元素添加 attribute</h2>
 
 <p class="class1 class2">``` objc 添加一个属性
 &gt; A nice blockquote</p>
@@ -671,7 +671,7 @@ the text you want to pull, surround it like this and that's all there is to it.
 
 <p class="c1 c2 c1 c2 c3" id="para" title="t">paragraph</p>
 
-<h1 id="inline--attribute">为 inline 元素添加 attribute</h1>
+<h2 id="inline--attribute">为 inline 元素添加 attribute</h2>
 
 <p><code>objc 为内嵌元素添加 attribute
 This is *red*{: style="color: red"}.
@@ -679,7 +679,7 @@ This is *red*{: style="color: red"}.
 
 <p>This is <em style="color: red">red</em>.</p>
 
-<h1 id="section-11">使用扩展</h1>
+<h2 id="section-11">使用扩展</h2>
 
 <p>``` objc 使用扩展
 This is a paragraph
@@ -723,7 +723,7 @@ inline **see**!</p>
   </li>
 </ul>
 
-<h1 id="section-12">使用文字修饰</h1>
+<h2 id="section-12">使用文字修饰</h2>
 
 <p><code>objc 使用文字修饰
 *Emphasized*
@@ -740,7 +740,7 @@ __Strong__
 
 <p><strong>Strong</strong></p>
 
-<h1 id="typographic-symbols">使用 Typographic Symbols</h1>
+<h2 id="typographic-symbols">使用 Typographic Symbols</h2>
 
 <p><code>objc 使用 Typographic Symbols
 --- will become an em-dash (like this —)
