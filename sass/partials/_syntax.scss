@@ -28,7 +28,8 @@ figure.code, .gist-file, pre {
 }
 
 .gist .highlight, figure.code .highlight {
-  @include selection(adjust-color($base03, $lightness: 23%, $saturation: -65%), $text-shadow: $base03 0 1px);
+  //@include selection(adjust-color($base03, $lightness: 23%, $saturation: -65%), $text-shadow: $base03 0 1px);
+  @include selection(#b3d4fc);
 }
 html .gist .gist-file {
   margin-bottom: 1.8em;
