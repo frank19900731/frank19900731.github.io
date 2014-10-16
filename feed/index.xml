@@ -4,7 +4,7 @@
   <title><![CDATA[Blog of 太极儒]]></title>
   <link href="http://frank19900731.github.io/feed" rel="self"/>
   <link href="http://frank19900731.github.io/"/>
-  <updated>2014-10-17T01:18:09+08:00</updated>
+  <updated>2014-10-17T01:56:31+08:00</updated>
   <id>http://frank19900731.github.io/</id>
   <author>
     <name><![CDATA[Frank Song]]></name>
@@ -12,15 +12,6 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
-  
-  <entry>
-    <title type="html"><![CDATA[test page]]></title>
-    <link href="http://frank19900731.github.io/blog/2014/10/17/test-page/"/>
-    <updated>2014-10-17T01:17:22+08:00</updated>
-    <id>http://frank19900731.github.io/blog/2014/10/17/test-page</id>
-    <content type="html"><![CDATA[
-]]></content>
-  </entry>
   
   <entry>
     <title type="html"><![CDATA[【撰写中】Octopress 改造记录]]></title>
