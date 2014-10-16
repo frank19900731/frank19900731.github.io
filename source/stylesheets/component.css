@@ -2,7 +2,7 @@
 .dl-menuwrapper {
     position: fixed;
     top: 85px;
-    left: 40px;
+    left: 32px;
     width: 100%;
     max-width: 300px;
 	-webkit-perspective: 1000px;

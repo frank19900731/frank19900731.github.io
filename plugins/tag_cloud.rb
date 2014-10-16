@@ -124,7 +124,7 @@ module Jekyll
       weighted.each_with_index do |tag, i|
         name, weight = tag
         size = size_min + ((size_max - size_min) * weight).to_f
-        size = size / 1.5
+        size = size
         size = sprintf("%.#{@precision}f", size)
         slug = name.to_url
         @separator = "" if i == (weighted.size - 1)

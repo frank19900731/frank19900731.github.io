@@ -1,12 +1,12 @@
 .main-container {
-    margin-top: 265px;
+    margin-top: 50px;
 }
 
 .hero {
-    position: fixed;
+    /*position: fixed;*/
     top: 0;
     background-attachment: scroll;
-    margin-top: 65px;
+    margin-top: 25px;
     width: 100%;
     z-index: -1;
     height: 200px;
