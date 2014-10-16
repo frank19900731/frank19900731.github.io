@@ -64,24 +64,24 @@
 
 .article-detail h1 {
   width: 100%;
-  margin-left: -60px;
+  margin-left: -30px;
 }
 
 .article-detail h2 {
   width: 85%;
-  margin-left: -30px;
+  margin-left: -15px;
 }
 
 .article-detail h3 {
-  width: 65%;
+  width: 60%;
 }
 
 .article-detail h4 {
-  width: 50%;
+  width: 40%;
 }
 
 .article-detail h5 {
-  width: 40%;
+  width: 30%;
 }
 
 .article-detail h6 {
@@ -136,4 +136,12 @@
 #float-index #markdown-toc {
   margin-top: 10px;
   margin-left: 30px;
+}
+
+body {
+  background-image: url("/images/homeback.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
