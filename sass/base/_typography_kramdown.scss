@@ -111,7 +111,8 @@ article blockquote {
   font-size: 1.2em;
   line-height: 1.5em;
   padding-left: 1em;
-  border-left: 4px solid rgba($text-color-light, .5);
+  //border-left: 4px solid rgba($text-color-light, .5);
+  border-left: 4px solid rgba(#111, .5);
   cite {
     font-style: italic;
     a { color: $text-color-light !important; word-wrap: break-word; }

@@ -42,8 +42,6 @@ tags: [校招链接]
 
 [微软](http://www.joinms.com/index.html)
 
-* [BBS答疑](http://bbs.yingjiesheng.com/forum-228-1.html)
-
 [IBM](http://campus.51job.com/ibmcampus/)
 
 [IDG](http://campus.idgvc.ourats.com/about-us/recruit-process)
@@ -54,18 +52,12 @@ tags: [校招链接]
 
 [飞维美地](http://campus.chinahr.com/2015/pages/feiweimd/jobs.asp)
 
+[宜信](http://cbdic.creditease.cn/jobs.html)
+
 ##Finance Related
 
 [摩根士丹利全球量化部门]()
 
-* Enshi.Chen@morganstanley.com
-
 [世坤](http://www.worldquant.com/join-the-team/careers/?region=int)
-
-* WQChinajobs@worldquant.com
-
-[宜信](http://cbdic.creditease.cn/jobs.html)
-
-* campus2014.bigdata@creditease.cn
 
 <!-- excerpt end -->

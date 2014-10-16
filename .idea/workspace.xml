@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c0d76ca4-948a-4929-8db0-ae6edece3084" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_posts/2014-09-01-2015nian-xiao-zhao-ru-kou.markdown" afterPath="$PROJECT_DIR$/source/_posts/2014-09-01-2015nian-xiao-zhao-ru-kou.markdown" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/_code.scss" afterPath="$PROJECT_DIR$/sass/_code.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/syntax/_highlight.scss" afterPath="$PROJECT_DIR$/sass/syntax/_highlight.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/partials/_syntax.scss" afterPath="$PROJECT_DIR$/sass/partials/_syntax.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/base/_typography.scss" afterPath="$PROJECT_DIR$/sass/base/_typography.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/base/_typography_kramdown.scss" afterPath="$PROJECT_DIR$/sass/base/_typography_kramdown.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_includes/custom/navigation.html" afterPath="$PROJECT_DIR$/source/_includes/custom/navigation.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/stylesheets/styles.css" afterPath="$PROJECT_DIR$/source/stylesheets/styles.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/stylesheets/syntax/syntax.css" afterPath="$PROJECT_DIR$/source/stylesheets/syntax/syntax.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/styles.scss" afterPath="$PROJECT_DIR$/sass/styles.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="octopress.iws" />
@@ -29,7 +31,80 @@
     <favorites_list name="octopress" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="navigation.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/_includes/custom/navigation.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="63" selection-start="263" selection-end="263" vertical-scroll-proportion="-4.75" vertical-offset="0" max-vertical-offset="551">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_config.yml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_config.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="99" column="30" selection-start="3202" selection-end="3202" vertical-scroll-proportion="0.0" vertical-offset="1551" max-vertical-offset="2128">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_code.scss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sass/_code.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="60" column="46" selection-start="1809" selection-end="1809" vertical-scroll-proportion="-11.571428" vertical-offset="816" max-vertical-offset="6118">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="styles.scss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sass/styles.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="68" column="0" selection-start="1496" selection-end="1496" vertical-scroll-proportion="-10.571428" vertical-offset="996" max-vertical-offset="2888">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_theme.scss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sass/base/_theme.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="1" selection-start="702" selection-end="702" vertical-scroll-proportion="-3.857143" vertical-offset="272" max-vertical-offset="1729">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_theme_kramdown.scss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sass/base/_theme_kramdown.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="20" selection-start="826" selection-end="826" vertical-scroll-proportion="-7.928571" vertical-offset="253" max-vertical-offset="1197">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_typography.scss" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sass/base/_typography.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="120" column="16" selection-start="3189" selection-end="3189" vertical-scroll-proportion="0.4205298" vertical-offset="2153" max-vertical-offset="3306">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_typography_kramdown.scss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sass/base/_typography_kramdown.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="114" column="16" selection-start="3090" selection-end="3090" vertical-scroll-proportion="-4.857143" vertical-offset="2030" max-vertical-offset="3192">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -47,11 +122,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/sass/styles.scss" />
-        <option value="$PROJECT_DIR$/_deploy/stylesheets/my.css" />
-        <option value="$PROJECT_DIR$/source/stylesheets/my.css" />
-        <option value="$PROJECT_DIR$/stylesheets/my.css" />
-        <option value="$PROJECT_DIR$/sass/_boilerplate.scss" />
         <option value="$PROJECT_DIR$/source/index.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/sass/_variables.scss" />
@@ -60,9 +130,14 @@
         <option value="$PROJECT_DIR$/sass/_theme.scss" />
         <option value="$PROJECT_DIR$/source/_includes/post/tags.html" />
         <option value="$PROJECT_DIR$/source/_includes/article.html" />
-        <option value="$PROJECT_DIR$/sass/_code.scss" />
         <option value="$PROJECT_DIR$/sass/partials/_syntax.scss" />
         <option value="$PROJECT_DIR$/sass/syntax/_highlight.scss" />
+        <option value="$PROJECT_DIR$/source/_includes/custom/navigation.html" />
+        <option value="$PROJECT_DIR$/sass/_code.scss" />
+        <option value="$PROJECT_DIR$/sass/styles.scss" />
+        <option value="$PROJECT_DIR$/sass/base/_theme_kramdown.scss" />
+        <option value="$PROJECT_DIR$/sass/base/_typography_kramdown.scss" />
+        <option value="$PROJECT_DIR$/sass/base/_typography.scss" />
       </list>
     </option>
   </component>
@@ -85,7 +160,7 @@
     <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
-    <navigator proportions="" version="1" splitterProportion="0.5">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -96,7 +171,111 @@
       <autoscrollFromSource />
       <sortByType />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="octopress" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="octopress" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="octopress" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="octopress" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="octopress" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="source" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="octopress" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="octopress" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sass" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="styles.scss" />
+              <option name="myItemType" value="com.intellij.plugins.watcher.projectView.NestingTreeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="octopress" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="octopress" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sass" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="octopress" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="octopress" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sass" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="custom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="octopress" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="octopress" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sass" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="base" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
@@ -189,15 +368,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1280" height="713" extended-state="7" />
-    <editor active="false" />
+    <frame x="0" y="22" width="1280" height="713" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32686085" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32686085" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27421874" sideWeight="0.6365105" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27421874" sideWeight="0.63754046" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32899022" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
@@ -243,57 +422,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/sass/_theme.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="22" selection-start="127" selection-end="127" vertical-scroll-proportion="0.0" vertical-offset="190" max-vertical-offset="2299">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_layouts/post.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="122" selection-end="122" vertical-scroll-proportion="0.0" vertical-offset="122" max-vertical-offset="627">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_layouts/tag_index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="20" selection-start="159" selection-end="159" vertical-scroll-proportion="0.0" vertical-offset="152" max-vertical-offset="475">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_includes/post/tags.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="17" selection-start="291" selection-end="291" vertical-scroll-proportion="0.0" vertical-offset="133" max-vertical-offset="399">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sass/parts/_header.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="194" column="17" selection-start="5070" selection-end="5070" vertical-scroll-proportion="0.0" vertical-offset="3480" max-vertical-offset="5130">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_includes/custom/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="12" selection-start="208" selection-end="208" vertical-scroll-proportion="0.0" vertical-offset="70" max-vertical-offset="532">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_layouts/default2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="7" selection-start="540" selection-end="540" vertical-scroll-proportion="0.0" vertical-offset="133" max-vertical-offset="1045">
-          <folding>
-            <marker date="1413430682000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sass/partials/_layout.sass">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="2" selection-start="281" selection-end="281" vertical-scroll-proportion="0.475" vertical-offset="95" max-vertical-offset="2565">
@@ -312,8 +440,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="17" selection-start="467" selection-end="467" vertical-scroll-proportion="-10.178572" vertical-offset="0" max-vertical-offset="988">
           <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#1;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -339,13 +467,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sass/_code.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="82" selection-start="2488" selection-end="2488" vertical-scroll-proportion="-1.9814814" vertical-offset="1394" max-vertical-offset="6099">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sass/partials/_syntax.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state line="30" column="82" selection-start="1123" selection-end="1123" vertical-scroll-proportion="-4.107143" vertical-offset="455" max-vertical-offset="5092">
@@ -356,6 +477,62 @@
     <entry file="file://$PROJECT_DIR$/sass/syntax/_highlight.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state line="45" column="0" selection-start="1342" selection-end="1342" vertical-scroll-proportion="0.49567723" vertical-offset="683" max-vertical-offset="6099">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_includes/custom/navigation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="63" selection-start="263" selection-end="263" vertical-scroll-proportion="-4.75" vertical-offset="0" max-vertical-offset="551">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="99" column="30" selection-start="3202" selection-end="3202" vertical-scroll-proportion="0.0" vertical-offset="1551" max-vertical-offset="2128">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/_code.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="46" selection-start="1809" selection-end="1809" vertical-scroll-proportion="-11.571428" vertical-offset="816" max-vertical-offset="6118">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/styles.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="68" column="0" selection-start="1496" selection-end="1496" vertical-scroll-proportion="-10.571428" vertical-offset="996" max-vertical-offset="2888">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/base/_theme.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="1" selection-start="702" selection-end="702" vertical-scroll-proportion="-3.857143" vertical-offset="272" max-vertical-offset="1729">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/base/_theme_kramdown.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="20" selection-start="826" selection-end="826" vertical-scroll-proportion="-7.928571" vertical-offset="253" max-vertical-offset="1197">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/base/_typography_kramdown.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="114" column="16" selection-start="3090" selection-end="3090" vertical-scroll-proportion="-4.857143" vertical-offset="2030" max-vertical-offset="3192">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/base/_typography.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="120" column="16" selection-start="3189" selection-end="3189" vertical-scroll-proportion="0.4205298" vertical-offset="2153" max-vertical-offset="3306">
           <folding />
         </state>
       </provider>

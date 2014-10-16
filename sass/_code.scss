@@ -50,6 +50,7 @@ $noise-bg: image-url('noise.png') top left !default;
 .highlight, html .gist .gist-file .gist-syntax .gist-highlight {
   table td.code { width: 100%; }
   border: 1px solid $pre-border !important;
+  border-radius: 0px 0px 5px 5px;
 }
 .highlight .line-numbers, html .gist .gist-file .gist-syntax .highlight .line_numbers {
   text-align: right;
@@ -302,7 +303,7 @@ figure.code {
   //background: #aaaaaa image-url("code_bg.png") top repeat-x;
   //background-color: #fdb933;
   background-color: #7bbfea;
-  border-radius: 8px 8px 0px 0px;
+  border-radius: 25px 25px 0px 0px;
 }
 
 .download-source {
