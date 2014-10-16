@@ -37,7 +37,7 @@ markdown: kramdown
 
 highlighter: pygments # default python pygments have been replaced by pygments.rb
 
-paginate: 10          # Posts per page on the blog index
+paginate: 8          # Posts per page on the blog index
 pagination_dir: blog  # Directory base for pagination URLs eg. /blog/page/2/
 recent_posts: 5       # Posts in the sidebar Recent Posts section
 excerpt_separator: ""

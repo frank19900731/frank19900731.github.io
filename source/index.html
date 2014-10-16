@@ -5,19 +5,22 @@ exclude_from_search: true
 
 <!-- index.html -->
 {% assign index = true %}
+
+{% if paginator.previous_page %}
+<article style="background-color: rgba(185, 185, 185, 0.5); padding: 8px 25px 8px 25px; border-radius: 5px; text-align: center;">
+    <a class="next" href="{{paginator.previous_page}}">Newer &rarr;</a>
+</article>
+{% endif %}
+
 {% for post in paginator.posts %}
 {% assign content = post.content %}
 <article style="background-color: rgba(185, 185, 185, 0.5); padding: 25px 25px 25px 25px; border-radius: 20px;">
 	{% include article.html %}
 </article>
 {% endfor %}
-<div class="pagination">
+
 {% if paginator.next_page %}
-  <a class="prev" href="{{paginator.next_page}}">&larr; Older</a>
+<article style="background-color: rgba(185, 185, 185, 0.5); padding: 8px 25px 8px 25px; border-radius: 5px; text-align: center;">
+    <a class="prev" href="{{paginator.next_page}}">&larr; Older</a>
+</article>
 {% endif %}
-
-{% if paginator.previous_page %}
-<a class="next" href="{{paginator.previous_page}}">Newer &rarr;</a>
-{% endif %}
-</div>
-

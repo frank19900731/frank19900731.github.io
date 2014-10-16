@@ -1,5 +1,6 @@
 ---
 layout: page
+comments: true
 exclude_from_search: true
 ---
 
