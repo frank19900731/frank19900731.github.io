@@ -4,7 +4,7 @@
   <title><![CDATA[Blog of 太极儒]]></title>
   <link href="http://frank19900731.github.io/atom.xml" rel="self"/>
   <link href="http://frank19900731.github.io/"/>
-  <updated>2014-10-16T20:30:05+08:00</updated>
+  <updated>2014-10-16T20:48:24+08:00</updated>
   <id>http://frank19900731.github.io/</id>
   <author>
     <name><![CDATA[Frank Song]]></name>
@@ -12,6 +12,15 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[【撰写中】Octopress 改造记录]]></title>
+    <link href="http://frank19900731.github.io/blog/2014/10/16/octopress-gai-zao-ji-lu/"/>
+    <updated>2014-10-16T20:45:34+08:00</updated>
+    <id>http://frank19900731.github.io/blog/2014/10/16/octopress-gai-zao-ji-lu</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[【撰写中】我的知识管理经验与工具分享]]></title>
