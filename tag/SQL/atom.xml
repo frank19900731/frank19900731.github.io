@@ -58,7 +58,12 @@
 
 <h3 id="section-2">逻辑题</h3>
 <ul>
-  <li>给定一种运算 NOTAND 及其真值表，让你仅用 NOTAND 表示 OR 和 命题（真值表也给出）。</li>
+  <li>给定一种运算 NOTAND 及其真值表，让你仅用 NOTAND 表示 
+    <ul>
+      <li>OR（真值表给出）;</li>
+      <li>命题（真值表给出）。</li>
+    </ul>
+  </li>
 </ul>
 
 <h3 id="section-3">读程序题</h3>
@@ -68,19 +73,19 @@
 
 <h3 id="section-4">写程序题</h3>
 <ul>
-  <li>给出一些 C++ 函数及解释（pthread_mutex_lock， pthread_mutex_unlock， pthread_cond_wait， pthread_cond_signal， pthread_cond_broadcast），让你实现一个线程安全队列类中的 6 个函数（构造函数、析构函数、enqueue、dequeue、size、destroy，这里 destroy 的作用是清空队列 + 清空插入等待和读取等待）。</li>
+  <li>给出一些函数及解释（pthread_mutex_lock， pthread_mutex_unlock， pthread_cond_wait， pthread_cond_signal， pthread_cond_broadcast），让你实现一个线程安全队列类中的 6 个函数（构造函数、析构函数、enqueue、dequeue、size、destroy，这里 destroy 的作用是清空队列 + 清空插入等待和读取等待）。</li>
 </ul>
 
 <h3 id="section-5">网络题</h3>
 <ol>
-  <li>页面由 A 重定向到 B，站点接受到 A 的请求，返回的代码是 302 还是 301，HEAD 头里 B 对应的属性是 Location 还是 Referral。 </li>
+  <li>页面由 A 重定向到 B，站点接受要访问 A 的请求，返回的代码是 302 还是 301，HEAD 头里 B 对应的属性是 Location 还是 Referral。 </li>
   <li>跨站脚本攻击相关</li>
   <li>忘了……</li>
 </ol>
 
 <h3 id="section-6">算法题</h3>
 <ul>
-  <li>如果可以在多项式时间内解决正整数集合内是否和相等的两个子集（互为补集）的问题并给出一组解，请问如何设计算法解决正整数集合内是否存在一个子集的和等于指定值这一问题？</li>
+  <li>如果可以在多项式时间内解决判断正整数集合内是否存在和相等的两个子集（互为补集）的问题并给出一组解，请问如何设计高效算法解决判断正整数集合内是否存在一个子集的和等于指定值这一问题并给出一组解？</li>
 </ul>
 
 <h3 id="section-7">广告算法</h3>

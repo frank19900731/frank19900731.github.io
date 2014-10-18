@@ -4,7 +4,7 @@
   <title><![CDATA[Blog of 太极儒]]></title>
   <link href="http://frank19900731.github.io/feed" rel="self"/>
   <link href="http://frank19900731.github.io/"/>
-  <updated>2014-10-19T01:23:30+08:00</updated>
+  <updated>2014-10-19T01:47:34+08:00</updated>
   <id>http://frank19900731.github.io/</id>
   <author>
     <name><![CDATA[Frank Song]]></name>
@@ -70,7 +70,12 @@
 
 <h3 id="section-2">逻辑题</h3>
 <ul>
-  <li>给定一种运算 NOTAND 及其真值表，让你仅用 NOTAND 表示 OR 和 命题（真值表也给出）。</li>
+  <li>给定一种运算 NOTAND 及其真值表，让你仅用 NOTAND 表示 
+    <ul>
+      <li>OR（真值表给出）;</li>
+      <li>命题（真值表给出）。</li>
+    </ul>
+  </li>
 </ul>
 
 <h3 id="section-3">读程序题</h3>
@@ -80,19 +85,19 @@
 
 <h3 id="section-4">写程序题</h3>
 <ul>
-  <li>给出一些 C++ 函数及解释（pthread_mutex_lock， pthread_mutex_unlock， pthread_cond_wait， pthread_cond_signal， pthread_cond_broadcast），让你实现一个线程安全队列类中的 6 个函数（构造函数、析构函数、enqueue、dequeue、size、destroy，这里 destroy 的作用是清空队列 + 清空插入等待和读取等待）。</li>
+  <li>给出一些函数及解释（pthread_mutex_lock， pthread_mutex_unlock， pthread_cond_wait， pthread_cond_signal， pthread_cond_broadcast），让你实现一个线程安全队列类中的 6 个函数（构造函数、析构函数、enqueue、dequeue、size、destroy，这里 destroy 的作用是清空队列 + 清空插入等待和读取等待）。</li>
 </ul>
 
 <h3 id="section-5">网络题</h3>
 <ol>
-  <li>页面由 A 重定向到 B，站点接受到 A 的请求，返回的代码是 302 还是 301，HEAD 头里 B 对应的属性是 Location 还是 Referral。 </li>
+  <li>页面由 A 重定向到 B，站点接受要访问 A 的请求，返回的代码是 302 还是 301，HEAD 头里 B 对应的属性是 Location 还是 Referral。 </li>
   <li>跨站脚本攻击相关</li>
   <li>忘了……</li>
 </ol>
 
 <h3 id="section-6">算法题</h3>
 <ul>
-  <li>如果可以在多项式时间内解决正整数集合内是否和相等的两个子集（互为补集）的问题并给出一组解，请问如何设计算法解决正整数集合内是否存在一个子集的和等于指定值这一问题？</li>
+  <li>如果可以在多项式时间内解决判断正整数集合内是否存在和相等的两个子集（互为补集）的问题并给出一组解，请问如何设计高效算法解决判断正整数集合内是否存在一个子集的和等于指定值这一问题并给出一组解？</li>
 </ul>
 
 <h3 id="section-7">广告算法</h3>
@@ -295,7 +300,29 @@
     <link href="http://frank19900731.github.io/blog/2014/10/16/wo-de-zhi-shi-guan-li-jing-yan-yu-gong-ju-fen-xiang/"/>
     <updated>2014-10-16T18:21:07+08:00</updated>
     <id>http://frank19900731.github.io/blog/2014/10/16/wo-de-zhi-shi-guan-li-jing-yan-yu-gong-ju-fen-xiang</id>
-    <content type="html"><![CDATA[<p><img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-10/2.png" width="256" height="256" title="OmniFocus" /></p>
+    <content type="html"><![CDATA[<!-- excerpt start -->
+
+<p><img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-10/2.png" width="128" height="128" title="OmniFocus" />
+<img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-10/4.png" width="128" height="128" title="Byword" />
+<img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-10/5.png" width="128" height="128" title="Caffeinated" />
+<img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-10/6.png" width="128" height="128" title="Dash" /></p>
+
+<p><img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-10/7.png" width="128" height="128" title="Evernote" />
+<img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-10/8.png" width="128" height="128" title="FocusMask" />
+<img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-10/9.png" width="128" height="128" title="Gistify" />
+<img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-10/10.png" width="128" height="128" title="Pocket" /></p>
+
+<p><img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-10/11.png" width="128" height="128" title="PopClip" />
+<img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-10/12.png" width="128" height="128" title="Producteev" />
+<img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-10/13.png" width="128" height="128" title="Ulysses" />
+<img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-10/14.png" width="128" height="128" title="Wunderlist" /></p>
+
+<p><img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-10/15.png" width="128" height="128" title="iDocument" />
+<img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-10/16.png" width="128" height="128" title="MediaWiki" />
+<img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-10/17.png" width="128" height="128" title="小酱油" />
+<img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-10/18.png" width="128" height="128" title="Octopress" /></p>
+
+<!-- excerpt end -->
 ]]></content>
   </entry>
   
