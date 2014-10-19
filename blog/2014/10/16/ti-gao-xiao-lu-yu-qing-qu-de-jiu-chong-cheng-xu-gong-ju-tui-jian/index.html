@@ -12,9 +12,10 @@
   <meta name="author" content="Frank Song">
   <!-- 定义description变量，如果有则用，没有则是正文，前150字 -->
   
-  <meta name="description" content="Categories: 工作效率 提高效率与情趣的九种程序工具推荐 Oct 16th, 2014 目录 选题目的 介绍角度 代码开发篇 引言 Git Shell Script 文档整理篇 引言 Markdown Octopress knitr 自我展示篇 tpp jmpress.js 数据展示篇 &hellip;">
-  
-
+  <meta name="description" content="Categories: 工作效率 提高效率与情趣的九种程序工具推荐 Oct 16th, 2014 目录 选题目的 介绍角度 代码开发篇 引言 Git Shell Script 文档整理篇 引言 Markdown Octopress knitr 自我展示篇 tpp jmpress.js 数据展示篇 Shiny D3 其它工具 总结 自己平时爱鼓捣些工程上的小玩意儿，在一次实验室的Paper Reading上给大家分享了自己的一点体会，给大家推荐了几款能够提高工作效率与生活情趣的工具，整理于此。 想了解更多有趣的工具，请持续关注 工作效率 分类。 选题目的 把自己知道的，用过的，感觉有意思或有用的分享给大家，实现自己的知识梳理与输出 让大家在遇到类似应用场景的时候知道有某种工具是很适用的 督促大家掌握某种工具（比如 git，shell，markdown ），进而提升工作效率，也可以以工具为杠杆撬动更多的资源 介绍角度 类型 星级评定（1星-5星） 入门难度 实用性 装X效果 描述 适用场合 实例说明 参考资料 代码开发篇 引言
+摘自《程序员装逼指南》 千万不要说自己是做Java或者.Net的，一下子就屌丝了。PHP也不行，Python稍微有点烂大街，但还是明显要强过前几个。剩下的可以说自己是做Ruby的，但不要做Rails，说Sinatra。Go、Erlang、Clojure、Scala能给80分，你要是说会个Lisp就是85分，Haskell直接捅到90分，但是千万注意，一定要说只是精通Haskell，没事喜欢研究Haskell，千万不要说干这个的。最后再拽出来一个Prolog就成仙了。如果怕被继续追问就说自己做C++的，就是放了个大烟雾弹，让对面也猜不透究竟有几斤几两。C是什么？不知道。 以上顺序列举的编程语言（C、C++除外）学习难度增大，对逻辑思维能力要求提升，代码实现向人的思维靠拢。 TIOBE程序语言排行榜1，2014年5月最新统计（括号内前一数值为排名，后一数值为占比）： Java（2，16.907%） .Net（C# 6，3.745%，VB.NET 11，1.264%，F# 13，1.030%） PHP（7，3.386%） Python（8，3.057%） Ruby（12，1.242%） Go（31，0.423%） Erlang（47，0.236 &hellip;">
+  <meta name="keywords" content="git, shell, markdown, octopress, knitr, tpp, jmpress.js, shiny, d3, Adobe Muse, mordencv, processing, 效率">
+  <meta name="baidu-site-verification" content="7O78rNJCOH" />
   <!-- http://t.co/dKP3o1e -->
   <meta name="HandheldFriendly" content="True">
   <meta name="MobileOptimized" content="320">
@@ -56,6 +57,23 @@
       //displayAlign: "left",
       //displayIndent: "2em"
     });
+
+    function addBlankTargetForLinks () {
+
+      $('a[href^="http"]').each(function(){
+
+        $(this).attr('target', '_blank');
+
+      });
+
+    }
+
+    $(document).bind('DOMNodeInserted', function(event) {
+
+      addBlankTargetForLinks();
+
+    });
+
 </script>
 <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"></script>
   <!-- google_analytics.html -->
@@ -100,7 +118,7 @@
                 <li><a href='/category/网页开发'>网页开发 (2)</a></li><li><a href='/category/面试求职'>面试求职 (2)</a></li><li><a href='/category/工作效率'>工作效率 (2)</a></li><li><a href='/category/Mac 使用'>Mac 使用 (1)</a></li>
             </ul>
         </li>
-        <li><a href="/blog/tags">All Tags (52)</a>
+        <li><a href="/blog/tags">All Tags (22)</a>
         <li>
             <a href="#">Features</a>
             <ul class="dl-submenu">
@@ -144,7 +162,7 @@
         <ul>
         	<li>
         		<ul>
-                    <li><a href="http://songchengru.eicp.net" target="_blank">Personal Page</a>
+                    <!--li><a href="http://songchengru.eicp.net" target="_blank">Personal Page</a-->
                     <li><a href="/atom.xml" target="_blank">RSS Subscription</a></li>
         			<li>Sina Blog - <a href="http://blog.sina.com/frank19900731" target="_blank">士不可以不弘毅</a></li>
                     <li>Sina Weibo - <a href="http://weibo.sina.com/frank19900731" target="_blank">@太极儒</a></li>
@@ -194,16 +212,16 @@
 <li>
     <h3>Tags</h3>
     <ul class="tag-cloud">
-        <a style="font-size: 90%" href="/tag/Wunderlist/">Wunderlist</a>
-<a style="font-size: 90%" href="/tag/git/">git</a>
-<a style="font-size: 90%" href="/tag/json/">json</a>
-<a style="font-size: 90%" href="/tag/markdown/">markdown</a>
+        <a style="font-size: 90%" href="/tag/json/">json</a>
 <a style="font-size: 210%" href="/tag/octopress/">octopress</a>
-<a style="font-size: 90%" href="/tag/shell/">shell</a>
 <a style="font-size: 90%" href="/tag/中文字体/">中文字体</a>
 <a style="font-size: 90%" href="/tag/中文搜索/">中文搜索</a>
+<a style="font-size: 90%" href="/tag/代码开发/">代码开发</a>
 <a style="font-size: 90%" href="/tag/分页/">分页</a>
-<a style="font-size: 150%" href="/tag/效率/">效率</a>
+<a style="font-size: 90%" href="/tag/效率/">效率</a>
+<a style="font-size: 90%" href="/tag/数据可视化/">数据可视化</a>
+<a style="font-size: 90%" href="/tag/文档整理/">文档整理</a>
+<a style="font-size: 90%" href="/tag/校招链接/">校招链接</a>
 
     </ul>
 </li><li>
@@ -1087,8 +1105,7 @@
   <li>如能产生一点启发，激发一点兴趣，也不枉一番准备</li>
 </ul>
 
-<div style="height: 60px;"></div>
-
+<p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2014/10/16/ti-gao-xiao-lu-yu-qing-qu-de-jiu-chong-cheng-xu-gong-ju-tui-jian/">http://frank19900731.github.io/blog/2014/10/16/ti-gao-xiao-lu-yu-qing-qu-de-jiu-chong-cheng-xu-gong-ju-tui-jian/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
 <div class="footnotes">
   <ol>
     <li id="fn:1">
@@ -1108,7 +1125,7 @@
 <span class="tags">
   <font color="#808080">Tags: </font>
   
-    <a class='tag' href='/tag/Adobe Muse/'>Adobe Muse</a>, <a class='tag' href='/tag/d3/'>d3</a>, <a class='tag' href='/tag/git/'>git</a>, <a class='tag' href='/tag/jmpress.js/'>jmpress.js</a>, <a class='tag' href='/tag/knitr/'>knitr</a>, <a class='tag' href='/tag/markdown/'>markdown</a>, <a class='tag' href='/tag/mordencv/'>mordencv</a>, <a class='tag' href='/tag/octopress/'>octopress</a>, <a class='tag' href='/tag/processing/'>processing</a>, <a class='tag' href='/tag/shell/'>shell</a>, <a class='tag' href='/tag/shiny/'>shiny</a>, <a class='tag' href='/tag/tpp/'>tpp</a>, <a class='tag' href='/tag/效率/'>效率</a>
+    <a class='tag' href='/tag/个人展示/'>个人展示</a>, <a class='tag' href='/tag/代码开发/'>代码开发</a>, <a class='tag' href='/tag/数据可视化/'>数据可视化</a>, <a class='tag' href='/tag/文档整理/'>文档整理</a>
   
 </span>
 &nbsp;&nbsp;&nbsp;&nbsp;
@@ -1236,6 +1253,19 @@
         }
         if ($(".imgcenter")) {
             $(".imgcenter").parent().css("text-align", "center");
+        }
+        if ($(".imgleft-no-shadow")) {
+            $(".imgleft-no-shadow").parent().css("text-align", "left");
+        }
+        if ($(".imgright-no-shadow")) {
+            $(".imgright-no-shadow").parent().css("text-align", "right");
+        }
+        if ($(".imgcenter-no-shadow")) {
+            $(".imgcenter-no-shadow").parent().css("text-align", "center");
+        }
+
+        if ($(".mod_lost_child_little")) {
+            $(".mod_lost_child_little").css("width", "100%");
         }
     }
 </script>

@@ -12,9 +12,9 @@
   <meta name="author" content="Frank Song">
   <!-- 定义description变量，如果有则用，没有则是正文，前150字 -->
   
-  <meta name="description" content="Search Search results {{#entries}} {{#date}}{{displaydate}}{{/date}} {{title}} {{/entries}} $(function() { $('#search-query').lunrSearch({ indexUrl &hellip;">
+  <meta name="description" content=" Search Search results {{#entries}} {{#date}}{{displaydate}}{{/date}} {{title}} {{/entries}} $(function() { $('#search-query').lunrSearch({ indexUrl: '/search.json', // URL of the `search.json` index data for your site results: '#search-results', // jQuery selector for the search results container entries: '.entries', // jQuery selector for the element to contain the results list, must be a child of the results element above. template: '#search-results-template' // jQuery selector for the Mustache.js template }); }); ">
   
-
+  <meta name="baidu-site-verification" content="7O78rNJCOH" />
   <!-- http://t.co/dKP3o1e -->
   <meta name="HandheldFriendly" content="True">
   <meta name="MobileOptimized" content="320">
@@ -56,6 +56,23 @@
       //displayAlign: "left",
       //displayIndent: "2em"
     });
+
+    function addBlankTargetForLinks () {
+
+      $('a[href^="http"]').each(function(){
+
+        $(this).attr('target', '_blank');
+
+      });
+
+    }
+
+    $(document).bind('DOMNodeInserted', function(event) {
+
+      addBlankTargetForLinks();
+
+    });
+
 </script>
 <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"></script>
   <!-- google_analytics.html -->
@@ -100,7 +117,7 @@
                 <li><a href='/category/网页开发'>网页开发 (2)</a></li><li><a href='/category/面试求职'>面试求职 (2)</a></li><li><a href='/category/工作效率'>工作效率 (2)</a></li><li><a href='/category/Mac 使用'>Mac 使用 (1)</a></li>
             </ul>
         </li>
-        <li><a href="/blog/tags">All Tags (52)</a>
+        <li><a href="/blog/tags">All Tags (22)</a>
         <li>
             <a href="#">Features</a>
             <ul class="dl-submenu">
@@ -144,7 +161,7 @@
         <ul>
         	<li>
         		<ul>
-                    <li><a href="http://songchengru.eicp.net" target="_blank">Personal Page</a>
+                    <!--li><a href="http://songchengru.eicp.net" target="_blank">Personal Page</a-->
                     <li><a href="/atom.xml" target="_blank">RSS Subscription</a></li>
         			<li>Sina Blog - <a href="http://blog.sina.com/frank19900731" target="_blank">士不可以不弘毅</a></li>
                     <li>Sina Weibo - <a href="http://weibo.sina.com/frank19900731" target="_blank">@太极儒</a></li>
@@ -194,16 +211,16 @@
 <li>
     <h3>Tags</h3>
     <ul class="tag-cloud">
-        <a style="font-size: 90%" href="/tag/Wunderlist/">Wunderlist</a>
-<a style="font-size: 90%" href="/tag/git/">git</a>
-<a style="font-size: 90%" href="/tag/json/">json</a>
-<a style="font-size: 90%" href="/tag/markdown/">markdown</a>
+        <a style="font-size: 90%" href="/tag/json/">json</a>
 <a style="font-size: 210%" href="/tag/octopress/">octopress</a>
-<a style="font-size: 90%" href="/tag/shell/">shell</a>
 <a style="font-size: 90%" href="/tag/中文字体/">中文字体</a>
 <a style="font-size: 90%" href="/tag/中文搜索/">中文搜索</a>
+<a style="font-size: 90%" href="/tag/代码开发/">代码开发</a>
 <a style="font-size: 90%" href="/tag/分页/">分页</a>
-<a style="font-size: 150%" href="/tag/效率/">效率</a>
+<a style="font-size: 90%" href="/tag/效率/">效率</a>
+<a style="font-size: 90%" href="/tag/数据可视化/">数据可视化</a>
+<a style="font-size: 90%" href="/tag/文档整理/">文档整理</a>
+<a style="font-size: 90%" href="/tag/校招链接/">校招链接</a>
 
     </ul>
 </li><li>
@@ -330,6 +347,19 @@
         }
         if ($(".imgcenter")) {
             $(".imgcenter").parent().css("text-align", "center");
+        }
+        if ($(".imgleft-no-shadow")) {
+            $(".imgleft-no-shadow").parent().css("text-align", "left");
+        }
+        if ($(".imgright-no-shadow")) {
+            $(".imgright-no-shadow").parent().css("text-align", "right");
+        }
+        if ($(".imgcenter-no-shadow")) {
+            $(".imgcenter-no-shadow").parent().css("text-align", "center");
+        }
+
+        if ($(".mod_lost_child_little")) {
+            $(".mod_lost_child_little").css("width", "100%");
         }
     }
 </script>

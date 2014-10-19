@@ -12,9 +12,46 @@
   <meta name="author" content="Frank Song">
   <!-- 定义description变量，如果有则用，没有则是正文，前150字 -->
   
-  <meta name="description" content="Categories: 网页开发 我的第一篇 Octopress 博客 Aug 24th, 2014 目录 段落分级 BlockQuote 代码展示 使用 Inline Code 使用脚注 使用目录 使用数学公式 使用链接 使用图片 使用 pullquote 使用表格 使用 Horizontal &hellip;">
-  
-
+  <meta name="description" content="Categories: 网页开发 我的第一篇 Octopress 博客 Aug 24th, 2014 目录 段落分级 BlockQuote 代码展示 使用 Inline Code 使用脚注 使用目录 使用数学公式 使用链接 使用图片 使用 pullquote 使用表格 使用 Horizontal Rules 使用列表 使用定义列表 为块级元素添加 attribute 为 inline 元素添加 attribute 使用扩展 使用文字修饰 使用 Typographic Symbols 段落分级
+以 # 的个数表示段落层次。 段落分级1
+2
+3
+4
+5
+6
+# 第一级目录
+## 第二级目录
+### 第三级目录
+#### 第四级目录
+##### 第五级目录
+###### 第六级目录 还可以表示为 段落分级1
+2
+3
+4
+5
+第一级标题
+=============== 第二级标题
+--------------- BlockQuote 方法一： 使用 &gt; 使用 &gt;1
+2
+3
+4
+5
+6
+&gt; A sample blockquote.
+&gt;
+&gt; &gt;Nested blockquotes are
+&gt; &gt;also possible.
+&gt;
+&gt; This is the outer quote again. A sample blockquote. Nested blockquotes are
+also possible. This is the outer quote again. 在 blockquote 中添加诸如 header 等的块级元素无妨。 方法二：使用 blockquote 作标记 使用 blockquote 标签1
+2
+3
+{% blockquote Bobby Willis http://google.com/search?q=pants the search for bobby&#39;s pants %}
+Wheeee!
+{% endblockquote %} Wheeee!Bobby Willis The Search for Bobby&#8217;s Pants 代码展示 方法一：缩进一个 tab 使用缩进展示代码1
+System.out.println(&quot;Hello World!&quot &hellip;">
+  <meta name="keywords" content="octopress, kramdown syntax">
+  <meta name="baidu-site-verification" content="7O78rNJCOH" />
   <!-- http://t.co/dKP3o1e -->
   <meta name="HandheldFriendly" content="True">
   <meta name="MobileOptimized" content="320">
@@ -56,6 +93,23 @@
       //displayAlign: "left",
       //displayIndent: "2em"
     });
+
+    function addBlankTargetForLinks () {
+
+      $('a[href^="http"]').each(function(){
+
+        $(this).attr('target', '_blank');
+
+      });
+
+    }
+
+    $(document).bind('DOMNodeInserted', function(event) {
+
+      addBlankTargetForLinks();
+
+    });
+
 </script>
 <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"></script>
   <!-- google_analytics.html -->
@@ -100,7 +154,7 @@
                 <li><a href='/category/网页开发'>网页开发 (2)</a></li><li><a href='/category/面试求职'>面试求职 (2)</a></li><li><a href='/category/工作效率'>工作效率 (2)</a></li><li><a href='/category/Mac 使用'>Mac 使用 (1)</a></li>
             </ul>
         </li>
-        <li><a href="/blog/tags">All Tags (52)</a>
+        <li><a href="/blog/tags">All Tags (22)</a>
         <li>
             <a href="#">Features</a>
             <ul class="dl-submenu">
@@ -144,7 +198,7 @@
         <ul>
         	<li>
         		<ul>
-                    <li><a href="http://songchengru.eicp.net" target="_blank">Personal Page</a>
+                    <!--li><a href="http://songchengru.eicp.net" target="_blank">Personal Page</a-->
                     <li><a href="/atom.xml" target="_blank">RSS Subscription</a></li>
         			<li>Sina Blog - <a href="http://blog.sina.com/frank19900731" target="_blank">士不可以不弘毅</a></li>
                     <li>Sina Weibo - <a href="http://weibo.sina.com/frank19900731" target="_blank">@太极儒</a></li>
@@ -194,16 +248,16 @@
 <li>
     <h3>Tags</h3>
     <ul class="tag-cloud">
-        <a style="font-size: 90%" href="/tag/Wunderlist/">Wunderlist</a>
-<a style="font-size: 90%" href="/tag/git/">git</a>
-<a style="font-size: 90%" href="/tag/json/">json</a>
-<a style="font-size: 90%" href="/tag/markdown/">markdown</a>
+        <a style="font-size: 90%" href="/tag/json/">json</a>
 <a style="font-size: 210%" href="/tag/octopress/">octopress</a>
-<a style="font-size: 90%" href="/tag/shell/">shell</a>
 <a style="font-size: 90%" href="/tag/中文字体/">中文字体</a>
 <a style="font-size: 90%" href="/tag/中文搜索/">中文搜索</a>
+<a style="font-size: 90%" href="/tag/代码开发/">代码开发</a>
 <a style="font-size: 90%" href="/tag/分页/">分页</a>
-<a style="font-size: 150%" href="/tag/效率/">效率</a>
+<a style="font-size: 90%" href="/tag/效率/">效率</a>
+<a style="font-size: 90%" href="/tag/数据可视化/">数据可视化</a>
+<a style="font-size: 90%" href="/tag/文档整理/">文档整理</a>
+<a style="font-size: 90%" href="/tag/校招链接/">校招链接</a>
 
     </ul>
 </li><li>
@@ -1031,6 +1085,7 @@ inline **see**!</p>
 
 <hr />
 
+<p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2014/08/24/wo-de-di-yi-pian-octopress-bo-ke/">http://frank19900731.github.io/blog/2014/08/24/wo-de-di-yi-pian-octopress-bo-ke/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
 <div class="footnotes">
   <ol>
     <li id="fn:1">
@@ -1175,6 +1230,19 @@ inline **see**!</p>
         }
         if ($(".imgcenter")) {
             $(".imgcenter").parent().css("text-align", "center");
+        }
+        if ($(".imgleft-no-shadow")) {
+            $(".imgleft-no-shadow").parent().css("text-align", "left");
+        }
+        if ($(".imgright-no-shadow")) {
+            $(".imgright-no-shadow").parent().css("text-align", "right");
+        }
+        if ($(".imgcenter-no-shadow")) {
+            $(".imgcenter-no-shadow").parent().css("text-align", "center");
+        }
+
+        if ($(".mod_lost_child_little")) {
+            $(".mod_lost_child_little").css("width", "100%");
         }
     }
 </script>

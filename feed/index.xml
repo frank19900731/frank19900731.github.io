@@ -4,7 +4,7 @@
   <title><![CDATA[Blog of 太极儒]]></title>
   <link href="http://frank19900731.github.io/feed" rel="self"/>
   <link href="http://frank19900731.github.io/"/>
-  <updated>2014-10-19T02:04:24+08:00</updated>
+  <updated>2014-10-19T14:40:34+08:00</updated>
   <id>http://frank19900731.github.io/</id>
   <author>
     <name><![CDATA[Frank Song]]></name>
@@ -128,6 +128,8 @@
 <h2 id="section-9">总结</h2>
 
 <p>题型比较广泛，不太需要 ACM 等相关技能，主要看分析思考的能力。当然，对于一些固定知识点的考察（比如网络相关的），也着实让我觉得有必要在考后夯实一下基础。<strong>基础还是记在脑子里比较好，不要太依赖搜索引擎。</strong></p>
+
+<p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2014/10/18/fei-wei-mei-di-bi-shi-hui-yi/">http://frank19900731.github.io/blog/2014/10/18/fei-wei-mei-di-bi-shi-hui-yi/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
 ]]></content>
   </entry>
   
@@ -169,7 +171,7 @@
 <p>由于更新心切，所以没有按照规范先进行 Time Machine 的备份，直接双击、接受条款并重启。因为暑假里刚刚换成 1T 的SSD，所以对于更新安装时间自己还是很乐观的，但很不幸的是自己 <strong>玩儿屁玩儿出屎了</strong>。</p>
 
 <blockquote>
-  <p>About one minite remaing</p>
+  <p>About one minute remaing</p>
 </blockquote>
 
 <p>就这么一句话我足足看了两个小时，越看心越慌。给苹果客服打了若干次电话，比如问一下一般更新时间要多长，如果卡死可不可以中途强按电源键重启，能否通过外接硬盘安装更新等……得到的回答大概是“应该可以”、“没有资料表明可以这么做”。这样的“建议”对于眼前这台进不能10.10、退不能10.9.5的电脑来说，都太苍白了……如果真的如客服所说只能重装系统的话，就得损失最近两天的（自己的习惯是一周一备份）笔记和代码了，心有不甘啊！</p>
@@ -283,6 +285,8 @@
   <li>无论做任何改动，数据安全最重要；</li>
   <li>欲速则不达，不要着急咬第一口，兴许咬到的是包装盒呢，看清情况、做好计划再行动。</li>
 </ul>
+
+<p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2014/10/18/yosemite-sheng-ji-ji-hou-xu/">http://frank19900731.github.io/blog/2014/10/18/yosemite-sheng-ji-ji-hou-xu/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
 ]]></content>
   </entry>
   
@@ -292,6 +296,7 @@
     <updated>2014-10-16T20:45:34+08:00</updated>
     <id>http://frank19900731.github.io/blog/2014/10/16/octopress-gai-zao-ji-lu</id>
     <content type="html"><![CDATA[
+<p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2014/10/16/octopress-gai-zao-ji-lu/">http://frank19900731.github.io/blog/2014/10/16/octopress-gai-zao-ji-lu/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
 ]]></content>
   </entry>
   
@@ -302,27 +307,29 @@
     <id>http://frank19900731.github.io/blog/2014/10/16/wo-de-zhi-shi-guan-li-jing-yan-yu-gong-ju-fen-xiang</id>
     <content type="html"><![CDATA[<!-- excerpt start -->
 
-<p><img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-10/2.png" width="128" height="128" title="OmniFocus" />
-<img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-10/4.png" width="128" height="128" title="Byword" />
-<img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-10/5.png" width="128" height="128" title="Caffeinated" />
-<img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-10/6.png" width="128" height="128" title="Dash" /></p>
+<p><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2014-10/2.png" width="128" height="128" title="OmniFocus" />
+<img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2014-10/4.png" width="128" height="128" title="Byword" />
+<img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2014-10/5.png" width="128" height="128" title="Caffeinated" />
+<img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2014-10/6.png" width="128" height="128" title="Dash" /></p>
 
-<p><img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-10/7.png" width="128" height="128" title="Evernote" />
-<img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-10/8.png" width="128" height="128" title="FocusMask" />
-<img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-10/9.png" width="128" height="128" title="Gistify" />
-<img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-10/10.png" width="128" height="128" title="Pocket" /></p>
+<p><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2014-10/7.png" width="128" height="128" title="Evernote" />
+<img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2014-10/8.png" width="128" height="128" title="FocusMask" />
+<img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2014-10/9.png" width="128" height="128" title="Gistify" />
+<img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2014-10/10.png" width="128" height="128" title="Pocket" /></p>
 
-<p><img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-10/11.png" width="128" height="128" title="PopClip" />
-<img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-10/12.png" width="128" height="128" title="Producteev" />
-<img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-10/13.png" width="128" height="128" title="Ulysses" />
-<img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-10/14.png" width="128" height="128" title="Wunderlist" /></p>
+<p><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2014-10/11.png" width="128" height="128" title="PopClip" />
+<img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2014-10/12.png" width="128" height="128" title="Producteev" />
+<img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2014-10/13.png" width="128" height="128" title="Ulysses" />
+<img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2014-10/14.png" width="128" height="128" title="Wunderlist" /></p>
 
-<p><img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-10/15.png" width="128" height="128" title="iDocument" />
-<img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-10/16.png" width="128" height="128" title="MediaWiki" />
-<img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-10/17.png" width="128" height="128" title="小酱油" />
-<img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-10/18.png" width="128" height="128" title="Octopress" /></p>
+<p><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2014-10/15.png" width="128" height="128" title="iDocument" />
+<img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2014-10/16.png" width="128" height="128" title="MediaWiki" />
+<img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2014-10/17.png" width="128" height="128" title="小酱油" />
+<img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2014-10/18.png" width="128" height="128" title="Octopress" /></p>
 
 <!-- excerpt end -->
+
+<p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2014/10/16/wo-de-zhi-shi-guan-li-jing-yan-yu-gong-ju-fen-xiang/">http://frank19900731.github.io/blog/2014/10/16/wo-de-zhi-shi-guan-li-jing-yan-yu-gong-ju-fen-xiang/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
 ]]></content>
   </entry>
   
@@ -1148,8 +1155,7 @@
   <li>如能产生一点启发，激发一点兴趣，也不枉一番准备</li>
 </ul>
 
-<div style="height: 60px;"></div>
-
+<p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2014/10/16/ti-gao-xiao-lu-yu-qing-qu-de-jiu-chong-cheng-xu-gong-ju-tui-jian/">http://frank19900731.github.io/blog/2014/10/16/ti-gao-xiao-lu-yu-qing-qu-de-jiu-chong-cheng-xu-gong-ju-tui-jian/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
 <div class="footnotes">
   <ol>
     <li id="fn:1">
@@ -1222,6 +1228,8 @@
 <p><a href="http://www.worldquant.com/join-the-team/careers/?region=int">世坤</a></p>
 
 <!-- excerpt end -->
+
+<p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2014/09/01/2015nian-xiao-zhao-ru-kou/">http://frank19900731.github.io/blog/2014/09/01/2015nian-xiao-zhao-ru-kou/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
 ]]></content>
   </entry>
   
@@ -1991,6 +1999,7 @@ inline **see**!</p>
 
 <hr />
 
+<p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2014/08/24/wo-de-di-yi-pian-octopress-bo-ke/">http://frank19900731.github.io/blog/2014/08/24/wo-de-di-yi-pian-octopress-bo-ke/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
 <div class="footnotes">
   <ol>
     <li id="fn:1">

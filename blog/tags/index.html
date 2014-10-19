@@ -12,19 +12,30 @@
   <meta name="author" content="Frank Song">
   <!-- 定义description变量，如果有则用，没有则是正文，前150字 -->
   
-  <meta name="description" content="Blog Tags Adobe Muse (1)
-Bartender (1)
-Byword (1)
-Caffeinated (1)
-Dash (1)
-Evernote (1)
-FocusMask (1)
-Gistify (1)
-Homebrew (1)
+  <meta name="description" content=" Blog Tags Homebrew (1)
 Linux (1)
-Matlab (1) &hellip;">
+SQL (1)
+Yosemite (1)
+codesign (1)
+json (1)
+kramdown syntax (1)
+octopress (2)
+个人展示 (1)
+中文字体 (1)
+中文搜索 (1)
+代码开发 (1)
+分页 (1)
+效率 (1)
+数据可视化 (1)
+文档整理 (1)
+校招链接 (1)
+知识管理 (1)
+算号器 (1)
+算法 (1)
+逻辑 (1)
+飞维美地 (1) ">
   
-
+  <meta name="baidu-site-verification" content="7O78rNJCOH" />
   <!-- http://t.co/dKP3o1e -->
   <meta name="HandheldFriendly" content="True">
   <meta name="MobileOptimized" content="320">
@@ -66,6 +77,23 @@ Matlab (1) &hellip;">
       //displayAlign: "left",
       //displayIndent: "2em"
     });
+
+    function addBlankTargetForLinks () {
+
+      $('a[href^="http"]').each(function(){
+
+        $(this).attr('target', '_blank');
+
+      });
+
+    }
+
+    $(document).bind('DOMNodeInserted', function(event) {
+
+      addBlankTargetForLinks();
+
+    });
+
 </script>
 <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"></script>
   <!-- google_analytics.html -->
@@ -110,7 +138,7 @@ Matlab (1) &hellip;">
                 <li><a href='/category/网页开发'>网页开发 (2)</a></li><li><a href='/category/面试求职'>面试求职 (2)</a></li><li><a href='/category/工作效率'>工作效率 (2)</a></li><li><a href='/category/Mac 使用'>Mac 使用 (1)</a></li>
             </ul>
         </li>
-        <li><a href="/blog/tags">All Tags (52)</a>
+        <li><a href="/blog/tags">All Tags (22)</a>
         <li>
             <a href="#">Features</a>
             <ul class="dl-submenu">
@@ -154,7 +182,7 @@ Matlab (1) &hellip;">
         <ul>
         	<li>
         		<ul>
-                    <li><a href="http://songchengru.eicp.net" target="_blank">Personal Page</a>
+                    <!--li><a href="http://songchengru.eicp.net" target="_blank">Personal Page</a-->
                     <li><a href="/atom.xml" target="_blank">RSS Subscription</a></li>
         			<li>Sina Blog - <a href="http://blog.sina.com/frank19900731" target="_blank">士不可以不弘毅</a></li>
                     <li>Sina Weibo - <a href="http://weibo.sina.com/frank19900731" target="_blank">@太极儒</a></li>
@@ -204,16 +232,16 @@ Matlab (1) &hellip;">
 <li>
     <h3>Tags</h3>
     <ul class="tag-cloud">
-        <a style="font-size: 90%" href="/tag/Wunderlist/">Wunderlist</a>
-<a style="font-size: 90%" href="/tag/git/">git</a>
-<a style="font-size: 90%" href="/tag/json/">json</a>
-<a style="font-size: 90%" href="/tag/markdown/">markdown</a>
+        <a style="font-size: 90%" href="/tag/json/">json</a>
 <a style="font-size: 210%" href="/tag/octopress/">octopress</a>
-<a style="font-size: 90%" href="/tag/shell/">shell</a>
 <a style="font-size: 90%" href="/tag/中文字体/">中文字体</a>
 <a style="font-size: 90%" href="/tag/中文搜索/">中文搜索</a>
+<a style="font-size: 90%" href="/tag/代码开发/">代码开发</a>
 <a style="font-size: 90%" href="/tag/分页/">分页</a>
-<a style="font-size: 150%" href="/tag/效率/">效率</a>
+<a style="font-size: 90%" href="/tag/效率/">效率</a>
+<a style="font-size: 90%" href="/tag/数据可视化/">数据可视化</a>
+<a style="font-size: 90%" href="/tag/文档整理/">文档整理</a>
+<a style="font-size: 90%" href="/tag/校招链接/">校招链接</a>
 
     </ul>
 </li><li>
@@ -243,58 +271,28 @@ Matlab (1) &hellip;">
   <div id="blog-tags">
     <hr>
     <ul>
-        <li class='tag'><a href='/tag/Adobe Muse/'>Adobe Muse (1)</a></li>
-<li class='tag'><a href='/tag/Bartender/'>Bartender (1)</a></li>
-<li class='tag'><a href='/tag/Byword/'>Byword (1)</a></li>
-<li class='tag'><a href='/tag/Caffeinated/'>Caffeinated (1)</a></li>
-<li class='tag'><a href='/tag/Dash/'>Dash (1)</a></li>
-<li class='tag'><a href='/tag/Evernote/'>Evernote (1)</a></li>
-<li class='tag'><a href='/tag/FocusMask/'>FocusMask (1)</a></li>
-<li class='tag'><a href='/tag/Gistify/'>Gistify (1)</a></li>
-<li class='tag'><a href='/tag/Homebrew/'>Homebrew (1)</a></li>
+        <li class='tag'><a href='/tag/Homebrew/'>Homebrew (1)</a></li>
 <li class='tag'><a href='/tag/Linux/'>Linux (1)</a></li>
-<li class='tag'><a href='/tag/Matlab/'>Matlab (1)</a></li>
-<li class='tag'><a href='/tag/MySQL/'>MySQL (1)</a></li>
-<li class='tag'><a href='/tag/OmniFocus/'>OmniFocus (1)</a></li>
-<li class='tag'><a href='/tag/Pocket/'>Pocket (1)</a></li>
-<li class='tag'><a href='/tag/PopClip/'>PopClip (1)</a></li>
-<li class='tag'><a href='/tag/Producteev/'>Producteev (1)</a></li>
 <li class='tag'><a href='/tag/SQL/'>SQL (1)</a></li>
-<li class='tag'><a href='/tag/TextExpander/'>TextExpander (1)</a></li>
-<li class='tag'><a href='/tag/Totalfinder/'>Totalfinder (1)</a></li>
-<li class='tag'><a href='/tag/Trim Enabler/'>Trim Enabler (1)</a></li>
-<li class='tag'><a href='/tag/Ulysses/'>Ulysses (1)</a></li>
-<li class='tag'><a href='/tag/VMWare/'>VMWare (1)</a></li>
-<li class='tag'><a href='/tag/Wunderlist/'>Wunderlist (1)</a></li>
 <li class='tag'><a href='/tag/Yosemite/'>Yosemite (1)</a></li>
 <li class='tag'><a href='/tag/codesign/'>codesign (1)</a></li>
-<li class='tag'><a href='/tag/d3/'>d3 (1)</a></li>
-<li class='tag'><a href='/tag/git/'>git (1)</a></li>
-<li class='tag'><a href='/tag/iDocument/'>iDocument (1)</a></li>
-<li class='tag'><a href='/tag/jmpress.js/'>jmpress.js (1)</a></li>
 <li class='tag'><a href='/tag/json/'>json (1)</a></li>
-<li class='tag'><a href='/tag/knitr/'>knitr (1)</a></li>
 <li class='tag'><a href='/tag/kramdown syntax/'>kramdown syntax (1)</a></li>
-<li class='tag'><a href='/tag/markdown/'>markdown (1)</a></li>
-<li class='tag'><a href='/tag/mediawiki/'>mediawiki (1)</a></li>
-<li class='tag'><a href='/tag/mordencv/'>mordencv (1)</a></li>
-<li class='tag'><a href='/tag/octopress/'>octopress (4)</a></li>
-<li class='tag'><a href='/tag/processing/'>processing (1)</a></li>
-<li class='tag'><a href='/tag/shell/'>shell (1)</a></li>
-<li class='tag'><a href='/tag/shiny/'>shiny (1)</a></li>
-<li class='tag'><a href='/tag/tpp/'>tpp (1)</a></li>
+<li class='tag'><a href='/tag/octopress/'>octopress (2)</a></li>
+<li class='tag'><a href='/tag/个人展示/'>个人展示 (1)</a></li>
 <li class='tag'><a href='/tag/中文字体/'>中文字体 (1)</a></li>
 <li class='tag'><a href='/tag/中文搜索/'>中文搜索 (1)</a></li>
+<li class='tag'><a href='/tag/代码开发/'>代码开发 (1)</a></li>
 <li class='tag'><a href='/tag/分页/'>分页 (1)</a></li>
-<li class='tag'><a href='/tag/小酱油/'>小酱油 (1)</a></li>
-<li class='tag'><a href='/tag/效率/'>效率 (2)</a></li>
+<li class='tag'><a href='/tag/效率/'>效率 (1)</a></li>
+<li class='tag'><a href='/tag/数据可视化/'>数据可视化 (1)</a></li>
+<li class='tag'><a href='/tag/文档整理/'>文档整理 (1)</a></li>
 <li class='tag'><a href='/tag/校招链接/'>校招链接 (1)</a></li>
-<li class='tag'><a href='/tag/田志刚/'>田志刚 (1)</a></li>
 <li class='tag'><a href='/tag/知识管理/'>知识管理 (1)</a></li>
+<li class='tag'><a href='/tag/算号器/'>算号器 (1)</a></li>
 <li class='tag'><a href='/tag/算法/'>算法 (1)</a></li>
 <li class='tag'><a href='/tag/逻辑/'>逻辑 (1)</a></li>
 <li class='tag'><a href='/tag/飞维美地/'>飞维美地 (1)</a></li>
-<li class='tag'><a href='/tag/鲜果阅读/'>鲜果阅读 (1)</a></li>
 
     </ul>
 </div>
@@ -359,6 +357,19 @@ Matlab (1) &hellip;">
         }
         if ($(".imgcenter")) {
             $(".imgcenter").parent().css("text-align", "center");
+        }
+        if ($(".imgleft-no-shadow")) {
+            $(".imgleft-no-shadow").parent().css("text-align", "left");
+        }
+        if ($(".imgright-no-shadow")) {
+            $(".imgright-no-shadow").parent().css("text-align", "right");
+        }
+        if ($(".imgcenter-no-shadow")) {
+            $(".imgcenter-no-shadow").parent().css("text-align", "center");
+        }
+
+        if ($(".mod_lost_child_little")) {
+            $(".mod_lost_child_little").css("width", "100%");
         }
     }
 </script>

@@ -12,10 +12,9 @@
   <meta name="author" content="Frank Song">
   <!-- 定义description变量，如果有则用，没有则是正文，前150字 -->
   
-  <meta name="description" content="Categories: 面试求职 飞维美地笔试回忆 Oct 18th, 2014 这是面试、笔试总结的第一篇，其余会陆续更新直至十一月末，欢迎持续关注 面试求职 分类。 简介
-飞维美地 这家公司是校招季才了解的一家公司，隶属 Comcast， 提供互联网视频广告投放、监测、预测、 &hellip;">
-  
-
+  <meta name="description" content="小小90后程序员，清本清硕，爱祖国爱人民，爱阅读爱编程。机器学习、大数据处理是工作方向，关注个人效率提升等话题。本博客是为开拓个人知识分享渠道而开，也有助于加速知识积累的内化，欢迎拍砖捧场。">
+  <meta name="keywords" content="清华大学, 自动化系, 机器学习, 效率, 阅读, 编程, 正能量">
+  <meta name="baidu-site-verification" content="7O78rNJCOH" />
   <!-- http://t.co/dKP3o1e -->
   <meta name="HandheldFriendly" content="True">
   <meta name="MobileOptimized" content="320">
@@ -57,6 +56,23 @@
       //displayAlign: "left",
       //displayIndent: "2em"
     });
+
+    function addBlankTargetForLinks () {
+
+      $('a[href^="http"]').each(function(){
+
+        $(this).attr('target', '_blank');
+
+      });
+
+    }
+
+    $(document).bind('DOMNodeInserted', function(event) {
+
+      addBlankTargetForLinks();
+
+    });
+
 </script>
 <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"></script>
   <!-- google_analytics.html -->
@@ -93,7 +109,7 @@
                 <li><a href='/category/网页开发'>网页开发 (2)</a></li><li><a href='/category/面试求职'>面试求职 (2)</a></li><li><a href='/category/工作效率'>工作效率 (2)</a></li><li><a href='/category/Mac 使用'>Mac 使用 (1)</a></li>
             </ul>
         </li>
-        <li><a href="/blog/tags">All Tags (52)</a>
+        <li><a href="/blog/tags">All Tags (22)</a>
         <li>
             <a href="#">Features</a>
             <ul class="dl-submenu">
@@ -134,7 +150,7 @@
         <ul>
         	<li>
         		<ul>
-                    <li><a href="http://songchengru.eicp.net" target="_blank">Personal Page</a>
+                    <!--li><a href="http://songchengru.eicp.net" target="_blank">Personal Page</a-->
                     <li><a href="/atom.xml" target="_blank">RSS Subscription</a></li>
         			<li>Sina Blog - <a href="http://blog.sina.com/frank19900731" target="_blank">士不可以不弘毅</a></li>
                     <li>Sina Weibo - <a href="http://weibo.sina.com/frank19900731" target="_blank">@太极儒</a></li>
@@ -184,16 +200,16 @@
 <li>
     <h3>Tags</h3>
     <ul class="tag-cloud">
-        <a style="font-size: 90%" href="/tag/Wunderlist/">Wunderlist</a>
-<a style="font-size: 90%" href="/tag/git/">git</a>
-<a style="font-size: 90%" href="/tag/json/">json</a>
-<a style="font-size: 90%" href="/tag/markdown/">markdown</a>
+        <a style="font-size: 90%" href="/tag/json/">json</a>
 <a style="font-size: 210%" href="/tag/octopress/">octopress</a>
-<a style="font-size: 90%" href="/tag/shell/">shell</a>
 <a style="font-size: 90%" href="/tag/中文字体/">中文字体</a>
 <a style="font-size: 90%" href="/tag/中文搜索/">中文搜索</a>
+<a style="font-size: 90%" href="/tag/代码开发/">代码开发</a>
 <a style="font-size: 90%" href="/tag/分页/">分页</a>
-<a style="font-size: 150%" href="/tag/效率/">效率</a>
+<a style="font-size: 90%" href="/tag/效率/">效率</a>
+<a style="font-size: 90%" href="/tag/数据可视化/">数据可视化</a>
+<a style="font-size: 90%" href="/tag/文档整理/">文档整理</a>
+<a style="font-size: 90%" href="/tag/校招链接/">校招链接</a>
 
     </ul>
 </li><li>
@@ -349,7 +365,7 @@
 <p>由于更新心切，所以没有按照规范先进行 Time Machine 的备份，直接双击、接受条款并重启。因为暑假里刚刚换成 1T 的SSD，所以对于更新安装时间自己还是很乐观的，但很不幸的是自己 <strong>玩儿屁玩儿出屎了</strong>。</p>
 
 <blockquote>
-  <p>About one minite remaing</p>
+  <p>About one minute remaing</p>
 </blockquote>
 
 <p>就这么一句话我足足看了两个小时，越看心越慌。给苹果客服打了若干次电话，比如问一下一般更新时间要多长，如果卡死可不可以中途强按电源键重启，能否通过外接硬盘安装更新等……得到的回答大概是“应该可以”、“没有资料表明可以这么做”。这样的“建议”对于眼前这台进不能10.10、退不能10.9.5的电脑来说，都太苍白了……如果真的如客服所说只能重装系统的话，就得损失最近两天的（自己的习惯是一周一备份）笔记和代码了，心有不甘啊！</p>
@@ -367,7 +383,7 @@
 <span class="tags">
   <font color="#808080">Tags: </font>
   
-    <a class='tag' href='/tag/Bartender/'>Bartender</a>, <a class='tag' href='/tag/Homebrew/'>Homebrew</a>, <a class='tag' href='/tag/Matlab/'>Matlab</a>, <a class='tag' href='/tag/MySQL/'>MySQL</a>, <a class='tag' href='/tag/TextExpander/'>TextExpander</a>, <a class='tag' href='/tag/Totalfinder/'>Totalfinder</a>, <a class='tag' href='/tag/Trim Enabler/'>Trim Enabler</a>, <a class='tag' href='/tag/VMWare/'>VMWare</a>, <a class='tag' href='/tag/Yosemite/'>Yosemite</a>, <a class='tag' href='/tag/codesign/'>codesign</a>
+    <a class='tag' href='/tag/Homebrew/'>Homebrew</a>, <a class='tag' href='/tag/Yosemite/'>Yosemite</a>, <a class='tag' href='/tag/codesign/'>codesign</a>, <a class='tag' href='/tag/算号器/'>算号器</a>
   
 </span>
 &nbsp;&nbsp;&nbsp;&nbsp;
@@ -492,25 +508,25 @@
 
   <section class="article-index">
 
-<p><img class="imgcenter" src="/img/post/2014-10/2.png" width="128" height="128" title="OmniFocus" />
-<img class="imgcenter" src="/img/post/2014-10/4.png" width="128" height="128" title="Byword" />
-<img class="imgcenter" src="/img/post/2014-10/5.png" width="128" height="128" title="Caffeinated" />
-<img class="imgcenter" src="/img/post/2014-10/6.png" width="128" height="128" title="Dash" /></p>
+<p><img class="imgcenter-no-shadow" src="/img/post/2014-10/2.png" width="128" height="128" title="OmniFocus" />
+<img class="imgcenter-no-shadow" src="/img/post/2014-10/4.png" width="128" height="128" title="Byword" />
+<img class="imgcenter-no-shadow" src="/img/post/2014-10/5.png" width="128" height="128" title="Caffeinated" />
+<img class="imgcenter-no-shadow" src="/img/post/2014-10/6.png" width="128" height="128" title="Dash" /></p>
 
-<p><img class="imgcenter" src="/img/post/2014-10/7.png" width="128" height="128" title="Evernote" />
-<img class="imgcenter" src="/img/post/2014-10/8.png" width="128" height="128" title="FocusMask" />
-<img class="imgcenter" src="/img/post/2014-10/9.png" width="128" height="128" title="Gistify" />
-<img class="imgcenter" src="/img/post/2014-10/10.png" width="128" height="128" title="Pocket" /></p>
+<p><img class="imgcenter-no-shadow" src="/img/post/2014-10/7.png" width="128" height="128" title="Evernote" />
+<img class="imgcenter-no-shadow" src="/img/post/2014-10/8.png" width="128" height="128" title="FocusMask" />
+<img class="imgcenter-no-shadow" src="/img/post/2014-10/9.png" width="128" height="128" title="Gistify" />
+<img class="imgcenter-no-shadow" src="/img/post/2014-10/10.png" width="128" height="128" title="Pocket" /></p>
 
-<p><img class="imgcenter" src="/img/post/2014-10/11.png" width="128" height="128" title="PopClip" />
-<img class="imgcenter" src="/img/post/2014-10/12.png" width="128" height="128" title="Producteev" />
-<img class="imgcenter" src="/img/post/2014-10/13.png" width="128" height="128" title="Ulysses" />
-<img class="imgcenter" src="/img/post/2014-10/14.png" width="128" height="128" title="Wunderlist" /></p>
+<p><img class="imgcenter-no-shadow" src="/img/post/2014-10/11.png" width="128" height="128" title="PopClip" />
+<img class="imgcenter-no-shadow" src="/img/post/2014-10/12.png" width="128" height="128" title="Producteev" />
+<img class="imgcenter-no-shadow" src="/img/post/2014-10/13.png" width="128" height="128" title="Ulysses" />
+<img class="imgcenter-no-shadow" src="/img/post/2014-10/14.png" width="128" height="128" title="Wunderlist" /></p>
 
-<p><img class="imgcenter" src="/img/post/2014-10/15.png" width="128" height="128" title="iDocument" />
-<img class="imgcenter" src="/img/post/2014-10/16.png" width="128" height="128" title="MediaWiki" />
-<img class="imgcenter" src="/img/post/2014-10/17.png" width="128" height="128" title="小酱油" />
-<img class="imgcenter" src="/img/post/2014-10/18.png" width="128" height="128" title="Octopress" /></p>
+<p><img class="imgcenter-no-shadow" src="/img/post/2014-10/15.png" width="128" height="128" title="iDocument" />
+<img class="imgcenter-no-shadow" src="/img/post/2014-10/16.png" width="128" height="128" title="MediaWiki" />
+<img class="imgcenter-no-shadow" src="/img/post/2014-10/17.png" width="128" height="128" title="小酱油" />
+<img class="imgcenter-no-shadow" src="/img/post/2014-10/18.png" width="128" height="128" title="Octopress" /></p>
 
 </section>
   <a href="/blog/2014/10/16/wo-de-zhi-shi-guan-li-jing-yan-yu-gong-ju-fen-xiang/" style="background: #da3e10; color: #ffffff; border-radius: 5px; border: 4px solid #da3e10;">继续阅读</a>&nbsp;&nbsp;&nbsp;&nbsp;
@@ -521,7 +537,7 @@
 <span class="tags">
   <font color="#808080">Tags: </font>
   
-    <a class='tag' href='/tag/Byword/'>Byword</a>, <a class='tag' href='/tag/Caffeinated/'>Caffeinated</a>, <a class='tag' href='/tag/Dash/'>Dash</a>, <a class='tag' href='/tag/Evernote/'>Evernote</a>, <a class='tag' href='/tag/FocusMask/'>FocusMask</a>, <a class='tag' href='/tag/Gistify/'>Gistify</a>, <a class='tag' href='/tag/OmniFocus/'>OmniFocus</a>, <a class='tag' href='/tag/Pocket/'>Pocket</a>, <a class='tag' href='/tag/PopClip/'>PopClip</a>, <a class='tag' href='/tag/Producteev/'>Producteev</a>, <a class='tag' href='/tag/Ulysses/'>Ulysses</a>, <a class='tag' href='/tag/Wunderlist/'>Wunderlist</a>, <a class='tag' href='/tag/iDocument/'>iDocument</a>, <a class='tag' href='/tag/mediawiki/'>mediawiki</a>, <a class='tag' href='/tag/octopress/'>octopress</a>, <a class='tag' href='/tag/小酱油/'>小酱油</a>, <a class='tag' href='/tag/效率/'>效率</a>, <a class='tag' href='/tag/田志刚/'>田志刚</a>, <a class='tag' href='/tag/知识管理/'>知识管理</a>, <a class='tag' href='/tag/鲜果阅读/'>鲜果阅读</a>
+    <a class='tag' href='/tag/效率/'>效率</a>, <a class='tag' href='/tag/知识管理/'>知识管理</a>
   
 </span>
 &nbsp;&nbsp;&nbsp;&nbsp;
@@ -616,7 +632,7 @@
 <span class="tags">
   <font color="#808080">Tags: </font>
   
-    <a class='tag' href='/tag/Adobe Muse/'>Adobe Muse</a>, <a class='tag' href='/tag/d3/'>d3</a>, <a class='tag' href='/tag/git/'>git</a>, <a class='tag' href='/tag/jmpress.js/'>jmpress.js</a>, <a class='tag' href='/tag/knitr/'>knitr</a>, <a class='tag' href='/tag/markdown/'>markdown</a>, <a class='tag' href='/tag/mordencv/'>mordencv</a>, <a class='tag' href='/tag/octopress/'>octopress</a>, <a class='tag' href='/tag/processing/'>processing</a>, <a class='tag' href='/tag/shell/'>shell</a>, <a class='tag' href='/tag/shiny/'>shiny</a>, <a class='tag' href='/tag/tpp/'>tpp</a>, <a class='tag' href='/tag/效率/'>效率</a>
+    <a class='tag' href='/tag/个人展示/'>个人展示</a>, <a class='tag' href='/tag/代码开发/'>代码开发</a>, <a class='tag' href='/tag/数据可视化/'>数据可视化</a>, <a class='tag' href='/tag/文档整理/'>文档整理</a>
   
 </span>
 &nbsp;&nbsp;&nbsp;&nbsp;
@@ -822,6 +838,19 @@
         }
         if ($(".imgcenter")) {
             $(".imgcenter").parent().css("text-align", "center");
+        }
+        if ($(".imgleft-no-shadow")) {
+            $(".imgleft-no-shadow").parent().css("text-align", "left");
+        }
+        if ($(".imgright-no-shadow")) {
+            $(".imgright-no-shadow").parent().css("text-align", "right");
+        }
+        if ($(".imgcenter-no-shadow")) {
+            $(".imgcenter-no-shadow").parent().css("text-align", "center");
+        }
+
+        if ($(".mod_lost_child_little")) {
+            $(".mod_lost_child_little").css("width", "100%");
         }
     }
 </script>
