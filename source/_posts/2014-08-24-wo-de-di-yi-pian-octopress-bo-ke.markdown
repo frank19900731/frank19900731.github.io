@@ -5,6 +5,7 @@ date: 2014-08-24 21:50:56 +0800
 comments: true
 categories: [网页开发]
 tags: [octopress, kramdown syntax]
+keywords: octopress, kramdown syntax
 ---
 
 __目录__

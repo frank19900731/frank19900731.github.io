@@ -12,5 +12,22 @@
       //displayAlign: "left",
       //displayIndent: "2em"
     });
+
+    function addBlankTargetForLinks () {
+
+      $('a[href^="http"]').each(function(){
+
+        $(this).attr('target', '_blank');
+
+      });
+
+    }
+
+    $(document).bind('DOMNodeInserted', function(event) {
+
+      addBlankTargetForLinks();
+
+    });
+
 </script>
 <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"></script>

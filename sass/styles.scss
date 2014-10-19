@@ -102,13 +102,6 @@
 .article-detail img {
   //border: 5px solid #EEEEEE;
   border-radius: 10px;
-  -moz-box-shadow: 3px 3px 10px #777;
-  -webkit-box-shadow: 3px 3px 10px #777;
-  box-shadow: 3px 3px 10px #777;
-  /* For IE 8 */
-  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=10, Direction=135, Color='#808080)";
-  /* For IE 5.5 - 7 */
-  filter: progid:DXImageTransform.Microsoft.Shadow(Strength=10, Direction=135, Color='#808080');
 }
 
 #gotop{
@@ -174,4 +167,29 @@ body {
 
 #ds-recent-comments li.ds-comment {
   border-top: 0px;
+}
+
+.imgcenter, .imgright, .imgleft {
+  -moz-box-shadow: 3px 3px 15px #777;
+  -webkit-box-shadow: 3px 3px 15px #777;
+  box-shadow: 3px 3px 15px #777;
+  /* For IE 8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=15, Direction=135, Color='#808080)";
+  /* For IE 5.5 - 7 */
+  filter: progid:DXImageTransform.Microsoft.Shadow(Strength=15, Direction=135, Color='#808080');
+}
+
+.imgcenter-no-shadow, .imgcenter-no-shadow, .imgcenter-no-shadow {
+  background: none;
+}
+
+.post-footer{
+  margin-top:10px;
+  text-align: center;
+  line-height: 1.8;
+  padding:5px;
+  background:none repeat scroll 0pt 0pt #eee;
+  font-size:90%;
+  color: #999;
+  border-radius: 8px;
 }

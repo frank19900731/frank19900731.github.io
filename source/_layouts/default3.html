@@ -1,0 +1,16 @@
+<!-- layout/default.html -->
+{% capture root_url %}{{ site.root | strip_slash }}{% endcapture %}
+{% include head.html %}
+<body>
+  {% include header.html %}
+  <div style="background-color: rgba(185, 185, 185, 0.5); padding: 25px 25px 25px 25px; border-radius: 20px; width: 900px; margin: auto;">
+    {{ content | expand_urls: root_url }}
+  </div>
+  {% include footer.html %}
+  {% include after_footer.html %}
+  {% include dlmenu.html %}
+  {% include gotop.html %}
+
+  <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1253436508'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s6.cnzz.com/z_stat.php%3Fid%3D1253436508%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+</body>
+</html>

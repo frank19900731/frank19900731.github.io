@@ -4,7 +4,8 @@ title: "提高效率与情趣的九种程序工具推荐"
 date: 2014-10-16 17:28:06 +0800
 comments: true
 categories: [工作效率]
-tags: [git, shell, markdown, octopress, knitr, tpp, jmpress.js, shiny, d3, Adobe Muse, mordencv, processing, 效率]
+tags: [代码开发, 文档整理, 数据可视化, 个人展示]
+keywords: git, shell, markdown, octopress, knitr, tpp, jmpress.js, shiny, d3, Adobe Muse, mordencv, processing, 效率
 ---
 
 __目录__
@@ -620,8 +621,6 @@ MIT Media laboratory 创制的编程绘图语言，连接艺术设计与计算�
 * 蜻蜓点水，抛砖引玉
 * 经验之谈，一家之言
 * 如能产生一点启发，激发一点兴趣，也不枉一番准备
-
-<div style="height: 60px;"></div>
 
 [^1]:一种语言的占比等于其在8大网站（Google 30%，Blogger 30%，Wikipedia 15%，YouTube 9%，Baidu 6%，Yahoo! 3%，Bing 3%，Amazon 3%）上被搜索出的结果总数，除以前50名语言的结果总数。
 [^2]:展示结束后，又发现了一款名为 [MDP](https://github.com/visit1985/mdp) 的命令行展示工具，大家可以试试，当然，以 Markdown 为书写语言的网页版展示工具就更多了，比如 [WeakPoint](https://github.com/onesuper/weakpoint)。

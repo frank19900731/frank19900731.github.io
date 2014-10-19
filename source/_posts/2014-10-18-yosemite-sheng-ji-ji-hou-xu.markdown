@@ -4,7 +4,8 @@ title: "Yosemite 升级及后续"
 date: 2014-10-18 22:11:48 +0800
 comments: true
 categories: [Mac 使用]
-tags: [Yosemite, Homebrew, Bartender, Trim Enabler, Matlab, VMWare, MySQL, TextExpander, Totalfinder, codesign]
+tags: [Yosemite, Homebrew, codesign, 算号器]
+keywords: Yosemite, Homebrew, Bartender, Trim Enabler, Matlab, VMWare, MySQL, TextExpander, Totalfinder, codesign
 ---
 
 __目录__
@@ -20,7 +21,7 @@ __目录__
 
 由于更新心切，所以没有按照规范先进行 Time Machine 的备份，直接双击、接受条款并重启。因为暑假里刚刚换成 1T 的SSD，所以对于更新安装时间自己还是很乐观的，但很不幸的是自己 **玩儿屁玩儿出屎了**。
 
-> About one minite remaing
+> About one minute remaing
 
 就这么一句话我足足看了两个小时，越看心越慌。给苹果客服打了若干次电话，比如问一下一般更新时间要多长，如果卡死可不可以中途强按电源键重启，能否通过外接硬盘安装更新等……得到的回答大概是“应该可以”、“没有资料表明可以这么做”。这样的“建议”对于眼前这台进不能10.10、退不能10.9.5的电脑来说，都太苍白了……如果真的如客服所说只能重装系统的话，就得损失最近两天的（自己的习惯是一周一备份）笔记和代码了，心有不甘啊！
 

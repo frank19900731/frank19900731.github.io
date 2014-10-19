@@ -1,0 +1,26 @@
+#
+# post_footer_filter.rb
+# Append every post some footer infomation like original url
+# Kevin Lynx
+# 7.26.2012
+#
+require './plugins/post_filters'
+
+module AppendFooterFilter
+  def append(post)
+     author = post.site.config['author']
+     url = post.site.config['url']
+     post.content + %Q[\n\n <p class='post-footer'>原文地址: <a href='#{post.full_url}'>#{post.full_url}</a><br/> 作者 <a href='#{url}'>#{author}</a>&nbsp; 发布于 <a href='#{url}'>#{url}</a>&nbsp; 转载请注明</p>]
+  end
+end
+
+module Jekyll
+  class AppendFooter < PostFilter
+    include AppendFooterFilter
+    def pre_render(post)
+      post.content = append(post) if post.is_post?
+    end
+  end
+end
+
+Liquid::Template.register_filter AppendFooterFilter
