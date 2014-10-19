@@ -12,8 +12,16 @@
   <meta name="author" content="Frank Song">
   <!-- 定义description变量，如果有则用，没有则是正文，前150字 -->
   
-  <meta name="description" content="Categories: 面试求职 飞维美地笔试回忆 Oct 18th, 2014 这是面试、笔试总结的第一篇，其余会陆续更新直至十一月末，欢迎持续关注 面试求职 分类。 简介
-飞维美地 这家公司是校招季才了解的一家公司，隶属 Comcast， 提供互联网视频广告投放、监测、预测、增值等关键解决方案，业务在欧美。公司主体在中国，纽约也有分部，恰可以提供 24 小时不间断服务。据称北京公司有120人，目标扩增至240人。 之前和靳导在东主楼参加了他们的算法分享会，干货多，实在。宣讲会上，进一步了解了公司的培训发展体系，感觉像一个小型大学，学习与成长的氛围都不错的样子，比较适合想在毕业后打好技术基础的同学，当然也能锻炼英语。不过作为在中国没有业务的小型外企，估计是没有北京户口吧。 书归正传，说题。据说这些题是公司员工近一个月想出来的，挺用心思的。共九类题，120分钟时间，可以全做，也可以挑选自己擅长的发挥。 继续阅读&nbsp;&nbsp;&nbsp;&nbsp; Tags: Linux, SQL, 算法, 逻辑, 飞维美地 &nbsp;&nbsp;&nbsp;&nbsp; Categories: Mac 使用 Yosemite 升级及后续 Oct 18th, 2014 Yosemite 安装 10月17日一早醒来就迫不及待的找更新，发现六维空间有人上传了一个5.19G大小的安装文件，就开始下载。当下载进度到了99%的时候卡死了，暂停重启或者删除文件重来都不管用。正当饥渴难耐，在北邮人上发现了一个4G多的安装文件，也顾不得大小的差异（想想真是胆大呀，后来知道是后者经过了压缩），顺利下载下来。 由于更新心切，所以没有按照规范先进行 Time Machine 的备份，直接双击、接受条款并重启。因为暑假里刚刚换成 1T 的SSD，所以对于更新安装时间自己还是很乐观的，但很不幸的是自己 玩儿屁玩儿出屎了。 About one minute remaing 就这么一句话我足足看了两个小时，越看心越慌。给苹果客服打了若干次电话，比如问一下一般更新时间要多长，如果卡死可不可以中途强按电源键重启，能否通过外接硬盘安装更新等……得到的回答大概是“应该可以”、“没有资料表明可以这么做”。这样的“建议”对于眼前这台进不能10.10、退不能10.9.5的电脑来说，都太苍白了…… &hellip;">
+  <meta name="description" content="Categories: 面试求职 IDG 联合招聘笔试回忆 Oct 19th, 2014 IDG 投资的公司有脸萌、蘑菇街、果壳网等，详见此链接。对于这些小规模创业公司自己还是挺感兴趣的，参加联合招聘也很省事，笔试题目（B卷）回忆如下。 选择题 三个汽水瓶可以换一瓶汽水，要让28人都喝一瓶，买几瓶水？ 答： 19瓶。 50人中有两人生日相同的概率是多少？ 答：0.97（注意是选择题，不是当场算的……）。 1000人，三场演出，分别有500，350，250人观看，400人至少看两场，100人看三场，问多少人一场没看？ 答：400人。 逻辑判断，条件一：x or y；条件二：not y or not z；条件三：非z 则 非y，可以肯定的是哪项？ 答：x 为 true。假设 非x，则 y，则 非z，则 非y，矛盾。 安卓属于那种系统？ 答：软实时系统 。 分布式系统 与 网络系统 的区别？ 答：协调多个机器完成同一任务。 位示图的作用？ 答：管理磁盘空间。 6 个方块排一排，用三种颜色涂刷，要求相邻方块不同色且三种颜色都用上，有几种涂法？ 答：90种。3 * 2^5 - 3*2 二叉树，第五层最多有多少个节点？（根节点是第一层） 答：16。 红球、黑球、白球共60个，摸了一阵，统计红球大约15%，黑球大约45%，问有多少个白球？ 答：16。 程序题，问 c 的输出是多少？ 答：-1。 程序题1
+2
+3
+4
+5
+6
+int a =0;
+int c = 0;
+do { --c; a = a - 1;
+} while(a &gt; 0) 还有四道想不起来了…… 综合题 链表每隔K个翻转，要求常数空间存储，代码实现。比如 1-&gt;2-&gt;3-&gt;4-&gt;5-&gt;6，k=2 变成 2-&gt;1-&gt;4-&gt;3-&gt;6-&gt;5，k=3 变成 3-&gt;2-&gt;1-&gt;6-&gt;5-&gt;4。 M X N方格，从 (0,0) 走到 (M,N) 有多少种走法记为L，如果 M、N 很大那么 L 这个数也是很大的，设计算法计算 L % 13。 总结 一开始 IDG 说将由很牛的 ACM 选手出题，心里挺忐忑，现场做题才发现不是这样。虽然题目不难，不过限时 1 小时，自己只是将将做完。 继续阅读&nbsp;&nbsp;&nbsp;& &hellip;">
   
   <meta name="baidu-site-verification" content="7O78rNJCOH" />
   <meta name="360-site-verification" content="9ee6dda17557079b8855f9c8201b05bb" />
@@ -111,7 +119,7 @@
     <button>Open Menu</button>
     <ul class="dl-menu">
         <li><a href="/">Home</a></li>
-        <li><a href="/archives/">Archives (7)</a></li>
+        <li><a href="/archives/">Archives (8)</a></li>
         <li>
             <a href="#">Categories (4)</a>
             <ul class="dl-submenu">
@@ -119,10 +127,10 @@
                 <li><a href="/blog/categories">All Categories (4)</a>
                 <li style="color: #CCCCCC; line-height: 150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Top 5</li>
 
-                <li><a href='/category/网页开发'>网页开发 (2)</a></li><li><a href='/category/面试求职'>面试求职 (2)</a></li><li><a href='/category/工作效率'>工作效率 (2)</a></li><li><a href='/category/Mac 使用'>Mac 使用 (1)</a></li>
+                <li><a href='/category/面试求职'>面试求职 (3)</a></li><li><a href='/category/网页开发'>网页开发 (2)</a></li><li><a href='/category/工作效率'>工作效率 (2)</a></li><li><a href='/category/Mac 使用'>Mac 使用 (1)</a></li>
             </ul>
         </li>
-        <li><a href="/blog/tags">All Tags (22)</a>
+        <li><a href="/blog/tags">All Tags (25)</a>
         <li>
             <a href="#">Features</a>
             <ul class="dl-submenu">
@@ -192,6 +200,10 @@
 <ul>
 	
     <li>
+    	<a href="/blog/2014/10/19/idg-lian-he-zhao-pin-bi-shi-hui-yi/">IDG 联合招聘笔试回忆</a>
+    </li>
+    
+    <li>
     	<a href="/blog/2014/10/18/fei-wei-mei-di-bi-shi-hui-yi/">飞维美地笔试回忆</a>
     </li>
     
@@ -207,10 +219,6 @@
     	<a href="/blog/2014/10/16/wo-de-zhi-shi-guan-li-jing-yan-yu-gong-ju-fen-xiang/">【撰写中】我的知识管理经验与工具分享</a>
     </li>
     
-    <li>
-    	<a href="/blog/2014/10/16/ti-gao-xiao-lu-yu-qing-qu-de-jiu-chong-cheng-xu-gong-ju-tui-jian/">提高效率与情趣的九种程序工具推荐</a>
-    </li>
-    
 </ul>
         </li>
 <li>
@@ -219,13 +227,13 @@
         <a style="font-size: 90%" href="/tag/json/">json</a>
 <a style="font-size: 210%" href="/tag/octopress/">octopress</a>
 <a style="font-size: 90%" href="/tag/中文字体/">中文字体</a>
-<a style="font-size: 90%" href="/tag/中文搜索/">中文搜索</a>
 <a style="font-size: 90%" href="/tag/代码开发/">代码开发</a>
 <a style="font-size: 90%" href="/tag/分页/">分页</a>
-<a style="font-size: 90%" href="/tag/效率/">效率</a>
 <a style="font-size: 90%" href="/tag/数据可视化/">数据可视化</a>
 <a style="font-size: 90%" href="/tag/文档整理/">文档整理</a>
-<a style="font-size: 90%" href="/tag/校招链接/">校招链接</a>
+<a style="font-size: 90%" href="/tag/知识管理/">知识管理</a>
+<a style="font-size: 210%" href="/tag/算法/">算法</a>
+<a style="font-size: 210%" href="/tag/逻辑/">逻辑</a>
 
     </ul>
 </li><li>
@@ -245,6 +253,118 @@
 		
       <div class="blog-index">
   
+  
+  
+    <article>
+      <!-- article.html -->
+<!-- 文章展示，区分在索引页和文章页 -->
+<header>
+  <div class="article-tags">
+      <!-- post/categories.html -->
+<!-- 文章类别展示 -->
+
+
+<span class="categories" style="font-size: 16px;">
+  Categories:
+  
+    <a class='category' href='/category/面试求职/'>面试求职</a>
+  
+
+</span>
+
+
+  </div>
+  
+    <h1><a href="/blog/2014/10/19/idg-lian-he-zhao-pin-bi-shi-hui-yi/">
+      IDG 联合招聘笔试回忆
+    </a></h1>
+  
+  <!-- 给出发布时间 -->
+  <div class="article-date">
+      <!-- post/date.html -->
+<!-- 文章日期显示 -->
+
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-10-19T21:53:07+08:00" pubdate data-updated="true">Oct 19<span>th</span>, 2014</time></div>
+</header>
+<hr />
+<!-- 如果在索引中 -->
+
+  <section class="article-index">
+
+<p>IDG 投资的公司有脸萌、蘑菇街、果壳网等，详见此<a href="http://campus.idgvc.ourats.com/about-us/companys">链接</a>。对于这些小规模创业公司自己还是挺感兴趣的，参加联合招聘也很省事，笔试题目（B卷）回忆如下。</p>
+
+<h2 id="section">选择题</h2>
+
+<ol>
+  <li>三个汽水瓶可以换一瓶汽水，要让28人都喝一瓶，买几瓶水？    答： 19瓶。</li>
+  <li>50人中有两人生日相同的概率是多少？    答：0.97（注意是选择题，不是当场算的……）。</li>
+  <li>1000人，三场演出，分别有500，350，250人观看，400人至少看两场，100人看三场，问多少人一场没看？    答：400人。</li>
+  <li>逻辑判断，条件一：<code>x or y</code>；条件二：<code>not y or not z</code>；条件三：<code>非z 则 非y</code>，可以肯定的是哪项？    答：x 为 true。假设 非x，则 y，则 非z，则 非y，矛盾。</li>
+  <li>安卓属于那种系统？    答：软实时系统 。</li>
+  <li>分布式系统 与 网络系统 的区别？    答：协调多个机器完成同一任务。</li>
+  <li>位示图的作用？    答：管理磁盘空间。</li>
+  <li>6 个方块排一排，用三种颜色涂刷，要求相邻方块不同色且三种颜色都用上，有几种涂法？    答：90种。<code>3 * 2^5 - 3*2</code></li>
+  <li>二叉树，第五层最多有多少个节点？（根节点是第一层）   答：16。</li>
+  <li>红球、黑球、白球共60个，摸了一阵，统计红球大约15%，黑球大约45%，问有多少个白球？    答：16。</li>
+  <li>程序题，问 c 的输出是多少？    答：-1。</li>
+</ol>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>程序题</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+</pre></td><td class="code"><pre><code class="c"><span class="line"><span class="kt">int</span> <span class="n">a</span> <span class="o">=</span><span class="mi">0</span><span class="p">;</span>
+</span><span class="line"><span class="kt">int</span> <span class="n">c</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class="line"><span class="k">do</span> <span class="p">{</span>
+</span><span class="line">    <span class="o">--</span><span class="n">c</span><span class="p">;</span>
+</span><span class="line">    <span class="n">a</span> <span class="o">=</span> <span class="n">a</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span>
+</span><span class="line"><span class="p">}</span> <span class="k">while</span><span class="p">(</span><span class="n">a</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+<p>还有四道想不起来了……</p>
+
+<h2 id="section-1">综合题</h2>
+
+<ol>
+  <li>链表每隔K个翻转，要求常数空间存储，代码实现。比如 <code>1-&gt;2-&gt;3-&gt;4-&gt;5-&gt;6</code>，k=2 变成  <code>2-&gt;1-&gt;4-&gt;3-&gt;6-&gt;5</code>，k=3 变成  <code>3-&gt;2-&gt;1-&gt;6-&gt;5-&gt;4</code>。</li>
+  <li>M X N方格，从 (0,0) 走到 (M,N) 有多少种走法记为L，如果 M、N 很大那么 L 这个数也是很大的，设计算法计算 L % 13。</li>
+</ol>
+
+<h2 id="section-2">总结</h2>
+
+<p>一开始 IDG 说将由很牛的 ACM 选手出题，心里挺忐忑，现场做题才发现不是这样。虽然题目不难，不过限时 1 小时，自己只是将将做完。</p>
+
+</section>
+  <a href="/blog/2014/10/19/idg-lian-he-zhao-pin-bi-shi-hui-yi/" style="background: #da3e10; color: #ffffff; border-radius: 5px; border: 4px solid #da3e10;">继续阅读</a>&nbsp;&nbsp;&nbsp;&nbsp;
+<!-- post/tags.html -->
+<!-- 文章标签展示 -->
+
+
+<span class="tags">
+  <font color="#808080">Tags: </font>
+  
+    <a class='tag' href='/tag/IDG/'>IDG</a>, <a class='tag' href='/tag/排列组合/'>排列组合</a>, <a class='tag' href='/tag/概率/'>概率</a>, <a class='tag' href='/tag/算法/'>算法</a>, <a class='tag' href='/tag/逻辑/'>逻辑</a>
+  
+</span>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<span class="ds-thread-count" data-thread-key="/blog/2014/10/19/idg-lian-he-zhao-pin-bi-shi-hui-yi/" style="color: #808080;"></span>
+
+
+
+
+    </article>
   
   
     <article>
@@ -656,125 +776,6 @@
 
     </article>
   
-  
-    <article>
-      <!-- article.html -->
-<!-- 文章展示，区分在索引页和文章页 -->
-<header>
-  <div class="article-tags">
-      <!-- post/categories.html -->
-<!-- 文章类别展示 -->
-
-
-<span class="categories" style="font-size: 16px;">
-  Categories:
-  
-    <a class='category' href='/category/面试求职/'>面试求职</a>
-  
-
-</span>
-
-
-  </div>
-  
-    <h1><a href="/blog/2014/09/01/2015nian-xiao-zhao-ru-kou/">
-      2015年校招入口
-    </a></h1>
-  
-  <!-- 给出发布时间 -->
-  <div class="article-date">
-      <!-- post/date.html -->
-<!-- 文章日期显示 -->
-
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-09-01T23:49:27+08:00" pubdate data-updated="true">Sep 1<span>st</span>, 2014</time></div>
-</header>
-<hr />
-<!-- 如果在索引中 -->
-
-  <section class="article-index">
-
-<h1 id="interest-list">Interest List</h1>
-
-<h2 id="computer-related">Computer Related</h2>
-<p><a href="http://talent.baidu.com/baidu/web/templet1000/index/corpwebPosition1000baidu!getPostListByConditionBaidu?positionType=0&amp;brandCode=1&amp;useForm=0&amp;recruitType=1&amp;request_locale=zh_CN">百度</a></p>
-
-<p><a href="http://campus.alibaba.com/index.htm">阿里巴巴</a></p>
-
-<p><a href="http://join.qq.com/">腾讯</a></p>
-
-<p><a href="http://360.zhiye.com/zpdetail/560001262">360</a></p>
-
-<p><a href="http://hr.xiaomi.com/user/resume">小米</a></p>
-
-<p><a href="http://www.dajie.com/corp/1005750/custom/campus/outerLink/26560894">京东</a></p>
-
-<p><a href="http://campus.youdao.com/campus/post_list.php?t1=campus">网易有道</a></p>
-
-<p><a href="http://game.campus.163.com/">网易游戏</a></p>
-
-<p><a href="http://www.hotjob.cn/wt/sina/web/templet1000/index/corpwebPosition1000sina!getPostListByCondition?positionType=0&amp;brandCode=1&amp;useForm=0&amp;recruitType=1&amp;showComp=true&amp;urlCorpEdition=null&amp;operational=D28977237630A659C96DE14A5560C16A73AEF91683DCD19467A5A42F190422AF112707A59F14B926BC3E5DEB86BD4C85EEC3CF644D58CF9DE37FE924995A8EF706808FC2E27ACB42CC43C5E1CF97C10E7DAB212D459955EECF690AE889A2A346D7EAE896601F0B27046BFE007E94869EC33B7F9E5E5DD3B813365609223FDAC148FAC99C32F7DBDAF52A5EA0525AE56ABC349E2123F95B4261272A09DD89AE8B3E693A75666D12221CABFE777C5EE8196D1AEE5BF1E6E4E0F6EE1446BE21ADD8">新浪微博</a></p>
-
-<p><a href="http://www.sohucampus.com/sohu/index">搜狐</a></p>
-
-<p><a href="http://campus.dianping.com/#!/resume">大众点评</a></p>
-
-<p><a href="http://campus.sogou.com/?show.page/achieve">搜狗</a></p>
-
-<p><a href="http://www.hotjob.cn/wt/meituan/web/index">美团</a></p>
-
-<p><a href="http://career.huawei.com/recruitment/portal_index.html">华为</a></p>
-
-<p><a href="http://www.joinms.com/index.html">微软</a></p>
-
-<p><a href="http://campus.51job.com/ibmcampus/">IBM</a></p>
-
-<p><a href="http://campus.idgvc.ourats.com/about-us/recruit-process">IDG</a></p>
-
-<p><a href="http://www.dajie.com/corp/1010142/">亚马逊</a></p>
-
-<p><a href="http://campus.iqiyi.com/html/campus1.html">爱奇艺</a></p>
-
-<p><a href="http://campus.chinahr.com/2015/pages/feiweimd/jobs.asp">飞维美地</a></p>
-
-<p><a href="http://cbdic.creditease.cn/jobs.html">宜信</a></p>
-
-<h2 id="finance-related">Finance Related</h2>
-
-<p><a href="">摩根士丹利全球量化部门</a></p>
-
-<p><a href="http://www.worldquant.com/join-the-team/careers/?region=int">世坤</a></p>
-
-</section>
-  <a href="/blog/2014/09/01/2015nian-xiao-zhao-ru-kou/" style="background: #da3e10; color: #ffffff; border-radius: 5px; border: 4px solid #da3e10;">继续阅读</a>&nbsp;&nbsp;&nbsp;&nbsp;
-<!-- post/tags.html -->
-<!-- 文章标签展示 -->
-
-
-<span class="tags">
-  <font color="#808080">Tags: </font>
-  
-    <a class='tag' href='/tag/校招链接/'>校招链接</a>
-  
-</span>
-&nbsp;&nbsp;&nbsp;&nbsp;
-<span class="ds-thread-count" data-thread-key="/blog/2014/09/01/2015nian-xiao-zhao-ru-kou/" style="color: #808080;"></span>
-
-
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; Older</a>
@@ -800,6 +801,10 @@
 <ul>
 	
     <li>
+    	<a href="/blog/2014/10/19/idg-lian-he-zhao-pin-bi-shi-hui-yi/">IDG 联合招聘笔试回忆</a>
+    </li>
+    
+    <li>
     	<a href="/blog/2014/10/18/fei-wei-mei-di-bi-shi-hui-yi/">飞维美地笔试回忆</a>
     </li>
     
@@ -815,10 +820,6 @@
     	<a href="/blog/2014/10/16/wo-de-zhi-shi-guan-li-jing-yan-yu-gong-ju-fen-xiang/">【撰写中】我的知识管理经验与工具分享</a>
     </li>
     
-    <li>
-    	<a href="/blog/2014/10/16/ti-gao-xiao-lu-yu-qing-qu-de-jiu-chong-cheng-xu-gong-ju-tui-jian/">提高效率与情趣的九种程序工具推荐</a>
-    </li>
-    
 </ul>
         </li>
 <li>
@@ -827,13 +828,13 @@
         <a style="font-size: 90%" href="/tag/json/">json</a>
 <a style="font-size: 210%" href="/tag/octopress/">octopress</a>
 <a style="font-size: 90%" href="/tag/中文字体/">中文字体</a>
-<a style="font-size: 90%" href="/tag/中文搜索/">中文搜索</a>
 <a style="font-size: 90%" href="/tag/代码开发/">代码开发</a>
 <a style="font-size: 90%" href="/tag/分页/">分页</a>
-<a style="font-size: 90%" href="/tag/效率/">效率</a>
 <a style="font-size: 90%" href="/tag/数据可视化/">数据可视化</a>
 <a style="font-size: 90%" href="/tag/文档整理/">文档整理</a>
-<a style="font-size: 90%" href="/tag/校招链接/">校招链接</a>
+<a style="font-size: 90%" href="/tag/知识管理/">知识管理</a>
+<a style="font-size: 210%" href="/tag/算法/">算法</a>
+<a style="font-size: 210%" href="/tag/逻辑/">逻辑</a>
 
     </ul>
 </li><li>
