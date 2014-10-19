@@ -7,6 +7,8 @@ categories: [工作效率]
 tags: [git, shell, markdown, octopress, knitr, tpp, jmpress.js, shiny, d3, Adobe Muse, mordencv, processing, 效率]
 ---
 
+__目录__
+
 * list element with functor item
 {:toc}
 

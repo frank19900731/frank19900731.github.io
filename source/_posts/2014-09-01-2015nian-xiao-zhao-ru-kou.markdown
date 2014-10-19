@@ -3,7 +3,7 @@ layout: post
 title: "2015年校招入口"
 date: 2014-09-01 23:49:27 +0800
 comments: true
-categories: [就业]
+categories: [面试求职]
 tags: [校招链接]
 ---
 

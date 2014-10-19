@@ -1,0 +1,120 @@
+---
+layout: post
+title: "Yosemite 升级及后续"
+date: 2014-10-18 22:11:48 +0800
+comments: true
+categories: [Mac 使用]
+tags: [Yosemite, Homebrew, Bartender, Trim Enabler, Matlab, VMWare, MySQL, TextExpander, Totalfinder, codesign]
+---
+
+__目录__
+
+* list element with functor item
+{:toc}
+
+<!-- excerpt start -->
+
+##Yosemite 安装
+
+10月17日一早醒来就迫不及待的找更新，发现六维空间有人上传了一个5.19G大小的安装文件，就开始下载。当下载进度到了99%的时候卡死了，暂停重启或者删除文件重来都不管用。正当饥渴难耐，在北邮人上发现了一个4G多的安装文件，也顾不得大小的差异（想想真是胆大呀，后来知道是后者经过了压缩），顺利下载下来。
+
+由于更新心切，所以没有按照规范先进行 Time Machine 的备份，直接双击、接受条款并重启。因为暑假里刚刚换成 1T 的SSD，所以对于更新安装时间自己还是很乐观的，但很不幸的是自己 **玩儿屁玩儿出屎了**。
+
+> About one minite remaing
+
+就这么一句话我足足看了两个小时，越看心越慌。给苹果客服打了若干次电话，比如问一下一般更新时间要多长，如果卡死可不可以中途强按电源键重启，能否通过外接硬盘安装更新等……得到的回答大概是“应该可以”、“没有资料表明可以这么做”。这样的“建议”对于眼前这台进不能10.10、退不能10.9.5的电脑来说，都太苍白了……如果真的如客服所说只能重装系统的话，就得损失最近两天的（自己的习惯是一周一备份）笔记和代码了，心有不甘啊！
+
+网上查询的结果是，苹果重新定义了最后一分钟，那咱就等吧。电脑撂在寝室，去参加[飞维美地的笔试](/blog/2014/10/18/fei-wei-mei-di-bi-shi-hui-yi/)。笔试结束后打开手机看到一个弹出对话框显示“您的Apple ID在另一台Mac设备上登录……”，百感交集，这就算是成了。
+
+**强烈建议在升级系统之前做Time Machine的备份，比如16日晚上保持开机做备份，第二天直接更新，别老整那些悬不楞登的。**
+
+<!-- excerpt end -->
+
+##Homebrew & Java
+
+之前看到有人吐槽过 ruby 版本升级和 java 被阉割，所以还算有准备。按照收藏的[这篇文章](http://chijianqiang.baijia.baidu.com/article/32621)里的方法操作。
+
+###Homebrew
+
+因为 ruby 版本变了，`` cd `brew --prefix` `` 和 `brew prune` 都会报 `bad interpreter` 错误，所以我对文中的脚本运行顺序进行了微调。
+
+``` bash 更新 Homebrew 
+cd /usr/local/
+mv Cellar Cellar_back
+rm -r `git ls-files`
+rm -r Library/Homebrew Library/Aliases Library/Formula Library/Contributions
+rm -rf .git
+rm -rf ~/Library/Caches/Homebrew
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+brew prune
+brew update
+mv Cellar_back Cellar
+brew update
+brew upgrade
+```
+
+这当中注意观察输出，及时处理 `brew link XXX` 和文件夹权限等问题。upgrade 的过程中，会自动下载与 Yosemite （写在URL里头呢）匹配的包编译安装。耐心等待一段时间，Homebrew 就又满血复活了。
+
+###Java
+
+按照文中介绍的方法，到苹果官网下载 [Java 6 安装包](http://support.apple.com/kb/DL1572?viewlocale=en_US&locale=en_US)，如果想要 Java 7 及以上，到 [Oracle 官网](http://www.oracle.com/technetwork/java/javase/downloads/index.html)，但 Java 6 只能用苹果官网上的。
+
+建议还是装个 Java 6，安装位置和此前 OS X 版本相同（/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home），像 `JAVA_HOME` 这种环境变量就正好不用改了。而且对于之后要安装的 Matlab 也够用了。
+
+##常用软件恢复
+
+软件的重要程度还是有区分的，像有道词典打不开就打不开吧，可以上网查单词，但有一些软件可是命根子，用不了就抓心挠肺的，大致总结如下。
+
+###Chronories
+
+日记软件，应该已经停止维护，不指望出 Yosemite 适配版本了。软件本身还是可以用的，只是菜单栏的按钮有点问题。10.10 的菜单按钮默认点击时变蓝/灰（System Preferences -> General -> Appearance），取消点击变回正常透明色。Chronories 的问题在于
+
+* 点击变色，取消点击变不回去；
+* 心情选项图片无法显示。
+
+然而由于软件自身功能过于强大，可以记录很多小秘密，还是舍不得抛弃，那么取消菜单栏显示就能解决么？非也。
+
+只有当菜单栏图标出现的时候，软件才会在后台工作（ChronoriesAgent），自动搜集邮件、RSS、软件使用率等信息做统计（舍不得的重要原因），那唯一可行的方法就是：保持菜单栏按钮的存在，但死也不点（始终是透明色，颜色一致强迫症），想写日志直接打开软件。
+
+###Trim Enabler
+
+每次更新系统默认 Trim 支持都会关闭，手动打开并重启机器即可。
+
+###Matlab
+
+北邮人有 Matlab UNIX/MACOS 2014a 下载。
+
+###VMWare
+
+5.x 版本已被拒绝运行了，还是到北邮人下载 7.x 版本，有码才幸福。
+
+###TextExpander
+
+包括本软件在内的一些软件（比如 FocusMask ）需要重新开启 Accessibility 权限。
+
+###Totalfinder
+
+Yosemite 修改了 Codesign 机制，导致大批算号器、注册机无法启动。如果只是算号倒还好，再准备一台机器（或者虚拟机）就行，就怕让你指定软件位置或者模块位置来打 Patch。部分解决方案是用网上提供的 10.9.4 或 10.9.5 中的 `codesign` 替换 `/usr/bin/codesign` 。
+
+###Bartender
+
+更换 codesign 神马的在这里不好用了。尝试从命令行启动，得到的错误是 `exited; Killed: 9`，到处查得不到解释。最后，花了一百软妹币的学费终于搞明白了，启动方法见下图，CMD + I。
+
+{% img imgcenter /img/post/2014-10/19.png %}
+
+感叹一句，经验就是财富啊！
+
+此外，使用时会发现菜单栏按钮错乱的问题，可以使用 CMD + 拖拽的方式移动。
+
+###OS X Server
+
+4.0 正式版无法启动，报错与 Bartender 中说的相同，改用早一些的 4.0 DP 版本就可以了，功能正常。好歹先把我的 mediawiki 给救活，以后伺机升级吧。
+
+###MySQL
+
+MySQL 无法开机启动，尽管在 System Preference 中可以勾选。在网上看到如果是在 Yosemite 上新装 MySQL，如果勾选安装 Startup 组件，会导致安装失败。解决方法传送门[在此](http://my.oschina.net/huyuaning/blog/334584)。
+
+##总结
+
+* 无论做任何改动，数据安全最重要；
+* 欲速则不达，不要着急咬第一口，兴许咬到的是包装盒呢，看清情况、做好计划再行动。

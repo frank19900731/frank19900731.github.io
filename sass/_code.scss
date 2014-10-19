@@ -159,12 +159,13 @@ p, li {
     @extend .mono;
     display: inline-block;
     white-space: no-wrap;
-    background: #fff;
+    background: #EEE8AB;
     font-size: .8em;
     line-height: 1.5em;
     color: #555;
-    border: 1px solid #ddd;
+    border: 1px solid #EEE8AB;
     // @include border-radius(.4em);
+    border-radius: 4px;
     padding: 0 .3em;
     margin: -1px 0;
   }

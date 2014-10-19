@@ -2,13 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c0d76ca4-948a-4929-8db0-ae6edece3084" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_posts/2014-09-01-2015nian-xiao-zhao-ru-kou.markdown" afterPath="$PROJECT_DIR$/source/_posts/2014-09-01-2015nian-xiao-zhao-ru-kou.markdown" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_posts/2014-10-16-ti-gao-xiao-lu-yu-qing-qu-de-jiu-chong-cheng-xu-gong-ju-tui-jian.markdown" afterPath="$PROJECT_DIR$/source/_posts/2014-10-16-ti-gao-xiao-lu-yu-qing-qu-de-jiu-chong-cheng-xu-gong-ju-tui-jian.markdown" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_posts/2014-10-16-wo-de-zhi-shi-guan-li-jing-yan-yu-gong-ju-fen-xiang.markdown" afterPath="$PROJECT_DIR$/source/_posts/2014-10-16-wo-de-zhi-shi-guan-li-jing-yan-yu-gong-ju-fen-xiang.markdown" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/_code.scss" afterPath="$PROJECT_DIR$/sass/_code.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_config.yml" afterPath="$PROJECT_DIR$/_config.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/category_list.rb" afterPath="$PROJECT_DIR$/plugins/category_list.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/category_list_tag.rb" afterPath="$PROJECT_DIR$/plugins/category_list_tag.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_includes/dlmenu.html" afterPath="$PROJECT_DIR$/source/_includes/dlmenu.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/index.html" afterPath="$PROJECT_DIR$/source/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/about/index.markdown" afterPath="$PROJECT_DIR$/source/about/index.markdown" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/tag_list.rb" afterPath="$PROJECT_DIR$/plugins/tag_list.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_includes/article.html" afterPath="$PROJECT_DIR$/source/_includes/article.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_includes/custom/dlmenu.html" afterPath="$PROJECT_DIR$/source/_includes/custom/dlmenu.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/stylesheets/styles.css" afterPath="$PROJECT_DIR$/source/stylesheets/styles.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/styles.scss" afterPath="$PROJECT_DIR$/sass/styles.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="octopress.iws" />
@@ -32,93 +34,46 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="category_index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/_layouts/category_index.html">
+      <file leaf-file-name="dlmenu.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/source/_includes/custom/dlmenu.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="17" selection-start="420" selection-end="420" vertical-scroll-proportion="-9.5" vertical-offset="0" max-vertical-offset="494">
-              <folding>
-                <element signature="n#style#0;n#h2#0;n#article#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_config.yml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_config.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="20" selection-start="528" selection-end="528" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2128">
+            <state line="11" column="0" selection-start="600" selection-end="600" vertical-scroll-proportion="0.59039545" vertical-offset="0" max-vertical-offset="627">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="comment.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/_includes/asides/comment.html">
+      <file leaf-file-name="pagination_archive.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/plugins/pagination_archive.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="9" selection-start="98" selection-end="98" vertical-scroll-proportion="-2.0357144" vertical-offset="0" max-vertical-offset="190">
+            <state line="31" column="28" selection-start="1007" selection-end="1007" vertical-scroll-proportion="0.0" vertical-offset="418" max-vertical-offset="1026">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="recent_posts.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/_includes/asides/recent_posts.html">
+      <file leaf-file-name="jekyll_lunr_js_search.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/plugins/jekyll_lunr_js_search.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="9" selection-start="301" selection-end="301" vertical-scroll-proportion="-5.428571" vertical-offset="0" max-vertical-offset="342">
+            <state line="102" column="25" selection-start="3150" selection-end="3150" vertical-scroll-proportion="0.0" vertical-offset="1811" max-vertical-offset="3515">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
+      <file leaf-file-name="pagination.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/plugins/pagination.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="527" column="13" selection-start="17162" selection-end="17162" vertical-scroll-proportion="-3.857143" vertical-offset="9905" max-vertical-offset="11020">
+            <state line="58" column="40" selection-start="1961" selection-end="1961" vertical-scroll-proportion="0.0" vertical-offset="986" max-vertical-offset="2432">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dlmenu.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/_includes/dlmenu.html">
+      <file leaf-file-name="cat_and_tag_generator.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/plugins/cat_and_tag_generator.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="9" selection-start="287" selection-end="287" vertical-scroll-proportion="-4.607143" vertical-offset="42" max-vertical-offset="437">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tag_list.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/plugins/tag_list.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="23" selection-start="303" selection-end="303" vertical-scroll-proportion="-5.8461537" vertical-offset="0" max-vertical-offset="456">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.markdown" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/about/index.markdown">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="20" selection-start="52" selection-end="52" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.markdown" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/source/movielist/index.markdown">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="3" selection-start="89" selection-end="89" vertical-scroll-proportion="0.3114754" vertical-offset="0" max-vertical-offset="366">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sitemap_generator.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/plugins/sitemap_generator.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="188" column="67" selection-start="6036" selection-end="6036" vertical-scroll-proportion="0.0" vertical-offset="3447" max-vertical-offset="6042">
+            <state line="68" column="25" selection-start="1695" selection-end="1695" vertical-scroll-proportion="0.0" vertical-offset="1157" max-vertical-offset="1539">
               <folding />
             </state>
           </provider>
@@ -142,10 +97,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/source/_layouts/post.html" />
-        <option value="$PROJECT_DIR$/sass/styles.scss" />
-        <option value="$PROJECT_DIR$/source/_layouts/page.html" />
-        <option value="$PROJECT_DIR$/sass/_structure.scss" />
         <option value="$PROJECT_DIR$/stylesheets/component.css" />
         <option value="$PROJECT_DIR$/source/stylesheets/component.css" />
         <option value="$PROJECT_DIR$/source/movielist/index.markdown" />
@@ -154,17 +105,21 @@
         <option value="$PROJECT_DIR$/plugins/category_list_tag.rb" />
         <option value="$PROJECT_DIR$/source/index.html" />
         <option value="$PROJECT_DIR$/source/_layouts/archives_index.html" />
-        <option value="$PROJECT_DIR$/_config.yml" />
         <option value="$PROJECT_DIR$/source/_includes/dlmenu.html" />
         <option value="$PROJECT_DIR$/plugins/tag_list.rb" />
         <option value="$PROJECT_DIR$/source/about/index.markdown" />
+        <option value="$PROJECT_DIR$/sass/_code.scss" />
+        <option value="$PROJECT_DIR$/sass/styles.scss" />
+        <option value="$PROJECT_DIR$/source/_includes/article.html" />
+        <option value="$PROJECT_DIR$/_config.yml" />
+        <option value="$PROJECT_DIR$/source/_includes/custom/dlmenu.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="22" />
+    <option name="y" value="23" />
     <option name="width" value="1280" />
-    <option name="height" value="713" />
+    <option name="height" value="717" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -192,6 +147,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -238,7 +194,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="movielist" />
+              <option name="myItemId" value="about" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -252,11 +208,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="source" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="about" />
+              <option name="myItemId" value="sass" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -276,7 +228,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -286,8 +237,8 @@
     <property name="last_opened_file_path" value="/Library/Server/Web/Data/Sites/Default/mwiki" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -305,6 +256,14 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
+      <method />
+    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -315,23 +274,15 @@
       <option name="showConsoleOnStdOut" value="false" />
       <method />
     </configuration>
-    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
-      <option name="VMOptions" />
-      <option name="arguments" />
-      <option name="filePath" />
-      <option name="scope" value="ALL" />
-      <option name="testName" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
-      <envs />
-      <method />
-    </configuration>
     <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
       <setting name="configLocationType" value="CONFIG_FILE" />
       <setting name="settingsFile" value="" />
       <setting name="serverType" value="INTERNAL" />
       <setting name="preferredDebugBrowser" value="CHROME" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
@@ -370,19 +321,19 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1280" height="713" extended-state="6" />
+    <frame x="0" y="23" width="1280" height="717" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32524273" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31993568" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2734375" sideWeight="0.6747573" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2734375" sideWeight="0.6800643" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32899022" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36187398" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36173633" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -405,106 +356,37 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/source/stylesheets/component.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="21" selection-start="137" selection-end="137" vertical-scroll-proportion="0.2923077" vertical-offset="0" max-vertical-offset="18335">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/booklist/index.markdown">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="9" selection-start="83" selection-end="83" vertical-scroll-proportion="0.24358974" vertical-offset="0" max-vertical-offset="390">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/category_list.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="100" column="41" selection-start="3005" selection-end="3005" vertical-scroll-proportion="0.0" vertical-offset="1756" max-vertical-offset="2945">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/category_list_tag.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="79" selection-start="457" selection-end="457" vertical-scroll-proportion="0.0" vertical-offset="27" max-vertical-offset="456">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="55" selection-start="317" selection-end="317" vertical-scroll-proportion="-3.857143" vertical-offset="82" max-vertical-offset="589">
-          <folding>
-            <element signature="n#style#0;n#article#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#article#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#article#2;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_layouts/archives_index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="6" selection-start="1044" selection-end="1044" vertical-scroll-proportion="-7.571429" vertical-offset="472" max-vertical-offset="798">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/sitemap_generator.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="188" column="67" selection-start="6036" selection-end="6036" vertical-scroll-proportion="0.0" vertical-offset="3447" max-vertical-offset="6042">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_layouts/category_index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="17" selection-start="420" selection-end="420" vertical-scroll-proportion="-9.5" vertical-offset="0" max-vertical-offset="494">
-          <folding>
-            <element signature="n#style#0;n#h2#0;n#article#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="20" selection-start="528" selection-end="528" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2128">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/_includes/asides/comment.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="9" selection-start="98" selection-end="98" vertical-scroll-proportion="-2.0357144" vertical-offset="0" max-vertical-offset="190">
+        <state line="3" column="9" selection-start="98" selection-end="98" vertical-scroll-proportion="0.0" vertical-offset="57" max-vertical-offset="190">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/source/_includes/asides/recent_posts.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="9" selection-start="301" selection-end="301" vertical-scroll-proportion="-5.428571" vertical-offset="0" max-vertical-offset="342">
+        <state line="8" column="9" selection-start="301" selection-end="301" vertical-scroll-proportion="0.0" vertical-offset="152" max-vertical-offset="342">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="527" column="13" selection-start="17162" selection-end="17162" vertical-scroll-proportion="-3.857143" vertical-offset="9905" max-vertical-offset="11020">
+        <state line="527" column="13" selection-start="17162" selection-end="17162" vertical-scroll-proportion="0.0" vertical-offset="9905" max-vertical-offset="11020">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/source/_includes/dlmenu.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="9" selection-start="287" selection-end="287" vertical-scroll-proportion="-4.607143" vertical-offset="42" max-vertical-offset="437">
+        <state line="9" column="9" selection-start="287" selection-end="287" vertical-scroll-proportion="0.0" vertical-offset="42" max-vertical-offset="437">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/plugins/tag_list.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="23" selection-start="303" selection-end="303" vertical-scroll-proportion="-5.8461537" vertical-offset="0" max-vertical-offset="456">
+        <state line="8" column="23" selection-start="303" selection-end="303" vertical-scroll-proportion="0.0" vertical-offset="152" max-vertical-offset="456">
           <folding />
         </state>
       </provider>
@@ -518,7 +400,70 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/movielist/index.markdown">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="3" selection-start="89" selection-end="89" vertical-scroll-proportion="0.3114754" vertical-offset="0" max-vertical-offset="366">
+        <state line="6" column="3" selection-start="89" selection-end="89" vertical-scroll-proportion="0.1919192" vertical-offset="0" max-vertical-offset="594">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/styles.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="108" column="25" selection-start="2863" selection-end="2863" vertical-scroll-proportion="-3.8703704" vertical-offset="1843" max-vertical-offset="3458">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_includes/article.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="18" selection-start="945" selection-end="945" vertical-scroll-proportion="-6.571429" vertical-offset="310" max-vertical-offset="988">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="0" selection-start="1557" selection-end="1557" vertical-scroll-proportion="0.39790577" vertical-offset="722" max-vertical-offset="2128">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/_code.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="166" column="22" selection-start="4480" selection-end="4480" vertical-scroll-proportion="0.53672314" vertical-offset="2964" max-vertical-offset="6137">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/jekyll_lunr_js_search.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="102" column="25" selection-start="3150" selection-end="3150" vertical-scroll-proportion="0.0" vertical-offset="1811" max-vertical-offset="3515">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/pagination_archive.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="28" selection-start="1007" selection-end="1007" vertical-scroll-proportion="0.0" vertical-offset="644" max-vertical-offset="1026">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/cat_and_tag_generator.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="68" column="25" selection-start="1695" selection-end="1695" vertical-scroll-proportion="0.0" vertical-offset="1157" max-vertical-offset="1539">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/pagination.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="58" column="40" selection-start="1961" selection-end="1961" vertical-scroll-proportion="0.0" vertical-offset="986" max-vertical-offset="2432">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_includes/custom/dlmenu.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="600" selection-end="600" vertical-scroll-proportion="0.59039545" vertical-offset="0" max-vertical-offset="627">
           <folding />
         </state>
       </provider>

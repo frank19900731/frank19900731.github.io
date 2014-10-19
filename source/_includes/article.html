@@ -21,7 +21,7 @@
 <!-- 如果在索引中 -->
 {% if index %}
   <section class="article-index">{{ content | extract_excerpt }}</section>
-  <a href="{{ root_url }}{{ post.url }}">继续阅读</a>&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="{{ root_url }}{{ post.url }}" style="background: #da3e10; color: #ffffff; border-radius: 5px; border: 4px solid #da3e10;">继续阅读</a>&nbsp;&nbsp;&nbsp;&nbsp;
 {% include post/tags.html %}
 {% else %}
   <!-- 直接展示出内容 -->
