@@ -2,31 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c0d76ca4-948a-4929-8db0-ae6edece3084" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/404.markdown" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/_layouts/default3.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugins/post_footer_filter.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_posts/2014-08-24-wo-de-di-yi-pian-octopress-bo-ke.markdown" afterPath="$PROJECT_DIR$/source/_posts/2014-08-24-wo-de-di-yi-pian-octopress-bo-ke.markdown" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_posts/2014-09-01-2015nian-xiao-zhao-ru-kou.markdown" afterPath="$PROJECT_DIR$/source/_posts/2014-09-01-2015nian-xiao-zhao-ru-kou.markdown" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_posts/2014-10-16-octopress-gai-zao-ji-lu.markdown" afterPath="$PROJECT_DIR$/source/_posts/2014-10-16-octopress-gai-zao-ji-lu.markdown" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_posts/2014-10-16-ti-gao-xiao-lu-yu-qing-qu-de-jiu-chong-cheng-xu-gong-ju-tui-jian.markdown" afterPath="$PROJECT_DIR$/source/_posts/2014-10-16-ti-gao-xiao-lu-yu-qing-qu-de-jiu-chong-cheng-xu-gong-ju-tui-jian.markdown" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_posts/2014-10-16-wo-de-zhi-shi-guan-li-jing-yan-yu-gong-ju-fen-xiang.markdown" afterPath="$PROJECT_DIR$/source/_posts/2014-10-16-wo-de-zhi-shi-guan-li-jing-yan-yu-gong-ju-fen-xiang.markdown" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_posts/2014-10-18-fei-wei-mei-di-bi-shi-hui-yi.markdown" afterPath="$PROJECT_DIR$/source/_posts/2014-10-18-fei-wei-mei-di-bi-shi-hui-yi.markdown" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_posts/2014-10-18-yosemite-sheng-ji-ji-hou-xu.markdown" afterPath="$PROJECT_DIR$/source/_posts/2014-10-18-yosemite-sheng-ji-ji-hou-xu.markdown" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_config.yml" afterPath="$PROJECT_DIR$/_config.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_layouts/default.html" afterPath="$PROJECT_DIR$/source/_layouts/default.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_layouts/default2.html" afterPath="$PROJECT_DIR$/source/_layouts/default2.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_includes/dlmenu.html" afterPath="$PROJECT_DIR$/source/_includes/dlmenu.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_includes/head.html" afterPath="$PROJECT_DIR$/source/_includes/head.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_includes/custom/head.html" afterPath="$PROJECT_DIR$/source/_includes/custom/head.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/index.html" afterPath="$PROJECT_DIR$/source/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/about/index.markdown" afterPath="$PROJECT_DIR$/source/about/index.markdown" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/booklist/index.markdown" afterPath="$PROJECT_DIR$/source/booklist/index.markdown" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/movielist/index.markdown" afterPath="$PROJECT_DIR$/source/movielist/index.markdown" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/towrite/index.markdown" afterPath="$PROJECT_DIR$/source/towrite/index.markdown" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_includes/custom/navigation.html" afterPath="$PROJECT_DIR$/source/_includes/custom/navigation.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/stylesheets/styles.css" afterPath="$PROJECT_DIR$/source/stylesheets/styles.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/styles.scss" afterPath="$PROJECT_DIR$/sass/styles.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="octopress.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -49,10 +25,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="default.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="default.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/_layouts/default.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="340" selection-start="2037" selection-end="2037" vertical-scroll-proportion="-8.714286" vertical-offset="516" max-vertical-offset="931">
+            <state line="36" column="26" selection-start="1633" selection-end="1633" vertical-scroll-proportion="0.46927375" vertical-offset="516" max-vertical-offset="931">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dlmenu.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/_includes/dlmenu.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="9" selection-start="743" selection-end="743" vertical-scroll-proportion="-2.392857" vertical-offset="332" max-vertical-offset="703">
               <folding />
             </state>
           </provider>
@@ -61,16 +46,16 @@
       <file leaf-file-name="default2.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/_layouts/default2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="26" selection-start="1885" selection-end="1885" vertical-scroll-proportion="-6.678571" vertical-offset="687" max-vertical-offset="1083">
+            <state line="47" column="0" selection-start="1886" selection-end="1886" vertical-scroll-proportion="-8.035714" vertical-offset="668" max-vertical-offset="1083">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="default3.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="default3.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/_layouts/default3.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="27" selection-start="435" selection-end="435" vertical-scroll-proportion="0.53072625" vertical-offset="0" max-vertical-offset="418">
+            <state line="12" column="0" selection-start="463" selection-end="463" vertical-scroll-proportion="-8.142858" vertical-offset="0" max-vertical-offset="418">
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#!!top" expanded="true" />
               </folding>
@@ -108,10 +93,10 @@
         <option value="$PROJECT_DIR$/source/about/index.markdown" />
         <option value="$PROJECT_DIR$/source/_includes/custom/navigation.html" />
         <option value="$PROJECT_DIR$/source/_includes/head.html" />
-        <option value="$PROJECT_DIR$/source/_includes/dlmenu.html" />
         <option value="$PROJECT_DIR$/source/_layouts/default.html" />
         <option value="$PROJECT_DIR$/source/_layouts/default2.html" />
         <option value="$PROJECT_DIR$/source/_layouts/default3.html" />
+        <option value="$PROJECT_DIR$/source/_includes/dlmenu.html" />
       </list>
     </option>
   </component>
@@ -505,13 +490,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/_includes/dlmenu.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="42" selection-start="914" selection-end="914" vertical-scroll-proportion="0.43665767" vertical-offset="332" max-vertical-offset="703">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/_includes/head.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="33" selection-start="1132" selection-end="1132" vertical-scroll-proportion="0.7430168" vertical-offset="76" max-vertical-offset="1045">
@@ -526,26 +504,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/_layouts/default.html">
+    <entry file="file://$PROJECT_DIR$/source/_layouts/default3.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="340" selection-start="2037" selection-end="2037" vertical-scroll-proportion="-8.714286" vertical-offset="516" max-vertical-offset="931">
-          <folding />
+        <state line="12" column="0" selection-start="463" selection-end="463" vertical-scroll-proportion="-8.142858" vertical-offset="0" max-vertical-offset="418">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/source/_layouts/default2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="26" selection-start="1885" selection-end="1885" vertical-scroll-proportion="-6.678571" vertical-offset="687" max-vertical-offset="1083">
+        <state line="47" column="0" selection-start="1886" selection-end="1886" vertical-scroll-proportion="-8.035714" vertical-offset="668" max-vertical-offset="1083">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/_layouts/default3.html">
+    <entry file="file://$PROJECT_DIR$/source/_includes/dlmenu.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="27" selection-start="435" selection-end="435" vertical-scroll-proportion="0.53072625" vertical-offset="0" max-vertical-offset="418">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#!!top" expanded="true" />
-          </folding>
+        <state line="21" column="9" selection-start="743" selection-end="743" vertical-scroll-proportion="-2.392857" vertical-offset="332" max-vertical-offset="703">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_layouts/default.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="26" selection-start="1633" selection-end="1633" vertical-scroll-proportion="0.46927375" vertical-offset="516" max-vertical-offset="931">
+          <folding />
         </state>
       </provider>
     </entry>
