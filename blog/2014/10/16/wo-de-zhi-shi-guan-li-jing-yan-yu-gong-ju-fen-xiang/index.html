@@ -45,8 +45,40 @@ Please enable JavaScript to view the comments powered by Disqus.
   <script src="/javascripts/octopress.js" type="text/javascript"></script>
   <script src="/javascripts/jquery.sidr.min.js"></script>
   <script src="/javascripts/ah-blue.js"></script>
+  <script type="text/javascript" src="/javascripts/fancybox/jquery.fancybox.pack.js"></script>
+  <link rel="stylesheet" type="text/css" href="/javascripts/fancybox/jquery.fancybox.css" media="screen" />
 
   <link href="/stylesheets/component.css" rel="stylesheet" type="text/css">
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+        if ($(".img-up")) {
+            $(".img-up").fancybox();
+        }
+        if ($(".imgleft")) {
+            $(".imgleft").parent().parent().css("text-align", "left");
+        }
+        if ($(".imgright")) {
+            $(".imgright").parent().parent().css("text-align", "right");
+        }
+        if ($(".imgcenter")) {
+            $(".imgcenter").parent().parent().css("text-align", "center");
+        }
+        if ($(".imgleft-no-shadow")) {
+            $(".imgleft-no-shadow").parent().parent().css("text-align", "left");
+        }
+        if ($(".imgright-no-shadow")) {
+            $(".imgright-no-shadow").parent().parent().css("text-align", "right");
+        }
+        if ($(".imgcenter-no-shadow")) {
+            $(".imgcenter-no-shadow").parent().parent().css("text-align", "center");
+        }
+
+        if ($(".mod_lost_child_little")) {
+            $(".mod_lost_child_little").css("width", "100%");
+        }
+    });
+  </script>
 
   <!-- custom/head.html -->
 <script type="text/x-mathjax-config">
@@ -112,7 +144,7 @@ Please enable JavaScript to view the comments powered by Disqus.
     <button>Open Menu</button>
     <ul class="dl-menu">
         <li><a href="/">Home</a></li>
-        <li><a href="/archives/">Archives (8)</a></li>
+        <li><a href="/archives/">Archives (9)</a></li>
         <li>
             <a href="#">Categories (4)</a>
             <ul class="dl-submenu">
@@ -120,10 +152,10 @@ Please enable JavaScript to view the comments powered by Disqus.
                 <li><a href="/blog/categories">All Categories (4)</a>
                 <li style="color: #CCCCCC; line-height: 150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Top 5</li>
 
-                <li><a href='/category/面试求职'>面试求职 (3)</a></li><li><a href='/category/网页开发'>网页开发 (2)</a></li><li><a href='/category/工作效率'>工作效率 (2)</a></li><li><a href='/category/Mac 使用'>Mac 使用 (1)</a></li>
+                <li><a href='/category/面试求职'>面试求职 (4)</a></li><li><a href='/category/网页开发'>网页开发 (2)</a></li><li><a href='/category/工作效率'>工作效率 (2)</a></li><li><a href='/category/Mac 使用'>Mac 使用 (1)</a></li>
             </ul>
         </li>
-        <li><a href="/blog/tags">All Tags (25)</a>
+        <li><a href="/blog/tags">All Tags (27)</a>
         <li>
             <a href="#">Features</a>
             <ul class="dl-submenu">
@@ -193,6 +225,10 @@ Please enable JavaScript to view the comments powered by Disqus.
 <ul>
 	
     <li>
+    	<a href="/blog/2014/10/20/ji-mou-you-xi-gong-si-mian-shi-jing-li/">记某游戏公司面试经历</a>
+    </li>
+    
+    <li>
     	<a href="/blog/2014/10/19/idg-lian-he-zhao-pin-bi-shi-hui-yi/">IDG 联合招聘笔试回忆</a>
     </li>
     
@@ -208,10 +244,6 @@ Please enable JavaScript to view the comments powered by Disqus.
     	<a href="/blog/2014/10/16/octopress-gai-zao-ji-lu/">【撰写中】Octopress 改造记录</a>
     </li>
     
-    <li>
-    	<a href="/blog/2014/10/16/wo-de-zhi-shi-guan-li-jing-yan-yu-gong-ju-fen-xiang/">【撰写中】我的知识管理经验与工具分享</a>
-    </li>
-    
 </ul>
         </li>
 <li>
@@ -224,9 +256,9 @@ Please enable JavaScript to view the comments powered by Disqus.
 <a style="font-size: 90%" href="/tag/分页/">分页</a>
 <a style="font-size: 90%" href="/tag/数据可视化/">数据可视化</a>
 <a style="font-size: 90%" href="/tag/文档整理/">文档整理</a>
-<a style="font-size: 90%" href="/tag/知识管理/">知识管理</a>
 <a style="font-size: 210%" href="/tag/算法/">算法</a>
 <a style="font-size: 210%" href="/tag/逻辑/">逻辑</a>
+<a style="font-size: 90%" href="/tag/飞维美地/">飞维美地</a>
 
     </ul>
 </li><li>
@@ -295,25 +327,25 @@ Please enable JavaScript to view the comments powered by Disqus.
   <!-- 直接展示出内容 -->
   <section class="article-detail" style="margin-bottom: 20px;"><!-- excerpt start -->
 
-<p><img class="imgcenter-no-shadow" src="/img/post/2014-10/2.png" width="128" height="128" title="OmniFocus" />
-<img class="imgcenter-no-shadow" src="/img/post/2014-10/4.png" width="128" height="128" title="Byword" />
-<img class="imgcenter-no-shadow" src="/img/post/2014-10/5.png" width="128" height="128" title="Caffeinated" />
-<img class="imgcenter-no-shadow" src="/img/post/2014-10/6.png" width="128" height="128" title="Dash" /></p>
+<p><a href="/img/post/2014-10/2.png" class="img-up" title="OmniFocus"><img class="imgcenter-no-shadow" src="/img/post/2014-10/2.png" width="128" height="128" title="OmniFocus" /></a>
+<a href="/img/post/2014-10/4.png" class="img-up" title="Byword"><img class="imgcenter-no-shadow" src="/img/post/2014-10/4.png" width="128" height="128" title="Byword" /></a>
+<a href="/img/post/2014-10/5.png" class="img-up" title="Caffeinated"><img class="imgcenter-no-shadow" src="/img/post/2014-10/5.png" width="128" height="128" title="Caffeinated" /></a>
+<a href="/img/post/2014-10/6.png" class="img-up" title="Dash"><img class="imgcenter-no-shadow" src="/img/post/2014-10/6.png" width="128" height="128" title="Dash" /></a></p>
 
-<p><img class="imgcenter-no-shadow" src="/img/post/2014-10/7.png" width="128" height="128" title="Evernote" />
-<img class="imgcenter-no-shadow" src="/img/post/2014-10/8.png" width="128" height="128" title="FocusMask" />
-<img class="imgcenter-no-shadow" src="/img/post/2014-10/9.png" width="128" height="128" title="Gistify" />
-<img class="imgcenter-no-shadow" src="/img/post/2014-10/10.png" width="128" height="128" title="Pocket" /></p>
+<p><a href="/img/post/2014-10/7.png" class="img-up" title="Evernote"><img class="imgcenter-no-shadow" src="/img/post/2014-10/7.png" width="128" height="128" title="Evernote" /></a>
+<a href="/img/post/2014-10/8.png" class="img-up" title="FocusMask"><img class="imgcenter-no-shadow" src="/img/post/2014-10/8.png" width="128" height="128" title="FocusMask" /></a>
+<a href="/img/post/2014-10/9.png" class="img-up" title="Gistify"><img class="imgcenter-no-shadow" src="/img/post/2014-10/9.png" width="128" height="128" title="Gistify" /></a>
+<a href="/img/post/2014-10/10.png" class="img-up" title="Pocket"><img class="imgcenter-no-shadow" src="/img/post/2014-10/10.png" width="128" height="128" title="Pocket" /></a></p>
 
-<p><img class="imgcenter-no-shadow" src="/img/post/2014-10/11.png" width="128" height="128" title="PopClip" />
-<img class="imgcenter-no-shadow" src="/img/post/2014-10/12.png" width="128" height="128" title="Producteev" />
-<img class="imgcenter-no-shadow" src="/img/post/2014-10/13.png" width="128" height="128" title="Ulysses" />
-<img class="imgcenter-no-shadow" src="/img/post/2014-10/14.png" width="128" height="128" title="Wunderlist" /></p>
+<p><a href="/img/post/2014-10/11.png" class="img-up" title="PopClip"><img class="imgcenter-no-shadow" src="/img/post/2014-10/11.png" width="128" height="128" title="PopClip" /></a>
+<a href="/img/post/2014-10/12.png" class="img-up" title="Producteev"><img class="imgcenter-no-shadow" src="/img/post/2014-10/12.png" width="128" height="128" title="Producteev" /></a>
+<a href="/img/post/2014-10/13.png" class="img-up" title="Ulysses"><img class="imgcenter-no-shadow" src="/img/post/2014-10/13.png" width="128" height="128" title="Ulysses" /></a>
+<a href="/img/post/2014-10/14.png" class="img-up" title="Wunderlist"><img class="imgcenter-no-shadow" src="/img/post/2014-10/14.png" width="128" height="128" title="Wunderlist" /></a></p>
 
-<p><img class="imgcenter-no-shadow" src="/img/post/2014-10/15.png" width="128" height="128" title="iDocument" />
-<img class="imgcenter-no-shadow" src="/img/post/2014-10/16.png" width="128" height="128" title="MediaWiki" />
-<img class="imgcenter-no-shadow" src="/img/post/2014-10/17.png" width="128" height="128" title="小酱油" />
-<img class="imgcenter-no-shadow" src="/img/post/2014-10/18.png" width="128" height="128" title="Octopress" /></p>
+<p><a href="/img/post/2014-10/15.png" class="img-up" title="iDocument"><img class="imgcenter-no-shadow" src="/img/post/2014-10/15.png" width="128" height="128" title="iDocument" /></a>
+<a href="/img/post/2014-10/16.png" class="img-up" title="MediaWiki"><img class="imgcenter-no-shadow" src="/img/post/2014-10/16.png" width="128" height="128" title="MediaWiki" /></a>
+<a href="/img/post/2014-10/17.png" class="img-up" title="小酱油"><img class="imgcenter-no-shadow" src="/img/post/2014-10/17.png" width="128" height="128" title="小酱油" /></a>
+<a href="/img/post/2014-10/18.png" class="img-up" title="Octopress"><img class="imgcenter-no-shadow" src="/img/post/2014-10/18.png" width="128" height="128" title="Octopress" /></a></p>
 
 <!-- excerpt end -->
 
@@ -447,28 +479,7 @@ Please enable JavaScript to view the comments powered by Disqus.
     });
 
     function onLoadSet() {
-        if ($(".imgleft")) {
-            $(".imgleft").parent().css("text-align", "left");
-        }
-        if ($(".imgright")) {
-            $(".imgright").parent().css("text-align", "right");
-        }
-        if ($(".imgcenter")) {
-            $(".imgcenter").parent().css("text-align", "center");
-        }
-        if ($(".imgleft-no-shadow")) {
-            $(".imgleft-no-shadow").parent().css("text-align", "left");
-        }
-        if ($(".imgright-no-shadow")) {
-            $(".imgright-no-shadow").parent().css("text-align", "right");
-        }
-        if ($(".imgcenter-no-shadow")) {
-            $(".imgcenter-no-shadow").parent().css("text-align", "center");
-        }
 
-        if ($(".mod_lost_child_little")) {
-            $(".mod_lost_child_little").css("width", "100%");
-        }
     }
 
 </script>

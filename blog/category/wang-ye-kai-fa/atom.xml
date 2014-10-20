@@ -4,7 +4,7 @@
   <title><![CDATA[Category: 网页开发 | Blog of 太极儒]]></title>
   <link href="http://frank19900731.github.io/blog/category/wang-ye-kai-fa/atom.xml" rel="self"/>
   <link href="http://frank19900731.github.io/"/>
-  <updated>2014-10-19T22:20:59+08:00</updated>
+  <updated>2014-10-21T00:03:44+08:00</updated>
   <id>http://frank19900731.github.io/</id>
   <author>
     <name><![CDATA[Frank Song]]></name>
@@ -508,22 +508,22 @@ The following is a math block:</p>
 <h2 id="section-7">使用图片</h2>
 
 <p><code>objc 使用图片
-<img class="imgright" src="http://placekitten.com/320/250" title="Place Kitten #2" >
+<a href="http://placekitten.com/320/250" class="img-up" title="Place Kitten #2"><img class="imgright" src="http://placekitten.com/320/250" title="Place Kitten #2" ></a>
 </code></p>
 
-<p><img class="imgright" src="http://placekitten.com/320/250" title="Place Kitten" ></p>
+<p><a href="http://placekitten.com/320/250" class="img-up" title="Place Kitten"><img class="imgright" src="http://placekitten.com/320/250" title="Place Kitten" ></a></p>
 
 <p><code>objc 使用图片
-<img class="imgcenter" src="http://placekitten.com/300/500" width="150" height="250" title="Place Kitten #4" alt="An image of a very cute kitten">
+<a href="http://placekitten.com/300/500" class="img-up" title="Place Kitten #4"><img class="imgcenter" src="http://placekitten.com/300/500" width="150" height="250" title="Place Kitten #4" alt="An image of a very cute kitten"></a>
 </code></p>
 
-<p><img class="imgcenter" src="http://placekitten.com/300/500" width="150" height="250" title="‘Place Kitten #4’ ‘An image of a very cute kitten’" ></p>
+<p><a href="http://placekitten.com/300/500" class="img-up" title="‘Place Kitten #4’ ‘An image of a very cute kitten’"><img class="imgcenter" src="http://placekitten.com/300/500" width="150" height="250" title="‘Place Kitten #4’ ‘An image of a very cute kitten’" ></a></p>
 
 <p><code>objc 使用图片
-<img class="imgleft" src="/img/portrait.jpg" width="379" height="481" title="'My Cartoon Portrait'" >
+<a href="/img/portrait.jpg" class="img-up" title="My Cartoon Portrait"><img class="imgleft" src="/img/portrait.jpg" width="379" height="481" title="My Cartoon Portrait" ></a>
 </code></p>
 
-<p><img class="imgleft" src="/img/portrait.jpg" width="379" height="481" title="‘My Cartoon Portrait’" ></p>
+<p><a href="/img/portrait.jpg" class="img-up" title="My Cartoon Portrait"><img class="imgleft" src="/img/portrait.jpg" width="379" height="481" title="My Cartoon Portrait" ></a></p>
 
 <h2 id="pullquote">使用 pullquote</h2>
 

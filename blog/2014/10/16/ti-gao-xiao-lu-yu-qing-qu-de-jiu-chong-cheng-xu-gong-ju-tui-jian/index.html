@@ -44,8 +44,40 @@
   <script src="/javascripts/octopress.js" type="text/javascript"></script>
   <script src="/javascripts/jquery.sidr.min.js"></script>
   <script src="/javascripts/ah-blue.js"></script>
+  <script type="text/javascript" src="/javascripts/fancybox/jquery.fancybox.pack.js"></script>
+  <link rel="stylesheet" type="text/css" href="/javascripts/fancybox/jquery.fancybox.css" media="screen" />
 
   <link href="/stylesheets/component.css" rel="stylesheet" type="text/css">
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+        if ($(".img-up")) {
+            $(".img-up").fancybox();
+        }
+        if ($(".imgleft")) {
+            $(".imgleft").parent().parent().css("text-align", "left");
+        }
+        if ($(".imgright")) {
+            $(".imgright").parent().parent().css("text-align", "right");
+        }
+        if ($(".imgcenter")) {
+            $(".imgcenter").parent().parent().css("text-align", "center");
+        }
+        if ($(".imgleft-no-shadow")) {
+            $(".imgleft-no-shadow").parent().parent().css("text-align", "left");
+        }
+        if ($(".imgright-no-shadow")) {
+            $(".imgright-no-shadow").parent().parent().css("text-align", "right");
+        }
+        if ($(".imgcenter-no-shadow")) {
+            $(".imgcenter-no-shadow").parent().parent().css("text-align", "center");
+        }
+
+        if ($(".mod_lost_child_little")) {
+            $(".mod_lost_child_little").css("width", "100%");
+        }
+    });
+  </script>
 
   <!-- custom/head.html -->
 <script type="text/x-mathjax-config">
@@ -111,7 +143,7 @@
     <button>Open Menu</button>
     <ul class="dl-menu">
         <li><a href="/">Home</a></li>
-        <li><a href="/archives/">Archives (8)</a></li>
+        <li><a href="/archives/">Archives (9)</a></li>
         <li>
             <a href="#">Categories (4)</a>
             <ul class="dl-submenu">
@@ -119,10 +151,10 @@
                 <li><a href="/blog/categories">All Categories (4)</a>
                 <li style="color: #CCCCCC; line-height: 150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Top 5</li>
 
-                <li><a href='/category/面试求职'>面试求职 (3)</a></li><li><a href='/category/网页开发'>网页开发 (2)</a></li><li><a href='/category/工作效率'>工作效率 (2)</a></li><li><a href='/category/Mac 使用'>Mac 使用 (1)</a></li>
+                <li><a href='/category/面试求职'>面试求职 (4)</a></li><li><a href='/category/网页开发'>网页开发 (2)</a></li><li><a href='/category/工作效率'>工作效率 (2)</a></li><li><a href='/category/Mac 使用'>Mac 使用 (1)</a></li>
             </ul>
         </li>
-        <li><a href="/blog/tags">All Tags (25)</a>
+        <li><a href="/blog/tags">All Tags (27)</a>
         <li>
             <a href="#">Features</a>
             <ul class="dl-submenu">
@@ -192,6 +224,10 @@
 <ul>
 	
     <li>
+    	<a href="/blog/2014/10/20/ji-mou-you-xi-gong-si-mian-shi-jing-li/">记某游戏公司面试经历</a>
+    </li>
+    
+    <li>
     	<a href="/blog/2014/10/19/idg-lian-he-zhao-pin-bi-shi-hui-yi/">IDG 联合招聘笔试回忆</a>
     </li>
     
@@ -207,10 +243,6 @@
     	<a href="/blog/2014/10/16/octopress-gai-zao-ji-lu/">【撰写中】Octopress 改造记录</a>
     </li>
     
-    <li>
-    	<a href="/blog/2014/10/16/wo-de-zhi-shi-guan-li-jing-yan-yu-gong-ju-fen-xiang/">【撰写中】我的知识管理经验与工具分享</a>
-    </li>
-    
 </ul>
         </li>
 <li>
@@ -223,9 +255,9 @@
 <a style="font-size: 90%" href="/tag/分页/">分页</a>
 <a style="font-size: 90%" href="/tag/数据可视化/">数据可视化</a>
 <a style="font-size: 90%" href="/tag/文档整理/">文档整理</a>
-<a style="font-size: 90%" href="/tag/知识管理/">知识管理</a>
 <a style="font-size: 210%" href="/tag/算法/">算法</a>
 <a style="font-size: 210%" href="/tag/逻辑/">逻辑</a>
+<a style="font-size: 90%" href="/tag/飞维美地/">飞维美地</a>
 
     </ul>
 </li><li>
@@ -392,7 +424,7 @@
 
 <p>更多有关程序语言的种类与它们之间的程序关联请见 <a href="http://exploringdata.github.io/vis/programming-languages-influence-network/">编程语言关系图</a>，这是一件优美的数据可视化作品，托管于Github。</p>
 
-<p><img class="imgcenter" src="/img/post/2014-10/1.png" width="549" height="384" title="程序语言关系图" /></p>
+<p><a href="/img/post/2014-10/1.png" class="img-up" title="程序语言关系图"><img class="imgcenter" src="/img/post/2014-10/1.png" width="549" height="384" title="程序语言关系图" /></a></p>
 
 <p>扯远了，举例说明与人类语言、思维相近的编程语言：</p>
 
@@ -712,7 +744,7 @@
 
 <blockquote><p>在CSDN/ITeye/cnblogs这种地方写技术博客确实比在人人上写技术博客好多了</p><p>但是你要知道，大牛们都是有自己的个人网站的</p><p>而且，一个共同点是，他们的网站都是自己写的html（没有css）并且界面十分难看</p><p>整个网站散发着一种“我这的文章都很牛所以界面什么的都不重要”的气质</p><p>例如这个 <a href="http://xahlee.org/index.html" target="_blank">http://xahlee.org/index.html</a></p></blockquote>
 
-<p><img class="imgcenter" src="/img/post/2014-10/3.png" width="570" height="1088" title="李杀网截屏" /></p>
+<p><a href="/img/post/2014-10/3.png" class="img-up" title="李杀网截屏"><img class="imgcenter" src="/img/post/2014-10/3.png" width="570" height="1088" title="李杀网截屏" /></a></p>
 
 <p>当然，用优美的外在包裹充实的内在，总还是更加让人赏心悦目的。</p>
 
@@ -1249,28 +1281,7 @@
     });
 
     function onLoadSet() {
-        if ($(".imgleft")) {
-            $(".imgleft").parent().css("text-align", "left");
-        }
-        if ($(".imgright")) {
-            $(".imgright").parent().css("text-align", "right");
-        }
-        if ($(".imgcenter")) {
-            $(".imgcenter").parent().css("text-align", "center");
-        }
-        if ($(".imgleft-no-shadow")) {
-            $(".imgleft-no-shadow").parent().css("text-align", "left");
-        }
-        if ($(".imgright-no-shadow")) {
-            $(".imgright-no-shadow").parent().css("text-align", "right");
-        }
-        if ($(".imgcenter-no-shadow")) {
-            $(".imgcenter-no-shadow").parent().css("text-align", "center");
-        }
 
-        if ($(".mod_lost_child_little")) {
-            $(".mod_lost_child_little").css("width", "100%");
-        }
     }
 
 </script>

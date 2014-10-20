@@ -465,19 +465,19 @@ e.g. <code>`code`</code>.</p>
 </pre></td><td class="code"><pre><code class="objc"><span class="line"><span class="p">{</span><span class="o">%</span> <span class="n">img</span> <span class="n">imgright</span> <span class="nl">http:</span><span class="c1">//placekitten.com/320/250 Place Kitten #2 %}</span>
 </span></code></pre></td></tr></table></div></figure></notextile></div>
 
-<p><img class="imgright" src="http://placekitten.com/320/250" title="Place Kitten" /></p>
+<p><a href="http://placekitten.com/320/250" class="img-up" title="Place Kitten"><img class="imgright" src="http://placekitten.com/320/250" title="Place Kitten" /></a></p>
 
 <div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>使用图片</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
 </pre></td><td class="code"><pre><code class="objc"><span class="line"><span class="p">{</span><span class="o">%</span> <span class="n">img</span> <span class="n">imgcenter</span> <span class="nl">http:</span><span class="c1">//placekitten.com/300/500 150 250 &#39;Place Kitten #4&#39; &#39;An image of a very cute kitten&#39; %}</span>
 </span></code></pre></td></tr></table></div></figure></notextile></div>
 
-<p><img class="imgcenter" src="http://placekitten.com/300/500" width="150" height="250" title="Place Kitten #4" alt="An image of a very cute kitten" /></p>
+<p><a href="http://placekitten.com/300/500" class="img-up" title="Place Kitten #4"><img class="imgcenter" src="http://placekitten.com/300/500" width="150" height="250" title="Place Kitten #4" alt="An image of a very cute kitten" /></a></p>
 
 <div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>使用图片</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-</pre></td><td class="code"><pre><code class="objc"><span class="line"><span class="p">{</span><span class="o">%</span> <span class="n">img</span> <span class="n">imgleft</span> <span class="o">/</span><span class="n">img</span><span class="o">/</span><span class="n">portrait</span><span class="p">.</span><span class="n">jpg</span> <span class="mi">379</span> <span class="mi">481</span> <span class="err">&#39;</span><span class="n">My</span> <span class="n">Cartoon</span> <span class="n">Portrait</span><span class="err">&#39;</span> <span class="o">%</span><span class="p">}</span>
+</pre></td><td class="code"><pre><code class="objc"><span class="line"><span class="p">{</span><span class="o">%</span> <span class="n">img</span> <span class="n">imgleft</span> <span class="o">/</span><span class="n">img</span><span class="o">/</span><span class="n">portrait</span><span class="p">.</span><span class="n">jpg</span> <span class="mi">379</span> <span class="mi">481</span> <span class="n">My</span> <span class="n">Cartoon</span> <span class="n">Portrait</span> <span class="o">%</span><span class="p">}</span>
 </span></code></pre></td></tr></table></div></figure></notextile></div>
 
-<p><img class="imgleft" src="http://frank19900731.github.io/img/portrait.jpg" width="379" height="481" title="'My Cartoon Portrait'" /></p>
+<p><a href="http://frank19900731.github.io/img/portrait.jpg" class="img-up" title="My Cartoon Portrait"><img class="imgleft" src="http://frank19900731.github.io/img/portrait.jpg" width="379" height="481" title="My Cartoon Portrait" /></a></p>
 
 <h2 id="pullquote">使用 pullquote</h2>
 

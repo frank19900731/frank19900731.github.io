@@ -43,8 +43,40 @@
   <script src="/javascripts/octopress.js" type="text/javascript"></script>
   <script src="/javascripts/jquery.sidr.min.js"></script>
   <script src="/javascripts/ah-blue.js"></script>
+  <script type="text/javascript" src="/javascripts/fancybox/jquery.fancybox.pack.js"></script>
+  <link rel="stylesheet" type="text/css" href="/javascripts/fancybox/jquery.fancybox.css" media="screen" />
 
   <link href="/stylesheets/component.css" rel="stylesheet" type="text/css">
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+        if ($(".img-up")) {
+            $(".img-up").fancybox();
+        }
+        if ($(".imgleft")) {
+            $(".imgleft").parent().parent().css("text-align", "left");
+        }
+        if ($(".imgright")) {
+            $(".imgright").parent().parent().css("text-align", "right");
+        }
+        if ($(".imgcenter")) {
+            $(".imgcenter").parent().parent().css("text-align", "center");
+        }
+        if ($(".imgleft-no-shadow")) {
+            $(".imgleft-no-shadow").parent().parent().css("text-align", "left");
+        }
+        if ($(".imgright-no-shadow")) {
+            $(".imgright-no-shadow").parent().parent().css("text-align", "right");
+        }
+        if ($(".imgcenter-no-shadow")) {
+            $(".imgcenter-no-shadow").parent().parent().css("text-align", "center");
+        }
+
+        if ($(".mod_lost_child_little")) {
+            $(".mod_lost_child_little").css("width", "100%");
+        }
+    });
+  </script>
 
   <!-- custom/head.html -->
 <script type="text/x-mathjax-config">
@@ -110,7 +142,7 @@
     <button>Open Menu</button>
     <ul class="dl-menu">
         <li><a href="/">Home</a></li>
-        <li><a href="/archives/">Archives (8)</a></li>
+        <li><a href="/archives/">Archives (9)</a></li>
         <li>
             <a href="#">Categories (4)</a>
             <ul class="dl-submenu">
@@ -118,10 +150,10 @@
                 <li><a href="/blog/categories">All Categories (4)</a>
                 <li style="color: #CCCCCC; line-height: 150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Top 5</li>
 
-                <li><a href='/category/面试求职'>面试求职 (3)</a></li><li><a href='/category/网页开发'>网页开发 (2)</a></li><li><a href='/category/工作效率'>工作效率 (2)</a></li><li><a href='/category/Mac 使用'>Mac 使用 (1)</a></li>
+                <li><a href='/category/面试求职'>面试求职 (4)</a></li><li><a href='/category/网页开发'>网页开发 (2)</a></li><li><a href='/category/工作效率'>工作效率 (2)</a></li><li><a href='/category/Mac 使用'>Mac 使用 (1)</a></li>
             </ul>
         </li>
-        <li><a href="/blog/tags">All Tags (25)</a>
+        <li><a href="/blog/tags">All Tags (27)</a>
         <li>
             <a href="#">Features</a>
             <ul class="dl-submenu">
@@ -196,28 +228,7 @@
     });
 
     function onLoadSet() {
-        if ($(".imgleft")) {
-            $(".imgleft").parent().css("text-align", "left");
-        }
-        if ($(".imgright")) {
-            $(".imgright").parent().css("text-align", "right");
-        }
-        if ($(".imgcenter")) {
-            $(".imgcenter").parent().css("text-align", "center");
-        }
-        if ($(".imgleft-no-shadow")) {
-            $(".imgleft-no-shadow").parent().css("text-align", "left");
-        }
-        if ($(".imgright-no-shadow")) {
-            $(".imgright-no-shadow").parent().css("text-align", "right");
-        }
-        if ($(".imgcenter-no-shadow")) {
-            $(".imgcenter-no-shadow").parent().css("text-align", "center");
-        }
 
-        if ($(".mod_lost_child_little")) {
-            $(".mod_lost_child_little").css("width", "100%");
-        }
     }
 
 </script>

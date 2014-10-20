@@ -4,7 +4,7 @@
   <title><![CDATA[Blog of 太极儒]]></title>
   <link href="http://frank19900731.github.io/atom.xml" rel="self"/>
   <link href="http://frank19900731.github.io/"/>
-  <updated>2014-10-19T22:20:59+08:00</updated>
+  <updated>2014-10-21T00:03:44+08:00</updated>
   <id>http://frank19900731.github.io/</id>
   <author>
     <name><![CDATA[Frank Song]]></name>
@@ -12,6 +12,147 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[记某游戏公司面试经历]]></title>
+    <link href="http://frank19900731.github.io/blog/2014/10/20/ji-mou-you-xi-gong-si-mian-shi-jing-li/"/>
+    <updated>2014-10-20T22:34:31+08:00</updated>
+    <id>http://frank19900731.github.io/blog/2014/10/20/ji-mou-you-xi-gong-si-mian-shi-jing-li</id>
+    <content type="html"><![CDATA[<p>本文原载笔者 <a href="http://blog.sina.com.cn/s/blog_64ac3ab10102v40l.html">新浪博客</a>，因契合 <a href="http://frank19900731.github.io/category/%E9%9D%A2%E8%AF%95%E6%B1%82%E8%81%8C/">面试求职</a> 主题，所以搬运到这里。</p>
+
+<p><strong>目录</strong></p>
+
+<ul id="markdown-toc">
+  <li><a href="#section">题目</a></li>
+  <li><a href="#section-1">设计思路</a>    <ul>
+      <li><a href="#section-2">引导画面</a></li>
+      <li><a href="#section-3">关卡设计</a></li>
+      <li><a href="#section-4">创新点</a></li>
+      <li><a href="#section-5">关卡细部</a></li>
+      <li><a href="#section-6">玩法说明</a></li>
+      <li><a href="#section-7">技能设计</a></li>
+    </ul>
+  </li>
+  <li><a href="#section-8">面试过程</a></li>
+  <li><a href="#section-9">经验总结</a></li>
+</ul>
+
+<!-- excerpt start -->
+<p>最终的结果是面挂了。</p>
+
+<h2 id="section">题目</h2>
+
+<p>现场试玩三个经典游戏（十分钟），分别是贪吃蛇、别踩白块儿、泡泡龙，选一个做改编。每人发两张卡片，一个是人物，一个是场景。我的两个图片分别是Q版拿着弓箭的小女孩和中式的建筑群。要求将两幅图片融入三个经典游戏中的一款里面，编故事设计关卡技能。</p>
+
+<ol>
+  <li>设计游戏开始时的引导画面，介绍背景之类的，并埋下伏笔，接下在游戏里自然将伏笔揭开。 </li>
+  <li>将游戏改造成经典关卡模式，但不改变游戏的原始玩法，要求设计三个创新点，融入关卡中。</li>
+  <li>设计人物的两个技能，设定数值并分析强弱。</li>
+</ol>
+
+<p>设计时间共20分钟。</p>
+
+<h2 id="section-1">设计思路</h2>
+
+<p>我选择改造的是别踩白块儿，游戏玩法大概是屏幕上有很多行从上往下滑动，每行有四列，分别是三白一黑，我们要从下到上每一行只点黑块，误点白块就GG思密达，看谁坚持的时间长。</p>
+
+<p>Q版带弓箭的的小女孩儿，唐宋风味的楼阁让我首先想到的是唐宋时期的战争题材，主角是女性角色，想到了杨家将里的杨九妹。</p>
+
+<p>故事时代设定在北宋，正派人物杨九妹，反派人物潘仁美、耶律大王（化名，指代辽国主帅）和萧太后。</p>
+
+<!-- excerpt end -->
+
+<h3 id="section-2">引导画面</h3>
+
+<ul>
+  <li>第一幕：赵匡胤黄袍加身，攻北汉将杨家将收入帐下；</li>
+  <li>第二幕：雁门关血战，因奸臣潘仁美的陷害和辽兵的诡计，杨家将死战沙场；</li>
+  <li>第三幕：一个破损但迎风招展的杨字大旗，表明杨家忠良尽死，杨家枪法也随之失传（伏笔一）；</li>
+  <li>第四幕：潘仁美恶人先告状，抄杨业的家，一本珍贵的古琴谱或者古诗集被潘仁美据为己有（伏笔二），萧太后、耶律大王对中原虎视眈眈，意图吞并；</li>
+  <li>第五幕：佘太君和众嫂嫂的带领下，杨九妹要继承父兄遗志，在内清君侧，在外保卫国家的边疆安宁。</li>
+</ul>
+
+<p>故事的结局设计：杨九妹战场屡建奇功，宋辽签订和平条约（考虑到去大汉族沙文主义），边境百年安宁，百姓安居乐业，潘仁美受到了应有的惩罚。杨九妹上马可以驰骋沙场，下马也能粗茶淡饭，脱去武装能做女红，过上了普通人的幸福生活。</p>
+
+<h3 id="section-3">关卡设计</h3>
+
+<ol>
+  <li><code>雁门血战</code>  boss为耶律大王，击败之获得杨家枪法，开始有武略值。</li>
+  <li><code>为父报仇</code>  boss为潘仁美，严惩之获得古琴谱或古诗集，开始有文韬值。</li>
+  <li><code>直捣黄龙</code>  boss为萧太后，击败之获得游戏最终胜利，宋辽边境自此和平，父兄志愿得以伸张。</li>
+</ol>
+
+<h3 id="section-4">创新点</h3>
+
+<ol>
+  <li>
+    <p><code>前有堵截，后有追兵</code>  杨九妹单骑闯阵，安排一队辽兵在杨九妹的后面追赶，类似于神庙逃亡，这一队辽兵不出现，只是显示距离追上九妹还有多长时间，如果追上，则关卡挑战失败。杨九妹前方还有辽军营帐，她需要射箭攻击穿越营帐。九妹以固定的速度向营帐靠近（可以认为人物固定在iPad底部不动，场景以固定速度下移），如果九妹没有及时击溃兵营而与之相遇，则扣除一定的体力，在到达boss前体力为0则挑战亦失败。</p>
+  </li>
+  <li>
+    <p><code>诗文、歌曲挑战</code>  杨九妹在成长中要培养自己的文韬武略，武略可以通过击杀敌人获得，而文韬则需要在诗词歌赋中锻炼。九妹前方可能出现文字矩阵（类似于文字矩阵中找成语），每一行取一个字可以连成一句诗（或者一首曲子啦，如果不是字而是简谱的话），比如游戏会提示是李白《侠客行》里面的一句诗，那你在第一行踩“十”、第二行踩“步”……对应于别踩白块儿中的黑块儿，形成一句诗“十步杀一人，千里不留行”。</p>
+  </li>
+  <li>
+    <p><code>引入罚时机制</code>  想到一般游戏中有沼泽可以拖延人物的行动时间，我想可以在游戏中引入进来，相当于别踩沼泽，跟白块儿是一个意思，如果踩入，则罚时一定时间，但不会像别踩白块儿游戏那样，你踩错了就退出了。罚时机制还可以通过人物技能（保卫萝卜中的全屏冰冻、减速）以及掉落物品（比如打死小兵有几率获得一块香蕉皮，自动扔到你后面让追兵滑到）来实现。</p>
+  </li>
+</ol>
+
+<h3 id="section-5">关卡细部</h3>
+
+<p>分三种场景，兵营场景、诗歌场景和沼泽场景。</p>
+
+<ol>
+  <li><code>兵营场景</code>  对应创新点一，人物通过击杀可获得武略值</li>
+  <li><code>诗歌场景</code>  对应创新点二，人物通过击杀可获得文韬值</li>
+  <li><code>沼泽场景</code>  对应创新点三</li>
+</ol>
+
+<p>这些场景可以这样组合：<code>外围兵营</code> - <code>诗歌场景</code> - <code>近卫兵营</code> - <code>沼泽场景</code> - <code>中军兵营</code> - <code>boss</code>。越靠近boss的兵营血量或抗打击能力越强。每一个场景都还是多行四列的模式。</p>
+
+<h3 id="section-6">玩法说明</h3>
+
+<p>攻击兵营的方法是点击营垒，杨九妹就会在屏幕底部向相应的营垒射箭。</p>
+
+<p>诗歌和沼泽跟原游戏玩法大致相同，每行只点唯一正确的那个格子即可。</p>
+
+<h3 id="section-7">技能设计</h3>
+
+<ol>
+  <li><code>缓兵之计</code>  文韬值积累一定程度可施放技能缓兵之计，对追兵罚时5s</li>
+  <li><code>以父之名</code>  武略值积累一定程度可施放技能以父之名，父兄的魂魄帮助你在5s内清空面前一切营垒（保卫萝卜的全屏炸弹）</li>
+</ol>
+
+<p>以父之名似乎会更厉害一些，可以留着在中军兵营处使用。</p>
+
+<p>以上是20分钟内写下的设计草稿。</p>
+
+<p><a href="http://frank19900731.github.io/img/post/2014-10/1.jpeg" class="img-up" title="设计图一"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-10/1.jpeg" width="500" title="设计图一" /></a></p>
+
+<p><a href="http://frank19900731.github.io/img/post/2014-10/2.jpeg" class="img-up" title="设计图二"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-10/2.jpeg" width="500" title="设计图二" /></a></p>
+
+<h2 id="section-8">面试过程</h2>
+
+<p>展示使用黑板板书，对设计进行了详细介绍。</p>
+
+<p>被问到的问题：</p>
+
+<ol>
+  <li>小兵的攻击范围是多少，血量怎么设计？</li>
+  <li>人物可以左右移动么？人物射箭可以穿透兵营还是遇到兵营就停止？人物的射箭频率如何？</li>
+  <li>记不清了……</li>
+</ol>
+
+<p>具体怎么回答的就不说了，大概的思路是设定一个通关率或者掉血率，然后经游戏志愿者实测调整而成，诸如此类。</p>
+
+<h2 id="section-9">经验总结</h2>
+
+<ol>
+  <li>故事大框说说就好，更重要的可能是那些细节问题，比如人物的箭是否可以射穿了之类的，你没说但是被问到了，就说明你没有思考这些，你的策划方案就是有问题的。</li>
+  <li>不同面试官风格也是不一样的，第一条经验也可能不对。</li>
+</ol>
+
+<p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2014/10/20/ji-mou-you-xi-gong-si-mian-shi-jing-li/">http://frank19900731.github.io/blog/2014/10/20/ji-mou-you-xi-gong-si-mian-shi-jing-li/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[IDG 联合招聘笔试回忆]]></title>
@@ -322,7 +463,7 @@
 
 <p>更换 codesign 神马的在这里不好用了。尝试从命令行启动，得到的错误是 <code>exited; Killed: 9</code>，到处查得不到解释。最后，花了一百软妹币的学费终于搞明白了，启动方法见下图，CMD + I。</p>
 
-<p><img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-10/19.png" /></p>
+<p><a href="http://frank19900731.github.io/img/post/2014-10/19.png" class="img-up" title="Bartender 算号器用法"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-10/19.png" title="Bartender 算号器用法" /></a></p>
 
 <p>感叹一句，经验就是财富啊！</p>
 
@@ -364,25 +505,25 @@
     <id>http://frank19900731.github.io/blog/2014/10/16/wo-de-zhi-shi-guan-li-jing-yan-yu-gong-ju-fen-xiang</id>
     <content type="html"><![CDATA[<!-- excerpt start -->
 
-<p><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2014-10/2.png" width="128" height="128" title="OmniFocus" />
-<img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2014-10/4.png" width="128" height="128" title="Byword" />
-<img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2014-10/5.png" width="128" height="128" title="Caffeinated" />
-<img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2014-10/6.png" width="128" height="128" title="Dash" /></p>
+<p><a href="http://frank19900731.github.io/img/post/2014-10/2.png" class="img-up" title="OmniFocus"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2014-10/2.png" width="128" height="128" title="OmniFocus" /></a>
+<a href="http://frank19900731.github.io/img/post/2014-10/4.png" class="img-up" title="Byword"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2014-10/4.png" width="128" height="128" title="Byword" /></a>
+<a href="http://frank19900731.github.io/img/post/2014-10/5.png" class="img-up" title="Caffeinated"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2014-10/5.png" width="128" height="128" title="Caffeinated" /></a>
+<a href="http://frank19900731.github.io/img/post/2014-10/6.png" class="img-up" title="Dash"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2014-10/6.png" width="128" height="128" title="Dash" /></a></p>
 
-<p><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2014-10/7.png" width="128" height="128" title="Evernote" />
-<img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2014-10/8.png" width="128" height="128" title="FocusMask" />
-<img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2014-10/9.png" width="128" height="128" title="Gistify" />
-<img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2014-10/10.png" width="128" height="128" title="Pocket" /></p>
+<p><a href="http://frank19900731.github.io/img/post/2014-10/7.png" class="img-up" title="Evernote"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2014-10/7.png" width="128" height="128" title="Evernote" /></a>
+<a href="http://frank19900731.github.io/img/post/2014-10/8.png" class="img-up" title="FocusMask"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2014-10/8.png" width="128" height="128" title="FocusMask" /></a>
+<a href="http://frank19900731.github.io/img/post/2014-10/9.png" class="img-up" title="Gistify"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2014-10/9.png" width="128" height="128" title="Gistify" /></a>
+<a href="http://frank19900731.github.io/img/post/2014-10/10.png" class="img-up" title="Pocket"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2014-10/10.png" width="128" height="128" title="Pocket" /></a></p>
 
-<p><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2014-10/11.png" width="128" height="128" title="PopClip" />
-<img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2014-10/12.png" width="128" height="128" title="Producteev" />
-<img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2014-10/13.png" width="128" height="128" title="Ulysses" />
-<img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2014-10/14.png" width="128" height="128" title="Wunderlist" /></p>
+<p><a href="http://frank19900731.github.io/img/post/2014-10/11.png" class="img-up" title="PopClip"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2014-10/11.png" width="128" height="128" title="PopClip" /></a>
+<a href="http://frank19900731.github.io/img/post/2014-10/12.png" class="img-up" title="Producteev"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2014-10/12.png" width="128" height="128" title="Producteev" /></a>
+<a href="http://frank19900731.github.io/img/post/2014-10/13.png" class="img-up" title="Ulysses"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2014-10/13.png" width="128" height="128" title="Ulysses" /></a>
+<a href="http://frank19900731.github.io/img/post/2014-10/14.png" class="img-up" title="Wunderlist"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2014-10/14.png" width="128" height="128" title="Wunderlist" /></a></p>
 
-<p><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2014-10/15.png" width="128" height="128" title="iDocument" />
-<img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2014-10/16.png" width="128" height="128" title="MediaWiki" />
-<img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2014-10/17.png" width="128" height="128" title="小酱油" />
-<img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2014-10/18.png" width="128" height="128" title="Octopress" /></p>
+<p><a href="http://frank19900731.github.io/img/post/2014-10/15.png" class="img-up" title="iDocument"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2014-10/15.png" width="128" height="128" title="iDocument" /></a>
+<a href="http://frank19900731.github.io/img/post/2014-10/16.png" class="img-up" title="MediaWiki"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2014-10/16.png" width="128" height="128" title="MediaWiki" /></a>
+<a href="http://frank19900731.github.io/img/post/2014-10/17.png" class="img-up" title="小酱油"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2014-10/17.png" width="128" height="128" title="小酱油" /></a>
+<a href="http://frank19900731.github.io/img/post/2014-10/18.png" class="img-up" title="Octopress"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2014-10/18.png" width="128" height="128" title="Octopress" /></a></p>
 
 <!-- excerpt end -->
 
@@ -495,7 +636,7 @@
 
 <p>更多有关程序语言的种类与它们之间的程序关联请见 <a href="http://exploringdata.github.io/vis/programming-languages-influence-network/">编程语言关系图</a>，这是一件优美的数据可视化作品，托管于Github。</p>
 
-<p><img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-10/1.png" width="549" height="384" title="程序语言关系图" /></p>
+<p><a href="http://frank19900731.github.io/img/post/2014-10/1.png" class="img-up" title="程序语言关系图"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-10/1.png" width="549" height="384" title="程序语言关系图" /></a></p>
 
 <p>扯远了，举例说明与人类语言、思维相近的编程语言：</p>
 
@@ -815,7 +956,7 @@
 
 <blockquote><p>在CSDN/ITeye/cnblogs这种地方写技术博客确实比在人人上写技术博客好多了</p><p>但是你要知道，大牛们都是有自己的个人网站的</p><p>而且，一个共同点是，他们的网站都是自己写的html（没有css）并且界面十分难看</p><p>整个网站散发着一种“我这的文章都很牛所以界面什么的都不重要”的气质</p><p>例如这个 <a href="http://xahlee.org/index.html" target="_blank">http://xahlee.org/index.html</a></p></blockquote>
 
-<p><img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-10/3.png" width="570" height="1088" title="李杀网截屏" /></p>
+<p><a href="http://frank19900731.github.io/img/post/2014-10/3.png" class="img-up" title="李杀网截屏"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-10/3.png" width="570" height="1088" title="李杀网截屏" /></a></p>
 
 <p>当然，用优美的外在包裹充实的内在，总还是更加让人赏心悦目的。</p>
 
@@ -1741,19 +1882,19 @@ e.g. <code>`code`</code>.</p>
 </pre></td><td class="code"><pre><code class="objc"><span class="line"><span class="p">{</span><span class="o">%</span> <span class="n">img</span> <span class="n">imgright</span> <span class="nl">http:</span><span class="c1">//placekitten.com/320/250 Place Kitten #2 %}</span>
 </span></code></pre></td></tr></table></div></figure></notextile></div>
 
-<p><img class="imgright" src="http://placekitten.com/320/250" title="Place Kitten" /></p>
+<p><a href="http://placekitten.com/320/250" class="img-up" title="Place Kitten"><img class="imgright" src="http://placekitten.com/320/250" title="Place Kitten" /></a></p>
 
 <div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>使用图片</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
 </pre></td><td class="code"><pre><code class="objc"><span class="line"><span class="p">{</span><span class="o">%</span> <span class="n">img</span> <span class="n">imgcenter</span> <span class="nl">http:</span><span class="c1">//placekitten.com/300/500 150 250 &#39;Place Kitten #4&#39; &#39;An image of a very cute kitten&#39; %}</span>
 </span></code></pre></td></tr></table></div></figure></notextile></div>
 
-<p><img class="imgcenter" src="http://placekitten.com/300/500" width="150" height="250" title="Place Kitten #4" alt="An image of a very cute kitten" /></p>
+<p><a href="http://placekitten.com/300/500" class="img-up" title="Place Kitten #4"><img class="imgcenter" src="http://placekitten.com/300/500" width="150" height="250" title="Place Kitten #4" alt="An image of a very cute kitten" /></a></p>
 
 <div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>使用图片</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-</pre></td><td class="code"><pre><code class="objc"><span class="line"><span class="p">{</span><span class="o">%</span> <span class="n">img</span> <span class="n">imgleft</span> <span class="o">/</span><span class="n">img</span><span class="o">/</span><span class="n">portrait</span><span class="p">.</span><span class="n">jpg</span> <span class="mi">379</span> <span class="mi">481</span> <span class="err">&#39;</span><span class="n">My</span> <span class="n">Cartoon</span> <span class="n">Portrait</span><span class="err">&#39;</span> <span class="o">%</span><span class="p">}</span>
+</pre></td><td class="code"><pre><code class="objc"><span class="line"><span class="p">{</span><span class="o">%</span> <span class="n">img</span> <span class="n">imgleft</span> <span class="o">/</span><span class="n">img</span><span class="o">/</span><span class="n">portrait</span><span class="p">.</span><span class="n">jpg</span> <span class="mi">379</span> <span class="mi">481</span> <span class="n">My</span> <span class="n">Cartoon</span> <span class="n">Portrait</span> <span class="o">%</span><span class="p">}</span>
 </span></code></pre></td></tr></table></div></figure></notextile></div>
 
-<p><img class="imgleft" src="http://frank19900731.github.io/img/portrait.jpg" width="379" height="481" title="'My Cartoon Portrait'" /></p>
+<p><a href="http://frank19900731.github.io/img/portrait.jpg" class="img-up" title="My Cartoon Portrait"><img class="imgleft" src="http://frank19900731.github.io/img/portrait.jpg" width="379" height="481" title="My Cartoon Portrait" /></a></p>
 
 <h2 id="pullquote">使用 pullquote</h2>
 

@@ -4,7 +4,7 @@
         <loc>
             http://frank19900731.github.io/blog/2014/08/24/wo-de-di-yi-pian-octopress-bo-ke/
         </loc>
-        <lastmod>2014-10-19T15:20:39+08:00</lastmod>
+        <lastmod>2014-10-20T23:49:21+08:00</lastmod>
     </url>
     <url>
         <loc>http://frank19900731.github.io/blog/2014/09/01/2015nian-xiao-zhao-ru-kou/</loc>
@@ -28,7 +28,7 @@
     </url>
     <url>
         <loc>http://frank19900731.github.io/blog/2014/10/18/yosemite-sheng-ji-ji-hou-xu/</loc>
-        <lastmod>2014-10-19T15:20:39+08:00</lastmod>
+        <lastmod>2014-10-20T23:40:06+08:00</lastmod>
     </url>
     <url>
         <loc>http://frank19900731.github.io/blog/2014/10/18/fei-wei-mei-di-bi-shi-hui-yi/</loc>
@@ -41,6 +41,12 @@
         <lastmod>2014-10-19T22:20:38+08:00</lastmod>
     </url>
     <url>
+        <loc>
+            http://frank19900731.github.io/blog/2014/10/20/ji-mou-you-xi-gong-si-mian-shi-jing-li/
+        </loc>
+        <lastmod>2014-10-20T23:30:51+08:00</lastmod>
+    </url>
+    <url>
         <loc>http://frank19900731.github.io/404.html</loc>
         <lastmod>2014-10-19T15:20:53+08:00</lastmod>
     </url>
@@ -50,7 +56,7 @@
     </url>
     <url>
         <loc>http://frank19900731.github.io/archives/</loc>
-        <lastmod>2014-10-19T22:20:38+08:00</lastmod>
+        <lastmod>2014-10-20T23:49:21+08:00</lastmod>
     </url>
     <url>
         <loc>http://frank19900731.github.io/assets/bootstrap/docs/about.html</loc>
@@ -74,7 +80,7 @@
     </url>
     <url>
         <loc>http://frank19900731.github.io/assets/bootstrap/docs/</loc>
-        <lastmod>2014-10-19T22:20:38+08:00</lastmod>
+        <lastmod>2014-10-20T23:49:21+08:00</lastmod>
     </url>
     <url>
         <loc>http://frank19900731.github.io/assets/bootstrap/docs/javascript.html</loc>
@@ -86,15 +92,15 @@
     </url>
     <url>
         <loc>http://frank19900731.github.io/blog/categories/</loc>
-        <lastmod>2014-10-19T22:20:38+08:00</lastmod>
+        <lastmod>2014-10-20T23:49:21+08:00</lastmod>
     </url>
     <url>
         <loc>http://frank19900731.github.io/blog/</loc>
-        <lastmod>2014-10-19T22:20:38+08:00</lastmod>
+        <lastmod>2014-10-20T23:49:21+08:00</lastmod>
     </url>
     <url>
         <loc>http://frank19900731.github.io/blog/tags/</loc>
-        <lastmod>2014-10-19T22:20:38+08:00</lastmod>
+        <lastmod>2014-10-20T23:49:21+08:00</lastmod>
     </url>
     <url>
         <loc>http://frank19900731.github.io/booklist/</loc>
@@ -106,7 +112,7 @@
     </url>
     <url>
         <loc>http://frank19900731.github.io/</loc>
-        <lastmod>2014-10-19T22:20:38+08:00</lastmod>
+        <lastmod>2014-10-20T23:49:21+08:00</lastmod>
     </url>
     <url>
         <loc>http://frank19900731.github.io/movielist/</loc>
@@ -130,6 +136,6 @@
     </url>
     <url>
         <loc>http://frank19900731.github.io/archives//</loc>
-        <lastmod>2014-10-19T22:20:38+08:00</lastmod>
+        <lastmod>2014-10-20T23:49:21+08:00</lastmod>
     </url>
 </urlset>

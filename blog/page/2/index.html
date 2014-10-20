@@ -43,8 +43,40 @@
   <script src="/javascripts/octopress.js" type="text/javascript"></script>
   <script src="/javascripts/jquery.sidr.min.js"></script>
   <script src="/javascripts/ah-blue.js"></script>
+  <script type="text/javascript" src="/javascripts/fancybox/jquery.fancybox.pack.js"></script>
+  <link rel="stylesheet" type="text/css" href="/javascripts/fancybox/jquery.fancybox.css" media="screen" />
 
   <link href="/stylesheets/component.css" rel="stylesheet" type="text/css">
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+        if ($(".img-up")) {
+            $(".img-up").fancybox();
+        }
+        if ($(".imgleft")) {
+            $(".imgleft").parent().parent().css("text-align", "left");
+        }
+        if ($(".imgright")) {
+            $(".imgright").parent().parent().css("text-align", "right");
+        }
+        if ($(".imgcenter")) {
+            $(".imgcenter").parent().parent().css("text-align", "center");
+        }
+        if ($(".imgleft-no-shadow")) {
+            $(".imgleft-no-shadow").parent().parent().css("text-align", "left");
+        }
+        if ($(".imgright-no-shadow")) {
+            $(".imgright-no-shadow").parent().parent().css("text-align", "right");
+        }
+        if ($(".imgcenter-no-shadow")) {
+            $(".imgcenter-no-shadow").parent().parent().css("text-align", "center");
+        }
+
+        if ($(".mod_lost_child_little")) {
+            $(".mod_lost_child_little").css("width", "100%");
+        }
+    });
+  </script>
 
   <!-- custom/head.html -->
 <script type="text/x-mathjax-config">
@@ -102,7 +134,7 @@
     <button>Open Menu</button>
     <ul class="dl-menu">
         <li><a href="/">Home</a></li>
-        <li><a href="/archives/">Archives (8)</a></li>
+        <li><a href="/archives/">Archives (9)</a></li>
         <li>
             <a href="#">Categories (4)</a>
             <ul class="dl-submenu">
@@ -110,10 +142,10 @@
                 <li><a href="/blog/categories">All Categories (4)</a>
                 <li style="color: #CCCCCC; line-height: 150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Top 5</li>
 
-                <li><a href='/category/面试求职'>面试求职 (3)</a></li><li><a href='/category/网页开发'>网页开发 (2)</a></li><li><a href='/category/工作效率'>工作效率 (2)</a></li><li><a href='/category/Mac 使用'>Mac 使用 (1)</a></li>
+                <li><a href='/category/面试求职'>面试求职 (4)</a></li><li><a href='/category/网页开发'>网页开发 (2)</a></li><li><a href='/category/工作效率'>工作效率 (2)</a></li><li><a href='/category/Mac 使用'>Mac 使用 (1)</a></li>
             </ul>
         </li>
-        <li><a href="/blog/tags">All Tags (25)</a>
+        <li><a href="/blog/tags">All Tags (27)</a>
         <li>
             <a href="#">Features</a>
             <ul class="dl-submenu">
@@ -180,6 +212,10 @@
 <ul>
 	
     <li>
+    	<a href="/blog/2014/10/20/ji-mou-you-xi-gong-si-mian-shi-jing-li/">记某游戏公司面试经历</a>
+    </li>
+    
+    <li>
     	<a href="/blog/2014/10/19/idg-lian-he-zhao-pin-bi-shi-hui-yi/">IDG 联合招聘笔试回忆</a>
     </li>
     
@@ -195,10 +231,6 @@
     	<a href="/blog/2014/10/16/octopress-gai-zao-ji-lu/">【撰写中】Octopress 改造记录</a>
     </li>
     
-    <li>
-    	<a href="/blog/2014/10/16/wo-de-zhi-shi-guan-li-jing-yan-yu-gong-ju-fen-xiang/">【撰写中】我的知识管理经验与工具分享</a>
-    </li>
-    
 </ul>
         </li>
 <li>
@@ -211,9 +243,9 @@
 <a style="font-size: 90%" href="/tag/分页/">分页</a>
 <a style="font-size: 90%" href="/tag/数据可视化/">数据可视化</a>
 <a style="font-size: 90%" href="/tag/文档整理/">文档整理</a>
-<a style="font-size: 90%" href="/tag/知识管理/">知识管理</a>
 <a style="font-size: 210%" href="/tag/算法/">算法</a>
 <a style="font-size: 210%" href="/tag/逻辑/">逻辑</a>
+<a style="font-size: 90%" href="/tag/飞维美地/">飞维美地</a>
 
     </ul>
 </li><li>
@@ -240,6 +272,101 @@
 </article>
 
 
+
+
+<article style="background-color: rgba(185, 185, 185, 0.5); padding: 25px 25px 25px 25px; border-radius: 20px;">
+	<!-- article.html -->
+<!-- 文章展示，区分在索引页和文章页 -->
+<header>
+  <div class="article-tags">
+      <!-- post/categories.html -->
+<!-- 文章类别展示 -->
+
+
+<span class="categories" style="font-size: 16px;">
+  Categories:
+  
+    <a class='category' href='/category/工作效率/'>工作效率</a>
+  
+
+</span>
+
+
+  </div>
+  
+    <h1><a href="/blog/2014/10/16/ti-gao-xiao-lu-yu-qing-qu-de-jiu-chong-cheng-xu-gong-ju-tui-jian/">
+      提高效率与情趣的九种程序工具推荐
+    </a></h1>
+  
+  <!-- 给出发布时间 -->
+  <div class="article-date">
+      <!-- post/date.html -->
+<!-- 文章日期显示 -->
+
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-10-16T17:28:06+08:00" pubdate data-updated="true">Oct 16<span>th</span>, 2014</time></div>
+</header>
+<hr />
+<!-- 如果在索引中 -->
+
+  <section class="article-index">
+<p>自己平时爱鼓捣些工程上的小玩意儿，在一次实验室的Paper Reading上给大家分享了自己的一点体会，给大家推荐了几款能够提高工作效率与生活情趣的工具，整理于此。</p>
+
+<p>想了解更多有趣的工具，请持续关注 <a href="http://frank19900731.github.io/category/%E5%B7%A5%E4%BD%9C%E6%95%88%E7%8E%87/">工作效率</a> 分类。</p>
+
+<h2 id="section">选题目的</h2>
+
+<ul>
+  <li>把自己知道的，用过的，感觉有意思或有用的分享给大家，实现自己的知识梳理与输出</li>
+  <li>让大家在遇到类似应用场景的时候知道有某种工具是很适用的</li>
+  <li>督促大家掌握某种工具（比如 git，shell，markdown ），进而提升工作效率，也可以以工具为杠杆撬动更多的资源</li>
+</ul>
+
+<h2 id="section-1">介绍角度</h2>
+<ul>
+  <li>类型</li>
+  <li>星级评定（1星-5星）
+    <ul>
+      <li>入门难度</li>
+      <li>实用性</li>
+      <li>装X效果</li>
+    </ul>
+  </li>
+  <li>描述</li>
+  <li>适用场合</li>
+  <li>实例说明</li>
+  <li>参考资料</li>
+</ul>
+
+</section>
+  <a href="/blog/2014/10/16/ti-gao-xiao-lu-yu-qing-qu-de-jiu-chong-cheng-xu-gong-ju-tui-jian/" style="background: #da3e10; color: #ffffff; border-radius: 5px; border: 4px solid #da3e10;">继续阅读</a>&nbsp;&nbsp;&nbsp;&nbsp;
+<!-- post/tags.html -->
+<!-- 文章标签展示 -->
+
+
+<span class="tags">
+  <font color="#808080">Tags: </font>
+  
+    <a class='tag' href='/tag/个人展示/'>个人展示</a>, <a class='tag' href='/tag/代码开发/'>代码开发</a>, <a class='tag' href='/tag/数据可视化/'>数据可视化</a>, <a class='tag' href='/tag/文档整理/'>文档整理</a>
+  
+</span>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<span class="ds-thread-count" data-thread-key="/blog/2014/10/16/ti-gao-xiao-lu-yu-qing-qu-de-jiu-chong-cheng-xu-gong-ju-tui-jian/" style="color: #808080;"></span>
+
+
+
+
+</article>
 
 
 <article style="background-color: rgba(185, 185, 185, 0.5); padding: 25px 25px 25px 25px; border-radius: 20px;">
@@ -568,28 +695,7 @@ also possible.</p>
     });
 
     function onLoadSet() {
-        if ($(".imgleft")) {
-            $(".imgleft").parent().css("text-align", "left");
-        }
-        if ($(".imgright")) {
-            $(".imgright").parent().css("text-align", "right");
-        }
-        if ($(".imgcenter")) {
-            $(".imgcenter").parent().css("text-align", "center");
-        }
-        if ($(".imgleft-no-shadow")) {
-            $(".imgleft-no-shadow").parent().css("text-align", "left");
-        }
-        if ($(".imgright-no-shadow")) {
-            $(".imgright-no-shadow").parent().css("text-align", "right");
-        }
-        if ($(".imgcenter-no-shadow")) {
-            $(".imgcenter-no-shadow").parent().css("text-align", "center");
-        }
 
-        if ($(".mod_lost_child_little")) {
-            $(".mod_lost_child_little").css("width", "100%");
-        }
     }
 
 </script>
