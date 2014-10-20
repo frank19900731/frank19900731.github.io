@@ -101,7 +101,7 @@ Yosemite 修改了 Codesign 机制，导致大批算号器、注册机无法启�
 
 更换 codesign 神马的在这里不好用了。尝试从命令行启动，得到的错误是 `exited; Killed: 9`，到处查得不到解释。最后，花了一百软妹币的学费终于搞明白了，启动方法见下图，CMD + I。
 
-{% img imgcenter /img/post/2014-10/19.png %}
+{% img imgcenter /img/post/2014-10/19.png Bartender 算号器用法 %}
 
 感叹一句，经验就是财富啊！
 

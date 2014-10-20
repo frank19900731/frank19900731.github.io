@@ -41,8 +41,40 @@
   <script src="{{ root_url }}/javascripts/octopress.js" type="text/javascript"></script>
   <script src="{{ root_url }}/javascripts/jquery.sidr.min.js"></script>
   <script src="{{ root_url }}/javascripts/ah-blue.js"></script>
+  <script type="text/javascript" src="{{ root_url }}/javascripts/fancybox/jquery.fancybox.pack.js"></script>
+  <link rel="stylesheet" type="text/css" href="{{ root_url }}/javascripts/fancybox/jquery.fancybox.css" media="screen" />
 
   <link href="{{ root_url }}/stylesheets/component.css" rel="stylesheet" type="text/css">
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+        if ($(".img-up")) {
+            $(".img-up").fancybox();
+        }
+        if ($(".imgleft")) {
+            $(".imgleft").parent().parent().css("text-align", "left");
+        }
+        if ($(".imgright")) {
+            $(".imgright").parent().parent().css("text-align", "right");
+        }
+        if ($(".imgcenter")) {
+            $(".imgcenter").parent().parent().css("text-align", "center");
+        }
+        if ($(".imgleft-no-shadow")) {
+            $(".imgleft-no-shadow").parent().parent().css("text-align", "left");
+        }
+        if ($(".imgright-no-shadow")) {
+            $(".imgright-no-shadow").parent().parent().css("text-align", "right");
+        }
+        if ($(".imgcenter-no-shadow")) {
+            $(".imgcenter-no-shadow").parent().parent().css("text-align", "center");
+        }
+
+        if ($(".mod_lost_child_little")) {
+            $(".mod_lost_child_little").css("width", "100%");
+        }
+    });
+  </script>
 
   {% include custom/head.html %}
   {% include google_analytics.html %}

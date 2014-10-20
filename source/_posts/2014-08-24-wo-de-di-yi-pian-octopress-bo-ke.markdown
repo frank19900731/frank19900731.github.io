@@ -271,10 +271,10 @@ But next comes a paragraph with an inline math statement:
 {% img imgcenter http://placekitten.com/300/500 150 250 'Place Kitten #4' 'An image of a very cute kitten' %}
 
 ``` objc 使用图片
-{% img imgleft /img/portrait.jpg 379 481 'My Cartoon Portrait' %}
+{% img imgleft /img/portrait.jpg 379 481 My Cartoon Portrait %}
 ```
 
-{% img imgleft /img/portrait.jpg 379 481 'My Cartoon Portrait' %}
+{% img imgleft /img/portrait.jpg 379 481 My Cartoon Portrait %}
 
 ##使用 pullquote
 
