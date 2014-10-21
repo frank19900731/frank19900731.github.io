@@ -4,7 +4,7 @@
   <title><![CDATA[Blog of 太极儒]]></title>
   <link href="http://frank19900731.github.io/atom.xml" rel="self"/>
   <link href="http://frank19900731.github.io/"/>
-  <updated>2014-10-21T00:03:44+08:00</updated>
+  <updated>2014-10-21T10:40:18+08:00</updated>
   <id>http://frank19900731.github.io/</id>
   <author>
     <name><![CDATA[Frank Song]]></name>
@@ -176,6 +176,9 @@
   <li>6 个方块排一排，用三种颜色涂刷，要求相邻方块不同色且三种颜色都用上，有几种涂法？    答：90种。<code>3 * 2^5 - 3*2</code></li>
   <li>二叉树，第五层最多有多少个节点？（根节点是第一层）   答：16。</li>
   <li>红球、黑球、白球共60个，摸了一阵，统计红球大约15%，黑球大约45%，问有多少个白球？    答：16。</li>
+  <li>253的16进制和二进制表示？    答：0xFD，11111101</li>
+  <li>ABCDE，不可能的出栈顺序？   答：</li>
+  <li>快速排序，第一次运行后的结果是？    答：</li>
   <li>程序题，问 c 的输出是多少？    答：-1。</li>
 </ol>
 
@@ -192,7 +195,7 @@
 </span><span class="line">    <span class="n">a</span> <span class="o">=</span> <span class="n">a</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span>
 </span><span class="line"><span class="p">}</span> <span class="k">while</span><span class="p">(</span><span class="n">a</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span>
 </span></code></pre></td></tr></table></div></figure></notextile></div>
-<p>还有四道想不起来了……</p>
+<p>还有一道想不起来了……</p>
 
 <h2 id="section-1">综合题</h2>
 
