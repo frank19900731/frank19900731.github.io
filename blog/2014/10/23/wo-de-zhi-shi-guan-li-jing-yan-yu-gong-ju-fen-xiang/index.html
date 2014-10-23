@@ -1,0 +1,820 @@
+<!-- layout/default.html -->
+
+<!-- head.html -->
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <!-- 标签页标题 -->
+  <title>我的知识管理经验与工具分享 - Blog of 太极儒</title>
+  <meta name="author" content="Frank Song">
+  <!-- 定义description变量，如果有则用，没有则是正文，前150字 -->
+  
+  <meta name="description" content="Categories: 工作效率 我的知识管理经验与工具分享 Oct 23rd, 2014 目录 前言 你的知识问题 知识学习 知识保存 知识分享 总结 附录 前言 最近我阅读了田志刚先生撰写的《你的知识需要管理》一书。这本书出版于2010年，虽然当中介绍的工具已跟不上现代的潮流，但书中的观点和例证还是发人深省，特别是第一章 你的知识问题。 阅读过程中，我感觉书中部分内容和自己在实践中摸索出的一些观点和方法很契合，于是萌生了将自己的一点知识管理经验整理并分享的念头，这就是撰写本文的初衷。 在你开始正式阅读之前，我先给出一点阅读忠告： 就我个人阅读此类文章或书籍的经验来看，如果不是有过类似的实践经验或者当前正面临类似的问题，一般不太容易产生共鸣，反而会觉得是个大杂烩，或者尝试后觉得根本不好用嘛。对于这样的想法，我想举两个例子： 高考结束后，有些小朋友（主要是学习成绩不理想的）找我学习经验，当时自己苦口婆心讲得口干舌燥，不过效果远不如我所想。后来意识到，每个人都是一个个性化的系统，经验移植很困难，自己摸索出来的才是最合适的。 我知道很多的道理，却依然过不好这一生 这句话曾风行一时，我觉得这是乱呻吟。首先道理是要放到情境里学习的（读高中的时候我对《你的知识需要管理》应该会是无感的，但快研究生毕业、要找工作了就不同了），听懂了、记住了有毛线用；其次，道理是死、人心要活，很多事情是反复博弈的或者可以举一反三，榆木脑袋才会一生都过不好（但往往是没过完一生的年轻人喜欢说这种话，彰显个性么？不懂……）；道理没给你带来好生活，你在抱怨道理、抱怨告诉你道理的人之余，是不是还得想想自身可能存在的问题呢？ 我觉得写这篇文章的目的不在于告诉读者你现在应该马上行动起来不怎么做、要怎么做，只是单纯的经验和工具分享，也是我阶段性的自我总结。如果有一天当你遇到和我类似的场景与问题或受困于自身的发展瓶颈时，而你隐约记得曾经有篇文章的内容可以为你所用，我所介绍的经验和工具或许就可以帮上你的忙，最最起码你会知道，有一个家伙曾经跟你一样，你不是个案…… 你的知识问题 首先要区分容易混淆的三个概念，“数据”、“信息”和“知识”。在原书作者看来： 数据：单纯的数据不表示意思，比如39； 信息：赋予数据以环境，比如就诊时向医生提供信息，体温是39摄氏度； 知识：经过实践证明的，可以用来决策和行动的信息， &hellip;">
+  <meta name="keywords" content="效率, 知识管理, 田志刚, Evernote, Tower, Ulysses, Pocket, Gitbook, pandoc, iDocument, mediawiki, Byword, octopress, Dash, Gistify, Caffeinated, 鲜果阅读, 小酱油, 新浪微博, 浏览器收藏夹">
+  <meta name="baidu-site-verification" content="7O78rNJCOH" />
+  <meta name="360-site-verification" content="9ee6dda17557079b8855f9c8201b05bb" />
+  <meta name="msvalidate.01" content="408D13BCB6B6CE4973F6CD9E6A9E8195" />
+  <meta name="sogou_site_verification" content="CtgkJPDjga"/>
+  <meta name="chinaz-site-verification" content="081e7651-48c6-4c2f-a569-99321685eab1" />
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://frank19900731.github.io/blog/2014/10/23/wo-de-zhi-shi-guan-li-jing-yan-yu-gong-ju-fen-xiang">
+  <!-- 网站小图标 -->
+  <link href="/favicon.ico" rel="icon">
+  <!-- 网站样式文件 -->
+  <link href="/stylesheets/styles.css" media="screen, projection" rel="stylesheet" type="text/css">
+
+  <link href="/atom.xml" rel="alternate" title="Blog of 太极儒" type="application/atom+xml">
+
+  <script src="/javascripts/modernizr.custom.js"></script>
+  <!-- jQuery -->
+  <!--script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script-->
+  <script src="/javascripts/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+
+  <!-- 其它js代码 -->
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <script src="/javascripts/jquery.sidr.min.js"></script>
+  <script src="/javascripts/ah-blue.js"></script>
+  <script type="text/javascript" src="/javascripts/fancybox/jquery.fancybox.pack.js"></script>
+  <link rel="stylesheet" type="text/css" href="/javascripts/fancybox/jquery.fancybox.css" media="screen" />
+
+  <link href="/stylesheets/component.css" rel="stylesheet" type="text/css">
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+        if ($(".img-up")) {
+            $(".img-up").fancybox();
+        }
+        if ($(".imgleft")) {
+            $(".imgleft").parent().parent().css("text-align", "left");
+        }
+        if ($(".imgright")) {
+            $(".imgright").parent().parent().css("text-align", "right");
+        }
+        if ($(".imgcenter")) {
+            $(".imgcenter").parent().parent().css("text-align", "center");
+        }
+        if ($(".imgleft-no-shadow")) {
+            $(".imgleft-no-shadow").parent().parent().css("text-align", "left");
+        }
+        if ($(".imgright-no-shadow")) {
+            $(".imgright-no-shadow").parent().parent().css("text-align", "right");
+        }
+        if ($(".imgcenter-no-shadow")) {
+            $(".imgcenter-no-shadow").parent().parent().css("text-align", "center");
+        }
+
+        if ($(".mod_lost_child_little")) {
+            $(".mod_lost_child_little").css("width", "100%");
+        }
+    });
+  </script>
+
+  <!-- custom/head.html -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      jax: ["input/TeX", "output/HTML-CSS"],
+      tex2jax: {
+        inlineMath: [ ['$', '$'], ["\\(", "\\)"] ],
+        displayMath: [ ['$$', '$$'], ["\\[", "\\]"] ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+      //,
+      //displayAlign: "left",
+      //displayIndent: "2em"
+    });
+
+    function addBlankTargetForLinks () {
+
+      $('a[href^="http"]').each(function(){
+
+        $(this).attr('target', '_blank');
+
+      });
+
+    }
+
+    $(document).bind('DOMNodeInserted', function(event) {
+
+      addBlankTargetForLinks();
+
+    });
+
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"></script>
+  <!-- google_analytics.html -->
+
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-51950124-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head> 
+
+<body onload="onLoadSet()"   >
+  <!-- header.html -->
+<!-- custom/header.html -->
+<!-- 搜索和菜单导航 -->
+<!--
+<div class="aux-container">
+    <a id="nav-toggle" href="#sidr"></a>
+    <a id="search-toggle"></a>
+</div> -->
+
+<div id="dl-menu" class="dl-menuwrapper">
+    <button>Open Menu</button>
+    <ul class="dl-menu">
+        <li><a href="/">Home</a></li>
+        <li><a href="/archives/">Archives (10)</a></li>
+        <li>
+            <a href="#">Categories (4)</a>
+            <ul class="dl-submenu">
+                <li class="dl-back"><a href="#">Back</a></li>
+                <li><a href="/blog/categories">All Categories (4)</a>
+                <li style="color: #CCCCCC; line-height: 150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Top 5</li>
+
+                <li><a href='/category/面试求职'>面试求职 (4)</a></li><li><a href='/category/工作效率'>工作效率 (3)</a></li><li><a href='/category/网页开发'>网页开发 (2)</a></li><li><a href='/category/Mac 使用'>Mac 使用 (1)</a></li>
+            </ul>
+        </li>
+        <li><a href="/blog/tags">All Tags (28)</a>
+        <li>
+            <a href="#">Features</a>
+            <ul class="dl-submenu">
+                <li class="dl-back"><a href="#">Back</a></li>
+                <li><a href="/booklist">Book List</a></li>
+                <li><a href="/movielist">Movie List</a></li>
+                <li><a href="/towrite">Things to Write</a></li>
+            </ul>
+        </li>
+        <li><a href="/about">About</a></li>
+    </ul>
+</div><!-- /dl-menuwrapper -->
+
+<div class="aux-container">
+
+</div>
+
+
+<div style="height: 30px;"></div>
+
+
+
+  <div class="main-container">
+    <div class="main wrapper clearfix">
+    	
+    	<aside>
+			
+                <div class="search-container">
+                    <form action="/search" method="get">
+                        <fieldset role="search">
+                            <input type="text" class="search-field" id="search-query" name="q" placeholder="Search" autocomplete="off">
+                            <input class="submit" type="submit" value=""/>
+                        </fieldset>
+                    </form>
+                </div>
+			
+            <!-- navigation.html -->
+<!-- custom/navigation.html -->
+<div id="main-nav">
+    <nav>
+        <ul>
+        	<li>
+        		<ul>
+                    <!--li><a href="http://songchengru.eicp.net" target="_blank">Personal Page</a-->
+                    <li><a href="/atom.xml" target="_blank">RSS Subscription</a></li>
+        			<li>Sina Blog - <a href="http://blog.sina.com/frank19900731" target="_blank">士不可以不弘毅</a></li>
+                    <li>Sina Weibo - <a href="http://weibo.sina.com/frank19900731" target="_blank">@太极儒</a></li>
+                    <li>Github - <a href="http://github.com/frank19900731" target="_blank">frank19900731</a></li>
+                    <li>Mail to Me - <a href="mailto:scr_0731@126.com" target="_blank">scr at 126</a></li>
+        		</ul>
+        	</li>
+
+                
+                <!-- asides/features.html -->
+<li>
+    <!-- features -->
+    <h3>Features</h3>
+    <ul>
+        <li><a href="/booklist">Book List</a></li>
+        <li><a href="/movielist">Movie List</a></li>
+        <li><a href="/towrite">To Write</a></li>
+    </ul>
+</li><!-- asides/recent_posts.html -->
+        <li>
+<!-- 最近发布的文章 -->
+<h3>Recent Posts</h3>
+<ul>
+	
+    <li>
+    	<a href="/blog/2014/10/23/wo-de-zhi-shi-guan-li-jing-yan-yu-gong-ju-fen-xiang/">我的知识管理经验与工具分享</a>
+    </li>
+    
+    <li>
+    	<a href="/blog/2014/10/23/wo-de-shi-jian-guan-li-jing-yan-yu-gong-ju-fen-xiang/">【撰写中】我的时间管理经验与工具分享</a>
+    </li>
+    
+    <li>
+    	<a href="/blog/2014/10/20/ji-mou-you-xi-gong-si-mian-shi-jing-li/">记某游戏公司面试经历</a>
+    </li>
+    
+    <li>
+    	<a href="/blog/2014/10/19/idg-lian-he-zhao-pin-bi-shi-hui-yi/">IDG 联合招聘笔试回忆</a>
+    </li>
+    
+    <li>
+    	<a href="/blog/2014/10/18/fei-wei-mei-di-bi-shi-hui-yi/">飞维美地笔试回忆</a>
+    </li>
+    
+</ul>
+        </li>
+<li>
+    <h3>Tags</h3>
+    <ul class="tag-cloud">
+        <a style="font-size: 90%" href="/tag/json/">json</a>
+<a style="font-size: 210%" href="/tag/octopress/">octopress</a>
+<a style="font-size: 90%" href="/tag/中文字体/">中文字体</a>
+<a style="font-size: 90%" href="/tag/代码开发/">代码开发</a>
+<a style="font-size: 90%" href="/tag/分页/">分页</a>
+<a style="font-size: 210%" href="/tag/效率/">效率</a>
+<a style="font-size: 90%" href="/tag/数据可视化/">数据可视化</a>
+<a style="font-size: 90%" href="/tag/文档整理/">文档整理</a>
+<a style="font-size: 210%" href="/tag/算法/">算法</a>
+<a style="font-size: 210%" href="/tag/逻辑/">逻辑</a>
+
+    </ul>
+</li><li>
+    <h3>Recent Comments</h3>
+    <ul class="ds-recent-comments" data-num-items="7">
+    </ul>
+</li><li>
+<h3>Recent Visitors</h3>
+<ul class="ds-recent-visitors"></ul>
+</li>
+                
+
+        </ul>
+    </nav>
+</div>
+		</aside>
+		
+      <!-- layouts/post.html -->
+<!-- 带内容 -->
+<div>
+<article style="background-color: rgba(185, 185, 185, 0.5); padding: 25px 25px 25px 25px; border-radius: 20px;">
+	<!-- article.html -->
+<!-- 文章展示，区分在索引页和文章页 -->
+<header>
+  <div class="article-tags">
+      <!-- post/categories.html -->
+<!-- 文章类别展示 -->
+
+
+<span class="categories" style="font-size: 16px;">
+  Categories:
+  
+    <a class='category' href='/category/工作效率/'>工作效率</a>
+  
+
+</span>
+
+
+  </div>
+  
+    <h1>
+      我的知识管理经验与工具分享
+    </h1>
+  
+  <!-- 给出发布时间 -->
+  <div class="article-date">
+      <!-- post/date.html -->
+<!-- 文章日期显示 -->
+
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-10-23T18:21:07+08:00" pubdate data-updated="true">Oct 23<span>rd</span>, 2014</time></div>
+</header>
+<hr />
+<!-- 如果在索引中 -->
+
+  <!-- 直接展示出内容 -->
+  <section class="article-detail" style="margin-bottom: 20px;"><p><strong>目录</strong></p>
+
+<ul id="markdown-toc">
+  <li><a href="#section">前言</a></li>
+  <li><a href="#section-1">你的知识问题</a></li>
+  <li><a href="#section-2">知识学习</a></li>
+  <li><a href="#section-3">知识保存</a></li>
+  <li><a href="#section-4">知识分享</a></li>
+  <li><a href="#section-5">总结</a></li>
+  <li><a href="#section-6">附录</a></li>
+</ul>
+
+<!-- excerpt start -->
+
+<h2 id="section">前言</h2>
+
+<p>最近我阅读了田志刚先生撰写的<a href="http://book.douban.com/subject/4630664/">《你的知识需要管理》</a>一书。这本书出版于2010年，虽然当中介绍的工具已跟不上现代的潮流，但书中的观点和例证还是发人深省，特别是第一章 <code>你的知识问题</code>。</p>
+
+<p>阅读过程中，我感觉书中部分内容和自己在实践中摸索出的一些观点和方法很契合，于是萌生了将自己的一点知识管理经验整理并分享的念头，这就是撰写本文的初衷。</p>
+
+<p>在你开始正式阅读之前，我先给出一点阅读忠告：</p>
+
+<p>就我个人阅读此类文章或书籍的经验来看，如果不是有过类似的实践经验或者当前正面临类似的问题，一般不太容易产生共鸣，反而会觉得是个大杂烩，或者尝试后觉得根本不好用嘛。对于这样的想法，我想举两个例子：</p>
+
+<ul>
+  <li>高考结束后，有些小朋友（主要是学习成绩不理想的）找我学习经验，当时自己苦口婆心讲得口干舌燥，不过效果远不如我所想。后来意识到，每个人都是一个个性化的系统，经验移植很困难，自己摸索出来的才是最合适的。</li>
+  <li><code>我知道很多的道理，却依然过不好这一生</code>  这句话曾风行一时，我觉得这是乱呻吟。首先道理是要放到情境里学习的（读高中的时候我对《你的知识需要管理》应该会是无感的，但快研究生毕业、要找工作了就不同了），听懂了、记住了有毛线用；其次，道理是死、人心要活，很多事情是反复博弈的或者可以举一反三，榆木脑袋才会一生都过不好（但往往是没过完一生的年轻人喜欢说这种话，彰显个性么？不懂……）；道理没给你带来好生活，你在抱怨道理、抱怨告诉你道理的人之余，是不是还得想想自身可能存在的问题呢？</li>
+</ul>
+
+<p>我觉得写这篇文章的目的不在于告诉读者你现在应该马上行动起来不怎么做、要怎么做，只是单纯的经验和工具分享，也是我阶段性的自我总结。如果有一天当你遇到和我类似的场景与问题或受困于自身的发展瓶颈时，而你隐约记得曾经有篇文章的内容可以为你所用，我所介绍的经验和工具或许就可以帮上你的忙，<strong>最最起码你会知道，有一个家伙曾经跟你一样，你不是个案</strong>……</p>
+
+<!-- excerpt end -->
+
+<h2 id="section-1">你的知识问题</h2>
+
+<p>首先要区分容易混淆的三个概念，“数据”、“信息”和“知识”。在原书作者看来：</p>
+
+<ul>
+  <li>数据：单纯的数据不表示意思，比如39；</li>
+  <li>信息：赋予数据以环境，比如就诊时向医生提供信息，体温是39摄氏度；</li>
+  <li>知识：<strong>经过实践证明的，可以用来决策和行动的信息</strong>，比如医生运用自己的医学知识和行医经验在我提供的体温信息的基础上判定我发烧了。</li>
+</ul>
+
+<p>下面这段是我结合书中例子自行补充的……</p>
+
+<p><strong>根据体温判定是否发烧的知识是怎么来的呢？</strong></p>
+
+<p>医学课本里可能会写人在不同年龄段的正常体温范围是多少。</p>
+
+<p><strong>那第一个写课本的人是怎么知道的呢？</strong></p>
+
+<p>可能是根据更早的医生的行医经验总结得来的。</p>
+
+<p><strong>那没有体温计的时候是怎么判定发烧的呢？</strong></p>
+
+<p>大概是用手心触摸额头与其他人对比。</p>
+
+<p>我其实是想通过以上三个问题表达我对于知识积累脉络的认识：从<strong>定性知识</strong>（触摸额头）到<strong>定量知识</strong>（计量体温），从<strong>隐性知识</strong>（行医经验）到<strong>显性知识</strong>（医学课本）。</p>
+
+<p><strong>定量是科学化、标准化的目标，显性知识有利于知识的积累与传播</strong>。</p>
+
+<p>不过需要补充两点：</p>
+
+<ol>
+  <li>某些知识领域，定量化很难做，比如名厨的经验。厨艺知识的实践性很强，知识的获取有赖于自我摸索与师徒传承。“鸡肉500g，黄瓜丁300g，鸡精5g……”，这只是给大众看的菜谱。而且也不同于化学实验，即便同样的菜谱不同的人做味道也会不同。以“鱼香肉丝”、“宫保鸡丁”为例，似乎各有各的做法。食材的选择，火候的把握，都是要靠年头磨练的，而磨练的最终结果往往是“此中有真意，欲辨已忘言”。</li>
+  <li>显性知识的建立并不是终结，而是要在分享传播中、在生产实践中与更多人的隐性知识做结合，得到这些隐性知识的印证、修正与补充。</li>
+</ol>
+
+<p>从《你的知识需要管理》一书的例子中可以看出，作者其实将定量化的知识（已成书面的理论或判据）默认为显性知识，将定性化的知识（在人们头脑中俗语或经验）默认为隐性知识，所以下面的讨论仅区分隐性知识和显性知识。</p>
+
+<p>书中提到了隐性知识、显性知识的四种转换形式：</p>
+
+<ul>
+  <li><strong>隐性知识到显性知识</strong>
+    <ul>
+      <li>印堂发黑的视觉认识 到 真实测量印堂亮度并规定判定为黑的阈值；</li>
+    </ul>
+  </li>
+  <li><strong>显性知识到隐性知识</strong>
+    <ul>
+      <li>阅读书籍，引发自己的思考；</li>
+    </ul>
+  </li>
+  <li><strong>显性知识到显性知识</strong>
+    <ul>
+      <li>阅读书籍，引发自己的思考，并写出读书笔记；</li>
+    </ul>
+  </li>
+  <li><strong>隐性知识到隐性知识</strong>
+    <ul>
+      <li>师徒相承。</li>
+    </ul>
+  </li>
+</ul>
+
+<p>俗话说，“社会是最好的大学，生活/工作是最好的老师”，只要是一个有心人，每天能够获得的隐性知识量还是挺大的，但是极少有人坚持做显性化的工作。有的时候我们会给自己找理由说就是懒得写，真实原因是我们的理解还不够、表达能力也不够；有的时候我们会抱怨这东西我也会呀，就是运气不好没那个命，真实原因你会不会和别人知不知道你会是两回事儿，你的知识憋着就你自己知道，还比不上粪便能憋出沼气来……</p>
+
+<p>类似的问题不一而足，这些问题就是书中所说的“你的知识问题”。</p>
+
+<p>本书要和我们探讨的，就是作为一个<strong>信息时代的知识工作者</strong>，我们如何能够做好以下五点：</p>
+
+<ul>
+  <li><code>知识学习</code>：学什么，学习目标的聚焦，学习资源的搜集，学习的方法，保持终身学习不落伍； </li>
+  <li><code>知识保存</code>：有规划、成系统的保存，便于查询；</li>
+  <li><code>知识分享</code>：让别人知道你知道；</li>
+  <li><code>知识利用</code>：与项目或任务结合，申请专利，知识产品化；</li>
+  <li><code>知识创新</code>：需求是创新的动力，思维导图。</li>
+</ul>
+
+<p>限于社会阅历与工作经验，自己仅在前三点有些经验和工具可以分享，后两点乏善可陈。</p>
+
+<h2 id="section-2">知识学习</h2>
+
+<p>本科前期，受高中学习思维的影响，自己买了大量的技术书籍阅读（常去中关村图书大厦，逛亚马逊），也曾沉溺于 <a href="http://blog.sina.com.cn/s/blog_64ac3ab10100gg4u.html">谷歌搜索的奇技淫巧</a> 。后来了解了一些 ftp 站点（比如清华大学自动化系）和 P2P 软件（比如汉魅，堪比快播啊……），再到 Corsair、MeePo，下载了不少课程资源和书籍，一度陷入了大误区（见 <a href="#section-3">知识保存</a>）。</p>
+
+<p>目前，自己的技术学习主要依赖技术官网的 Tutorial、网络教程、博客和问答网站，从BT站点（北邮人、六维空间）下载的视频教程以及公开课（Cousera、果壳MOOC、网易公开课、腾讯大讲堂），偶尔会买觉得有收藏价值的书籍。</p>
+
+<p>需要补充的是，对于一些好的博客站点和专业知识网站，<strong>仅仅是加入收藏夹只会让它们死在那里</strong>，最好能够获取到该网站的 RSS 订阅链接，加入到你自己的 RSS 阅读器中。大多数此类网站都是有订阅链接的，因为它们是利用现成的框架搭建的，比如 Wordpress，Flask，Jekyll (Octopress) 等。即便页面上隐藏了 RSS 图标，你也能从网页源代码里搜索出来（比如搜 rss 等关键字）。实在不行可以试一试 <code>http://yu-ming/atom.xml</code> 或者 <code>http://yu-ming/rss.xml</code> 或者 <code>http://yu-ming/feed</code> 这样的链接，也许就是该网站的订阅链接。</p>
+
+<p>推荐一款名为 Caffeinated 的阅读器，虽然称不上完美，但阅读界面还算是可选择软件当中最赏心悦目的。</p>
+
+<p><a href="/img/post/2014-10/3.jpg" class="img-up" title="Caffeinated 界面展示"><img class="imgcenter" src="/img/post/2014-10/3.jpg" width="500" title="Caffeinated 界面展示" /></a></p>
+
+<p>我的初始 RSS 源来自这份 <a href="http://www.zhihu.com/question/19580096">知乎问答</a>，之后就是在浏览网页的过程中发现、补充。有人对于这种碎片化阅读模式表示担忧，认为不如系统性的学习。我觉得大家说的都有道理，就想和一把稀泥。打个比方说吧，大部头的书籍像鲜花，培育费心费力，成长不易，长成则一枝独秀；碎片化阅读像水稻、棉花，大量培养，普普通通，满足基本需求。<strong>专与博，辩不出孰优孰劣，只要选择有利于现阶段自身成长的途径就可以了</strong>。</p>
+
+<p>我觉得由对碎片化阅读的质疑引申出的一个问题更值得我们思考，那就是<strong>你到底想要学什么</strong>？</p>
+
+<p>《你的知识需要管理》提到，</p>
+
+<blockquote>
+  <p>学习任何领域的知识必须达到一定的深度，否则你的知识就是常识。</p>
+
+  <p>……</p>
+
+  <p>由于现在知识更新周期很短，知识和经验在快速贬值，今天的知识可能明天就成为常识，如果你仅仅学某领域知识的基础部分，那么这些只是无法给你带来“超级价值”和竞争优势。</p>
+</blockquote>
+
+<p>书中还引用了俞敏洪的一句话，</p>
+
+<blockquote>
+  <p>要引人敬意，就要研究一个非常专业的领域，在那个领域中，你是最顶尖的，至少是中国前10名，这样无论任何时候你都有话说，有事情可做。</p>
+</blockquote>
+
+<p>看了之后顿时觉得后脊背发凉，关于“专”自己做的还远远、远远、远远不够，由于没啥成功经验，这块儿也不多说了……</p>
+
+<p>目前自己使用比较多的知识获取工具还有：</p>
+
+<ul>
+  <li>鲜果阅读：和 RSS 类似，只是有移动 App，更适合碎片化时间；</li>
+  <li>微博：微博不提供知识，但能帮你了解到你所在领域的那拨人在关心什么，他们给出的链接相当于是筛选过的知识；</li>
+  <li>小酱油：也不提供知识，但能帮你汇集身边的讲座、招聘、比赛等活动信息，告诉你你身边将要发生的知识分享。</li>
+</ul>
+
+<p>此外，我已经卸载了微博、今日头条，感觉信息质量越来越低了。在今日头条的新闻评论中，你往往能找到这么一类评论：“小便（编）你过来，我保证不打死你”。</p>
+
+<p>最后值得一提的视频自媒体，我每周必跟的是《晓松奇谈》（原《晓说》）、《罗辑思维》和《鸿观》，都是周五更新，所以周五简直像节日。我的观看习惯是记笔记并查阅相关或延伸的资料，结合自己的历史观、价值观做一些评注。</p>
+
+<p>积累下来的效果就是，聊天的谈资多了，还帮我回答了一道面试题。</p>
+
+<p>在百度的一轮面试中，面试官本应面我技术，但只见他看着我的简历直摇头，叹了一口气对我说，你说我问你点儿啥好？没给我吓尿了，我说都行吧，你先问。他说，你跟我说说现在大街上的垃圾箱都有啥问题？我心想新闻里好像说 <a href="http://www.oschina.net/news/41616/in-head-hunting-big-data-may-not-be-such-a-big-deal">Google现在都不面这种题</a> 了吧，但还是列了五六点说了。他又问，要是你负责北京市所有垃圾箱的管理，你会怎么办？我心想，上周五刚看过《罗辑思维》（第二季第29期，《市场的广度》），介绍过一个德国公共厕所市场化改造的案例，直接可以拿来用啊。于是我就说可以在垃圾桶表面引入商业广告，明星示范效应 + 企业对自身形象的重视 + 商业投入与运作应该可以解决当前存在的一些问题吧。面试官听后可算不摆苦瓜脸了，他说，“看来你还挺聪明，知识面挺广”。我心说，“叫你不看《罗辑思维》，真好唬啊……”。</p>
+
+<h2 id="section-3">知识保存</h2>
+
+<p>知识保存就是将隐性知识或显性知识转化为显性知识的过程。</p>
+
+<p>我猜想，在知识保存方面，人们走过的弯路是大致相同的。一开始是大量文件下载、网页收藏以及 Word 复制粘贴，之后会考虑使用云盘或者云笔记。</p>
+
+<p>就我自身而言，除非想在博文里分享文件，否则用云盘的机会不多，都是本地存储，建立 ftp 分享给身边的人。对于云笔记，自己很早就用过 Evernote，后来出了印象笔记，但越来越发现它不能满足自己所要记录内容的复杂性、分享需求以及格式定制灵活性，就逐渐放弃了。</p>
+
+<p><strong>拿最简单的一条来说吧</strong>，印象笔记目录结构太扁平，只是笔记本+笔记本中的笔记。如果我想专门记给我妈妈的信，我要建一个笔记本，但我又想记给我女友的信，且不想弄混，我又得建一个笔记本。目录结构是</p>
+
+<ul>
+  <li>给妈妈的信</li>
+  <li>给女友的信</li>
+  <li>给二叔的信</li>
+  <li>给三舅的信</li>
+  <li>给隔壁老王的信</li>
+</ul>
+
+<p>我需要的是可定制目录逻辑的，比如</p>
+
+<ul>
+  <li>信件保存
+    <ul>
+      <li>给家人的信
+        <ul>
+          <li>妈妈
+            <ul>
+              <li>历史存档</li>
+              <li>2014年</li>
+            </ul>
+          </li>
+          <li>女友</li>
+        </ul>
+      </li>
+      <li>给亲戚的信
+        <ul>
+          <li>二叔</li>
+          <li>三舅</li>
+        </ul>
+      </li>
+      <li>给邻居的信
+        <ul>
+          <li>隔壁老王</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p>如果想达到这样的目的，我只能采用在磁盘自建目录、在目录里保存文件的土办法，如此一来我得在脑子里把目录存储起来，或者专门建一个文件存储目录索引。这样一来就完全丧失了印象笔记所能提供的资源整合能力和灵活机动性！</p>
+
+<p>直到我了解了 Markdown，用上了 Ulysses，一切都有了质的飞跃。</p>
+
+<p>当前我正在使用 Ulysses 撰写这篇文章，截图如下。</p>
+
+<p><a href="/img/post/2014-10/4.jpg" class="img-up" title="Ulysses 界面展示"><img class="imgcenter" src="/img/post/2014-10/4.jpg" width="500" title="Ulysses 界面展示" /></a></p>
+
+<p>不用我多说，应该都能感觉到这种目录定制形式以及三列结构对于大规模写作有多大的好处了吧。如果说印象笔记能够做碎片积累、写文章，Ulysses完全可以写一本书好么。</p>
+
+<p>Ulysses的其他好处在于支持丰富的导出格式，比如 PDF、Word、HTML 和电子书等，采用 Markdown 语言书写，格式与内容分离，由专门的文件指定。</p>
+
+<p>最让我惊艳的是全屏模式，适于专心写作或者听报告的时候记笔记，如下图所示。</p>
+
+<p><a href="/img/post/2014-10/5.jpg" class="img-up" title="Ulysses 全屏界面"><img class="imgcenter" src="/img/post/2014-10/5.jpg" width="500" title="Ulysses 全屏界面" /></a></p>
+
+<p>总而言之，在使用 Ulysses 的这五个多月（五月份开始）里，自己的工作习惯发生了很大的变化，特别是在知识输出方便，变得积极而高效。</p>
+
+<p>当然，Ulysses 也不是那么完美的，它的同步性不好，只支持 iCloud 和 Daedalus，所以要注意内容的及时备份，不过也省得隐私泄露了。</p>
+
+<p>虽然我不再使用印象笔记，但并不代表这不是一款好软件，只是它跟我的需求不符，而且我也在关注印象笔记新功能的添加。我对印象笔记可以创建公共笔记本的功能很喜欢，如果将来有多人协作的需要可能会选择，当然， Tower 等团队协作工具可能做的更全面。</p>
+
+<p>知识保存了就是用来查的，Ulysses 提供了全局查找、指定文件夹查找以及文章内查找的功能，算是对查找功能的一个全方位实现，但问题还是在使用过程中暴露出来了。我需要频繁查找分布在若干文件里的重要文字或数据，要么我得记住它们在哪个文件夹，要么我得记住查询条件。在网站架构里，这部分数据是要放到 cache 里的，那么什么工具可以成为我的 cache 呢？此时 mediawiki 出现在了我的脑海，虽然我以前一直不知道应该怎么将它嵌入我的工作里。</p>
+
+<p>我主要将一些常用指令、数据路径以及脚本代码写到 mediawiki 当中，需要时在浏览器中拷贝即可。</p>
+
+<p><a href="/img/post/2014-10/6.jpg" class="img-up" title="mediawiki 界面展示"><img class="imgcenter" src="/img/post/2014-10/6.jpg" width="500" title="mediawiki 界面展示" /></a></p>
+
+<p>如果我们能将每天遇到的知识都转化文字记录那固然是好的，但事实上我们没有这样的精力。对于一些文档和大量的网页，需要有工具帮助我们保存并方便日后查找。其实我的要求也不高，就是必须可以添加标签，从个人经验来看，<strong>不加标签的资源只能成为你知识库里的垃圾</strong>。</p>
+
+<p>对于文档，我选择 iDocument Plus，界面如下</p>
+
+<p><a href="/img/post/2014-10/7.jpg" class="img-up" title="iDocument Plus 界面展示"><img class="imgcenter" src="/img/post/2014-10/7.jpg" width="500" title="iDocument Plus 界面展示" /></a></p>
+
+<p>对于网页，我选择 Pocket，有好用的 Chrome Extension 和客户端，跨各类平台共享。</p>
+
+<p>此外还有代码片段需要管理，可以使用 Gistify 或者 Dash。有 Mac 下开发经验的人应该不用我介绍 Dash 有多牛逼，记得刚出这款软件的时候内购价格18元，现在在 App Store 卖20刀。这款软件整合了 150 多种编程语言的 API，还有丰富的 Stack Overflow 问答资源的离线版本，同时支持 <a href="https://xuelangzf.github.io/10-13-2014/html2dash.html">用户定制文档</a>。</p>
+
+<p><a href="/img/post/2014-10/8.jpg" class="img-up" title="Dash 界面展示"><img class="imgcenter" src="/img/post/2014-10/8.jpg" width="500" title="Dash 界面展示" /></a></p>
+
+<h2 id="section-4">知识分享</h2>
+
+<p>知识分享的重要意义，引用书中的两段话来说明。</p>
+
+<blockquote>
+  <p>不在于你认识什么人，而在于什么人认识你；不在于什么人影响了你，而在于你影响了什么人。</p>
+</blockquote>
+
+<p>还记得那位热衷于给青年人写信的导师么，还记得《XX之巅》系列丛书的作者么，他们都通过这种知识分享传播的方式在中国年轻人心目中、在业界给自己赢得了受尊敬的地位，而这是埋头苦干、成果丰硕但不善包装的学问家们所没法比拟的。当然，并不是说通过知识分享扩大影响力是一件沽名钓誉的事情，我觉得满足两点条件就还是好的：<strong>保证你肚子里有干货；保证不大量夹带私货</strong>。</p>
+
+<blockquote>
+  <p>你必须有意识地去做这些显性化的工作，必须有意识地让别人能明白你知道的道理。如果你养成了这个习惯，它会促进你更深入地探究问题的本源，提升自己对知识的掌握程度。如果养成了有意识地显性化你的知识的习惯，你就会发现自己对问题的了解越来越深入，从而摆脱了许多一知半解的状态，提高了个人的知识竞争力。</p>
+</blockquote>
+
+<p>正如我们之前说到的，你不是懒得去写，而是你根本写不出来、写不对。杨绛先生回忆钱钟书先生读书都要读多遍、记笔记，每次都有<strong>新收获</strong>，更何况我辈。听懂了、看懂了和真懂了是很不一样的，真懂了和真会用又很不一样。问问自己，看懂了别人的算法和代码，事后让你重写一遍，能否保证运行正确；看懂了别人的公式推导，事后让你重推一遍，能否保证不卡壳。从自身的经验来看，强迫自己将重要知识、复杂知识显性化并分享出来是一件很有益的工作，最起码你得担心你写错了被别人笑话吧。</p>
+
+<p>总的来说，我认为<strong>知识分享之于普通人，类似于学术论文之于学者</strong>。</p>
+
+<p>最后，书中提醒我们在分享的过程中要注意的一点是</p>
+
+<blockquote>
+  <p>不管面对什么样的共享对象，有一个共同的原则，那就是在知识共享中不要故意炫耀和卖弄自己的知识，要尽力用平实、通俗的语言去传递你的知识，尤其不要满口或者满篇都夹杂着外语和专业术语，从知识管理的角度看，这是一种对于知识掌握不够深入的表现，同时也会引起大部分人的反感。</p>
+</blockquote>
+
+<p>除了软件名称，这篇文章没怎么用英文……</p>
+
+<p>我的知识分享主要通过博客，前期是 <a href="http://blog.sina.cn/frank19900731">新浪博客</a>，现在在使用 Github 上搭建的 Octopress 博客。</p>
+
+<p>好处显而易见，博客可以保存在本地，以 Markdown 格式书写，界面自由定制，想要实现的功能都可以自行添加，比如中文搜索、输入公式、定制代码块等等。</p>
+
+<p>Markdown 输入工具我采用的是 Byword，能够满足我这个软件外观控，以下是本文编辑界面的展示。</p>
+
+<p><a href="/img/post/2014-10/9.jpg" class="img-up" title="Byword 界面展示"><img class="imgcenter" src="/img/post/2014-10/9.jpg" width="500" title="Byword 界面展示" /></a></p>
+
+<p>要强调的是，<strong>搭建博客什么的都不是什么难事，最难的就是坚持写作、坚持分享</strong>，立存此照，作为督促。</p>
+
+<p>Markdown 的优势还不止体现在这里，我们完全可以用它来写书。比如 <a href="https://github.com/jgm/pandoc">pandoc</a> ，<a href="https://github.com/marchtea/mdtogh">mdtogf</a>。这两个工具功能当然强大，定制灵活，不过还是不适合小白用户。再推荐一款 <a href="https://www.gitbook.io/">Gitbook</a>，有客户端可供使用。</p>
+
+<p>除了写博客，知识分享的途径还有很多，比如到百度知道、知乎等综合性问答网站或者 Stack Overflow 等专业问答网站上回答问题，再比如到专业论坛中和别人讨论交流（不是帝吧那种的……）。在这个过程中，相信你的影响力、表达能力和专业水平都会有提高的。</p>
+
+<h2 id="section-5">总结</h2>
+
+<p>本文是在《你的知识需要管理》的启发下写成的，主要分享了自己在知识管理方面的经验教训和现阶段使用的工具。希望给大家的知识管理提供一个思路和借鉴，如果对你产生了些许实质性的帮助那我不胜荣幸。要点归纳如下：</p>
+
+<ul>
+  <li>“数据”、“信息”和“知识”有很大差别，我们要做的不仅仅是走马观花的关注信息，更要将遇到的有价值的信息、知识内化为自己的隐性知识，并在输出为显性知识的过程中加深理解，甚至有所创见；</li>
+  <li>碎片化学习和系统学习并重，更重要的是明白自己要学什么，什么才是自己的核心竞争力，持续深入的挖掘下去，否则你的知识将很快变成人们的常识；</li>
+  <li>知识分享的良好习惯能够督促我们进行知识显性化输出，提高专业水平、扩大影响力，让自身实力体现出应有的价值。</li>
+</ul>
+
+<h2 id="section-6">附录</h2>
+
+<p>本文提到的部分软件的图标集合</p>
+
+<p>知识学习</p>
+
+<p><a href="/img/post/2014-10/5.png" class="img-up" title="Caffeinated"><img class="imgcenter-no-shadow" src="/img/post/2014-10/5.png" width="128" height="128" title="Caffeinated" /></a>
+<a href="/img/post/2014-10/17.png" class="img-up" title="小酱油"><img class="imgcenter-no-shadow" src="/img/post/2014-10/17.png" width="128" height="128" title="小酱油" /></a></p>
+
+<p>知识保存</p>
+
+<p><a href="/img/post/2014-10/7.png" class="img-up" title="Evernote"><img class="imgcenter-no-shadow" src="/img/post/2014-10/7.png" width="128" height="128" title="Evernote" /></a>
+<a href="/img/post/2014-10/13.png" class="img-up" title="Ulysses"><img class="imgcenter-no-shadow" src="/img/post/2014-10/13.png" width="128" height="128" title="Ulysses" /></a>
+<a href="/img/post/2014-10/16.png" class="img-up" title="MediaWiki"><img class="imgcenter-no-shadow" src="/img/post/2014-10/16.png" width="128" height="128" title="MediaWiki" /></a></p>
+
+<p><a href="/img/post/2014-10/15.png" class="img-up" title="iDocument Plus"><img class="imgcenter-no-shadow" src="/img/post/2014-10/15.png" width="128" height="128" title="iDocument Plus" /></a>
+<a href="/img/post/2014-10/6.png" class="img-up" title="Dash"><img class="imgcenter-no-shadow" src="/img/post/2014-10/6.png" width="128" height="128" title="Dash" /></a>
+<a href="/img/post/2014-10/10.png" class="img-up" title="Pocket"><img class="imgcenter-no-shadow" src="/img/post/2014-10/10.png" width="128" height="128" title="Pocket" /></a></p>
+
+<p>知识分享</p>
+
+<p><a href="/img/post/2014-10/4.png" class="img-up" title="Byword"><img class="imgcenter-no-shadow" src="/img/post/2014-10/4.png" width="128" height="128" title="Byword" /></a>
+<a href="/img/post/2014-10/18.png" class="img-up" title="Octopress"><img class="imgcenter-no-shadow" src="/img/post/2014-10/18.png" width="128" height="128" title="Octopress" /></a></p>
+
+<p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2014/10/23/wo-de-zhi-shi-guan-li-jing-yan-yu-gong-ju-fen-xiang/">http://frank19900731.github.io/blog/2014/10/23/wo-de-zhi-shi-guan-li-jing-yan-yu-gong-ju-fen-xiang/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
+</section>
+
+<!-- post/tags.html -->
+<!-- 文章标签展示 -->
+
+
+<span class="tags">
+  <font color="#808080">Tags: </font>
+  
+    <a class='tag' href='/tag/效率/'>效率</a>, <a class='tag' href='/tag/知识管理/'>知识管理</a>
+  
+</span>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<span class="ds-thread-count" data-thread-key="" style="color: #808080;"></span>
+
+
+<!-- JiaThis Button BEGIN -->
+<div class="jiathis_style" style="margin-top: 40px;">
+    <span class="jiathis_txt">分享到：</span>
+    <a class="jiathis_button_tsina">新浪微博</a>
+    <a class="jiathis_button_tqq">腾讯微博</a>
+    <a class="jiathis_button_renren">人人网</a>
+    <a class="jiathis_button_weixin">微信</a>
+    <a class="jiathis_button_douban">豆瓣</a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
+    <a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1406956593484740" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+        <div style="height: 40px;"></div>
+
+
+
+
+    <div style="width: 100%; margin-top: 30px;">
+        <span style="float:left">
+             <a href="/blog/2014/10/23/wo-de-shi-jian-guan-li-jing-yan-yu-gong-ju-fen-xiang/">« 【撰写中】我的时间管理经验与工具分享</a> 
+        </span>
+        <span style="float:right">
+            
+        </span>
+    </div>
+
+	
+	  <section class="comments" style="padding-top: 30px;">
+	    <div id="disqus_thread" aria-live="polite"><!-- post/disqus_thread.html -->
+<!--
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+-->
+
+<!-- 多说评论框 start -->
+<div class="ds-thread" data-thread-key="/blog/2014/10/23/wo-de-zhi-shi-guan-li-jing-yan-yu-gong-ju-fen-xiang/" data-title="我的知识管理经验与工具分享" data-url="http://frank19900731.github.io/blog/2014/10/23/wo-de-zhi-shi-guan-li-jing-yan-yu-gong-ju-fen-xiang/" style="margin-top: 40px;"></div>
+<!-- 多说评论框 end -->
+
+
+<h3 style="margin-top: 40px;">Commented Most This Month</h3>
+<!-- 多说热评文章 start -->
+<ul class="ds-top-threads" data-range="monthly" data-num-items="6"></ul>
+<!-- 多说热评文章 end --></div>
+	  </section>
+	
+</article>
+</div>
+
+    </div>
+  </div>
+  <!-- footer.html -->
+<!-- custom/footer.html -->
+<!-- 页脚 -->
+
+
+  <!-- after_footer.html -->
+<!-- custom/after_footer.html -->
+<!-- 加入评论 -->
+
+
+
+
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+    var duoshuoQuery = {short_name:"frank19900731-blog"};
+    (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0]
+                || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+</script>
+<!-- 多说公共JS代码 end -->
+
+
+<!--
+
+
+<script type="text/javascript">
+      var disqus_shortname = 'frank-octopress';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://frank19900731.github.io/blog/2014/10/23/wo-de-zhi-shi-guan-li-jing-yan-yu-gong-ju-fen-xiang/';
+        var disqus_url = 'http://frank19900731.github.io/blog/2014/10/23/wo-de-zhi-shi-guan-li-jing-yan-yu-gong-ju-fen-xiang/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+
+-->
+
+
+  <script src="/javascripts/jquery.dlmenu.js"></script>
+<script type="text/javascript">
+    $(function() {
+        $('#dl-menu').dlmenu();
+    });
+
+    function onLoadSet() {
+
+    }
+
+</script>
+  <a id="gotop" href="#">
+    <span>▲</span>
+</a>
+<div id="float-index">
+</div>
+
+<script type="text/javascript">
+    $(function(){
+        $(window).scroll(function(){  //只要窗口滚动,就触发下面代码
+            var scrollt = document.documentElement.scrollTop + document.body.scrollTop; //获取滚动后的高度
+            if( scrollt >300 ){  //判断滚动后高度超过200px,就显示
+                $("#gotop").fadeIn(400); //淡出
+            }else{
+                $("#gotop").stop().fadeOut(400); //如果返回或者没有超过,就淡入.必须加上stop()停止之前动画,否则会出现闪动
+            }
+
+            if(scrollt > 1000) {
+                $("#float-index").fadeIn(400);
+            } else {
+                $("#float-index").stop().fadeOut(10);
+            }
+        });
+        $("#gotop").click(function(){ //当点击标签的时候,使用animate在200毫秒的时间内,滚到顶部
+            $("html,body").animate({scrollTop:"0px"},200);
+        });
+
+        if ($("#markdown-toc").length > 0) {
+            $("#markdown-toc").clone(true).appendTo("#float-index");
+        } else {
+            $("#float-index").remove();
+        }
+    });
+</script>
+
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1253436508'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s6.cnzz.com/z_stat.php%3Fid%3D1253436508%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+</body>
+</html>
