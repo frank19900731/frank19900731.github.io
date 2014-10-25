@@ -1,8 +1,8 @@
 ---
-layout: post
+layout: wx-default
 title: "提高效率与情趣的九种程序工具推荐"
 date: 2014-10-16 17:28:06 +0800
-comments: true
+comments: false
 categories: [工作效率]
 tags: [代码开发, 文档整理, 数据可视化, 个人展示]
 keywords: git, shell, markdown, octopress, knitr, tpp, jmpress.js, shiny, d3, Adobe Muse, mordencv, processing, 效率

@@ -2,8 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c0d76ca4-948a-4929-8db0-ae6edece3084" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_includes/asides/comment.html" afterPath="$PROJECT_DIR$/source/_includes/asides/comment.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_includes/gotop.html" afterPath="$PROJECT_DIR$/source/_includes/gotop.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/javascripts/bootstrap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/wx/archives/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/_layouts/wx-default.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/source/_includes/wx-head.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_posts/2014-08-24-wo-de-di-yi-pian-octopress-bo-ke.markdown" afterPath="$PROJECT_DIR$/source/_posts/2014-08-24-wo-de-di-yi-pian-octopress-bo-ke.markdown" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_posts/2014-09-01-2015nian-xiao-zhao-ru-kou.markdown" afterPath="$PROJECT_DIR$/source/_posts/2014-09-01-2015nian-xiao-zhao-ru-kou.markdown" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_posts/2014-10-16-octopress-gai-zao-ji-lu.markdown" afterPath="$PROJECT_DIR$/source/_posts/2014-10-16-octopress-gai-zao-ji-lu.markdown" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_posts/2014-10-16-ti-gao-xiao-lu-yu-qing-qu-de-jiu-chong-cheng-xu-gong-ju-tui-jian.markdown" afterPath="$PROJECT_DIR$/source/_posts/2014-10-16-ti-gao-xiao-lu-yu-qing-qu-de-jiu-chong-cheng-xu-gong-ju-tui-jian.markdown" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_posts/2014-10-18-fei-wei-mei-di-bi-shi-hui-yi.markdown" afterPath="$PROJECT_DIR$/source/_posts/2014-10-18-fei-wei-mei-di-bi-shi-hui-yi.markdown" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_posts/2014-10-18-yosemite-sheng-ji-ji-hou-xu.markdown" afterPath="$PROJECT_DIR$/source/_posts/2014-10-18-yosemite-sheng-ji-ji-hou-xu.markdown" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_posts/2014-10-19-idg-lian-he-zhao-pin-bi-shi-hui-yi.markdown" afterPath="$PROJECT_DIR$/source/_posts/2014-10-19-idg-lian-he-zhao-pin-bi-shi-hui-yi.markdown" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_posts/2014-10-20-ji-mou-you-xi-gong-si-mian-shi-jing-li.markdown" afterPath="$PROJECT_DIR$/source/_posts/2014-10-20-ji-mou-you-xi-gong-si-mian-shi-jing-li.markdown" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_posts/2014-10-23-wo-de-shi-jian-guan-li-jing-yan-yu-gong-ju-fen-xiang.markdown" afterPath="$PROJECT_DIR$/source/_posts/2014-10-23-wo-de-shi-jian-guan-li-jing-yan-yu-gong-ju-fen-xiang.markdown" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/_posts/2014-10-23-wo-de-zhi-shi-guan-li-jing-yan-yu-gong-ju-fen-xiang.markdown" afterPath="$PROJECT_DIR$/source/_posts/2014-10-23-wo-de-zhi-shi-guan-li-jing-yan-yu-gong-ju-fen-xiang.markdown" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/bootstrap/bootstrap.css" afterPath="$PROJECT_DIR$/stylesheets/bootstrap/bootstrap.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/image_tag.rb" afterPath="$PROJECT_DIR$/plugins/image_tag.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/pagination_archive.rb" afterPath="$PROJECT_DIR$/plugins/pagination_archive.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stylesheets/bootstrap/responsive.css" afterPath="$PROJECT_DIR$/stylesheets/bootstrap/responsive.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="octopress.iws" />
@@ -27,93 +43,50 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="head.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/_includes/head.html">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/wx/archives/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="9" selection-start="3354" selection-end="3354" vertical-scroll-proportion="0.0" vertical-offset="1073" max-vertical-offset="1653">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_parts.scss" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sass/_parts.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="266">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="styles.scss" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sass/styles.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="175" column="40" selection-start="4010" selection-end="4010" vertical-scroll-proportion="-8.5" vertical-offset="3087" max-vertical-offset="3838">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="comment.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/_includes/asides/comment.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="5" selection-start="132" selection-end="132" vertical-scroll-proportion="-2.7142856" vertical-offset="0" max-vertical-offset="190">
+            <state line="16" column="33" selection-start="420" selection-end="420" vertical-scroll-proportion="-5.428571" vertical-offset="152" max-vertical-offset="665">
               <folding>
-                <element signature="n#style#0;n#ul#0;n#li#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h2#0;n#td#0;n#tr#0;n#table#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#0;n#tr#1;n#table#0;n#div#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gotop.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/source/_includes/gotop.html">
+      <file leaf-file-name="wx-default.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/source/_layouts/wx-default.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="13" selection-start="676" selection-end="676" vertical-scroll-proportion="0.6631016" vertical-offset="132" max-vertical-offset="722">
+            <state line="15" column="24" selection-start="548" selection-end="548" vertical-scroll-proportion="0.7421875" vertical-offset="0" max-vertical-offset="855">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="disqus_thread.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/_includes/post/disqus_thread.html">
+      <file leaf-file-name="wx-head.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/_includes/wx-head.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="48" selection-start="576" selection-end="576" vertical-scroll-proportion="-8.142858" vertical-offset="0" max-vertical-offset="361">
+            <state line="85" column="3" selection-start="4161" selection-end="4161" vertical-scroll-proportion="-5.928571" vertical-offset="1449" max-vertical-offset="1976">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="article.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/_includes/article.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="8" selection-start="330" selection-end="330" vertical-scroll-proportion="6.785714" vertical-offset="399" max-vertical-offset="988">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tag/kramdown syntax/index.html">
+        <entry file="file://$PROJECT_DIR$/source/archives/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="177" column="36" selection-start="6006" selection-end="6006" vertical-scroll-proportion="-7.321429" vertical-offset="3158" max-vertical-offset="6631">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="duoshuo.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/_includes/duoshuo.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="52" selection-start="281" selection-end="281" vertical-scroll-proportion="-4.071429" vertical-offset="0" max-vertical-offset="380">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="image_tag.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/plugins/image_tag.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="10" selection-start="1839" selection-end="1839" vertical-scroll-proportion="0.0" vertical-offset="798" max-vertical-offset="1064">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="default3.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/_layouts/default3.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="0" selection-start="463" selection-end="463" vertical-scroll-proportion="0.0" vertical-offset="228" max-vertical-offset="418">
+            <state line="11" column="17" selection-start="239" selection-end="239" vertical-scroll-proportion="-7.464286" vertical-offset="0" max-vertical-offset="646">
               <folding />
             </state>
           </provider>
@@ -137,29 +110,29 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/source/404.markdown" />
-        <option value="$PROJECT_DIR$/source/index.html" />
-        <option value="$PROJECT_DIR$/source/movielist/index.markdown" />
-        <option value="$PROJECT_DIR$/source/booklist/index.markdown" />
-        <option value="$PROJECT_DIR$/source/towrite/index.markdown" />
-        <option value="$PROJECT_DIR$/source/about/index.markdown" />
-        <option value="$PROJECT_DIR$/source/_includes/custom/navigation.html" />
-        <option value="$PROJECT_DIR$/source/_layouts/default.html" />
-        <option value="$PROJECT_DIR$/source/_layouts/default2.html" />
-        <option value="$PROJECT_DIR$/source/_layouts/default3.html" />
-        <option value="$PROJECT_DIR$/plugins/image_tag.rb" />
-        <option value="$PROJECT_DIR$/source/_includes/dlmenu.html" />
-        <option value="$PROJECT_DIR$/source/_includes/head.html" />
-        <option value="$PROJECT_DIR$/sass/styles.scss" />
-        <option value="$PROJECT_DIR$/source/_includes/asides/comment.html" />
-        <option value="$PROJECT_DIR$/source/_includes/gotop.html" />
+        <option value="$PROJECT_DIR$/source/wx/2014-10-16-octopress-gai-zao-ji-lu.markdown" />
+        <option value="$PROJECT_DIR$/source/wx/2014-10-18-fei-wei-mei-di-bi-shi-hui-yi.markdown" />
+        <option value="$PROJECT_DIR$/source/wx/2014-10-18-yosemite-sheng-ji-ji-hou-xu.markdown" />
+        <option value="$PROJECT_DIR$/source/wx/2014-10-19-idg-lian-he-zhao-pin-bi-shi-hui-yi.markdown" />
+        <option value="$PROJECT_DIR$/source/wx/2014-10-20-ji-mou-you-xi-gong-si-mian-shi-jing-li.markdown" />
+        <option value="$PROJECT_DIR$/source/wx/2014-10-23-wo-de-shi-jian-guan-li-jing-yan-yu-gong-ju-fen-xiang.markdown" />
+        <option value="$PROJECT_DIR$/source/wx/2014-10-23-wo-de-zhi-shi-guan-li-jing-yan-yu-gong-ju-fen-xiang.markdown" />
+        <option value="$PROJECT_DIR$/stylesheets/bootstrap/responsive.css" />
+        <option value="$PROJECT_DIR$/stylesheets/bootstrap/bootstrap.css" />
+        <option value="$PROJECT_DIR$/source/javascripts/bootstrap.js" />
+        <option value="$PROJECT_DIR$/plugins/pagination_archive.rb" />
+        <option value="$PROJECT_DIR$/source/wx/2014-08-24-wo-de-di-yi-pian-octopress-bo-ke.markdown" />
+        <option value="$PROJECT_DIR$/source/_includes/article.html" />
+        <option value="$PROJECT_DIR$/source/wx/archives/index.html" />
+        <option value="$PROJECT_DIR$/source/_includes/wx-head.html" />
+        <option value="$PROJECT_DIR$/source/_layouts/wx-default.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1280" />
-    <option name="height" value="725" />
+    <option name="height" value="717" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -233,6 +206,100 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="wx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="octopress" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="octopress" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="source" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="archives" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="octopress" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="octopress" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="source" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="archives" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="octopress" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="octopress" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="source" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_posts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="octopress" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="octopress" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="source" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_layouts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="octopress" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="octopress" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="source" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="_includes" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -247,7 +314,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="sass" />
+              <option name="myItemId" value="plugins" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -263,18 +330,19 @@
     <property name="last_opened_file_path" value="/Library/Server/Web/Data/Sites/Default/mwiki" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/source/wx/archives" />
+      <recent name="$PROJECT_DIR$/source/_includes/post" />
       <recent name="$PROJECT_DIR$/source/_layouts" />
       <recent name="$PROJECT_DIR$/source/towrite" />
       <recent name="$PROJECT_DIR$/source/movielist" />
-      <recent name="$PROJECT_DIR$/source/img" />
-      <recent name="$PROJECT_DIR$/source/_includes/custom" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/source/_includes" />
       <recent name="$PROJECT_DIR$/source/_includes/asides" />
       <recent name="$PROJECT_DIR$/source/blog" />
       <recent name="$PROJECT_DIR$/plugins" />
@@ -282,14 +350,6 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
-      <option name="VMOptions" />
-      <option name="arguments" />
-      <option name="filePath" />
-      <option name="scope" value="ALL" />
-      <option name="testName" />
-      <method />
-    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -300,15 +360,23 @@
       <option name="showConsoleOnStdOut" value="false" />
       <method />
     </configuration>
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
+      <envs />
+      <method />
+    </configuration>
     <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
       <setting name="configLocationType" value="CONFIG_FILE" />
       <setting name="settingsFile" value="" />
       <setting name="serverType" value="INTERNAL" />
       <setting name="preferredDebugBrowser" value="CHROME" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
-      <envs />
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
@@ -347,15 +415,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="725" extended-state="6" />
+    <frame x="0" y="23" width="1280" height="717" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31746033" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31672025" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2734375" sideWeight="0.68102074" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2734375" sideWeight="0.68327975" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32899022" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
@@ -368,25 +436,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31897926" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32899022" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2734375" sideWeight="0.68102074" order="1" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36044657" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -401,112 +450,122 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/source/about/index.markdown">
+    <entry file="file://$PROJECT_DIR$/source/javascripts/bootstrap.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="32" selection-start="199" selection-end="199" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="684" />
+        <state line="4" column="3" selection-start="120" selection-end="120" vertical-scroll-proportion="0.13080895" vertical-offset="0" max-vertical-offset="581">
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/_includes/custom/navigation.html">
+    <entry file="file://$PROJECT_DIR$/source/_layouts/post.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="82" selection-start="287" selection-end="287" vertical-scroll-proportion="-3.642857" vertical-offset="31" max-vertical-offset="551" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="627">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_layouts/page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="532">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="23" selection-start="70" selection-end="70" vertical-scroll-proportion="0.17117117" vertical-offset="0" max-vertical-offset="627">
+          <folding>
+            <element signature="n#style#0;n#article#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/pagination.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="95" column="36" selection-start="3359" selection-end="3359" vertical-scroll-proportion="0.03846154" vertical-offset="1806" max-vertical-offset="2432">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/pagination_archive.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="40" selection-start="333" selection-end="333" vertical-scroll-proportion="-8.769231" vertical-offset="19" max-vertical-offset="1064">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/source/_layouts/default.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="7" selection-start="2053" selection-end="2053" vertical-scroll-proportion="0.0" vertical-offset="369" max-vertical-offset="931">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="931">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/_includes/custom/head.html">
+    <entry file="file://$PROJECT_DIR$/source/wx/2014-08-24-wo-de-di-yi-pian-octopress-bo-ke.markdown">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="28" selection-start="441" selection-end="441" vertical-scroll-proportion="0.0" vertical-offset="145" max-vertical-offset="722">
+        <state line="9" column="36" selection-start="285" selection-end="285" vertical-scroll-proportion="0.30645162" vertical-offset="0" max-vertical-offset="9424">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/_includes/dlmenu.html">
+    <entry file="file://$PROJECT_DIR$/source/_layouts/archives_index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="187" selection-end="187" vertical-scroll-proportion="0.0" vertical-offset="133" max-vertical-offset="304">
+        <state line="8" column="33" selection-start="143" selection-end="143" vertical-scroll-proportion="-5.428571" vertical-offset="0" max-vertical-offset="798">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/_layouts/default2.html">
+    <entry file="file://$PROJECT_DIR$/source/_includes/archive_post.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="0" selection-start="1886" selection-end="1886" vertical-scroll-proportion="0.0" vertical-offset="893" max-vertical-offset="1083">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/image_tag.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="10" selection-start="1839" selection-end="1839" vertical-scroll-proportion="0.0" vertical-offset="339" max-vertical-offset="1064">
+        <state line="4" column="85" selection-start="269" selection-end="365" vertical-scroll-proportion="-2.7142856" vertical-offset="0" max-vertical-offset="304">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/source/_includes/head.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="9" selection-start="3354" selection-end="3354" vertical-scroll-proportion="0.0" vertical-offset="1073" max-vertical-offset="1653">
+        <state line="70" column="9" selection-start="3753" selection-end="3753" vertical-scroll-proportion="3.735955" vertical-offset="0" max-vertical-offset="1653">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sass/_parts.scss">
+    <entry file="file://$PROJECT_DIR$/source/archives/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="602">
+        <state line="11" column="17" selection-start="239" selection-end="239" vertical-scroll-proportion="-7.464286" vertical-offset="0" max-vertical-offset="646">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/_layouts/default3.html">
+    <entry file="file://$PROJECT_DIR$/source/_includes/article.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="463" selection-end="463" vertical-scroll-proportion="0.0" vertical-offset="228" max-vertical-offset="418">
+        <state line="11" column="8" selection-start="330" selection-end="330" vertical-scroll-proportion="6.785714" vertical-offset="399" max-vertical-offset="988">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sass/styles.scss">
+    <entry file="file://$PROJECT_DIR$/source/wx/archives/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="175" column="40" selection-start="4010" selection-end="4010" vertical-scroll-proportion="-8.5" vertical-offset="3087" max-vertical-offset="3838">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_includes/duoshuo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="52" selection-start="281" selection-end="281" vertical-scroll-proportion="-4.071429" vertical-offset="0" max-vertical-offset="380">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tag/kramdown syntax/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="177" column="36" selection-start="6006" selection-end="6006" vertical-scroll-proportion="-7.321429" vertical-offset="3158" max-vertical-offset="6631">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_includes/post/disqus_thread.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="48" selection-start="576" selection-end="576" vertical-scroll-proportion="-8.142858" vertical-offset="0" max-vertical-offset="361">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_includes/asides/comment.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="5" selection-start="132" selection-end="132" vertical-scroll-proportion="-2.7142856" vertical-offset="0" max-vertical-offset="190">
+        <state line="16" column="33" selection-start="420" selection-end="420" vertical-scroll-proportion="-5.428571" vertical-offset="152" max-vertical-offset="665">
           <folding>
-            <element signature="n#style#0;n#ul#0;n#li#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h2#0;n#td#0;n#tr#0;n#table#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#1;n#table#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/_includes/gotop.html">
+    <entry file="file://$PROJECT_DIR$/source/_includes/wx-head.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="13" selection-start="676" selection-end="676" vertical-scroll-proportion="0.6631016" vertical-offset="132" max-vertical-offset="722">
+        <state line="85" column="3" selection-start="4161" selection-end="4161" vertical-scroll-proportion="-5.928571" vertical-offset="1449" max-vertical-offset="1976">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_layouts/wx-default.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="24" selection-start="548" selection-end="548" vertical-scroll-proportion="0.7421875" vertical-offset="0" max-vertical-offset="855">
           <folding />
         </state>
       </provider>

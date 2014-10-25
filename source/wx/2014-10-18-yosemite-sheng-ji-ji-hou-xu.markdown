@@ -1,8 +1,8 @@
 ---
-layout: post
+layout: wx-default
 title: "Yosemite 升级及后续"
 date: 2014-10-18 22:11:48 +0800
-comments: true
+comments: false
 categories: [Mac 使用]
 tags: [Yosemite, Homebrew, codesign, 算号器]
 keywords: Yosemite, Homebrew, Bartender, Trim Enabler, Matlab, VMWare, MySQL, TextExpander, Totalfinder, codesign

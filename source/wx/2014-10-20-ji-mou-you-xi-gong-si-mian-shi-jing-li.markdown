@@ -1,8 +1,8 @@
 ---
-layout: post
+layout: wx-default
 title: "记某游戏公司面试经历"
 date: 2014-10-20 22:34:31 +0800
-comments: true
+comments: false
 categories: [面试求职]
 tags: [面试, 游戏策划]
 keywords: 面试, 游戏策划

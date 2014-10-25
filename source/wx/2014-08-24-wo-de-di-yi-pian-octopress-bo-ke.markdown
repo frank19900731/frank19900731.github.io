@@ -1,8 +1,8 @@
 ---
-layout: post
+layout: wx-default
 title: "我的第一篇 Octopress 博客"
 date: 2014-08-24 21:50:56 +0800
-comments: true
+comments: false
 categories: [网页开发]
 tags: [octopress, kramdown syntax]
 keywords: octopress, kramdown syntax

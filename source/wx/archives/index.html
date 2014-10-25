@@ -1,0 +1,30 @@
+---
+layout: wx-default
+title: 博客目录
+footer: false
+exclude_from_search: true
+pc_url: /archives/
+wx_url: /wx/archives/
+---
+
+<div class="blog-archives">
+    <table>
+    {% for post in site.posts %}
+    {% assign content = post.content %}
+    {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
+        {% unless year == this_year %}
+            {% assign year = this_year %}
+            <tr style="line-height: 200%;">
+                <td style="width: 30%;">
+                    <h2 style="color: gray;font-size: 20px;">{{ year }}</h2>
+                </td>
+                <td></td>
+            </tr>
+        {% endunless %}
+        <tr class="content">
+            <td style="width: 30%;">{{ post.date | date: "<span class='month'>%b</span> <span class='day'>%d</span> <span class='year'>%Y</span>"}}</td>
+            <td><a href="{{ root_url }}{{ post.wx_url }}">{{post.title}}</a></td>
+        </tr>
+    {% endfor %}
+    </table>
+</div>

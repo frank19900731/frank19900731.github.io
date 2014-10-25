@@ -1,8 +1,8 @@
 ---
-layout: post
+layout: wx-default
 title: "2015年校招入口"
 date: 2014-09-01 23:49:27 +0800
-comments: true
+comments: false
 categories: [面试求职]
 tags: [校招链接]
 keywords: 校招链接, 百度, 阿里巴巴, 腾讯, 360, 小米, 京东, 网易有道, 网易游戏, 新浪微博, 搜狐, 大众点评, 搜狗, 美团, 华为, 微软, IBM, IDG, 亚马逊, 爱奇艺, 飞维美地, 宜信

@@ -1,0 +1,39 @@
+<!-- layout/wx-default.html -->
+{% capture root_url %}{{ site.root | strip_slash }}{% endcapture %}
+{% include wx-head.html %}
+<body style="background-color: rgba(185, 185, 185, 0.5);">
+
+<div class="row-fluid marketing">
+<div class="span2"> </div>
+<div class="span8">
+<div class="container-narrow" style="margin-top: 20px;">
+
+      <div class="masthead">
+        <ul class="nav nav-pills pull-right">
+          <li><a href="/wx/archives/">博客目录</a></li>
+          <li><a href="{{ page.pc_url }}">PC端阅读</a></li>
+        </ul>
+        <h3 class="muted">&nbsp;&nbsp;&nbsp;&nbsp;太极儒</h3>
+      </div>
+
+	  <hr style="width: 100%;">
+
+      <div style="padding: 8px 25px 8px 25px;">
+        <h1>
+          {% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}
+        </h1>
+
+        <div class="article-date" style="margin-bottom: 40px;">
+            {% include post/date.html %}{% if updated %}{{ updated }}{% else %}{{ time }}{% endif %}
+        </div>
+      {{ content | expand_urls: root_url }}
+      </div>
+
+</div> <!-- /container -->
+</div>
+<div class="span2"></div>
+</div>
+
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1253436508'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s6.cnzz.com/z_stat.php%3Fid%3D1253436508%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+</body>
+</html>

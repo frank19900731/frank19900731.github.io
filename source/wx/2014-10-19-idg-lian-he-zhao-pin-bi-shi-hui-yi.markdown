@@ -1,8 +1,8 @@
 ---
-layout: post
+layout: wx-default
 title: "IDG 联合招聘笔试回忆"
 date: 2014-10-19 21:53:07 +0800
-comments: true
+comments: false
 categories: [面试求职]
 tags: [IDG, 概率, 排列组合, 逻辑, 算法]
 keywords: [IDG, 概率, 排列组合, 逻辑, 算法]

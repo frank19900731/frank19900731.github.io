@@ -1,8 +1,8 @@
 ---
-layout: post
+layout: wx-default
 title: "我的知识管理经验与工具分享"
 date: 2014-10-23 18:21:07 +0800
-comments: true
+comments: false
 categories: [工作效率]
 tags: [效率, 知识管理]
 keywords: 效率, 知识管理, 田志刚, Evernote, Tower, Ulysses, Pocket, Gitbook, pandoc, iDocument, mediawiki, Byword, octopress, Dash, Gistify, Caffeinated, 鲜果阅读, 小酱油, 新浪微博, 浏览器收藏夹

@@ -10,7 +10,8 @@ module Jekyll
     #
     # Returns nothing.
     def generate(site)
-        paginate(site)
+        paginate(site, "/archives/")
+        #paginate(site, "/wx/archives/")
     end
 
     # Paginates the blog's posts. Renders the index.html file into paginated
@@ -27,12 +28,13 @@ module Jekyll
     #                   "total_pages" => <Number>,
     #                   "previous_page" => <Number>,
     #                   "next_page" => <Number> }}
-    def paginate(site)
+    def paginate(site, archive_path)
       all_posts = site.site_payload['site']['posts']
       pages = Pager.calculate_pages(all_posts, site.config['paginate'].to_i)
 
       (1..pages).each do |num_page|
-        path = "/archives/"
+        #path = "/archives/"
+        path = archive_path
         pager = Pager.new(site.config, num_page, all_posts, path, '', pages)
 
         if num_page > 1
