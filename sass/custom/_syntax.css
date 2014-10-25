@@ -1,0 +1,96 @@
+/*
+Syntax error: Undefined mixin 'border-radius'.
+        on line 7 of _syntax.scss, in `border-radius'
+        from line 7 of _syntax.scss
+
+2: body {
+3:     figure.code {
+4:         padding: 0;
+5:         .highlight {
+6:             code {
+7:                 @include border-radius(0);
+8:             }
+9:             pre {
+10:                 white-space: pre;
+11:             }
+12:             .gutter {
+
+Backtrace:
+_syntax.scss:7:in `border-radius'
+_syntax.scss:7
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:253:in `visit_mixin'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:320:in `visit_rule'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:320:in `visit_rule'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:320:in `visit_rule'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:320:in `visit_rule'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:128:in `visit_root'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:7:in `visit'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.19/lib/sass/tree/root_node.rb:20:in `render'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.19/lib/sass/engine.rb:315:in `_render'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.19/lib/sass/engine.rb:262:in `render'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.19/lib/sass/plugin/compiler.rb:362:in `update_stylesheet'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.19/lib/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.19/lib/sass/plugin/compiler.rb:201:in `each'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.19/lib/sass/plugin/compiler.rb:201:in `update_stylesheets'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.19/lib/sass/plugin.rb:81:in `update_stylesheets'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.19/lib/sass/exec.rb:443:in `watch_or_update'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.19/lib/sass/exec.rb:326:in `process_result'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.19/lib/sass/exec.rb:41:in `parse'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.19/lib/sass/exec.rb:21:in `parse!'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/gems/sass-3.2.19/bin/scss:13:in `<top (required)>'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/bin/scss:23:in `load'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/bin/scss:23:in `<main>'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/bin/ruby_executable_hooks:15:in `eval'
+/Users/frank/.rvm/gems/ruby-1.8.7-p374/bin/ruby_executable_hooks:15:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Undefined mixin 'border-radius'.\A         on line 7 of _syntax.scss, in `border-radius'\A         from line 7 of _syntax.scss\A \A 2: body {\A 3:     figure.code {\A 4:         padding: 0;\A 5:         .highlight {\A 6:             code {\A 7:                 @include border-radius(0);\A 8:             }\A 9:             pre {\A 10:                 white-space: pre;\A 11:             }\A 12:             .gutter {"; }

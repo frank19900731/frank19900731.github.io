@@ -8,7 +8,7 @@ wx_url: /wx/archives/
 ---
 
 <div class="blog-archives">
-    <table>
+    <table class="mulu">
     {% for post in site.posts %}
     {% assign content = post.content %}
     {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
