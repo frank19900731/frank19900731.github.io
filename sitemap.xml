@@ -53,6 +53,12 @@
         <lastmod>2014-10-25T14:25:59+08:00</lastmod>
     </url>
     <url>
+        <loc>
+            http://frank19900731.github.io/blog/2014/10/25/qiu-zhi-ji-de-yi-dian-jing-yan-zhi-tan/
+        </loc>
+        <lastmod>2014-10-25T23:15:59+08:00</lastmod>
+    </url>
+    <url>
         <loc>http://frank19900731.github.io/404.html</loc>
         <lastmod>2014-10-19T15:20:53+08:00</lastmod>
     </url>
@@ -62,7 +68,7 @@
     </url>
     <url>
         <loc>http://frank19900731.github.io/archives/</loc>
-        <lastmod>2014-10-25T14:25:59+08:00</lastmod>
+        <lastmod>2014-10-25T23:15:59+08:00</lastmod>
     </url>
     <url>
         <loc>http://frank19900731.github.io/assets/bootstrap/docs/about.html</loc>
@@ -86,7 +92,7 @@
     </url>
     <url>
         <loc>http://frank19900731.github.io/assets/bootstrap/docs/</loc>
-        <lastmod>2014-10-25T14:25:59+08:00</lastmod>
+        <lastmod>2014-10-25T23:15:59+08:00</lastmod>
     </url>
     <url>
         <loc>http://frank19900731.github.io/assets/bootstrap/docs/javascript.html</loc>
@@ -98,15 +104,15 @@
     </url>
     <url>
         <loc>http://frank19900731.github.io/blog/categories/</loc>
-        <lastmod>2014-10-25T14:25:59+08:00</lastmod>
+        <lastmod>2014-10-25T23:15:59+08:00</lastmod>
     </url>
     <url>
         <loc>http://frank19900731.github.io/blog/</loc>
-        <lastmod>2014-10-25T14:25:59+08:00</lastmod>
+        <lastmod>2014-10-25T23:15:59+08:00</lastmod>
     </url>
     <url>
         <loc>http://frank19900731.github.io/blog/tags/</loc>
-        <lastmod>2014-10-25T14:25:59+08:00</lastmod>
+        <lastmod>2014-10-25T23:15:59+08:00</lastmod>
     </url>
     <url>
         <loc>http://frank19900731.github.io/booklist/</loc>
@@ -118,7 +124,7 @@
     </url>
     <url>
         <loc>http://frank19900731.github.io/</loc>
-        <lastmod>2014-10-25T14:25:59+08:00</lastmod>
+        <lastmod>2014-10-25T23:15:59+08:00</lastmod>
     </url>
     <url>
         <loc>http://frank19900731.github.io/movielist/</loc>
@@ -193,11 +199,17 @@
         <lastmod>2014-10-25T21:22:56+08:00</lastmod>
     </url>
     <url>
+        <loc>
+            http://frank19900731.github.io/wx/2014-10-25-qiu-zhi-ji-de-yi-dian-jing-yan-zhi-tan.html
+        </loc>
+        <lastmod>2014-10-25T23:17:17+08:00</lastmod>
+    </url>
+    <url>
         <loc>http://frank19900731.github.io/wx/archives/</loc>
-        <lastmod>2014-10-25T20:58:41+08:00</lastmod>
+        <lastmod>2014-10-25T23:15:59+08:00</lastmod>
     </url>
     <url>
         <loc>http://frank19900731.github.io/archives//</loc>
-        <lastmod>2014-10-25T14:25:59+08:00</lastmod>
+        <lastmod>2014-10-25T23:15:59+08:00</lastmod>
     </url>
 </urlset>
