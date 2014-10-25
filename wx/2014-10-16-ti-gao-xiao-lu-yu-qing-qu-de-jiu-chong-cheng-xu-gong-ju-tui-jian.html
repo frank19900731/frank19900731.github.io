@@ -1,12 +1,182 @@
+<!-- layout/wx-default.html -->
 
-<item>
-    <title>提高效率与情趣的九种程序工具推荐</title>
-    <link>http://realjenius.com/blog/2014/10/16/ti-gao-xiao-lu-yu-qing-qu-de-jiu-chong-cheng-xu-gong-ju-tui-jian/</link>
-    <author>R.J. Lorimer</author>
-    <pubDate>2014-10-16T17:28:06+08:00</pubDate>
-    <guid>http://realjenius.com/blog/2014/10/16/ti-gao-xiao-lu-yu-qing-qu-de-jiu-chong-cheng-xu-gong-ju-tui-jian/</guid>
-    <description><![CDATA[
-     <p><strong>目录</strong></p>
+<!-- head.html -->
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <!-- 标签页标题 -->
+  <title>提高效率与情趣的九种程序工具推荐 - Blog of 太极儒</title>
+  <meta name="author" content="Frank Song">
+  <!-- 定义description变量，如果有则用，没有则是正文，前150字 -->
+  
+  <meta name="description" content="目录 选题目的 介绍角度 代码开发篇 引言 Git Shell Script 文档整理篇 引言 Markdown Octopress knitr 自我展示篇 tpp jmpress.js 数据展示篇 Shiny D3 其它工具 总结 自己平时爱鼓捣些工程上的小玩意儿，在一次实验室的Paper Reading上给大家分享了自己的一点体会，给大家推荐了几款能够提高工作效率与生活情趣的工具，整理于此。 想了解更多有趣的工具，请持续关注 工作效率 分类。 选题目的 把自己知道的，用过的，感觉有意思或有用的分享给大家，实现自己的知识梳理与输出 让大家在遇到类似应用场景的时候知道有某种工具是很适用的 督促大家掌握某种工具（比如 git，shell，markdown ），进而提升工作效率，也可以以工具为杠杆撬动更多的资源 介绍角度 类型 星级评定（1星-5星） 入门难度 实用性 装X效果 描述 适用场合 实例说明 参考资料 代码开发篇 引言
+摘自《程序员装逼指南》 千万不要说自己是做Java或者.Net的，一下子就屌丝了。PHP也不行，Python稍微有点烂大街，但还是明显要强过前几个。剩下的可以说自己是做Ruby的，但不要做Rails，说Sinatra。Go、Erlang、Clojure、Scala能给80分，你要是说会个Lisp就是85分，Haskell直接捅到90分，但是千万注意，一定要说只是精通Haskell，没事喜欢研究Haskell，千万不要说干这个的。最后再拽出来一个Prolog就成仙了。如果怕被继续追问就说自己做C++的，就是放了个大烟雾弹，让对面也猜不透究竟有几斤几两。C是什么？不知道。 以上顺序列举的编程语言（C、C++除外）学习难度增大，对逻辑思维能力要求提升，代码实现向人的思维靠拢。 TIOBE程序语言排行榜1，2014年5月最新统计（括号内前一数值为排名，后一数值为占比）： Java（2，16.907%） .Net（C# 6，3.745%，VB.NET 11，1.264%，F# 13，1.030%） PHP（7，3.386%） Python（8，3.057%） Ruby（12，1.242%） Go（31，0.423%） Erlang（47，0.236%） Clojure（65, -） Scala（35，0.331） Lisp（16，0.967） &hellip;">
+  <meta name="keywords" content="git, shell, markdown, octopress, knitr, tpp, jmpress.js, shiny, d3, Adobe Muse, mordencv, processing, 效率">
+  <meta name="baidu-site-verification" content="7O78rNJCOH" />
+  <meta name="360-site-verification" content="9ee6dda17557079b8855f9c8201b05bb" />
+  <meta name="msvalidate.01" content="408D13BCB6B6CE4973F6CD9E6A9E8195" />
+  <meta name="sogou_site_verification" content="CtgkJPDjga"/>
+  <meta name="chinaz-site-verification" content="081e7651-48c6-4c2f-a569-99321685eab1" />
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://frank19900731.github.io/wx/2014-10-16-ti-gao-xiao-lu-yu-qing-qu-de-jiu-chong-cheng-xu-gong-ju-tui-jian.html">
+  <!-- 网站小图标 -->
+  <link href="/favicon.ico" rel="icon">
+  <link href="/stylesheets/bootstrap/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="/stylesheets/bootstrap/responsive.css" rel="stylesheet" type="text/css">
+  <!-- 网站样式文件 -->
+  <link href="/stylesheets/styles.css" media="screen, projection" rel="stylesheet" type="text/css">
+
+  <link href="/atom.xml" rel="alternate" title="Blog of 太极儒" type="application/atom+xml">
+
+  <script src="/javascripts/modernizr.custom.js"></script>
+  <!-- jQuery -->
+  <!--script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script-->
+  <script src="/javascripts/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+
+  <!-- 其它js代码 -->
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <script src="/javascripts/jquery.sidr.min.js"></script>
+  <script src="/javascripts/ah-blue.js"></script>
+  <script type="text/javascript" src="/javascripts/fancybox/jquery.fancybox.pack.js"></script>
+  <link rel="stylesheet" type="text/css" href="/javascripts/fancybox/jquery.fancybox.css" media="screen" />
+
+  <link href="/stylesheets/component.css" rel="stylesheet" type="text/css">
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+        if ($(".img-up")) {
+            $(".img-up").fancybox();
+        }
+        if ($(".imgleft")) {
+            $(".imgleft").parent().parent().css("text-align", "left");
+        }
+        if ($(".imgright")) {
+            $(".imgright").parent().parent().css("text-align", "right");
+        }
+        if ($(".imgcenter")) {
+            $(".imgcenter").parent().parent().css("text-align", "center");
+        }
+        if ($(".imgleft-no-shadow")) {
+            $(".imgleft-no-shadow").parent().parent().css("text-align", "left");
+        }
+        if ($(".imgright-no-shadow")) {
+            $(".imgright-no-shadow").parent().parent().css("text-align", "right");
+        }
+        if ($(".imgcenter-no-shadow")) {
+            $(".imgcenter-no-shadow").parent().parent().css("text-align", "center");
+        }
+
+        if ($(".mod_lost_child_little")) {
+            $(".mod_lost_child_little").css("width", "100%");
+        }
+    });
+  </script>
+
+  <style>
+      body {
+          background-image: none;
+      }
+  </style>
+
+  <!-- custom/head.html -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      jax: ["input/TeX", "output/HTML-CSS"],
+      tex2jax: {
+        inlineMath: [ ['$', '$'], ["\\(", "\\)"] ],
+        displayMath: [ ['$$', '$$'], ["\\[", "\\]"] ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+      //,
+      //displayAlign: "left",
+      //displayIndent: "2em"
+    });
+
+    function addBlankTargetForLinks () {
+
+      $('a[href^="http"]').each(function(){
+
+        $(this).attr('target', '_blank');
+
+      });
+
+    }
+
+    $(document).bind('DOMNodeInserted', function(event) {
+
+      addBlankTargetForLinks();
+
+    });
+
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"></script>
+  <!-- google_analytics.html -->
+
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-51950124-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head> 
+
+<body>
+
+<div class="row-fluid marketing">
+<div class="span2"> </div>
+<div class="span8">
+<div class="container-narrow" style="margin-top: 40px;">
+
+      <div class="masthead">
+        <ul class="nav nav-pills pull-right">
+          <li><a href="/wx/archives/">博客目录</a></li>
+          <li><a href="/blog/2014/10/16/ti-gao-xiao-lu-yu-qing-qu-de-jiu-chong-cheng-xu-gong-ju-tui-jian/">PC端阅读</a></li>
+        </ul>
+        <h3 class="muted">Blog of 太极儒</h3>
+      </div>
+
+	  <hr style="width: 100%;">
+
+      <div style="background-color: rgba(185, 185, 185, 0.5); padding: 8px 25px 8px 25px; border-radius: 10px;">
+        <h1>
+          提高效率与情趣的九种程序工具推荐
+        </h1>
+
+        <div class="article-date" style="margin-bottom: 40px;">
+            <!-- post/date.html -->
+<!-- 文章日期显示 -->
+
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-10-16T17:28:06+08:00" pubdate data-updated="true">Oct 16<span>th</span>, 2014</time>
+        </div>
+      <p><strong>目录</strong></p>
 
 <ul id="markdown-toc">
   <li><a href="#section">选题目的</a></li>
@@ -106,7 +276,7 @@
 
 <p>更多有关程序语言的种类与它们之间的程序关联请见 <a href="http://exploringdata.github.io/vis/programming-languages-influence-network/">编程语言关系图</a>，这是一件优美的数据可视化作品，托管于Github。</p>
 
-<p><a href="http://frank19900731.github.io/img/post/2014-10/1.png" class="img-up" title="程序语言关系图"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-10/1.png" width="80%" title="程序语言关系图" /></a></p>
+<p><a href="/img/post/2014-10/1.png" class="img-up" title="程序语言关系图"><img class="imgcenter" src="/img/post/2014-10/1.png" width="80%" title="程序语言关系图" /></a></p>
 
 <p>扯远了，举例说明与人类语言、思维相近的编程语言：</p>
 
@@ -426,7 +596,7 @@
 
 <blockquote><p>在CSDN/ITeye/cnblogs这种地方写技术博客确实比在人人上写技术博客好多了</p><p>但是你要知道，大牛们都是有自己的个人网站的</p><p>而且，一个共同点是，他们的网站都是自己写的html（没有css）并且界面十分难看</p><p>整个网站散发着一种“我这的文章都很牛所以界面什么的都不重要”的气质</p><p>例如这个 <a href="http://xahlee.org/index.html" target="_blank">http://xahlee.org/index.html</a></p></blockquote>
 
-<p><a href="http://frank19900731.github.io/img/post/2014-10/3.png" class="img-up" title="李杀网截屏"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-10/3.png" width="70%" title="李杀网截屏" /></a></p>
+<p><a href="/img/post/2014-10/3.png" class="img-up" title="李杀网截屏"><img class="imgcenter" src="/img/post/2014-10/3.png" width="70%" title="李杀网截屏" /></a></p>
 
 <p>当然，用优美的外在包裹充实的内在，总还是更加让人赏心悦目的。</p>
 
@@ -823,7 +993,6 @@
   <li>如能产生一点启发，激发一点兴趣，也不枉一番准备</li>
 </ul>
 
-<p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2014/10/16/ti-gao-xiao-lu-yu-qing-qu-de-jiu-chong-cheng-xu-gong-ju-tui-jian/">http://frank19900731.github.io/blog/2014/10/16/ti-gao-xiao-lu-yu-qing-qu-de-jiu-chong-cheng-xu-gong-ju-tui-jian/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
 <div class="footnotes">
   <ol>
     <li id="fn:1">
@@ -835,5 +1004,13 @@
   </ol>
 </div>
 
-  ]]></description>
-</item>
+      </div>
+
+</div> <!-- /container -->
+</div>
+<div class="span2"></div>
+</div>
+
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1253436508'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s6.cnzz.com/z_stat.php%3Fid%3D1253436508%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+</body>
+</html>

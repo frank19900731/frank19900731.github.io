@@ -1,4 +1,4 @@
-<!-- layout/default.html -->
+<!-- layout/wx-default.html -->
 
 <!-- head.html -->
 <!DOCTYPE html>
@@ -12,7 +12,7 @@
   <meta name="author" content="Frank Song">
   <!-- 定义description变量，如果有则用，没有则是正文，前150字 -->
   
-  <meta name="description" content="Categories: 网页开发 我的第一篇 Octopress 博客 Aug 24th, 2014 目录 段落分级 BlockQuote 代码展示 使用 Inline Code 使用脚注 使用目录 使用数学公式 使用链接 使用图片 使用 pullquote 使用表格 使用 Horizontal Rules 使用列表 使用定义列表 为块级元素添加 attribute 为 inline 元素添加 attribute 使用扩展 使用文字修饰 使用 Typographic Symbols 段落分级
+  <meta name="description" content="目录 段落分级 BlockQuote 代码展示 使用 Inline Code 使用脚注 使用目录 使用数学公式 使用链接 使用图片 使用 pullquote 使用表格 使用 Horizontal Rules 使用列表 使用定义列表 为块级元素添加 attribute 为 inline 元素添加 attribute 使用扩展 使用文字修饰 使用 Typographic Symbols 段落分级
 以 # 的个数表示段落层次。 段落分级1
 2
 3
@@ -49,7 +49,7 @@ also possible. This is the outer quote again. 在 blockquote 中添加诸如 hea
 {% blockquote Bobby Willis http://google.com/search?q=pants the search for bobby&#39;s pants %}
 Wheeee!
 {% endblockquote %} Wheeee!Bobby Willis The Search for Bobby&#8217;s Pants 代码展示 方法一：缩进一个 tab 使用缩进展示代码1
-System.out.println(&quot;Hello World!&quot &hellip;">
+System.out.println(&quot;Hello World!&quot;); System.out.println("Hello World!"); 方法二：使用波浪线 &hellip;">
   <meta name="keywords" content="octopress, kramdown syntax">
   <meta name="baidu-site-verification" content="7O78rNJCOH" />
   <meta name="360-site-verification" content="9ee6dda17557079b8855f9c8201b05bb" />
@@ -62,9 +62,11 @@ System.out.println(&quot;Hello World!&quot &hellip;">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://frank19900731.github.io/blog/2014/08/24/wo-de-di-yi-pian-octopress-bo-ke">
+  <link rel="canonical" href="http://frank19900731.github.io/wx/2014-08-24-wo-de-di-yi-pian-octopress-bo-ke.html">
   <!-- 网站小图标 -->
   <link href="/favicon.ico" rel="icon">
+  <link href="/stylesheets/bootstrap/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="/stylesheets/bootstrap/responsive.css" rel="stylesheet" type="text/css">
   <!-- 网站样式文件 -->
   <link href="/stylesheets/styles.css" media="screen, projection" rel="stylesheet" type="text/css">
 
@@ -114,6 +116,12 @@ System.out.println(&quot;Hello World!&quot &hellip;">
         }
     });
   </script>
+
+  <style>
+      body {
+          background-image: none;
+      }
+  </style>
 
   <!-- custom/head.html -->
 <script type="text/x-mathjax-config">
@@ -165,182 +173,30 @@ System.out.println(&quot;Hello World!&quot &hellip;">
 
 </head> 
 
-<body onload="onLoadSet()"   >
-  <!-- header.html -->
-<!-- custom/header.html -->
-<!-- 搜索和菜单导航 -->
-<!--
-<div class="aux-container">
-    <a id="nav-toggle" href="#sidr"></a>
-    <a id="search-toggle"></a>
-</div> -->
+<body>
 
-<div id="dl-menu" class="dl-menuwrapper">
-    <button>Open Menu</button>
-    <ul class="dl-menu">
-        <li><a href="/">Home</a></li>
-        <li><a href="/archives/">Archives (10)</a></li>
-        <li>
-            <a href="#">Categories (4)</a>
-            <ul class="dl-submenu">
-                <li class="dl-back"><a href="#">Back</a></li>
-                <li><a href="/blog/categories">All Categories (4)</a>
-                <li style="color: #CCCCCC; line-height: 150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Top 5</li>
+<div class="row-fluid marketing">
+<div class="span2"> </div>
+<div class="span8">
+<div class="container-narrow" style="margin-top: 40px;">
 
-                <li><a href='/category/面试求职'>面试求职 (4)</a></li><li><a href='/category/工作效率'>工作效率 (3)</a></li><li><a href='/category/网页开发'>网页开发 (2)</a></li><li><a href='/category/Mac 使用'>Mac 使用 (1)</a></li>
-            </ul>
-        </li>
-        <li><a href="/blog/tags">All Tags (28)</a>
-        <li>
-            <a href="#">Features</a>
-            <ul class="dl-submenu">
-                <li class="dl-back"><a href="#">Back</a></li>
-                <li><a href="/booklist">Book List</a></li>
-                <li><a href="/movielist">Movie List</a></li>
-                <li><a href="/towrite">Things to Write</a></li>
-            </ul>
-        </li>
-        <li><a href="/about">About</a></li>
-    </ul>
-</div><!-- /dl-menuwrapper -->
-
-<div class="aux-container">
-
-</div>
-
-
-<div style="height: 30px;"></div>
-
-
-
-  <div class="main-container">
-    <div class="main wrapper clearfix">
-    	
-    	<aside>
-			
-                <div class="search-container">
-                    <form action="/search" method="get">
-                        <fieldset role="search">
-                            <input type="text" class="search-field" id="search-query" name="q" placeholder="Search" autocomplete="off">
-                            <input class="submit" type="submit" value=""/>
-                        </fieldset>
-                    </form>
-                </div>
-			
-            <!-- navigation.html -->
-<!-- custom/navigation.html -->
-<div id="main-nav">
-    <nav>
-        <ul>
-        	<li>
-        		<ul>
-                    <!--li><a href="http://songchengru.eicp.net" target="_blank">Personal Page</a-->
-                    <li><a href="/atom.xml" target="_blank">RSS Subscription</a></li>
-        			<li>Sina Blog - <a href="http://blog.sina.com/frank19900731" target="_blank">士不可以不弘毅</a></li>
-                    <li>Sina Weibo - <a href="http://weibo.sina.com/frank19900731" target="_blank">@太极儒</a></li>
-                    <li>Github - <a href="http://github.com/frank19900731" target="_blank">frank19900731</a></li>
-                    <li>Mail to Me - <a href="mailto:scr_0731@126.com" target="_blank">scr at 126</a></li>
-        		</ul>
-        	</li>
-
-                
-                <!-- asides/features.html -->
-<li>
-    <!-- features -->
-    <h3>Features</h3>
-    <ul>
-        <li><a href="/booklist">Book List</a></li>
-        <li><a href="/movielist">Movie List</a></li>
-        <li><a href="/towrite">To Write</a></li>
-    </ul>
-</li><!-- asides/recent_posts.html -->
-        <li>
-<!-- 最近发布的文章 -->
-<h3>Recent Posts</h3>
-<ul>
-	
-    <li>
-    	<a href="/blog/2014/10/23/wo-de-zhi-shi-guan-li-jing-yan-yu-gong-ju-fen-xiang/">我的知识管理经验与工具分享</a>
-    </li>
-    
-    <li>
-    	<a href="/blog/2014/10/23/wo-de-shi-jian-guan-li-jing-yan-yu-gong-ju-fen-xiang/">【撰写中】我的时间管理经验与工具分享</a>
-    </li>
-    
-    <li>
-    	<a href="/blog/2014/10/20/ji-mou-you-xi-gong-si-mian-shi-jing-li/">记某游戏公司面试经历</a>
-    </li>
-    
-    <li>
-    	<a href="/blog/2014/10/19/idg-lian-he-zhao-pin-bi-shi-hui-yi/">IDG 联合招聘笔试回忆</a>
-    </li>
-    
-    <li>
-    	<a href="/blog/2014/10/18/fei-wei-mei-di-bi-shi-hui-yi/">飞维美地笔试回忆</a>
-    </li>
-    
-</ul>
-        </li>
-<li>
-    <h3>Tags</h3>
-    <ul class="tag-cloud">
-        <a style="font-size: 90%" href="/tag/json/">json</a>
-<a style="font-size: 210%" href="/tag/octopress/">octopress</a>
-<a style="font-size: 90%" href="/tag/中文字体/">中文字体</a>
-<a style="font-size: 90%" href="/tag/代码开发/">代码开发</a>
-<a style="font-size: 90%" href="/tag/分页/">分页</a>
-<a style="font-size: 210%" href="/tag/效率/">效率</a>
-<a style="font-size: 90%" href="/tag/数据可视化/">数据可视化</a>
-<a style="font-size: 90%" href="/tag/文档整理/">文档整理</a>
-<a style="font-size: 210%" href="/tag/算法/">算法</a>
-<a style="font-size: 210%" href="/tag/逻辑/">逻辑</a>
-
-    </ul>
-</li><li>
-    <h3>Recent Comments</h3>
-    <ul class="ds-recent-comments" data-num-items="5" style="margin-right: 38px;">
-    </ul>
-</li><li>
-<h3>Recent Visitors</h3>
-<ul class="ds-recent-visitors"></ul>
-</li>
-                
-
+      <div class="masthead">
+        <ul class="nav nav-pills pull-right">
+          <li><a href="/wx/archives/">博客目录</a></li>
+          <li><a href="/blog/2014/08/24/wo-de-di-yi-pian-octopress-bo-ke/">PC端阅读</a></li>
         </ul>
-    </nav>
-</div>
-		</aside>
-		
-      <!-- layouts/post.html -->
-<!-- 带内容 -->
-<div>
-<article style="background-color: rgba(185, 185, 185, 0.5); padding: 25px 25px 25px 25px; border-radius: 20px;">
-	<!-- article.html -->
-<!-- 文章展示，区分在索引页和文章页 -->
-<header>
-  <div class="article-tags">
-      <!-- post/categories.html -->
-<!-- 文章类别展示 -->
+        <h3 class="muted">Blog of 太极儒</h3>
+      </div>
 
+	  <hr style="width: 100%;">
 
-<span class="categories" style="font-size: 16px;">
-  Categories:
-  
-    <a class='category' href='/category/网页开发/'>网页开发</a>
-  
+      <div style="background-color: rgba(185, 185, 185, 0.5); padding: 8px 25px 8px 25px; border-radius: 10px;">
+        <h1>
+          我的第一篇 Octopress 博客
+        </h1>
 
-</span>
-
-
-  </div>
-  
-    <h1>
-      我的第一篇 Octopress 博客
-    </h1>
-  
-  <!-- 给出发布时间 -->
-  <div class="article-date">
-      <!-- post/date.html -->
+        <div class="article-date" style="margin-bottom: 40px;">
+            <!-- post/date.html -->
 <!-- 文章日期显示 -->
 
 
@@ -354,13 +210,9 @@ System.out.println(&quot;Hello World!&quot &hellip;">
   
 
 
-<time datetime="2014-08-24T21:50:56+08:00" pubdate data-updated="true">Aug 24<span>th</span>, 2014</time></div>
-</header>
-<hr />
-<!-- 如果在索引中 -->
-
-  <!-- 直接展示出内容 -->
-  <section class="article-detail" style="margin-bottom: 20px;"><p><strong>目录</strong></p>
+<time datetime="2014-08-24T21:50:56+08:00" pubdate data-updated="true">Aug 24<span>th</span>, 2014</time>
+        </div>
+      <p><strong>目录</strong></p>
 
 <ul id="markdown-toc">
   <li><a href="#section">段落分级</a></li>
@@ -1121,7 +973,6 @@ inline **see**!</p>
 
 <hr />
 
-<p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2014/08/24/wo-de-di-yi-pian-octopress-bo-ke/">http://frank19900731.github.io/blog/2014/08/24/wo-de-di-yi-pian-octopress-bo-ke/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
 <div class="footnotes">
   <ol>
     <li id="fn:1">
@@ -1129,172 +980,13 @@ inline **see**!</p>
     </li>
   </ol>
 </div>
-</section>
 
-<!-- post/tags.html -->
-<!-- 文章标签展示 -->
+      </div>
 
-
-<span class="tags">
-  <font color="#808080">Tags: </font>
-  
-    <a class='tag' href='/tag/kramdown syntax/'>kramdown syntax</a>, <a class='tag' href='/tag/octopress/'>octopress</a>
-  
-</span>
-&nbsp;&nbsp;&nbsp;&nbsp;
-<span class="ds-thread-count" data-thread-key="" style="color: #808080;"></span>
-
-
-<!-- JiaThis Button BEGIN -->
-<div class="jiathis_style" style="margin-top: 40px;">
-    <span class="jiathis_txt">分享到：</span>
-    <a class="jiathis_button_tsina">新浪微博</a>
-    <a class="jiathis_button_tqq">腾讯微博</a>
-    <a class="jiathis_button_renren">人人网</a>
-    <a class="jiathis_button_weixin">微信</a>
-    <a class="jiathis_button_douban">豆瓣</a>
-    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
-    <a class="jiathis_counter_style"></a>
+</div> <!-- /container -->
 </div>
-<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1406956593484740" charset="utf-8"></script>
-<!-- JiaThis Button END -->
-        <div style="height: 40px;"></div>
-
-
-
-
-    <div style="width: 100%; margin-top: 30px;">
-        <span style="float:left">
-            
-        </span>
-        <span style="float:right">
-             <a href="/blog/2014/09/01/2015nian-xiao-zhao-ru-kou/">2015年校招入口 » </a> 
-        </span>
-    </div>
-
-	
-	  <section class="comments" style="padding-top: 30px;">
-	    <div id="disqus_thread" aria-live="polite"><!-- post/disqus_thread.html -->
-<!--
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
--->
-
-<!-- 多说评论框 start -->
-<div class="ds-thread" data-thread-key="/blog/2014/08/24/wo-de-di-yi-pian-octopress-bo-ke/" data-title="我的第一篇 Octopress 博客" data-url="http://frank19900731.github.io/blog/2014/08/24/wo-de-di-yi-pian-octopress-bo-ke/" style="margin-top: 40px;"></div>
-<!-- 多说评论框 end -->
-
-
-<h3 style="margin-top: 40px;">Commented Most This Month</h3>
-<!-- 多说热评文章 start -->
-<ul class="ds-top-threads" data-range="monthly" data-num-items="6"></ul>
-<!-- 多说热评文章 end --></div>
-	  </section>
-	
-</article>
+<div class="span2"></div>
 </div>
-
-    </div>
-  </div>
-  <!-- footer.html -->
-<!-- custom/footer.html -->
-<!-- 页脚 -->
-
-
-  <!-- after_footer.html -->
-<!-- custom/after_footer.html -->
-<!-- 加入评论 -->
-
-
-
-
-<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-<script type="text/javascript">
-    var duoshuoQuery = {short_name:"frank19900731-blog"};
-    (function() {
-        var ds = document.createElement('script');
-        ds.type = 'text/javascript';ds.async = true;
-        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-        ds.charset = 'UTF-8';
-        (document.getElementsByTagName('head')[0]
-                || document.getElementsByTagName('body')[0]).appendChild(ds);
-    })();
-</script>
-<!-- 多说公共JS代码 end -->
-
-
-<!--
-
-
-<script type="text/javascript">
-      var disqus_shortname = 'frank-octopress';
-      
-        
-        // var disqus_developer = 1;
-        var disqus_identifier = 'http://frank19900731.github.io/blog/2014/08/24/wo-de-di-yi-pian-octopress-bo-ke/';
-        var disqus_url = 'http://frank19900731.github.io/blog/2014/08/24/wo-de-di-yi-pian-octopress-bo-ke/';
-        var disqus_script = 'embed.js';
-      
-    (function () {
-      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
-      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    }());
-</script>
-
-
-
-
-
-
-
-
--->
-
-
-  <script src="/javascripts/jquery.dlmenu.js"></script>
-<script type="text/javascript">
-    $(function() {
-        $('#dl-menu').dlmenu();
-    });
-
-    function onLoadSet() {
-
-    }
-
-</script>
-  <a id="gotop" href="#">
-    <span>▲</span>
-</a>
-<div id="float-index">
-</div>
-
-<script type="text/javascript">
-    $(function(){
-        $(window).scroll(function(){  //只要窗口滚动,就触发下面代码
-            var scrollt = document.documentElement.scrollTop + document.body.scrollTop; //获取滚动后的高度
-            if( scrollt >300 ){  //判断滚动后高度超过200px,就显示
-                $("#gotop").fadeIn(400); //淡出
-            }else{
-                $("#gotop").stop().fadeOut(400); //如果返回或者没有超过,就淡入.必须加上stop()停止之前动画,否则会出现闪动
-            }
-
-            if(scrollt > 1300) {
-                $("#float-index").fadeIn(400);
-            } else {
-                $("#float-index").stop().fadeOut(10);
-            }
-        });
-        $("#gotop").click(function(){ //当点击标签的时候,使用animate在200毫秒的时间内,滚到顶部
-            $("html,body").animate({scrollTop:"0px"},200);
-        });
-
-        if ($("#markdown-toc").length > 0) {
-            $("#markdown-toc").clone(true).appendTo("#float-index");
-        } else {
-            $("#float-index").remove();
-        }
-    });
-</script>
 
 <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1253436508'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s6.cnzz.com/z_stat.php%3Fid%3D1253436508%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
 </body>

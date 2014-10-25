@@ -1,12 +1,181 @@
+<!-- layout/wx-default.html -->
 
-<item>
-    <title>我的知识管理经验与工具分享</title>
-    <link>http://realjenius.com/blog/2014/10/23/wo-de-zhi-shi-guan-li-jing-yan-yu-gong-ju-fen-xiang/</link>
-    <author>R.J. Lorimer</author>
-    <pubDate>2014-10-23T18:21:07+08:00</pubDate>
-    <guid>http://realjenius.com/blog/2014/10/23/wo-de-zhi-shi-guan-li-jing-yan-yu-gong-ju-fen-xiang/</guid>
-    <description><![CDATA[
-     <p><strong>目录</strong></p>
+<!-- head.html -->
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <!-- 标签页标题 -->
+  <title>我的知识管理经验与工具分享 - Blog of 太极儒</title>
+  <meta name="author" content="Frank Song">
+  <!-- 定义description变量，如果有则用，没有则是正文，前150字 -->
+  
+  <meta name="description" content="目录 前言 你的知识问题 知识学习 知识保存 知识分享 总结 附录 前言 最近我阅读了田志刚先生撰写的《你的知识需要管理》一书。这本书出版于2010年，虽然当中介绍的工具已跟不上现代的潮流，但书中的观点和例证还是发人深省，特别是第一章 你的知识问题。 阅读过程中，我感觉书中部分内容和自己在实践中摸索出的一些观点和方法很契合，于是萌生了将自己的一点知识管理经验整理并分享的念头，这就是撰写本文的初衷。 在你开始正式阅读之前，我先给出一点阅读忠告： 就我个人阅读此类文章或书籍的经验来看，如果不是有过类似的实践经验或者当前正面临类似的问题，一般不太容易产生共鸣，反而会觉得是个大杂烩，或者尝试后觉得根本不好用嘛。对于这样的想法，我想举两个例子： 高考结束后，有些小朋友（主要是学习成绩不理想的）找我学习经验，当时自己苦口婆心讲得口干舌燥，不过效果远不如我所想。后来意识到，每个人都是一个个性化的系统，经验移植很困难，自己摸索出来的才是最合适的。 我知道很多的道理，却依然过不好这一生 这句话曾风行一时，我觉得这是乱呻吟。首先道理是要放到情境里学习的（读高中的时候我对《你的知识需要管理》应该会是无感的，但快研究生毕业、要找工作了就不同了），听懂了、记住了有毛线用；其次，道理是死、人心要活，很多事情是反复博弈的或者可以举一反三，榆木脑袋才会一生都过不好（但往往是没过完一生的年轻人喜欢说这种话，彰显个性么？不懂……）；道理没给你带来好生活，你在抱怨道理、抱怨告诉你道理的人之余，是不是还得想想自身可能存在的问题呢？ 我觉得写这篇文章的目的不在于告诉读者你现在应该马上行动起来不怎么做、要怎么做，只是单纯的经验和工具分享，也是我阶段性的自我总结。如果有一天当你遇到和我类似的场景与问题或受困于自身的发展瓶颈时，而你隐约记得曾经有篇文章的内容可以为你所用，我所介绍的经验和工具或许就可以帮上你的忙，最最起码你会知道，有一个家伙曾经跟你一样，你不是个案…… 你的知识问题 首先要区分容易混淆的三个概念，“数据”、“信息”和“知识”。在原书作者看来： 数据：单纯的数据不表示意思，比如39； 信息：赋予数据以环境，比如就诊时向医生提供信息，体温是39摄氏度； 知识：经过实践证明的，可以用来决策和行动的信息，比如医生运用自己的医学知识和行医经验在我提供的体温信息的基础上判定我发烧了。 &hellip;">
+  <meta name="keywords" content="效率, 知识管理, 田志刚, Evernote, Tower, Ulysses, Pocket, Gitbook, pandoc, iDocument, mediawiki, Byword, octopress, Dash, Gistify, Caffeinated, 鲜果阅读, 小酱油, 新浪微博, 浏览器收藏夹">
+  <meta name="baidu-site-verification" content="7O78rNJCOH" />
+  <meta name="360-site-verification" content="9ee6dda17557079b8855f9c8201b05bb" />
+  <meta name="msvalidate.01" content="408D13BCB6B6CE4973F6CD9E6A9E8195" />
+  <meta name="sogou_site_verification" content="CtgkJPDjga"/>
+  <meta name="chinaz-site-verification" content="081e7651-48c6-4c2f-a569-99321685eab1" />
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://frank19900731.github.io/wx/2014-10-23-wo-de-zhi-shi-guan-li-jing-yan-yu-gong-ju-fen-xiang.html">
+  <!-- 网站小图标 -->
+  <link href="/favicon.ico" rel="icon">
+  <link href="/stylesheets/bootstrap/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="/stylesheets/bootstrap/responsive.css" rel="stylesheet" type="text/css">
+  <!-- 网站样式文件 -->
+  <link href="/stylesheets/styles.css" media="screen, projection" rel="stylesheet" type="text/css">
+
+  <link href="/atom.xml" rel="alternate" title="Blog of 太极儒" type="application/atom+xml">
+
+  <script src="/javascripts/modernizr.custom.js"></script>
+  <!-- jQuery -->
+  <!--script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script-->
+  <script src="/javascripts/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+
+  <!-- 其它js代码 -->
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <script src="/javascripts/jquery.sidr.min.js"></script>
+  <script src="/javascripts/ah-blue.js"></script>
+  <script type="text/javascript" src="/javascripts/fancybox/jquery.fancybox.pack.js"></script>
+  <link rel="stylesheet" type="text/css" href="/javascripts/fancybox/jquery.fancybox.css" media="screen" />
+
+  <link href="/stylesheets/component.css" rel="stylesheet" type="text/css">
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+        if ($(".img-up")) {
+            $(".img-up").fancybox();
+        }
+        if ($(".imgleft")) {
+            $(".imgleft").parent().parent().css("text-align", "left");
+        }
+        if ($(".imgright")) {
+            $(".imgright").parent().parent().css("text-align", "right");
+        }
+        if ($(".imgcenter")) {
+            $(".imgcenter").parent().parent().css("text-align", "center");
+        }
+        if ($(".imgleft-no-shadow")) {
+            $(".imgleft-no-shadow").parent().parent().css("text-align", "left");
+        }
+        if ($(".imgright-no-shadow")) {
+            $(".imgright-no-shadow").parent().parent().css("text-align", "right");
+        }
+        if ($(".imgcenter-no-shadow")) {
+            $(".imgcenter-no-shadow").parent().parent().css("text-align", "center");
+        }
+
+        if ($(".mod_lost_child_little")) {
+            $(".mod_lost_child_little").css("width", "100%");
+        }
+    });
+  </script>
+
+  <style>
+      body {
+          background-image: none;
+      }
+  </style>
+
+  <!-- custom/head.html -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      jax: ["input/TeX", "output/HTML-CSS"],
+      tex2jax: {
+        inlineMath: [ ['$', '$'], ["\\(", "\\)"] ],
+        displayMath: [ ['$$', '$$'], ["\\[", "\\]"] ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+      //,
+      //displayAlign: "left",
+      //displayIndent: "2em"
+    });
+
+    function addBlankTargetForLinks () {
+
+      $('a[href^="http"]').each(function(){
+
+        $(this).attr('target', '_blank');
+
+      });
+
+    }
+
+    $(document).bind('DOMNodeInserted', function(event) {
+
+      addBlankTargetForLinks();
+
+    });
+
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"></script>
+  <!-- google_analytics.html -->
+
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-51950124-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head> 
+
+<body>
+
+<div class="row-fluid marketing">
+<div class="span2"> </div>
+<div class="span8">
+<div class="container-narrow" style="margin-top: 40px;">
+
+      <div class="masthead">
+        <ul class="nav nav-pills pull-right">
+          <li><a href="/wx/archives/">博客目录</a></li>
+          <li><a href="/blog/2014/10/23/wo-de-zhi-shi-guan-li-jing-yan-yu-gong-ju-fen-xiang/">PC端阅读</a></li>
+        </ul>
+        <h3 class="muted">Blog of 太极儒</h3>
+      </div>
+
+	  <hr style="width: 100%;">
+
+      <div style="background-color: rgba(185, 185, 185, 0.5); padding: 8px 25px 8px 25px; border-radius: 10px;">
+        <h1>
+          我的知识管理经验与工具分享
+        </h1>
+
+        <div class="article-date" style="margin-bottom: 40px;">
+            <!-- post/date.html -->
+<!-- 文章日期显示 -->
+
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-10-23T18:21:07+08:00" pubdate data-updated="true">Oct 23<span>rd</span>, 2014</time>
+        </div>
+      <p><strong>目录</strong></p>
 
 <ul id="markdown-toc">
   <li><a href="#section">前言</a></li>
@@ -127,7 +296,7 @@
 
 <p>推荐一款名为 Caffeinated 的阅读器，虽然称不上完美，但阅读界面还算是可选择软件当中最赏心悦目的。</p>
 
-<p><a href="http://frank19900731.github.io/img/post/2014-10/3.jpg" class="img-up" title="Caffeinated 界面展示"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-10/3.jpg" width="80%" title="Caffeinated 界面展示" /></a></p>
+<p><a href="/img/post/2014-10/3.jpg" class="img-up" title="Caffeinated 界面展示"><img class="imgcenter" src="/img/post/2014-10/3.jpg" width="80%" title="Caffeinated 界面展示" /></a></p>
 
 <p>我的初始 RSS 源来自这份 <a href="http://www.zhihu.com/question/19580096">知乎问答</a>，之后就是在浏览网页的过程中发现、补充。有人对于这种碎片化阅读模式表示担忧，认为不如系统性的学习。我觉得大家说的都有道理，就想和一把稀泥。打个比方说吧，大部头的书籍像鲜花，培育费心费力，成长不易，长成则一枝独秀；碎片化阅读像水稻、棉花，大量培养，普普通通，满足基本需求。<strong>专与博，辩不出孰优孰劣，只要选择有利于现阶段自身成长的途径就可以了</strong>。</p>
 
@@ -222,7 +391,7 @@
 
 <p>当前我正在使用 Ulysses 撰写这篇文章，截图如下。</p>
 
-<p><a href="http://frank19900731.github.io/img/post/2014-10/4.jpg" class="img-up" title="Ulysses 界面展示"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-10/4.jpg" width="80%" title="Ulysses 界面展示" /></a></p>
+<p><a href="/img/post/2014-10/4.jpg" class="img-up" title="Ulysses 界面展示"><img class="imgcenter" src="/img/post/2014-10/4.jpg" width="80%" title="Ulysses 界面展示" /></a></p>
 
 <p>不用我多说，应该都能感觉到这种目录定制形式以及三列结构对于大规模写作有多大的好处了吧。如果说印象笔记能够做碎片积累、写文章，Ulysses完全可以写一本书好么。</p>
 
@@ -230,7 +399,7 @@
 
 <p>最让我惊艳的是全屏模式，适于专心写作或者听报告的时候记笔记，如下图所示。</p>
 
-<p><a href="http://frank19900731.github.io/img/post/2014-10/5.jpg" class="img-up" title="Ulysses 全屏界面"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-10/5.jpg" width="80%" title="Ulysses 全屏界面" /></a></p>
+<p><a href="/img/post/2014-10/5.jpg" class="img-up" title="Ulysses 全屏界面"><img class="imgcenter" src="/img/post/2014-10/5.jpg" width="80%" title="Ulysses 全屏界面" /></a></p>
 
 <p>总而言之，在使用 Ulysses 的这五个多月（五月份开始）里，自己的工作习惯发生了很大的变化，特别是在知识输出方便，变得积极而高效。</p>
 
@@ -242,19 +411,19 @@
 
 <p>我主要将一些常用指令、数据路径以及脚本代码写到 mediawiki 当中，需要时在浏览器中拷贝即可。</p>
 
-<p><a href="http://frank19900731.github.io/img/post/2014-10/6.jpg" class="img-up" title="mediawiki 界面展示"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-10/6.jpg" width="80%" title="mediawiki 界面展示" /></a></p>
+<p><a href="/img/post/2014-10/6.jpg" class="img-up" title="mediawiki 界面展示"><img class="imgcenter" src="/img/post/2014-10/6.jpg" width="80%" title="mediawiki 界面展示" /></a></p>
 
 <p>如果我们能将每天遇到的知识都转化文字记录那固然是好的，但事实上我们没有这样的精力。对于一些文档和大量的网页，需要有工具帮助我们保存并方便日后查找。其实我的要求也不高，就是必须可以添加标签，从个人经验来看，<strong>不加标签的资源只能成为你知识库里的垃圾</strong>。</p>
 
 <p>对于文档，我选择 iDocument Plus，界面如下</p>
 
-<p><a href="http://frank19900731.github.io/img/post/2014-10/7.jpg" class="img-up" title="iDocument Plus 界面展示"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-10/7.jpg" width="80%" title="iDocument Plus 界面展示" /></a></p>
+<p><a href="/img/post/2014-10/7.jpg" class="img-up" title="iDocument Plus 界面展示"><img class="imgcenter" src="/img/post/2014-10/7.jpg" width="80%" title="iDocument Plus 界面展示" /></a></p>
 
 <p>对于网页，我选择 Pocket，有好用的 Chrome Extension 和客户端，跨各类平台共享。</p>
 
 <p>此外还有代码片段需要管理，可以使用 Gistify 或者 Dash。有 Mac 下开发经验的人应该不用我介绍 Dash 有多牛逼，记得刚出这款软件的时候内购价格18元，现在在 App Store 卖20刀。这款软件整合了 150 多种编程语言的 API，还有丰富的 Stack Overflow 问答资源的离线版本，同时支持 <a href="https://xuelangzf.github.io/10-13-2014/html2dash.html">用户定制文档</a>。</p>
 
-<p><a href="http://frank19900731.github.io/img/post/2014-10/8.jpg" class="img-up" title="Dash 界面展示"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-10/8.jpg" width="80%" title="Dash 界面展示" /></a></p>
+<p><a href="/img/post/2014-10/8.jpg" class="img-up" title="Dash 界面展示"><img class="imgcenter" src="/img/post/2014-10/8.jpg" width="80%" title="Dash 界面展示" /></a></p>
 
 <h2 id="section-4">知识分享</h2>
 
@@ -288,7 +457,7 @@
 
 <p>Markdown 输入工具我采用的是 Byword，能够满足我这个软件外观控，以下是本文编辑界面的展示。</p>
 
-<p><a href="http://frank19900731.github.io/img/post/2014-10/9.jpg" class="img-up" title="Byword 界面展示"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-10/9.jpg" width="80%" title="Byword 界面展示" /></a></p>
+<p><a href="/img/post/2014-10/9.jpg" class="img-up" title="Byword 界面展示"><img class="imgcenter" src="/img/post/2014-10/9.jpg" width="80%" title="Byword 界面展示" /></a></p>
 
 <p>要强调的是，<strong>搭建博客什么的都不是什么难事，最难的就是坚持写作、坚持分享</strong>，立存此照，作为督促。</p>
 
@@ -312,25 +481,31 @@
 
 <p>知识学习</p>
 
-<p><a href="http://frank19900731.github.io/img/post/2014-10/5.png" class="img-up" title="Caffeinated"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2014-10/5.png" width="20%" title="Caffeinated" /></a>
-<a href="http://frank19900731.github.io/img/post/2014-10/17.png" class="img-up" title="小酱油"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2014-10/17.png" width="20%" title="小酱油" /></a></p>
+<p><a href="/img/post/2014-10/5.png" class="img-up" title="Caffeinated"><img class="imgcenter-no-shadow" src="/img/post/2014-10/5.png" width="20%" title="Caffeinated" /></a>
+<a href="/img/post/2014-10/17.png" class="img-up" title="小酱油"><img class="imgcenter-no-shadow" src="/img/post/2014-10/17.png" width="20%" title="小酱油" /></a></p>
 
 <p>知识保存</p>
 
-<p><a href="http://frank19900731.github.io/img/post/2014-10/7.png" class="img-up" title="Evernote"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2014-10/7.png" width="20%" title="Evernote" /></a>
-<a href="http://frank19900731.github.io/img/post/2014-10/13.png" class="img-up" title="Ulysses"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2014-10/13.png" width="20%" title="Ulysses" /></a>
-<a href="http://frank19900731.github.io/img/post/2014-10/16.png" class="img-up" title="MediaWiki"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2014-10/16.png" width="20%" title="MediaWiki" /></a></p>
+<p><a href="/img/post/2014-10/7.png" class="img-up" title="Evernote"><img class="imgcenter-no-shadow" src="/img/post/2014-10/7.png" width="20%" title="Evernote" /></a>
+<a href="/img/post/2014-10/13.png" class="img-up" title="Ulysses"><img class="imgcenter-no-shadow" src="/img/post/2014-10/13.png" width="20%" title="Ulysses" /></a>
+<a href="/img/post/2014-10/16.png" class="img-up" title="MediaWiki"><img class="imgcenter-no-shadow" src="/img/post/2014-10/16.png" width="20%" title="MediaWiki" /></a></p>
 
-<p><a href="http://frank19900731.github.io/img/post/2014-10/15.png" class="img-up" title="iDocument Plus"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2014-10/15.png" width="20%" title="iDocument Plus" /></a>
-<a href="http://frank19900731.github.io/img/post/2014-10/6.png" class="img-up" title="Dash"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2014-10/6.png" width="20%" title="Dash" /></a>
-<a href="http://frank19900731.github.io/img/post/2014-10/10.png" class="img-up" title="Pocket"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2014-10/10.png" width="20%" title="Pocket" /></a></p>
+<p><a href="/img/post/2014-10/15.png" class="img-up" title="iDocument Plus"><img class="imgcenter-no-shadow" src="/img/post/2014-10/15.png" width="20%" title="iDocument Plus" /></a>
+<a href="/img/post/2014-10/6.png" class="img-up" title="Dash"><img class="imgcenter-no-shadow" src="/img/post/2014-10/6.png" width="20%" title="Dash" /></a>
+<a href="/img/post/2014-10/10.png" class="img-up" title="Pocket"><img class="imgcenter-no-shadow" src="/img/post/2014-10/10.png" width="20%" title="Pocket" /></a></p>
 
 <p>知识分享</p>
 
-<p><a href="http://frank19900731.github.io/img/post/2014-10/4.png" class="img-up" title="Byword"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2014-10/4.png" width="20%" title="Byword" /></a>
-<a href="http://frank19900731.github.io/img/post/2014-10/18.png" class="img-up" title="Octopress"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2014-10/18.png" width="20%" title="Octopress" /></a></p>
+<p><a href="/img/post/2014-10/4.png" class="img-up" title="Byword"><img class="imgcenter-no-shadow" src="/img/post/2014-10/4.png" width="20%" title="Byword" /></a>
+<a href="/img/post/2014-10/18.png" class="img-up" title="Octopress"><img class="imgcenter-no-shadow" src="/img/post/2014-10/18.png" width="20%" title="Octopress" /></a></p>
 
-<p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2014/10/23/wo-de-zhi-shi-guan-li-jing-yan-yu-gong-ju-fen-xiang/">http://frank19900731.github.io/blog/2014/10/23/wo-de-zhi-shi-guan-li-jing-yan-yu-gong-ju-fen-xiang/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
+      </div>
 
-  ]]></description>
-</item>
+</div> <!-- /container -->
+</div>
+<div class="span2"></div>
+</div>
+
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1253436508'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s6.cnzz.com/z_stat.php%3Fid%3D1253436508%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+</body>
+</html>

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Mac 使用 | Blog of 太极儒]]></title>
   <link href="http://frank19900731.github.io/blog/category/mac-shi-yong/atom.xml" rel="self"/>
   <link href="http://frank19900731.github.io/"/>
-  <updated>2014-10-24T12:44:43+08:00</updated>
+  <updated>2014-10-25T14:40:23+08:00</updated>
   <id>http://frank19900731.github.io/</id>
   <author>
     <name><![CDATA[Frank Song]]></name>
@@ -134,7 +134,7 @@ brew upgrade
 
 <p>更换 codesign 神马的在这里不好用了。尝试从命令行启动，得到的错误是 <code>exited; Killed: 9</code>，到处查得不到解释。最后，花了一百软妹币的学费终于搞明白了，启动方法见下图，CMD + I。</p>
 
-<p><a href="/img/post/2014-10/19.png" class="img-up" title="Bartender 算号器用法"><img class="imgcenter" src="/img/post/2014-10/19.png" title="Bartender 算号器用法" ></a></p>
+<p><a href="/img/post/2014-10/19.png" class="img-up" title="Bartender 算号器用法"><img class="imgcenter" src="/img/post/2014-10/19.png" width="40%" title="Bartender 算号器用法" ></a></p>
 
 <p>感叹一句，经验就是财富啊！</p>
 

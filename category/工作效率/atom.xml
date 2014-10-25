@@ -127,7 +127,7 @@
 
 <p>推荐一款名为 Caffeinated 的阅读器，虽然称不上完美，但阅读界面还算是可选择软件当中最赏心悦目的。</p>
 
-<p><a href="http://frank19900731.github.io/img/post/2014-10/3.jpg" class="img-up" title="Caffeinated 界面展示"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-10/3.jpg" width="500" title="Caffeinated 界面展示" /></a></p>
+<p><a href="http://frank19900731.github.io/img/post/2014-10/3.jpg" class="img-up" title="Caffeinated 界面展示"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-10/3.jpg" width="80%" title="Caffeinated 界面展示" /></a></p>
 
 <p>我的初始 RSS 源来自这份 <a href="http://www.zhihu.com/question/19580096">知乎问答</a>，之后就是在浏览网页的过程中发现、补充。有人对于这种碎片化阅读模式表示担忧，认为不如系统性的学习。我觉得大家说的都有道理，就想和一把稀泥。打个比方说吧，大部头的书籍像鲜花，培育费心费力，成长不易，长成则一枝独秀；碎片化阅读像水稻、棉花，大量培养，普普通通，满足基本需求。<strong>专与博，辩不出孰优孰劣，只要选择有利于现阶段自身成长的途径就可以了</strong>。</p>
 
@@ -222,7 +222,7 @@
 
 <p>当前我正在使用 Ulysses 撰写这篇文章，截图如下。</p>
 
-<p><a href="http://frank19900731.github.io/img/post/2014-10/4.jpg" class="img-up" title="Ulysses 界面展示"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-10/4.jpg" width="500" title="Ulysses 界面展示" /></a></p>
+<p><a href="http://frank19900731.github.io/img/post/2014-10/4.jpg" class="img-up" title="Ulysses 界面展示"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-10/4.jpg" width="80%" title="Ulysses 界面展示" /></a></p>
 
 <p>不用我多说，应该都能感觉到这种目录定制形式以及三列结构对于大规模写作有多大的好处了吧。如果说印象笔记能够做碎片积累、写文章，Ulysses完全可以写一本书好么。</p>
 
@@ -230,7 +230,7 @@
 
 <p>最让我惊艳的是全屏模式，适于专心写作或者听报告的时候记笔记，如下图所示。</p>
 
-<p><a href="http://frank19900731.github.io/img/post/2014-10/5.jpg" class="img-up" title="Ulysses 全屏界面"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-10/5.jpg" width="500" title="Ulysses 全屏界面" /></a></p>
+<p><a href="http://frank19900731.github.io/img/post/2014-10/5.jpg" class="img-up" title="Ulysses 全屏界面"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-10/5.jpg" width="80%" title="Ulysses 全屏界面" /></a></p>
 
 <p>总而言之，在使用 Ulysses 的这五个多月（五月份开始）里，自己的工作习惯发生了很大的变化，特别是在知识输出方便，变得积极而高效。</p>
 
@@ -242,19 +242,19 @@
 
 <p>我主要将一些常用指令、数据路径以及脚本代码写到 mediawiki 当中，需要时在浏览器中拷贝即可。</p>
 
-<p><a href="http://frank19900731.github.io/img/post/2014-10/6.jpg" class="img-up" title="mediawiki 界面展示"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-10/6.jpg" width="500" title="mediawiki 界面展示" /></a></p>
+<p><a href="http://frank19900731.github.io/img/post/2014-10/6.jpg" class="img-up" title="mediawiki 界面展示"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-10/6.jpg" width="80%" title="mediawiki 界面展示" /></a></p>
 
 <p>如果我们能将每天遇到的知识都转化文字记录那固然是好的，但事实上我们没有这样的精力。对于一些文档和大量的网页，需要有工具帮助我们保存并方便日后查找。其实我的要求也不高，就是必须可以添加标签，从个人经验来看，<strong>不加标签的资源只能成为你知识库里的垃圾</strong>。</p>
 
 <p>对于文档，我选择 iDocument Plus，界面如下</p>
 
-<p><a href="http://frank19900731.github.io/img/post/2014-10/7.jpg" class="img-up" title="iDocument Plus 界面展示"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-10/7.jpg" width="500" title="iDocument Plus 界面展示" /></a></p>
+<p><a href="http://frank19900731.github.io/img/post/2014-10/7.jpg" class="img-up" title="iDocument Plus 界面展示"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-10/7.jpg" width="80%" title="iDocument Plus 界面展示" /></a></p>
 
 <p>对于网页，我选择 Pocket，有好用的 Chrome Extension 和客户端，跨各类平台共享。</p>
 
 <p>此外还有代码片段需要管理，可以使用 Gistify 或者 Dash。有 Mac 下开发经验的人应该不用我介绍 Dash 有多牛逼，记得刚出这款软件的时候内购价格18元，现在在 App Store 卖20刀。这款软件整合了 150 多种编程语言的 API，还有丰富的 Stack Overflow 问答资源的离线版本，同时支持 <a href="https://xuelangzf.github.io/10-13-2014/html2dash.html">用户定制文档</a>。</p>
 
-<p><a href="http://frank19900731.github.io/img/post/2014-10/8.jpg" class="img-up" title="Dash 界面展示"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-10/8.jpg" width="500" title="Dash 界面展示" /></a></p>
+<p><a href="http://frank19900731.github.io/img/post/2014-10/8.jpg" class="img-up" title="Dash 界面展示"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-10/8.jpg" width="80%" title="Dash 界面展示" /></a></p>
 
 <h2 id="section-4">知识分享</h2>
 
@@ -288,7 +288,7 @@
 
 <p>Markdown 输入工具我采用的是 Byword，能够满足我这个软件外观控，以下是本文编辑界面的展示。</p>
 
-<p><a href="http://frank19900731.github.io/img/post/2014-10/9.jpg" class="img-up" title="Byword 界面展示"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-10/9.jpg" width="500" title="Byword 界面展示" /></a></p>
+<p><a href="http://frank19900731.github.io/img/post/2014-10/9.jpg" class="img-up" title="Byword 界面展示"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-10/9.jpg" width="80%" title="Byword 界面展示" /></a></p>
 
 <p>要强调的是，<strong>搭建博客什么的都不是什么难事，最难的就是坚持写作、坚持分享</strong>，立存此照，作为督促。</p>
 
@@ -312,23 +312,23 @@
 
 <p>知识学习</p>
 
-<p><a href="http://frank19900731.github.io/img/post/2014-10/5.png" class="img-up" title="Caffeinated"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2014-10/5.png" width="128" height="128" title="Caffeinated" /></a>
-<a href="http://frank19900731.github.io/img/post/2014-10/17.png" class="img-up" title="小酱油"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2014-10/17.png" width="128" height="128" title="小酱油" /></a></p>
+<p><a href="http://frank19900731.github.io/img/post/2014-10/5.png" class="img-up" title="Caffeinated"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2014-10/5.png" width="20%" title="Caffeinated" /></a>
+<a href="http://frank19900731.github.io/img/post/2014-10/17.png" class="img-up" title="小酱油"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2014-10/17.png" width="20%" title="小酱油" /></a></p>
 
 <p>知识保存</p>
 
-<p><a href="http://frank19900731.github.io/img/post/2014-10/7.png" class="img-up" title="Evernote"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2014-10/7.png" width="128" height="128" title="Evernote" /></a>
-<a href="http://frank19900731.github.io/img/post/2014-10/13.png" class="img-up" title="Ulysses"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2014-10/13.png" width="128" height="128" title="Ulysses" /></a>
-<a href="http://frank19900731.github.io/img/post/2014-10/16.png" class="img-up" title="MediaWiki"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2014-10/16.png" width="128" height="128" title="MediaWiki" /></a></p>
+<p><a href="http://frank19900731.github.io/img/post/2014-10/7.png" class="img-up" title="Evernote"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2014-10/7.png" width="20%" title="Evernote" /></a>
+<a href="http://frank19900731.github.io/img/post/2014-10/13.png" class="img-up" title="Ulysses"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2014-10/13.png" width="20%" title="Ulysses" /></a>
+<a href="http://frank19900731.github.io/img/post/2014-10/16.png" class="img-up" title="MediaWiki"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2014-10/16.png" width="20%" title="MediaWiki" /></a></p>
 
-<p><a href="http://frank19900731.github.io/img/post/2014-10/15.png" class="img-up" title="iDocument Plus"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2014-10/15.png" width="128" height="128" title="iDocument Plus" /></a>
-<a href="http://frank19900731.github.io/img/post/2014-10/6.png" class="img-up" title="Dash"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2014-10/6.png" width="128" height="128" title="Dash" /></a>
-<a href="http://frank19900731.github.io/img/post/2014-10/10.png" class="img-up" title="Pocket"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2014-10/10.png" width="128" height="128" title="Pocket" /></a></p>
+<p><a href="http://frank19900731.github.io/img/post/2014-10/15.png" class="img-up" title="iDocument Plus"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2014-10/15.png" width="20%" title="iDocument Plus" /></a>
+<a href="http://frank19900731.github.io/img/post/2014-10/6.png" class="img-up" title="Dash"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2014-10/6.png" width="20%" title="Dash" /></a>
+<a href="http://frank19900731.github.io/img/post/2014-10/10.png" class="img-up" title="Pocket"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2014-10/10.png" width="20%" title="Pocket" /></a></p>
 
 <p>知识分享</p>
 
-<p><a href="http://frank19900731.github.io/img/post/2014-10/4.png" class="img-up" title="Byword"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2014-10/4.png" width="128" height="128" title="Byword" /></a>
-<a href="http://frank19900731.github.io/img/post/2014-10/18.png" class="img-up" title="Octopress"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2014-10/18.png" width="128" height="128" title="Octopress" /></a></p>
+<p><a href="http://frank19900731.github.io/img/post/2014-10/4.png" class="img-up" title="Byword"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2014-10/4.png" width="20%" title="Byword" /></a>
+<a href="http://frank19900731.github.io/img/post/2014-10/18.png" class="img-up" title="Octopress"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2014-10/18.png" width="20%" title="Octopress" /></a></p>
 
 <p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2014/10/23/wo-de-zhi-shi-guan-li-jing-yan-yu-gong-ju-fen-xiang/">http://frank19900731.github.io/blog/2014/10/23/wo-de-zhi-shi-guan-li-jing-yan-yu-gong-ju-fen-xiang/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
 
@@ -344,10 +344,10 @@
     <description><![CDATA[
      <!-- excerpt start -->
 
-<p><a href="http://frank19900731.github.io/img/post/2014-10/2.png" class="img-up" title="OmniFocus"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2014-10/2.png" width="128" height="128" title="OmniFocus" /></a>
-<a href="http://frank19900731.github.io/img/post/2014-10/8.png" class="img-up" title="FocusMask"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2014-10/8.png" width="128" height="128" title="FocusMask" /></a>
-<a href="http://frank19900731.github.io/img/post/2014-10/12.png" class="img-up" title="Producteev"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2014-10/12.png" width="128" height="128" title="Producteev" /></a>
-<a href="http://frank19900731.github.io/img/post/2014-10/14.png" class="img-up" title="Wunderlist"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2014-10/14.png" width="128" height="128" title="Wunderlist" /></a></p>
+<p><a href="http://frank19900731.github.io/img/post/2014-10/2.png" class="img-up" title="OmniFocus"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2014-10/2.png" width="20%" title="OmniFocus" /></a>
+<a href="http://frank19900731.github.io/img/post/2014-10/8.png" class="img-up" title="FocusMask"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2014-10/8.png" width="20%" title="FocusMask" /></a>
+<a href="http://frank19900731.github.io/img/post/2014-10/12.png" class="img-up" title="Producteev"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2014-10/12.png" width="20%" title="Producteev" /></a>
+<a href="http://frank19900731.github.io/img/post/2014-10/14.png" class="img-up" title="Wunderlist"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2014-10/14.png" width="20%" title="Wunderlist" /></a></p>
 
 <!-- excerpt end -->
 
@@ -463,7 +463,7 @@
 
 <p>更多有关程序语言的种类与它们之间的程序关联请见 <a href="http://exploringdata.github.io/vis/programming-languages-influence-network/">编程语言关系图</a>，这是一件优美的数据可视化作品，托管于Github。</p>
 
-<p><a href="http://frank19900731.github.io/img/post/2014-10/1.png" class="img-up" title="程序语言关系图"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-10/1.png" width="549" height="384" title="程序语言关系图" /></a></p>
+<p><a href="http://frank19900731.github.io/img/post/2014-10/1.png" class="img-up" title="程序语言关系图"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-10/1.png" width="80%" title="程序语言关系图" /></a></p>
 
 <p>扯远了，举例说明与人类语言、思维相近的编程语言：</p>
 
@@ -783,7 +783,7 @@
 
 <blockquote><p>在CSDN/ITeye/cnblogs这种地方写技术博客确实比在人人上写技术博客好多了</p><p>但是你要知道，大牛们都是有自己的个人网站的</p><p>而且，一个共同点是，他们的网站都是自己写的html（没有css）并且界面十分难看</p><p>整个网站散发着一种“我这的文章都很牛所以界面什么的都不重要”的气质</p><p>例如这个 <a href="http://xahlee.org/index.html" target="_blank">http://xahlee.org/index.html</a></p></blockquote>
 
-<p><a href="http://frank19900731.github.io/img/post/2014-10/3.png" class="img-up" title="李杀网截屏"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-10/3.png" width="570" height="1088" title="李杀网截屏" /></a></p>
+<p><a href="http://frank19900731.github.io/img/post/2014-10/3.png" class="img-up" title="李杀网截屏"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-10/3.png" width="70%" title="李杀网截屏" /></a></p>
 
 <p>当然，用优美的外在包裹充实的内在，总还是更加让人赏心悦目的。</p>
 
