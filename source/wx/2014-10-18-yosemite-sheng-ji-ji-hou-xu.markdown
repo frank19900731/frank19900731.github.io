@@ -6,6 +6,7 @@ comments: false
 categories: [Mac 使用]
 tags: [Yosemite, Homebrew, codesign, 算号器]
 keywords: Yosemite, Homebrew, Bartender, Trim Enabler, Matlab, VMWare, MySQL, TextExpander, Totalfinder, codesign
+exclude_from_search: true
 pc_url: /blog/2014/10/18/yosemite-sheng-ji-ji-hou-xu/
 wx_url: /wx/2014-10-18-yosemite-sheng-ji-ji-hou-xu.html
 ---

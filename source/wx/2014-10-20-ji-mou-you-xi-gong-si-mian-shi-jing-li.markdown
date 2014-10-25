@@ -6,6 +6,7 @@ comments: false
 categories: [面试求职]
 tags: [面试, 游戏策划]
 keywords: 面试, 游戏策划
+exclude_from_search: true
 pc_url: /blog/2014/10/20/ji-mou-you-xi-gong-si-mian-shi-jing-li/
 wx_url: /wx/2014-10-20-ji-mou-you-xi-gong-si-mian-shi-jing-li.html
 ---

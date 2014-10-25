@@ -6,6 +6,7 @@ comments: false
 categories: [网页开发]
 tags: [octopress, kramdown syntax]
 keywords: octopress, kramdown syntax
+exclude_from_search: true
 pc_url: /blog/2014/08/24/wo-de-di-yi-pian-octopress-bo-ke/
 wx_url: /wx/2014-08-24-wo-de-di-yi-pian-octopress-bo-ke.html
 ---

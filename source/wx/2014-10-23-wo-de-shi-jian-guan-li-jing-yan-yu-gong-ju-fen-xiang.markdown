@@ -6,6 +6,7 @@ comments: false
 categories: [工作效率]
 tags: [效率, 时间管理]
 keywords: 效率, 时间管理, OmniFocus, FocusMask, Producteev, Wunderlist, PopClip, Eggscellent
+exclude_from_search: true
 pc_url: /blog/2014/10/23/wo-de-shi-jian-guan-li-jing-yan-yu-gong-ju-fen-xiang/
 wx_url: /wx/2014-10-23-wo-de-shi-jian-guan-li-jing-yan-yu-gong-ju-fen-xiang.html
 ---

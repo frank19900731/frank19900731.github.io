@@ -6,6 +6,7 @@ comments: false
 categories: [面试求职]
 tags: [飞维美地, Linux, SQL, 逻辑, 算法]
 keywords: 飞维美地, Linux, SQL, 逻辑, 算法
+exclude_from_search: true
 pc_url: /blog/2014/10/18/fei-wei-mei-di-bi-shi-hui-yi/
 wx_url: /wx/2014-10-18-fei-wei-mei-di-bi-shi-hui-yi.html
 ---

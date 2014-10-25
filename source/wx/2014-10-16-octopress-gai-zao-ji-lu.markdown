@@ -6,6 +6,7 @@ comments: false
 categories: [网页开发]
 tags: [octopress, 中文搜索, json, 分页, 中文字体]
 keywords: octopress, 中文搜索, json, 分页, 中文字体
+exclude_from_search: true
 pc_url: /blog/2014/10/16/octopress-gai-zao-ji-lu/
 wx_url: /wx/2014-10-16-octopress-gai-zao-ji-lu.html
 ---

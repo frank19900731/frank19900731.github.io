@@ -6,6 +6,7 @@ comments: false
 categories: [工作效率]
 tags: [代码开发, 文档整理, 数据可视化, 个人展示]
 keywords: git, shell, markdown, octopress, knitr, tpp, jmpress.js, shiny, d3, Adobe Muse, mordencv, processing, 效率
+exclude_from_search: true
 pc_url: /blog/2014/10/16/ti-gao-xiao-lu-yu-qing-qu-de-jiu-chong-cheng-xu-gong-ju-tui-jian/
 wx_url: /wx/2014-10-16-ti-gao-xiao-lu-yu-qing-qu-de-jiu-chong-cheng-xu-gong-ju-tui-jian.html
 ---

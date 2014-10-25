@@ -6,6 +6,7 @@ comments: false
 categories: [面试求职]
 tags: [IDG, 概率, 排列组合, 逻辑, 算法]
 keywords: [IDG, 概率, 排列组合, 逻辑, 算法]
+exclude_from_search: true
 pc_url: /blog/2014/10/19/idg-lian-he-zhao-pin-bi-shi-hui-yi/
 wx_url: /wx/2014-10-19-idg-lian-he-zhao-pin-bi-shi-hui-yi.html
 ---

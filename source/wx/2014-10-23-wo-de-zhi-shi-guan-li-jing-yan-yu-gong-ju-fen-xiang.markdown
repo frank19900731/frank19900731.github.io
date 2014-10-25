@@ -6,6 +6,7 @@ comments: false
 categories: [工作效率]
 tags: [效率, 知识管理]
 keywords: 效率, 知识管理, 田志刚, Evernote, Tower, Ulysses, Pocket, Gitbook, pandoc, iDocument, mediawiki, Byword, octopress, Dash, Gistify, Caffeinated, 鲜果阅读, 小酱油, 新浪微博, 浏览器收藏夹
+exclude_from_search: true
 pc_url: /blog/2014/10/23/wo-de-zhi-shi-guan-li-jing-yan-yu-gong-ju-fen-xiang/
 wx_url: /wx/2014-10-23-wo-de-zhi-shi-guan-li-jing-yan-yu-gong-ju-fen-xiang.html
 ---
