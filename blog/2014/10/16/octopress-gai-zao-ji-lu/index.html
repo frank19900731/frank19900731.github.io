@@ -8,13 +8,12 @@
 <head>
   <meta charset="utf-8">
   <!-- 标签页标题 -->
-  <title>【撰写中】Octopress 改造记录 - Blog of 太极儒</title>
+  <title>Octopress 改造记录 - Blog of 太极儒</title>
   <meta name="author" content="Frank Song">
   <!-- 定义description变量，如果有则用，没有则是正文，前150字 -->
   
-  <meta name="description" content=" Categories: 网页开发 【撰写中】Octopress 改造记录 Oct 16th, 2014 原文地址: http://frank19900731.github.io/blog/2014/10/16/octopress-gai-zao-ji-lu/ 作者 Frank Song&nbsp; 发布于 http://frank19900731.github.io&nbsp; 转载请注明 Tags: json, octopress, 中文字体, 中文搜索, 分页 &nbsp;&nbsp;&nbsp;&nbsp; 分享到： 新浪微博 腾讯微博 人人网 微信 豆瓣 更多 « 提高效率与情趣的九种程序工具推荐 Yosemite 升级及后续 » <!--
-Please enable JavaScript to view the comments powered by Disqus.
---> Commented Most This Month ">
+  <meta name="description" content="Categories: 网页开发 Octopress 改造记录 Oct 16th, 2014 目录 网上资源 特色工作 支持中文搜索 移动版阅读优化 其它 Octopress 安装不是难事，后期定制可真是慢功夫。以下分两部分介绍自己的定制过程，前一部分是网上资源，后一部分是自己的一点特色工作。 网上资源 安装方法、lunr.js 搜索、社交分享 页面主题选择 中英文加空格 链接在新标签页中打开 公益404页面 豆瓣收藏秀 添加标签云 插入代码块 启用 MathJax、Kramdown 替换、嵌入多说评论 加入文章版权 SEO 优化 Archive分页、Category分页、Tag分页等插件 特色工作 支持中文搜索 lunr.js 功能强大，但不支持中文搜索。其实原因在于没有使用中文分词器，只要对生成的 search.json 文件进行分词即可。用 Java 写了一个 小工具，主要做法是 读取 search.json 对中文内容进行分词 内容写回到 search.json 用法参见这个 脚本，大家可以右上角搜索一下试试。这种方式的问题在于分词分不出就搜索不出来。比如“蛋疼”，也许就查不到，不过这个小工具支持字典扩展。 移动版阅读优化
+想要推广博客，SEO 是一方面，利用社交媒体的分享能力也很关键，但尴尬的是很多主题对移动端支持不够好，需要重新定制 layout。本博客的移动访问入口 在此，供参考。另，CNZZ 的跟踪实时性更好，我的博客是 Google Analytics 和 CNZZ 并用的。 其它 使用 FancyBox 优化图片显示 改造 img 标签，使可以使用相对宽度（这样一来PC端和移动端的图片设置就一样了） 定制多说评论显示 窗口右侧添加临时目录 使用 dlmenu 整合访问入口 原文地址: http://frank19900731.github.io/blog/2014/10/16/octopress-gai-zao-ji-lu/ 作者 Frank Song&nbsp; 发布于 http://frank19900731.github.io&nbsp; 转载请注明 Tags: json, octopress, 中文字体, 中文搜索, 分页 &nbsp;&nbsp;&nbsp;&nbsp; 分享到： 新浪微博 腾讯微博 人人网 微信 豆瓣 更多 « &hellip;">
   <meta name="keywords" content="octopress, 中文搜索, json, 分页, 中文字体">
   <meta name="baidu-site-verification" content="7O78rNJCOH" />
   <meta name="360-site-verification" content="9ee6dda17557079b8855f9c8201b05bb" />
@@ -300,7 +299,7 @@ Please enable JavaScript to view the comments powered by Disqus.
   </div>
   
     <h1>
-      【撰写中】Octopress 改造记录
+      Octopress 改造记录
     </h1>
   
   <!-- 给出发布时间 -->
@@ -325,7 +324,74 @@ Please enable JavaScript to view the comments powered by Disqus.
 <!-- 如果在索引中 -->
 
   <!-- 直接展示出内容 -->
-  <section class="article-detail" style="margin-bottom: 20px;">
+  <section class="article-detail" style="margin-bottom: 20px;"><p><strong>目录</strong></p>
+
+<ul id="markdown-toc">
+  <li><a href="#section">网上资源</a></li>
+  <li><a href="#section-1">特色工作</a>    <ul>
+      <li><a href="#section-2">支持中文搜索</a></li>
+      <li><a href="#section-3">移动版阅读优化</a></li>
+      <li><a href="#section-4">其它</a></li>
+    </ul>
+  </li>
+</ul>
+
+<!-- excerpt start -->
+
+<p>Octopress 安装不是难事，后期定制可真是慢功夫。以下分两部分介绍自己的定制过程，前一部分是网上资源，后一部分是自己的一点特色工作。</p>
+
+<h2 id="section">网上资源</h2>
+<ul>
+  <li><a href="http://wangmuy.github.io/blog/2013/09-01-octopress-setup.html">安装方法、lunr.js 搜索、社交分享</a></li>
+  <li><a href="https://github.com/imathis/octopress/wiki/3rd-Party-Octopress-Themes">页面主题选择</a></li>
+  <li><a href="http://xoyo.name/2012/04/auto-spacing-for-octopress/">中英文加空格</a></li>
+  <li><a href="http://www.blogjava.net/lishunli/archive/2013/01/20/394478.html">链接在新标签页中打开</a></li>
+  <li><a href="http://www.qq.com/404/">公益404页面</a></li>
+  <li><a href="http://www.douban.com/service/badgemakerjs">豆瓣收藏秀</a></li>
+  <li><a href="http://codemacro.com/2012/07/18/add-tag-to-octopress/">添加标签云</a></li>
+  <li><a href="http://octopress.org/docs/blogging/code/">插入代码块</a></li>
+  <li><a href="http://cn.soulmachine.me/blog/20130402/">启用 MathJax、Kramdown 替换、嵌入多说评论</a></li>
+  <li><a href="http://codemacro.com/2012/07/26/post-footer-plugin-for-octopress/">加入文章版权</a></li>
+  <li><a href="http://blog.csdn.net/lcliliil/article/details/13727927">SEO 优化</a></li>
+  <li><a href="https://github.com/frank19900731/frank19900731.github.io/tree/source/plugins">Archive分页、Category分页、Tag分页等插件</a></li>
+</ul>
+
+<!-- excerpt end -->
+
+<h2 id="section-1">特色工作</h2>
+
+<h3 id="section-2">支持中文搜索</h3>
+
+<p>lunr.js 功能强大，但不支持中文搜索。其实原因在于没有使用中文分词器，只要对生成的 search.json 文件进行分词即可。用 Java 写了一个 <a href="https://github.com/frank19900731/lunr-Chinese">小工具</a>，主要做法是</p>
+
+<ul>
+  <li>读取 search.json</li>
+  <li>对中文内容进行分词</li>
+  <li>内容写回到 search.json</li>
+</ul>
+
+<p>用法参见这个 <a href="https://github.com/frank19900731/frank19900731.github.io/blob/source/lunr-parse.sh">脚本</a>，大家可以右上角搜索一下试试。这种方式的问题在于分词分不出就搜索不出来。比如“蛋疼”，也许就查不到，不过这个小工具支持字典扩展。</p>
+
+<h3 id="section-3">移动版阅读优化</h3>
+<p>想要推广博客，SEO 是一方面，利用社交媒体的分享能力也很关键，但尴尬的是很多主题对移动端支持不够好，需要重新定制 layout。本博客的移动访问入口 <a href="http://frank19900731.github.io/wx/archives/">在此</a>，供参考。另，CNZZ 的跟踪实时性更好，我的博客是 Google Analytics 和 CNZZ 并用的。 </p>
+
+<h3 id="section-4">其它</h3>
+
+<ul>
+  <li>使用 <a href="http://fancyapps.com/fancybox/">FancyBox</a> 优化图片显示</li>
+  <li><a href="https://github.com/frank19900731/frank19900731.github.io/blob/source/plugins/image_tag.rb">改造 img 标签</a>，使可以使用相对宽度（这样一来PC端和移动端的图片设置就一样了）</li>
+  <li><a href="http://www.shejidaren.com/use-css3-to-create-a-beautiful-comment-ui.html">定制多说评论显示</a></li>
+  <li>窗口右侧添加临时目录</li>
+</ul>
+
+<p><a href="/img/post/2014-10/10.jpg" class="img-up" title="临时目录"><img class="imgcenter" src="/img/post/2014-10/10.jpg" width="80%" title="临时目录" /></a></p>
+
+<ul>
+  <li>使用 dlmenu 整合访问入口</li>
+</ul>
+
+<p><a href="/img/post/2014-10/11.jpg" class="img-up" title="dlmenu"><img class="imgcenter" src="/img/post/2014-10/11.jpg" width="35%" title="dlmenu" /></a></p>
+
 <p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2014/10/16/octopress-gai-zao-ji-lu/">http://frank19900731.github.io/blog/2014/10/16/octopress-gai-zao-ji-lu/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
 </section>
 
@@ -378,7 +444,7 @@ Please enable JavaScript to view the comments powered by Disqus.
 -->
 
 <!-- 多说评论框 start -->
-<div class="ds-thread" data-thread-key="/blog/2014/10/16/octopress-gai-zao-ji-lu/" data-title="【撰写中】Octopress 改造记录" data-url="http://frank19900731.github.io/blog/2014/10/16/octopress-gai-zao-ji-lu/" style="margin-top: 40px;"></div>
+<div class="ds-thread" data-thread-key="/blog/2014/10/16/octopress-gai-zao-ji-lu/" data-title="Octopress 改造记录" data-url="http://frank19900731.github.io/blog/2014/10/16/octopress-gai-zao-ji-lu/" style="margin-top: 40px;"></div>
 <!-- 多说评论框 end -->
 
 
