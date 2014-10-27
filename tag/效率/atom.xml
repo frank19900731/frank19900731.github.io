@@ -1,5 +1,186 @@
 
 <item>
+    <title>我的时间管理经验与工具分享</title>
+    <link>http://realjenius.com/blog/2014/10/27/wo-de-shi-jian-guan-li-jing-yan-yu-gong-ju-fen-xiang/</link>
+    <author>R.J. Lorimer</author>
+    <pubDate>2014-10-27T10:01:58+08:00</pubDate>
+    <guid>http://realjenius.com/blog/2014/10/27/wo-de-shi-jian-guan-li-jing-yan-yu-gong-ju-fen-xiang/</guid>
+    <description><![CDATA[
+     <p><strong>目录</strong></p>
+
+<ul id="markdown-toc">
+  <li><a href="#section">引子</a></li>
+  <li><a href="#section-1">第一式：安排好你知道将要发生的</a></li>
+  <li><a href="#section-2">第二式：建立消息队列</a></li>
+  <li><a href="#section-3">第三式：记录你的灵感</a></li>
+  <li><a href="#section-4">第四式：建立等待队列</a></li>
+  <li><a href="#section-5">第五式：建立拖延事件队列</a></li>
+  <li><a href="#section-6">第六式：创建富消息</a></li>
+  <li><a href="#section-7">第七式：日常任务定量化</a></li>
+  <li><a href="#section-8">时间管理的其它贴士</a></li>
+  <li><a href="#section-9">总结</a></li>
+  <li><a href="#section-10">附录</a></li>
+</ul>
+
+<!-- excerpt start -->
+
+<h2 id="section">引子</h2>
+
+<p>前一段时间写的<a href="http://frank19900731.github.io/blog/2014/10/23/wo-de-zhi-shi-guan-li-jing-yan-yu-gong-ju-fen-xiang/">《我的知识管理经验与工具分享》</a>（<a href="http://frank19900731.github.io/wx/2014-10-23-wo-de-zhi-shi-guan-li-jing-yan-yu-gong-ju-fen-xiang.html">移动版</a>）一文发布后得到了不错的反响，自己倍受鼓舞，以至于这两天自己做着做着事情都会不自主的笑出来……特别是分享到微信朋友圈后，有众位同学朋友的热心支持，才使得拙作得以被展现在更多人的面前。不得不承认，社交网络给知识分享提供了太多的可能，除此以外自己觉得还有两点很关键</p>
+
+<ul>
+  <li><code>写什么</code> 分享生活工作中所思所想，不要无病呻吟、无信息量；</li>
+  <li><code>怎么写</code> 尽量还原最真实的想法（人们在回忆时容易把时隔已久的困难淡化甚至扭转过来，也就是用结果重绘过程，姑且称为自我粉饰倾向吧）。</li>
+</ul>
+
+<p>我会始终坚守这两点原则进行博客写作。自己也不是什么成功人士，只是想记录分享一下自身在人生动荡的年代（从校园到社会）里头脑中的真实想法，<strong>欢迎大家提出各种意见建议</strong>。</p>
+
+<p>一通感想之后就谈一谈自己关于时间管理的一点想法，<strong>共七式，附赠心法</strong>。对，<strong>七</strong>确实是我凑出来的，为了便于理解就得条条款款系统化嘛。我也不是学院派，没读过时间管理的书籍，都是在实践中发现问题再想解决方案的。</p>
+
+<!-- excerpt end -->
+
+<h2 id="section-1">第一式：安排好你知道将要发生的</h2>
+
+<p>组会每周一次，笔试/面试安排在X月X日，大牛讲座在X月X日……这些事项一般都可以提前至少一天知道，将它们详细记录在电子日历（Google Calender）或者 GTD（Getting Things Done） 工具中，包括起止时间、项目归属、地点、要见的人、要带的东西（2B铅笔、准考证之类的）等。所使用的工具最好是PC端和移动端可同步的，前一天晚上录入事项，之后在移动端查看、标记完成。</p>
+
+<p>GTD 源于一本书 <a href="http://book.douban.com/subject/1316569/">Getting Things Done: The Art of Stress-Free Productivity</a>。没看过原书，不过从豆瓣的这篇 <a href="http://book.douban.com/review/1930909/">GTD 心法</a> 介绍来看，有不少理念我们都在平时有意无意的实践着。大家公认的一款与原书理念匹配的 GTD 软件是 OmniFocus，入门稍复杂，只能用于苹果系列产品。大家使用自己趁手的工具就成，我的体会是再牛逼的工具也无法解决你所有的时间管理需求。</p>
+
+<p>另，推荐一个非常知名的时间管理方面的博客——<a href="http://www.mifengtd.cn/">褪墨</a>，虽然我平时不怎么看……原因是我觉得工具和方法都是给人服务的，痴迷于工具和方法的研究有点买椟还珠的意味，把握一个度就好。</p>
+
+<h2 id="section-2">第二式：建立消息队列</h2>
+
+<p>有些事情你只有当天才知道将要发生，区别于 GTD 工具中记录的你提早知道的<strong>离线数据</strong>，我们可以定制一个消息队列，存入当天得到的<strong>在线数据</strong>，用这两套数据指导当天的工作。消息队列的主要考量因素是便捷性，录入一定要迅速，当然，也有跨平台同步的需求。我选择轻量级的 To Do List 工具中的 Wunderlist，主要利用到其创建任务列表、创建任务和给任务加星标的功能。</p>
+
+<p>我把<strong>在线数据</strong>分为<code>紧急确定</code>、<code>普通未定</code>两类：</p>
+
+<ul>
+  <li><code>紧急确定</code> 如发现牙膏快用完了得买去或老板通知你下周的组会你来讲，我会仅向消息队列中记录事项名称，必要时再加入时间地点等信息，当天必须完成的事项加星标以作区别。当我遇到空闲，或者到了睡前要总结并安排今后工作的时候，我就会<strong>将积累到消息队列里的任务转移到 GTD 工具中</strong>，录入尽量详细的信息。可能有两个问题
+    <ul>
+      <li><code>都转移么？</code> 我觉得买牙膏就不录入了吧，消息队列侧重紧急，而 GTD 侧重重要，<a href="http://baike.baidu.com/view/6303330.htm?fr=aladdin">紧急和重要的四象限分析</a> 已是老生常谈；</li>
+      <li><code>在消息队列里已经完成的任务还要转移么？</code> 我觉得还是很有必要的，在 GTD 工具中完整地、原生态地保留工作记录，方便回顾总结，特别是领导让你写个报告什么的，可好使了。一个经典场景是，<strong>当我回顾这一周的工作，我印象中已经发生了大半个月的事情其实就发生在本周二</strong>，记忆偏差实在是大，不记不行啊。每天坚持写工作日记可能耽误时间、不实用，但什么都不记也不合适，还是要找到一个<strong>前进</strong>和<strong>存档</strong>的平衡点。</li>
+    </ul>
+  </li>
+</ul>
+
+<div></div>
+
+<ul>
+  <li><code>普通未定</code> 比如你在碎片化阅读的过程中看到一项自己感兴趣的技术或一本众人称赞的书，让你立刻就去学习阅读有点不太可能，但仅仅将他们记录到笔记中（包括收藏啦，@我的印象笔记啦，复制粘贴啦）或者只记到脑子里，那没过两天就忘了这茬儿了，不要低估自己喜新厌旧的能力哦。我的做法是在 Wunderlist 里建一个<strong>慢消息队列，冷处理但不是不处理</strong>。队列中的每一项就是个技术名或者书名之类的。这个列表的事项是不急于转移到 GTD 工具里的，因为随便挑其中一个出来可能都是项目量级而非任务量级，甚至需要一点调研规划。比如你打算学学 hadoop 框架，得先找点儿资料、论坛什么的看看，大致掌握它的学习路径然后量化到你的 GTD 工具里。可能的问题是
+    <ul>
+      <li><code>记在慢消息队列和记笔记里不还是一样么？</code> 嗯，也差不多，如果你在笔记里专辟一篇记录这些东西的话。重点在于把它们聚在一起，而不是分散记录。</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="section-3">第三式：记录你的灵感</h2>
+
+<p>灵感这词儿有点夸大，不是牛顿被苹果砸了产生的那种，只是突然想明白了一个问题或者产生了一个自认为有价值的想法。比如这篇文章不少内容就是站地铁里发呆的时候寻思出来的。</p>
+
+<p>如果你的灵感比较简短，那 Wunderlist 还是一个不错的选择，创建一个任务列表专门记录。一定要想到了就尽快掏手机记，不然一会儿的状态就是，我刚想的是什么来着？</p>
+
+<p>如果你的灵感来的跟泄洪一样，那就赶紧用录音软件记录吧，当然如果是搞设计的，需要的就是绘图软件。多媒体笔记软件挺多的，印象中还有专门以记录灵感为卖点的。等到有时间整理灵感的时候，就有两种可能</p>
+
+<ul>
+  <li>删了，当我没说过；</li>
+  <li><strong>转换成任务，实现它！</strong></li>
+</ul>
+
+<h2 id="section-4">第四式：建立等待队列</h2>
+
+<p>等待队列想要解决的问题是，有些任务虽然我标记完成，但我仍旧需要跟踪反馈，比如我申请了XX公司的职位，但该公司要过好久才能给我确认通知及笔试通知。我的做法是原任务标记完成后，如果该任务还有待后续确认，那就在等待队列（也是在 Wunderlist 里建）里添加一条。<strong>等不到就催一催，等到了就结束</strong>。码农朋友们可能笑了，这个想法确实是受 <a href="http://baike.baidu.com/view/185289.htm?fr=aladdin">异步调用</a> 的启发。</p>
+
+<p>还是那句话，没什么特别之处，只要把所有需要等待的任务放在一起，效果就是<strong>脑子不乱了，焦虑感也减轻了，刷起新任务更有劲儿了</strong>。</p>
+
+<h2 id="section-5">第五式：建立拖延事件队列</h2>
+
+<p>有时间管理工具使用经验的童鞋可能都有过类似的经历，就是有一些顽固的任务，你总倾向于把它从今天拖到明天，从这周拖到下周，依次类拖。大家都爱打任务列表里的小怪，不想打大 boss。这是一个<strong>世界性难题</strong>，我们会因此变得情绪焦虑、产生挫败感。</p>
+
+<p>我的方法，按照故事的尿性，相信大家都能猜得出来，就是把这些顽固的任务聚在一起……剔除那些不重要的，因为拖延也可能是分配任务不合理导致的。剩下的要像狠心老板压榨员工一样强迫自己逐渐完成，人们不总是喜欢说最大的对手其是自己嘛。</p>
+
+<p>关于拖延事件的解决，自己也还在探索中，方法还包括在 <a href="#section-7">第七式：日常任务定量化</a> 规定<strong>每日完成拖延事件队列中的一条</strong>。那么你的问题来了，<strong>拖延事件队列中还会有一些压箱底的拖延事件怎么办</strong>？</p>
+
+<p>我也没什么好办法，一方面自己不是拖延症研究专家，相信也没有哪个专家敢说自己有完美的解决方案，另一方面，还是很看主观因素的，我就时常用大锤的 <code>走向人生巅峰</code> 这句话激励自己，拖延这副熊样是走不到巅峰的。实在不行，你就采用随机化的方法，通过掷骰子来选择做先解决哪个拖延事件吧。</p>
+
+<h2 id="section-6">第六式：创建富消息</h2>
+
+<p>有些任务光光记录时间、地点、人物是不够滴，还可能会包含附加资源，比如填写就业推荐表的任务需要表，申请某公司职位的任务需要网址。我期望任务的资源就近安放，点选任务就会出现。</p>
+
+<p>前面提到的 OmniFocus 可以给任务添加笔记，但无法添加附件，而 Wunderlist 则通过评论的方式实现了这一功能。Wunderlist 起初也是没有这项功能的，更早的时候我选择用 Producteev 建立富消息，这也是一款功能和界面都让人舒服的软件，收费版和免费版对于我们小用户来说基本无差。</p>
+
+<p>我想举例说明一下富消息的使用。</p>
+
+<p>算法当中需要调参数，于是我们会运行多组程序对比结果。普通做法是将每次运行的结果记录到笔记或Excel里，容易记混乱，导致抓狂；高档做法是让程序生成一个总的报表，需要额外编程费时间。富消息可以为我们提供一个折中的解决方案，方法是你创建一个任务，任务名是程序id、参数与启动时间之类的，评论里可以记录运行结束的时间、运行结果、log文件、效果截图等等。妥妥儿的不会乱，还便于查看对比。需要补充的一点是，因为可能云同步，所以机密的东西就不要乱传了。</p>
+
+<p>我估计软件设计者当初也没太想到这种用法，嘿嘿。</p>
+
+<h2 id="section-7">第七式：日常任务定量化</h2>
+
+<p>自己的日常任务包括，逛逛技术博客收藏点儿文章、关注周边的讲座信息、整理时间规划、完成知识输出等。既然每天都要做，那还是放在一起列成单子好一些，每天标定完成度。具体有三点好处</p>
+
+<ul>
+  <li>目标明确，是<strong>你知道要做，而不是想到了再做</strong>；</li>
+  <li>积累属于自己的“大数据”，监控自己的工作状态；</li>
+  <li>有助于培养长期习惯。</li>
+</ul>
+
+<p>这个想法很普通，不过真正促成我做成这件事是因为我玩了一款网页游戏。这类网页游戏都会有日常任务，比如打某个副本5次啦，招募一个新武将啦之类的，完成后给你相应的奖励。我边玩边想，你这家伙对游戏里的任务这么上心，每天都是高完成率，就不能自己给自己建立一个类似的任务列表，每天保质保量的完成么。于是我给自己建了第一张清单，分专业学习、身体健康、情绪控制、时间规划、人际拓展、新事物接触六大板块，每类有子项，总计100分。</p>
+
+<p><strong>清单可以打印出来，也可以做成可勾选的 Excel 文件的形式</strong>。现在这种清单方式是我主要的<strong>日回顾</strong>手段。</p>
+
+<h2 id="section-8">时间管理的其它贴士</h2>
+
+<p>除了以上七式，还有几条感触想与大家分享。</p>
+
+<ul>
+  <li><code>注意时间的权重不均匀性</code> 典型的例子是 <a href="http://book.douban.com/subject/1083762/">《人类群星闪耀时》</a> 这本书里的故事，当然，普通人很难经历这些啦。我们身边的一个例子是，<strong>平时可以打游戏，考前必须抱佛脚，考试就那么几天，刷——，说没就没啊</strong>。</li>
+  <li><code>记录周报、月报</code> 暑假里养成了记周报、月报的习惯，作用不仅仅是梳理工作，也让阶段性规划管理成为可能。平时，任务创建大多是被动的（别人口述的、邮件里通知的等等）、预告式的，而在阶段性规划中我们可以主动为下周或者下个月制定发展计划与侧重点，比如把对 hadoop 的学习穿插在下月日程中，月末总结验收。</li>
+  <li><code>注意运用纸笔</code> 大部分（不敢说得太绝对呀）效率管理工具都是纸笔的延伸，在有些问题上，纸笔或许就是最高效的解决方案。</li>
+</ul>
+
+<h2 id="section-9">总结</h2>
+
+<p>本文总结了时间管理七式，分别是</p>
+
+<ul>
+  <li>第一式：安排好你知道将要发生的</li>
+  <li>第二式：建立消息队列</li>
+  <li>第三式：记录你的灵感</li>
+  <li>第四式：建立等待队列</li>
+  <li>第五式：建立拖延事件队列</li>
+  <li>第六式：创建富消息</li>
+  <li>第七式：日常任务定量化</li>
+</ul>
+
+<p>有招式还要有心法口诀，那就是</p>
+
+<ul>
+  <li>遇到问题不抱怨，抽象出问题的本质，思考解决问题的手段；</li>
+  <li>把相似的问题集中起来，合力解决；</li>
+  <li>多给自己提需求，不要安于现状。</li>
+</ul>
+
+<p>阅读本文的亲，</p>
+
+<p>如果你正在做类似的事情，那我很高兴自己的想法得到了印证；</p>
+
+<p>如果对你产生了一点启发，我也很高兴自己对他人起到帮助作用；</p>
+
+<p>如果你觉得自己有更好的办法，请不吝赐教，乐意为你传播你的想法~</p>
+
+<h2 id="section-10">附录</h2>
+
+<p>本文提到的软件图标合集</p>
+
+<p><a href="http://frank19900731.github.io/img/post/2014-10/2.png" class="img-up" title="OmniFocus"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2014-10/2.png" width="20%" title="OmniFocus" /></a>
+<a href="http://frank19900731.github.io/img/post/2014-10/14.png" class="img-up" title="Wunderlist"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2014-10/14.png" width="20%" title="Wunderlist" /></a>
+<a href="http://frank19900731.github.io/img/post/2014-10/12.png" class="img-up" title="Producteev"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2014-10/12.png" width="20%" title="Producteev" /></a></p>
+
+<p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2014/10/27/wo-de-shi-jian-guan-li-jing-yan-yu-gong-ju-fen-xiang/">http://frank19900731.github.io/blog/2014/10/27/wo-de-shi-jian-guan-li-jing-yan-yu-gong-ju-fen-xiang/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
+
+  ]]></description>
+</item>
+
+<item>
     <title>我的知识管理经验与工具分享</title>
     <link>http://realjenius.com/blog/2014/10/23/wo-de-zhi-shi-guan-li-jing-yan-yu-gong-ju-fen-xiang/</link>
     <author>R.J. Lorimer</author>
@@ -331,27 +512,6 @@
 <a href="http://frank19900731.github.io/img/post/2014-10/18.png" class="img-up" title="Octopress"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2014-10/18.png" width="20%" title="Octopress" /></a></p>
 
 <p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2014/10/23/wo-de-zhi-shi-guan-li-jing-yan-yu-gong-ju-fen-xiang/">http://frank19900731.github.io/blog/2014/10/23/wo-de-zhi-shi-guan-li-jing-yan-yu-gong-ju-fen-xiang/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
-
-  ]]></description>
-</item>
-
-<item>
-    <title>【撰写中】我的时间管理经验与工具分享</title>
-    <link>http://realjenius.com/blog/2014/10/23/wo-de-shi-jian-guan-li-jing-yan-yu-gong-ju-fen-xiang/</link>
-    <author>R.J. Lorimer</author>
-    <pubDate>2014-10-23T10:01:58+08:00</pubDate>
-    <guid>http://realjenius.com/blog/2014/10/23/wo-de-shi-jian-guan-li-jing-yan-yu-gong-ju-fen-xiang/</guid>
-    <description><![CDATA[
-     <!-- excerpt start -->
-
-<p><a href="http://frank19900731.github.io/img/post/2014-10/2.png" class="img-up" title="OmniFocus"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2014-10/2.png" width="20%" title="OmniFocus" /></a>
-<a href="http://frank19900731.github.io/img/post/2014-10/8.png" class="img-up" title="FocusMask"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2014-10/8.png" width="20%" title="FocusMask" /></a>
-<a href="http://frank19900731.github.io/img/post/2014-10/12.png" class="img-up" title="Producteev"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2014-10/12.png" width="20%" title="Producteev" /></a>
-<a href="http://frank19900731.github.io/img/post/2014-10/14.png" class="img-up" title="Wunderlist"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2014-10/14.png" width="20%" title="Wunderlist" /></a></p>
-
-<!-- excerpt end -->
-
-<p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2014/10/23/wo-de-shi-jian-guan-li-jing-yan-yu-gong-ju-fen-xiang/">http://frank19900731.github.io/blog/2014/10/23/wo-de-shi-jian-guan-li-jing-yan-yu-gong-ju-fen-xiang/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
 
   ]]></description>
 </item>
