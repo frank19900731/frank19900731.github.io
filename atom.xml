@@ -4,7 +4,7 @@
   <title><![CDATA[Blog of 太极儒]]></title>
   <link href="http://frank19900731.github.io/atom.xml" rel="self"/>
   <link href="http://frank19900731.github.io/"/>
-  <updated>2014-11-06T17:57:40+08:00</updated>
+  <updated>2014-11-06T18:54:09+08:00</updated>
   <id>http://frank19900731.github.io/</id>
   <author>
     <name><![CDATA[Frank Song]]></name>
@@ -128,7 +128,7 @@
   </li>
   <li>用过哪些框架/算法包？
     <ul>
-      <li>主流的分布式框架如 Hadoop，Spark，Graphlab，Parameter Server 等择一尝试了解；</li>
+      <li>主流的分布式框架如 Hadoop，Spark，Graphlab，Parameter Server 等择一或多使用了解；</li>
       <li>通用算法包，如 mahout，scikit，weka 等；</li>
       <li>专用算法包，如 opencv，theano，torch7，ICTCLAS 等。</li>
     </ul>
