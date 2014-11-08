@@ -159,6 +159,10 @@ $$\int { \frac { { Y }_{ k }^{ 2 } }{ \sum _{ i=1 }^{ n }{ { Y }_{ i }^{ 2 } }  
 
 如果随机向量在球面上是均匀分布的那我们的讨论也就停止了，不过事实并非如此。二维情况，考察单位圆周上的随机向量，斜率的分布（两个正态分布的均值为0时，它们的 [商是柯西分布](http://mathworld.wolfram.com/NormalRatioDistribution.html) ）是不均匀的。在这种不均匀的情况下，想要得到积分值不变的结论好像没有那么直观。受 $${ \left( 0,\quad 0,\quad \dots \quad 1 \right)  }^{ T }$$ 的启发，我想到一个笨办法，还是用到轮换对称性。我们只要**找到值相等的一些表达式，让他们相加等于一个常数即可**。
 
+<span style="color: red;">更正：“不均匀”的说法是有问题的，这个不均匀是相对于斜率的不均匀，对于角度而言是均匀的，可以将柯西分布里的比值变量 $$u$$ 替换为角度 $$\theta $$，由下面的表达式知是均匀分布，所以只需要计算 $${ \left( 0,\quad 0,\quad \dots \quad 1 \right)  }^{ T }$$ 一种情况就可以。</span>
+
+$$\int _{ -\infty  }^{ +\infty  }{ \frac { 1 }{ \pi \left( 1+{ u }^{ 2 } \right)  } du } =\int _{ -\frac { \pi  }{ 2 }  }^{ \frac { \pi  }{ 2 }  }{ \frac { 1 }{ \pi \left( 1+\tan ^{ 2 }{ \theta  }  \right)  } \frac { d\theta  }{ \cos ^{ 2 }{ \theta  }  }  } =\int _{ -\frac { \pi  }{ 2 }  }^{ \frac { \pi  }{ 2 }  }{ \frac { d\theta  }{ \pi  }  } $$
+
 轮换对称性分两步，首先是**系数轮换**，其次是**符号轮换**，以 4 维情况为例，假设固定向量为
 
 $${ \left( \frac { 1 }{ \sqrt { 24 }  } ,\quad \frac { 1 }{ \sqrt { 8 }  } ,\quad \frac { 1 }{ \sqrt { 3 }  } ,\quad \frac { 1 }{ \sqrt { 2 }  }  \right)  }^{ T }$$
@@ -262,3 +266,10 @@ avar = var(array);
 - 多关注 [Matrix67](http://www.matrix67.com/blog/) 上的题目分享。
 
 继 `机器学习、大数据问题`、`智力题`，接下来的博文还会陆续分享 `编程语言题` 和 `数据结构与算法题`，敬请期待。
+
+访问入口：
+
+- [机器学习、大数据问题](/wx/2014-11-06-mian-shi-jing-yan-zhi-ji-qi-xue-xi-da-shu-ju-wen-ti.html)
+- [智力题](/wx/2014-11-07-mian-shi-jing-yan-fen-xiang-zhi-zhi-li-ti.html)
+- 数据结构与算法题
+- 编程语言题

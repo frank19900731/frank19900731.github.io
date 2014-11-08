@@ -1,6 +1,6 @@
 ---
 layout: wx-default
-title: "面试经验之机器学习、大数据问题"
+title: "面试经验分享之机器学习、大数据问题"
 date: 2014-11-06 14:38:33 +0800
 comments: false
 categories: [面试求职]
@@ -128,3 +128,10 @@ __目录__
 最后，希望自己的求职季经验总结能给大家带来有益的启发。
 
 继 `机器学习、大数据问题`，接下来的博文还会陆续分享 `智力题`、`编程语言题` 和 `数据结构与算法题`，敬请期待。
+
+访问入口：
+
+- [机器学习、大数据问题](/wx/2014-11-06-mian-shi-jing-yan-zhi-ji-qi-xue-xi-da-shu-ju-wen-ti.html)
+- [智力题](/wx/2014-11-07-mian-shi-jing-yan-fen-xiang-zhi-zhi-li-ti.html)
+- 数据结构与算法题
+- 编程语言题
