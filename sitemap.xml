@@ -68,7 +68,7 @@
         <loc>
             http://frank19900731.github.io/blog/2014/11/07/mian-shi-jing-yan-fen-xiang-zhi-zhi-li-ti/
         </loc>
-        <lastmod>2014-11-08T11:08:05+08:00</lastmod>
+        <lastmod>2014-11-08T11:12:46+08:00</lastmod>
     </url>
     <url>
         <loc>http://frank19900731.github.io/404.html</loc>
@@ -80,7 +80,7 @@
     </url>
     <url>
         <loc>http://frank19900731.github.io/archives/</loc>
-        <lastmod>2014-11-08T11:08:05+08:00</lastmod>
+        <lastmod>2014-11-08T11:12:46+08:00</lastmod>
     </url>
     <url>
         <loc>http://frank19900731.github.io/assets/bootstrap/docs/about.html</loc>
@@ -104,7 +104,7 @@
     </url>
     <url>
         <loc>http://frank19900731.github.io/assets/bootstrap/docs/</loc>
-        <lastmod>2014-11-08T11:08:05+08:00</lastmod>
+        <lastmod>2014-11-08T11:12:46+08:00</lastmod>
     </url>
     <url>
         <loc>http://frank19900731.github.io/assets/bootstrap/docs/javascript.html</loc>
@@ -116,15 +116,15 @@
     </url>
     <url>
         <loc>http://frank19900731.github.io/blog/categories/</loc>
-        <lastmod>2014-11-08T11:08:05+08:00</lastmod>
+        <lastmod>2014-11-08T11:12:46+08:00</lastmod>
     </url>
     <url>
         <loc>http://frank19900731.github.io/blog/</loc>
-        <lastmod>2014-11-08T11:08:05+08:00</lastmod>
+        <lastmod>2014-11-08T11:12:46+08:00</lastmod>
     </url>
     <url>
         <loc>http://frank19900731.github.io/blog/tags/</loc>
-        <lastmod>2014-11-08T11:08:05+08:00</lastmod>
+        <lastmod>2014-11-08T11:12:46+08:00</lastmod>
     </url>
     <url>
         <loc>http://frank19900731.github.io/booklist/</loc>
@@ -136,7 +136,7 @@
     </url>
     <url>
         <loc>http://frank19900731.github.io/</loc>
-        <lastmod>2014-11-08T11:08:05+08:00</lastmod>
+        <lastmod>2014-11-08T11:12:46+08:00</lastmod>
     </url>
     <url>
         <loc>http://frank19900731.github.io/movielist/</loc>
@@ -223,11 +223,17 @@
         <lastmod>2014-11-06T18:53:58+08:00</lastmod>
     </url>
     <url>
+        <loc>
+            http://frank19900731.github.io/wx/2014-11-07-mian-shi-jing-yan-fen-xiang-zhi-zhi-li-ti.html
+        </loc>
+        <lastmod>2014-11-08T11:13:47+08:00</lastmod>
+    </url>
+    <url>
         <loc>http://frank19900731.github.io/wx/archives/</loc>
-        <lastmod>2014-11-08T11:08:05+08:00</lastmod>
+        <lastmod>2014-11-08T11:12:46+08:00</lastmod>
     </url>
     <url>
         <loc>http://frank19900731.github.io/archives//</loc>
-        <lastmod>2014-11-08T11:08:05+08:00</lastmod>
+        <lastmod>2014-11-08T11:12:46+08:00</lastmod>
     </url>
 </urlset>
