@@ -4,7 +4,7 @@
   <title><![CDATA[Blog of 太极儒]]></title>
   <link href="http://frank19900731.github.io/atom.xml" rel="self"/>
   <link href="http://frank19900731.github.io/"/>
-  <updated>2014-11-08T16:26:53+08:00</updated>
+  <updated>2014-11-08T16:42:45+08:00</updated>
   <id>http://frank19900731.github.io/</id>
   <author>
     <name><![CDATA[Frank Song]]></name>
@@ -183,9 +183,13 @@ Var\left( r \right)  &= E{ \left( r-E\left( r \right)  \right)  }^{ 2 } \\
 
 <p>如果随机向量在球面上是均匀分布的那我们的讨论也就停止了，不过事实并非如此。二维情况，考察单位圆周上的随机向量，斜率的分布（两个正态分布的均值为0时，它们的 <a href="http://mathworld.wolfram.com/NormalRatioDistribution.html">商是柯西分布</a> ）是不均匀的。在这种不均匀的情况下，想要得到积分值不变的结论好像没有那么直观。受 <script type="math/tex">{ \left( 0,\quad 0,\quad \dots \quad 1 \right)  }^{ T }</script> 的启发，我想到一个笨办法，还是用到轮换对称性。我们只要<strong>找到值相等的一些表达式，让他们相加等于一个常数即可</strong>。</p>
 
-<p><span style="color: red;">更正：“不均匀”的说法是有问题的，这个不均匀是相对于斜率的不均匀，对于角度而言是均匀的，可以将柯西分布里的比值变量 <script type="math/tex">u</script> 替换为角度 <script type="math/tex">\theta </script>，由下面的表达式知是均匀分布，所以只需要计算 <script type="math/tex">{ \left( 0,\quad 0,\quad \dots \quad 1 \right)  }^{ T }</script> 一种情况就可以。</span></p>
+<p><span style="color: red;">更正：“不均匀”的说法是有问题的，这个不均匀是相对于斜率的不均匀，对于角度而言是均匀的，可以将柯西分布里的比值变量 <script type="math/tex">u</script> 替换为角度 <script type="math/tex">\theta </script>，由下面的表达式知是均匀分布。</span></p>
 
 <script type="math/tex; mode=display">\int _{ -\infty  }^{ +\infty  }{ \frac { 1 }{ \pi \left( 1+{ u }^{ 2 } \right)  } du } =\int _{ -\frac { \pi  }{ 2 }  }^{ \frac { \pi  }{ 2 }  }{ \frac { 1 }{ \pi \left( 1+\tan ^{ 2 }{ \theta  }  \right)  } \frac { d\theta  }{ \cos ^{ 2 }{ \theta  }  }  } =\int _{ -\frac { \pi  }{ 2 }  }^{ \frac { \pi  }{ 2 }  }{ \frac { d\theta  }{ \pi  }  } </script>
+
+<p><span style="color: red;">高维情况如下式所示，某向量的概率密度只与向量长度有关，而与角度无关，所以放缩到单位球面上关于角度是均匀的，所以只需要计算 <script type="math/tex">{ \left( 0,\quad 0,\quad \dots \quad 1 \right)  }^{ T }</script> 一种情况就可以。</span></p>
+
+<script type="math/tex; mode=display">\frac { 1 }{ { \left( \sqrt { 2\pi  }  \right)  }^{ n } } { e }^{ -\frac { \sum _{ i=1 }^{ n }{ { x }_{ i }^{ 2 } }  }{ 2 }  }=\frac { 1 }{ { \left( \sqrt { 2\pi  }  \right)  }^{ n } } { e }^{ -\frac { { r }^{ 2 } }{ 2 }  }</script>
 
 <p>轮换对称性分两步，首先是<strong>系数轮换</strong>，其次是<strong>符号轮换</strong>，以 4 维情况为例，假设固定向量为</p>
 
