@@ -1,0 +1,524 @@
+<!-- layout/default.html -->
+
+<!-- head.html -->
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <!-- 标签页标题 -->
+  <title>Blog of 太极儒</title>
+  <meta name="author" content="Frank Song">
+  <!-- 定义description变量，如果有则用，没有则是正文，前150字 -->
+  
+  <meta name="description" content="小小90后程序员，清本清硕，爱祖国爱人民，爱阅读爱编程。机器学习、大数据处理是工作方向，关注个人效率提升等话题。本博客是为开拓个人知识分享渠道而开，也有助于加速知识积累的内化，欢迎拍砖捧场。">
+  <meta name="keywords" content="清华大学, 自动化系, 机器学习, 效率, 阅读, 编程, 正能量">
+  <meta name="baidu-site-verification" content="7O78rNJCOH" />
+  <meta name="360-site-verification" content="9ee6dda17557079b8855f9c8201b05bb" />
+  <meta name="msvalidate.01" content="408D13BCB6B6CE4973F6CD9E6A9E8195" />
+  <meta name="sogou_site_verification" content="CtgkJPDjga"/>
+  <meta name="chinaz-site-verification" content="081e7651-48c6-4c2f-a569-99321685eab1" />
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://frank19900731.github.io/blog/page/3">
+  <!-- 网站小图标 -->
+  <link href="/favicon.ico" rel="icon">
+  <!-- 网站样式文件 -->
+  <link href="/stylesheets/styles.css" media="screen, projection" rel="stylesheet" type="text/css">
+
+  <link href="/atom.xml" rel="alternate" title="Blog of 太极儒" type="application/atom+xml">
+
+  <script src="/javascripts/modernizr.custom.js"></script>
+  <!-- jQuery -->
+  <!--script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script-->
+  <script src="/javascripts/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+
+  <!-- 其它js代码 -->
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <script src="/javascripts/jquery.sidr.min.js"></script>
+  <script src="/javascripts/ah-blue.js"></script>
+  <script type="text/javascript" src="/javascripts/fancybox/jquery.fancybox.pack.js"></script>
+  <link rel="stylesheet" type="text/css" href="/javascripts/fancybox/jquery.fancybox.css" media="screen" />
+
+  <link href="/stylesheets/component.css" rel="stylesheet" type="text/css">
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+        if ($(".img-up")) {
+            $(".img-up").fancybox();
+        }
+        if ($(".imgleft")) {
+            $(".imgleft").parent().parent().css("text-align", "left");
+        }
+        if ($(".imgright")) {
+            $(".imgright").parent().parent().css("text-align", "right");
+        }
+        if ($(".imgcenter")) {
+            $(".imgcenter").parent().parent().css("text-align", "center");
+        }
+        if ($(".imgleft-no-shadow")) {
+            $(".imgleft-no-shadow").parent().parent().css("text-align", "left");
+        }
+        if ($(".imgright-no-shadow")) {
+            $(".imgright-no-shadow").parent().parent().css("text-align", "right");
+        }
+        if ($(".imgcenter-no-shadow")) {
+            $(".imgcenter-no-shadow").parent().parent().css("text-align", "center");
+        }
+
+        if ($(".mod_lost_child_little")) {
+            $(".mod_lost_child_little").css("width", "100%");
+        }
+    });
+  </script>
+
+  <!-- custom/head.html -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      jax: ["input/TeX", "output/HTML-CSS"],
+      tex2jax: {
+        inlineMath: [ ['$', '$'], ["\\(", "\\)"] ],
+        displayMath: [ ['$$', '$$'], ["\\[", "\\]"] ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+      //,
+      //displayAlign: "left",
+      //displayIndent: "2em"
+    });
+
+    function addBlankTargetForLinks () {
+
+      $('a[href^="http"]').each(function(){
+
+        $(this).attr('target', '_blank');
+
+      });
+
+    }
+
+    $(document).bind('DOMNodeInserted', function(event) {
+
+      addBlankTargetForLinks();
+
+    });
+
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"></script>
+  <!-- google_analytics.html -->
+
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-51950124-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head> 
+
+<link href="/stylesheets/my.css" rel="stylesheet" type="text/css">
+<body onload="onLoadSet()"   >
+  <div id="dl-menu" class="dl-menuwrapper">
+    <button>Open Menu</button>
+    <ul class="dl-menu">
+        <li><a href="/">Home</a></li>
+        <li><a href="/archives/">Archives (13)</a></li>
+        <li>
+            <a href="#">Categories (4)</a>
+            <ul class="dl-submenu">
+                <li class="dl-back"><a href="#">Back</a></li>
+                <li><a href="/blog/categories">All Categories (4)</a>
+                <li style="color: #CCCCCC; line-height: 150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Top 5</li>
+
+                <li><a href='/category/面试求职'>面试求职 (7)</a></li><li><a href='/category/工作效率'>工作效率 (3)</a></li><li><a href='/category/网页开发'>网页开发 (2)</a></li><li><a href='/category/Mac 使用'>Mac 使用 (1)</a></li>
+            </ul>
+        </li>
+        <li><a href="/blog/tags">All Tags (32)</a>
+        <li>
+            <a href="#">Features</a>
+            <ul class="dl-submenu">
+                <li class="dl-back"><a href="#">Back</a></li>
+                <li><a href="/booklist">Book List</a></li>
+                <li><a href="/movielist">Movie List</a></li>
+                <li><a href="/towrite">Things to Write</a></li>
+            </ul>
+        </li>
+        <li><a href="/about">About</a></li>
+    </ul>
+</div><!-- /dl-menuwrapper -->
+  <div class="aux-container">
+  </div>
+
+  <div class="hero">
+    <img src="/images/ah-frame.png" />
+  </div>
+
+  <div class="main-container">
+    <div class="main wrapper clearfix">
+    	
+    	<aside>
+			
+                <div class="search-container">
+                    <form action="/search" method="get">
+                        <fieldset role="search">
+                            <input type="text" class="search-field" id="search-query" name="q" placeholder="Search" autocomplete="off">
+                            <input class="submit" type="submit" value=""/>
+                        </fieldset>
+                    </form>
+                </div>
+			
+		  <!-- navigation.html -->
+<!-- custom/navigation.html -->
+<div id="main-nav">
+    <nav>
+        <ul>
+        	<li>
+        		<ul>
+                    <!--li><a href="http://songchengru.eicp.net" target="_blank">Personal Page</a-->
+                    <li><a href="/atom.xml" target="_blank">RSS Subscription</a></li>
+        			<li>Sina Blog - <a href="http://blog.sina.com/frank19900731" target="_blank">士不可以不弘毅</a></li>
+                    <li>Sina Weibo - <a href="http://weibo.sina.com/frank19900731" target="_blank">@太极儒</a></li>
+                    <li>Github - <a href="http://github.com/frank19900731" target="_blank">frank19900731</a></li>
+                    <li>Mail to Me - <a href="mailto:scr_0731@126.com" target="_blank">scr at 126</a></li>
+        		</ul>
+        	</li>
+
+                
+                <!-- asides/features.html -->
+<li>
+    <!-- features -->
+    <h3>Features</h3>
+    <ul>
+        <li><a href="/booklist">Book List</a></li>
+        <li><a href="/movielist">Movie List</a></li>
+        <li><a href="/towrite">To Write</a></li>
+    </ul>
+</li><!-- asides/recent_posts.html -->
+        <li>
+<!-- 最近发布的文章 -->
+<h3>Recent Posts</h3>
+<ul>
+	
+    <li>
+    	<a href="/blog/2014/11/07/mian-shi-jing-yan-fen-xiang-zhi-zhi-li-ti/">面试经验分享之智力题</a>
+    </li>
+    
+    <li>
+    	<a href="/blog/2014/11/06/mian-shi-jing-yan-zhi-ji-qi-xue-xi-da-shu-ju-wen-ti/">面试经验之机器学习、大数据问题</a>
+    </li>
+    
+    <li>
+    	<a href="/blog/2014/10/27/wo-de-shi-jian-guan-li-jing-yan-yu-gong-ju-fen-xiang/">我的时间管理经验与工具分享</a>
+    </li>
+    
+    <li>
+    	<a href="/blog/2014/10/25/qiu-zhi-ji-de-yi-dian-jing-yan-zhi-tan/">求职季的一点经验之谈</a>
+    </li>
+    
+    <li>
+    	<a href="/blog/2014/10/23/wo-de-zhi-shi-guan-li-jing-yan-yu-gong-ju-fen-xiang/">我的知识管理经验与工具分享</a>
+    </li>
+    
+</ul>
+        </li>
+<li>
+    <h3>Tags</h3>
+    <ul class="tag-cloud">
+        <a style="font-size: 90%" href="/tag/Yosemite/">Yosemite</a>
+<a style="font-size: 166%" href="/tag/octopress/">octopress</a>
+<a style="font-size: 166%" href="/tag/效率/">效率</a>
+<a style="font-size: 90%" href="/tag/数据可视化/">数据可视化</a>
+<a style="font-size: 90%" href="/tag/文档整理/">文档整理</a>
+<a style="font-size: 166%" href="/tag/概率/">概率</a>
+<a style="font-size: 210%" href="/tag/求职经验/">求职经验</a>
+<a style="font-size: 166%" href="/tag/算法/">算法</a>
+<a style="font-size: 166%" href="/tag/逻辑/">逻辑</a>
+<a style="font-size: 210%" href="/tag/面试/">面试</a>
+
+    </ul>
+</li><li>
+    <h3>Recent Comments</h3>
+    <ul class="ds-recent-comments" data-num-items="5" style="margin-right: 38px;">
+    </ul>
+</li><li>
+<h3>Recent Visitors</h3>
+<ul class="ds-recent-visitors"></ul>
+</li>
+                
+
+        </ul>
+    </nav>
+</div>
+		</aside>
+		
+      <!-- index.html -->
+
+
+
+<article style="background-color: rgba(185, 185, 185, 0.5); padding: 8px 25px 8px 25px; border-radius: 5px; text-align: center;">
+    <a class="next" href="/blog/page/2/">Newer &rarr;</a>
+</article>
+
+
+
+
+<article style="background-color: rgba(185, 185, 185, 0.5); padding: 25px 25px 25px 25px; border-radius: 20px;">
+	<!-- article.html -->
+<!-- 文章展示，区分在索引页和文章页 -->
+<header>
+  <div class="article-tags">
+      <!-- post/categories.html -->
+<!-- 文章类别展示 -->
+
+
+<span class="categories" style="font-size: 16px;">
+  Categories:
+  
+    <a class='category' href='/category/网页开发/'>网页开发</a>
+  
+
+</span>
+
+
+  </div>
+  
+    <h1><a href="/blog/2014/08/24/wo-de-di-yi-pian-octopress-bo-ke/">
+      我的第一篇 Octopress 博客
+    </a></h1>
+  
+  <!-- 给出发布时间 -->
+  <div class="article-date">
+      <!-- post/date.html -->
+<!-- 文章日期显示 -->
+
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-08-24T21:50:56+08:00" pubdate data-updated="true">Aug 24<span>th</span>, 2014</time></div>
+</header>
+<hr />
+<!-- 如果在索引中 -->
+
+  <section class="article-index">
+
+<h2 id="section">段落分级</h2>
+<p>以 # 的个数表示段落层次。</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>段落分级</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+</pre></td><td class="code"><pre><code class="objc"><span class="line"><span class="cp"># 第一级目录</span>
+</span><span class="line"><span class="cp">## 第二级目录</span>
+</span><span class="line"><span class="cp">### 第三级目录</span>
+</span><span class="line"><span class="cp">#### 第四级目录</span>
+</span><span class="line"><span class="cp">##### 第五级目录</span>
+</span><span class="line"><span class="cp">###### 第六级目录</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+<p>还可以表示为</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>段落分级</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+</pre></td><td class="code"><pre><code class="objc"><span class="line"><span class="err">第一级标题</span>
+</span><span class="line"><span class="o">===============</span>
+</span><span class="line">
+</span><span class="line"><span class="err">第二级标题</span>
+</span><span class="line"><span class="o">---------------</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<h2 id="blockquote">BlockQuote</h2>
+<ul>
+  <li>方法一： 使用 &gt;</li>
+</ul>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>使用 &gt;</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+</pre></td><td class="code"><pre><code class="objc"><span class="line"><span class="o">&gt;</span> <span class="n">A</span> <span class="n">sample</span> <span class="n">blockquote</span><span class="p">.</span>
+</span><span class="line"><span class="o">&gt;</span>
+</span><span class="line"><span class="o">&gt;</span> <span class="o">&gt;</span><span class="n">Nested</span> <span class="n">blockquotes</span> <span class="n">are</span>
+</span><span class="line"><span class="o">&gt;</span> <span class="o">&gt;</span><span class="n">also</span> <span class="n">possible</span><span class="p">.</span>
+</span><span class="line"><span class="o">&gt;</span>
+</span><span class="line"><span class="o">&gt;</span> <span class="n">This</span> <span class="n">is</span> <span class="n">the</span> <span class="n">outer</span> <span class="n">quote</span> <span class="n">again</span><span class="p">.</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<blockquote>
+  <p>A sample blockquote.</p>
+
+  <blockquote>
+    <p>Nested blockquotes are
+also possible.</p>
+  </blockquote>
+
+  <p>This is the outer quote again.</p>
+</blockquote>
+
+<p>在 blockquote 中添加诸如 header 等的块级元素无妨。</p>
+
+<ul>
+  <li>方法二：使用 blockquote 作标记</li>
+</ul>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>使用 blockquote 标签</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+</pre></td><td class="code"><pre><code class="objc"><span class="line"><span class="p">{</span><span class="o">%</span> <span class="n">blockquote</span> <span class="n">Bobby</span> <span class="n">Willis</span> <span class="nl">http:</span><span class="c1">//google.com/search?q=pants the search for bobby&#39;s pants %}</span>
+</span><span class="line"><span class="n">Wheeee</span><span class="o">!</span>
+</span><span class="line"><span class="p">{</span><span class="o">%</span> <span class="n">endblockquote</span> <span class="o">%</span><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<blockquote><p>Wheeee!</p><footer><strong>Bobby Willis</strong> <cite><a href="http://google.com/search?q=pants">The Search for Bobby&#8217;s Pants</a></cite></footer></blockquote>
+
+</section>
+  <a href="/blog/2014/08/24/wo-de-di-yi-pian-octopress-bo-ke/" style="background: #da3e10; color: #ffffff; border-radius: 5px; border: 4px solid #da3e10;">继续阅读</a>&nbsp;&nbsp;&nbsp;&nbsp;
+<!-- post/tags.html -->
+<!-- 文章标签展示 -->
+
+
+<span class="tags">
+  <font color="#808080">Tags: </font>
+  
+    <a class='tag' href='/tag/kramdown syntax/'>kramdown syntax</a>, <a class='tag' href='/tag/octopress/'>octopress</a>
+  
+</span>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<span class="ds-thread-count" data-thread-key="/blog/2014/08/24/wo-de-di-yi-pian-octopress-bo-ke/" style="color: #808080;"></span>
+
+
+
+
+</article>
+
+
+
+    </div>
+  </div>
+  <!-- footer.html -->
+<!-- custom/footer.html -->
+<!-- 页脚 -->
+
+
+  <!-- after_footer.html -->
+<!-- custom/after_footer.html -->
+<!-- 加入评论 -->
+
+
+
+
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+    var duoshuoQuery = {short_name:"frank19900731-blog"};
+    (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0]
+                || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+</script>
+<!-- 多说公共JS代码 end -->
+
+
+<!--
+
+
+<script type="text/javascript">
+      var disqus_shortname = 'frank-octopress';
+      
+        
+        var disqus_script = 'count.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+
+-->
+
+
+  <script src="/javascripts/jquery.dlmenu.js"></script>
+<script type="text/javascript">
+    $(function() {
+        $('#dl-menu').dlmenu();
+    });
+
+    function onLoadSet() {
+
+    }
+
+</script>
+  <a id="gotop" href="#">
+    <span>▲</span>
+</a>
+<div id="float-index">
+</div>
+
+<script type="text/javascript">
+    $(function(){
+        $(window).scroll(function(){  //只要窗口滚动,就触发下面代码
+            var scrollt = document.documentElement.scrollTop + document.body.scrollTop; //获取滚动后的高度
+            if( scrollt >300 ){  //判断滚动后高度超过200px,就显示
+                $("#gotop").fadeIn(400); //淡出
+            }else{
+                $("#gotop").stop().fadeOut(400); //如果返回或者没有超过,就淡入.必须加上stop()停止之前动画,否则会出现闪动
+            }
+
+            if(scrollt > 1300) {
+                $("#float-index").fadeIn(400);
+            } else {
+                $("#float-index").stop().fadeOut(10);
+            }
+        });
+        $("#gotop").click(function(){ //当点击标签的时候,使用animate在200毫秒的时间内,滚到顶部
+            $("html,body").animate({scrollTop:"0px"},200);
+        });
+
+        if ($("#markdown-toc").length > 0) {
+            $("#markdown-toc").clone(true).appendTo("#float-index");
+        } else {
+            $("#float-index").remove();
+        }
+    });
+</script>
+
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1253436508'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s6.cnzz.com/z_stat.php%3Fid%3D1253436508%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+</body>
+</html>

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: 面试求职 | Blog of 太极儒]]></title>
   <link href="http://frank19900731.github.io/blog/category/mian-shi-qiu-zhi/atom.xml" rel="self"/>
   <link href="http://frank19900731.github.io/"/>
-  <updated>2014-11-06T23:47:01+08:00</updated>
+  <updated>2014-11-08T11:03:57+08:00</updated>
   <id>http://frank19900731.github.io/</id>
   <author>
     <name><![CDATA[Frank Song]]></name>
@@ -12,6 +12,287 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[面试经验分享之智力题]]></title>
+    <link href="http://frank19900731.github.io/blog/2014/11/07/mian-shi-jing-yan-fen-xiang-zhi-zhi-li-ti/"/>
+    <updated>2014-11-07T14:56:13+08:00</updated>
+    <id>http://frank19900731.github.io/blog/2014/11/07/mian-shi-jing-yan-fen-xiang-zhi-zhi-li-ti</id>
+    <content type="html"><![CDATA[<p><strong>目录</strong></p>
+
+<ul id="markdown-toc">
+  <li><a href="#section">题目介绍</a></li>
+  <li><a href="#section-1">其它经典题目</a></li>
+  <li><a href="#section-2">总结</a></li>
+</ul>
+
+<!-- excerpt start -->
+
+<p>我在算法工程师面试中遇到的智力题主要是指涉及到一些数学计算、证明的题目，基本是中小学奥数题。喜欢问这类问题的主要有互联网创业公司或外企，招收数值策划的游戏公司，当然，更多的是金融、投资相关的企业。从题目类型上分，有排列组合题、概率题等。</p>
+
+<h2 id="section">题目介绍</h2>
+
+<p><strong>题目一：给定天平，问要称重1-N N种不同质量，最少需要多少种砝码？</strong></p>
+
+<p><strong>1）砝码只允许放在天平的一端；</strong></p>
+
+<p><strong>2）砝码可以放在天平的两端。</strong></p>
+
+<p><strong>解答：</strong> </p>
+
+<ul>
+  <li>只允许放在一边的情况，开始自己以为是斐波那契数列，不过显然数列生成方式里存在冗余（1+2=3）。1、2 肯定是最基本的数字，<strong>新添加的砝码质量应该是原砝码集合所能称量的最大质量加一</strong>，如此生成的数列就是2的幂次，1，2，4，……想到正整数二进制表达的唯一性，应该是不存在冗余的。可表示性是有了，对于1-N N种不同的质量，最少需要 <script type="math/tex">\left\lceil \log _{ 2 }{ (N+1) }  \right\rceil </script> 种不同的砝码，那是不是最少的呢？这种做法没有冗余，且表示范围是砝码的排列组合（每一个砝码可用可不用），应该就是最少了的，不过这不是严格证明。</li>
+  <li>允许放在两边的情况，1、3是最基本的，因为 2 可以用 3-1 表达，<strong>新添加砝码的质量应该满足的条件是原砝码集合所能称量的最大质量加上这个最大质量的下一个质量</strong>。这种构造方法同样没有冗余，且表示范围是砝码的排列组合（每一砝码可加、可减、可不用，再排除掉和非正数的情况），所以应该也是最少的。按照这个思路生成的数列就是3的幂次，1，3，9，27……可以用数学归纳法证明如下。</li>
+</ul>
+
+<!-- excerpt end -->
+
+<p><strong>证明：数列 <script type="math/tex">1，3，…，3^{n-1}</script>，任取其中若干进行加减组合可以表示 <script type="math/tex">1</script> 到 <script type="math/tex">\frac{3^n - 1}{2}</script> （允许减法的排列组合所能表示的最大范围）间的不同数值。</strong></p>
+
+<p>1）<script type="math/tex">k=1</script> 时，显然满足；</p>
+
+<p>2）<script type="math/tex">k=n</script> 时，有 <script type="math/tex">1，3，……，3^{n-1}</script> 可以表出 <script type="math/tex">1</script> 到 <script type="math/tex">\frac{3^n - 1}{2}</script>；</p>
+
+<p>3）<script type="math/tex">k=n+1</script> 时，要证明 <script type="math/tex">1，3，……，3^n</script> 可以表出 <script type="math/tex">1</script> 到 <script type="math/tex">\frac{3^{n+1} - 1}{2}</script> </p>
+
+<p>3-1）<script type="math/tex">1</script> 到 <script type="math/tex">\frac{3^n - 1}{2}</script> 显然可由 <script type="math/tex">1，3，……，3^{n-1}</script> 表出； </p>
+
+<p>3-2）<script type="math/tex">\frac{3^n + 1}{2}</script> 到 <script type="math/tex">3^n - 1</script> 可以由 <script type="math/tex">3^n</script> 减去 <script type="math/tex">\frac{3^n - 1}{2}</script>  到 <script type="math/tex">1</script> 表出；</p>
+
+<p>3-3）<script type="math/tex">3^n</script> 是新加入的数，可以单独表出；</p>
+
+<p>3-4）<script type="math/tex">3^n + 1</script> 到 <script type="math/tex">\frac{3^{n+1} - 1}{2}</script> 可以由 <script type="math/tex">3^n</script> 加上 <script type="math/tex">1</script> 到 <script type="math/tex">\frac{3^n - 1}{2}</script> 表出。</p>
+
+<p>综上，有原命题成立。</p>
+
+<p>有关本题的更多讨论参见果壳网的 <a href="http://www.guokr.com/article/3742/">这篇文章</a>。</p>
+
+<p><strong>题目二：如下图所示概率密度分布，左边平缓，右边陡峭，指定中位数的位置，问均值在中位数的左侧还是右侧？</strong></p>
+
+<p><a href="/img/post/2014-11/1.png" class="img-up" title="概率分布，中位数和均值的位置关系"><img class="imgcenter" src="/img/post/2014-11/1.png" width="40%" title="概率分布，中位数和均值的位置关系" ></a></p>
+
+<p><strong>解答：</strong> </p>
+
+<p>我的感觉是均值在中位数的左侧，不过我希望用严格的数学推导证明出来，后来发现很有难度，因为没有给出概率密度分布的具体形式。面试官及时“制止”了我，让我想一点直观的解释。</p>
+
+<p>我觉得可以用收入分布来类比，左边高收入人群少，右边是低收入群体，占很大的比重。统计局公布的人居年收入是均值，网友纷纷表示自己拉低了平均收入，不上网的人收入水平可能更低一些。综上，姑且认为超过一半的人收入不及均值（只是为回答问题而做的推测，超过平均水平的一般不会自己说出来，所以可能统计有偏差），也即中位数在均值的右侧。</p>
+
+<p>面试官给出的解释比我的好很多。类比一把斧头的质量密度，中位数左右的半边斧头质量相等，而均值则是斧头的支撑平衡点（假设均值为0，这个支撑平衡点就是原点），根据力矩平衡原理，支撑点要比中位数更偏向斧头的木把儿一边。</p>
+
+<p><strong>题目三：玩家打怪，通关一次掉落 A 装备的概率是 0.1，掉落 B 装备的概率是0.2，该玩家要获得 A、B 两件装备的期望通关次数是多少？</strong></p>
+
+<p><strong>解答：</strong> </p>
+
+<p>画图表示 A 和 B 的关系</p>
+
+<p><a href="/img/post/2014-11/2.png" class="img-up" title="A 和 B 的三种关系"><img class="imgcenter" src="/img/post/2014-11/2.png" width="70%" title="A 和 B 的三种关系" ></a></p>
+
+<ul>
+  <li>如果 A 和 B 是互斥事件，首先考虑第一次拿到一件装备的期望通关次数，这件装备有 <script type="math/tex">\frac{1}{3}</script> 的可能性是 A，<script type="math/tex">\frac{2}{3}</script> 的可能性是 B，接下来根据几何分布的无后效性进行计算，期望次数为 </li>
+</ul>
+
+<script type="math/tex; mode=display">\frac{1}{0.1 + 0.2} + \frac{1}{3}  \times  \frac{1}{0.2} + \frac{2}{3} \times \frac{1}{0.1} = \frac{35}{3}</script>
+
+<ul>
+  <li>如果 B 事件 包含 A 事件，则期望次数为 </li>
+</ul>
+
+<script type="math/tex; mode=display">\frac{1}{0.1} = 10</script>
+
+<ul>
+  <li>其他情况，期望次数在 <script type="math/tex">10</script> 和 <script type="math/tex">\frac{35}{3}</script> 之间。</li>
+</ul>
+
+<p><strong>变式：玩家一打掉落 A 装备的怪，玩家二打掉落 B 装备的怪，相互独立，他们协作收集 A、B 两件装备，则期望多少轮集齐？</strong></p>
+
+<ul>
+  <li>
+    <p>思路一：有三种可能性，先拿到 A 再拿到 B，概率是 <script type="math/tex">\frac{4}{14}</script>，先拿到 B 再拿到 A，概率是 <script type="math/tex">\frac { 9 }{ 14 } </script>； A、B同时拿到，概率是 <script type="math/tex">\frac { 1 }{ 14 }</script> 。这些概率可以通过列写等比数列求和公式得到，本文不赘述，因为思路二提供了更简单的计算方法。计算期望得 </p>
+
+    <script type="math/tex; mode=display">\frac{4}{14} \times  \frac{1}{0.2} + \frac{9}{14}  \times  \frac{1}{0.1} + \frac{1}{14} \times \frac{1}{0.1 \times 0.2} = \frac{80}{7}</script>
+
+    <p>关于最后一项 <script type="math/tex">\frac{1}{14} \times \frac{1}{0.1 \times 0.2}</script> 的解释是，玩家一、二一定是在某一轮同时分别获得 A 和 B，那么可以认为是<strong>一个人在玩，而该关卡要么同时掉落 A 和 B，要么什么也不掉落</strong>。由这样一种解释也就自然想到了思路二。</p>
+  </li>
+  <li>
+    <p>思路二：玩家一、玩家二可以统一为一个人，只不过这个人在通关后获得 A、B 的概率是相互独立的，<script type="math/tex">P\left( AB \right) =P\left( A \right) \cdot P\left( B \right) </script>。由此前的计算思路可得期望为 </p>
+
+    <script type="math/tex; mode=display">\frac{1}{0.28} + \frac{0.08}{0.28} \times  \frac{1}{0.2} + \frac{0.18}{0.28}  \times  \frac{1}{0.1} + \frac{0.02}{0.28} \times 0 = \frac{80}{7}</script>
+  </li>
+</ul>
+
+<p><strong>题目四：一群人每人说一到一百间的整数，接近平均数的三分之二的人会获奖，该说什么数字才能使获奖机率最大？</strong></p>
+
+<p><strong>解答：</strong> </p>
+
+<p>假设每个人都是理性的，那么没有人会选择 67-100，再次分析可知没有人会选择 45-66，以此类推，最终只有选择 1。<strong>不过实际当中并不是所有人都这么聪明理性，做适当的假设可以得到更接近真实情况的结果</strong>。</p>
+
+<p><blockquote><p>1987年，《金融时报》刊登了一个很诡异的广告，说你可以随便写一个0~100（与本题略有不同）之间的整数	寄回编辑部，然后如果你写的这个数最接近所有寄来的数的平均数的2/3，你就可以获得一张伦敦到纽约的头等舱往返机票。最后得到的结果是……平均数为18.9。也就是写13的人赢了。</p></blockquote></p>
+
+<p>更多分析见果壳网的 <a href="http://www.guokr.com/question/292144/">这篇文章</a>。</p>
+
+<p><strong>题目五：考虑 n 维向量 X、Y，其中每个元素独立同分布，分布为 N(0，1)，请计算 X、Y 相关系数的均值和标准差。</strong></p>
+
+<p><strong>解答：</strong></p>
+
+<p>本题其实是百度笔试的一道题，只有5分，但还是颇有难度的，实际上本题无需进行任何复杂的积分计算。相关系数的均值表达式如下</p>
+
+<script type="math/tex; mode=display">% &lt;![CDATA[
+
+\begin{align}
+E\left( r \right)  &= \iint { \frac { \left( X-EX \right) \cdot \left( Y-EY \right)  }{ \left\| X-EX \right\| \left\| Y-EY \right\|  } \cdot p\left( X \right) \cdot p\left( Y \right) dXdY }  \\
+&= \iint { \frac { X\cdot Y }{ \left\| X \right\| \left\| Y \right\|  } \cdot p\left( X \right) \cdot p\left( Y \right) dXdY } 
+\end{align}
+ %]]&gt;</script>
+
+<p>考察 X （或Y）<strong>关于原点的对称抵消特性</strong>，知期望值为 0。</p>
+
+<p>相关系数的方差表达式为：</p>
+
+<script type="math/tex; mode=display">% &lt;![CDATA[
+
+\begin{align}
+Var\left( r \right)  &= E{ \left( r-E\left( r \right)  \right)  }^{ 2 } \\
+&= E{ r }^{ 2 } \\
+&= \iint { \frac { \left( \left( X-EX \right) \cdot \left( Y-EY \right)  \right) ^{ 2 } }{ { \left\| X-EX \right\|  }^{ 2 }{ \left\| Y-EY \right\|  }^{ 2 } } \cdot p\left( X \right) \cdot p\left( Y \right) dXdY }   \\
+&= \iint { \frac { \left( X\cdot Y \right) ^{ 2 } }{ { \left\| X \right\|  }^{ 2 }{ \left\| Y \right\|  }^{ 2 } } \cdot p\left( X \right) \cdot p\left( Y \right) dXdY } \\
+&= \iint { { \left( \frac { X }{ \left\| X \right\|  } \cdot \frac { Y }{ \left\| Y \right\|  }  \right)  }^{ 2 }\cdot p\left( X \right) \cdot p\left( Y \right) dXdY } 
+\end{align}
+ %]]&gt;</script>
+
+<p>最后一个式子中，X、Y 的关系是对称的，几何含义是<strong>单位球面上两个随机向量的内积平方的期望</strong>。与其让 X、Y 都随机，我们可以固定其中一个，只计算<strong>随机向量和固定向量的内积平方的期望</strong>，<strong>如果任取固定向量都有这个期望值相同，那么这个期望就是本题的待求期望</strong>。</p>
+
+<p>我们先取固定向量为 <script type="math/tex">{ \left( 0,\quad 0,\quad \dots \quad 1 \right)  }^{ T }</script>，则积分式子转化为</p>
+
+<script type="math/tex; mode=display">\int { \frac { { Y }_{ n }^{ 2 } }{ \sum _{ i=1 }^{ n }{ { Y }_{ i }^{ 2 } }  } \cdot p\left( Y \right) dY } </script>
+
+<p>乍一看分子分母都是卡方分布，不过二者不是相互独立的，也就不构成 F 分布，怎么求解呢？要用到 <script type="math/tex">{ Y }_{ i }</script> 的轮换对称性。</p>
+
+<script type="math/tex; mode=display">\int { \frac { { Y }_{ 1 }^{ 2 } }{ \sum _{ i=1 }^{ n }{ { Y }_{ i }^{ 2 } }  } \cdot p\left( Y \right) dY } =\dots =\int { \frac { { Y }_{ n }^{ 2 } }{ \sum _{ i=1 }^{ n }{ { Y }_{ i }^{ 2 } }  } \cdot p\left( Y \right) dY } </script>
+
+<p>又</p>
+
+<script type="math/tex; mode=display">\sum _{ k=1 }^{ n }{ \int { \frac { { Y }_{ k }^{ 2 } }{ \sum _{ i=1 }^{ n }{ { Y }_{ i }^{ 2 } }  } \cdot p\left( Y \right) dY }  } =1</script>
+
+<p>所以</p>
+
+<script type="math/tex; mode=display">\int { \frac { { Y }_{ k }^{ 2 } }{ \sum _{ i=1 }^{ n }{ { Y }_{ i }^{ 2 } }  } \cdot p\left( Y \right) dY } =\frac { 1 }{ n } ,\quad k=1,2,\dots ,n </script>
+
+<p>也就是说标准差为 <script type="math/tex">\frac { 1 }{ \sqrt { n }  } </script> 咯？</p>
+
+<p>如果随机向量在球面上是均匀分布的那我们的讨论也就停止了，不过事实并非如此。二维情况，考察单位圆周上的随机向量，斜率的分布（两个正态分布的均值为0时，它们的 <a href="http://mathworld.wolfram.com/NormalRatioDistribution.html">商是柯西分布</a> ）是不均匀的。在这种不均匀的情况下，想要得到积分值不变的结论好像没有那么直观。受 <script type="math/tex">{ \left( 0,\quad 0,\quad \dots \quad 1 \right)  }^{ T }</script> 的启发，我想到一个笨办法，还是用到轮换对称性。我们只要<strong>找到值相等的一些表达式，让他们相加等于一个常数即可</strong>。</p>
+
+<p>轮换对称性分两步，首先是<strong>系数轮换</strong>，其次是<strong>符号轮换</strong>，以 4 维情况为例，假设固定向量为</p>
+
+<script type="math/tex; mode=display">{ \left( \frac { 1 }{ \sqrt { 24 }  } ,\quad \frac { 1 }{ \sqrt { 8 }  } ,\quad \frac { 1 }{ \sqrt { 3 }  } ,\quad \frac { 1 }{ \sqrt { 2 }  }  \right)  }^{ T }</script>
+
+<p>系数轮换是指以下四个固定向量计算得到的积分结果是相同的</p>
+
+<script type="math/tex; mode=display">
+{ \left( \frac { 1 }{ \sqrt { 24 }  } ,\quad \frac { 1 }{ \sqrt { 8 }  } ,\quad \frac { 1 }{ \sqrt { 3 }  } ,\quad \frac { 1 }{ \sqrt { 2 }  }  \right)  }^{ T }
+</script>
+
+<script type="math/tex; mode=display">
+{ \left( \frac { 1 }{ \sqrt { 8 }  } ,\quad \frac { 1 }{ \sqrt { 3 }  } ,\quad \frac { 1 }{ \sqrt { 2 }  } ,\quad \frac { 1 }{ \sqrt { 24 }  }  \right)  }^{ T }
+</script>
+
+<script type="math/tex; mode=display">
+{ \left( \frac { 1 }{ \sqrt { 3 }  } ,\quad \frac { 1 }{ \sqrt { 2 }  } ,\quad \frac { 1 }{ \sqrt { 24 }  } ,\quad \frac { 1 }{ \sqrt { 8 }  }  \right)  }^{ T }
+</script>
+
+<script type="math/tex; mode=display">
+{ \left( \frac { 1 }{ \sqrt { 2 }  } ,\quad \frac { 1 }{ \sqrt { 24 }  } ,\quad \frac { 1 }{ \sqrt { 8 }  } ,\quad \frac { 1 }{ \sqrt { 3 }  }  \right)  }^{ T }
+</script>
+
+<p>符号对称性是指以下八个固定向量计算得到的积分结果是相同的</p>
+
+<script type="math/tex; mode=display">
+{ \left( \frac { 1 }{ \sqrt { 24 }  } ,\quad \frac { 1 }{ \sqrt { 8 }  } ,\quad \frac { 1 }{ \sqrt { 3 }  } ,\quad \frac { 1 }{ \sqrt { 2 }  }  \right)  }^{ T }
+</script>
+
+<script type="math/tex; mode=display">
+{ \left( -\frac { 1 }{ \sqrt { 24 }  } ,\quad \frac { 1 }{ \sqrt { 8 }  } ,\quad \frac { 1 }{ \sqrt { 3 }  } ,\quad \frac { 1 }{ \sqrt { 2 }  }  \right)  }^{ T }
+</script>
+
+<script type="math/tex; mode=display">
+{ \left( \frac { 1 }{ \sqrt { 24 }  } ,\quad -\frac { 1 }{ \sqrt { 8 }  } ,\quad \frac { 1 }{ \sqrt { 3 }  } ,\quad \frac { 1 }{ \sqrt { 2 }  }  \right)  }^{ T }
+</script>
+
+<script type="math/tex; mode=display">
+{ \left( \frac { 1 }{ \sqrt { 24 }  } ,\quad \frac { 1 }{ \sqrt { 8 }  } ,\quad -\frac { 1 }{ \sqrt { 3 }  } ,\quad \frac { 1 }{ \sqrt { 2 }  }  \right)  }^{ T }
+</script>
+
+<script type="math/tex; mode=display">
+{ \left( \frac { 1 }{ \sqrt { 24 }  } ,\quad \frac { 1 }{ \sqrt { 8 }  } ,\quad \frac { 1 }{ \sqrt { 3 }  } ,\quad -\frac { 1 }{ \sqrt { 2 }  }  \right)  }^{ T }
+</script>
+
+<script type="math/tex; mode=display">
+{ \left( -\frac { 1 }{ \sqrt { 24 }  } ,\quad -\frac { 1 }{ \sqrt { 8 }  } ,\quad \frac { 1 }{ \sqrt { 3 }  } ,\quad \frac { 1 }{ \sqrt { 2 }  }  \right)  }^{ T }
+</script>
+
+<script type="math/tex; mode=display">
+{ \left( -\frac { 1 }{ \sqrt { 24 }  } ,\quad \frac { 1 }{ \sqrt { 8 }  } ,\quad -\frac { 1 }{ \sqrt { 3 }  } ,\quad \frac { 1 }{ \sqrt { 2 }  }  \right)  }^{ T }
+</script>
+
+<script type="math/tex; mode=display">
+{ \left( -\frac { 1 }{ \sqrt { 24 }  } ,\quad \frac { 1 }{ \sqrt { 8 }  } ,\quad \frac { 1 }{ \sqrt { 3 }  } ,\quad -\frac { 1 }{ \sqrt { 2 }  }  \right)  }^{ T }
+</script>
+
+<p><strong>系数轮换是为了保证加和结果中各平方项系数相等，可约去分母，符号轮换是为了保证加和结果中的交叉项系数为 0</strong>。对于 4 维向量，我们经过系数轮换和符号轮换获得了 32（<script type="math/tex">= 4 \times 8</script>） 个等值的积分表达式，累加和等于 8，每个积分表达式的值是 <script type="math/tex">{ \frac { 1 }{ 4 }  }</script>，也即 <script type="math/tex">{ \frac { 1 }{ n }  }</script>。</p>
+
+<p>简单总结一下，系数轮换我们采用循环移位的策略，也就是 n 组系数；每组系数对应 <script type="math/tex">{ { 2 }^{ n-1 } }</script> 种（因为是开方，所以一半和另一半是等价的）符号选择。对于任给的固定向量，总可以通过这样的构造辅助等价固定向量的方式求解，而求得的积分结果总是 <script type="math/tex">{ \frac { 1 }{ n }  }</script>。</p>
+
+<p>综上，相关系数的均值是 0，标准差是 <script type="math/tex">{ \frac { 1 }{ \sqrt { n }  }  }</script>。</p>
+
+<p>以下是 Matlab 仿真结果：</p>
+
+<p><code>matlab 相关系数的均值、方差仿真
+array = [];
+n = 5;
+iter = 100000;
+for i = 1:iter
+x = normrnd(0,1,n,1);
+y = normrnd(0,1,n,1);
+array = [array, sum(x.*y)/(norm(x)*norm(y))];
+end
+avg = mean(array);
+avar = var(array);
+</code></p>
+
+<p>10 万个相关系数样本，括号内为 <script type="math/tex">\frac{1}{n}</script> 的值</p>
+
+<p>5 维，单次运行均值为 -0.0023，方差为 0.1999（0.2）；</p>
+
+<p>11 维，单次运行均值为 -0.0011，方差为 0.0908（0.0909）；</p>
+
+<p>23 维，单次运行均值为 0.0003，方差为 0.0433（0.0435）。</p>
+
+<h2 id="section-1">其它经典题目</h2>
+
+<ol>
+  <li><a href="http://baike.baidu.com/view/2499752.htm?fr=aladdin">卡特兰数</a> 相关问题
+    <ul>
+      <li>括号化</li>
+      <li>出栈次序</li>
+      <li><a href="http://blog.csdn.net/jtlyuan/article/details/7440591">找钱问题</a></li>
+    </ul>
+  </li>
+  <li><a href="http://blog.sina.com.cn/s/blog_519169510101bljn.html">帽子问题</a></li>
+  <li><a href="http://blog.csdn.net/wangshihui512/article/details/8860193">海盗分金</a></li>
+  <li><a href="http://www.zhihu.com/question/25420139">宝石升级</a></li>
+  <li>……</li>
+</ol>
+
+<h2 id="section-2">总结</h2>
+
+<ul>
+  <li>简要复习概率、期望、常见概率分布、排列组合等知识；</li>
+  <li>金融、投资领域的面试参加的不多，过段时间再补充几道有关概率、博弈论的题目;</li>
+  <li>多关注 <a href="http://www.matrix67.com/blog/">Matrix67</a> 上的题目分享。</li>
+</ul>
+
+<p>继 <code>机器学习、大数据问题</code>、<code>智力题</code>，接下来的博文还会陆续分享 <code>编程语言题</code> 和 <code>数据结构与算法题</code>，敬请期待。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[面试经验之机器学习、大数据问题]]></title>
@@ -494,124 +775,6 @@ do {
 <p>一开始 IDG 说将由很牛的 ACM 选手出题，心里挺忐忑，现场做题才发现不是这样。虽然题目不难，不过限时 1 小时，自己只是将将做完。</p>
 
 <!-- excerpt end -->
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[飞维美地笔试回忆]]></title>
-    <link href="http://frank19900731.github.io/blog/2014/10/18/fei-wei-mei-di-bi-shi-hui-yi/"/>
-    <updated>2014-10-18T22:29:30+08:00</updated>
-    <id>http://frank19900731.github.io/blog/2014/10/18/fei-wei-mei-di-bi-shi-hui-yi</id>
-    <content type="html"><![CDATA[<p><strong>目录</strong></p>
-
-<ul id="markdown-toc">
-  <li><a href="#section">简介</a></li>
-  <li><a href="#section-1">题目</a>    <ul>
-      <li><a href="#linux">Linux题</a></li>
-      <li><a href="#sql">SQL</a></li>
-      <li><a href="#section-2">逻辑题</a></li>
-      <li><a href="#section-3">读程序题</a></li>
-      <li><a href="#section-4">写程序题</a></li>
-      <li><a href="#section-5">网络题</a></li>
-      <li><a href="#section-6">算法题</a></li>
-      <li><a href="#section-7">广告算法</a></li>
-      <li><a href="#section-8">吞吐量预测</a></li>
-    </ul>
-  </li>
-  <li><a href="#section-9">总结</a></li>
-</ul>
-
-<!-- excerpt start -->
-
-<p>这是面试、笔试总结的第一篇，其余会陆续更新直至十一月末，欢迎持续关注 <a href="/category/%E9%9D%A2%E8%AF%95%E6%B1%82%E8%81%8C/">面试求职</a> 分类。</p>
-
-<h2 id="section">简介</h2>
-<p><a href="http://baike.baidu.com/view/5038799.htm?fr=aladdin">飞维美地</a> 这家公司是校招季才了解的一家公司，隶属 Comcast， 提供互联网视频广告投放、监测、预测、增值等关键解决方案，业务在欧美。公司主体在中国，纽约也有分部，恰可以提供 24 小时不间断服务。据称北京公司有120人，目标扩增至240人。</p>
-
-<p>之前和靳导在东主楼参加了他们的算法分享会，干货多，实在。宣讲会上，进一步了解了公司的培训发展体系，感觉像一个小型大学，学习与成长的氛围都不错的样子，比较适合想在毕业后打好技术基础的同学，当然也能锻炼英语。不过作为在中国没有业务的小型外企，估计是没有北京户口吧。</p>
-
-<p>书归正传，说题。据说这些题是公司员工近一个月想出来的，挺用心思的。共九类题，120分钟时间，可以全做，也可以挑选自己擅长的发挥。</p>
-
-<!-- excerpt end -->
-
-<h2 id="section-1">题目</h2>
-
-<h3 id="linux">Linux题</h3>
-
-<ol>
-  <li>如何查看已使用的内存和剩余内存？</li>
-  <li>如何查看所有进程，如何按照内存占比排序？</li>
-  <li>给出 <code>ls -l</code> 的结果，写出文件类型和权限代码。</li>
-  <li>子网 IP 为 192.168.10.0，子网掩码为 255.255.255.192，问子网格数和每个子网主机 IP 数？</li>
-  <li>解释 DNS 的作用，举例说明 CNAME 的应用场景。</li>
-</ol>
-
-<h3 id="sql">SQL</h3>
-
-<ul>
-  <li>具体题目不描述了，反正是可以用 left + join 和 嵌套查询解决的问题。</li>
-</ul>
-
-<h3 id="section-2">逻辑题</h3>
-<ul>
-  <li>给定一种运算 NOTAND 及其真值表，让你仅用 NOTAND 表示 
-    <ul>
-      <li>OR（真值表给出）;</li>
-      <li>命题（真值表给出）。</li>
-    </ul>
-  </li>
-</ul>
-
-<h3 id="section-3">读程序题</h3>
-<ul>
-  <li>GO 语言书写的二分查找，如果找到返回 Index，未找到返回 -1；现让你修改一行，使得如果找到返回 Index，未找到则返回小于待查找数的最大的数的 Index，如果还是没有，返回 -1。</li>
-</ul>
-
-<h3 id="section-4">写程序题</h3>
-<ul>
-  <li>给出一些函数及解释（pthread_mutex_lock， pthread_mutex_unlock， pthread_cond_wait， pthread_cond_signal， pthread_cond_broadcast），让你实现一个线程安全队列类中的 6 个函数（构造函数、析构函数、enqueue、dequeue、size、destroy，这里 destroy 的作用是清空队列 + 清空插入等待和读取等待）。</li>
-</ul>
-
-<h3 id="section-5">网络题</h3>
-<ol>
-  <li>页面由 A 重定向到 B，站点接受要访问 A 的请求，返回的代码是 302 还是 301，HEAD 头里 B 对应的属性是 Location 还是 Referral。 </li>
-  <li>跨站脚本攻击相关</li>
-  <li>忘了……</li>
-</ol>
-
-<h3 id="section-6">算法题</h3>
-<ul>
-  <li>如果可以在多项式时间内解决判断正整数集合内是否存在和相等的两个子集（互为补集）的问题并给出一组解，请问如何设计高效算法解决判断正整数集合内是否存在一个子集的和等于指定值这一问题并给出一组解？</li>
-</ul>
-
-<h3 id="section-7">广告算法</h3>
-<ul>
-  <li>已有按照优先级排列的广告，要处理广告请求。一个广告请求包含若干个指定时长的广告中断，约束条件有
-    <ul>
-      <li>有些广告对儿不能出现在同一个广告请求中；</li>
-      <li>有些广告对儿不能出现在同一个广告中断中；</li>
-      <li>广告中断中的广告时间总和不超过广告中断时长；</li>
-    </ul>
-
-    <p>请设计Advertisement、Request、Break类，实现这一算法。</p>
-  </li>
-</ul>
-
-<h3 id="section-8">吞吐量预测</h3>
-<ul>
-  <li>给出网络带宽，读写速度，文件大小，压缩比，单条记录的长度，单服务器处理速度等数据，以及日志的处理方法，
-    <ul>
-      <li>要求估算单台机器处理500G 日志需要多长时间。</li>
-      <li>现在想要实时处理日志，5分钟处理之前15分钟的，估计需要多少台机器。</li>
-    </ul>
-  </li>
-</ul>
-
-<p>这道题大致是这个意思吧，当时都给我整晕了，大概算了算，肯定不完善。</p>
-
-<h2 id="section-9">总结</h2>
-
-<p>题型比较广泛，不太需要 ACM 等相关技能，主要看分析思考的能力。当然，对于一些固定知识点的考察（比如网络相关的），也着实让我觉得有必要在考后夯实一下基础。<strong>基础还是记在脑子里比较好，不要太依赖搜索引擎。</strong></p>
 ]]></content>
   </entry>
   
