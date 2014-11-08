@@ -4,7 +4,7 @@
   <title><![CDATA[Category: 面试求职 | Blog of 太极儒]]></title>
   <link href="http://frank19900731.github.io/blog/category/mian-shi-qiu-zhi/atom.xml" rel="self"/>
   <link href="http://frank19900731.github.io/"/>
-  <updated>2014-11-08T11:13:54+08:00</updated>
+  <updated>2014-11-08T11:24:12+08:00</updated>
   <id>http://frank19900731.github.io/</id>
   <author>
     <name><![CDATA[Frank Song]]></name>
@@ -293,11 +293,20 @@ avar = var(array);
 </ul>
 
 <p>继 <code>机器学习、大数据问题</code>、<code>智力题</code>，接下来的博文还会陆续分享 <code>编程语言题</code> 和 <code>数据结构与算法题</code>，敬请期待。</p>
+
+<p>访问入口：</p>
+
+<ul>
+  <li><a href="/blog/2014/11/06/mian-shi-jing-yan-zhi-ji-qi-xue-xi-da-shu-ju-wen-ti/">机器学习、大数据问题</a></li>
+  <li><a href="/blog/2014/11/07/mian-shi-jing-yan-fen-xiang-zhi-zhi-li-ti/">智力题</a></li>
+  <li>数据结构与算法题</li>
+  <li>编程语言题</li>
+</ul>
 ]]></content>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[面试经验之机器学习、大数据问题]]></title>
+    <title type="html"><![CDATA[面试经验分享之机器学习、大数据问题]]></title>
     <link href="http://frank19900731.github.io/blog/2014/11/06/mian-shi-jing-yan-zhi-ji-qi-xue-xi-da-shu-ju-wen-ti/"/>
     <updated>2014-11-06T14:38:33+08:00</updated>
     <id>http://frank19900731.github.io/blog/2014/11/06/mian-shi-jing-yan-zhi-ji-qi-xue-xi-da-shu-ju-wen-ti</id>
@@ -472,6 +481,15 @@ avar = var(array);
 <p>最后，希望自己的求职季经验总结能给大家带来有益的启发。</p>
 
 <p>继 <code>机器学习、大数据问题</code>，接下来的博文还会陆续分享 <code>智力题</code>、<code>编程语言题</code> 和 <code>数据结构与算法题</code>，敬请期待。</p>
+
+<p>访问入口：</p>
+
+<ul>
+  <li><a href="/blog/2014/11/06/mian-shi-jing-yan-zhi-ji-qi-xue-xi-da-shu-ju-wen-ti/">机器学习、大数据问题</a></li>
+  <li><a href="/blog/2014/11/07/mian-shi-jing-yan-fen-xiang-zhi-zhi-li-ti/">智力题</a></li>
+  <li>数据结构与算法题</li>
+  <li>编程语言题</li>
+</ul>
 ]]></content>
   </entry>
   
