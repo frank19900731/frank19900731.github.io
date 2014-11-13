@@ -1,12 +1,194 @@
+<!-- layout/wx-default.html -->
 
-<item>
-    <title>一个工具控的效率观</title>
-    <link>http://realjenius.com/blog/2014/11/13/yi-ge-gong-ju-kong-de-xiao-lu-guan/</link>
-    <author>R.J. Lorimer</author>
-    <pubDate>2014-11-13T15:49:04+08:00</pubDate>
-    <guid>http://realjenius.com/blog/2014/11/13/yi-ge-gong-ju-kong-de-xiao-lu-guan/</guid>
-    <description><![CDATA[
-     <p><strong>目录</strong></p>
+<!-- head.html -->
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <!-- 标签页标题 -->
+  <title>一个工具控的效率观 - Blog of 太极儒</title>
+  <meta name="author" content="Frank Song">
+  <!-- 定义description变量，如果有则用，没有则是正文，前150字 -->
+  
+  <meta name="description" content="目录 前言 时间轴 2014年5月12日 2014年6月3日补充 2014年6月20日补充 2014年6月21日补充 2014年8月17日补充 2014年8月21日补充 2014年8月24日补充 2014年8月27日补充 2014年8月29日补充 2014年10月13日补充 2014年10月29日补充 2014年11月8日补充 前言 这是一篇在不断更新中的文章，主要用于记录我在学习工作过程中为解决效率瓶颈而发掘的软件工具，以及该工具的使用体验和配套的工作方式。 何为工具控？ 在使用 MacBook Pro 的近两年时间里，自己大大小小“使用”过超过1000款软件，常驻笔记本里的大概有700款，每周都会有添加删除，详细列表见 这篇文章。“使用”的含义可就多了，可能是常用以至于开机自启动，可能是专门用于某项用途，也可能只是摸过、了解功能和适用场景。这么多软件，管理上主要使用 QuickSilver（因为自己最早用的就是这个，虽然现在大家更多提到的是 Alfred）。我觉得自己还担不起拜物教的名号，顶多是个实用主义者和收藏强迫症。工具对我的意义有两点，其一是提供了外界刺激，让我内在的学习动力有了平稳释放的渠道，比如记录美感刺激、时间规划刺激、任务消除刺激，其二是让我有了记录成长历程的手段，解放了大脑。 工具如何提高效率？ 加速知识记录、知识分享、知识利用的过程，质量也得到保障； 时间规划清晰合理，帮助自己应对纷繁复杂的事务和对象； 通常，工具是手脚的延伸，而这篇文章里将要提到的软件工具则是主要是感官和记忆的延伸，让大脑做更有意义的事情，也就是思考。 为什么是 Mac？ 当然可以不是 Mac，只是这篇文章里的很多软件在别的操作系统上是没有的。Mac 在易用性（比如系统的升级，软件的安装卸载，强悍的 trackpad）的角度来看是最佳的，优秀的图形界面和基于 UNIX 的操作系统也算是在 Windows 和 Linux 之间取得了良好的折中，适用于科研工作者和程序猿（最近走访的一些企业要么是全 Mac，要么是 Mac 比例在提升），而 MacBook Air 的时尚感与轻便性（索尼的本感觉也有这样的特性）则赢得了白领、女性的青睐。其他方面的话不好评价优劣，毕竟我们大多数人对于 Windows和Linux的掌握也只是皮毛，别人在 Windows 下效率比你在 Mac &hellip;">
+  <meta name="keywords" content="工具控, 效率, 时间管理, 知识管理, MacBook, 软件, Ulysses, Markdown, OmniFocus, GTD, Evernote, FocusMask, Papers, Eggscellent, Timeline 3D, iOS, Pocket, Wunderlist, Numbers, Excel, ODPS, Prodecteev, iDocument, OneNote, mediawiki, Octopress, Byword, Dash, Gistify, PopClip, Caffeinated, RSS, SketchBookPro, Wacom, Notebooks, Gitbook, Daum Equation Editor, 花瓣网">
+  <meta name="baidu-site-verification" content="7O78rNJCOH" />
+  <meta name="360-site-verification" content="9ee6dda17557079b8855f9c8201b05bb" />
+  <meta name="msvalidate.01" content="408D13BCB6B6CE4973F6CD9E6A9E8195" />
+  <meta name="sogou_site_verification" content="CtgkJPDjga"/>
+  <meta name="chinaz-site-verification" content="081e7651-48c6-4c2f-a569-99321685eab1" />
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://frank19900731.github.io/wx/2014-11-13-yi-ge-gong-ju-kong-de-xiao-lu-guan.html">
+  <!-- 网站小图标 -->
+  <link href="/favicon.ico" rel="icon">
+  <link href="/stylesheets/bootstrap/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="/stylesheets/bootstrap/responsive.css" rel="stylesheet" type="text/css">
+  <!-- 网站样式文件 -->
+  <link href="/stylesheets/styles.css" media="screen, projection" rel="stylesheet" type="text/css">
+
+  <link href="/atom.xml" rel="alternate" title="Blog of 太极儒" type="application/atom+xml">
+
+  <script src="/javascripts/modernizr.custom.js"></script>
+  <!-- jQuery -->
+  <!--script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script-->
+  <script src="/javascripts/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+
+  <!-- 其它js代码 -->
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <script src="/javascripts/jquery.sidr.min.js"></script>
+  <script src="/javascripts/ah-blue.js"></script>
+  <script type="text/javascript" src="/javascripts/fancybox/jquery.fancybox.pack.js"></script>
+  <link rel="stylesheet" type="text/css" href="/javascripts/fancybox/jquery.fancybox.css" media="screen" />
+
+  <link href="/stylesheets/component.css" rel="stylesheet" type="text/css">
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+        if ($(".img-up")) {
+            $(".img-up").fancybox();
+        }
+        if ($(".imgleft")) {
+            $(".imgleft").parent().parent().css("text-align", "left");
+        }
+        if ($(".imgright")) {
+            $(".imgright").parent().parent().css("text-align", "right");
+        }
+        if ($(".imgcenter")) {
+            $(".imgcenter").parent().parent().css("text-align", "center");
+        }
+        if ($(".imgleft-no-shadow")) {
+            $(".imgleft-no-shadow").parent().parent().css("text-align", "left");
+        }
+        if ($(".imgright-no-shadow")) {
+            $(".imgright-no-shadow").parent().parent().css("text-align", "right");
+        }
+        if ($(".imgcenter-no-shadow")) {
+            $(".imgcenter-no-shadow").parent().parent().css("text-align", "center");
+        }
+
+        if ($(".mod_lost_child_little")) {
+            $(".mod_lost_child_little").css("width", "100%");
+        }
+    });
+  </script>
+
+  <style>
+      body {
+          background-image: none;
+      }
+
+      tr.content {
+          line-height: 300%;
+          border-top: 1px dotted #000;
+      }
+
+      table.mulu {
+          width: 95%; margin: 10px auto 40px;
+      }
+
+      .gutter {
+          width: 7%;
+      }
+  </style>
+
+  <!-- custom/head.html -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      jax: ["input/TeX", "output/HTML-CSS"],
+      tex2jax: {
+        inlineMath: [ ['$', '$'], ["\\(", "\\)"] ],
+        displayMath: [ ['$$', '$$'], ["\\[", "\\]"] ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+      //,
+      //displayAlign: "left",
+      //displayIndent: "2em"
+    });
+
+    function addBlankTargetForLinks () {
+
+      $('a[href^="http"]').each(function(){
+
+        $(this).attr('target', '_blank');
+
+      });
+
+    }
+
+    $(document).bind('DOMNodeInserted', function(event) {
+
+      addBlankTargetForLinks();
+
+    });
+
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"></script>
+  <!-- google_analytics.html -->
+
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-51950124-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head> 
+
+<body style="background-color: rgba(185, 185, 185, 0.5);">
+
+<div class="row-fluid marketing">
+<div class="span2"> </div>
+<div class="span8">
+<div class="container-narrow" style="margin-top: 20px;">
+
+      <div class="masthead">
+        <ul class="nav nav-pills pull-right">
+          <li><a href="/wx/archives/">博客目录</a></li>
+          <li><a href="/blog/2014/11/13/yi-ge-gong-ju-kong-de-xiao-lu-guan/">PC端阅读</a></li>
+        </ul>
+        <h3 class="muted">&nbsp;&nbsp;&nbsp;&nbsp;太极儒</h3>
+      </div>
+
+	  <hr style="width: 100%;">
+
+      <div style="padding: 8px 25px 8px 25px;">
+        <h1>
+          一个工具控的效率观
+        </h1>
+
+        <div class="article-date" style="margin-bottom: 40px;">
+            <!-- post/date.html -->
+<!-- 文章日期显示 -->
+
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-11-13T15:49:04+08:00" pubdate data-updated="true">Nov 13<span>th</span>, 2014</time>
+        </div>
+      <p><strong>目录</strong></p>
 
 <ul id="markdown-toc">
   <li><a href="#section">前言</a></li>
@@ -135,7 +317,7 @@
 <h3 id="section-9">2014年8月27日补充</h3>
 
 <ul>
-  <li><code>Octopress</code> 用法见 <a href="http://frank19900731.github.io/blog/2014/08/24/wo-de-di-yi-pian-octopress-bo-ke/">此篇博客</a>，配置见 <a href="http://frank19900731.github.io/blog/2014/10/16/octopress-gai-zao-ji-lu/">此篇博客</a>。养成知识输出与分享的习惯，争取让自己的博客小有名气。</li>
+  <li><code>Octopress</code> 用法见 <a href="http://frank19900731.github.io/wx/2014-08-24-wo-de-di-yi-pian-octopress-bo-ke.html">此篇博客</a>，配置见 <a href="http://frank19900731.github.io/wx/2014-10-16-octopress-gai-zao-ji-lu.html">此篇博客</a>。养成知识输出与分享的习惯，争取让自己的博客小有名气。</li>
   <li><code>Byword</code> 考察了不下十款 Mac 下的 Markdown 编辑器，最终敲定此软件。非常棒的界面设计，写起来很带感的说，段落聚焦（Paragraph Focus）的功能尤赞，专注写作的不二之选，Typewritter 模式也可用，支持字体的自定义，用于 Octopress 写作。</li>
 </ul>
 
@@ -170,7 +352,16 @@
 
 <p><strong>未完待续</strong></p>
 
-<p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2014/11/13/yi-ge-gong-ju-kong-de-xiao-lu-guan/">http://frank19900731.github.io/blog/2014/11/13/yi-ge-gong-ju-kong-de-xiao-lu-guan/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
+      <div style="margin-top: 30px;">
+      本文原载于 <a href="http://frank19900731.github.io" target="_blank">http://frank19900731.github.io</a> (为获得更好的阅读效果，请在PC端访问此链接)，作者宋成儒，微信号 frank19900731，微博 <a href="http://weibo.com/frank19900731" target="_blank">@太极儒</a> 。
+      </div>
+      </div>
 
-  ]]></description>
-</item>
+</div> <!-- /container -->
+</div>
+<div class="span2"></div>
+</div>
+
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1253436508'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s6.cnzz.com/z_stat.php%3Fid%3D1253436508%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+</body>
+</html>

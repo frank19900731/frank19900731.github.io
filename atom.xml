@@ -4,7 +4,7 @@
   <title><![CDATA[Blog of 太极儒]]></title>
   <link href="http://frank19900731.github.io/atom.xml" rel="self"/>
   <link href="http://frank19900731.github.io/"/>
-  <updated>2014-11-13T18:47:34+08:00</updated>
+  <updated>2014-11-13T18:57:33+08:00</updated>
   <id>http://frank19900731.github.io/</id>
   <author>
     <name><![CDATA[Frank Song]]></name>
@@ -59,7 +59,7 @@
 
 <p>现在 MacBook 已然不是高枝上的凤凰了，其他厂商的笔记本价格与 MacBook 持平或更贵的有很多，强烈建议有换电脑打算的时候给予考虑。有钱把手机换成 iPhone 6、6+，还不如攒个 MacBook，个人感觉性价比更高，<strong>壕请忽略我的话</strong>。</p>
 
-<!-- excerpt end-->
+<!-- excerpt end -->
 
 <h2 id="section-1">时间轴</h2>
 
@@ -147,7 +147,7 @@
 <h3 id="section-9">2014年8月27日补充</h3>
 
 <ul>
-  <li><code>Octopress</code> 配置见 <a href="http://frank19900731.github.io/blog/2014/08/24/wo-de-di-yi-pian-octopress-bo-ke/">此篇博客</a>，改造见 <a href="http://frank19900731.github.io/blog/2014/10/16/octopress-gai-zao-ji-lu/">此篇博客</a>。养成知识输出与分享的习惯，争取让自己的博客小有名气。</li>
+  <li><code>Octopress</code> 用法见 <a href="http://frank19900731.github.io/blog/2014/08/24/wo-de-di-yi-pian-octopress-bo-ke/">此篇博客</a>，配置见 <a href="http://frank19900731.github.io/blog/2014/10/16/octopress-gai-zao-ji-lu/">此篇博客</a>。养成知识输出与分享的习惯，争取让自己的博客小有名气。</li>
   <li><code>Byword</code> 考察了不下十款 Mac 下的 Markdown 编辑器，最终敲定此软件。非常棒的界面设计，写起来很带感的说，段落聚焦（Paragraph Focus）的功能尤赞，专注写作的不二之选，Typewritter 模式也可用，支持字体的自定义，用于 Octopress 写作。</li>
 </ul>
 
