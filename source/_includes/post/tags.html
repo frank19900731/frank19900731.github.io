@@ -3,7 +3,7 @@
 {% capture tag %}{% if post %}{{ post.tags | tag_links | size }}{% else %}{{ page.tags | tag_links | size }}{% endif %}{% endcapture %}
 {% unless tag == '0' %}
 <span class="tags">
-  <font color="#808080">Tags: </font>
+  <font color="#777">Tags: </font>
   {% if post %}
     {{ post.tags | tag_links }}
   {% else %}
@@ -11,5 +11,5 @@
   {% endif %}
 </span>
 &nbsp;&nbsp;&nbsp;&nbsp;
-<span class="ds-thread-count" data-thread-key="{{ post.url }}" style="color: #808080;"></span>
+<span class="ds-thread-count" data-thread-key="{{ post.url }}" style="color: #777;"></span>
 {% endunless %}
