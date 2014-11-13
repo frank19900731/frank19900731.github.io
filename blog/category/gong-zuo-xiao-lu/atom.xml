@@ -4,7 +4,7 @@
   <title><![CDATA[Category: 工作效率 | Blog of 太极儒]]></title>
   <link href="http://frank19900731.github.io/blog/category/gong-zuo-xiao-lu/atom.xml" rel="self"/>
   <link href="http://frank19900731.github.io/"/>
-  <updated>2014-11-09T07:27:48+08:00</updated>
+  <updated>2014-11-13T18:47:34+08:00</updated>
   <id>http://frank19900731.github.io/</id>
   <author>
     <name><![CDATA[Frank Song]]></name>
@@ -12,6 +12,177 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[一个工具控的效率观]]></title>
+    <link href="http://frank19900731.github.io/blog/2014/11/13/yi-ge-gong-ju-kong-de-xiao-lu-guan/"/>
+    <updated>2014-11-13T15:49:04+08:00</updated>
+    <id>http://frank19900731.github.io/blog/2014/11/13/yi-ge-gong-ju-kong-de-xiao-lu-guan</id>
+    <content type="html"><![CDATA[<p><strong>目录</strong></p>
+
+<ul id="markdown-toc">
+  <li><a href="#section">前言</a></li>
+  <li><a href="#section-1">时间轴</a>    <ul>
+      <li><a href="#section-2">2014年5月12日</a></li>
+      <li><a href="#section-3">2014年6月3日补充</a></li>
+      <li><a href="#section-4">2014年6月20日补充</a></li>
+      <li><a href="#section-5">2014年6月21日补充</a></li>
+      <li><a href="#section-6">2014年8月17日补充</a></li>
+      <li><a href="#section-7">2014年8月21日补充</a></li>
+      <li><a href="#section-8">2014年8月24日补充</a></li>
+      <li><a href="#section-9">2014年8月27日补充</a></li>
+      <li><a href="#section-10">2014年8月29日补充</a></li>
+      <li><a href="#section-11">2014年10月13日补充</a></li>
+      <li><a href="#section-12">2014年10月29日补充</a></li>
+      <li><a href="#section-13">2014年11月8日补充</a></li>
+    </ul>
+  </li>
+</ul>
+
+<!-- excerpt start -->
+
+<h2 id="section">前言</h2>
+
+<p><strong>这是一篇在不断更新中的文章，主要用于记录我在学习工作过程中为解决效率瓶颈而发掘的软件工具，以及该工具的使用体验和配套的工作方式。</strong></p>
+
+<ul>
+  <li><code>何为工具控？</code> 在使用 MacBook Pro 的近两年时间里，自己大大小小“使用”过超过1000款软件，常驻笔记本里的大概有700款，每周都会有添加删除，详细列表见 <a href="http://blog.sina.com.cn/s/blog_64ac3ab10101f4it.html">这篇文章</a>。“使用”的含义可就多了，可能是常用以至于开机自启动，可能是专门用于某项用途，也可能只是摸过、了解功能和适用场景。这么多软件，管理上主要使用 QuickSilver（因为自己最早用的就是这个，虽然现在大家更多提到的是 Alfred）。我觉得自己还担不起拜物教的名号，顶多是个实用主义者和收藏强迫症。工具对我的意义有两点，<strong>其一是提供了外界刺激，让我内在的学习动力有了平稳释放的渠道，比如记录美感刺激、时间规划刺激、任务消除刺激，其二是让我有了记录成长历程的手段，解放了大脑</strong>。</li>
+  <li><code>工具如何提高效率？</code>
+    <ul>
+      <li>加速知识记录、知识分享、知识利用的过程，质量也得到保障；</li>
+      <li>时间规划清晰合理，帮助自己应对纷繁复杂的事务和对象；</li>
+      <li>通常，工具是手脚的延伸，而这篇文章里将要提到的软件工具则是主要是感官和记忆的延伸，让大脑做更有意义的事情，也就是思考。</li>
+    </ul>
+  </li>
+  <li><code>为什么是 Mac？</code> 当然可以不是 Mac，只是这篇文章里的很多软件在别的操作系统上是没有的。Mac 在<strong>易用性</strong>（比如系统的升级，软件的安装卸载，强悍的 trackpad）的角度来看是最佳的，优秀的图形界面和基于 UNIX 的操作系统也算是在 Windows 和 Linux 之间取得了良好的折中，适用于科研工作者和程序猿（最近走访的一些企业要么是全 Mac，要么是 Mac 比例在提升），而 MacBook Air 的时尚感与轻便性（索尼的本感觉也有这样的特性）则赢得了白领、女性的青睐。其他方面的话不好评价优劣，毕竟我们大多数人对于 Windows和Linux的掌握也只是皮毛，别人在 Windows 下效率比你在 Mac 下高也是很正常的，因人而异。我不是果吹，但还是有一个比较矫情的想法，那就是我总感觉<strong>在 Mac 上是我在工作，而在 Windows 上是工在做我</strong>。</li>
+</ul>
+
+<p>现在 MacBook 已然不是高枝上的凤凰了，其他厂商的笔记本价格与 MacBook 持平或更贵的有很多，强烈建议有换电脑打算的时候给予考虑。有钱把手机换成 iPhone 6、6+，还不如攒个 MacBook，个人感觉性价比更高，<strong>壕请忽略我的话</strong>。</p>
+
+<!-- excerpt end-->
+
+<h2 id="section-1">时间轴</h2>
+
+<h3 id="section-2">2014年5月12日</h3>
+
+<p>最近这段时间使用Ulysses真是如有神助，</p>
+
+<ul>
+  <li>Markdown书写；</li>
+  <li>层次清晰分明，非常方便组织思路，文字有魂不零碎；</li>
+  <li>输出格式丰富，主题模板也很赞，直接看原稿就已经很舒服了；</li>
+  <li>界面清爽，全屏模式酷炫；</li>
+  <li>Typewriter 模式，写作代入感强；</li>
+  <li>支持版本保存，功能相当不鸡肋；</li>
+  <li>支持过滤器，虽然自己还没有用过；</li>
+  <li>可以附加笔记、图片、关键词和协作目标，有助于搜索，也可以作为效率上的督促。</li>
+</ul>
+
+<p>不足之处在于，不能够编辑公式，代码段比较简单，也不能输入表格。</p>
+
+<p>正在使用的有助效率提升的软件梳理</p>
+
+<ul>
+  <li><code>OmniFocus</code> GTD 工具，配合 iCalendar 使用爽歪歪，功能暂时掌握不全，但不耽误基本使用。</li>
+  <li><code>Evernote</code> 大有被取代之势，重要性在降低，记录一些零七碎八的事情。</li>
+  <li><code>FocusMask</code> 效率新贵，提高自身工作时注意力！！！</li>
+  <li><code>Papers</code> 支持文献阅读、批注与引用的好工具，可以和 iOS 设备同步。</li>
+  <li><code>Eggscellent</code> 番茄工作法，分段限时完成工作，把自己<strong>从无截止时间估计的低效率工作状态中拉出来</strong>。</li>
+  <li><code>Timeline 3D</code> 制作高逼格的时间计划表。</li>
+  <li><code>Ulysses</code> 出色的写作软件，之前说过，废话不表。</li>
+</ul>
+
+<p>期待日后更多的发现。</p>
+
+<h3 id="section-3">2014年6月3日补充</h3>
+
+<ul>
+  <li><code>Pocket</code> 极佳的网页保存待查工具，有 Mac、iOS 客户端以及 Chrome 插件，<strong>特别适用于记录问题解决过程中所查询的重要网页资料，省得要保留大量标签页或者来回翻找浏览历史</strong>。</li>
+  <li><code>Wunderlist</code> OmniFocus 的精细化补充，跨平台通用。</li>
+</ul>
+
+<h3 id="section-4">2014年6月20日补充</h3>
+
+<p>ICML、实习接踵而至，是时候 Papers（读 Paper）以及 Ulysses（会议记录，每日总结）发挥作用的时候了。最近要<strong>规范化记录的方式方法</strong>，让自己在暑假里高效运转起来。</p>
+
+<h3 id="section-5">2014年6月21日补充</h3>
+
+<p>今天被 Ulysses 坑到了，软件无响应，强制关闭，重新打开后部分文件夹和文件顺序错乱、名称显示错误，今后一定要<strong>注意备份</strong>。</p>
+
+<h3 id="section-6">2014年8月17日补充</h3>
+
+<p>Ulysses 虽然非常强大，但是有些事情做得还不是那么好，比如表格上不如 Numbers，而涉及到复杂计算和图表，Numbers 又不如 Excel。</p>
+
+<p>最近调试 ODPS 的过程中发现，还是需要 Numbers 做记录，才能够使得每一个步骤清晰明确，每一个对比结果记录可靠。</p>
+
+<h3 id="section-7">2014年8月21日补充</h3>
+
+<p>目前个人效率存在的三大瓶颈</p>
+
+<ul>
+  <li><strong>资料碎片化，需要跳跃式阅读的时候寻址消耗大</strong>；</li>
+  <li><strong>项目繁多，接头人、需求、目标、工期预计等需即时管理</strong>；</li>
+  <li><strong>文档管理体系亟待完善，不能沿用文件夹模式</strong>。</li>
+</ul>
+
+<p>Ulysses 搜索功能还很弱（注：当时系统还是装在机械硬盘上，后来在光驱位加了一块 1T 的 SSD 后，那都不是事儿了），要打造 Ulysses 周边生态环境。</p>
+
+<ul>
+  <li><code>Producteev</code> 可以创建 Network 和 Project，适合多项目跟踪，界面美观，可定制项丰富，满足多人协作需求。</li>
+  <li><code>iDocument</code> 可导入本地文件夹，也可以维护一个iDocument自身的目录，保存相关的文件，提供标签查找。</li>
+  <li><code>OneNote</code> 富文本、交互式文本定制，可以保存图片、生成表格、插入文件，排版布局方便，是对 Ulysses 的有益补充。</li>
+  <li><code>mediawiki</code> 网页版 wiki，常见于某些实验室的网站，优点是其索引、链接能力，便于分享，还可以输入表格、公式，大大弥补了 Ulysses 的不足。</li>
+</ul>
+
+<h3 id="section-8">2014年8月24日补充</h3>
+
+<p>补充使用体验</p>
+
+<ul>
+  <li><code>Producteev</code> 评论功能很赞，可以存储事件相关的命令行、网页链接、文件等，使得在众多事情的切换中保持脑袋不乱。</li>
+  <li><code>iDocument</code> 界面很棒，今后零散的微博文件分享也有方法保存啦！每一个文件都要打好 tag，方便搜索查找，目前 iDocument 还不支持文件的内容搜索，可以用 EasyFind 实现。</li>
+  <li><code>mediawiki</code> 从这两天的经验看，Ulysses 里面经常翻阅的东西就要考虑写到 mediawiki 中了，作为个人知识库的 cache。最最最重要的是，<strong>有效解决了诸如 Ulysses、Evernote 等笔记软件中笔记间无法加链接的问题</strong>。</li>
+</ul>
+
+<h3 id="section-9">2014年8月27日补充</h3>
+
+<ul>
+  <li><code>Octopress</code> 配置见 <a href="http://frank19900731.github.io/blog/2014/08/24/wo-de-di-yi-pian-octopress-bo-ke/">此篇博客</a>，改造见 <a href="http://frank19900731.github.io/blog/2014/10/16/octopress-gai-zao-ji-lu/">此篇博客</a>。养成知识输出与分享的习惯，争取让自己的博客小有名气。</li>
+  <li><code>Byword</code> 考察了不下十款 Mac 下的 Markdown 编辑器，最终敲定此软件。非常棒的界面设计，写起来很带感的说，段落聚焦（Paragraph Focus）的功能尤赞，专注写作的不二之选，Typewritter 模式也可用，支持字体的自定义，用于 Octopress 写作。</li>
+</ul>
+
+<h3 id="section-10">2014年8月29日补充</h3>
+
+<ul>
+  <li><code>Dash</code> API大全，程序员必备，从诞生伊始就开始关注，一直用到现在，作为一个收藏强迫症患者当然全部下载，<strong>光是索引文件就有40多G</strong>，但是心里满满的踏实感。支持代码片段存储，且在 Dash 开启时，支持在代码编辑器中使用缩写替换，问题在于没有办法进行云同步。</li>
+  <li><code>Gistify</code> 这是 gist 的比较好的 Mac 客户端，缺点是不能指定文件名和Description，优点是创建后自动生成的 url 在剪贴板里，可以到网页上进行修改。</li>
+  <li><code>PopClip</code> 万金油，插件丰富强大，功能在不断完善。</li>
+</ul>
+
+<h3 id="section-11">2014年10月13日补充</h3>
+
+<ul>
+  <li><code>Caffeinated</code> RSS阅读器，虽然还有这排版上的一些问题，但是其优雅的展示效果还是令我不能舍弃。最近花了大力气整理了各方面的RSS资源，希望能够养成此类阅读习惯，将碎片化的时间以及之前浪费在游戏等方面的时间充分利用起来。此外，<strong>这还相当于一个优质博客集合的入口，比起让这些链接沉睡在浏览器收藏夹里要好很多</strong>。</li>
+</ul>
+
+<h3 id="section-12">2014年10月29日补充</h3>
+
+<ul>
+  <li><code>SketchBookPro</code> <strong>配合 Wacom 手写输入板，记录公式快快哒</strong>。</li>
+</ul>
+
+<h3 id="section-13">2014年11月8日补充</h3>
+
+<ul>
+  <li><code>Notebooks</code> 较好的三列组织形式，支持 Markdown 语言，是较好的写书工具。</li>
+  <li><code>Gitbook</code> 类似于 pandoc，支持丰富格式导出，比如 epub、mobi、pdf、网页版，特别是网页版会有较好的传播价值。</li>
+  <li><code>Daum Equation Editor</code> Latex 公式书写利器，方便博客写作。</li>
+  <li><code>花瓣网（Chrome插件）</code> 图片采集神器，非常有于前端积累，<strong>给图片的高效保存提供了较完美的解决方案</strong>。</li>
+</ul>
+
+<p><strong>未完待续</strong></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[我的时间管理经验与工具分享]]></title>
