@@ -9,20 +9,20 @@ keywords: 清华大学, 自动化系, 机器学习, 效率, 阅读, 编程, 正�
 {% assign index = true %}
 
 {% if paginator.previous_page %}
-<article style="background-color: rgba(255, 255, 255, 0.7); padding: 8px 25px 8px 25px; border-radius: 5px; text-align: center;">
+<article style="background-color: rgba(255, 255, 255, 0.3); padding: 8px 25px 8px 25px; border-radius: 5px; text-align: center;">
     <a class="next" href="{{paginator.previous_page}}">Newer &rarr;</a>
 </article>
 {% endif %}
 
 {% for post in paginator.posts %}
 {% assign content = post.content %}
-<article style="background-color: rgba(255, 255, 255, 0.7); padding: 25px 25px 25px 25px; border-radius: 20px;">
+<article style="background-color: rgba(255, 255, 255, 0.3); padding: 25px 25px 25px 25px; border-radius: 20px;">
 	{% include article.html %}
 </article>
 {% endfor %}
 
 {% if paginator.next_page %}
-<article style="background-color: rgba(255, 255, 255, 0.7); padding: 8px 25px 8px 25px; border-radius: 5px; text-align: center;">
+<article style="background-color: rgba(255, 255, 255, 0.3); padding: 8px 25px 8px 25px; border-radius: 5px; text-align: center;">
     <a class="prev" href="{{paginator.next_page}}">&larr; Older</a>
 </article>
 {% endif %}
