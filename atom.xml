@@ -4,7 +4,7 @@
   <title><![CDATA[Blog of 太极儒]]></title>
   <link href="http://frank19900731.github.io/atom.xml" rel="self"/>
   <link href="http://frank19900731.github.io/"/>
-  <updated>2014-11-14T16:05:32+08:00</updated>
+  <updated>2014-11-20T01:12:22+08:00</updated>
   <id>http://frank19900731.github.io/</id>
   <author>
     <name><![CDATA[Frank Song]]></name>
@@ -12,6 +12,85 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Pocket 类目标签的制订]]></title>
+    <link href="http://frank19900731.github.io/blog/2014/11/20/pocket-lei-mu-biao-qian-de-zhi-ding/"/>
+    <updated>2014-11-20T00:52:08+08:00</updated>
+    <id>http://frank19900731.github.io/blog/2014/11/20/pocket-lei-mu-biao-qian-de-zhi-ding</id>
+    <content type="html"><![CDATA[<!-- excerpt start -->
+
+<p>由于Pocket自身不带有分类或建目录的功能，所以类目只能以标签的方式体现。综合个人使用习惯并参考了 <a href="http://www.zwbk.org/MyLemmaShow.aspx?lid=116762#137">《中文百科知识体系目录》</a>，特制订分类体系。此分类体系亦适用于其它知识积累工具。</p>
+
+<h2 id="section">2014年11月20日第一次制订</h2>
+
+<p><strong>一级类目共20个，其中只有信息科学下设二级类目，有21个。</strong></p>
+
+<p><strong>各类目间可能有重叠，特定网页可能与多个类目相关，由本人判决该网页的最大相关类目。</strong></p>
+
+<p><strong>如果判决标准中存在某种规律或约定，会在今后修订时注明。</strong></p>
+
+<ol>
+  <li>宗教哲学   </li>
+  <li>政治政策</li>
+  <li>法律法规  </li>
+  <li>文化艺术     </li>
+  <li>历史典故</li>
+  <li>天文地理 </li>
+  <li>社会科学</li>
+  <li>健康养生</li>
+  <li>生物医学</li>
+  <li>数理科学
+<!-- excerpt end --></li>
+  <li>化学化工</li>
+  <li>农林环境</li>
+  <li>工程技术</li>
+  <li>信息科学
+    <ul>
+      <li>编程方法</li>
+      <li>实用软件</li>
+      <li>脚本编程</li>
+      <li>网页编程</li>
+      <li>网页设计</li>
+      <li>网络安全</li>
+      <li>操作系统</li>
+      <li>数据结构</li>
+      <li>算法设计</li>
+      <li>系统架构</li>
+      <li>产品设计</li>
+      <li>机器学习</li>
+      <li>数据挖掘</li>
+      <li>统计</li>
+      <li>优化建模</li>
+      <li>大数据处理</li>
+      <li>计算机视觉</li>
+      <li>自然语言处理</li>
+      <li>业界动态</li>
+      <li>互联网创业</li>
+      <li>互联网其它</li>
+    </ul>
+  </li>
+  <li>经济管理</li>
+  <li>军事科技  </li>
+  <li>人物</li>
+  <li>效率</li>
+  <li>吃喝玩乐</li>
+  <li>其它知识</li>
+</ol>
+
+<p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2014/11/20/pocket-lei-mu-biao-qian-de-zhi-ding/">http://frank19900731.github.io/blog/2014/11/20/pocket-lei-mu-biao-qian-de-zhi-ding/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[面试经验分享之数据结构、算法分享]]></title>
+    <link href="http://frank19900731.github.io/blog/2014/11/18/mian-shi-jing-yan-fen-xiang-zhi-shu-ju-jie-gou-%2C-suan-fa-fen-xiang/"/>
+    <updated>2014-11-18T10:18:41+08:00</updated>
+    <id>http://frank19900731.github.io/blog/2014/11/18/mian-shi-jing-yan-fen-xiang-zhi-shu-ju-jie-gou-,-suan-fa-fen-xiang</id>
+    <content type="html"><![CDATA[
+<p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2014/11/18/mian-shi-jing-yan-fen-xiang-zhi-shu-ju-jie-gou-%2C-suan-fa-fen-xiang/">http://frank19900731.github.io/blog/2014/11/18/mian-shi-jing-yan-fen-xiang-zhi-shu-ju-jie-gou-%2C-suan-fa-fen-xiang/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[一个工具控的效率观]]></title>
