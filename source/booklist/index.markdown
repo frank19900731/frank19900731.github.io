@@ -10,3 +10,4 @@ keywords: 清华大学, 自动化系, 机器学习, 效率, 阅读, 编程, 正�
 
 {% img imgcenter-no-shadow /img/feature/b-1.jpeg 20% 深入理解计算机系统 %}
 {% img imgcenter-no-shadow /img/feature/b-2.jpeg 20% 计算机程序的构造和解释 %}
+{% img imgcenter-no-shadow /img/feature/b-3.jpeg 20% 具体数学 %}
