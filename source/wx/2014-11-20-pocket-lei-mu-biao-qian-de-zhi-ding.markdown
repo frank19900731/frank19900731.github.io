@@ -8,7 +8,7 @@ tags: [Pocket, 分类目录]
 exclude_from_search: true
 keywords: Pocket, 分类目录, 宗教哲学, 政治政策, 法律法规, 文化艺术, 历史典故, 天文地理, 社会科学, 健康养生, 生物医学, 数理科学, 化学化工, 农林环境, 工程技术, 信息科学, 经济管理, 军事科技, 任务, 效率, 吃喝玩乐, 其他知识
 pc_url: /blog/2014/11/20/pocket-lei-mu-biao-qian-de-zhi-ding/
-wx_url: /blog/2014/11/20-pocket-lei-mu-biao-qian-de-zhi-ding.html
+wx_url: /wx/2014-11-20-pocket-lei-mu-biao-qian-de-zhi-ding.html
 ---
 
 <!-- excerpt start -->

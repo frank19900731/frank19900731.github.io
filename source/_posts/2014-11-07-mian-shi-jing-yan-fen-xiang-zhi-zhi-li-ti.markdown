@@ -267,6 +267,10 @@ avar = var(array);
 - 简要复习概率、期望、常见概率分布、排列组合等知识；
 - 金融、投资领域的面试参加的不多，过段时间再补充几道有关概率、博弈论的题目;
 - 多关注 [Matrix67](http://www.matrix67.com/blog/) 上的题目分享。
+	- [分享一些有趣的面试智力题（上）](http://www.matrix67.com/blog/archives/501)
+	- [分享一些有趣的面试智力题（下）](http://www.matrix67.com/blog/archives/502)
+	- [10个精彩的智力问题](http://www.matrix67.com/blog/archives/2671)
+	- ……
 
 继 `机器学习、大数据问题`、`智力题`，接下来的博文还会陆续分享 `编程语言题` 和 `数据结构与算法题`，敬请期待。
 

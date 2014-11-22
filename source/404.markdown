@@ -5,6 +5,7 @@ date: 2014-10-19 13:07
 comments: false
 sharing: false
 footer: false
+exclude_from_search: true
 ---
 
 <script type="text/javascript" src="http://www.qq.com/404/search_children.js" charset="utf-8"></script>

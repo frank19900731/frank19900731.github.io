@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title></title><link rel="stylesheet" href="style_cache/github-15dc68509b37dbe3792de390aae9bc716c03c421.css" />
+  <link rel="stylesheet" href="style_cache/github2-93f8f619dc51fc5d484d938d7ce6ba262a4d736c.css" />
+  <style>
+    .file-box {
+      margin: 64px auto;
+      width: 920px;
+    }
+	body {
+		font-size: 14px;
+		line-height: 22px;
+		<!--font-family: "adelle",Georgia,"Times New Roman",serif;-->
+		color: #4e443c;
+		background: #f0efe7;
+	}
+
+	.book-toc {
+
+	}
+	a {
+		color: #0388a6;
+		text-decoration: none;
+	}
+	a:hover {
+		color: #04b1d8;
+		text-decoration: none;
+	}
+	ol.book-toc li.chapter{
+		margin-bottom:0.6em
+	}
+	ol.book-toc, ol{
+		list-style-type: disc
+	}
+	ol.book-toc{
+		margin:30px 36px
+	}
+	ol.book-toc a{
+		padding-left:4px
+	}
+	li {
+		line-height: 22px;
+	}
+	h1, h2, h3, h4, h5, h6, li, p, a, ol, div{
+		margin: 0;
+		padding: 0;
+		border: 0;
+		vertical-align: baseline;
+	}
+	ul, ol {
+		padding: 0;
+		margin: 0 0 11px 25px;
+	}
+	h1 {
+		font-size: 36px;
+		line-height: 44px;
+		margin-bottom: 0.4em;
+	}
+	h2 {
+		font-size: 18px;
+		color: #f14e32;
+		font-weight: bold;
+	}
+	h3, h4, h5, h6 {
+		font-size: 14px;
+		color: #f14e32;
+		font-weight: bold;
+	}
+	ol.book-toc h1{
+		font-size: 22px;
+		line-height: 44px;
+		margin-bottom: 0.4em;
+	}
+	ol.book-toc h2 {
+		font-size: 16px;
+		color: #f14e32;
+		font-weight: bold;
+	}
+	ol.book-toc h3, h4, h5, h6 {
+		font-size: 14px;
+		color: #f14e32;
+		font-weight: bold;
+	}
+	p {
+		margin: 0 0 11px;
+		font-size: 14px;
+		line-height: 22px;
+	}
+	div {
+		display: block;
+	}
+	div#nav{
+		padding: 30px
+	}
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="file-box">
+	<div class="file">
+		<div id="readme" class="blob instapaper_body announce md">
+		  <article class="markdown-body entry-content" itemprop="mainContentOfPage">
+			<h1>
+ <a aria-hidden="true" class="anchor" href="#%E8%A1%8C%E5%88%97%E9%80%92%E5%A2%9E%E7%9F%A9%E9%98%B5%E7%9A%84%E6%9F%A5%E6%89%BE" name="user-content-%E8%A1%8C%E5%88%97%E9%80%92%E5%A2%9E%E7%9F%A9%E9%98%B5%E7%9A%84%E6%9F%A5%E6%89%BE">
+  <span class="octicon octicon-link">
+  </span>
+ </a>
+ 行列递增矩阵的查找
+</h1>
+<h2>
+ <a aria-hidden="true" class="anchor" href="#%E9%A2%98%E7%9B%AE%E6%8F%8F%E8%BF%B0" name="user-content-%E9%A2%98%E7%9B%AE%E6%8F%8F%E8%BF%B0">
+  <span class="octicon octicon-link">
+  </span>
+ </a>
+ 题目描述
+</h2>
+<p>
+ 在一个m行n列二维数组中，每一行都按照从左到右递增的顺序排序，每一列都按照从上到下递增的顺序排序。请完成一个函数，输入这样的一个二维数组和一个整数，判断数组中是否含有该整数。
+</p>
+<p>
+ 例如下面的二维数组就是每行、每列都递增排序。如果在这个数组中查找数字6，则返回true；如果查找数字5，由于数组不含有该数字，则返回false。
+</p>
+<p>
+ <a href="../images/23%7E24/23.1.gif" target="_blank">
+  <img alt="img" src="../images/23%7E24/23.1.gif" style="max-width:100%;"/>
+ </a>
+</p>
+<h2>
+ <a aria-hidden="true" class="anchor" href="#%E5%88%86%E6%9E%90%E4%B8%8E%E8%A7%A3%E6%B3%95" name="user-content-%E5%88%86%E6%9E%90%E4%B8%8E%E8%A7%A3%E6%B3%95">
+  <span class="octicon octicon-link">
+  </span>
+ </a>
+ 分析与解法
+</h2>
+<h3>
+ <a aria-hidden="true" class="anchor" href="#%E8%A7%A3%E6%B3%95%E4%B8%80%E5%88%86%E6%B2%BB%E6%B3%95" name="user-content-%E8%A7%A3%E6%B3%95%E4%B8%80%E5%88%86%E6%B2%BB%E6%B3%95">
+  <span class="octicon octicon-link">
+  </span>
+ </a>
+ 解法一、分治法
+</h3>
+<p>
+ 这种行和列分别递增的矩阵，有一个专有名词叫做杨氏矩阵，由剑桥大学数学家杨表在1900年推提出，在这个矩阵中的查找，俗称杨氏矩阵查找。
+</p>
+<p>
+ 以查找数字6为例，因为矩阵的行和列都是递增的，所以整个矩阵的对角线上的数字也是递增的，故我们可以在对角线上进行二分查找，如果要找的数是6介于对角线上相邻的两个数4、10，可以排除掉左上和右下的两个矩形，而在左下和右上的两个矩形继续递归查找，如下图所示：
+ <br>
+  <a href="../images/23%7E24/23.2.gif" target="_blank">
+   <img alt="img" src="../images/23%7E24/23.2.gif" style="max-width:100%;"/>
+  </a>
+ </br>
+</p>
+<h3>
+ <a aria-hidden="true" class="anchor" href="#%E8%A7%A3%E6%B3%95%E4%BA%8C%E5%AE%9A%E4%BD%8D%E6%B3%95" name="user-content-%E8%A7%A3%E6%B3%95%E4%BA%8C%E5%AE%9A%E4%BD%8D%E6%B3%95">
+  <span class="octicon octicon-link">
+  </span>
+ </a>
+ 解法二、定位法
+</h3>
+<p>
+ 首先直接定位到最右上角的元素，再配以二分查找，比要找的数（6）大就往左走，比要找数（6）的小就往下走，直到找到要找的数字（6）为止，这个方法的时间复杂度O（m+n）。如下图所示：
+ <br>
+  <a href="../images/23%7E24/23.3.gif" target="_blank">
+   <img alt="img" src="../images/23%7E24/23.3.gif" style="max-width:100%;"/>
+  </a>
+ </br>
+</p>
+<p>
+ 关键代码如下所示：
+</p>
+<div class="highlight highlight-c">
+ <pre><span class="cp">#define ROW 4</span>
+<span class="cp">#define COL 4</span>
+
+<span class="kt">bool</span> <span class="nf">YoungMatrix</span><span class="p">(</span><span class="kt">int</span> <span class="n">array</span><span class="p">[][</span><span class="n">COL</span><span class="p">],</span> <span class="kt">int</span> <span class="n">searchKey</span><span class="p">){</span>
+    <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">j</span> <span class="o">=</span> <span class="n">COL</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">var</span> <span class="o">=</span> <span class="n">array</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">];</span>
+    <span class="k">while</span> <span class="p">(</span><span class="nb">true</span><span class="p">){</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">var</span> <span class="o">==</span> <span class="n">searchKey</span><span class="p">)</span>
+            <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
+        <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">var</span> <span class="o">&lt;</span> <span class="n">searchKey</span> <span class="o">&amp;&amp;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">ROW</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
+            <span class="n">var</span> <span class="o">=</span> <span class="n">array</span><span class="p">[</span><span class="o">++</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">];</span>
+        <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">var</span> <span class="o">&gt;</span> <span class="n">searchKey</span> <span class="o">&amp;&amp;</span> <span class="n">j</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span>
+            <span class="n">var</span> <span class="o">=</span> <span class="n">array</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="o">--</span><span class="n">j</span><span class="p">];</span>
+        <span class="k">else</span>
+            <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre>
+</div>
+<h2>
+ <a aria-hidden="true" class="anchor" href="#%E4%B8%BE%E4%B8%80%E5%8F%8D%E4%B8%89" name="user-content-%E4%B8%BE%E4%B8%80%E5%8F%8D%E4%B8%89">
+  <span class="octicon octicon-link">
+  </span>
+ </a>
+ 举一反三
+</h2>
+<p>
+ 1、给定 n×n 的实数矩阵，每行和每列都是递增的，求这 n^2 个数的中位数。
+</p>
+<p>
+ 2、我们已经知道杨氏矩阵的每行的元素从左到右单调递增，每列的元素从上到下也单调递增的矩阵。那么，如果给定从1-n这n个数，我们可以构成多少个杨氏矩阵呢？
+</p>
+<p>
+ 例如n = 4的时候，我们可以构成1行4列的矩阵：
+</p>
+<p>
+ 1 2 3 4
+</p>
+<p>
+ 2个2行2列的矩阵:
+</p>
+<p>
+ 1 2
+</p>
+<p>
+ 3 4
+</p>
+<p>
+ 和
+</p>
+<p>
+ 1 3
+</p>
+<p>
+ 2 4
+</p>
+<p>
+ 还有一个4行1列的矩阵
+</p>
+<p>
+ 1
+</p>
+<p>
+ 2
+</p>
+<p>
+ 3
+</p>
+<p>
+ 4
+</p>
+<p>
+ 因此输出4。
+</p>
+		  </article>
+		  
+			<div id="nav">
+				
+					<a href="04.01.html">prev</a>
+					|
+				
+				
+					<a href="04.03.html">next</a>
+				
+				<span style="float: right"><a href="index.html">Back to home</a>
+			</div>
+		  
+		</div>
+	</div>
+  </div>
+  
+  <div>&nbsp;</div>
+  </div>
+  <div style="text-align:center; margin-bottom: 30px">
+	  Generated by <a href="https://github.com/marchtea/md_to_github_html">mdtogh</a>
+  </div>
+</body>
+</html>
