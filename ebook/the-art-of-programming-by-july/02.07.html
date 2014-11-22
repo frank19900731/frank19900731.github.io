@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title></title><link rel="stylesheet" href="style_cache/github-15dc68509b37dbe3792de390aae9bc716c03c421.css" />
+  <link rel="stylesheet" href="style_cache/github2-93f8f619dc51fc5d484d938d7ce6ba262a4d736c.css" />
+  <style>
+    .file-box {
+      margin: 64px auto;
+      width: 920px;
+    }
+	body {
+		font-size: 14px;
+		line-height: 22px;
+		<!--font-family: "adelle",Georgia,"Times New Roman",serif;-->
+		color: #4e443c;
+		background: #f0efe7;
+	}
+
+	.book-toc {
+
+	}
+	a {
+		color: #0388a6;
+		text-decoration: none;
+	}
+	a:hover {
+		color: #04b1d8;
+		text-decoration: none;
+	}
+	ol.book-toc li.chapter{
+		margin-bottom:0.6em
+	}
+	ol.book-toc, ol{
+		list-style-type: disc
+	}
+	ol.book-toc{
+		margin:30px 36px
+	}
+	ol.book-toc a{
+		padding-left:4px
+	}
+	li {
+		line-height: 22px;
+	}
+	h1, h2, h3, h4, h5, h6, li, p, a, ol, div{
+		margin: 0;
+		padding: 0;
+		border: 0;
+		vertical-align: baseline;
+	}
+	ul, ol {
+		padding: 0;
+		margin: 0 0 11px 25px;
+	}
+	h1 {
+		font-size: 36px;
+		line-height: 44px;
+		margin-bottom: 0.4em;
+	}
+	h2 {
+		font-size: 18px;
+		color: #f14e32;
+		font-weight: bold;
+	}
+	h3, h4, h5, h6 {
+		font-size: 14px;
+		color: #f14e32;
+		font-weight: bold;
+	}
+	ol.book-toc h1{
+		font-size: 22px;
+		line-height: 44px;
+		margin-bottom: 0.4em;
+	}
+	ol.book-toc h2 {
+		font-size: 16px;
+		color: #f14e32;
+		font-weight: bold;
+	}
+	ol.book-toc h3, h4, h5, h6 {
+		font-size: 14px;
+		color: #f14e32;
+		font-weight: bold;
+	}
+	p {
+		margin: 0 0 11px;
+		font-size: 14px;
+		line-height: 22px;
+	}
+	div {
+		display: block;
+	}
+	div#nav{
+		padding: 30px
+	}
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="file-box">
+	<div class="file">
+		<div id="readme" class="blob instapaper_body announce md">
+		  <article class="markdown-body entry-content" itemprop="mainContentOfPage">
+			<h1>
+ <a aria-hidden="true" class="anchor" href="#%E8%8D%B7%E5%85%B0%E5%9B%BD%E6%97%97" name="user-content-%E8%8D%B7%E5%85%B0%E5%9B%BD%E6%97%97">
+  <span class="octicon octicon-link">
+  </span>
+ </a>
+ 荷兰国旗
+</h1>
+<h3>
+ <a aria-hidden="true" class="anchor" href="#%E9%A2%98%E7%9B%AE%E6%8F%8F%E8%BF%B0" name="user-content-%E9%A2%98%E7%9B%AE%E6%8F%8F%E8%BF%B0">
+  <span class="octicon octicon-link">
+  </span>
+ </a>
+ 题目描述
+</h3>
+<p>
+ 拿破仑席卷欧洲大陆之后，代表自由，平等，博爱的竖色三色旗也风靡一时。荷兰国旗就是一面三色旗（只不过是横向的），自上而下为红白蓝三色。
+</p>
+<p>
+ <a href="../images/41%7E42/41.1.jpg" target="_blank">
+  <img alt="img" src="../images/41%7E42/41.1.jpg" style="max-width:100%;"/>
+ </a>
+</p>
+<p>
+ 该问题本身是关于三色球排序和分类的，由荷兰科学家Dijkstra提出。由于问题中的三色小球有序排列后正好分为三类，Dijkstra就想象成他母国的国旗，于是问题也就被命名为荷兰旗问题（Dutch National Flag Problem）。
+</p>
+<p>
+ 下面是问题的正规描述：
+现有n个红白蓝三种不同颜色的小球，乱序排列在一起，请通过两两交换任意两个球，使得从左至右，依次是一些红球、一些白球、一些蓝球。
+</p>
+<h3>
+ <a aria-hidden="true" class="anchor" href="#%E5%88%86%E6%9E%90%E4%B8%8E%E8%A7%A3%E6%B3%95" name="user-content-%E5%88%86%E6%9E%90%E4%B8%8E%E8%A7%A3%E6%B3%95">
+  <span class="octicon octicon-link">
+  </span>
+ </a>
+ 分析与解法
+</h3>
+<p>
+ 初看此题，我们貌似除了暴力解决并无好的办法，但联想到我们所熟知的快速排序算法呢？
+</p>
+<p>
+ 我们知道，快速排序依托于一个partition分治过程，在每一趟排序的过程中，选取的主元都会把整个数组排列成一大一小的部分，那我们是否可以借鉴partition过程设定三个指针完成重新排列，使得所有球排列成三个不同颜色的球呢？
+</p>
+<h4>
+ <a aria-hidden="true" class="anchor" href="#%E8%A7%A3%E6%B3%95%E4%B8%80" name="user-content-%E8%A7%A3%E6%B3%95%E4%B8%80">
+  <span class="octicon octicon-link">
+  </span>
+ </a>
+ 解法一
+</h4>
+<p>
+ 通过前面的分析得知，这个问题类似快排中partition过程，只是需要用到三个指针：一个前指针begin，一个中指针current，一个后指针end，current指针遍历整个数组序列，当
+</p>
+<ol>
+ <li>
+  current指针所指元素为0时，与begin指针所指的元素交换，而后current++，begin++ ；
+ </li>
+ <li>
+  current指针所指元素为1时，不做任何交换（即球不动），而后current++ ；
+ </li>
+ <li>
+  current指针所指元素为2时，与end指针所指的元素交换，而后，current指针不动，end-- 。
+ </li>
+</ol>
+<p>
+ 为什么上述第3点中，current指针所指元素为2时，与end指针所指元素交换之后，current指针不能动呢？因为第三步中current指针所指元素与end指针所指元素交换之前，如果end指针之前指的元素是0，那么与current指针所指元素交换之后，current指针此刻所指的元素是0，此时，current指针能动么？不能动，因为如上述第1点所述，如果current指针所指的元素是0，还得与begin指针所指的元素交换。
+</p>
+<p>
+ ok，说这么多，你可能不甚明了，直接引用下gnuhpc的图，就一目了然了：
+</p>
+<p>
+ <a href="../images/41%7E42/41.3.jpg" target="_blank">
+  <img alt="img" src="../images/41%7E42/41.3.jpg" style="max-width:100%;"/>
+ </a>
+ <a href="https://camo.githubusercontent.com/39648f0f0b2a257306d5560958a2d79a5d5367a8/687474703a2f2f68692e6373646e2e6e65742f6174746163686d656e742f3230313130322f32352f383339343332335f31323938363431323235654a34462e6a7067" target="_blank">
+  <img alt="img" data-canonical-src="http://hi.csdn.net/attachment/201102/25/8394323_1298641225eJ4F.jpg" src="https://camo.githubusercontent.com/39648f0f0b2a257306d5560958a2d79a5d5367a8/687474703a2f2f68692e6373646e2e6e65742f6174746163686d656e742f3230313130322f32352f383339343332335f31323938363431323235654a34462e6a7067" style="max-width:100%;"/>
+ </a>
+</p>
+<p>
+ 参考代码如下：
+</p>
+<div class="highlight highlight-cpp">
+ <pre><span class="c1">//引用自gnuhpc  </span>
+<span class="k">while</span><span class="p">(</span> <span class="n">current</span><span class="o">&lt;=</span><span class="n">end</span> <span class="p">)</span>        
+<span class="p">{</span>             
+  <span class="k">if</span><span class="p">(</span> <span class="n">array</span><span class="p">[</span><span class="n">current</span><span class="p">]</span> <span class="o">==</span><span class="mi">0</span> <span class="p">)</span>             
+   <span class="p">{</span>                 
+      <span class="n">swap</span><span class="p">(</span><span class="n">array</span><span class="p">[</span><span class="n">current</span><span class="p">],</span><span class="n">array</span><span class="p">[</span><span class="n">begin</span><span class="p">]);</span>                  
+      <span class="n">current</span><span class="o">++</span><span class="p">;</span>                  
+      <span class="n">begin</span><span class="o">++</span><span class="p">;</span>            
+   <span class="p">}</span>             
+   <span class="k">else</span> <span class="k">if</span><span class="p">(</span> <span class="n">array</span><span class="p">[</span><span class="n">current</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span> <span class="p">)</span>            
+   <span class="p">{</span>                 
+      <span class="n">current</span><span class="o">++</span><span class="p">;</span>            
+   <span class="p">}</span>   
+
+   <span class="k">else</span> <span class="c1">//When array[current] =2   </span>
+   <span class="p">{</span>               
+      <span class="n">swap</span><span class="p">(</span><span class="n">array</span><span class="p">[</span><span class="n">current</span><span class="p">],</span><span class="n">array</span><span class="p">[</span><span class="n">end</span><span class="p">]);</span>                
+      <span class="n">end</span><span class="o">--</span><span class="p">;</span>            
+   <span class="p">}</span>      
+<span class="p">}</span>  
+</pre>
+</div>
+<h3>
+ <a aria-hidden="true" class="anchor" href="#%E4%B8%BE%E4%B8%80%E5%8F%8D%E4%B8%89" name="user-content-%E4%B8%BE%E4%B8%80%E5%8F%8D%E4%B8%89">
+  <span class="octicon octicon-link">
+  </span>
+ </a>
+ 举一反三
+</h3>
+<p>
+ 给定一个字符串里面只有"R" "G" "B" 三个字符，请排序，最终结果的顺序是R在前 G中 B在后。
+</p>
+<p>
+ 要求：空间复杂度是O(1)，且只能遍历一次字符串。
+</p>
+		  </article>
+		  
+			<div id="nav">
+				
+					<a href="02.06.html">prev</a>
+					|
+				
+				
+					<a href="02.08.html">next</a>
+				
+				<span style="float: right"><a href="index.html">Back to home</a>
+			</div>
+		  
+		</div>
+	</div>
+  </div>
+  
+  <div>&nbsp;</div>
+  </div>
+  <div style="text-align:center; margin-bottom: 30px">
+	  Generated by <a href="https://github.com/marchtea/md_to_github_html">mdtogh</a>
+  </div>
+</body>
+</html>

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title></title><link rel="stylesheet" href="style_cache/github-15dc68509b37dbe3792de390aae9bc716c03c421.css" />
+  <link rel="stylesheet" href="style_cache/github2-93f8f619dc51fc5d484d938d7ce6ba262a4d736c.css" />
+  <style>
+    .file-box {
+      margin: 64px auto;
+      width: 920px;
+    }
+	body {
+		font-size: 14px;
+		line-height: 22px;
+		<!--font-family: "adelle",Georgia,"Times New Roman",serif;-->
+		color: #4e443c;
+		background: #f0efe7;
+	}
+
+	.book-toc {
+
+	}
+	a {
+		color: #0388a6;
+		text-decoration: none;
+	}
+	a:hover {
+		color: #04b1d8;
+		text-decoration: none;
+	}
+	ol.book-toc li.chapter{
+		margin-bottom:0.6em
+	}
+	ol.book-toc, ol{
+		list-style-type: disc
+	}
+	ol.book-toc{
+		margin:30px 36px
+	}
+	ol.book-toc a{
+		padding-left:4px
+	}
+	li {
+		line-height: 22px;
+	}
+	h1, h2, h3, h4, h5, h6, li, p, a, ol, div{
+		margin: 0;
+		padding: 0;
+		border: 0;
+		vertical-align: baseline;
+	}
+	ul, ol {
+		padding: 0;
+		margin: 0 0 11px 25px;
+	}
+	h1 {
+		font-size: 36px;
+		line-height: 44px;
+		margin-bottom: 0.4em;
+	}
+	h2 {
+		font-size: 18px;
+		color: #f14e32;
+		font-weight: bold;
+	}
+	h3, h4, h5, h6 {
+		font-size: 14px;
+		color: #f14e32;
+		font-weight: bold;
+	}
+	ol.book-toc h1{
+		font-size: 22px;
+		line-height: 44px;
+		margin-bottom: 0.4em;
+	}
+	ol.book-toc h2 {
+		font-size: 16px;
+		color: #f14e32;
+		font-weight: bold;
+	}
+	ol.book-toc h3, h4, h5, h6 {
+		font-size: 14px;
+		color: #f14e32;
+		font-weight: bold;
+	}
+	p {
+		margin: 0 0 11px;
+		font-size: 14px;
+		line-height: 22px;
+	}
+	div {
+		display: block;
+	}
+	div#nav{
+		padding: 30px
+	}
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="file-box">
+	<div class="file">
+		<div id="readme" class="blob instapaper_body announce md">
+		  <article class="markdown-body entry-content" itemprop="mainContentOfPage">
+			<h2>
+ <a aria-hidden="true" class="anchor" href="#%E6%9C%89%E5%BA%8F%E6%95%B0%E7%BB%84%E7%9A%84%E6%9F%A5%E6%89%BE" name="user-content-%E6%9C%89%E5%BA%8F%E6%95%B0%E7%BB%84%E7%9A%84%E6%9F%A5%E6%89%BE">
+  <span class="octicon octicon-link">
+  </span>
+ </a>
+ 有序数组的查找
+</h2>
+<h3>
+ <a aria-hidden="true" class="anchor" href="#%E9%A2%98%E7%9B%AE%E6%8F%8F%E8%BF%B0" name="user-content-%E9%A2%98%E7%9B%AE%E6%8F%8F%E8%BF%B0">
+  <span class="octicon octicon-link">
+  </span>
+ </a>
+ 题目描述
+</h3>
+<p>
+ 给定一个有序的数组，查找某个数是否在数组中，请编程实现。
+</p>
+<h3>
+ <a aria-hidden="true" class="anchor" href="#%E5%88%86%E6%9E%90%E4%B8%8E%E8%A7%A3%E6%B3%95" name="user-content-%E5%88%86%E6%9E%90%E4%B8%8E%E8%A7%A3%E6%B3%95">
+  <span class="octicon octicon-link">
+  </span>
+ </a>
+ 分析与解法
+</h3>
+<p>
+ 一看到数组本身已经有序，我想你可能反应出了要用二分查找，毕竟二分查找的适用条件就是有序的。那什么是二分查找呢？
+</p>
+<p>
+ 二分查找可以解决（预排序数组的查找）问题：只要数组中包含T（即要查找的值），那么通过不断缩小包含T的范围，最终就可以找到它。其算法流程如下：
+</p>
+<ul>
+ <li>
+  一开始，范围覆盖整个数组。
+ </li>
+ <li>
+  将数组的中间项与T进行比较，如果T比数组的中间项要小，则到数组的前半部分继续查找，反之，则到数组的后半部分继续查找。
+ </li>
+ <li>
+  如此，每次查找可以排除一半元素，范围缩小一半。就这样反复比较，反复缩小范围，最终就会在数组中找到T，或者确定原以为T所在的范围实际为空。
+ </li>
+</ul>
+<p>
+ 对于包含N个元素的表，整个查找过程大约要经过log(2)N次比较。
+</p>
+<p>
+ 此时，可能有不少读者心里嘀咕，不就二分查找么，太简单了。
+</p>
+<p>
+ 然《编程珠玑》的作者Jon Bentley曾在贝尔实验室做过一个实验，即给一些专业的程序员几个小时的时间，用任何一种语言编写二分查找程序（写出高级伪代码也可以），结果参与编写的一百多人中：90%的程序员写的程序中有bug（我并不认为没有bug的代码就正确）。
+</p>
+<p>
+ 也就是说：在足够的时间内，只有大约10%的专业程序员可以把这个小程序写对。但写不对这个小程序的还不止这些人：而且高德纳在《计算机程序设计的艺术 第3卷 排序和查找》第6.2.1节的“历史与参考文献”部分指出，虽然早在1946年就有人将二分查找的方法公诸于世，但直到1962年才有人写出没有bug的二分查找程序。
+</p>
+<p>
+ 你能正确无误的写出二分查找代码么？不妨一试，关闭所有网页，窗口，打开记事本，或者编辑器，或者直接在本文评论下，不参考上面我写的或其他任何人的程序，给自己十分钟到N个小时不等的时间，立即编写一个二分查找程序。
+</p>
+<p>
+ 要准确实现二分查找，首先要把握下面几个要点：
+</p>
+<ul>
+ <li>
+  关于right的赋值
+  <ul>
+   <li>
+    right = n-1 =&gt; while(left &lt;= right) =&gt; right = middle-1;
+   </li>
+   <li>
+    right = n   =&gt; while(left &lt;  right) =&gt; right = middle;
+   </li>
+  </ul>
+ </li>
+ <li>
+  middle的计算不能写在while循环外，否则无法得到更新。
+ </li>
+</ul>
+<p>
+ 以下是一份参考实现：
+</p>
+<div class="highlight highlight-cpp">
+ <pre><span class="kt">int</span> <span class="nf">BinarySearch</span><span class="p">(</span><span class="kt">int</span> <span class="n">array</span><span class="p">[],</span> <span class="kt">int</span> <span class="n">n</span><span class="p">,</span> <span class="kt">int</span> <span class="n">value</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="kt">int</span> <span class="n">left</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">right</span> <span class="o">=</span> <span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span>
+    <span class="c1">//如果这里是int right = n 的话，那么下面有两处地方需要修改，以保证一一对应：</span>
+    <span class="c1">//1、下面循环的条件则是while(left &lt; right)</span>
+    <span class="c1">//2、循环内当 array[middle] &gt; value 的时候，right = mid</span>
+
+    <span class="k">while</span> <span class="p">(</span><span class="n">left</span> <span class="o">&lt;=</span> <span class="n">right</span><span class="p">)</span>  <span class="c1">//循环条件，适时而变</span>
+    <span class="p">{</span>
+        <span class="kt">int</span> <span class="n">middle</span> <span class="o">=</span> <span class="n">left</span> <span class="o">+</span> <span class="p">((</span><span class="n">right</span> <span class="o">-</span> <span class="n">left</span><span class="p">)</span> <span class="o">&gt;&gt;</span> <span class="mi">1</span><span class="p">);</span>  <span class="c1">//防止溢出，移位也更高效。同时，每次循环都需要更新。</span>
+
+        <span class="k">if</span> <span class="p">(</span><span class="n">array</span><span class="p">[</span><span class="n">middle</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">value</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="n">right</span> <span class="o">=</span> <span class="n">middle</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span>  <span class="c1">//right赋值，适时而变</span>
+        <span class="p">}</span>
+        <span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="n">array</span><span class="p">[</span><span class="n">middle</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">value</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="n">left</span> <span class="o">=</span> <span class="n">middle</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="k">else</span>
+            <span class="k">return</span> <span class="n">middle</span><span class="p">;</span>
+        <span class="c1">//可能会有读者认为刚开始时就要判断相等，但毕竟数组中不相等的情况更多</span>
+        <span class="c1">//如果每次循环都判断一下是否相等，将耗费时间</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+<span class="p">}</span>
+</pre>
+</div>
+<h2>
+ <a aria-hidden="true" class="anchor" href="#%E6%80%BB%E7%BB%93" name="user-content-%E6%80%BB%E7%BB%93">
+  <span class="octicon octicon-link">
+  </span>
+ </a>
+ 总结
+</h2>
+<p>
+ 编写二分查找的程序时
+</p>
+<ul>
+ <li>
+  如果令 `left &lt;= right，则right = middle - 1;
+ </li>
+ <li>
+  如果令left &lt; right，则 right = middle;`
+ </li>
+</ul>
+<p>
+ 换言之，算法所操作的区间,是左闭右开区间,还是左闭右闭区间,这个区间,需要在循环初始化。且在循环体是否终止的判断中,以及每次修改left, right区间值这三个地方保持一致,否则就可能出错。
+</p>
+		  </article>
+		  
+			<div id="nav">
+				
+					<a href="03.10.html">prev</a>
+					|
+				
+				
+					<a href="04.02.html">next</a>
+				
+				<span style="float: right"><a href="index.html">Back to home</a>
+			</div>
+		  
+		</div>
+	</div>
+  </div>
+  
+  <div>&nbsp;</div>
+  </div>
+  <div style="text-align:center; margin-bottom: 30px">
+	  Generated by <a href="https://github.com/marchtea/md_to_github_html">mdtogh</a>
+  </div>
+</body>
+</html>

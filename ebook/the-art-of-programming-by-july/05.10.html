@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title></title><link rel="stylesheet" href="style_cache/github-15dc68509b37dbe3792de390aae9bc716c03c421.css" />
+  <link rel="stylesheet" href="style_cache/github2-93f8f619dc51fc5d484d938d7ce6ba262a4d736c.css" />
+  <style>
+    .file-box {
+      margin: 64px auto;
+      width: 920px;
+    }
+	body {
+		font-size: 14px;
+		line-height: 22px;
+		<!--font-family: "adelle",Georgia,"Times New Roman",serif;-->
+		color: #4e443c;
+		background: #f0efe7;
+	}
+
+	.book-toc {
+
+	}
+	a {
+		color: #0388a6;
+		text-decoration: none;
+	}
+	a:hover {
+		color: #04b1d8;
+		text-decoration: none;
+	}
+	ol.book-toc li.chapter{
+		margin-bottom:0.6em
+	}
+	ol.book-toc, ol{
+		list-style-type: disc
+	}
+	ol.book-toc{
+		margin:30px 36px
+	}
+	ol.book-toc a{
+		padding-left:4px
+	}
+	li {
+		line-height: 22px;
+	}
+	h1, h2, h3, h4, h5, h6, li, p, a, ol, div{
+		margin: 0;
+		padding: 0;
+		border: 0;
+		vertical-align: baseline;
+	}
+	ul, ol {
+		padding: 0;
+		margin: 0 0 11px 25px;
+	}
+	h1 {
+		font-size: 36px;
+		line-height: 44px;
+		margin-bottom: 0.4em;
+	}
+	h2 {
+		font-size: 18px;
+		color: #f14e32;
+		font-weight: bold;
+	}
+	h3, h4, h5, h6 {
+		font-size: 14px;
+		color: #f14e32;
+		font-weight: bold;
+	}
+	ol.book-toc h1{
+		font-size: 22px;
+		line-height: 44px;
+		margin-bottom: 0.4em;
+	}
+	ol.book-toc h2 {
+		font-size: 16px;
+		color: #f14e32;
+		font-weight: bold;
+	}
+	ol.book-toc h3, h4, h5, h6 {
+		font-size: 14px;
+		color: #f14e32;
+		font-weight: bold;
+	}
+	p {
+		margin: 0 0 11px;
+		font-size: 14px;
+		line-height: 22px;
+	}
+	div {
+		display: block;
+	}
+	div#nav{
+		padding: 30px
+	}
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="file-box">
+	<div class="file">
+		<div id="readme" class="blob instapaper_body announce md">
+		  <article class="markdown-body entry-content" itemprop="mainContentOfPage">
+			<h2>
+ <a aria-hidden="true" class="anchor" href="#%E6%9C%AC%E7%AB%A0%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E7%9A%84%E4%B9%A0%E9%A2%98" name="user-content-%E6%9C%AC%E7%AB%A0%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E7%9A%84%E4%B9%A0%E9%A2%98">
+  <span class="octicon octicon-link">
+  </span>
+ </a>
+ 本章动态规划的习题
+</h2>
+<h5>
+ <a aria-hidden="true" class="anchor" href="#1%E5%AD%90%E5%BA%8F%E5%88%97%E4%B8%AA%E6%95%B0" name="user-content-1%E5%AD%90%E5%BA%8F%E5%88%97%E4%B8%AA%E6%95%B0">
+  <span class="octicon octicon-link">
+  </span>
+ </a>
+ 1.子序列个数
+</h5>
+<p>
+ 子序列的定义：对于一个序列a=a[1],a[2],......a[n]，则非空序列a'=a[p1],a[p2]......a[pm]为a的一个子序列
+其中1&lt;=p1&lt;p2&lt;.....&lt;pm&lt;=n。 例如：4,14,2,3和14,1,2,3都为4,13,14,1,2,3的子序列。
+</p>
+<ul>
+ <li>
+  对于给出序列a，有些子序列可能是相同的，这里只算做1个。
+ </li>
+ <li>
+  要求输出a的不同子序列的数量。
+ </li>
+</ul>
+<h5>
+ <a aria-hidden="true" class="anchor" href="#2%E6%95%B0%E5%A1%94%E5%8F%96%E6%95%B0%E9%97%AE%E9%A2%98" name="user-content-2%E6%95%B0%E5%A1%94%E5%8F%96%E6%95%B0%E9%97%AE%E9%A2%98">
+  <span class="octicon octicon-link">
+  </span>
+ </a>
+ 2.数塔取数问题
+</h5>
+<p>
+ 一个高度为N的由正整数组成的三角形，从上走到下，求经过的数字和的最大值。
+每次只能走到下一层相邻的数上，例如从第3层的6向下走，只能走到第4层的2或9上。
+</p>
+<p>
+ 5
+</p>
+<p>
+ 8 4
+</p>
+<p>
+ 3 6 9
+</p>
+<p>
+ 7 2 9 5
+</p>
+<p>
+ 例子中的最优方案是：5 + 8 + 6 + 9 = 28。
+</p>
+<h5>
+ <a aria-hidden="true" class="anchor" href="#3%E6%9C%80%E9%95%BF%E5%85%AC%E5%85%B1%E5%AD%90%E5%BA%8F%E5%88%97" name="user-content-3%E6%9C%80%E9%95%BF%E5%85%AC%E5%85%B1%E5%AD%90%E5%BA%8F%E5%88%97">
+  <span class="octicon octicon-link">
+  </span>
+ </a>
+ 3.最长公共子序列
+</h5>
+<p>
+ 什么是最长公共子序列呢?好比一个数列 S，如果分别是两个或多个已知数列的子序列，且是所有符合此条件序列中最长的，则S 称为已知序列的最长公共子序列。
+</p>
+<p>
+ 举个例子，如：有两条随机序列，如 1 3 4 5 5 ，and 2 4 5 5 7 6，则它们的最长公共子序列便是：4 5 5。
+</p>
+<p>
+ 提示：最容易想到的算法是穷举搜索法，但考虑到最长公共子序列问题也有最优子结构性质，可以用动态规划解决。
+</p>
+<h5>
+ <a aria-hidden="true" class="anchor" href="#4%E6%9C%80%E9%95%BF%E9%80%92%E5%A2%9E%E5%AD%90%E5%BA%8F%E5%88%97" name="user-content-4%E6%9C%80%E9%95%BF%E9%80%92%E5%A2%9E%E5%AD%90%E5%BA%8F%E5%88%97">
+  <span class="octicon octicon-link">
+  </span>
+ </a>
+ 4.最长递增子序列
+</h5>
+<p>
+ 给定一个长度为N的数组a0,a1,a2...,an-1，找出一个最长的单调递增子序列（注：递增的意思是对于任意的i&lt;j，都满足ai&lt;aj，此外子序列的意思是不要求连续，顺序不乱即可）。例如：给定一个长度为6的数组A{5， 6， 7， 1， 2， 8}，则其最长的单调递增子序列为{5，6，7，8}，长度为4。
+</p>
+<p>
+ 提示：一种解法是转换为最长公共子序列问题，另外一种解法则是动态规划。当我们考虑动态规划解决时，可以定义dp[i]为以ai为末尾的最长递增子序列的长度，故以ai结尾的递增子序列
+</p>
+<ul>
+ <li>
+  要么是只包含ai的子序列
+ </li>
+ <li>
+  要么是在满足j&lt;i并且aj&lt;ai的以ai为结尾的递增子序列末尾，追加上ai后得到的子序列
+ </li>
+</ul>
+<p>
+ 如此，便可建立递推关系，在O(N^2)时间内解决这个问题。
+</p>
+<h5>
+ <a aria-hidden="true" class="anchor" href="#5%E6%9C%A8%E5%9D%97%E7%A0%8C%E5%A2%99" name="user-content-5%E6%9C%A8%E5%9D%97%E7%A0%8C%E5%A2%99">
+  <span class="octicon octicon-link">
+  </span>
+ </a>
+ 5.木块砌墙
+</h5>
+<p>
+ 用 1×1×1, 1×2×1以及2×1×1的三种木块（横绿竖蓝，且绿蓝长度均为2），
+</p>
+<p>
+ <a href="../images/32%7E33/33.1.png" target="_blank">
+  <img alt="" src="../images/32%7E33/33.1.png" style="max-width:100%;"/>
+ </a>
+</p>
+<p>
+ 搭建高长宽分别为K × 2^N × 1的墙，不能翻转、旋转（其中，0&lt;=N&lt;=1024，1&lt;=K&lt;=4）
+</p>
+<p>
+ <a href="../images/32%7E33/33.2.png" target="_blank">
+  <img alt="" src="../images/32%7E33/33.2.png" style="max-width:100%;"/>
+ </a>
+</p>
+<p>
+ 有多少种方案，输出结果
+</p>
+<p>
+ 对1000000007取模。
+</p>
+<p>
+ 举个例子如给定高度和长度：N=1 K=2，则答案是7，即有7种搭法，如下图所示：
+</p>
+<p>
+ <a href="../images/32%7E33/33.3.png" target="_blank">
+  <img alt="" src="../images/32%7E33/33.3.png" style="max-width:100%;"/>
+ </a>
+</p>
+<p>
+ 提示：此题很有意思，涉及的知识点也比较多，包括动态规划，快速矩阵幂，状态压缩，排列组合等等都一一考察了个遍。
+</p>
+<p>
+ 而且跟一个比较经典的矩阵乘法问题类似：即用1 x 2的多米诺骨牌填满M x N的矩形有多少种方案，M&lt;=5，N&lt;2^31，输出答案mod p的结果
+</p>
+<p>
+ <a href="../images/32%7E33/33.4.gif" target="_blank">
+  <img alt="" src="../images/32%7E33/33.4.gif" style="max-width:100%;"/>
+ </a>
+</p>
+		  </article>
+		  
+			<div id="nav">
+				
+					<a href="05.06.html">prev</a>
+					|
+				
+				
+					<a href="06.00.html">next</a>
+				
+				<span style="float: right"><a href="index.html">Back to home</a>
+			</div>
+		  
+		</div>
+	</div>
+  </div>
+  
+  <div>&nbsp;</div>
+  </div>
+  <div style="text-align:center; margin-bottom: 30px">
+	  Generated by <a href="https://github.com/marchtea/md_to_github_html">mdtogh</a>
+  </div>
+</body>
+</html>
