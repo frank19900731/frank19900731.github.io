@@ -134,7 +134,7 @@ wx_url: /wx/2014-11-18-mian-shi-jing-yan-fen-xiang-zhi-shu-ju-jie-gou-suan-fa-fe
 
 访问入口：
 
-- [机器学习、大数据问题](/blog/2014/11/06/mian-shi-jing-yan-zhi-ji-qi-xue-xi-da-shu-ju-wen-ti/)
-- [智力题](/blog/2014/11/07/mian-shi-jing-yan-fen-xiang-zhi-zhi-li-ti/)
-- [数据结构与算法题](/blog/2014/11/18/mian-shi-jing-yan-fen-xiang-zhi-shu-ju-jie-gou-suan-fa-fen-xiang/)
+- [机器学习、大数据问题](/wx/2014-11-06-mian-shi-jing-yan-zhi-ji-qi-xue-xi-da-shu-ju-wen-ti.html)
+- [智力题](/wx/2014-11-07-mian-shi-jing-yan-fen-xiang-zhi-zhi-li-ti.html)
+- [数据结构与算法题](/wx/2014-11-18-mian-shi-jing-yan-fen-xiang-zhi-shu-ju-jie-gou-suan-fa-fen-xiang.html)
 - 编程语言题
