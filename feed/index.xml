@@ -4,7 +4,7 @@
   <title><![CDATA[Blog of 太极儒]]></title>
   <link href="http://frank19900731.github.io/feed" rel="self"/>
   <link href="http://frank19900731.github.io/"/>
-  <updated>2014-11-23T12:35:43+08:00</updated>
+  <updated>2014-11-23T17:30:00+08:00</updated>
   <id>http://frank19900731.github.io/</id>
   <author>
     <name><![CDATA[Frank Song]]></name>
@@ -14,11 +14,778 @@
 
   
   <entry>
-    <title type="html"><![CDATA[《Open Workshop —— Scala从零到入门》 课堂笔记]]></title>
+    <title type="html"><![CDATA[《Open Workshop — Scala 从零到入门》课堂笔记]]></title>
     <link href="http://frank19900731.github.io/blog/2014/11/23/open-workshop-scalacong-ling-dao-ru-men-ke-tang-bi-ji/"/>
     <updated>2014-11-23T09:56:19+08:00</updated>
     <id>http://frank19900731.github.io/blog/2014/11/23/open-workshop-scalacong-ling-dao-ru-men-ke-tang-bi-ji</id>
-    <content type="html"><![CDATA[
+    <content type="html"><![CDATA[<p><strong>目录</strong></p>
+
+<ul id="markdown-toc">
+  <li><a href="#thoughtworks">关于 ThoughtWorks</a></li>
+  <li><a href="#section">培训记录</a>    <ul>
+      <li><a href="#section-1">第一小节</a></li>
+      <li><a href="#section-2">第二小节</a></li>
+      <li><a href="#section-3">第三小节</a></li>
+      <li><a href="#section-4">第四小节</a></li>
+      <li><a href="#section-5">学习材料</a></li>
+    </ul>
+  </li>
+  <li><a href="#section-6">写在最后</a></li>
+</ul>
+
+<!-- excerpt start -->
+
+<h2 id="thoughtworks">关于 ThoughtWorks</h2>
+
+<p>从 <a href="http://www.huodongxing.com/event/1256701125300">活动行</a> 上了解到有这么一门关于 Scala 的入门培训，周六闲来无事也就去了。一来因为 Scala 语言有 Spark 这样的杀手级应用，自己正要了解学习，二来想体验一些业界培训的氛围。</p>
+
+<p>东直门地铁站 D 口一出就能望见国华投资大厦，活动主办方 ThoughtWorks 在 1105 室。进了公司感觉规模不小，于是在培训开始前查了一下 <a href="http://baike.baidu.com/item/thoughtworks?fr=aladdin">ThoughtWorks</a> 是干啥的，顿时感觉自己孤陋寡闻了。本次活动的讲师是 ThoughtWorks 的员工吴雪峰，他是 Scala 的大牛，在 github 上有分享一些 <a href="https://github.com/XuefengWu/ScalaTraining">培训材料</a>。</p>
+
+<p>培训从早上九点开始，晚上六点结束，<strong>包学包问包午饭</strong>。培训中间穿插了一些 Social 环节，比如自我介绍，闲话讨论，让人感受到码农大家庭的温暖。有小二十个同学参与了此次活动，都是对 Scala 感兴趣或工作当中要用到，除了我和另外一个叫张淞的同学（<a href="http://book.douban.com/subject/25843224/">《Haskell函数式编程入门》</a>的作者）还没工作，其他都是有业界开发经验的人员。有些人已经用了一阵子 Scala，有些人刚配置好环境，比如俺，不过幸好之前看过 <a href="http://book.douban.com/subject/25803388/">《Haskell 趣学指南》</a>，能够跟上老师节奏。</p>
+
+<p>在 Scala 培训进行的同时，还有一个 <a href="http://www.beijing-open-party.org/event/32">Open Party</a> 在公司里举行，加之自己所经历的这次周到细致的培训，我对 ThoughtWorks 这家公司越发好奇。进一步查询获知，ThoughtWorks 举办的分享、报告非常频繁，质量、反响也很好，这其中的推动力是什么呢？</p>
+
+<p>也许公司自有或长期或短期的利益因素考量，但除此之外，我作为一个小白用户，在他们的活动中学到了知识，认识了同路人，还写了这篇文章分享、宣传，这样的效果应该也是 ThoughWorks 所乐见的吧。知乎上有人提问 <a href="http://www.zhihu.com/question/24738030">在 ThoughtWorks 工作是怎样一种体验？</a>，从回答的字里行间我也看到了对“推动力”问题的解答。</p>
+
+<p>总而言之，对 ThoughtWorks 举办的这次活动表示感谢~</p>
+
+<!-- excerpt end -->
+
+<h2 id="section">培训记录</h2>
+
+<p>老师讲的东西到自己的耳朵脑子里，从脑子到笔记，从笔记再到需要字斟句酌的博客文章，这中间会有很多损耗，另限于表达能力和理解能力，仅能保证记录下随堂练习、一些知识要点和学习资料，<strong>建议大家有机会还是亲自报名体验</strong>。</p>
+
+<p>吴雪峰老师大致是按照如下的思维导图来讲述的，分四节课，前三节各一小时，第四节两个多小时……</p>
+
+<p><a href="http://frank19900731.github.io/img/post/2014-11/1.bmp" class="img-up" title="Scala 介绍思维导图"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-11/1.bmp" width="80%" title="Scala 介绍思维导图" /></a></p>
+
+<h3 id="section-1">第一小节</h3>
+
+<p>Scala 允许面向对象编程和函数式编程结合起来，使用后者代码更加简练优美。代码编写效率上，Scala 优于 Java，但都会被编译成 JVM 字节码运行。因为有<strong>杀手级应用 Spark 和 Akka</strong>，所以 Scala 近来越来越受重视。ThoughtWorks 北京接手的 Scala 项目基本都是为了满足客户的数据处理需求。</p>
+
+<p>基本数据类型和语法知识简单讲了一下，val 和 var 的区别需要注意，前者声明常量而后者声明变量。出于效率考虑，尽量避免在 Scala 程序中使用 var，记住<strong>不可变的可以共享，可变的不共享</strong>。</p>
+
+<p>接下来是函数式编程的一些概念。</p>
+
+<p>函数是独立存在的值，是<strong>类型为 ParamsType=&gt;ResultType 的变量</strong>，可以作为另一个函数的参数传入，而方法则是类中的行为，一般用 def 关键字声明，<strong>编译器某些场景下会自动把方法封装为一个函数对象来传递</strong>。</p>
+
+<p>如下 add 即为一个函数。</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>add 函数</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+</pre></td><td class="code"><pre><code class="scala"><span class="line"><span class="n">scala</span><span class="o">&gt;</span> <span class="k">val</span> <span class="n">add</span><span class="k">:</span> <span class="kt">Int</span> <span class="o">=&gt;</span> <span class="nc">Int</span> <span class="k">=&gt;</span><span class="nc">Int</span> <span class="k">=</span> <span class="n">x</span> <span class="k">=&gt;</span> <span class="n">y</span> <span class="k">=&gt;</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span>
+</span><span class="line"><span class="n">add</span><span class="k">:</span> <span class="kt">Int</span> <span class="o">=&gt;</span> <span class="o">(</span><span class="nc">Int</span> <span class="k">=&gt;</span> <span class="nc">Int</span><span class="o">)</span> <span class="k">=</span> <span class="o">&lt;</span><span class="n">function1</span><span class="o">&gt;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>一个函数接受另外一个函数作为参数，前者称为高阶函数。<strong>严格地说，在本例中，auto 并不是一个函数，而是方法，第三小节会作解释</strong>。</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>高阶函数</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+<span class="line-number">11</span>
+</pre></td><td class="code"><pre><code class="scala"><span class="line"><span class="n">scala</span><span class="o">&gt;</span> <span class="k">def</span> <span class="n">auto</span><span class="o">(</span><span class="n">x</span><span class="k">:</span><span class="kt">Int</span><span class="o">,</span> <span class="n">f</span><span class="k">:</span><span class="kt">Int</span> <span class="o">=&gt;</span> <span class="nc">Int</span><span class="o">)</span> <span class="k">=</span> <span class="n">f</span><span class="o">(</span><span class="n">x</span><span class="o">)</span>
+</span><span class="line"><span class="n">auto</span><span class="k">:</span> <span class="o">(</span><span class="kt">x:</span> <span class="kt">Int</span><span class="o">,</span> <span class="kt">f:</span> <span class="kt">Int</span> <span class="o">=&gt;</span> <span class="nc">Int</span><span class="o">)</span><span class="nc">Int</span>
+</span><span class="line">
+</span><span class="line"><span class="n">scala</span><span class="o">&gt;</span> <span class="k">val</span> <span class="n">add1</span><span class="k">:</span><span class="kt">Int</span> <span class="o">=&gt;</span> <span class="nc">Int</span> <span class="k">=</span> <span class="n">x</span> <span class="k">=&gt;</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">1</span>
+</span><span class="line"><span class="n">add1</span><span class="k">:</span> <span class="kt">Int</span> <span class="o">=&gt;</span> <span class="nc">Int</span> <span class="k">=</span> <span class="o">&lt;</span><span class="n">function1</span><span class="o">&gt;</span>
+</span><span class="line">
+</span><span class="line"><span class="n">scala</span><span class="o">&gt;</span> <span class="n">add1</span><span class="o">(</span><span class="mi">2</span><span class="o">)</span>
+</span><span class="line"><span class="n">res6</span><span class="k">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="mi">3</span>
+</span><span class="line">
+</span><span class="line"><span class="n">scala</span><span class="o">&gt;</span> <span class="n">auto</span><span class="o">(</span><span class="mi">3</span><span class="o">,</span> <span class="n">add1</span><span class="o">)</span>
+</span><span class="line"><span class="n">res7</span><span class="k">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="mi">4</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>其中 auto 的返回值类型虽然没有在定义时给出，但 <strong>Scala 可以自动推断出返回值类型</strong>是 Int。auto 函数接收两个参数，x 是 Int 类型的值，f 是将 Int 映射为 Int 的函数，本例中 add1 就是一个满足条件的函数，它将输入参数加一返回。</p>
+
+<p>Scala 中有很多语法糖，比如流式调用，</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>Scala 语法糖一</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+<span class="line-number">11</span>
+<span class="line-number">12</span>
+<span class="line-number">13</span>
+<span class="line-number">14</span>
+<span class="line-number">15</span>
+<span class="line-number">16</span>
+<span class="line-number">17</span>
+</pre></td><td class="code"><pre><code class="scala"><span class="line"><span class="n">scala</span><span class="o">&gt;</span> <span class="mf">0.</span><span class="n">to</span><span class="o">(</span><span class="mi">10</span><span class="o">)</span>
+</span><span class="line"><span class="n">res9</span><span class="k">:</span> <span class="kt">scala.collection.immutable.Range.Inclusive</span> <span class="o">=</span> <span class="nc">Range</span><span class="o">(</span><span class="mi">0</span><span class="o">,</span> <span class="mi">1</span><span class="o">,</span> <span class="mi">2</span><span class="o">,</span> <span class="mi">3</span><span class="o">,</span> <span class="mi">4</span><span class="o">,</span> <span class="mi">5</span><span class="o">,</span> <span class="mi">6</span><span class="o">,</span> <span class="mi">7</span><span class="o">,</span> <span class="mi">8</span><span class="o">,</span> <span class="mi">9</span><span class="o">,</span> <span class="mi">10</span><span class="o">)</span>
+</span><span class="line">
+</span><span class="line"><span class="n">scala</span><span class="o">&gt;</span> <span class="mi">0</span> <span class="n">to</span> <span class="mi">10</span>
+</span><span class="line"><span class="n">res10</span><span class="k">:</span> <span class="kt">scala.collection.immutable.Range.Inclusive</span> <span class="o">=</span> <span class="nc">Range</span><span class="o">(</span><span class="mi">0</span><span class="o">,</span> <span class="mi">1</span><span class="o">,</span> <span class="mi">2</span><span class="o">,</span> <span class="mi">3</span><span class="o">,</span> <span class="mi">4</span><span class="o">,</span> <span class="mi">5</span><span class="o">,</span> <span class="mi">6</span><span class="o">,</span> <span class="mi">7</span><span class="o">,</span> <span class="mi">8</span><span class="o">,</span> <span class="mi">9</span><span class="o">,</span> <span class="mi">10</span><span class="o">)</span>
+</span><span class="line">
+</span><span class="line"><span class="n">scala</span><span class="o">&gt;</span> <span class="mi">1</span><span class="o">+</span><span class="mi">2</span>
+</span><span class="line"><span class="n">res11</span><span class="k">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="mi">3</span>
+</span><span class="line">
+</span><span class="line"><span class="n">scala</span><span class="o">&gt;</span> <span class="mf">1.</span><span class="o">+(</span><span class="mi">2</span><span class="o">)</span>
+</span><span class="line"><span class="n">res12</span><span class="k">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="mi">3</span>
+</span><span class="line">
+</span><span class="line"><span class="n">scala</span><span class="o">&gt;</span> <span class="k">object</span> <span class="nc">o</span> <span class="o">{</span><span class="k">def</span> <span class="n">add1</span><span class="o">(</span><span class="n">x</span><span class="k">:</span> <span class="kt">Int</span><span class="o">)</span><span class="k">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="o">{</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">1</span> <span class="o">}</span> <span class="o">}</span>
+</span><span class="line"><span class="n">defined</span> <span class="k">object</span> <span class="nc">o</span>
+</span><span class="line">
+</span><span class="line"><span class="n">scala</span><span class="o">&gt;</span> <span class="n">o</span> <span class="n">add1</span> <span class="mi">0</span>
+</span><span class="line"><span class="n">res18</span><span class="k">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="mi">1</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>再比如 () 操作符默认调用对象的 apply 函数。</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>Scala 语法糖二</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+</pre></td><td class="code"><pre><code class="scala"><span class="line"><span class="n">scala</span><span class="o">&gt;</span> <span class="k">object</span> <span class="nc">o</span> <span class="o">{</span>
+</span><span class="line">     <span class="o">|</span> <span class="k">def</span> <span class="n">apply</span><span class="o">(</span><span class="n">name</span><span class="k">:</span> <span class="kt">String</span><span class="o">)</span> <span class="k">=</span> <span class="n">println</span><span class="o">(</span><span class="n">s</span><span class="s">&quot;hi,$name&quot;</span><span class="o">)</span>
+</span><span class="line">     <span class="o">|</span> <span class="o">}</span>
+</span><span class="line"><span class="n">defined</span> <span class="k">object</span> <span class="nc">o</span>
+</span><span class="line">
+</span><span class="line"><span class="n">scala</span><span class="o">&gt;</span> <span class="n">o</span><span class="o">(</span><span class="s">&quot;abc&quot;</span><span class="o">)</span>
+</span><span class="line"><span class="n">hi</span><span class="o">,</span><span class="n">abc</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>更多语法糖介绍可以看之前提到的吴老师的培训材料。上例定义的 object 是 Scala 中的单例表达形式，类还是 class。</p>
+
+<p>下面的例子是高阶函数进行判断。</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>高阶函数判断</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+</pre></td><td class="code"><pre><code class="scala"><span class="line"><span class="n">scala</span><span class="o">&gt;</span> <span class="k">def</span> <span class="n">cond</span><span class="o">(</span><span class="n">x</span><span class="k">:</span><span class="kt">Int</span><span class="o">,</span> <span class="n">f</span><span class="k">:</span> <span class="kt">Int</span> <span class="o">=&gt;</span> <span class="nc">Boolean</span><span class="o">)</span><span class="k">:</span><span class="kt">Boolean</span> <span class="o">=</span> <span class="o">{</span> <span class="n">f</span><span class="o">(</span><span class="n">x</span><span class="o">)</span> <span class="o">}</span>
+</span><span class="line"><span class="n">cond</span><span class="k">:</span> <span class="o">(</span><span class="kt">x:</span> <span class="kt">Int</span><span class="o">,</span> <span class="kt">f:</span> <span class="kt">Int</span> <span class="o">=&gt;</span> <span class="nc">Boolean</span><span class="o">)</span><span class="nc">Boolean</span>
+</span><span class="line">
+</span><span class="line"><span class="n">scala</span><span class="o">&gt;</span> <span class="n">cond</span><span class="o">(</span><span class="mi">9</span><span class="o">,</span> <span class="n">x</span> <span class="k">=&gt;</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">8</span><span class="o">)</span>
+</span><span class="line"><span class="n">res3</span><span class="k">:</span> <span class="kt">Boolean</span> <span class="o">=</span> <span class="kc">true</span>
+</span><span class="line">
+</span><span class="line"><span class="n">scala</span><span class="o">&gt;</span> <span class="n">cond</span><span class="o">(</span><span class="mi">9</span><span class="o">,</span> <span class="k">_</span> <span class="o">&lt;</span> <span class="mi">9</span><span class="o">)</span>
+</span><span class="line"><span class="n">res4</span><span class="k">:</span> <span class="kt">Boolean</span> <span class="o">=</span> <span class="kc">false</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>但我们不希望把其中 x 的类型 Int 写死，要求具有泛化能力，可以写成模板形式如下。</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>类型泛化</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+</pre></td><td class="code"><pre><code class="scala"><span class="line"><span class="n">scala</span><span class="o">&gt;</span> <span class="k">def</span> <span class="n">cond</span><span class="o">[</span><span class="kt">T</span><span class="o">](</span><span class="n">x</span><span class="k">:</span><span class="kt">T</span><span class="o">,</span> <span class="n">f</span><span class="k">:</span><span class="kt">T</span> <span class="o">=&gt;</span> <span class="nc">Boolean</span><span class="o">)</span><span class="k">:</span> <span class="kt">Boolean</span> <span class="o">=</span> <span class="n">f</span><span class="o">(</span><span class="n">x</span><span class="o">)</span>
+</span><span class="line"><span class="n">cond</span><span class="k">:</span> <span class="err">[</span><span class="kt">T</span><span class="err">]</span><span class="o">(</span><span class="kt">x:</span> <span class="kt">T</span><span class="o">,</span> <span class="kt">f:</span> <span class="kt">T</span> <span class="o">=&gt;</span> <span class="nc">Boolean</span><span class="o">)</span><span class="nc">Boolean</span>
+</span><span class="line">
+</span><span class="line"><span class="n">scala</span><span class="o">&gt;</span> <span class="n">cond</span><span class="o">(</span><span class="mi">10</span><span class="o">,</span> <span class="k">_</span> <span class="o">&lt;</span> <span class="mi">9</span><span class="o">)</span>
+</span><span class="line"><span class="o">&lt;</span><span class="n">console</span><span class="k">&gt;:</span><span class="mi">9</span><span class="k">:</span> <span class="kt">error:</span> <span class="kt">missing</span> <span class="kt">parameter</span> <span class="k">type</span> <span class="kt">for</span> <span class="kt">expanded</span> <span class="kt">function</span> <span class="o">((</span><span class="kt">x$1</span><span class="o">)</span> <span class="o">=&gt;</span> <span class="kt">x$1.$less</span><span class="o">(</span><span class="err">9</span><span class="o">))</span>
+</span><span class="line">              <span class="n">cond</span><span class="o">(</span><span class="mi">10</span><span class="o">,</span> <span class="k">_</span> <span class="o">&lt;</span> <span class="mi">9</span><span class="o">)</span>
+</span><span class="line">                       <span class="o">^</span>
+</span><span class="line">
+</span><span class="line"><span class="n">scala</span><span class="o">&gt;</span> <span class="n">cond</span><span class="o">(</span><span class="mi">10</span><span class="o">,</span> <span class="o">(</span><span class="k">_:</span><span class="kt">Int</span><span class="o">)</span> <span class="o">&lt;</span> <span class="mi">9</span><span class="o">)</span>
+</span><span class="line"><span class="n">res7</span><span class="k">:</span> <span class="kt">Boolean</span> <span class="o">=</span> <span class="kc">false</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>其中 T 可以表示任意合理的类型。因为无法推断出数据类型，所以中间的运行结果出错，指定后运行正确。</p>
+
+<p>接下来讲到 <a href="http://baike.baidu.com/view/2804134.htm?fr=aladdin">柯里化</a>，也就是</p>
+
+<blockquote><p>把接受多个参数的函数变换成接受一个单一参数(最初函数的第一个参数)的函数，并且返回接受余下的参数且返回结果的新函数的技术。</p></blockquote>
+
+<p>上面的高阶函数的柯里化形式为</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>函数柯里化</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+</pre></td><td class="code"><pre><code class="scala"><span class="line"><span class="n">scala</span><span class="o">&gt;</span> <span class="k">def</span> <span class="n">cond</span><span class="o">[</span><span class="kt">T</span><span class="o">](</span><span class="n">x</span><span class="k">:</span><span class="kt">T</span><span class="o">)(</span><span class="n">f</span><span class="k">:</span><span class="kt">T</span> <span class="o">=&gt;</span> <span class="nc">Boolean</span><span class="o">)</span><span class="k">:</span> <span class="kt">Boolean</span> <span class="o">=</span> <span class="n">f</span><span class="o">(</span><span class="n">x</span><span class="o">)</span>
+</span><span class="line"><span class="n">cond</span><span class="k">:</span> <span class="err">[</span><span class="kt">T</span><span class="err">]</span><span class="o">(</span><span class="kt">x:</span> <span class="kt">T</span><span class="o">)(</span><span class="kt">f:</span> <span class="kt">T</span> <span class="o">=&gt;</span> <span class="kt">Boolean</span><span class="o">)</span><span class="nc">Boolean</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>也就是将两个参数分别用括号括起来。函数柯里化有助于我们用函数生成函数，如下例。</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>用函数生成函数</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+</pre></td><td class="code"><pre><code class="scala"><span class="line"><span class="n">scala</span><span class="o">&gt;</span> <span class="k">val</span> <span class="n">add</span><span class="k">:</span> <span class="kt">Int</span> <span class="o">=&gt;</span> <span class="nc">Int</span> <span class="k">=&gt;</span> <span class="nc">Int</span> <span class="k">=</span> <span class="n">x</span> <span class="k">=&gt;</span> <span class="n">y</span> <span class="k">=&gt;</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span>
+</span><span class="line"><span class="n">add</span><span class="k">:</span> <span class="kt">Int</span> <span class="o">=&gt;</span> <span class="o">(</span><span class="nc">Int</span> <span class="k">=&gt;</span> <span class="nc">Int</span><span class="o">)</span> <span class="k">=</span> <span class="o">&lt;</span><span class="n">function1</span><span class="o">&gt;</span>
+</span><span class="line">
+</span><span class="line"><span class="n">scala</span><span class="o">&gt;</span> <span class="k">val</span> <span class="n">add1</span> <span class="k">=</span> <span class="n">add</span><span class="o">(</span><span class="mi">1</span><span class="o">)</span>
+</span><span class="line"><span class="n">add1</span><span class="k">:</span> <span class="kt">Int</span> <span class="o">=&gt;</span> <span class="nc">Int</span> <span class="k">=</span> <span class="o">&lt;</span><span class="n">function1</span><span class="o">&gt;</span>
+</span><span class="line">
+</span><span class="line"><span class="n">scala</span><span class="o">&gt;</span> <span class="n">add1</span><span class="o">(</span><span class="mi">9</span><span class="o">)</span>
+</span><span class="line"><span class="n">res0</span><span class="k">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="mi">10</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>我们用加法函数生成了一个自增一的函数。</p>
+
+<p>关于 callbyname，老师讲解的不详细，不过有一个好的 <a href="http://www.cnblogs.com/nixil/archive/2012/05/31/2528068.html">参考资料</a> 。与之相对应的概念就是 callbyvalue，区别在于 callbyname 传入的是产生相应结果的过程的入口，而 callbyvalue 传入的是产生好的结果。</p>
+
+<p><strong>【随堂练习一】</strong></p>
+
+<p>补全函数，使得判断条件符合时打印 welcome，不符合则什么也不做。</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>随堂练习一</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class="scala"><span class="line"><span class="n">scala</span><span class="o">&gt;</span> <span class="k">def</span> <span class="n">cond</span><span class="o">[</span><span class="kt">T</span>,<span class="kt">U</span><span class="o">](</span><span class="n">x</span><span class="k">:</span><span class="kt">T</span><span class="o">)(</span><span class="n">p</span><span class="k">:</span><span class="kt">T</span> <span class="o">=&gt;</span> <span class="nc">Boolean</span><span class="o">)(</span><span class="n">f</span><span class="k">:</span> <span class="o">()</span> <span class="o">=&gt;</span> <span class="n">U</span><span class="o">)</span><span class="k">:</span> <span class="kt">Unit</span> <span class="o">=</span> <span class="o">???</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p><strong>解答：</strong></p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>随堂练习一解答</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+</pre></td><td class="code"><pre><code class="scala"><span class="line"><span class="n">scala</span><span class="o">&gt;</span> <span class="k">def</span> <span class="n">cond</span><span class="o">[</span><span class="kt">T</span>,<span class="kt">U</span><span class="o">](</span><span class="n">x</span><span class="k">:</span><span class="kt">T</span><span class="o">)(</span><span class="n">p</span><span class="k">:</span><span class="kt">T</span> <span class="o">=&gt;</span> <span class="nc">Boolean</span><span class="o">)(</span><span class="n">f</span><span class="k">:</span> <span class="o">()</span> <span class="o">=&gt;</span> <span class="n">U</span><span class="o">)</span><span class="k">:</span> <span class="kt">Unit</span> <span class="o">=</span> <span class="o">{</span> <span class="k">if</span> <span class="o">(</span><span class="n">p</span><span class="o">(</span><span class="n">x</span><span class="o">))</span> <span class="n">f</span><span class="o">()</span> <span class="o">}</span>
+</span><span class="line"><span class="n">cond</span><span class="k">:</span> <span class="err">[</span><span class="kt">T</span><span class="o">,</span> <span class="n">U</span><span class="err">]</span><span class="o">(</span><span class="n">x</span><span class="k">:</span> <span class="kt">T</span><span class="o">)(</span><span class="n">p</span><span class="k">:</span> <span class="kt">T</span> <span class="o">=&gt;</span> <span class="nc">Boolean</span><span class="o">)(</span><span class="n">f</span><span class="k">:</span> <span class="o">()</span> <span class="o">=&gt;</span> <span class="n">U</span><span class="o">)</span><span class="nc">Unit</span>
+</span><span class="line">
+</span><span class="line"><span class="n">scala</span><span class="o">&gt;</span> <span class="n">cond</span><span class="o">(</span><span class="s">&quot;Hello World&quot;</span><span class="o">)(</span><span class="n">x</span> <span class="k">=&gt;</span> <span class="o">{</span> <span class="n">x</span><span class="o">.</span><span class="n">contains</span><span class="o">(</span><span class="s">&quot;Hello&quot;</span><span class="o">)</span> <span class="o">})(()</span> <span class="k">=&gt;</span> <span class="o">{</span> <span class="n">println</span><span class="o">(</span><span class="s">&quot;Welcome&quot;</span><span class="o">)}</span> <span class="o">)</span>
+</span><span class="line"><span class="nc">Welcome</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<h3 id="section-2">第二小节</h3>
+
+<p>列表和元组介绍</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>列表和元组</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+<span class="line-number">11</span>
+</pre></td><td class="code"><pre><code class="scala"><span class="line"><span class="n">scala</span><span class="o">&gt;</span> <span class="nc">List</span><span class="o">(</span><span class="mi">1</span><span class="o">,</span><span class="mi">2</span><span class="o">,</span><span class="mi">3</span><span class="o">,</span> <span class="s">&quot;f&quot;</span><span class="o">)</span>
+</span><span class="line"><span class="n">res33</span><span class="k">:</span> <span class="kt">List</span><span class="o">[</span><span class="kt">Any</span><span class="o">]</span> <span class="k">=</span> <span class="nc">List</span><span class="o">(</span><span class="mi">1</span><span class="o">,</span> <span class="mi">2</span><span class="o">,</span> <span class="mi">3</span><span class="o">,</span> <span class="n">f</span><span class="o">)</span>
+</span><span class="line">
+</span><span class="line"><span class="n">scala</span><span class="o">&gt;</span> <span class="o">(</span><span class="mi">1</span><span class="o">,</span><span class="mi">2</span><span class="o">,</span><span class="mi">3</span><span class="o">,</span> <span class="s">&quot;f&quot;</span><span class="o">)</span>
+</span><span class="line"><span class="n">res35</span><span class="k">:</span> <span class="o">(</span><span class="kt">Int</span><span class="o">,</span> <span class="kt">Int</span><span class="o">,</span> <span class="nc">Int</span><span class="o">,</span> <span class="nc">String</span><span class="o">)</span> <span class="k">=</span> <span class="o">(</span><span class="mi">1</span><span class="o">,</span><span class="mi">2</span><span class="o">,</span><span class="mi">3</span><span class="o">,</span><span class="n">f</span><span class="o">)</span>
+</span><span class="line">
+</span><span class="line"><span class="n">scala</span><span class="o">&gt;</span> <span class="n">res35</span><span class="o">.</span><span class="n">_2</span>
+</span><span class="line"><span class="n">res36</span><span class="k">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="mi">2</span>
+</span><span class="line">
+</span><span class="line"><span class="n">scala</span><span class="o">&gt;</span> <span class="nc">Tuple3</span><span class="o">(</span><span class="mi">1</span><span class="o">,</span><span class="mi">2</span><span class="o">,</span> <span class="s">&quot;a&quot;</span><span class="o">)</span>
+</span><span class="line"><span class="n">res37</span><span class="k">:</span> <span class="o">(</span><span class="kt">Int</span><span class="o">,</span> <span class="kt">Int</span><span class="o">,</span> <span class="nc">String</span><span class="o">)</span> <span class="k">=</span> <span class="o">(</span><span class="mi">1</span><span class="o">,</span><span class="mi">2</span><span class="o">,</span><span class="n">a</span><span class="o">)</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p><strong>【随堂练习二】</strong></p>
+
+<p>打印函数的运行时间。</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>随堂练习二</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class="scala"><span class="line"><span class="k">def</span> <span class="n">recordTime</span><span class="o">[</span><span class="kt">T</span><span class="o">](</span><span class="n">msg</span><span class="k">:</span> <span class="kt">String</span><span class="o">)(</span><span class="n">body</span><span class="k">:</span> <span class="o">=&gt;</span> <span class="n">T</span><span class="o">)</span><span class="k">:</span><span class="kt">T</span> <span class="o">=</span> <span class="o">???</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p><strong>解答：</strong></p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>随堂练习二解答</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+<span class="line-number">11</span>
+<span class="line-number">12</span>
+<span class="line-number">13</span>
+<span class="line-number">14</span>
+<span class="line-number">15</span>
+<span class="line-number">16</span>
+</pre></td><td class="code"><pre><code class="scala"><span class="line"><span class="k">import</span> <span class="nn">scala.compat.Platform</span>
+</span><span class="line">
+</span><span class="line"><span class="k">def</span> <span class="n">recordTime</span><span class="o">[</span><span class="kt">T</span><span class="o">](</span><span class="n">msg</span><span class="k">:</span> <span class="kt">String</span><span class="o">)(</span><span class="n">body</span><span class="k">:</span> <span class="o">=&gt;</span> <span class="n">T</span><span class="o">)</span><span class="k">:</span><span class="kt">T</span> <span class="o">=</span> <span class="o">{</span>
+</span><span class="line">	<span class="k">var</span> <span class="n">t1</span> <span class="k">=</span> <span class="nc">Platform</span><span class="o">.</span><span class="n">currentTime</span>
+</span><span class="line">	<span class="k">var</span> <span class="n">result</span> <span class="k">=</span> <span class="n">body</span>
+</span><span class="line">	<span class="k">var</span> <span class="n">t2</span> <span class="k">=</span> <span class="nc">Platform</span><span class="o">.</span><span class="n">currentTime</span>
+</span><span class="line">	<span class="c1">// println(msg + &quot; spend time &quot; + (t2 - t1).toString + &quot; ms&quot;)</span>
+</span><span class="line">	<span class="n">println</span><span class="o">(</span><span class="n">s</span><span class="s">&quot;$msg spend time ${t2 - t1} ms&quot;</span><span class="o">)</span>
+</span><span class="line">	<span class="n">result</span>
+</span><span class="line"><span class="o">}</span>
+</span><span class="line">
+</span><span class="line"><span class="k">def</span> <span class="n">body</span><span class="o">()</span> <span class="o">{</span>
+</span><span class="line">	<span class="o">(</span><span class="mi">0</span> <span class="n">to</span> <span class="mi">3000000</span><span class="o">).</span><span class="n">map</span><span class="o">(</span><span class="k">_</span><span class="o">.</span><span class="n">toLong</span><span class="o">).</span><span class="n">reduce</span><span class="o">(</span><span class="k">_</span> <span class="o">+</span> <span class="k">_</span><span class="o">)</span>
+</span><span class="line"><span class="o">}</span>
+</span><span class="line">
+</span><span class="line"><span class="n">recordTime</span><span class="o">(</span><span class="s">&quot;List&quot;</span><span class="o">)(</span><span class="n">body</span><span class="o">)</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>思路是调用待测函数，记录运行结果作为返回值，过程中记录运行时间并输出。</p>
+
+<p>定义一个函数变量，并查看其类型</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>函数变量定义，查看类型</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+</pre></td><td class="code"><pre><code class="scala"><span class="line"><span class="n">scala</span><span class="o">&gt;</span> <span class="k">val</span> <span class="n">add</span><span class="k">:</span> <span class="kt">Int</span> <span class="o">=&gt;</span> <span class="nc">Int</span> <span class="k">=&gt;</span> <span class="nc">Int</span> <span class="k">=</span> <span class="n">x</span> <span class="k">=&gt;</span> <span class="n">y</span> <span class="k">=&gt;</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span>
+</span><span class="line"><span class="n">add</span><span class="k">:</span> <span class="kt">Int</span> <span class="o">=&gt;</span> <span class="o">(</span><span class="nc">Int</span> <span class="k">=&gt;</span> <span class="nc">Int</span><span class="o">)</span> <span class="k">=</span> <span class="o">&lt;</span><span class="n">function1</span><span class="o">&gt;</span>
+</span><span class="line">
+</span><span class="line"><span class="n">scala</span><span class="o">&gt;</span> <span class="k">:type</span> <span class="kt">add</span>
+</span><span class="line"><span class="nc">Int</span> <span class="k">=&gt;</span> <span class="o">(</span><span class="nc">Int</span> <span class="k">=&gt;</span> <span class="nc">Int</span><span class="o">)</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>然而方法本身并不是一个值，也是没有类型的，需要加 _ 变成函数才能查看相应函数的类型。</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>方法转变为函数，查看类型</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+<span class="line-number">11</span>
+</pre></td><td class="code"><pre><code class="scala"><span class="line"><span class="n">scala</span><span class="o">&gt;</span> <span class="k">def</span> <span class="n">add</span><span class="o">(</span><span class="n">x</span><span class="k">:</span><span class="kt">Int</span><span class="o">)(</span><span class="n">y</span><span class="k">:</span><span class="kt">Int</span><span class="o">)</span> <span class="k">=</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span>
+</span><span class="line"><span class="n">add</span><span class="k">:</span> <span class="o">(</span><span class="kt">x:</span> <span class="kt">Int</span><span class="o">)(</span><span class="kt">y:</span> <span class="kt">Int</span><span class="o">)</span><span class="kt">Int</span>
+</span><span class="line">
+</span><span class="line"><span class="n">scala</span><span class="o">&gt;</span> <span class="k">:type</span> <span class="kt">add</span>
+</span><span class="line"><span class="o">&lt;</span><span class="n">console</span><span class="k">&gt;:</span><span class="mi">9</span><span class="k">:</span> <span class="kt">error:</span> <span class="kt">missing</span> <span class="kt">arguments</span> <span class="kt">for</span> <span class="kt">method</span> <span class="kt">add</span><span class="o">;</span>
+</span><span class="line"><span class="n">follow</span> <span class="k">this</span> <span class="n">method</span> <span class="k">with</span> <span class="err">`</span><span class="k">_</span><span class="err">&#39;</span> <span class="k">if</span> <span class="n">you</span> <span class="n">want</span> <span class="n">to</span> <span class="n">treat</span> <span class="n">it</span> <span class="n">as</span> <span class="n">a</span> <span class="n">partially</span> <span class="n">applied</span> <span class="n">function</span>
+</span><span class="line">              <span class="n">add</span>
+</span><span class="line">              <span class="o">^</span>
+</span><span class="line">
+</span><span class="line"><span class="n">scala</span><span class="o">&gt;</span> <span class="k">:type</span> <span class="kt">add</span> <span class="k">_</span>
+</span><span class="line"><span class="kt">Int</span> <span class="o">=&gt;</span> <span class="o">(</span><span class="nc">Int</span> <span class="k">=&gt;</span> <span class="nc">Int</span><span class="o">)</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>接下来吴老师讲了一个租借的实例，大概想法是打开文件流，内容供你使用，但关闭是由程序自身负责的。</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>Scala 租借</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+</pre></td><td class="code"><pre><code class="scala"><span class="line"><span class="n">scala</span><span class="o">&gt;</span> <span class="k">import</span> <span class="nn">java.io.InputStream</span>
+</span><span class="line"><span class="k">import</span> <span class="nn">java.io.InputStream</span>
+</span><span class="line">
+</span><span class="line"><span class="n">scala</span><span class="o">&gt;</span> <span class="k">def</span> <span class="n">lend</span><span class="o">[</span><span class="kt">T</span><span class="o">](</span><span class="n">in</span><span class="k">:</span> <span class="kt">InputStream</span><span class="o">)(</span><span class="n">f</span><span class="k">:</span> <span class="kt">InputStream</span> <span class="o">=&gt;</span> <span class="n">T</span><span class="o">)</span><span class="k">:</span><span class="kt">T</span> <span class="o">=</span> <span class="o">{</span>
+</span><span class="line">     <span class="o">|</span> <span class="k">val</span> <span class="n">res</span> <span class="k">=</span> <span class="n">f</span><span class="o">(</span><span class="n">in</span><span class="o">)</span>
+</span><span class="line">     <span class="o">|</span> <span class="n">in</span><span class="o">.</span><span class="n">close</span><span class="o">()</span>
+</span><span class="line">     <span class="o">|</span> <span class="n">res</span>
+</span><span class="line">     <span class="o">|</span> <span class="o">}</span>
+</span><span class="line"><span class="n">lend</span><span class="k">:</span> <span class="err">[</span><span class="kt">T</span><span class="err">]</span><span class="o">(</span><span class="kt">in:</span> <span class="kt">java.io.InputStream</span><span class="o">)(</span><span class="kt">f:</span> <span class="kt">java.io.InputStream</span> <span class="o">=&gt;</span> <span class="kt">T</span><span class="o">)</span><span class="n">T</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>由此引申出，Scala 中 对 Java的调用是很容易的，反之则比较难，因为前者特性更加丰富。</p>
+
+<p><strong>【随堂练习三】</strong></p>
+
+<p>分级别打印 log，要求代码尽量精简。</p>
+
+<p><strong>解答：</strong></p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>随堂练习三解答</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+</pre></td><td class="code"><pre><code class="scala"><span class="line"><span class="k">def</span> <span class="n">log</span><span class="o">(</span><span class="n">level</span><span class="k">:</span> <span class="kt">String</span><span class="o">)(</span><span class="n">content</span><span class="k">:</span> <span class="o">=&gt;</span> <span class="nc">String</span><span class="o">)</span><span class="k">:</span><span class="kt">Unit</span> <span class="o">=</span> <span class="o">{</span>
+</span><span class="line">	<span class="n">println</span><span class="o">(</span><span class="n">s</span><span class="s">&quot;[$level]$content&quot;</span><span class="o">)</span>
+</span><span class="line"><span class="o">}</span>
+</span><span class="line">
+</span><span class="line"><span class="k">def</span> <span class="n">debug</span><span class="o">(</span><span class="n">msg</span><span class="k">:</span> <span class="o">=&gt;</span> <span class="nc">String</span><span class="o">)</span> <span class="k">=</span> <span class="n">log</span><span class="o">(</span><span class="s">&quot;Debug&quot;</span><span class="o">)(</span><span class="n">msg</span><span class="o">)</span>
+</span><span class="line"><span class="k">def</span> <span class="n">info</span><span class="o">(</span><span class="n">msg</span><span class="k">:</span> <span class="o">=&gt;</span> <span class="nc">String</span><span class="o">)</span> <span class="k">=</span> <span class="n">log</span><span class="o">(</span><span class="s">&quot;Info&quot;</span><span class="o">)(</span><span class="n">msg</span><span class="o">)</span>
+</span><span class="line"><span class="k">def</span> <span class="n">warning</span><span class="o">(</span><span class="n">msg</span><span class="k">:</span> <span class="o">=&gt;</span> <span class="nc">String</span><span class="o">)</span> <span class="k">=</span> <span class="n">log</span><span class="o">(</span><span class="s">&quot;Warning&quot;</span><span class="o">)(</span><span class="n">msg</span><span class="o">)</span>
+</span><span class="line"><span class="k">def</span> <span class="n">error</span><span class="o">(</span><span class="n">msg</span><span class="k">:</span> <span class="o">=&gt;</span> <span class="nc">String</span><span class="o">)</span> <span class="k">=</span> <span class="n">log</span><span class="o">(</span><span class="s">&quot;Error&quot;</span><span class="o">)(</span><span class="n">msg</span><span class="o">)</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>这里 log 可以被称为偏函数，运用了用函数生成函数的思路。</p>
+
+<h3 id="section-3">第三小节</h3>
+
+<p>吴老师简要讲解了一下 Future，给出了一个示例，当然，关于多线程、高并发的处理还得自己深入去研究啦。</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>Future 示例</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+<span class="line-number">11</span>
+<span class="line-number">12</span>
+<span class="line-number">13</span>
+<span class="line-number">14</span>
+</pre></td><td class="code"><pre><code class="scala"><span class="line"><span class="n">scala</span><span class="o">&gt;</span> <span class="k">import</span> <span class="nn">scala.concurrent.Future</span>
+</span><span class="line"><span class="k">import</span> <span class="nn">scala.concurrent.Future</span>
+</span><span class="line">
+</span><span class="line"><span class="n">scala</span><span class="o">&gt;</span> <span class="k">import</span> <span class="nn">scala.concurrent.ExecutionContext.Implicits.global</span>
+</span><span class="line"><span class="k">import</span> <span class="nn">scala.concurrent.ExecutionContext.Implicits.global</span>
+</span><span class="line">
+</span><span class="line"><span class="n">scala</span><span class="o">&gt;</span> <span class="k">val</span> <span class="n">f</span> <span class="k">=</span> <span class="nc">Future</span><span class="o">{</span> <span class="nc">Thread</span><span class="o">.</span><span class="n">sleep</span><span class="o">(</span><span class="mi">1000</span><span class="o">);</span> <span class="n">println</span><span class="o">(</span><span class="s">&quot;Hello&quot;</span><span class="o">);</span> <span class="s">&quot;hi&quot;</span> <span class="o">}</span>
+</span><span class="line"><span class="n">f</span><span class="k">:</span> <span class="kt">scala.concurrent.Future</span><span class="o">[</span><span class="kt">String</span><span class="o">]</span> <span class="k">=</span> <span class="n">scala</span><span class="o">.</span><span class="n">concurrent</span><span class="o">.</span><span class="n">impl</span><span class="o">.</span><span class="nc">Promise$DefaultPromise</span><span class="k">@</span><span class="mi">464</span><span class="n">daa7d</span>
+</span><span class="line">
+</span><span class="line"><span class="n">scala</span><span class="o">&gt;</span> <span class="nc">Hello</span>
+</span><span class="line">
+</span><span class="line">
+</span><span class="line"><span class="n">scala</span><span class="o">&gt;</span> <span class="n">f</span><span class="o">.</span><span class="n">value</span>
+</span><span class="line"><span class="n">res0</span><span class="k">:</span> <span class="kt">Option</span><span class="o">[</span><span class="kt">scala.util.Try</span><span class="o">[</span><span class="kt">String</span><span class="o">]]</span> <span class="k">=</span> <span class="nc">Some</span><span class="o">(</span><span class="nc">Success</span><span class="o">(</span><span class="n">hi</span><span class="o">))</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>Scala 中也可以使用闭包，示例如下。</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>Scala 中的闭包</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+<span class="line-number">11</span>
+<span class="line-number">12</span>
+<span class="line-number">13</span>
+<span class="line-number">14</span>
+<span class="line-number">15</span>
+<span class="line-number">16</span>
+<span class="line-number">17</span>
+</pre></td><td class="code"><pre><code class="scala"><span class="line"><span class="n">scala</span><span class="o">&gt;</span> <span class="k">def</span> <span class="n">makeIncreaser</span><span class="o">(</span><span class="n">start</span><span class="k">:</span> <span class="kt">Int</span><span class="o">,</span> <span class="n">step</span><span class="k">:</span> <span class="kt">Int</span><span class="o">)</span><span class="k">:</span> <span class="o">()</span> <span class="o">=&gt;</span> <span class="o">()</span> <span class="k">=&gt;</span> <span class="nc">Int</span> <span class="k">=</span> <span class="o">{</span>
+</span><span class="line">     <span class="o">|</span> <span class="k">var</span> <span class="n">count</span> <span class="k">=</span> <span class="n">start</span>
+</span><span class="line">     <span class="o">|</span> <span class="o">()</span> <span class="k">=&gt;</span> <span class="o">{</span>
+</span><span class="line">     <span class="o">|</span> <span class="n">count</span> <span class="o">+=</span> <span class="n">step</span>
+</span><span class="line">     <span class="o">|</span> <span class="o">()</span> <span class="k">=&gt;</span> <span class="n">count</span>
+</span><span class="line">     <span class="o">|</span> <span class="o">}</span>
+</span><span class="line">     <span class="o">|</span> <span class="o">}</span>
+</span><span class="line"><span class="n">makeIncreaser</span><span class="k">:</span> <span class="o">(</span><span class="kt">start:</span> <span class="kt">Int</span><span class="o">,</span> <span class="kt">step:</span> <span class="kt">Int</span><span class="o">)()</span> <span class="k">=&gt;</span> <span class="o">()</span> <span class="k">=&gt;</span> <span class="nc">Int</span>
+</span><span class="line">
+</span><span class="line"><span class="n">scala</span><span class="o">&gt;</span> <span class="n">makeIncreaser</span><span class="o">(</span><span class="mi">0</span><span class="o">,</span> <span class="mi">3</span><span class="o">)</span>
+</span><span class="line"><span class="n">res47</span><span class="k">:</span> <span class="o">()</span> <span class="o">=&gt;</span> <span class="o">()</span> <span class="k">=&gt;</span> <span class="nc">Int</span> <span class="k">=</span> <span class="o">&lt;</span><span class="n">function0</span><span class="o">&gt;</span>
+</span><span class="line">
+</span><span class="line"><span class="n">scala</span><span class="o">&gt;</span> <span class="n">res47</span><span class="o">()</span>
+</span><span class="line"><span class="n">res48</span><span class="k">:</span> <span class="o">()</span> <span class="o">=&gt;</span> <span class="nc">Int</span> <span class="k">=</span> <span class="o">&lt;</span><span class="n">function0</span><span class="o">&gt;</span>
+</span><span class="line">
+</span><span class="line"><span class="n">scala</span><span class="o">&gt;</span> <span class="n">res47</span><span class="o">()()</span>
+</span><span class="line"><span class="n">res49</span><span class="k">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="mi">6</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>上一小节最后的 log 函数是一个偏函数，还有一种函数形式是函数组合。所谓函数组合就是把多个函数联结在一起，共同完成一项任务。示例见随堂练习四。</p>
+
+<p><strong>【随堂练习四】</strong></p>
+
+<p>将字符串转为整数类型，并加一，函数声明如下。</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>随堂练习四</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+</pre></td><td class="code"><pre><code class="scala"><span class="line"><span class="k">def</span> <span class="n">str2Int</span><span class="o">(</span><span class="n">s</span><span class="k">:</span><span class="kt">String</span><span class="o">)</span><span class="k">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="n">s</span><span class="o">.</span><span class="n">toInt</span>
+</span><span class="line"><span class="k">def</span> <span class="n">add1</span><span class="o">(</span><span class="n">x</span><span class="k">:</span> <span class="kt">Int</span><span class="o">)</span><span class="k">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">1</span>
+</span><span class="line"><span class="k">def</span> <span class="n">addThen</span><span class="o">(</span><span class="n">f</span><span class="k">:</span> <span class="kt">String</span> <span class="o">=&gt;</span> <span class="nc">Int</span><span class="o">)(</span><span class="n">g</span><span class="k">:</span> <span class="kt">Int</span> <span class="o">=&gt;</span> <span class="nc">Int</span><span class="o">)</span><span class="k">:</span> <span class="kt">String</span> <span class="o">=&gt;</span> <span class="nc">Int</span> <span class="k">=</span> <span class="o">???</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p><strong>解答：</strong></p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>随堂练习四解答</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+</pre></td><td class="code"><pre><code class="scala"><span class="line"><span class="k">def</span> <span class="n">str2Int</span><span class="o">(</span><span class="n">s</span><span class="k">:</span><span class="kt">String</span><span class="o">)</span><span class="k">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="n">s</span><span class="o">.</span><span class="n">toInt</span>
+</span><span class="line"><span class="k">def</span> <span class="n">add1</span><span class="o">(</span><span class="n">x</span><span class="k">:</span> <span class="kt">Int</span><span class="o">)</span><span class="k">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">1</span>
+</span><span class="line"><span class="k">def</span> <span class="n">addThen</span><span class="o">(</span><span class="n">f</span><span class="k">:</span> <span class="kt">String</span> <span class="o">=&gt;</span> <span class="nc">Int</span><span class="o">)(</span><span class="n">g</span><span class="k">:</span> <span class="kt">Int</span> <span class="o">=&gt;</span> <span class="nc">Int</span><span class="o">)</span><span class="k">:</span> <span class="kt">String</span> <span class="o">=&gt;</span> <span class="nc">Int</span> <span class="k">=</span> <span class="o">{</span>
+</span><span class="line">	<span class="n">x</span><span class="k">:</span> <span class="kt">String</span> <span class="o">=&gt;</span> <span class="n">add1</span><span class="o">(</span><span class="n">f</span><span class="o">(</span><span class="n">x</span><span class="o">))</span>
+</span><span class="line"><span class="o">}</span>
+</span><span class="line">
+</span><span class="line"><span class="k">val</span> <span class="n">f</span> <span class="k">=</span> <span class="n">addThen</span><span class="o">(</span><span class="n">str2Int</span><span class="o">)(</span><span class="n">add1</span><span class="o">)</span>
+</span><span class="line"><span class="n">println</span><span class="o">(</span><span class="n">f</span><span class="o">(</span><span class="s">&quot;12&quot;</span><span class="o">))</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>为了提高泛化能力，函数组合 andThen 的更一般形式如下</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>andThen 泛化</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+<span class="line-number">11</span>
+</pre></td><td class="code"><pre><code class="scala"><span class="line"><span class="n">scala</span><span class="o">&gt;</span> <span class="k">def</span> <span class="n">add1</span><span class="o">(</span><span class="n">x</span><span class="k">:</span> <span class="kt">Int</span><span class="o">)</span> <span class="k">=</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">1</span>
+</span><span class="line"><span class="n">add1</span><span class="k">:</span> <span class="o">(</span><span class="kt">x:</span> <span class="kt">Int</span><span class="o">)</span><span class="kt">Int</span>
+</span><span class="line">
+</span><span class="line"><span class="n">scala</span><span class="o">&gt;</span> <span class="k">def</span> <span class="n">addThen</span><span class="o">[</span><span class="kt">A</span>,<span class="kt">B</span>,<span class="kt">C</span><span class="o">](</span><span class="n">f</span><span class="k">:</span> <span class="kt">A</span> <span class="o">=&gt;</span> <span class="n">B</span><span class="o">)(</span><span class="n">g</span><span class="k">:</span> <span class="kt">B</span> <span class="o">=&gt;</span> <span class="n">C</span><span class="o">)</span><span class="k">:</span> <span class="kt">A</span> <span class="o">=&gt;</span> <span class="n">C</span> <span class="k">=</span> <span class="o">{</span> <span class="n">x</span> <span class="k">=&gt;</span> <span class="n">g</span><span class="o">(</span><span class="n">f</span><span class="o">(</span><span class="n">x</span><span class="o">))</span> <span class="o">}</span>
+</span><span class="line"><span class="n">addThen</span><span class="k">:</span> <span class="err">[</span><span class="kt">A</span><span class="o">,</span> <span class="n">B</span><span class="o">,</span> <span class="n">C</span><span class="err">]</span><span class="o">(</span><span class="n">f</span><span class="k">:</span> <span class="kt">A</span> <span class="o">=&gt;</span> <span class="n">B</span><span class="o">)(</span><span class="n">g</span><span class="k">:</span> <span class="kt">B</span> <span class="o">=&gt;</span> <span class="n">C</span><span class="o">)</span><span class="n">A</span> <span class="k">=&gt;</span> <span class="n">C</span>
+</span><span class="line">
+</span><span class="line"><span class="n">scala</span><span class="o">&gt;</span> <span class="k">var</span> <span class="n">f</span> <span class="k">=</span> <span class="n">addThen</span><span class="o">(</span><span class="n">add1</span><span class="o">)(</span><span class="n">add1</span><span class="o">)</span>
+</span><span class="line"><span class="n">f</span><span class="k">:</span> <span class="kt">Int</span> <span class="o">=&gt;</span> <span class="nc">Int</span> <span class="k">=</span> <span class="o">&lt;</span><span class="n">function1</span><span class="o">&gt;</span>
+</span><span class="line">
+</span><span class="line"><span class="n">scala</span><span class="o">&gt;</span> <span class="n">f</span><span class="o">(</span><span class="mi">1</span><span class="o">)</span>
+</span><span class="line"><span class="n">res55</span><span class="k">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="mi">3</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>接下来讲解的是 pattern match，因为用过 Haskell，这里我再熟悉不过了。</p>
+
+<p>用 pattern match 实现斐波那契数列</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>斐波那契数列</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+</pre></td><td class="code"><pre><code class="scala"><span class="line"><span class="k">def</span> <span class="n">fib</span><span class="o">(</span><span class="n">n</span><span class="k">:</span> <span class="kt">Int</span><span class="o">)</span><span class="k">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="n">n</span> <span class="k">match</span> <span class="o">{</span>
+</span><span class="line">	<span class="k">case</span> <span class="mi">0</span> <span class="k">=&gt;</span> <span class="mi">0</span>
+</span><span class="line">	<span class="k">case</span> <span class="mi">1</span> <span class="k">=&gt;</span> <span class="mi">1</span>
+</span><span class="line">	<span class="k">case</span> <span class="k">_</span> <span class="k">=&gt;</span> <span class="n">fib</span><span class="o">(</span><span class="n">n</span><span class="o">-</span><span class="mi">2</span><span class="o">)</span> <span class="o">+</span> <span class="n">fib</span><span class="o">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="o">)</span>
+</span><span class="line"><span class="o">}</span>
+</span><span class="line">
+</span><span class="line"><span class="n">println</span><span class="o">(</span><span class="n">fib</span><span class="o">(</span><span class="mi">5</span><span class="o">))</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>用 pattern match 实现过滤器</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>实现 Filter</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+<span class="line-number">11</span>
+<span class="line-number">12</span>
+<span class="line-number">13</span>
+<span class="line-number">14</span>
+</pre></td><td class="code"><pre><code class="scala"><span class="line"><span class="k">def</span> <span class="n">filter</span><span class="o">[</span><span class="kt">A</span><span class="o">](</span><span class="n">l</span><span class="k">:</span> <span class="kt">List</span><span class="o">[</span><span class="kt">A</span><span class="o">],</span> <span class="n">p</span><span class="k">:</span> <span class="kt">A</span> <span class="o">=&gt;</span> <span class="nc">Boolean</span><span class="o">)</span><span class="k">:</span> <span class="kt">List</span><span class="o">[</span><span class="kt">A</span><span class="o">]</span> <span class="k">=</span> <span class="n">l</span> <span class="k">match</span> <span class="o">{</span>
+</span><span class="line">	<span class="k">case</span> <span class="nc">Nil</span> <span class="k">=&gt;</span> <span class="nc">Nil</span>
+</span><span class="line">	<span class="k">case</span> <span class="n">x</span> <span class="o">::</span> <span class="n">xs</span> <span class="k">=&gt;</span> <span class="o">{</span>
+</span><span class="line">		<span class="k">if</span> <span class="o">(</span><span class="n">p</span><span class="o">(</span><span class="n">x</span><span class="o">))</span>
+</span><span class="line">			<span class="n">x</span> <span class="o">::</span> <span class="n">filter</span><span class="o">(</span><span class="n">xs</span><span class="o">,</span> <span class="n">p</span><span class="o">)</span>
+</span><span class="line">		<span class="k">else</span>
+</span><span class="line">			<span class="n">filter</span><span class="o">(</span><span class="n">xs</span><span class="o">,</span> <span class="n">p</span><span class="o">)</span>
+</span><span class="line">	<span class="o">}</span>
+</span><span class="line"><span class="o">}</span>
+</span><span class="line">
+</span><span class="line"><span class="k">def</span> <span class="n">fil</span><span class="o">(</span><span class="n">x</span><span class="k">:</span> <span class="kt">Int</span><span class="o">)</span><span class="k">:</span> <span class="kt">Boolean</span> <span class="o">=</span> <span class="o">{</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="mi">5</span> <span class="o">}</span>
+</span><span class="line">
+</span><span class="line"><span class="k">val</span> <span class="n">result</span> <span class="k">=</span> <span class="n">filter</span><span class="o">((</span><span class="mi">0</span> <span class="n">to</span> <span class="mi">9</span><span class="o">).</span><span class="n">toList</span><span class="o">,</span> <span class="n">fil</span><span class="o">)</span>
+</span><span class="line"><span class="n">result</span><span class="o">.</span><span class="n">foreach</span><span class="o">(</span><span class="n">println</span><span class="o">)</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>用 pattern match 实现快速排序</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>快速排序</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+<span class="line-number">11</span>
+<span class="line-number">12</span>
+<span class="line-number">13</span>
+<span class="line-number">14</span>
+<span class="line-number">15</span>
+</pre></td><td class="code"><pre><code class="scala"><span class="line"><span class="k">def</span> <span class="n">quicksort</span><span class="o">(</span><span class="n">xs</span><span class="k">:</span> <span class="kt">List</span><span class="o">[</span><span class="kt">Int</span><span class="o">])</span><span class="k">:</span> <span class="kt">List</span><span class="o">[</span><span class="kt">Int</span><span class="o">]</span> <span class="k">=</span> <span class="o">{</span>
+</span><span class="line">	<span class="n">xs</span> <span class="k">match</span> <span class="o">{</span>
+</span><span class="line">		<span class="k">case</span> <span class="nc">Nil</span> <span class="k">=&gt;</span> <span class="nc">Nil</span>
+</span><span class="line">		<span class="k">case</span> <span class="n">x</span> <span class="o">::</span> <span class="nc">Nil</span> <span class="k">=&gt;</span> <span class="n">xs</span>
+</span><span class="line">		<span class="k">case</span> <span class="n">pivot</span> <span class="o">::</span> <span class="n">tail</span> <span class="k">=&gt;</span>
+</span><span class="line">			<span class="k">val</span> <span class="o">(</span><span class="n">low</span><span class="o">,</span> <span class="n">high</span><span class="o">)</span> <span class="k">=</span> <span class="n">tail</span><span class="o">.</span><span class="n">partition</span><span class="o">(</span><span class="k">_</span> <span class="o">&lt;</span> <span class="n">pivot</span><span class="o">)</span>
+</span><span class="line">			<span class="n">quicksort</span><span class="o">(</span><span class="n">low</span><span class="o">)</span> <span class="o">:::</span> <span class="n">pivot</span> <span class="o">::</span> <span class="n">quicksort</span><span class="o">(</span><span class="n">high</span><span class="o">)</span>
+</span><span class="line">	<span class="o">}</span>
+</span><span class="line"><span class="o">}</span>
+</span><span class="line">
+</span><span class="line"><span class="k">val</span> <span class="n">randoms</span> <span class="k">=</span> <span class="o">(</span><span class="mi">0</span> <span class="n">to</span> <span class="mi">20</span><span class="o">).</span><span class="n">map</span><span class="o">(</span><span class="k">_</span> <span class="k">=&gt;</span> <span class="n">scala</span><span class="o">.</span><span class="n">util</span><span class="o">.</span><span class="nc">Random</span><span class="o">.</span><span class="n">nextInt</span><span class="o">(</span><span class="mi">100</span><span class="o">)).</span><span class="n">toList</span>
+</span><span class="line"><span class="k">val</span> <span class="n">sorted</span> <span class="k">=</span> <span class="n">quicksort</span><span class="o">(</span><span class="n">randoms</span><span class="o">)</span>
+</span><span class="line"><span class="n">randoms</span><span class="o">.</span><span class="n">foreach</span><span class="o">(</span><span class="n">n</span> <span class="k">=&gt;</span> <span class="o">(</span><span class="n">print</span><span class="o">(</span><span class="n">n</span><span class="o">),</span> <span class="n">print</span><span class="o">(</span><span class="s">&quot; &quot;</span><span class="o">)))</span>
+</span><span class="line"><span class="n">println</span><span class="o">()</span>
+</span><span class="line"><span class="n">sorted</span><span class="o">.</span><span class="n">foreach</span><span class="o">(</span><span class="n">n</span> <span class="k">=&gt;</span> <span class="o">(</span><span class="n">print</span><span class="o">(</span><span class="n">n</span><span class="o">),</span> <span class="n">print</span><span class="o">(</span><span class="s">&quot; &quot;</span><span class="o">)))</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<h3 id="section-4">第四小节</h3>
+
+<p>最后一小节讲得比较杂，吴老师用到了很多他自己培训材料上的内容。<strong>因为对 Scala 了解尚浅，所以很多内容由于理解不深也不方便复述，比如 case class、Monads、Scalaz、Akka 相关</strong>。</p>
+
+<p>本节简要举例讲解了一下 Scala 中的面向对象。引入了 Trait（特质），类似于 Java 中的接口，不过可以定义方法。Scala 有自己的判别机制识别多重继承中的方法冲突。</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>Scala 面向对象</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+<span class="line-number">11</span>
+<span class="line-number">12</span>
+<span class="line-number">13</span>
+<span class="line-number">14</span>
+<span class="line-number">15</span>
+<span class="line-number">16</span>
+<span class="line-number">17</span>
+<span class="line-number">18</span>
+<span class="line-number">19</span>
+<span class="line-number">20</span>
+<span class="line-number">21</span>
+<span class="line-number">22</span>
+<span class="line-number">23</span>
+<span class="line-number">24</span>
+<span class="line-number">25</span>
+<span class="line-number">26</span>
+<span class="line-number">27</span>
+<span class="line-number">28</span>
+<span class="line-number">29</span>
+<span class="line-number">30</span>
+<span class="line-number">31</span>
+<span class="line-number">32</span>
+<span class="line-number">33</span>
+<span class="line-number">34</span>
+<span class="line-number">35</span>
+<span class="line-number">36</span>
+<span class="line-number">37</span>
+<span class="line-number">38</span>
+<span class="line-number">39</span>
+<span class="line-number">40</span>
+<span class="line-number">41</span>
+<span class="line-number">42</span>
+</pre></td><td class="code"><pre><code class="scala"><span class="line"><span class="n">scala</span><span class="o">&gt;</span> <span class="k">trait</span> <span class="nc">Fly</span> <span class="o">{</span><span class="k">def</span> <span class="n">fly</span><span class="o">()</span> <span class="k">=</span> <span class="n">println</span><span class="o">(</span><span class="s">&quot;fly...&quot;</span><span class="o">)</span> <span class="o">}</span>
+</span><span class="line"><span class="n">defined</span> <span class="k">trait</span> <span class="nc">Fly</span>
+</span><span class="line">
+</span><span class="line"><span class="n">scala</span><span class="o">&gt;</span> <span class="k">trait</span> <span class="nc">Eat</span> <span class="o">{</span><span class="k">def</span> <span class="n">eat</span><span class="o">()</span> <span class="k">=</span> <span class="n">println</span><span class="o">(</span><span class="s">&quot;eat...&quot;</span><span class="o">)</span> <span class="o">}</span>
+</span><span class="line"><span class="n">defined</span> <span class="k">trait</span> <span class="nc">Eat</span>
+</span><span class="line">
+</span><span class="line"><span class="n">scala</span><span class="o">&gt;</span> <span class="k">class</span> <span class="nc">Duck</span> <span class="k">extends</span> <span class="nc">Fly</span> <span class="k">with</span> <span class="nc">Eat</span>
+</span><span class="line"><span class="n">defined</span> <span class="k">class</span> <span class="nc">Duck</span>
+</span><span class="line">
+</span><span class="line"><span class="n">scala</span><span class="o">&gt;</span> <span class="k">new</span> <span class="nc">Duck</span>
+</span><span class="line"><span class="n">res1</span><span class="k">:</span> <span class="kt">Duck</span> <span class="o">=</span> <span class="nc">Duck</span><span class="k">@</span><span class="mi">5511</span><span class="n">e6b9</span>
+</span><span class="line">
+</span><span class="line"><span class="n">scala</span><span class="o">&gt;</span> <span class="n">res1</span><span class="o">.</span><span class="n">eat</span>
+</span><span class="line"><span class="n">eat</span><span class="o">...</span>
+</span><span class="line">
+</span><span class="line"><span class="n">scala</span><span class="o">&gt;</span> <span class="n">res1</span><span class="o">.</span><span class="n">fly</span>
+</span><span class="line"><span class="n">fly</span><span class="o">...</span>
+</span><span class="line">
+</span><span class="line"><span class="n">scala</span><span class="o">&gt;</span> <span class="k">trait</span> <span class="nc">Fly2</span> <span class="o">{</span><span class="k">def</span> <span class="n">fly</span><span class="o">()</span> <span class="k">=</span> <span class="n">println</span><span class="o">(</span><span class="s">&quot;fly2...&quot;</span><span class="o">)</span> <span class="o">}</span>
+</span><span class="line"><span class="n">defined</span> <span class="k">trait</span> <span class="nc">Fly2</span>
+</span><span class="line">
+</span><span class="line"><span class="n">scala</span><span class="o">&gt;</span> <span class="k">class</span> <span class="nc">Bird</span> <span class="k">extends</span> <span class="nc">Fly</span> <span class="k">with</span> <span class="nc">Fly2</span>
+</span><span class="line"><span class="o">&lt;</span><span class="n">console</span><span class="k">&gt;:</span><span class="mi">11</span><span class="k">:</span> <span class="kt">error:</span> <span class="kt">class</span> <span class="kt">Bird</span> <span class="kt">inherits</span> <span class="kt">conflicting</span> <span class="kt">members:</span>
+</span><span class="line">  <span class="n">method</span> <span class="n">fly</span> <span class="n">in</span> <span class="k">trait</span> <span class="nc">Fly</span> <span class="n">of</span> <span class="k">type</span> <span class="o">()</span><span class="kt">Unit</span>  <span class="kt">and</span>
+</span><span class="line">  <span class="n">method</span> <span class="n">fly</span> <span class="n">in</span> <span class="k">trait</span> <span class="nc">Fly2</span> <span class="n">of</span> <span class="k">type</span> <span class="o">()</span><span class="kt">Unit</span>
+</span><span class="line"><span class="o">(</span><span class="nc">Note</span><span class="k">:</span> <span class="kt">this</span> <span class="kt">can</span> <span class="kt">be</span> <span class="kt">resolved</span> <span class="kt">by</span> <span class="kt">declaring</span> <span class="kt">an</span> <span class="kt">override</span> <span class="kt">in</span> <span class="kt">class</span> <span class="kt">Bird.</span><span class="o">)</span>
+</span><span class="line">       <span class="k">class</span> <span class="nc">Bird</span> <span class="k">extends</span> <span class="nc">Fly</span> <span class="k">with</span> <span class="nc">Fly2</span>
+</span><span class="line">             <span class="o">^</span>
+</span><span class="line">
+</span><span class="line"><span class="n">scala</span><span class="o">&gt;</span> <span class="k">class</span> <span class="nc">Bird</span> <span class="k">extends</span> <span class="nc">Fly2</span>
+</span><span class="line"><span class="n">defined</span> <span class="k">class</span> <span class="nc">Bird</span>
+</span><span class="line">
+</span><span class="line"><span class="n">scala</span><span class="o">&gt;</span> <span class="k">class</span> <span class="nc">Duck</span> <span class="k">extends</span> <span class="nc">Bird</span> <span class="k">with</span> <span class="nc">Fly</span> <span class="o">{</span>
+</span><span class="line">     <span class="o">|</span> <span class="k">override</span> <span class="k">def</span> <span class="n">fly</span><span class="o">()</span> <span class="k">=</span> <span class="k">super</span><span class="o">.</span><span class="n">fly</span><span class="o">()</span>
+</span><span class="line">     <span class="o">|</span> <span class="o">}</span>
+</span><span class="line"><span class="n">defined</span> <span class="k">class</span> <span class="nc">Duck</span>
+</span><span class="line">
+</span><span class="line"><span class="n">scala</span><span class="o">&gt;</span> <span class="k">new</span> <span class="nc">Duck</span>
+</span><span class="line"><span class="n">res4</span><span class="k">:</span> <span class="kt">Duck</span> <span class="o">=</span> <span class="nc">Duck</span><span class="k">@</span><span class="mi">8</span><span class="n">a10ea2</span>
+</span><span class="line">
+</span><span class="line"><span class="n">scala</span><span class="o">&gt;</span> <span class="n">res4</span><span class="o">.</span><span class="n">fly</span>
+</span><span class="line"><span class="n">fly</span><span class="o">...</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p><strong>【随堂练习五】</strong></p>
+
+<p>实现 Some 泛型的乘法计算，一种方法是，</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>随堂练习五</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+</pre></td><td class="code"><pre><code class="scala"><span class="line"><span class="n">scala</span><span class="o">&gt;</span> <span class="k">for</span> <span class="o">{</span>
+</span><span class="line">     <span class="o">|</span> <span class="n">v1</span> <span class="k">&lt;-</span> <span class="n">opt1</span>
+</span><span class="line">     <span class="o">|</span> <span class="n">v2</span> <span class="k">&lt;-</span> <span class="n">opt2</span>
+</span><span class="line">     <span class="o">|</span> <span class="o">}</span> <span class="k">yield</span> <span class="n">v1</span> <span class="o">*</span> <span class="n">v2</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>现请用 flatMap 实现乘法计算。</p>
+
+<p><strong>解答：</strong></p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>随堂练习五解答</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class="scala"><span class="line"><span class="n">opt1</span><span class="o">.</span><span class="n">flatMap</span><span class="o">(</span><span class="n">v1</span> <span class="k">=&gt;</span> <span class="n">opt2</span><span class="o">.</span><span class="n">map</span><span class="o">(</span><span class="n">v2</span> <span class="k">=&gt;</span> <span class="n">v1</span> <span class="o">*</span> <span class="n">v2</span><span class="o">))</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<h3 id="section-5">学习材料</h3>
+
+<p>这次培训里了解的很多概念只能算是听了个热闹，之后还得通过阅读大量的学习资料来加深理解。<strong>特别是着手写这篇博客的时候，真的是边查资料边写，有些内容一时半会儿搞不懂就暂时不写了</strong>……</p>
+
+<p>除<a href="http://docs.scala-lang.org/">官方文档</a>，从大家的交流中可以整理出如下资料</p>
+
+<ul>
+  <li><a href="http://book.douban.com/subject/6050104/">《Programming in Scala : A Comprehensive Step-by-step Guide, 2nd Edition》</a></li>
+  <li><a href="http://book.douban.com/subject/7070564/">《Scala for the Impatient》</a>，中译本为<a href="http://www.douban.com/link2/?url=http%3A%2F%2Fbook.douban.com%2Fsubject%2F19971952%2F&amp;query=%E5%BF%AB%E5%AD%A6scala&amp;cat_id=1001&amp;type=search&amp;pos=0">《快学 Scala》</a></li>
+  <li><a href="http://eed3si9n.com/learning-scalaz/index.html">Learning Scalaz</a></li>
+  <li><a href="http://twitter.github.io/effectivescala/">Effective Scala</a></li>
+  <li><a href="http://twitter.github.io/scala_school/index.html">Scala School</a></li>
+  <li><a href="https://www.coursera.org/course/progfun">Scala 函数式编程原理公开课</a></li>
+</ul>
+
+<h2 id="section-6">写在最后</h2>
+
+<p>晚上六点钟从国华大厦走出来，筋疲力竭，大脑既充实又麻木。一群码农在一个小屋子里一起学习了九个小时，码农的工作很辛苦，码农大多单身，码农经常熬夜加班、长黑眼圈，码农一般秃顶、蓬头垢面，码农善于自嘲（但请外人不要嘲笑某个个人是码农），那么问题来了，怎么还有这么多人要做码农？</p>
+
+<p>我自己的回答是两个词，<code>热爱</code> 与 <code>分享</code>。<strong>热爱让你心笃定，分享让你不孤单</strong>。不能代表码农整体，但我相信一起学了九个小时的小伙伴们应该会同意我的看法。</p>
+
+<p>唉，一个培训能引发自己这样的感想也是够够儿了，再写就矫情了。</p>
+
 <p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2014/11/23/open-workshop-scalacong-ling-dao-ru-men-ke-tang-bi-ji/">http://frank19900731.github.io/blog/2014/11/23/open-workshop-scalacong-ling-dao-ru-men-ke-tang-bi-ji/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
 ]]></content>
   </entry>
