@@ -4,7 +4,7 @@
   <title><![CDATA[Blog of 太极儒]]></title>
   <link href="http://frank19900731.github.io/feed" rel="self"/>
   <link href="http://frank19900731.github.io/"/>
-  <updated>2014-11-22T17:08:41+08:00</updated>
+  <updated>2014-11-23T12:35:43+08:00</updated>
   <id>http://frank19900731.github.io/</id>
   <author>
     <name><![CDATA[Frank Song]]></name>
@@ -14,12 +14,131 @@
 
   
   <entry>
-    <title type="html"><![CDATA[百度、腾讯与搜狐的笔试回忆]]></title>
+    <title type="html"><![CDATA[《Open Workshop —— Scala从零到入门》 课堂笔记]]></title>
+    <link href="http://frank19900731.github.io/blog/2014/11/23/open-workshop-scalacong-ling-dao-ru-men-ke-tang-bi-ji/"/>
+    <updated>2014-11-23T09:56:19+08:00</updated>
+    <id>http://frank19900731.github.io/blog/2014/11/23/open-workshop-scalacong-ling-dao-ru-men-ke-tang-bi-ji</id>
+    <content type="html"><![CDATA[
+<p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2014/11/23/open-workshop-scalacong-ling-dao-ru-men-ke-tang-bi-ji/">http://frank19900731.github.io/blog/2014/11/23/open-workshop-scalacong-ling-dao-ru-men-ke-tang-bi-ji/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[2014 年百度、腾讯与搜狐的校招笔试回忆]]></title>
     <link href="http://frank19900731.github.io/blog/2014/11/21/bai-du-teng-xun-yu-sou-hu-de-bi-shi-hui-yi/"/>
     <updated>2014-11-21T21:38:54+08:00</updated>
     <id>http://frank19900731.github.io/blog/2014/11/21/bai-du-teng-xun-yu-sou-hu-de-bi-shi-hui-yi</id>
-    <content type="html"><![CDATA[
+    <content type="html"><![CDATA[<p><strong>目录</strong></p>
+
+<ul id="markdown-toc">
+  <li><a href="#section">写在前面</a></li>
+  <li><a href="#section-1">百度笔试</a></li>
+  <li><a href="#section-2">腾讯笔试</a></li>
+  <li><a href="#section-3">搜狐笔试</a></li>
+</ul>
+
+<!-- excerpt start -->
+
+<h2 id="section">写在前面</h2>
+
+<ul>
+  <li>这三家公司大家的关注度应该都比较高，我所申请的其他公司，要么是自己走了其他渠道没参加笔试（比如阿里、360），要么是有签订保密协议（比如 FreeWheel 和 世坤）；</li>
+  <li>腾讯、搜狐笔试题中有很多选择题，无法一一记清，考场上没有刻意记录，只能考后回忆，很多题只能说考了哪个知识点；</li>
+  <li>百度申请的是数据挖掘工程师岗位，腾讯申请的是基础研究职位（后来发现给我安排的是深圳腾讯游戏的数据挖掘岗，由此得出的经验教训是，选定期望工作城市后，慎选服从城市调剂，不然都给你拉到深圳去），搜狐申请的是数据挖掘工程师岗位，题目自然与职位有关；</li>
+  <li>我不记得是不是有 A、B 卷之分，但以下内容都被考察过无疑。</li>
+</ul>
+
+<p>接下来，记忆的闸门开始缓缓打开……</p>
+
+<!-- excerpt end -->
+
+<h2 id="section-1">百度笔试</h2>
+
+<p>在面试的时候，百度会把已判分的试卷发给你，想不回忆清楚都难。当然，俺还没猥琐到拍照的程度……</p>
+
+<ol>
+  <li>举例说 C++ 中继承、多态和组合的应用。</li>
+  <li>进程间通信方法，列举至少三种。</li>
+  <li>写贝叶斯公式，描述朴素贝叶斯的分类方法。</li>
+  <li>X、Y 是向量，每一维上的元素都服从 N(0, 1)，计算他们的相关系数 Z
+    <ul>
+      <li>求 Z 的期望和标准差（求职季笔试里见过的最有趣的一问，解答见我的博文<a href="http://frank19900731.github.io/blog/2014/11/07/mian-shi-jing-yan-fen-xiang-zhi-zhi-li-ti/">《面试经验分享之智力题》</a> 中的题目五）；</li>
+      <li>编程用蒙特卡洛方法计算期望和标准差。</li>
+    </ul>
+  </li>
+  <li>豆瓣音乐，评分不同，但是想要随机播放概率和评分成正比，设计随机算法并代码实现。</li>
+  <li>给出一次函数、二次函数…… n 次函数回归的损失函数，推导随机梯度下降公式，简述模型/参数选择标准和选择机制。</li>
+</ol>
+
+<h2 id="section-2">腾讯笔试</h2>
+
+<p>25 道选择题只回忆了两道，因为与之相关的知识点掌握得不熟，其他题目大都是 C++ 面向对象编程的常见题。</p>
+
+<ol>
+  <li>关于虚基类构造函数的调用顺序。</li>
+  <li>预编译指令 <a href="http://baike.baidu.com/view/2317161.htm?fr=aladdin">#pragma pack</a> 的考察，给出一个结构体，问占用多大空间。</li>
+</ol>
+
+<p>笔答题有三道</p>
+
+<ol>
+  <li>求三阶矩阵行列式。</li>
+  <li>根据用户的满足感、荣誉感、挫折感及失望感建模用户口碑。</li>
+  <li>预测即将流失的用户，一种方法是使用 SQL 在数据库中查询，提取近三个月登陆次数递减的用户，交给客服处理
+    <ul>
+      <li>可否这么做；</li>
+      <li>不然要怎么做。</li>
+    </ul>
+  </li>
+</ol>
+
+<h2 id="section-3">搜狐笔试</h2>
+
+<p>笔试题目范围非常广泛，涉及机器学习、网络编程、hadoop、C++、多线程和智力题。</p>
+
+<ol>
+  <li><a href="http://blog.csdn.net/mengtnt/article/details/8477747">小白鼠喝毒水问题</a></li>
+  <li><a href="http://f.dataguru.cn/forum.php?mod=viewthread&amp;tid=34799&amp;highlight=">hadoop 在 HDFS 上文件存储的默认冗余参数是3</a>。</li>
+  <li>两个线程同时累加一个全局变量，比如利用 for 循环进行 50 次自增操作，问该该全局变量的最终结果范围。</li>
+  <li><a href="http://www.cnblogs.com/hnrainll/archive/2011/10/14/2212415.html">TCP 的三次握手，四次挥手</a>。</li>
+  <li>关于 TCP 双方关闭连接，涉及到 <a href="http://blog.csdn.net/samulelin/article/details/3957118">TIME_WAIT</a> 的概念。</li>
+  <li>SVM、条件随机场、隐马尔科夫模型、最大熵模型中，哪个是生成式模型？应该是隐马尔科夫模型<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup>。</li>
+  <li>还是以上四个模型，哪个模型不符合凸模型+有全局最优解的条件？应该还是隐马尔科夫模型。</li>
+  <li>贝叶斯网络是有向无环图。</li>
+  <li>分词中最大正向匹配，最大逆向匹配的概念。</li>
+  <li>linux 平台下有一个三列文件，列之间用逗号分隔，请编程对第二列数字求和。</li>
+  <li>左值不能赋值。</li>
+  <li>hadoop 默认 block 大小是 64M，JobTracker 和 NameNode在同一台机器上。</li>
+  <li>hadoop 采用 Combiner、采用压缩率高的文件格式以及在 map 过程中去掉无效数据都是为了减少数据传输量，与这些优化方法不同的是优化 Partitioner，因为它是为了均衡数据量，而非减少数据量。</li>
+  <li>熵的计算公式和熵最大的条件。</li>
+  <li><a href="http://www.cnblogs.com/daniagger/archive/2012/06/19/2555321.html">复杂链表的复制</a>，所谓复杂是指一个节点除了指向后继，还随机指向链表中的一个节点或 NULL。</li>
+  <li>问如下代码的输出，其实就是统计二进制表示中 1 的个数。</li>
+</ol>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>题目</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+</pre></td><td class="code"><pre><code class="cpp"><span class="line"><span class="kt">int</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">9999</span><span class="p">;</span>
+</span><span class="line"><span class="kt">int</span> <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class="line"><span class="k">while</span><span class="p">(</span><span class="n">a</span><span class="p">)</span> <span class="p">{</span>
+</span><span class="line">	<span class="n">count</span><span class="o">++</span><span class="p">;</span>
+</span><span class="line">	<span class="n">a</span> <span class="o">=</span> <span class="n">a</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">a</span><span class="o">-</span><span class="mi">1</span><span class="p">);</span>		
+</span><span class="line"><span class="p">}</span>
+</span><span class="line"><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="n">count</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
 <p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2014/11/21/bai-du-teng-xun-yu-sou-hu-de-bi-shi-hui-yi/">http://frank19900731.github.io/blog/2014/11/21/bai-du-teng-xun-yu-sou-hu-de-bi-shi-hui-yi/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>参考资料为：<a href="http://en.wikipedia.org/wiki/Discriminative_model">Discriminative model</a>，<a href="http://blog.csdn.net/wolenski/article/details/7985426#0-tsina-1-17355-397232819ff9a47a7b7e80a40613cfe1">判别式模型与生成式模型</a>。<a href="#fnref:1" rel="reference">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
 ]]></content>
   </entry>
   
