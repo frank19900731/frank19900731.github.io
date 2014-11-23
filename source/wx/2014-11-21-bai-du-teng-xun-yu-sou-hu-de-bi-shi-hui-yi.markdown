@@ -1,11 +1,12 @@
 ---
-layout: post
+layout: wx-default
 title: "2014 年百度、腾讯与搜狐的校招笔试回忆"
 date: 2014-11-21 21:38:54 +0800
-comments: true
+comments: false
 categories: [面试求职]
 tags: [百度, 腾讯, 搜狐, 校招, 笔试, 题目回忆]
 keywords: 百度, 腾讯, 搜狐, 校招, 笔试, 题目回忆
+exclude_from_search: true
 pc_url: /blog/2014/11/21/bai-du-teng-xun-yu-sou-hu-de-bi-shi-hui-yi/
 wx_url: /wx/2014-11-21-bai-du-teng-xun-yu-sou-hu-de-bi-shi-hui-yi.html
 ---
@@ -36,7 +37,7 @@ __目录__
 2. 进程间通信方法，列举至少三种。
 3. 写贝叶斯公式，描述朴素贝叶斯的分类方法。
 4. X、Y 是向量，每一维上的元素都服从 N(0, 1)，计算他们的相关系数 Z
-	- 求 Z 的期望和标准差（求职季笔试里见过的最有趣的一问，解答见我的博文[《面试经验分享之智力题》](http://frank19900731.github.io/blog/2014/11/07/mian-shi-jing-yan-fen-xiang-zhi-zhi-li-ti/) 中的题目五）；
+	- 求 Z 的期望和标准差（求职季笔试里见过的最有趣的一问，解答见我的博文[《面试经验分享之智力题》](http://frank19900731.github.io/wx/2014-11-07-mian-shi-jing-yan-fen-xiang-zhi-zhi-li-ti.html) 中的题目五）；
 	- 编程用蒙特卡洛方法计算期望和标准差。
 5.  豆瓣音乐，评分不同，但是想要随机播放概率和评分成正比，设计随机算法并代码实现。
 6. 给出一次函数、二次函数…… n 次函数回归的损失函数，推导随机梯度下降公式，简述模型/参数选择标准和选择机制。
