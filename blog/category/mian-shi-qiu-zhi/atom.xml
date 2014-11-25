@@ -4,7 +4,7 @@
   <title><![CDATA[Category: 面试求职 | Blog of 太极儒]]></title>
   <link href="http://frank19900731.github.io/blog/category/mian-shi-qiu-zhi/atom.xml" rel="self"/>
   <link href="http://frank19900731.github.io/"/>
-  <updated>2014-11-23T17:30:00+08:00</updated>
+  <updated>2014-11-25T15:04:33+08:00</updated>
   <id>http://frank19900731.github.io/</id>
   <author>
     <name><![CDATA[Frank Song]]></name>
@@ -12,6 +12,135 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[面试经验分享之编程语言题]]></title>
+    <link href="http://frank19900731.github.io/blog/2014/11/25/mian-shi-jing-yan-fen-xiang-zhi-bian-cheng-yu-yan-ti/"/>
+    <updated>2014-11-25T10:13:30+08:00</updated>
+    <id>http://frank19900731.github.io/blog/2014/11/25/mian-shi-jing-yan-fen-xiang-zhi-bian-cheng-yu-yan-ti</id>
+    <content type="html"><![CDATA[<ul id="markdown-toc">
+  <li><a href="#section">前言</a></li>
+  <li><a href="#section-1">概述</a></li>
+  <li><a href="#section-2">基础问题</a></li>
+  <li><a href="#section-3">进阶问题</a></li>
+  <li><a href="#section-4">总结</a></li>
+</ul>
+
+<h2 id="section">前言</h2>
+
+<!-- excerpt start -->
+
+<h2 id="section-1">概述</h2>
+
+<p>编程语言题这个设定太狭隘了，应该说是偏工程类的题目，其中有些带有经验性质。出题范围大概是操作系统、数据库、网络、面向对象编程思想、编程语言特性理解和语法掌握等。<strong>相关书籍或或网络教程当然是要看的，但并不意味着你都看了就能有好的发挥，要理论、实践两手抓</strong>。</p>
+
+<p>对于算法工程师岗位来说，这种题目大量出现在笔试试卷中，比如概念理解啦、判断程序的运行输出啦，可以参见我的博客 <a href="http://frank19900731.github.io/blog/2014/11/21/bai-du-teng-xun-yu-sou-hu-de-bi-shi-hui-yi/">《2014 年百度、腾讯与搜狐的校招笔试回忆》</a>。在这里插入分享在另外一家公司的笔试里遇到的一道有意思的题目。</p>
+
+<p>请问如下程序的输出。</p>
+
+<p><code>cpp 一道笔试题
+double a = 0;
+double b = 99;
+while(true) {
+	double c = (a+b)/2;
+	if(c == a || c == b) break;
+	a = b;
+	b = c;
+}
+cout&lt;&lt;a;
+</code></p>
+
+<p><strong>解答：</strong></p>
+
+<p style="color: #AAA;">
+
+我以为会无限循环，因为浮点数判等比较难，不过由于浮点数精度有限，所以迭代个五六十次就终止了，又由于 cout 有默认的输出精度，所以输出结果应该是66。
+
+</p>
+
+<p>面试过程中虽然以算法为主，不过在让你纸上写代码、询问你项目经历的过程中，面试官也能考察出你的工程底子。以下我们分基础问题和进阶问题分别介绍。</p>
+
+<!-- excerpt end -->
+
+<h2 id="section-2">基础问题</h2>
+
+<p>这类基础问题的引子一般是，“你熟悉什么编程语言呀”，“你平常用什么语言比较多呀”，“这个项目你们用什么语言实现的呀”。</p>
+
+<p>如果不是真大牛，就挑一个相对而言自己掌握最熟的语言或最有准备的语言，不要用过啥就说啥。这么一来，无外乎 Java，C/C++，Python，PHP 等几种主流程序语言，Shell、SQL 等都是比较好的添头。就个人对算法工程师和数据挖掘工程师岗位的了解，Python、Scala、Go 很可能是加分项，如果此前没有用过，也可以在面试前学习了解，一句“正在学习”也可以让面试官感受到你的<strong>诚意</strong>哈。</p>
+
+<p>总结自己在面试中被问到的基础问题如下。</p>
+
+<ol>
+  <li>面向对象编程的各类问题，多态、虚函数等；</li>
+  <li>C++ 和 Java 的区别有哪些；</li>
+  <li>你用过这种语言的哪些库；</li>
+  <li>对 STL 是否熟悉；</li>
+  <li>Java 虚拟机了解么，解释垃圾回收机制的原理；</li>
+  <li>线程/进程间通信如何实现，写过多线程的程序么；</li>
+  <li>大数据处理框架用过哪些（其实就算是编程语言的杀手应用吧）；</li>
+  <li>机器学习、数据可视化的库用过哪些；</li>
+  <li>java 中 final 的用法，C/C++ 中的 const 的用法； </li>
+  <li>MySQL 的如何建立索引进行查询的，存储方式是怎样的，为什么要分块；</li>
+  <li>堆区和栈区的区别在哪里；</li>
+  <li>malloc 执行的时候发生了那些事情；</li>
+  <li>正则表达式的写法；</li>
+  <li>vim 中执行某项操作的快捷键；</li>
+  <li>……</li>
+</ol>
+
+<p>这些问题想要第一次遇到时就都回答得正确完善恐非易事，主要还在于总结积累。虽然可供考察的知识点和题目变式浩如烟海，但是<strong>一定量的面试能给我们指出高频在哪里</strong>，理由有三。</p>
+
+<ul>
+  <li>面试官中的绝大多数也是通过面试选拔上来的，他们在准备的过程中应该也知道常考什么样的问题；</li>
+  <li>高频题目提供了可比较性，有筛选价值，而即便你背了网上的解答也可能是不全面的（<strong>我一般把网上看到的和自己的使用经验一起说，显得比较真实…</strong>）；</li>
+  <li>有闲情雅致给你出新题、难题的面试官毕竟是少数。</li>
+</ul>
+
+<p><strong>这种高频基础题都回答不好，又指望面试官怎么看你呢</strong>。所以说每次面试回来后回忆一下自己遇到的问题，<strong>如果你做出了回答，查一查是否需要修正或补充什么；如果你被问住了，那更得查阅资料学习</strong>。</p>
+
+<h2 id="section-3">进阶问题</h2>
+
+<p>虽然我没有遇到过，但我觉得有两个例子可以表示我对进阶问题的定义。</p>
+
+<ul>
+  <li><a href="http://fex.baidu.com/blog/2014/05/what-happen/">从输入 URL 到页面加载完成的过程中都发生了什么？</a></li>
+  <li><a href="http://mooc.guokr.com/note/13202/">C 语言编译时发生了什么？</a>，以及扩展阅读 <a href="https://bojieli.com/2014/11/c-compiler/">《编译：一个 C 程序的艺术之旅》</a>。</li>
+</ul>
+
+<p>第一个问题曾在微博上引发热议。</p>
+
+<p><a href="/img/post/2014-11/3.png" class="img-up" title="微博提问"><img class="imgcenter" src="/img/post/2014-11/3.png" width="80%" title="微博提问" ></a></p>
+
+<p>这种问题既开放又确定。开放在于广度，涉及到的知识点与环节很多，你可以从你了解的部分去叙说；确定在于深度，每一个知识点或环节都是扎实的，不容信口开河。</p>
+
+<p>类似的问题还可以提出很多，不过我们的知识储备未必有那么深广。个人认为，相比于对基础问题的了解，能够较为完善地回答出这类进阶问题，才是 IT 从业者素质与能力的真实体现。</p>
+
+<p>当然，知识的积累要一点一点来，<strong>保持一颗好奇心比功利心或三分钟热血更重要</strong>。</p>
+
+<p><strong>日拱一卒，乐在学中，与君共勉</strong>。</p>
+
+<h2 id="section-4">总结</h2>
+
+<p>用四篇文章分享了自己的面试经验，这是最后一篇。尽力之所及，恰在一个月后兑现了自己的 <a href="http://frank19900731.github.io/blog/2014/10/25/qiu-zhi-ji-de-yi-dian-jing-yan-zhi-tan/">承诺</a>，也算是苦劳一件。</p>
+
+<p>从这四篇总结应该可以看出，本人的应试能力还是比较强的，享受过它带来的好处，也越发体会到它可能带来的弊端，那就是<strong>对技巧的追求超过了知识本身</strong>。</p>
+
+<p>如果不是因为面试或者考试，很多人懒得问自己为什么。一种可能的场景是，程序出错了，Google/百度出了解决方案，调通了，也就过了。<strong>就好像刷题拿了高分，错误中蕴含的价值却没学到</strong>。我也当过很长一段时间这样的人，不过后来发现有些问题重复性的犯，而有些问题有很强的相似性，自己逐渐意识到需要记录错误解决的过程、思考产生错误的原因。坚持一段时间后发现，对原因的探寻不但能够加深记忆，也能够提高自己跨语言、跨应用场景的问题解决能力。</p>
+
+<p>针对面试，或者不仅仅针对面试，我想说我们也可以<strong>假想自己是面试官，在习以为常的场景中多问自己为什么</strong>，学问也都在这里头了。</p>
+
+<p>最后的最后，希望我的面试经验分享可以对各位看官产生一点帮助，比如提早规划、准备；也欢迎大家的提出建议、指出错误。</p>
+
+<p>面试经验分享之 <code>机器学习、大数据问题</code>、<code>智力题</code>、<code>数据结构与算法题</code>、<code>编程语言题</code> 已经撰写完毕，访问入口如下。</p>
+
+<ul>
+  <li><a href="/blog/2014/11/06/mian-shi-jing-yan-zhi-ji-qi-xue-xi-da-shu-ju-wen-ti/">机器学习、大数据问题</a></li>
+  <li><a href="/blog/2014/11/07/mian-shi-jing-yan-fen-xiang-zhi-zhi-li-ti/">智力题</a></li>
+  <li><a href="/blog/2014/11/18/mian-shi-jing-yan-fen-xiang-zhi-shu-ju-jie-gou-suan-fa-fen-xiang/">数据结构与算法题</a></li>
+  <li><a href="/blog/2014/11/25/mian-shi-jing-yan-fen-xiang-zhi-bian-cheng-yu-yan-ti/">编程语言题</a></li>
+</ul>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[2014 年百度、腾讯与搜狐的校招笔试回忆]]></title>
@@ -126,7 +255,7 @@ cout&lt;&lt;count&lt;&lt;endl;
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[面试经验分享之数据结构、算法分享]]></title>
+    <title type="html"><![CDATA[面试经验分享之数据结构、算法题]]></title>
     <link href="http://frank19900731.github.io/blog/2014/11/18/mian-shi-jing-yan-fen-xiang-zhi-shu-ju-jie-gou-suan-fa-fen-xiang/"/>
     <updated>2014-11-18T10:18:41+08:00</updated>
     <id>http://frank19900731.github.io/blog/2014/11/18/mian-shi-jing-yan-fen-xiang-zhi-shu-ju-jie-gou-suan-fa-fen-xiang</id>
@@ -307,7 +436,7 @@ cout&lt;&lt;count&lt;&lt;endl;
   <li><a href="/blog/2014/11/06/mian-shi-jing-yan-zhi-ji-qi-xue-xi-da-shu-ju-wen-ti/">机器学习、大数据问题</a></li>
   <li><a href="/blog/2014/11/07/mian-shi-jing-yan-fen-xiang-zhi-zhi-li-ti/">智力题</a></li>
   <li><a href="/blog/2014/11/18/mian-shi-jing-yan-fen-xiang-zhi-shu-ju-jie-gou-suan-fa-fen-xiang/">数据结构与算法题</a></li>
-  <li>编程语言题</li>
+  <li><a href="/blog/2014/11/25/mian-shi-jing-yan-fen-xiang-zhi-bian-cheng-yu-yan-ti/">编程语言题</a></li>
 </ul>
 ]]></content>
   </entry>
@@ -614,7 +743,7 @@ avar = var(array);
   <li><a href="/blog/2014/11/06/mian-shi-jing-yan-zhi-ji-qi-xue-xi-da-shu-ju-wen-ti/">机器学习、大数据问题</a></li>
   <li><a href="/blog/2014/11/07/mian-shi-jing-yan-fen-xiang-zhi-zhi-li-ti/">智力题</a></li>
   <li><a href="/blog/2014/11/18/mian-shi-jing-yan-fen-xiang-zhi-shu-ju-jie-gou-suan-fa-fen-xiang/">数据结构与算法题</a></li>
-  <li>编程语言题</li>
+  <li><a href="/blog/2014/11/25/mian-shi-jing-yan-fen-xiang-zhi-bian-cheng-yu-yan-ti/">编程语言题</a></li>
 </ul>
 ]]></content>
   </entry>
@@ -802,121 +931,8 @@ avar = var(array);
   <li><a href="/blog/2014/11/06/mian-shi-jing-yan-zhi-ji-qi-xue-xi-da-shu-ju-wen-ti/">机器学习、大数据问题</a></li>
   <li><a href="/blog/2014/11/07/mian-shi-jing-yan-fen-xiang-zhi-zhi-li-ti/">智力题</a></li>
   <li><a href="/blog/2014/11/18/mian-shi-jing-yan-fen-xiang-zhi-shu-ju-jie-gou-suan-fa-fen-xiang/">数据结构与算法题</a></li>
-  <li>编程语言题</li>
+  <li><a href="/blog/2014/11/25/mian-shi-jing-yan-fen-xiang-zhi-bian-cheng-yu-yan-ti/">编程语言题</a></li>
 </ul>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[求职季的一点经验之谈]]></title>
-    <link href="http://frank19900731.github.io/blog/2014/10/25/qiu-zhi-ji-de-yi-dian-jing-yan-zhi-tan/"/>
-    <updated>2014-10-25T22:58:48+08:00</updated>
-    <id>http://frank19900731.github.io/blog/2014/10/25/qiu-zhi-ji-de-yi-dian-jing-yan-zhi-tan</id>
-    <content type="html"><![CDATA[<p><strong>目录</strong></p>
-
-<ul id="markdown-toc">
-  <li><a href="#section">早点准备好自己的中英文简历</a></li>
-  <li><a href="#section-1">准备一个靠谱的手机号和靠谱的手机</a></li>
-  <li><a href="#section-2">复习职位相关知识点</a></li>
-  <li><a href="#section-3">准备自我介绍，回顾项目与实习经历</a></li>
-  <li><a href="#tag">及时查阅收件箱与垃圾邮箱，对重要邮件做标记或打 tag，方便处理与查找</a></li>
-  <li><a href="#section-4">暑期实习，把握内推机会</a></li>
-  <li><a href="#section-5">笔试、面试结束后马上回忆题目，回到学校后查缺补漏</a></li>
-  <li><a href="#section-6">和同学朋友结伴申请</a></li>
-  <li><a href="#section-7">总结</a></li>
-</ul>
-
-<p>废话少说，直接干货。</p>
-
-<!-- excerpt start -->
-
-<h2 id="section">早点准备好自己的中英文简历</h2>
-
-<ul>
-  <li>我自己使用的是 mordencv 模板，正反面打印，分别介绍了自己的教育背景、专业学习、个人爱好、科研与实习经历、校内职务、校内奖励和语言水平，有新进展则更新；</li>
-  <li>关于简历书写网上有很多的教诲，不再赘述，只想强调一点，要能自圆其说，写了但讲不明白是很尴尬的；</li>
-  <li>不同的面试官关注点不同，有的侧重项目，有的侧重实习，还有的会问兴趣爱好，我的一个兴趣爱好 —— Mac 下的软件使用就曾被问及，这个跟技术也不沾边儿，不过能反映出我在某个方面确实动过脑子，也算是给面试官一个爱钻研的印象吧。</li>
-</ul>
-
-<h2 id="section-1">准备一个靠谱的手机号和靠谱的手机</h2>
-
-<p>招聘季短信、电话的价值都是很高的，能否接到通知直接关乎申请的成败，不要觉得 HR 姐姐会执着的找你，候选人有的是，不差你这一个。</p>
-
-<!-- excerpt end -->
-
-<h2 id="section-2">复习职位相关知识点</h2>
-
-<p>仅以算法工程师（外加一点点软开）为例，需要准备的知识可能有</p>
-
-<ul>
-  <li>程序语言基础，C++、Java 至少得熟一个吧；</li>
-  <li>数据库；</li>
-  <li>操作系统基础知识，如多线程；</li>
-  <li>机器学习（模型、原理、适用场景与推导），大数据处理（主要是 hadoop）；</li>
-  <li>数据结构与算法；</li>
-  <li>智力题，如一些概率问题。</li>
-</ul>
-
-<p>我准备的主要途径是复习教材、跟踪系列分享以及重要知识点默记</p>
-
-<ul>
-  <li><code>复习教材</code> 每个人心中都有几本经典教材吧，不要畏难，先找一个下午把整本书翻完作为预热，然后找自己概念模糊的章节细读，个人经验来看，<strong>想要一章一章的把书看完，一般很难坚持到第三章的，这是大实话</strong>；</li>
-  <li><code>跟踪系列分享</code> 比如<a href="http://blog.csdn.net/morewindows/article/category/859207">白话经典算法</a>、<a href="http://blog.csdn.net/v_july_v">结构之法算法之道</a> 以及 <a href="https://github.com/julycoding/The-Art-Of-Programming-by-July">The Art of Programming</a>，这类资源实用性很强；</li>
-  <li><code>重要知识点默记</code> 我自己准备了一个<strong>精美的硬壳本</strong>（精美是重点，破纸早扔了），每一页记录的是基础的、重要的算法代码与模型推导，每隔几天或每当重要面试前自我抽查、默写。</li>
-</ul>
-
-<h2 id="section-3">准备自我介绍，回顾项目与实习经历</h2>
-
-<ul>
-  <li>自我介绍是必备的，不要觉得自己都写在简历上了你就看呗，求职的是你自己，面试官没有义务去做阅读理解；一个流畅并略带特色（可以体现幽默、博学、阳光等）的自我介绍，一方面可以给面试官好的第一印象，还可以<strong>将面试官引导到你希望他考察你的地方</strong>，比如你可以强调引以为豪的项目，也可以强调某种算法模型，而这个模型其实你已经在复习知识点的时候研究得很透彻了；</li>
-  <li>对于自己做过的项目与实习，由于时间久远或者表达能力上的欠缺，你未必能保证给面试官介绍得通透，所以，还是花点时间回顾并书面化为好，每次面试都能用得上。</li>
-</ul>
-
-<h2 id="tag">及时查阅收件箱与垃圾邮箱，对重要邮件做标记或打 tag，方便处理与查找</h2>
-
-<p>学校宣讲会的通知，重要材料的填写，笔试、面试通知（可能包含确认链接），等等，多了就可能遗忘，自己就曾让一封英语测试邮件睡了十天，要么新注册一个邮箱专门用于求职，要么每当看到重要邮件就做标记或打tag，逐个处理完成后再消除标记。</p>
-
-<h2 id="section-4">暑期实习，把握内推机会</h2>
-
-<p>如果有暑期实习的机会，请尽可能按照找工作的标准争取，主要有以下五方面好处</p>
-
-<ul>
-  <li>面试能力大练兵；</li>
-  <li>暑假过得充实，与求职季完美衔接；</li>
-  <li>公司前辈都能分享求职经验，甚至帮你内推其它公司；</li>
-  <li>可以获得实习转正机会；</li>
-  <li>拿到别的公司的实习机会但没有去，也可能入选该公司的提前批面试。</li>
-</ul>
-
-<h2 id="section-5">笔试、面试结束后马上回忆题目，回到学校后查缺补漏</h2>
-
-<ul>
-  <li>对于参加过的笔试、面试，自己都有详细的记录与分析，确实能在这个过程中感受自身的能力提升，会在之后的博文中与大家分享；</li>
-  <li>求职季每天记录求职笔记，包括今天申请了什么公司、接到了什么通知、学习/复习了什么知识、与谁有过讨论、笔试/面试感受如何等等，效果嘛，谁用谁知道，最起码现在写博客做分享的素材是不愁的。</li>
-</ul>
-
-<h2 id="section-6">和同学朋友结伴申请</h2>
-
-<p>找一个对子或者建立一个小组，互相分享感兴趣的职位信息，这样做的好处是</p>
-
-<ul>
-  <li>大家的申请进度互为参照，比如我没有收到笔试通知且伙伴也没有收到笔试通知，这很可能是正常现象，我没有收到但伙伴收到了，那就是哪里出问题了；</li>
-  <li>信息整合，各取所需；</li>
-  <li>面试经验可共享。</li>
-</ul>
-
-<h2 id="section-7">总结</h2>
-
-<p>总的来说，求职季是对脑力、体力的双重考验，如果能在这个过程里边求职边思考，相信经过一个求职季的历练，你一定会有大过 offer 的感悟与收获。</p>
-
-<p>接下来，我将从以下四方面分享一下自己的面试总结，欢迎持续关注。</p>
-
-<ol>
-  <li>智力题</li>
-  <li>编程语言</li>
-  <li>数据结构与算法</li>
-  <li>机器学习，大数据</li>
-</ol>
 ]]></content>
   </entry>
   

@@ -1,0 +1,639 @@
+<!-- layout/default.html -->
+
+<!-- head.html -->
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <!-- 标签页标题 -->
+  <title>面试经验分享之编程语言题 - Blog of 太极儒</title>
+  <meta name="author" content="Frank Song">
+  <!-- 定义description变量，如果有则用，没有则是正文，前150字 -->
+  
+  <meta name="description" content="Categories: 面试求职 面试经验分享之编程语言题 Nov 25th, 2014 前言 概述 基础问题 进阶问题 总结 前言 概述 编程语言题这个设定太狭隘了，应该说是偏工程类的题目，其中有些带有经验性质。出题范围大概是操作系统、数据库、网络、面向对象编程思想、编程语言特性理解和语法掌握等。相关书籍或或网络教程当然是要看的，但并不意味着你都看了就能有好的发挥，要理论、实践两手抓。 对于算法工程师岗位来说，这种题目大量出现在笔试试卷中，比如概念理解啦、判断程序的运行输出啦，可以参见我的博客 《2014 年百度、腾讯与搜狐的校招笔试回忆》。在这里插入分享在另外一家公司的笔试里遇到的一道有意思的题目。 请问如下程序的输出。 一道笔试题1
+2
+3
+4
+5
+6
+7
+8
+9
+double a = 0;
+double b = 99;
+while(true) { double c = (a+b)/2; if(c == a || c == b) break; a = b; b = c;
+}
+cout&lt;&lt;a; 解答： 我以为会无限循环，因为浮点数判等比较难，不过由于浮点数精度有限，所以迭代个五六十次就终止了，又由于 cout 有默认的输出精度，所以输出结果应该是66。 面试过程中虽然以算法为主，不过在让你纸上写代码、询问你项目经历的过程中，面试官也能考察出你的工程底子。以下我们分基础问题和进阶问题分别介绍。 基础问题 这类基础问题的引子一般是，“你熟悉什么编程语言呀”，“你平常用什么语言比较多呀”，“这个项目你们用什么语言实现的呀”。 如果不是真大牛，就挑一个相对而言自己掌握最熟的语言或最有准备的语言，不要用过啥就说啥。这么一来，无外乎 Java，C/C++，Python，PHP 等几种主流程序语言，Shell、SQL 等都是比较好的添头。就个人对算法工程师和数据挖掘工程师岗位的了解，Python、Scala、Go 很可能是加分项，如果此前没有用过，也可以在面试前学习了解，一句“正在学习”也可以让面试官感受到你的诚意哈。 总结自己在面试中被问到的基础问题如下。 面向对象编程的各类问题，多态、虚函数等； C++ 和 Java 的区别有哪些； 你用过这种语言的哪些库； 对 STL 是否熟悉； Java 虚拟机了解么，解释垃圾回收机制的原理； 线程/进程间通信如何实现 &hellip;">
+  <meta name="keywords" content="编程语言, 面试经验">
+  <meta name="baidu-site-verification" content="7O78rNJCOH" />
+  <meta name="360-site-verification" content="9ee6dda17557079b8855f9c8201b05bb" />
+  <meta name="msvalidate.01" content="408D13BCB6B6CE4973F6CD9E6A9E8195" />
+  <meta name="sogou_site_verification" content="CtgkJPDjga"/>
+  <meta name="chinaz-site-verification" content="081e7651-48c6-4c2f-a569-99321685eab1" />
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://frank19900731.github.io/blog/2014/11/25/mian-shi-jing-yan-fen-xiang-zhi-bian-cheng-yu-yan-ti">
+  <!-- 网站小图标 -->
+  <link href="/favicon.ico" rel="icon">
+  <!-- 网站样式文件 -->
+  <link href="/stylesheets/styles.css" media="screen, projection" rel="stylesheet" type="text/css">
+
+  <link href="/atom.xml" rel="alternate" title="Blog of 太极儒" type="application/atom+xml">
+
+  <script src="/javascripts/modernizr.custom.js"></script>
+  <!-- jQuery -->
+  <!--script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script-->
+  <script src="/javascripts/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+
+  <!-- 其它js代码 -->
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <script src="/javascripts/jquery.sidr.min.js"></script>
+  <script src="/javascripts/ah-blue.js"></script>
+  <script type="text/javascript" src="/javascripts/fancybox/jquery.fancybox.pack.js"></script>
+  <link rel="stylesheet" type="text/css" href="/javascripts/fancybox/jquery.fancybox.css" media="screen" />
+
+  <link href="/stylesheets/component.css" rel="stylesheet" type="text/css">
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+        if ($(".img-up")) {
+            $(".img-up").fancybox();
+        }
+        if ($(".imgleft")) {
+            $(".imgleft").parent().parent().css("text-align", "left");
+        }
+        if ($(".imgright")) {
+            $(".imgright").parent().parent().css("text-align", "right");
+        }
+        if ($(".imgcenter")) {
+            $(".imgcenter").parent().parent().css("text-align", "center");
+        }
+        if ($(".imgleft-no-shadow")) {
+            $(".imgleft-no-shadow").parent().parent().css("text-align", "left");
+        }
+        if ($(".imgright-no-shadow")) {
+            $(".imgright-no-shadow").parent().parent().css("text-align", "right");
+        }
+        if ($(".imgcenter-no-shadow")) {
+            $(".imgcenter-no-shadow").parent().parent().css("text-align", "center");
+        }
+
+        if ($(".mod_lost_child_little")) {
+            $(".mod_lost_child_little").css("width", "100%");
+        }
+    });
+  </script>
+
+  <!-- custom/head.html -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      jax: ["input/TeX", "output/HTML-CSS"],
+      tex2jax: {
+        inlineMath: [ ['$', '$'], ["\\(", "\\)"] ],
+        displayMath: [ ['$$', '$$'], ["\\[", "\\]"] ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+      //,
+      //displayAlign: "left",
+      //displayIndent: "2em"
+    });
+
+    function addBlankTargetForLinks () {
+
+      $('a[href^="http"]').each(function(){
+
+        $(this).attr('target', '_blank');
+
+      });
+
+    }
+
+    $(document).bind('DOMNodeInserted', function(event) {
+
+      addBlankTargetForLinks();
+
+    });
+
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"></script>
+  <!-- google_analytics.html -->
+
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-51950124-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head> 
+
+<body onload="onLoadSet()"   >
+  <!-- header.html -->
+<!-- custom/header.html -->
+<!-- 搜索和菜单导航 -->
+<!--
+<div class="aux-container">
+    <a id="nav-toggle" href="#sidr"></a>
+    <a id="search-toggle"></a>
+</div> -->
+
+<div id="dl-menu" class="dl-menuwrapper">
+    <button>Open Menu</button>
+    <ul class="dl-menu">
+        <li><a href="/">Home</a></li>
+        <li><a href="/archives/">Archives (19)</a></li>
+        <li>
+            <a href="#">Categories (5)</a>
+            <ul class="dl-submenu">
+                <li class="dl-back"><a href="#">Back</a></li>
+                <li><a href="/blog/categories">All Categories (5)</a>
+                <li style="color: #CCCCCC; line-height: 150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Top 5</li>
+
+                <li><a href='/category/面试求职'>面试求职 (10)</a></li><li><a href='/category/工作效率'>工作效率 (5)</a></li><li><a href='/category/网页开发'>网页开发 (2)</a></li><li><a href='/category/Mac 使用'>Mac 使用 (1)</a></li><li><a href='/category/编程学习'>编程学习 (1)</a></li>
+            </ul>
+        </li>
+        <li><a href="/blog/tags">All Tags (46)</a>
+        <li>
+            <a href="#">Features</a>
+            <ul class="dl-submenu">
+                <li class="dl-back"><a href="#">Back</a></li>
+                <li><a href="/booklist">Book List</a></li>
+                <li><a href="/movielist">Movie List</a></li>
+                <li><a href="/towrite">Things to Write</a></li>
+            </ul>
+        </li>
+        <li><a href="/about">About</a></li>
+    </ul>
+</div><!-- /dl-menuwrapper -->
+
+<div class="aux-container">
+
+</div>
+
+
+<div style="height: 30px;"></div>
+
+
+
+  <div class="main-container">
+    <div class="main wrapper clearfix">
+    	
+    	<aside>
+			
+                <div class="search-container">
+                    <form action="/search" method="get">
+                        <fieldset role="search">
+                            <input type="text" class="search-field" id="search-query" name="q" placeholder="Search" autocomplete="off">
+                            <input class="submit" type="submit" value=""/>
+                        </fieldset>
+                    </form>
+                </div>
+			
+            <!-- navigation.html -->
+<!-- custom/navigation.html -->
+<div id="main-nav">
+    <nav>
+        <ul>
+        	<li>
+        		<ul>
+                    <!--li><a href="http://songchengru.eicp.net" target="_blank">Personal Page</a-->
+                    <li><a href="/atom.xml" target="_blank">RSS Subscription</a></li>
+        			<li>Sina Blog - <a href="http://blog.sina.com/frank19900731" target="_blank">士不可以不弘毅</a></li>
+                    <li>Sina Weibo - <a href="http://weibo.sina.com/frank19900731" target="_blank">@太极儒</a></li>
+                    <li>Github - <a href="http://github.com/frank19900731" target="_blank">frank19900731</a></li>
+                    <li>Mail to Me - <a href="mailto:scr_0731@126.com" target="_blank">scr at 126</a></li>
+        		</ul>
+        	</li>
+
+                
+                <!-- asides/features.html -->
+<li>
+    <!-- features -->
+    <h3>Features</h3>
+    <ul>
+        <li><a href="/booklist">Book List</a></li>
+        <li><a href="/movielist">Movie List</a></li>
+        <li><a href="/towrite">To Write</a></li>
+    </ul>
+</li><!-- asides/recent_posts.html -->
+        <li>
+<!-- 最近发布的文章 -->
+<h3>Recent Posts</h3>
+<ul>
+	
+    <li>
+    	<a href="/blog/2014/11/25/mian-shi-jing-yan-fen-xiang-zhi-bian-cheng-yu-yan-ti/">面试经验分享之编程语言题</a>
+    </li>
+    
+    <li>
+    	<a href="/blog/2014/11/23/open-workshop-scalacong-ling-dao-ru-men-ke-tang-bi-ji/">《Open Workshop — Scala 从零到入门》课堂笔记</a>
+    </li>
+    
+    <li>
+    	<a href="/blog/2014/11/21/bai-du-teng-xun-yu-sou-hu-de-bi-shi-hui-yi/">2014 年百度、腾讯与搜狐的校招笔试回忆</a>
+    </li>
+    
+    <li>
+    	<a href="/blog/2014/11/20/pocket-lei-mu-biao-qian-de-zhi-ding/">Pocket 类目标签的制订</a>
+    </li>
+    
+    <li>
+    	<a href="/blog/2014/11/18/mian-shi-jing-yan-fen-xiang-zhi-shu-ju-jie-gou-suan-fa-fen-xiang/">面试经验分享之数据结构、算法题</a>
+    </li>
+    
+</ul>
+        </li>
+<li>
+    <h3>Tags</h3>
+    <ul class="tag-cloud">
+        <a style="font-size: 166%" href="/tag/octopress/">octopress</a>
+<a style="font-size: 210%" href="/tag/效率/">效率</a>
+<a style="font-size: 166%" href="/tag/时间管理/">时间管理</a>
+<a style="font-size: 166%" href="/tag/概率/">概率</a>
+<a style="font-size: 210%" href="/tag/求职经验/">求职经验</a>
+<a style="font-size: 166%" href="/tag/知识管理/">知识管理</a>
+<a style="font-size: 210%" href="/tag/算法/">算法</a>
+<a style="font-size: 166%" href="/tag/逻辑/">逻辑</a>
+<a style="font-size: 210%" href="/tag/面试/">面试</a>
+<a style="font-size: 166%" href="/tag/面试经验/">面试经验</a>
+
+    </ul>
+</li><li>
+    <h3>Recent Comments</h3>
+    <ul class="ds-recent-comments" data-num-items="5" style="margin-right: 38px;">
+    </ul>
+</li><li>
+<h3>Recent Visitors</h3>
+<ul class="ds-recent-visitors"></ul>
+</li>
+                
+
+        </ul>
+    </nav>
+</div>
+		</aside>
+		
+      <!-- layouts/post.html -->
+<!-- 带内容 -->
+<div>
+<article style="background-color: rgba(255, 255, 255, 0.3); padding: 25px 25px 25px 25px; border-radius: 20px;">
+	<!-- article.html -->
+<!-- 文章展示，区分在索引页和文章页 -->
+<header>
+  <div class="article-tags">
+      <!-- post/categories.html -->
+<!-- 文章类别展示 -->
+
+
+<span class="categories" style="font-size: 16px;">
+  Categories:
+  
+    <a class='category' href='/category/面试求职/'>面试求职</a>
+  
+
+</span>
+
+
+  </div>
+  
+    <h1>
+      面试经验分享之编程语言题
+    </h1>
+  
+  <!-- 给出发布时间 -->
+  <div class="article-date">
+      <!-- post/date.html -->
+<!-- 文章日期显示 -->
+
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-11-25T10:13:30+08:00" pubdate data-updated="true">Nov 25<span>th</span>, 2014</time></div>
+</header>
+<hr />
+<!-- 如果在索引中 -->
+
+  <!-- 直接展示出内容 -->
+  <section class="article-detail" style="margin-bottom: 20px;"><ul id="markdown-toc">
+  <li><a href="#section">前言</a></li>
+  <li><a href="#section-1">概述</a></li>
+  <li><a href="#section-2">基础问题</a></li>
+  <li><a href="#section-3">进阶问题</a></li>
+  <li><a href="#section-4">总结</a></li>
+</ul>
+
+<h2 id="section">前言</h2>
+
+<!-- excerpt start -->
+
+<h2 id="section-1">概述</h2>
+
+<p>编程语言题这个设定太狭隘了，应该说是偏工程类的题目，其中有些带有经验性质。出题范围大概是操作系统、数据库、网络、面向对象编程思想、编程语言特性理解和语法掌握等。<strong>相关书籍或或网络教程当然是要看的，但并不意味着你都看了就能有好的发挥，要理论、实践两手抓</strong>。</p>
+
+<p>对于算法工程师岗位来说，这种题目大量出现在笔试试卷中，比如概念理解啦、判断程序的运行输出啦，可以参见我的博客 <a href="http://frank19900731.github.io/blog/2014/11/21/bai-du-teng-xun-yu-sou-hu-de-bi-shi-hui-yi/">《2014 年百度、腾讯与搜狐的校招笔试回忆》</a>。在这里插入分享在另外一家公司的笔试里遇到的一道有意思的题目。</p>
+
+<p>请问如下程序的输出。</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>一道笔试题</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+</pre></td><td class="code"><pre><code class="cpp"><span class="line"><span class="kt">double</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class="line"><span class="kt">double</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">99</span><span class="p">;</span>
+</span><span class="line"><span class="k">while</span><span class="p">(</span><span class="kc">true</span><span class="p">)</span> <span class="p">{</span>
+</span><span class="line">	<span class="kt">double</span> <span class="n">c</span> <span class="o">=</span> <span class="p">(</span><span class="n">a</span><span class="o">+</span><span class="n">b</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span><span class="p">;</span>
+</span><span class="line">	<span class="k">if</span><span class="p">(</span><span class="n">c</span> <span class="o">==</span> <span class="n">a</span> <span class="o">||</span> <span class="n">c</span> <span class="o">==</span> <span class="n">b</span><span class="p">)</span> <span class="k">break</span><span class="p">;</span>
+</span><span class="line">	<span class="n">a</span> <span class="o">=</span> <span class="n">b</span><span class="p">;</span>
+</span><span class="line">	<span class="n">b</span> <span class="o">=</span> <span class="n">c</span><span class="p">;</span>
+</span><span class="line"><span class="p">}</span>
+</span><span class="line"><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="n">a</span><span class="p">;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p><strong>解答：</strong></p>
+
+<p style="color: #AAA;">
+
+我以为会无限循环，因为浮点数判等比较难，不过由于浮点数精度有限，所以迭代个五六十次就终止了，又由于 cout 有默认的输出精度，所以输出结果应该是66。
+
+</p>
+
+<p>面试过程中虽然以算法为主，不过在让你纸上写代码、询问你项目经历的过程中，面试官也能考察出你的工程底子。以下我们分基础问题和进阶问题分别介绍。</p>
+
+<!-- excerpt end -->
+
+<h2 id="section-2">基础问题</h2>
+
+<p>这类基础问题的引子一般是，“你熟悉什么编程语言呀”，“你平常用什么语言比较多呀”，“这个项目你们用什么语言实现的呀”。</p>
+
+<p>如果不是真大牛，就挑一个相对而言自己掌握最熟的语言或最有准备的语言，不要用过啥就说啥。这么一来，无外乎 Java，C/C++，Python，PHP 等几种主流程序语言，Shell、SQL 等都是比较好的添头。就个人对算法工程师和数据挖掘工程师岗位的了解，Python、Scala、Go 很可能是加分项，如果此前没有用过，也可以在面试前学习了解，一句“正在学习”也可以让面试官感受到你的<strong>诚意</strong>哈。</p>
+
+<p>总结自己在面试中被问到的基础问题如下。</p>
+
+<ol>
+  <li>面向对象编程的各类问题，多态、虚函数等；</li>
+  <li>C++ 和 Java 的区别有哪些；</li>
+  <li>你用过这种语言的哪些库；</li>
+  <li>对 STL 是否熟悉；</li>
+  <li>Java 虚拟机了解么，解释垃圾回收机制的原理；</li>
+  <li>线程/进程间通信如何实现，写过多线程的程序么；</li>
+  <li>大数据处理框架用过哪些（其实就算是编程语言的杀手应用吧）；</li>
+  <li>机器学习、数据可视化的库用过哪些；</li>
+  <li>java 中 final 的用法，C/C++ 中的 const 的用法； </li>
+  <li>MySQL 的如何建立索引进行查询的，存储方式是怎样的，为什么要分块；</li>
+  <li>堆区和栈区的区别在哪里；</li>
+  <li>malloc 执行的时候发生了那些事情；</li>
+  <li>正则表达式的写法；</li>
+  <li>vim 中执行某项操作的快捷键；</li>
+  <li>……</li>
+</ol>
+
+<p>这些问题想要第一次遇到时就都回答得正确完善恐非易事，主要还在于总结积累。虽然可供考察的知识点和题目变式浩如烟海，但是<strong>一定量的面试能给我们指出高频在哪里</strong>，理由有三。</p>
+
+<ul>
+  <li>面试官中的绝大多数也是通过面试选拔上来的，他们在准备的过程中应该也知道常考什么样的问题；</li>
+  <li>高频题目提供了可比较性，有筛选价值，而即便你背了网上的解答也可能是不全面的（<strong>我一般把网上看到的和自己的使用经验一起说，显得比较真实…</strong>）；</li>
+  <li>有闲情雅致给你出新题、难题的面试官毕竟是少数。</li>
+</ul>
+
+<p><strong>这种高频基础题都回答不好，又指望面试官怎么看你呢</strong>。所以说每次面试回来后回忆一下自己遇到的问题，<strong>如果你做出了回答，查一查是否需要修正或补充什么；如果你被问住了，那更得查阅资料学习</strong>。</p>
+
+<h2 id="section-3">进阶问题</h2>
+
+<p>虽然我没有遇到过，但我觉得有两个例子可以表示我对进阶问题的定义。</p>
+
+<ul>
+  <li><a href="http://fex.baidu.com/blog/2014/05/what-happen/">从输入 URL 到页面加载完成的过程中都发生了什么？</a></li>
+  <li><a href="http://mooc.guokr.com/note/13202/">C 语言编译时发生了什么？</a>，以及扩展阅读 <a href="https://bojieli.com/2014/11/c-compiler/">《编译：一个 C 程序的艺术之旅》</a>。</li>
+</ul>
+
+<p>第一个问题曾在微博上引发热议。</p>
+
+<p><a href="/img/post/2014-11/3.png" class="img-up" title="微博提问"><img class="imgcenter" src="/img/post/2014-11/3.png" width="80%" title="微博提问" /></a></p>
+
+<p>这种问题既开放又确定。开放在于广度，涉及到的知识点与环节很多，你可以从你了解的部分去叙说；确定在于深度，每一个知识点或环节都是扎实的，不容信口开河。</p>
+
+<p>类似的问题还可以提出很多，不过我们的知识储备未必有那么深广。个人认为，相比于对基础问题的了解，能够较为完善地回答出这类进阶问题，才是 IT 从业者素质与能力的真实体现。</p>
+
+<p>当然，知识的积累要一点一点来，<strong>保持一颗好奇心比功利心或三分钟热血更重要</strong>。</p>
+
+<p><strong>日拱一卒，乐在学中，与君共勉</strong>。</p>
+
+<h2 id="section-4">总结</h2>
+
+<p>用四篇文章分享了自己的面试经验，这是最后一篇。尽力之所及，恰在一个月后兑现了自己的 <a href="http://frank19900731.github.io/blog/2014/10/25/qiu-zhi-ji-de-yi-dian-jing-yan-zhi-tan/">承诺</a>，也算是苦劳一件。</p>
+
+<p>从这四篇总结应该可以看出，本人的应试能力还是比较强的，享受过它带来的好处，也越发体会到它可能带来的弊端，那就是<strong>对技巧的追求超过了知识本身</strong>。</p>
+
+<p>如果不是因为面试或者考试，很多人懒得问自己为什么。一种可能的场景是，程序出错了，Google/百度出了解决方案，调通了，也就过了。<strong>就好像刷题拿了高分，错误中蕴含的价值却没学到</strong>。我也当过很长一段时间这样的人，不过后来发现有些问题重复性的犯，而有些问题有很强的相似性，自己逐渐意识到需要记录错误解决的过程、思考产生错误的原因。坚持一段时间后发现，对原因的探寻不但能够加深记忆，也能够提高自己跨语言、跨应用场景的问题解决能力。</p>
+
+<p>针对面试，或者不仅仅针对面试，我想说我们也可以<strong>假想自己是面试官，在习以为常的场景中多问自己为什么</strong>，学问也都在这里头了。</p>
+
+<p>最后的最后，希望我的面试经验分享可以对各位看官产生一点帮助，比如提早规划、准备；也欢迎大家的提出建议、指出错误。</p>
+
+<p>面试经验分享之 <code>机器学习、大数据问题</code>、<code>智力题</code>、<code>数据结构与算法题</code>、<code>编程语言题</code> 已经撰写完毕，访问入口如下。</p>
+
+<ul>
+  <li><a href="/blog/2014/11/06/mian-shi-jing-yan-zhi-ji-qi-xue-xi-da-shu-ju-wen-ti/">机器学习、大数据问题</a></li>
+  <li><a href="/blog/2014/11/07/mian-shi-jing-yan-fen-xiang-zhi-zhi-li-ti/">智力题</a></li>
+  <li><a href="/blog/2014/11/18/mian-shi-jing-yan-fen-xiang-zhi-shu-ju-jie-gou-suan-fa-fen-xiang/">数据结构与算法题</a></li>
+  <li><a href="/blog/2014/11/25/mian-shi-jing-yan-fen-xiang-zhi-bian-cheng-yu-yan-ti/">编程语言题</a></li>
+</ul>
+
+<p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2014/11/25/mian-shi-jing-yan-fen-xiang-zhi-bian-cheng-yu-yan-ti/">http://frank19900731.github.io/blog/2014/11/25/mian-shi-jing-yan-fen-xiang-zhi-bian-cheng-yu-yan-ti/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
+</section>
+
+<!-- post/tags.html -->
+<!-- 文章标签展示 -->
+
+
+<span class="tags">
+  <font color="#777">Tags: </font>
+  
+    <a class='tag' href='/tag/编程语言/'>编程语言</a>, <a class='tag' href='/tag/面试经验/'>面试经验</a>
+  
+</span>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<span class="ds-thread-count" data-thread-key="" style="color: #777;"></span>
+
+
+<!-- JiaThis Button BEGIN -->
+<div class="jiathis_style" style="margin-top: 40px;">
+    <span class="jiathis_txt">分享到：</span>
+    <a class="jiathis_button_tsina">新浪微博</a>
+    <a class="jiathis_button_tqq">腾讯微博</a>
+    <a class="jiathis_button_renren">人人网</a>
+    <a class="jiathis_button_weixin">微信</a>
+    <a class="jiathis_button_douban">豆瓣</a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
+    <a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1406956593484740" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+        <div style="height: 40px;"></div>
+
+
+
+
+    <div style="width: 100%; margin-top: 30px;">
+        <span style="float:left">
+             <a href="/blog/2014/11/23/open-workshop-scalacong-ling-dao-ru-men-ke-tang-bi-ji/">« 《Open Workshop — Scala &hellip;</a> 
+        </span>
+        <span style="float:right">
+            
+        </span>
+    </div>
+
+	
+	  <section class="comments" style="padding-top: 30px;">
+	    <div id="disqus_thread" aria-live="polite"><!-- post/disqus_thread.html -->
+<!--
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+-->
+
+<!-- 多说评论框 start -->
+<div class="ds-thread" data-thread-key="/blog/2014/11/25/mian-shi-jing-yan-fen-xiang-zhi-bian-cheng-yu-yan-ti/" data-title="面试经验分享之编程语言题" data-url="http://frank19900731.github.io/blog/2014/11/25/mian-shi-jing-yan-fen-xiang-zhi-bian-cheng-yu-yan-ti/" style="margin-top: 40px;"></div>
+<!-- 多说评论框 end -->
+
+
+<h3 style="margin-top: 40px;">Commented Most This Month</h3>
+<!-- 多说热评文章 start -->
+<ul class="ds-top-threads" data-range="monthly" data-num-items="6"></ul>
+<!-- 多说热评文章 end --></div>
+	  </section>
+	
+</article>
+</div>
+
+    </div>
+  </div>
+  <!-- footer.html -->
+<!-- custom/footer.html -->
+<!-- 页脚 -->
+
+
+  <!-- after_footer.html -->
+<!-- custom/after_footer.html -->
+<!-- 加入评论 -->
+
+
+
+
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+    var duoshuoQuery = {short_name:"frank19900731-blog"};
+    (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0]
+                || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+</script>
+<!-- 多说公共JS代码 end -->
+
+
+<!--
+
+
+<script type="text/javascript">
+      var disqus_shortname = 'frank-octopress';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://frank19900731.github.io/blog/2014/11/25/mian-shi-jing-yan-fen-xiang-zhi-bian-cheng-yu-yan-ti/';
+        var disqus_url = 'http://frank19900731.github.io/blog/2014/11/25/mian-shi-jing-yan-fen-xiang-zhi-bian-cheng-yu-yan-ti/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+
+-->
+
+
+  <script src="/javascripts/jquery.dlmenu.js"></script>
+<script type="text/javascript">
+    $(function() {
+        $('#dl-menu').dlmenu();
+    });
+
+    function onLoadSet() {
+
+    }
+
+</script>
+  <a id="gotop" href="#">
+    <span>▲</span>
+</a>
+<div id="float-index">
+</div>
+
+<script type="text/javascript">
+    $(function(){
+        $(window).scroll(function(){  //只要窗口滚动,就触发下面代码
+            var scrollt = document.documentElement.scrollTop + document.body.scrollTop; //获取滚动后的高度
+            if( scrollt >300 ){  //判断滚动后高度超过200px,就显示
+                $("#gotop").fadeIn(400); //淡出
+            }else{
+                $("#gotop").stop().fadeOut(400); //如果返回或者没有超过,就淡入.必须加上stop()停止之前动画,否则会出现闪动
+            }
+
+            if(scrollt > 1300) {
+                $("#float-index").fadeIn(400);
+            } else {
+                $("#float-index").stop().fadeOut(10);
+            }
+        });
+        $("#gotop").click(function(){ //当点击标签的时候,使用animate在200毫秒的时间内,滚到顶部
+            $("html,body").animate({scrollTop:"0px"},200);
+        });
+
+        if ($("#markdown-toc").length > 0) {
+            $("#markdown-toc").clone(true).appendTo("#float-index");
+        } else {
+            $("#float-index").remove();
+        }
+    });
+</script>
+
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1253436508'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s6.cnzz.com/z_stat.php%3Fid%3D1253436508%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+</body>
+</html>

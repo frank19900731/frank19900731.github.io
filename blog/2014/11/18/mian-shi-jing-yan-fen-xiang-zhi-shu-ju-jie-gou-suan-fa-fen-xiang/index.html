@@ -8,11 +8,11 @@
 <head>
   <meta charset="utf-8">
   <!-- 标签页标题 -->
-  <title>面试经验分享之数据结构、算法分享 - Blog of 太极儒</title>
+  <title>面试经验分享之数据结构、算法题 - Blog of 太极儒</title>
   <meta name="author" content="Frank Song">
   <!-- 定义description变量，如果有则用，没有则是正文，前150字 -->
   
-  <meta name="description" content="Categories: 面试求职 面试经验分享之数据结构、算法分享 Nov 18th, 2014 前言 数据结构题目 概述 分类讨论 类型一：数据结构实现 类型二：数据结构应用 准备建议 算法题目 概述 分类讨论 类型一：经典算法实现题 类型二：思维益智题 准备建议 开放题目 总结 前言 面试 IT 企业的研发岗位，数据结构和算法显然是必考的项目。俺只学过普通的数据结构课程，没读过 STL，也没有过 ACM 的训练和比赛经历，在一开始面对这样类型题目的时候，心里还是十分忐忑的。大大小小几十场面试下来，自己在这方面总算有了一定的心得积累，在此抛砖引玉，以飨读者。 在正式介绍题目和准备方法之前，有两点需要说明， Google 和 Facebook 这类对算法有很高要求的公司的在线测试我没有参加过（不过在牛人内推帮助下有过面试体验……），这超出了我目前的编码能力范围，网上有不少拿到 Google、Facebook offer 的经验总结文章，可以移步观赏； 前段时间在微博上又看到有人说自己把 leetcode 刷了好几遍，不过一些转发评论者觉得， IT 公司面试中的算法考察没有价值，一来工作里用不太上，二来把程序员素质考察搞成了应试教育，他们认为更重要的是应聘者的工程能力。遇到这样的讨论，我一般喜欢和一把稀泥。若干年前， Google、微软的面试题让大家眼前一亮，觉得能选拔出个性十足的聪明人来，不过随着大家对这类题目的适应，可能选拔出来的人也在趋同，至少很多人都会在面试前用心准备，据报道 Google 最近也是放弃了这类面试题目。没有什么一劳永逸、一成不变的考查方式，毕竟面试是人和人之间的动态“较量”。不要贪恋算法的奇技淫巧，也不要因为题目筛选力度的衰减而否定考察初衷。面试不仅是考验求职者，也同样在考验面试官，如果问的都是老题儿，那本山大叔肯定都会抢答了。 言归正传，以下分数据结构题目、算法题目、开放题目三部分来介绍我在面试中碰到的问题。 数据结构题目 概述 虽然课本由简到繁、由难到易地介绍了诸多数据结构，我在面试中被问到的却还都是基本类型，比如堆栈、队列、链表、二叉树。题目主要有两类，数据结构实现和具体情境下数据结构的应用。 分类讨论 类型一：数据结构实现 实现 java.util.List 中的基础功能； 实现栈，使得 添加、删除、max 操作的复杂度为 O(1 &hellip;">
+  <meta name="description" content="Categories: 面试求职 面试经验分享之数据结构、算法题 Nov 18th, 2014 前言 数据结构题目 概述 分类讨论 类型一：数据结构实现 类型二：数据结构应用 准备建议 算法题目 概述 分类讨论 类型一：经典算法实现题 类型二：思维益智题 准备建议 开放题目 总结 前言 面试 IT 企业的研发岗位，数据结构和算法显然是必考的项目。俺只学过普通的数据结构课程，没读过 STL，也没有过 ACM 的训练和比赛经历，在一开始面对这样类型题目的时候，心里还是十分忐忑的。大大小小几十场面试下来，自己在这方面总算有了一定的心得积累，在此抛砖引玉，以飨读者。 在正式介绍题目和准备方法之前，有两点需要说明， Google 和 Facebook 这类对算法有很高要求的公司的在线测试我没有参加过（不过在牛人内推帮助下有过面试体验……），这超出了我目前的编码能力范围，网上有不少拿到 Google、Facebook offer 的经验总结文章，可以移步观赏； 前段时间在微博上又看到有人说自己把 leetcode 刷了好几遍，不过一些转发评论者觉得， IT 公司面试中的算法考察没有价值，一来工作里用不太上，二来把程序员素质考察搞成了应试教育，他们认为更重要的是应聘者的工程能力。遇到这样的讨论，我一般喜欢和一把稀泥。若干年前， Google、微软的面试题让大家眼前一亮，觉得能选拔出个性十足的聪明人来，不过随着大家对这类题目的适应，可能选拔出来的人也在趋同，至少很多人都会在面试前用心准备，据报道 Google 最近也是放弃了这类面试题目。没有什么一劳永逸、一成不变的考查方式，毕竟面试是人和人之间的动态“较量”。不要贪恋算法的奇技淫巧，也不要因为题目筛选力度的衰减而否定考察初衷。面试不仅是考验求职者，也同样在考验面试官，如果问的都是老题儿，那本山大叔肯定都会抢答了。 言归正传，以下分数据结构题目、算法题目、开放题目三部分来介绍我在面试中碰到的问题。 数据结构题目 概述 虽然课本由简到繁、由难到易地介绍了诸多数据结构，我在面试中被问到的却还都是基本类型，比如堆栈、队列、链表、二叉树。题目主要有两类，数据结构实现和具体情境下数据结构的应用。 分类讨论 类型一：数据结构实现 实现 java.util.List 中的基础功能； 实现栈，使得 添加、删除、max 操作的复杂度为 O(1)（ &hellip;">
   <meta name="keywords" content="数据结构, 算法, 面试经验, 算法导论, 邓俊辉, 快速排序, 归并排序, 堆排序, KMP, 二分, 动态规划, 递归, hihocoder, topcoder, leetcode, codility, POJ, 复杂度分析">
   <meta name="baidu-site-verification" content="7O78rNJCOH" />
   <meta name="360-site-verification" content="9ee6dda17557079b8855f9c8201b05bb" />
@@ -142,7 +142,7 @@
     <button>Open Menu</button>
     <ul class="dl-menu">
         <li><a href="/">Home</a></li>
-        <li><a href="/archives/">Archives (18)</a></li>
+        <li><a href="/archives/">Archives (19)</a></li>
         <li>
             <a href="#">Categories (5)</a>
             <ul class="dl-submenu">
@@ -150,10 +150,10 @@
                 <li><a href="/blog/categories">All Categories (5)</a>
                 <li style="color: #CCCCCC; line-height: 150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Top 5</li>
 
-                <li><a href='/category/面试求职'>面试求职 (9)</a></li><li><a href='/category/工作效率'>工作效率 (5)</a></li><li><a href='/category/网页开发'>网页开发 (2)</a></li><li><a href='/category/Mac 使用'>Mac 使用 (1)</a></li><li><a href='/category/编程学习'>编程学习 (1)</a></li>
+                <li><a href='/category/面试求职'>面试求职 (10)</a></li><li><a href='/category/工作效率'>工作效率 (5)</a></li><li><a href='/category/网页开发'>网页开发 (2)</a></li><li><a href='/category/Mac 使用'>Mac 使用 (1)</a></li><li><a href='/category/编程学习'>编程学习 (1)</a></li>
             </ul>
         </li>
-        <li><a href="/blog/tags">All Tags (45)</a>
+        <li><a href="/blog/tags">All Tags (46)</a>
         <li>
             <a href="#">Features</a>
             <ul class="dl-submenu">
@@ -223,6 +223,10 @@
 <ul>
 	
     <li>
+    	<a href="/blog/2014/11/25/mian-shi-jing-yan-fen-xiang-zhi-bian-cheng-yu-yan-ti/">面试经验分享之编程语言题</a>
+    </li>
+    
+    <li>
     	<a href="/blog/2014/11/23/open-workshop-scalacong-ling-dao-ru-men-ke-tang-bi-ji/">《Open Workshop — Scala 从零到入门》课堂笔记</a>
     </li>
     
@@ -235,11 +239,7 @@
     </li>
     
     <li>
-    	<a href="/blog/2014/11/18/mian-shi-jing-yan-fen-xiang-zhi-shu-ju-jie-gou-suan-fa-fen-xiang/">面试经验分享之数据结构、算法分享</a>
-    </li>
-    
-    <li>
-    	<a href="/blog/2014/11/13/yi-ge-gong-ju-kong-de-xiao-lu-guan/">一个工具控的效率观</a>
+    	<a href="/blog/2014/11/18/mian-shi-jing-yan-fen-xiang-zhi-shu-ju-jie-gou-suan-fa-fen-xiang/">面试经验分享之数据结构、算法题</a>
     </li>
     
 </ul>
@@ -248,7 +248,6 @@
     <h3>Tags</h3>
     <ul class="tag-cloud">
         <a style="font-size: 166%" href="/tag/octopress/">octopress</a>
-<a style="font-size: 90%" href="/tag/排列组合/">排列组合</a>
 <a style="font-size: 210%" href="/tag/效率/">效率</a>
 <a style="font-size: 166%" href="/tag/时间管理/">时间管理</a>
 <a style="font-size: 166%" href="/tag/概率/">概率</a>
@@ -257,6 +256,7 @@
 <a style="font-size: 210%" href="/tag/算法/">算法</a>
 <a style="font-size: 166%" href="/tag/逻辑/">逻辑</a>
 <a style="font-size: 210%" href="/tag/面试/">面试</a>
+<a style="font-size: 166%" href="/tag/面试经验/">面试经验</a>
 
     </ul>
 </li><li>
@@ -298,7 +298,7 @@
   </div>
   
     <h1>
-      面试经验分享之数据结构、算法分享
+      面试经验分享之数据结构、算法题
     </h1>
   
   <!-- 给出发布时间 -->
@@ -500,7 +500,7 @@
   <li><a href="/blog/2014/11/06/mian-shi-jing-yan-zhi-ji-qi-xue-xi-da-shu-ju-wen-ti/">机器学习、大数据问题</a></li>
   <li><a href="/blog/2014/11/07/mian-shi-jing-yan-fen-xiang-zhi-zhi-li-ti/">智力题</a></li>
   <li><a href="/blog/2014/11/18/mian-shi-jing-yan-fen-xiang-zhi-shu-ju-jie-gou-suan-fa-fen-xiang/">数据结构与算法题</a></li>
-  <li>编程语言题</li>
+  <li><a href="/blog/2014/11/25/mian-shi-jing-yan-fen-xiang-zhi-bian-cheng-yu-yan-ti/">编程语言题</a></li>
 </ul>
 
 <p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2014/11/18/mian-shi-jing-yan-fen-xiang-zhi-shu-ju-jie-gou-suan-fa-fen-xiang/">http://frank19900731.github.io/blog/2014/11/18/mian-shi-jing-yan-fen-xiang-zhi-shu-ju-jie-gou-suan-fa-fen-xiang/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
@@ -555,7 +555,7 @@
 -->
 
 <!-- 多说评论框 start -->
-<div class="ds-thread" data-thread-key="/blog/2014/11/18/mian-shi-jing-yan-fen-xiang-zhi-shu-ju-jie-gou-suan-fa-fen-xiang/" data-title="面试经验分享之数据结构、算法分享" data-url="http://frank19900731.github.io/blog/2014/11/18/mian-shi-jing-yan-fen-xiang-zhi-shu-ju-jie-gou-suan-fa-fen-xiang/" style="margin-top: 40px;"></div>
+<div class="ds-thread" data-thread-key="/blog/2014/11/18/mian-shi-jing-yan-fen-xiang-zhi-shu-ju-jie-gou-suan-fa-fen-xiang/" data-title="面试经验分享之数据结构、算法题" data-url="http://frank19900731.github.io/blog/2014/11/18/mian-shi-jing-yan-fen-xiang-zhi-shu-ju-jie-gou-suan-fa-fen-xiang/" style="margin-top: 40px;"></div>
 <!-- 多说评论框 end -->
 
 
