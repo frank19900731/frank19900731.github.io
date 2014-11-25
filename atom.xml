@@ -4,7 +4,7 @@
   <title><![CDATA[Blog of 太极儒]]></title>
   <link href="http://frank19900731.github.io/atom.xml" rel="self"/>
   <link href="http://frank19900731.github.io/"/>
-  <updated>2014-11-25T15:04:33+08:00</updated>
+  <updated>2014-11-25T15:34:00+08:00</updated>
   <id>http://frank19900731.github.io/</id>
   <author>
     <name><![CDATA[Frank Song]]></name>
@@ -12,6 +12,32 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[面试经验分享四篇]]></title>
+    <link href="http://frank19900731.github.io/blog/2014/11/25/mian-shi-jing-yan-fen-xiang-si-pian/"/>
+    <updated>2014-11-25T15:13:28+08:00</updated>
+    <id>http://frank19900731.github.io/blog/2014/11/25/mian-shi-jing-yan-fen-xiang-si-pian</id>
+    <content type="html"><![CDATA[<p>一个月前，我在<a href="http://localhost:4000/blog/2014/10/25/qiu-zhi-ji-de-yi-dian-jing-yan-zhi-tan/">《求职季的一点经验之谈》</a> 的末尾提到，将从 <code>机器学习与大数据</code>、<code>智力题</code>、<code>数据结构与算法</code>、<code>编程语言</code> 四方面分享自己的面试总结，现在总算是把这句话给圆了。</p>
+
+<p>虽然在文章里我也列举了很多题目，但我<strong>尽量不写成面试题解，而是面试经验</strong>。更确切的说，是一些比较容易落实在笔头上的经验，毕竟一些事情不亲身经历，别人磨穿了嘴皮子去描述也是没用的。</p>
+
+<p>具体有哪些经验呢，大概是算法工程师有哪些工作职责，有怎样的能力要求，平时要注重培养自己哪方面的能力，哪些书籍资料有较高阅读价值，以什么样的心态来学习知识、应对考试是比较合适的，怎样转变角色把面试当做促进自身提高的一种反馈机制，等等（其实也没别的了，呵呵）。</p>
+
+<p>多的咱就不说了，<strong>水平有限，欢迎指正；如有裨益，不胜荣幸</strong>。</p>
+
+<p>访问入口：</p>
+
+<ul>
+  <li><a href="http://frank19900731.github.io/blog/2014/11/06/mian-shi-jing-yan-zhi-ji-qi-xue-xi-da-shu-ju-wen-ti/">机器学习、大数据问题</a></li>
+  <li><a href="http://frank19900731.github.io/blog/2014/11/07/mian-shi-jing-yan-fen-xiang-zhi-zhi-li-ti/">智力题</a></li>
+  <li><a href="http://frank19900731.github.io/blog/2014/11/18/mian-shi-jing-yan-fen-xiang-zhi-shu-ju-jie-gou-suan-fa-fen-xiang/">数据结构与算法题</a></li>
+  <li><a href="http://frank19900731.github.io/blog/2014/11/25/mian-shi-jing-yan-fen-xiang-zhi-bian-cheng-yu-yan-ti/">编程语言题</a></li>
+</ul>
+
+<p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2014/11/25/mian-shi-jing-yan-fen-xiang-si-pian/">http://frank19900731.github.io/blog/2014/11/25/mian-shi-jing-yan-fen-xiang-si-pian/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[面试经验分享之编程语言题]]></title>
@@ -62,7 +88,7 @@
 
 <p style="color: #AAA;">
 
-我以为会无限循环，因为浮点数判等比较难，不过由于浮点数精度有限，所以迭代个五六十次就终止了，又由于 cout 有默认的输出精度，所以输出结果应该是66。
+浮点数判等，会无限循环么？由于浮点数精度有限，所以这个程序迭代个五六十次就终止了，又由于 cout 有默认的输出精度，所以输出结果应该是66。
 
 </p>
 
@@ -2270,10 +2296,10 @@ Var\left( r \right)  &= E{ \left( r-E\left( r \right)  \right)  }^{ 2 } \\
 <p>接下来，我将从以下四方面分享一下自己的面试总结，欢迎持续关注。</p>
 
 <ol>
-  <li>智力题</li>
-  <li>编程语言</li>
-  <li>数据结构与算法</li>
-  <li>机器学习，大数据</li>
+  <li><a href="http://frank19900731.github.io/blog/2014/11/06/mian-shi-jing-yan-zhi-ji-qi-xue-xi-da-shu-ju-wen-ti/">机器学习、大数据问题</a></li>
+  <li><a href="http://frank19900731.github.io/blog/2014/11/07/mian-shi-jing-yan-fen-xiang-zhi-zhi-li-ti/">智力题</a></li>
+  <li><a href="http://frank19900731.github.io/blog/2014/11/18/mian-shi-jing-yan-fen-xiang-zhi-shu-ju-jie-gou-suan-fa-fen-xiang/">数据结构与算法题</a></li>
+  <li><a href="http://frank19900731.github.io/blog/2014/11/25/mian-shi-jing-yan-fen-xiang-zhi-bian-cheng-yu-yan-ti/">编程语言题</a></li>
 </ol>
 
 <p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2014/10/25/qiu-zhi-ji-de-yi-dian-jing-yan-zhi-tan/">http://frank19900731.github.io/blog/2014/10/25/qiu-zhi-ji-de-yi-dian-jing-yan-zhi-tan/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>

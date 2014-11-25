@@ -1,5 +1,34 @@
 
 <item>
+    <title>面试经验分享四篇</title>
+    <link>http://realjenius.com/blog/2014/11/25/mian-shi-jing-yan-fen-xiang-si-pian/</link>
+    <author>R.J. Lorimer</author>
+    <pubDate>2014-11-25T15:13:28+08:00</pubDate>
+    <guid>http://realjenius.com/blog/2014/11/25/mian-shi-jing-yan-fen-xiang-si-pian/</guid>
+    <description><![CDATA[
+     <p>一个月前，我在<a href="http://localhost:4000/blog/2014/10/25/qiu-zhi-ji-de-yi-dian-jing-yan-zhi-tan/">《求职季的一点经验之谈》</a> 的末尾提到，将从 <code>机器学习与大数据</code>、<code>智力题</code>、<code>数据结构与算法</code>、<code>编程语言</code> 四方面分享自己的面试总结，现在总算是把这句话给圆了。</p>
+
+<p>虽然在文章里我也列举了很多题目，但我<strong>尽量不写成面试题解，而是面试经验</strong>。更确切的说，是一些比较容易落实在笔头上的经验，毕竟一些事情不亲身经历，别人磨穿了嘴皮子去描述也是没用的。</p>
+
+<p>具体有哪些经验呢，大概是算法工程师有哪些工作职责，有怎样的能力要求，平时要注重培养自己哪方面的能力，哪些书籍资料有较高阅读价值，以什么样的心态来学习知识、应对考试是比较合适的，怎样转变角色把面试当做促进自身提高的一种反馈机制，等等（其实也没别的了，呵呵）。</p>
+
+<p>多的咱就不说了，<strong>水平有限，欢迎指正；如有裨益，不胜荣幸</strong>。</p>
+
+<p>访问入口：</p>
+
+<ul>
+  <li><a href="http://frank19900731.github.io/blog/2014/11/06/mian-shi-jing-yan-zhi-ji-qi-xue-xi-da-shu-ju-wen-ti/">机器学习、大数据问题</a></li>
+  <li><a href="http://frank19900731.github.io/blog/2014/11/07/mian-shi-jing-yan-fen-xiang-zhi-zhi-li-ti/">智力题</a></li>
+  <li><a href="http://frank19900731.github.io/blog/2014/11/18/mian-shi-jing-yan-fen-xiang-zhi-shu-ju-jie-gou-suan-fa-fen-xiang/">数据结构与算法题</a></li>
+  <li><a href="http://frank19900731.github.io/blog/2014/11/25/mian-shi-jing-yan-fen-xiang-zhi-bian-cheng-yu-yan-ti/">编程语言题</a></li>
+</ul>
+
+<p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2014/11/25/mian-shi-jing-yan-fen-xiang-si-pian/">http://frank19900731.github.io/blog/2014/11/25/mian-shi-jing-yan-fen-xiang-si-pian/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
+
+  ]]></description>
+</item>
+
+<item>
     <title>面试经验分享之编程语言题</title>
     <link>http://realjenius.com/blog/2014/11/25/mian-shi-jing-yan-fen-xiang-zhi-bian-cheng-yu-yan-ti/</link>
     <author>R.J. Lorimer</author>
@@ -50,7 +79,7 @@
 
 <p style="color: #AAA;">
 
-我以为会无限循环，因为浮点数判等比较难，不过由于浮点数精度有限，所以迭代个五六十次就终止了，又由于 cout 有默认的输出精度，所以输出结果应该是66。
+浮点数判等，会无限循环么？由于浮点数精度有限，所以这个程序迭代个五六十次就终止了，又由于 cout 有默认的输出精度，所以输出结果应该是66。
 
 </p>
 
@@ -1076,10 +1105,10 @@ Var\left( r \right)  &= E{ \left( r-E\left( r \right)  \right)  }^{ 2 } \\
 <p>接下来，我将从以下四方面分享一下自己的面试总结，欢迎持续关注。</p>
 
 <ol>
-  <li>智力题</li>
-  <li>编程语言</li>
-  <li>数据结构与算法</li>
-  <li>机器学习，大数据</li>
+  <li><a href="http://frank19900731.github.io/blog/2014/11/06/mian-shi-jing-yan-zhi-ji-qi-xue-xi-da-shu-ju-wen-ti/">机器学习、大数据问题</a></li>
+  <li><a href="http://frank19900731.github.io/blog/2014/11/07/mian-shi-jing-yan-fen-xiang-zhi-zhi-li-ti/">智力题</a></li>
+  <li><a href="http://frank19900731.github.io/blog/2014/11/18/mian-shi-jing-yan-fen-xiang-zhi-shu-ju-jie-gou-suan-fa-fen-xiang/">数据结构与算法题</a></li>
+  <li><a href="http://frank19900731.github.io/blog/2014/11/25/mian-shi-jing-yan-fen-xiang-zhi-bian-cheng-yu-yan-ti/">编程语言题</a></li>
 </ol>
 
 <p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2014/10/25/qiu-zhi-ji-de-yi-dian-jing-yan-zhi-tan/">http://frank19900731.github.io/blog/2014/10/25/qiu-zhi-ji-de-yi-dian-jing-yan-zhi-tan/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
@@ -1413,73 +1442,6 @@ Var\left( r \right)  &= E{ \left( r-E\left( r \right)  \right)  }^{ 2 } \\
 <p>题型比较广泛，不太需要 ACM 等相关技能，主要看分析思考的能力。当然，对于一些固定知识点的考察（比如网络相关的），也着实让我觉得有必要在考后夯实一下基础。<strong>基础还是记在脑子里比较好，不要太依赖搜索引擎。</strong></p>
 
 <p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2014/10/18/fei-wei-mei-di-bi-shi-hui-yi/">http://frank19900731.github.io/blog/2014/10/18/fei-wei-mei-di-bi-shi-hui-yi/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
-
-  ]]></description>
-</item>
-
-<item>
-    <title>2015年校招入口</title>
-    <link>http://realjenius.com/blog/2014/09/01/2015nian-xiao-zhao-ru-kou/</link>
-    <author>R.J. Lorimer</author>
-    <pubDate>2014-09-01T23:49:27+08:00</pubDate>
-    <guid>http://realjenius.com/blog/2014/09/01/2015nian-xiao-zhao-ru-kou/</guid>
-    <description><![CDATA[
-     <!-- excerpt start -->
-
-<h1 id="interest-list">Interest List</h1>
-
-<h2 id="computer-related">Computer Related</h2>
-<p><a href="http://talent.baidu.com/baidu/web/templet1000/index/corpwebPosition1000baidu!getPostListByConditionBaidu?positionType=0&amp;brandCode=1&amp;useForm=0&amp;recruitType=1&amp;request_locale=zh_CN">百度</a></p>
-
-<p><a href="http://campus.alibaba.com/index.htm">阿里巴巴</a></p>
-
-<p><a href="http://join.qq.com/">腾讯</a></p>
-
-<p><a href="http://360.zhiye.com/zpdetail/560001262">360</a></p>
-
-<p><a href="http://hr.xiaomi.com/user/resume">小米</a></p>
-
-<p><a href="http://www.dajie.com/corp/1005750/custom/campus/outerLink/26560894">京东</a></p>
-
-<p><a href="http://campus.youdao.com/campus/post_list.php?t1=campus">网易有道</a></p>
-
-<p><a href="http://game.campus.163.com/">网易游戏</a></p>
-
-<p><a href="http://www.hotjob.cn/wt/sina/web/templet1000/index/corpwebPosition1000sina!getPostListByCondition?positionType=0&amp;brandCode=1&amp;useForm=0&amp;recruitType=1&amp;showComp=true&amp;urlCorpEdition=null&amp;operational=D28977237630A659C96DE14A5560C16A73AEF91683DCD19467A5A42F190422AF112707A59F14B926BC3E5DEB86BD4C85EEC3CF644D58CF9DE37FE924995A8EF706808FC2E27ACB42CC43C5E1CF97C10E7DAB212D459955EECF690AE889A2A346D7EAE896601F0B27046BFE007E94869EC33B7F9E5E5DD3B813365609223FDAC148FAC99C32F7DBDAF52A5EA0525AE56ABC349E2123F95B4261272A09DD89AE8B3E693A75666D12221CABFE777C5EE8196D1AEE5BF1E6E4E0F6EE1446BE21ADD8">新浪微博</a></p>
-
-<p><a href="http://www.sohucampus.com/sohu/index">搜狐</a></p>
-
-<p><a href="http://campus.dianping.com/#!/resume">大众点评</a></p>
-
-<p><a href="http://campus.sogou.com/?show.page/achieve">搜狗</a></p>
-
-<p><a href="http://www.hotjob.cn/wt/meituan/web/index">美团</a></p>
-
-<p><a href="http://career.huawei.com/recruitment/portal_index.html">华为</a></p>
-
-<p><a href="http://www.joinms.com/index.html">微软</a></p>
-
-<p><a href="http://campus.51job.com/ibmcampus/">IBM</a></p>
-
-<p><a href="http://campus.idgvc.ourats.com/about-us/recruit-process">IDG</a></p>
-
-<p><a href="http://www.dajie.com/corp/1010142/">亚马逊</a></p>
-
-<p><a href="http://campus.iqiyi.com/html/campus1.html">爱奇艺</a></p>
-
-<p><a href="http://campus.chinahr.com/2015/pages/feiweimd/jobs.asp">飞维美地</a></p>
-
-<p><a href="http://cbdic.creditease.cn/jobs.html">宜信</a></p>
-
-<h2 id="finance-related">Finance Related</h2>
-
-<p><a href="">摩根士丹利全球量化部门</a></p>
-
-<p><a href="http://www.worldquant.com/join-the-team/careers/?region=int">世坤</a></p>
-
-<!-- excerpt end -->
-
-<p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2014/09/01/2015nian-xiao-zhao-ru-kou/">http://frank19900731.github.io/blog/2014/09/01/2015nian-xiao-zhao-ru-kou/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
 
   ]]></description>
 </item>

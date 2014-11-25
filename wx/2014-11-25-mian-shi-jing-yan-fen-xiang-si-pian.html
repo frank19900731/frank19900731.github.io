@@ -1,0 +1,220 @@
+<!-- layout/wx-default.html -->
+
+<!-- head.html -->
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <!-- 标签页标题 -->
+  <title>面试经验分享四篇 - Blog of 太极儒</title>
+  <meta name="author" content="Frank Song">
+  <!-- 定义description变量，如果有则用，没有则是正文，前150字 -->
+  
+  <meta name="description" content="一个月前，我在《求职季的一点经验之谈》 的末尾提到，将从 机器学习与大数据、智力题、数据结构与算法、编程语言 四方面分享自己的面试总结，现在总算是把这句话给圆了。 虽然在文章里我也列举了很多题目，但我尽量不写成面试题解，而是面试经验。更确切的说，是一些比较容易落实在笔头上的经验，毕竟一些事情不亲身经历，别人磨穿了嘴皮子去描述也是没用的。 具体有哪些经验呢，大概是算法工程师有哪些工作职责，有怎样的能力要求，平时要注重培养自己哪方面的能力，哪些书籍资料有较高阅读价值，以什么样的心态来学习知识、应对考试是比较合适的，怎样转变角色把面试当做促进自身提高的一种反馈机制，等等（其实也没别的了，呵呵）。 多的咱就不说了，水平有限，欢迎指正；如有裨益，不胜荣幸。 访问入口： 机器学习、大数据问题 智力题 数据结构与算法题 编程语言题 ">
+  <meta name="keywords" content="面试经验">
+  <meta name="baidu-site-verification" content="7O78rNJCOH" />
+  <meta name="360-site-verification" content="9ee6dda17557079b8855f9c8201b05bb" />
+  <meta name="msvalidate.01" content="408D13BCB6B6CE4973F6CD9E6A9E8195" />
+  <meta name="sogou_site_verification" content="CtgkJPDjga"/>
+  <meta name="chinaz-site-verification" content="081e7651-48c6-4c2f-a569-99321685eab1" />
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://frank19900731.github.io/wx/2014-11-25-mian-shi-jing-yan-fen-xiang-si-pian.html">
+  <!-- 网站小图标 -->
+  <link href="/favicon.ico" rel="icon">
+  <link href="/stylesheets/bootstrap/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="/stylesheets/bootstrap/responsive.css" rel="stylesheet" type="text/css">
+  <!-- 网站样式文件 -->
+  <link href="/stylesheets/styles.css" media="screen, projection" rel="stylesheet" type="text/css">
+
+  <link href="/atom.xml" rel="alternate" title="Blog of 太极儒" type="application/atom+xml">
+
+  <script src="/javascripts/modernizr.custom.js"></script>
+  <!-- jQuery -->
+  <!--script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script-->
+  <script src="/javascripts/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+
+  <!-- 其它js代码 -->
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <script src="/javascripts/jquery.sidr.min.js"></script>
+  <script src="/javascripts/ah-blue.js"></script>
+  <script type="text/javascript" src="/javascripts/fancybox/jquery.fancybox.pack.js"></script>
+  <link rel="stylesheet" type="text/css" href="/javascripts/fancybox/jquery.fancybox.css" media="screen" />
+
+  <link href="/stylesheets/component.css" rel="stylesheet" type="text/css">
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+        if ($(".img-up")) {
+            $(".img-up").fancybox();
+        }
+        if ($(".imgleft")) {
+            $(".imgleft").parent().parent().css("text-align", "left");
+        }
+        if ($(".imgright")) {
+            $(".imgright").parent().parent().css("text-align", "right");
+        }
+        if ($(".imgcenter")) {
+            $(".imgcenter").parent().parent().css("text-align", "center");
+        }
+        if ($(".imgleft-no-shadow")) {
+            $(".imgleft-no-shadow").parent().parent().css("text-align", "left");
+        }
+        if ($(".imgright-no-shadow")) {
+            $(".imgright-no-shadow").parent().parent().css("text-align", "right");
+        }
+        if ($(".imgcenter-no-shadow")) {
+            $(".imgcenter-no-shadow").parent().parent().css("text-align", "center");
+        }
+
+        if ($(".mod_lost_child_little")) {
+            $(".mod_lost_child_little").css("width", "100%");
+        }
+    });
+  </script>
+
+  <style>
+      body {
+          background-image: none;
+      }
+
+      tr.content {
+          line-height: 300%;
+          border-top: 1px dotted #000;
+      }
+
+      table.mulu {
+          width: 95%; margin: 10px auto 40px;
+      }
+
+      .gutter {
+          width: 7%;
+      }
+  </style>
+
+  <!-- custom/head.html -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      jax: ["input/TeX", "output/HTML-CSS"],
+      tex2jax: {
+        inlineMath: [ ['$', '$'], ["\\(", "\\)"] ],
+        displayMath: [ ['$$', '$$'], ["\\[", "\\]"] ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+      //,
+      //displayAlign: "left",
+      //displayIndent: "2em"
+    });
+
+    function addBlankTargetForLinks () {
+
+      $('a[href^="http"]').each(function(){
+
+        $(this).attr('target', '_blank');
+
+      });
+
+    }
+
+    $(document).bind('DOMNodeInserted', function(event) {
+
+      addBlankTargetForLinks();
+
+    });
+
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"></script>
+  <!-- google_analytics.html -->
+
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-51950124-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head> 
+
+<body style="background-color: rgba(255, 255, 255, 0.3);">
+
+<div class="row-fluid marketing">
+<div class="span2"> </div>
+<div class="span8">
+<div class="container-narrow" style="margin-top: 20px;">
+
+      <div class="masthead">
+        <ul class="nav nav-pills pull-right">
+          <li><a href="/wx/archives/">博客目录</a></li>
+          <li><a href="/blog/2014/11/25/mian-shi-jing-yan-fen-xiang-si-pian/">PC端阅读</a></li>
+        </ul>
+        <h3 class="muted">&nbsp;&nbsp;&nbsp;&nbsp;太极儒</h3>
+      </div>
+
+	  <hr style="width: 100%;">
+
+      <div style="padding: 8px 25px 8px 25px;">
+        <h1>
+          面试经验分享四篇
+        </h1>
+
+        <div class="article-date" style="margin-bottom: 40px;">
+            <!-- post/date.html -->
+<!-- 文章日期显示 -->
+
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-11-25T15:13:28+08:00" pubdate data-updated="true">Nov 25<span>th</span>, 2014</time>
+        </div>
+      <p>一个月前，我在<a href="http://frank19900731.github.io/wx/2014-10-25-qiu-zhi-ji-de-yi-dian-jing-yan-zhi-tan.html">《求职季的一点经验之谈》</a> 的末尾提到，将从 <code>机器学习与大数据</code>、<code>智力题</code>、<code>数据结构与算法</code>、<code>编程语言</code> 四方面分享自己的面试总结，现在总算是把这句话给圆了。</p>
+
+<p>虽然在文章里我也列举了很多题目，但我<strong>尽量不写成面试题解，而是面试经验</strong>。更确切的说，是一些比较容易落实在笔头上的经验，毕竟一些事情不亲身经历，别人磨穿了嘴皮子去描述也是没用的。</p>
+
+<p>具体有哪些经验呢，大概是算法工程师有哪些工作职责，有怎样的能力要求，平时要注重培养自己哪方面的能力，哪些书籍资料有较高阅读价值，以什么样的心态来学习知识、应对考试是比较合适的，怎样转变角色把面试当做促进自身提高的一种反馈机制，等等（其实也没别的了，呵呵）。</p>
+
+<p>多的咱就不说了，<strong>水平有限，欢迎指正；如有裨益，不胜荣幸</strong>。</p>
+
+<p>访问入口：</p>
+
+<ul>
+  <li><a href="/wx/2014-11-06-mian-shi-jing-yan-zhi-ji-qi-xue-xi-da-shu-ju-wen-ti.html">机器学习、大数据问题</a></li>
+  <li><a href="/wx/2014-11-07-mian-shi-jing-yan-fen-xiang-zhi-zhi-li-ti.html">智力题</a></li>
+  <li><a href="/wx/2014-11-18-mian-shi-jing-yan-fen-xiang-zhi-shu-ju-jie-gou-suan-fa-fen-xiang.html">数据结构与算法题</a></li>
+  <li><a href="/wx/2014-11-25-mian-shi-jing-yan-fen-xiang-zhi-bian-cheng-yu-yan-ti.html">编程语言题</a></li>
+</ul>
+
+      <div style="margin-top: 30px;">
+      本文原载于 <a href="http://frank19900731.github.io" target="_blank">http://frank19900731.github.io</a> (为获得更好的阅读效果，请在PC端访问此链接)，作者宋成儒，微信号 frank19900731，微博 <a href="http://weibo.com/frank19900731" target="_blank">@太极儒</a> 。
+      </div>
+      </div>
+
+</div> <!-- /container -->
+</div>
+<div class="span2"></div>
+</div>
+
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1253436508'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s6.cnzz.com/z_stat.php%3Fid%3D1253436508%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+</body>
+</html>
