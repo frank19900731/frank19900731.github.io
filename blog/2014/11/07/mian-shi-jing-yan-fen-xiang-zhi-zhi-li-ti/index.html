@@ -14,7 +14,7 @@
   
   <meta name="description" content="Categories: 面试求职 面试经验分享之智力题 Nov 7th, 2014 目录 前言 题目介绍 其它经典题目 总结 前言
 我在算法工程师面试中遇到的智力题主要是指涉及到一些数学计算、证明的题目，基本是中小学奥数题。喜欢问这类问题的主要有互联网创业公司或外企，招收数值策划的游戏公司，当然，更多的是金融、投资相关的企业。从题目类型上分，有排列组合题、概率题等。 题目介绍 题目一：给定天平，问要称重1-N N种不同质量，最少需要多少种砝码？ 1）砝码只允许放在天平的一端； 2）砝码可以放在天平的两端。 解答： 只允许放在一边的情况，开始自己以为是斐波那契数列，不过显然数列生成方式里存在冗余（1+2=3）。1、2 肯定是最基本的数字，新添加的砝码质量应该是原砝码集合所能称量的最大质量加一，如此生成的数列就是2的幂次，1，2，4，……想到正整数二进制表达的唯一性，应该是不存在冗余的。可表示性是有了，对于1-N N种不同的质量，最少需要 种不同的砝码，那是不是最少的呢？这种做法没有冗余，且表示范围是砝码的排列组合（每一个砝码可用可不用），应该就是最少了的，不过这不是严格证明。 允许放在两边的情况，1、3是最基本的，因为 2 可以用 3-1 表达，新添加砝码的质量应该满足的条件是原砝码集合所能称量的最大质量加上这个最大质量的下一个质量。这种构造方法同样没有冗余，且表示范围是砝码的排列组合（每一砝码可加、可减、可不用，再排除掉和非正数的情况），所以应该也是最少的。按照这个思路生成的数列就是3的幂次，1，3，9，27……可以用数学归纳法证明如下。 证明：数列 ，任取其中若干进行加减组合可以表示 到 （允许减法的排列组合所能表示的最大范围）间的不同数值。 1） 时，显然满足； 2） 时，有 可以表出 到 ； 3） 时，要证明 可以表出 到 3-1） 到 显然可由 表出； 3-2） 到 可以由 减去 到 表出； 3-3） 是新加入的数，可以单独表出； 3-4） 到 可以由 加上 到 表出。 综上，有原命题成立。 有关本题的更多讨论参见果壳网的 这篇文章。 题目二：如下图所示概率密度分布，左边平缓，右边陡峭，指定中位数的位置，问均值在中位数的左侧还是右侧？ 解答： 我的感觉是均值在中位数的左侧，不过我希望用严格的数学推导证明出来，后来发现很有难度， &hellip;">
-  <meta name="keywords" content="求职经验, 面试, 智力题">
+  <meta name="keywords" content="面试经验, 面试, 智力题">
   <meta name="baidu-site-verification" content="7O78rNJCOH" />
   <meta name="360-site-verification" content="9ee6dda17557079b8855f9c8201b05bb" />
   <meta name="msvalidate.01" content="408D13BCB6B6CE4973F6CD9E6A9E8195" />
@@ -154,7 +154,7 @@
                 <li><a href='/category/面试求职'>面试求职 (11)</a></li><li><a href='/category/工作效率'>工作效率 (5)</a></li><li><a href='/category/网页开发'>网页开发 (2)</a></li><li><a href='/category/Mac 使用'>Mac 使用 (1)</a></li><li><a href='/category/编程学习'>编程学习 (1)</a></li>
             </ul>
         </li>
-        <li><a href="/blog/tags">All Tags (46)</a>
+        <li><a href="/blog/tags">All Tags (45)</a>
         <li>
             <a href="#">Features</a>
             <ul class="dl-submenu">
@@ -248,15 +248,15 @@
 <li>
     <h3>Tags</h3>
     <ul class="tag-cloud">
-        <a style="font-size: 166%" href="/tag/octopress/">octopress</a>
-<a style="font-size: 210%" href="/tag/效率/">效率</a>
-<a style="font-size: 166%" href="/tag/时间管理/">时间管理</a>
-<a style="font-size: 166%" href="/tag/概率/">概率</a>
-<a style="font-size: 210%" href="/tag/求职经验/">求职经验</a>
-<a style="font-size: 166%" href="/tag/知识管理/">知识管理</a>
-<a style="font-size: 210%" href="/tag/算法/">算法</a>
-<a style="font-size: 166%" href="/tag/逻辑/">逻辑</a>
-<a style="font-size: 210%" href="/tag/面试/">面试</a>
+        <a style="font-size: 136%" href="/tag/octopress/">octopress</a>
+<a style="font-size: 90%" href="/tag/排列组合/">排列组合</a>
+<a style="font-size: 164%" href="/tag/效率/">效率</a>
+<a style="font-size: 136%" href="/tag/时间管理/">时间管理</a>
+<a style="font-size: 136%" href="/tag/概率/">概率</a>
+<a style="font-size: 136%" href="/tag/知识管理/">知识管理</a>
+<a style="font-size: 164%" href="/tag/算法/">算法</a>
+<a style="font-size: 136%" href="/tag/逻辑/">逻辑</a>
+<a style="font-size: 164%" href="/tag/面试/">面试</a>
 <a style="font-size: 210%" href="/tag/面试经验/">面试经验</a>
 
     </ul>
@@ -643,7 +643,7 @@ Var\left( r \right)  &= E{ \left( r-E\left( r \right)  \right)  }^{ 2 } \\
 <span class="tags">
   <font color="#777">Tags: </font>
   
-    <a class='tag' href='/tag/智力题/'>智力题</a>, <a class='tag' href='/tag/概率/'>概率</a>, <a class='tag' href='/tag/求职经验/'>求职经验</a>, <a class='tag' href='/tag/面试/'>面试</a>
+    <a class='tag' href='/tag/智力题/'>智力题</a>, <a class='tag' href='/tag/概率/'>概率</a>, <a class='tag' href='/tag/面试/'>面试</a>, <a class='tag' href='/tag/面试经验/'>面试经验</a>
   
 </span>
 &nbsp;&nbsp;&nbsp;&nbsp;
