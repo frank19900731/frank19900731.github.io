@@ -4,7 +4,7 @@
   <title><![CDATA[Category: 面试求职 | Blog of 太极儒]]></title>
   <link href="http://frank19900731.github.io/blog/category/mian-shi-qiu-zhi/atom.xml" rel="self"/>
   <link href="http://frank19900731.github.io/"/>
-  <updated>2014-11-25T15:34:00+08:00</updated>
+  <updated>2014-11-25T15:36:44+08:00</updated>
   <id>http://frank19900731.github.io/</id>
   <author>
     <name><![CDATA[Frank Song]]></name>
@@ -18,7 +18,9 @@
     <link href="http://frank19900731.github.io/blog/2014/11/25/mian-shi-jing-yan-fen-xiang-si-pian/"/>
     <updated>2014-11-25T15:13:28+08:00</updated>
     <id>http://frank19900731.github.io/blog/2014/11/25/mian-shi-jing-yan-fen-xiang-si-pian</id>
-    <content type="html"><![CDATA[<p>一个月前，我在<a href="http://localhost:4000/blog/2014/10/25/qiu-zhi-ji-de-yi-dian-jing-yan-zhi-tan/">《求职季的一点经验之谈》</a> 的末尾提到，将从 <code>机器学习与大数据</code>、<code>智力题</code>、<code>数据结构与算法</code>、<code>编程语言</code> 四方面分享自己的面试总结，现在总算是把这句话给圆了。</p>
+    <content type="html"><![CDATA[<!-- excerpt start -->
+
+<p>一个月前，我在<a href="http://frank19900731.github.io/blog/2014/10/25/qiu-zhi-ji-de-yi-dian-jing-yan-zhi-tan/">《求职季的一点经验之谈》</a> 的末尾提到，将从 <code>机器学习与大数据</code>、<code>智力题</code>、<code>数据结构与算法</code>、<code>编程语言</code> 四方面分享自己的面试总结，现在总算是把这句话给圆了。</p>
 
 <p>虽然在文章里我也列举了很多题目，但我<strong>尽量不写成面试题解，而是面试经验</strong>。更确切的说，是一些比较容易落实在笔头上的经验，毕竟一些事情不亲身经历，别人磨穿了嘴皮子去描述也是没用的。</p>
 
@@ -34,6 +36,8 @@
   <li><a href="/blog/2014/11/18/mian-shi-jing-yan-fen-xiang-zhi-shu-ju-jie-gou-suan-fa-fen-xiang/">数据结构与算法题</a></li>
   <li><a href="/blog/2014/11/25/mian-shi-jing-yan-fen-xiang-zhi-bian-cheng-yu-yan-ti/">编程语言题</a></li>
 </ul>
+
+<!-- excerpt end -->
 ]]></content>
   </entry>
   
