@@ -1,6 +1,6 @@
 ---
 layout: wx-default
-title: "面试经验分享之数据结构、算法分享"
+title: "面试经验分享之数据结构、算法题"
 date: 2014-11-18 10:18:41 +0800
 comments: false
 categories: [面试求职]
@@ -137,4 +137,4 @@ wx_url: /wx/2014-11-18-mian-shi-jing-yan-fen-xiang-zhi-shu-ju-jie-gou-suan-fa-fe
 - [机器学习、大数据问题](/wx/2014-11-06-mian-shi-jing-yan-zhi-ji-qi-xue-xi-da-shu-ju-wen-ti.html)
 - [智力题](/wx/2014-11-07-mian-shi-jing-yan-fen-xiang-zhi-zhi-li-ti.html)
 - [数据结构与算法题](/wx/2014-11-18-mian-shi-jing-yan-fen-xiang-zhi-shu-ju-jie-gou-suan-fa-fen-xiang.html)
-- 编程语言题
+- [编程语言题](/wx/2014-11-25-mian-shi-jing-yan-fen-xiang-zhi-bian-cheng-yu-yan-ti.html)

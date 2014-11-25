@@ -4,7 +4,7 @@ title: "求职季的一点经验之谈"
 date: 2014-10-25 22:58:48 +0800
 comments: false
 categories: [面试求职]
-tags: [求职经验]
+tags: [面试经验]
 keywords: 简历, 笔试, 面试, 结伴申请, 暑期实习, 自我介绍
 exclude_from_search: true
 pc_url: /blog/2014/10/25/qiu-zhi-ji-de-yi-dian-jing-yan-zhi-tan/
@@ -87,7 +87,7 @@ __目录__
 
 接下来，我将从以下四方面分享一下自己的面试总结，欢迎持续关注。
 
-1. 智力题
-2. 编程语言
-3. 数据结构与算法
-4. 机器学习，大数据
+1. [机器学习、大数据问题](/wx/2014-11-06-mian-shi-jing-yan-zhi-ji-qi-xue-xi-da-shu-ju-wen-ti.html)
+2. [智力题](/wx/2014-11-07-mian-shi-jing-yan-fen-xiang-zhi-zhi-li-ti.html)
+3. [数据结构与算法题](/wx/2014-11-18-mian-shi-jing-yan-fen-xiang-zhi-shu-ju-jie-gou-suan-fa-fen-xiang.html)
+4. [编程语言题](/wx/2014-11-25-mian-shi-jing-yan-fen-xiang-zhi-bian-cheng-yu-yan-ti.html)
