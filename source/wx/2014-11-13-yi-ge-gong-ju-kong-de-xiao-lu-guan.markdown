@@ -4,7 +4,7 @@ title: "一个工具控的效率观"
 date: 2014-11-13 15:49:04 +0800
 comments: false
 categories: [工作效率]
-tags: [工具控, 效率, 时间管理, 知识管理]
+tags: [效率, 时间管理, 知识管理, mac软件]
 keywords: 工具控, 效率, 时间管理, 知识管理, MacBook, 软件, Ulysses, Markdown, OmniFocus, GTD, Evernote, FocusMask, Papers, Eggscellent, Timeline 3D, iOS, Pocket, Wunderlist, Numbers, Excel, ODPS, Prodecteev, iDocument, OneNote, mediawiki, Octopress, Byword, Dash, Gistify, PopClip, Caffeinated, RSS, SketchBookPro, Wacom, Notebooks, Gitbook, Daum Equation Editor, 花瓣网
 exclude_from_search: true
 pc_url: /blog/2014/11/13/yi-ge-gong-ju-kong-de-xiao-lu-guan/

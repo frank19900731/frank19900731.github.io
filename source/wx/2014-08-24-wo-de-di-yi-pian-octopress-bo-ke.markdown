@@ -4,7 +4,7 @@ title: "我的第一篇 Octopress 博客"
 date: 2014-08-24 21:50:56 +0800
 comments: false
 categories: [网页开发]
-tags: [octopress, kramdown syntax]
+tags: [octopress, 网页开发]
 keywords: octopress, kramdown syntax
 exclude_from_search: true
 pc_url: /blog/2014/08/24/wo-de-di-yi-pian-octopress-bo-ke/

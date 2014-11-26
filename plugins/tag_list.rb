@@ -2,8 +2,10 @@ module Jekyll
   class CategoryListTag2 < Liquid::Tag
     def render(context)
       html = ""
-      tagnames = context.registers[:site].tags.keys
-      tagnames.sort.each do |tagsingle|
+      ##tagnames = context.registers[:site].tags.keys
+      ##tagnames.sort.each do |tagsingle|
+      tagnames = context.registers[:site].tags
+      tagnames.keys.sort_by{ |tag| tagnames[tag].count  }.reverse.each do |tagsingle|
         posts_in_tag = context.registers[:site].tags[tagsingle].size
         #tag_dir = "tags"
         tag_dir = "tag"

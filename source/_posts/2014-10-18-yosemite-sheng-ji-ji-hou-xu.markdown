@@ -4,7 +4,7 @@ title: "Yosemite 升级及后续"
 date: 2014-10-18 22:11:48 +0800
 comments: true
 categories: [Mac 使用]
-tags: [Yosemite, Homebrew, codesign, 算号器]
+tags: [Yosemite, Homebrew]
 keywords: Yosemite, Homebrew, Bartender, Trim Enabler, Matlab, VMWare, MySQL, TextExpander, Totalfinder, codesign
 pc_url: /blog/2014/10/18/yosemite-sheng-ji-ji-hou-xu/
 wx_url: /wx/2014-10-18-yosemite-sheng-ji-ji-hou-xu.html

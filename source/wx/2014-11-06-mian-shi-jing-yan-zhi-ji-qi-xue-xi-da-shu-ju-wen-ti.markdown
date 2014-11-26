@@ -4,7 +4,7 @@ title: "面试经验分享之机器学习、大数据问题"
 date: 2014-11-06 14:38:33 +0800
 comments: false
 categories: [面试求职]
-tags: [面试经验, 面试, 大数据, 机器学习]
+tags: [面试经验, 大数据, 机器学习]
 keywords: 求职经验, 面试, 大数据, 机器学习, Hadoop, Spark, Graphlab, Parameter Server, mahout, scikit, weka, opencv, theano, torch7, ICTCLAS
 exclude_from_search: true
 pc_url: /blog/2014/11/06/mian-shi-jing-yan-zhi-ji-qi-xue-xi-da-shu-ju-wen-ti/

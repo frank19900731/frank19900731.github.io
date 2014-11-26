@@ -4,8 +4,8 @@ title: "IDG 联合招聘笔试回忆"
 date: 2014-10-19 21:53:07 +0800
 comments: true
 categories: [面试求职]
-tags: [IDG, 概率, 排列组合, 逻辑, 算法]
-keywords: [IDG, 概率, 排列组合, 逻辑, 算法]
+tags: [IDG, 笔试]
+keywords: IDG, 笔试, 概率, 排列组合, 逻辑, 算法
 pc_url: /blog/2014/10/19/idg-lian-he-zhao-pin-bi-shi-hui-yi/
 wx_url: /wx/2014-10-19-idg-lian-he-zhao-pin-bi-shi-hui-yi.html
 ---

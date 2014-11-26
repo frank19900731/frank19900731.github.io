@@ -97,6 +97,7 @@ module Jekyll
       category_dir = config['root'] + config['category_dir'] + '/'
       categories = context.registers[:site].categories
       categories.keys.sort_by{ |str| str.downcase }.each do |category|
+      ##categories.keys.sort_by{ |cat| categories[cat].count  }.each do |category|
         #url = category_dir + category.gsub(/_|\P{Word}/u, '-').gsub(/-{2,}/u, '-').downcase
         url = category_dir + category.gsub(/_|\P{Word}/u, '-').gsub(/-{2,}/u, '-')
         html << "<li><a href='#{url}'>#{category}"
@@ -128,7 +129,7 @@ module Jekyll
       #category_dir = config['root'] + config['category_dir'] + '/'
       categories = context.registers[:site].categories
       #cat_limit = config['top_category_limit'] || 5
-	  top_categories = categories.keys.sort_by{ |cat| categories[cat].count  }.reverse.take(5)
+	    top_categories = categories.keys.sort_by{ |cat| categories[cat].count  }.reverse.take(5)
 
       top_categories.each do |category|
         #url = category_dir + category.gsub(/_|\P{Word}/u, '-').gsub(/-{2,}/u, '-').downcase

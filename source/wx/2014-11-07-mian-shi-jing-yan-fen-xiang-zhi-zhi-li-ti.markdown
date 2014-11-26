@@ -4,7 +4,7 @@ title: "面试经验分享之智力题"
 date: 2014-11-07 14:56:13 +0800
 comments: false
 categories: [面试求职]
-tags: [面试经验, 面试, 智力题, 概率]
+tags: [面试经验, 智力题]
 keywords: 求职经验, 面试, 智力题
 exclude_from_search: true
 pc_url: /blog/2014/11/07/mian-shi-jing-yan-fen-xiang-zhi-zhi-li-ti/
