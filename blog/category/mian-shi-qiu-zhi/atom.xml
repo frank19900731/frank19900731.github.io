@@ -4,7 +4,7 @@
   <title><![CDATA[Category: 面试求职 | Blog of 太极儒]]></title>
   <link href="http://frank19900731.github.io/blog/category/mian-shi-qiu-zhi/atom.xml" rel="self"/>
   <link href="http://frank19900731.github.io/"/>
-  <updated>2014-11-26T20:02:45+08:00</updated>
+  <updated>2014-11-27T16:48:21+08:00</updated>
   <id>http://frank19900731.github.io/</id>
   <author>
     <name><![CDATA[Frank Song]]></name>
@@ -137,7 +137,7 @@ cout&lt;&lt;a;
 
 <p>第一个问题曾在微博上引发热议。</p>
 
-<p>{% img imgcenter /img/post/2014-11/3.png 80% 微博提问 %}</p>
+<p><a href="/img/post/2014-11/3.png" class="img-up" title="微博提问"><img class="imgcenter" src="/img/post/2014-11/3.png" width="80%" title="微博提问" ></a></p>
 
 <p>这种问题既开放又确定。开放在于广度，涉及到的知识点与环节很多，你可以从你了解的部分去叙说；确定在于深度，每一个知识点或环节都是扎实的，不容信口开河。</p>
 
@@ -527,7 +527,7 @@ cout&lt;&lt;count&lt;&lt;endl;
 
 <p><strong>题目二：如下图所示概率密度分布，左边平缓，右边陡峭，指定中位数的位置，问均值在中位数的左侧还是右侧？</strong></p>
 
-<p>{% img imgcenter /img/post/2014-11/1.png 40% 概率分布，中位数和均值的位置关系 %}</p>
+<p><a href="/img/post/2014-11/1.png" class="img-up" title="概率分布，中位数和均值的位置关系"><img class="imgcenter" src="/img/post/2014-11/1.png" width="40%" title="概率分布，中位数和均值的位置关系" ></a></p>
 
 <p><strong>解答：</strong> </p>
 
@@ -543,7 +543,7 @@ cout&lt;&lt;count&lt;&lt;endl;
 
 <p>画图表示 A 和 B 的关系</p>
 
-<p>{% img imgcenter /img/post/2014-11/2.png 70% A 和 B 的三种关系 %}</p>
+<p><a href="/img/post/2014-11/2.png" class="img-up" title="A 和 B 的三种关系"><img class="imgcenter" src="/img/post/2014-11/2.png" width="70%" title="A 和 B 的三种关系" ></a></p>
 
 <ul>
   <li>如果 A 和 B 是互斥事件，首先考虑第一次拿到一件装备的期望通关次数，这件装备有 <script type="math/tex">\frac{1}{3}</script> 的可能性是 A，<script type="math/tex">\frac{2}{3}</script> 的可能性是 B，接下来根据几何分布的无后效性进行计算，期望次数为 </li>
@@ -584,9 +584,7 @@ cout&lt;&lt;count&lt;&lt;endl;
 
 <p>假设每个人都是理性的，那么没有人会选择 67-100，再次分析可知没有人会选择 45-66，以此类推，最终只有选择 1。<strong>不过实际当中并不是所有人都这么聪明理性，做适当的假设可以得到更接近真实情况的结果</strong>。</p>
 
-<p>{% blockquote %}	
-1987年，《金融时报》刊登了一个很诡异的广告，说你可以随便写一个0~100（与本题略有不同）之间的整数	寄回编辑部，然后如果你写的这个数最接近所有寄来的数的平均数的2/3，你就可以获得一张伦敦到纽约的头等舱往返机票。最后得到的结果是……平均数为18.9。也就是写13的人赢了。
-{% endblockquote %}</p>
+<p><blockquote><p>1987年，《金融时报》刊登了一个很诡异的广告，说你可以随便写一个0~100（与本题略有不同）之间的整数	寄回编辑部，然后如果你写的这个数最接近所有寄来的数的平均数的2/3，你就可以获得一张伦敦到纽约的头等舱往返机票。最后得到的结果是……平均数为18.9。也就是写13的人赢了。</p></blockquote></p>
 
 <p>更多分析见果壳网的 <a href="http://www.guokr.com/question/292144/">这篇文章</a>。</p>
 

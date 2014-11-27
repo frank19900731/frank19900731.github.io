@@ -1,0 +1,449 @@
+<!-- layout/wx-default.html -->
+
+<!-- head.html -->
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <!-- 标签页标题 -->
+  <title>《测试驱动开发和函数式编程》在线演示 - Blog of 太极儒</title>
+  <meta name="author" content="Frank Song">
+  <!-- 定义description变量，如果有则用，没有则是正文，前150字 -->
+  
+  <meta name="description" content="在 Scala 微信群里了解到了 《万花筒活动: 测试驱动开发和函数式编程 —— 在线代码演示如何对函数式语言 (Scala) 进行测试驱动开发》 这么一个活动，以在线视频会议的形式举行。跟着讲解抄代码，对 TDD（Test-Driven Development）有了点粗浅的了解。 讲解围绕一道叫 KataAnagram 的题目展开，用《哈利·波特》里面的例子很好解释。 Tom Marvolo Riddle =&gt; I am Lord Voldemort 上面是一个字母重排的过程。给定一个单词 S 和一个单词列表 L，要求从 L 中找到两个词（可以重复），用这两个词的全体字母重排出 S。 讲者主要是用这道题讲解测试驱动开发的思路流程，顺便讲解一下如何在代码重构时从 Java 转换到函数式编程的思维，而不是从算法角度考虑最优。 讲者开始提到测试驱动开发的大致思路是 写一个失败的测试； 写最简单的代码使得测试通过； 重构代码和测试。 2、3 步骤应该是迭代进行的。从以下测试代码的撰写思路上，可以看到想法的逐层深入。 测试代码1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+import org.junit.Assert.assertEquals
+import org.junit.Test
+import org.scalatest.junit.JUnitSuite class TestAnagram extends JUnitSuite { def assertAnagramEqual(expectedAnagram: List[String], input: String, wordList: List[String]) = { val generator = new Anagram(wordList) assertEquals(expectedAnagram, generator.generate(input)) } // 处理空单词列表输入 @Test def &hellip;">
+  <meta name="keywords" content="TDD, Scala, 测试驱动开发, 函数式编程, KataAnagram">
+  <meta name="baidu-site-verification" content="7O78rNJCOH" />
+  <meta name="360-site-verification" content="9ee6dda17557079b8855f9c8201b05bb" />
+  <meta name="msvalidate.01" content="408D13BCB6B6CE4973F6CD9E6A9E8195" />
+  <meta name="sogou_site_verification" content="CtgkJPDjga"/>
+  <meta name="chinaz-site-verification" content="081e7651-48c6-4c2f-a569-99321685eab1" />
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://frank19900731.github.io/wx/2014-11-27-ce-shi-qu-dong-kai-fa-he-han-shu-shi-bian-cheng-zai-xian-yan-shi.html">
+  <!-- 网站小图标 -->
+  <link href="/favicon.ico" rel="icon">
+  <link href="/stylesheets/bootstrap/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="/stylesheets/bootstrap/responsive.css" rel="stylesheet" type="text/css">
+  <!-- 网站样式文件 -->
+  <link href="/stylesheets/styles.css" media="screen, projection" rel="stylesheet" type="text/css">
+
+  <link href="/atom.xml" rel="alternate" title="Blog of 太极儒" type="application/atom+xml">
+
+  <script src="/javascripts/modernizr.custom.js"></script>
+  <!-- jQuery -->
+  <!--script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script-->
+  <script src="/javascripts/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+
+  <!-- 其它js代码 -->
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <script src="/javascripts/jquery.sidr.min.js"></script>
+  <script src="/javascripts/ah-blue.js"></script>
+  <script type="text/javascript" src="/javascripts/fancybox/jquery.fancybox.pack.js"></script>
+  <link rel="stylesheet" type="text/css" href="/javascripts/fancybox/jquery.fancybox.css" media="screen" />
+
+  <link href="/stylesheets/component.css" rel="stylesheet" type="text/css">
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+        if ($(".img-up")) {
+            $(".img-up").fancybox();
+        }
+        if ($(".imgleft")) {
+            $(".imgleft").parent().parent().css("text-align", "left");
+        }
+        if ($(".imgright")) {
+            $(".imgright").parent().parent().css("text-align", "right");
+        }
+        if ($(".imgcenter")) {
+            $(".imgcenter").parent().parent().css("text-align", "center");
+        }
+        if ($(".imgleft-no-shadow")) {
+            $(".imgleft-no-shadow").parent().parent().css("text-align", "left");
+        }
+        if ($(".imgright-no-shadow")) {
+            $(".imgright-no-shadow").parent().parent().css("text-align", "right");
+        }
+        if ($(".imgcenter-no-shadow")) {
+            $(".imgcenter-no-shadow").parent().parent().css("text-align", "center");
+        }
+
+        if ($(".mod_lost_child_little")) {
+            $(".mod_lost_child_little").css("width", "100%");
+        }
+    });
+  </script>
+
+  <style>
+      body {
+          background-image: none;
+      }
+
+      tr.content {
+          line-height: 300%;
+          border-top: 1px dotted #000;
+      }
+
+      table.mulu {
+          width: 95%; margin: 10px auto 40px;
+      }
+
+      .gutter {
+          width: 7%;
+      }
+  </style>
+
+  <!-- custom/head.html -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      jax: ["input/TeX", "output/HTML-CSS"],
+      tex2jax: {
+        inlineMath: [ ['$', '$'], ["\\(", "\\)"] ],
+        displayMath: [ ['$$', '$$'], ["\\[", "\\]"] ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+      //,
+      //displayAlign: "left",
+      //displayIndent: "2em"
+    });
+
+    function addBlankTargetForLinks () {
+
+      $('a[href^="http"]').each(function(){
+
+        $(this).attr('target', '_blank');
+
+      });
+
+    }
+
+    $(document).bind('DOMNodeInserted', function(event) {
+
+      addBlankTargetForLinks();
+
+    });
+
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"></script>
+  <!-- google_analytics.html -->
+
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-51950124-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head> 
+
+<body style="background-color: rgba(255, 255, 255, 0.3);">
+
+<div class="row-fluid marketing">
+<div class="span2"> </div>
+<div class="span8">
+<div class="container-narrow" style="margin-top: 20px;">
+
+      <div class="masthead">
+        <ul class="nav nav-pills pull-right">
+          <li><a href="/wx/archives/">博客目录</a></li>
+          <li><a href="/blog/2014/11/27/ce-shi-qu-dong-kai-fa-he-han-shu-shi-bian-cheng-zai-xian-yan-shi/">PC端阅读</a></li>
+        </ul>
+        <h3 class="muted">&nbsp;&nbsp;&nbsp;&nbsp;太极儒</h3>
+      </div>
+
+	  <hr style="width: 100%;">
+
+      <div style="padding: 8px 25px 8px 25px;">
+        <h1>
+          《测试驱动开发和函数式编程》在线演示
+        </h1>
+
+        <div class="article-date" style="margin-bottom: 40px;">
+            <!-- post/date.html -->
+<!-- 文章日期显示 -->
+
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-11-27T16:08:27+08:00" pubdate data-updated="true">Nov 27<span>th</span>, 2014</time>
+        </div>
+      <!-- excerpt start -->
+
+<p>在 Scala 微信群里了解到了 <a href="http://together.iagile.me/activities/28">《万花筒活动: 测试驱动开发和函数式编程 —— 在线代码演示如何对函数式语言 (Scala) 进行测试驱动开发》</a> 这么一个活动，以在线视频会议的形式举行。跟着讲解抄代码，对 <a href="http://baike.baidu.com/subview/76310/8243857.htm#viewPageContent">TDD</a>（Test-Driven Development）有了点粗浅的了解。</p>
+
+<p>讲解围绕一道叫 <a href="http://codingdojo.org/">KataAnagram</a> 的题目展开，用《哈利·波特》里面的例子很好解释。</p>
+
+<blockquote>
+  <p>Tom Marvolo Riddle =&gt; I am Lord Voldemort</p>
+</blockquote>
+
+<p>上面是一个字母重排的过程。给定一个单词 S 和一个单词列表 L，要求从 L 中找到两个词（可以重复），用这两个词的全体字母重排出 S。</p>
+
+<p>讲者主要是用这道题讲解测试驱动开发的思路流程，顺便讲解一下如何在代码重构时从 Java 转换到函数式编程的思维，而不是从算法角度考虑最优。</p>
+
+<p>讲者开始提到测试驱动开发的大致思路是</p>
+
+<ol>
+  <li>写一个失败的测试；</li>
+  <li>写最简单的代码使得测试通过；</li>
+  <li>重构代码和测试。</li>
+</ol>
+
+<p>2、3 步骤应该是迭代进行的。从以下测试代码的撰写思路上，可以看到想法的逐层深入。</p>
+
+<!-- excerpt end -->
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>测试代码</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+<span class="line-number">11</span>
+<span class="line-number">12</span>
+<span class="line-number">13</span>
+<span class="line-number">14</span>
+<span class="line-number">15</span>
+<span class="line-number">16</span>
+<span class="line-number">17</span>
+<span class="line-number">18</span>
+<span class="line-number">19</span>
+<span class="line-number">20</span>
+<span class="line-number">21</span>
+<span class="line-number">22</span>
+<span class="line-number">23</span>
+<span class="line-number">24</span>
+<span class="line-number">25</span>
+<span class="line-number">26</span>
+<span class="line-number">27</span>
+<span class="line-number">28</span>
+<span class="line-number">29</span>
+<span class="line-number">30</span>
+<span class="line-number">31</span>
+<span class="line-number">32</span>
+<span class="line-number">33</span>
+<span class="line-number">34</span>
+<span class="line-number">35</span>
+<span class="line-number">36</span>
+<span class="line-number">37</span>
+<span class="line-number">38</span>
+<span class="line-number">39</span>
+<span class="line-number">40</span>
+<span class="line-number">41</span>
+<span class="line-number">42</span>
+<span class="line-number">43</span>
+<span class="line-number">44</span>
+<span class="line-number">45</span>
+<span class="line-number">46</span>
+<span class="line-number">47</span>
+<span class="line-number">48</span>
+<span class="line-number">49</span>
+<span class="line-number">50</span>
+<span class="line-number">51</span>
+<span class="line-number">52</span>
+<span class="line-number">53</span>
+<span class="line-number">54</span>
+<span class="line-number">55</span>
+<span class="line-number">56</span>
+<span class="line-number">57</span>
+<span class="line-number">58</span>
+<span class="line-number">59</span>
+<span class="line-number">60</span>
+</pre></td><td class="code"><pre><code class="scala"><span class="line"><span class="k">import</span> <span class="nn">org.junit.Assert.assertEquals</span>
+</span><span class="line"><span class="k">import</span> <span class="nn">org.junit.Test</span>
+</span><span class="line"><span class="k">import</span> <span class="nn">org.scalatest.junit.JUnitSuite</span>
+</span><span class="line">
+</span><span class="line"><span class="k">class</span> <span class="nc">TestAnagram</span> <span class="k">extends</span> <span class="nc">JUnitSuite</span> <span class="o">{</span>
+</span><span class="line">
+</span><span class="line">	<span class="k">def</span> <span class="n">assertAnagramEqual</span><span class="o">(</span><span class="n">expectedAnagram</span><span class="k">:</span> <span class="kt">List</span><span class="o">[</span><span class="kt">String</span><span class="o">],</span> <span class="n">input</span><span class="k">:</span> <span class="kt">String</span><span class="o">,</span> <span class="n">wordList</span><span class="k">:</span> <span class="kt">List</span><span class="o">[</span><span class="kt">String</span><span class="o">])</span> <span class="k">=</span> <span class="o">{</span>
+</span><span class="line">		<span class="k">val</span> <span class="n">generator</span> <span class="k">=</span> <span class="k">new</span> <span class="nc">Anagram</span><span class="o">(</span><span class="n">wordList</span><span class="o">)</span>
+</span><span class="line">		<span class="n">assertEquals</span><span class="o">(</span><span class="n">expectedAnagram</span><span class="o">,</span> <span class="n">generator</span><span class="o">.</span><span class="n">generate</span><span class="o">(</span><span class="n">input</span><span class="o">))</span>
+</span><span class="line">	<span class="o">}</span>	
+</span><span class="line">	
+</span><span class="line">	<span class="c1">// 处理空单词列表输入</span>
+</span><span class="line">	<span class="nd">@Test</span> <span class="k">def</span> <span class="n">empty_word_list_and_input_is_any_word</span> <span class="o">{</span>
+</span><span class="line">		<span class="k">val</span> <span class="n">generator</span> <span class="k">=</span> <span class="k">new</span> <span class="nc">Anagram</span><span class="o">(</span><span class="nc">List</span><span class="o">())</span>
+</span><span class="line">		<span class="n">assertAnagramEqual</span><span class="o">(</span><span class="nc">List</span><span class="o">(),</span> <span class="s">&quot;anyWord&quot;</span><span class="o">,</span> <span class="nc">List</span><span class="o">())</span>
+</span><span class="line">	<span class="o">}</span>
+</span><span class="line">	
+</span><span class="line">	<span class="c1">// 处理只含一个元素的单词列表，double 出单词 S</span>
+</span><span class="line">	<span class="nd">@Test</span> <span class="k">def</span> <span class="n">one_character_word_list_and_input_is_double_of_this_word</span> <span class="o">{</span>
+</span><span class="line">		<span class="n">assertAnagramEqual</span><span class="o">(</span><span class="nc">List</span><span class="o">(</span><span class="s">&quot;a a&quot;</span><span class="o">),</span> <span class="s">&quot;aa&quot;</span><span class="o">,</span> <span class="nc">List</span><span class="o">(</span><span class="s">&quot;a&quot;</span><span class="o">))</span>
+</span><span class="line">	<span class="o">}</span>
+</span><span class="line">	
+</span><span class="line">	<span class="c1">// 处理只含一个元素的单词列表，不存在符合条件的两单词</span>
+</span><span class="line">	<span class="nd">@Test</span> <span class="k">def</span> <span class="n">one_word_list_and_input_has_no_anagram</span> <span class="o">{</span>
+</span><span class="line">		<span class="n">assertAnagramEqual</span><span class="o">(</span><span class="nc">List</span><span class="o">(),</span> <span class="s">&quot;bb&quot;</span><span class="o">,</span> <span class="nc">List</span><span class="o">(</span><span class="s">&quot;a&quot;</span><span class="o">))</span>
+</span><span class="line">	<span class="o">}</span>
+</span><span class="line">	
+</span><span class="line">	<span class="c1">// 处理只含一个元素的单词列表，double 时有字母序的变化</span>
+</span><span class="line">	<span class="nd">@Test</span> <span class="k">def</span> <span class="n">one_word_list_and_input_has_anagram_with_different_character_order</span> <span class="o">{</span>
+</span><span class="line">		<span class="n">assertAnagramEqual</span><span class="o">(</span><span class="nc">List</span><span class="o">(</span><span class="s">&quot;an an&quot;</span><span class="o">),</span> <span class="s">&quot;anna&quot;</span><span class="o">,</span> <span class="nc">List</span><span class="o">(</span><span class="s">&quot;an&quot;</span><span class="o">))</span>
+</span><span class="line">	<span class="o">}</span>
+</span><span class="line">	
+</span><span class="line">	<span class="c1">// 处理含有两个元素的单词列表，最后一个单词 double 出单词 S</span>
+</span><span class="line">	<span class="nd">@Test</span> <span class="k">def</span> <span class="n">two_word_list_and_input_has_anagram_of_second_word</span> <span class="o">{</span>
+</span><span class="line">		<span class="n">assertAnagramEqual</span><span class="o">(</span><span class="nc">List</span><span class="o">(</span><span class="s">&quot;a a&quot;</span><span class="o">),</span> <span class="s">&quot;aa&quot;</span><span class="o">,</span> <span class="nc">List</span><span class="o">(</span><span class="s">&quot;b&quot;</span><span class="o">,</span> <span class="s">&quot;a&quot;</span><span class="o">))</span>
+</span><span class="line">	<span class="o">}</span>
+</span><span class="line">	
+</span><span class="line">	<span class="c1">// 处理含有三个元素的单词列表，最后一个单词 double 出单词 S</span>
+</span><span class="line">	<span class="nd">@Test</span> <span class="k">def</span> <span class="n">three_word_list_and_input_has_anagram_of_third_word</span> <span class="o">{</span>
+</span><span class="line">		<span class="n">assertAnagramEqual</span><span class="o">(</span><span class="nc">List</span><span class="o">(</span><span class="s">&quot;a a&quot;</span><span class="o">),</span> <span class="s">&quot;aa&quot;</span><span class="o">,</span> <span class="nc">List</span><span class="o">(</span><span class="s">&quot;c&quot;</span><span class="o">,</span> <span class="s">&quot;b&quot;</span><span class="o">,</span> <span class="s">&quot;a&quot;</span><span class="o">))</span>
+</span><span class="line">	<span class="o">}</span>
+</span><span class="line">	
+</span><span class="line">	<span class="c1">// 处理含有多个元素的单词列表，其中某个单词 double 出单词 S</span>
+</span><span class="line">	<span class="nd">@Test</span> <span class="k">def</span> <span class="n">more_than_one_word_list_and_input_has_anagram_of_single_word</span> <span class="o">{</span>
+</span><span class="line">		<span class="n">assertAnagramEqual</span><span class="o">(</span><span class="nc">List</span><span class="o">(</span><span class="s">&quot;b b&quot;</span><span class="o">),</span> <span class="s">&quot;bb&quot;</span><span class="o">,</span> <span class="nc">List</span><span class="o">(</span><span class="s">&quot;c&quot;</span><span class="o">,</span> <span class="s">&quot;b&quot;</span><span class="o">,</span> <span class="s">&quot;a&quot;</span><span class="o">,</span> <span class="s">&quot;d&quot;</span><span class="o">))</span>
+</span><span class="line">	<span class="o">}</span>
+</span><span class="line">	
+</span><span class="line">	<span class="c1">// 处理含有多个元素的单词列表，其中两个单词重排出单词 S</span>
+</span><span class="line">	<span class="nd">@Test</span> <span class="k">def</span> <span class="n">two_word_list_and_input_has_anagram_of_both_word</span> <span class="o">{</span>
+</span><span class="line">		<span class="n">assertAnagramEqual</span><span class="o">(</span><span class="nc">List</span><span class="o">(</span><span class="s">&quot;a b&quot;</span><span class="o">),</span> <span class="s">&quot;ab&quot;</span><span class="o">,</span> <span class="nc">List</span><span class="o">(</span><span class="s">&quot;a&quot;</span><span class="o">,</span> <span class="s">&quot;b&quot;</span><span class="o">))</span>
+</span><span class="line">		<span class="n">assertAnagramEqual</span><span class="o">(</span><span class="nc">List</span><span class="o">(</span><span class="s">&quot;a b&quot;</span><span class="o">),</span> <span class="s">&quot;ab&quot;</span><span class="o">,</span> <span class="nc">List</span><span class="o">(</span><span class="s">&quot;c&quot;</span><span class="o">,</span> <span class="s">&quot;a&quot;</span><span class="o">,</span> <span class="s">&quot;b&quot;</span><span class="o">))</span>
+</span><span class="line">	<span class="o">}</span>
+</span><span class="line">	
+</span><span class="line">	<span class="c1">// 处理含有多个元素的单词列表，其中多对单词重排出单词 S</span>
+</span><span class="line">	<span class="nd">@Test</span> <span class="k">def</span> <span class="n">input_has_two_anagrams</span> <span class="o">{</span>
+</span><span class="line">		<span class="n">assertAnagramEqual</span><span class="o">(</span><span class="nc">List</span><span class="o">(</span><span class="s">&quot;a bc&quot;</span><span class="o">,</span> <span class="s">&quot;ab c&quot;</span><span class="o">),</span> <span class="s">&quot;abc&quot;</span><span class="o">,</span> <span class="nc">List</span><span class="o">(</span><span class="s">&quot;a&quot;</span><span class="o">,</span> <span class="s">&quot;bc&quot;</span><span class="o">,</span> <span class="s">&quot;ab&quot;</span><span class="o">,</span> <span class="s">&quot;c&quot;</span><span class="o">))</span>
+</span><span class="line">		<span class="n">assertAnagramEqual</span><span class="o">(</span><span class="nc">List</span><span class="o">(</span><span class="s">&quot;ab ab&quot;</span><span class="o">,</span> <span class="s">&quot;ba ba&quot;</span><span class="o">,</span> <span class="s">&quot;ab ba&quot;</span><span class="o">,</span> <span class="s">&quot;abb a&quot;</span><span class="o">),</span> <span class="s">&quot;abba&quot;</span><span class="o">,</span> <span class="nc">List</span><span class="o">(</span><span class="s">&quot;ab&quot;</span><span class="o">,</span> <span class="s">&quot;ba&quot;</span><span class="o">,</span> <span class="s">&quot;abb&quot;</span><span class="o">,</span> <span class="s">&quot;d&quot;</span><span class="o">,</span> <span class="s">&quot;a&quot;</span><span class="o">))</span>
+</span><span class="line">	<span class="o">}</span>
+</span><span class="line">	
+</span><span class="line"><span class="o">}</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>在功能代码的实现方面，经过了多次函数化重构，最后一种比较简单的方式如下。</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>功能代码</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+<span class="line-number">11</span>
+<span class="line-number">12</span>
+<span class="line-number">13</span>
+<span class="line-number">14</span>
+</pre></td><td class="code"><pre><code class="scala"><span class="line"><span class="k">class</span> <span class="nc">Anagram</span><span class="o">(</span><span class="n">wordList</span><span class="k">:</span> <span class="kt">List</span><span class="o">[</span><span class="kt">String</span><span class="o">])</span> <span class="o">{</span>
+</span><span class="line">
+</span><span class="line">	<span class="k">def</span> <span class="n">generate</span><span class="o">(</span><span class="n">input</span><span class="k">:</span> <span class="kt">String</span><span class="o">)</span><span class="k">:</span> <span class="kt">List</span><span class="o">[</span><span class="kt">String</span><span class="o">]</span> <span class="k">=</span> <span class="o">{</span>			
+</span><span class="line">			
+</span><span class="line">		<span class="k">def</span> <span class="n">isAnagram</span><span class="o">(</span><span class="n">candidates</span><span class="k">:</span> <span class="kt">List</span><span class="o">[</span><span class="kt">String</span><span class="o">])</span> <span class="k">=</span> <span class="o">(</span><span class="n">candidates</span><span class="o">.</span><span class="n">mkString</span><span class="o">).</span><span class="n">sorted</span> <span class="o">==</span> <span class="n">input</span><span class="o">.</span><span class="n">sorted</span>
+</span><span class="line">		
+</span><span class="line">		<span class="k">def</span> <span class="n">output</span><span class="o">(</span><span class="n">anagrams</span><span class="k">:</span> <span class="kt">List</span><span class="o">[</span><span class="kt">String</span><span class="o">])</span> <span class="k">=</span> <span class="n">anagrams</span><span class="o">.</span><span class="n">mkString</span><span class="o">(</span><span class="s">&quot; &quot;</span><span class="o">)</span>
+</span><span class="line">
+</span><span class="line">		<span class="k">def</span> <span class="n">candidates</span> <span class="k">=</span> <span class="nc">List</span><span class="o">(</span><span class="n">wordList</span><span class="o">,</span> <span class="n">wordList</span><span class="o">).</span><span class="n">transpose</span> <span class="o">++</span> <span class="n">wordList</span><span class="o">.</span><span class="n">combinations</span><span class="o">(</span><span class="mi">2</span><span class="o">)</span>
+</span><span class="line">		
+</span><span class="line">		<span class="k">return</span> <span class="n">candidates</span><span class="o">.</span><span class="n">filter</span><span class="o">(</span><span class="n">isAnagram</span><span class="o">).</span><span class="n">map</span><span class="o">(</span><span class="n">output</span><span class="o">)</span>
+</span><span class="line">		
+</span><span class="line">	<span class="o">}</span>
+</span><span class="line"><span class="o">}</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>历次重构的过程写起来就比较啰嗦了，不在这里列出。不过从测试代码一点点完善的过程里，能够看出一个大致的思路。</p>
+
+<p>对于一个小问题，如果技艺熟练，完全有可能直接写出功能代码的最简形式，不过对于一个较大规模的项目来说，这种做法确实有优势，学习了。</p>
+
+      <div style="margin-top: 30px;">
+      本文原载于 <a href="http://frank19900731.github.io" target="_blank">http://frank19900731.github.io</a> (为获得更好的阅读效果，请在PC端访问此链接)，作者宋成儒，微信号 frank19900731，微博 <a href="http://weibo.com/frank19900731" target="_blank">@太极儒</a> 。
+      </div>
+      </div>
+
+</div> <!-- /container -->
+</div>
+<div class="span2"></div>
+</div>
+
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1253436508'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s6.cnzz.com/z_stat.php%3Fid%3D1253436508%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+</body>
+</html>

@@ -12,20 +12,7 @@
   <meta name="author" content="Frank Song">
   <!-- 定义description变量，如果有则用，没有则是正文，前150字 -->
   
-  <meta name="description" content="Categories: 面试求职 面试经验分享四篇 Nov 25th, 2014 一个月前，我在《求职季的一点经验之谈》 的末尾提到，将从 机器学习与大数据、智力题、数据结构与算法、编程语言 四方面分享自己的面试总结，现在总算是把这句话给圆了。 虽然在文章里我也列举了很多题目，但我尽量不写成面试题解，而是面试经验。更确切的说，是一些比较容易落实在笔头上的经验，毕竟一些事情不亲身经历，别人磨穿了嘴皮子去描述也是没用的。 具体有哪些经验呢，大概是算法工程师有哪些工作职责，有怎样的能力要求，平时要注重培养自己哪方面的能力，哪些书籍资料有较高阅读价值，以什么样的心态来学习知识、应对考试是比较合适的，怎样转变角色把面试当做促进自身提高的一种反馈机制，等等（其实也没别的了，呵呵）。 多的咱就不说了，水平有限，欢迎指正；如有裨益，不胜荣幸。 访问入口： 机器学习、大数据问题 智力题 数据结构与算法题 编程语言题 继续阅读&nbsp;&nbsp;&nbsp;&nbsp; Tags: 面试经验 &nbsp;&nbsp;&nbsp;&nbsp; Categories: 面试求职 面试经验分享之编程语言题 Nov 25th, 2014 概述 编程语言题这个设定太狭隘了，应该说是偏工程类的题目，其中有些带有经验性质。出题范围大概是操作系统、数据库、网络、面向对象编程思想、编程语言特性理解和语法掌握等。相关书籍或或网络教程当然是要看的，但并不意味着你都看了就能有好的发挥，要理论、实践两手抓。 对于算法工程师岗位来说，这种题目大量出现在笔试试卷中，比如概念理解啦、判断程序的运行输出啦，可以参见我的博客 《2014 年百度、腾讯与搜狐的校招笔试回忆》。在这里插入分享在另外一家公司的笔试里遇到的一道有意思的题目。 请问如下程序的输出。 一道笔试题1
-2
-3
-4
-5
-6
-7
-8
-9
-double a = 0;
-double b = 99;
-while(true) { double c = (a+b)/2; if(c == a || c == b) break; a = b; b = c;
-}
-cout&lt;&lt;a; 解答： 浮点数判等，会无限循环么？由于浮点数精度有限，所以这个程序迭代个五六十次就终止了，又由于 cout 有默认的输出精度，所以输出结果应该是66。 面试过程中虽然以算法为主 &hellip;">
+  <meta name="description" content="Categories: 编程学习 《测试驱动开发和函数式编程》在线演示 Nov 27th, 2014 在 Scala 微信群里了解到了 《万花筒活动: 测试驱动开发和函数式编程 —— 在线代码演示如何对函数式语言 (Scala) 进行测试驱动开发》 这么一个活动，以在线视频会议的形式举行。跟着讲解抄代码，对 TDD（Test-Driven Development）有了点粗浅的了解。 讲解围绕一道叫 KataAnagram 的题目展开，用《哈利·波特》里面的例子很好解释。 Tom Marvolo Riddle =&gt; I am Lord Voldemort 上面是一个字母重排的过程。给定一个单词 S 和一个单词列表 L，要求从 L 中找到两个词（可以重复），用这两个词的全体字母重排出 S。 讲者主要是用这道题讲解测试驱动开发的思路流程，顺便讲解一下如何在代码重构时从 Java 转换到函数式编程的思维，而不是从算法角度考虑最优。 讲者开始提到测试驱动开发的大致思路是 写一个失败的测试； 写最简单的代码使得测试通过； 重构代码和测试。 2、3 步骤应该是迭代进行的。从以下测试代码的撰写思路上，可以看到想法的逐层深入。 继续阅读&nbsp;&nbsp;&nbsp;&nbsp; Tags: Scala, TDD &nbsp;&nbsp;&nbsp;&nbsp; Categories: 面试求职 面试经验分享四篇 Nov 25th, 2014 一个月前，我在《求职季的一点经验之谈》 的末尾提到，将从 机器学习与大数据、智力题、数据结构与算法、编程语言 四方面分享自己的面试总结，现在总算是把这句话给圆了。 虽然在文章里我也列举了很多题目，但我尽量不写成面试题解，而是面试经验。更确切的说，是一些比较容易落实在笔头上的经验，毕竟一些事情不亲身经历，别人磨穿了嘴皮子去描述也是没用的。 具体有哪些经验呢，大概是算法工程师有哪些工作职责，有怎样的能力要求，平时要注重培养自己哪方面的能力，哪些书籍资料有较高阅读价值，以什么样的心态来学习知识、应对考试是比较合适的，怎样转变角色把面试当做促进自身提高的一种反馈机制，等等（其实也没别的了，呵呵）。 多的咱就不说了，水平有限，欢迎指正；如有裨益，不胜荣幸。 访问入口： 机器学习、大数据问题 智力题 数据结构与算法题 编程语言题 继续阅读& &hellip;">
   
   <meta name="baidu-site-verification" content="7O78rNJCOH" />
   <meta name="360-site-verification" content="9ee6dda17557079b8855f9c8201b05bb" />
@@ -155,7 +142,7 @@ cout&lt;&lt;a; 解答： 浮点数判等，会无限循环么？由于浮点数�
     <button>Open Menu</button>
     <ul class="dl-menu">
         <li><a href="/">Home</a></li>
-        <li><a href="/archives/">Archives (20)</a></li>
+        <li><a href="/archives/">Archives (21)</a></li>
         <li>
             <a href="#">Categories (5)</a>
             <ul class="dl-submenu">
@@ -163,10 +150,10 @@ cout&lt;&lt;a; 解答： 浮点数判等，会无限循环么？由于浮点数�
                 <li><a href="/blog/categories">All Categories (5)</a>
                 <li style="color: #CCCCCC; line-height: 150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Top 5</li>
 
-                <li><a href='/category/面试求职'>面试求职 (11)</a></li><li><a href='/category/工作效率'>工作效率 (5)</a></li><li><a href='/category/网页开发'>网页开发 (2)</a></li><li><a href='/category/Mac 使用'>Mac 使用 (1)</a></li><li><a href='/category/编程学习'>编程学习 (1)</a></li>
+                <li><a href='/category/面试求职'>面试求职 (11)</a></li><li><a href='/category/工作效率'>工作效率 (5)</a></li><li><a href='/category/编程学习'>编程学习 (2)</a></li><li><a href='/category/网页开发'>网页开发 (2)</a></li><li><a href='/category/Mac 使用'>Mac 使用 (1)</a></li>
             </ul>
         </li>
-        <li><a href="/blog/tags">All Tags (29)</a>
+        <li><a href="/blog/tags">All Tags (30)</a>
         <li>
             <a href="#">Features</a>
             <ul class="dl-submenu">
@@ -236,6 +223,10 @@ cout&lt;&lt;a; 解答： 浮点数判等，会无限循环么？由于浮点数�
 <ul>
 	
     <li>
+    	<a href="/blog/2014/11/27/ce-shi-qu-dong-kai-fa-he-han-shu-shi-bian-cheng-zai-xian-yan-shi/">《测试驱动开发和函数式编程》在线演示</a>
+    </li>
+    
+    <li>
     	<a href="/blog/2014/11/25/mian-shi-jing-yan-fen-xiang-si-pian/">面试经验分享四篇</a>
     </li>
     
@@ -251,25 +242,21 @@ cout&lt;&lt;a; 解答： 浮点数判等，会无限循环么？由于浮点数�
     	<a href="/blog/2014/11/21/bai-du-teng-xun-yu-sou-hu-de-bi-shi-hui-yi/">2014 年百度、腾讯与搜狐的校招笔试回忆</a>
     </li>
     
-    <li>
-    	<a href="/blog/2014/11/20/pocket-lei-mu-biao-qian-de-zhi-ding/">Pocket 类目标签的制订</a>
-    </li>
-    
 </ul>
         </li>
 <li>
     <h3>Tags</h3>
     <ul class="tag-cloud">
-        <a style="font-size: 136%" href="/tag/octopress/">octopress</a>
+        <a style="font-size: 136%" href="/tag/Scala/">Scala</a>
+<a style="font-size: 136%" href="/tag/octopress/">octopress</a>
+<a style="font-size: 90%" href="/tag/中文搜索/">中文搜索</a>
 <a style="font-size: 164%" href="/tag/效率/">效率</a>
-<a style="font-size: 90%" href="/tag/数据可视化/">数据可视化</a>
 <a style="font-size: 136%" href="/tag/时间管理/">时间管理</a>
 <a style="font-size: 136%" href="/tag/校园招聘/">校园招聘</a>
-<a style="font-size: 90%" href="/tag/游戏策划/">游戏策划</a>
 <a style="font-size: 164%" href="/tag/知识管理/">知识管理</a>
 <a style="font-size: 164%" href="/tag/笔试/">笔试</a>
+<a style="font-size: 90%" href="/tag/网页开发/">网页开发</a>
 <a style="font-size: 210%" href="/tag/面试经验/">面试经验</a>
-<a style="font-size: 90%" href="/tag/飞维美地/">飞维美地</a>
 
     </ul>
 </li><li>
@@ -289,6 +276,96 @@ cout&lt;&lt;a; 解答： 浮点数判等，会无限循环么？由于浮点数�
 		
       <div class="blog-index">
   
+  
+  
+    <article>
+      <!-- article.html -->
+<!-- 文章展示，区分在索引页和文章页 -->
+<header>
+  <div class="article-tags">
+      <!-- post/categories.html -->
+<!-- 文章类别展示 -->
+
+
+<span class="categories" style="font-size: 16px;">
+  Categories:
+  
+    <a class='category' href='/category/编程学习/'>编程学习</a>
+  
+
+</span>
+
+
+  </div>
+  
+    <h1><a href="/blog/2014/11/27/ce-shi-qu-dong-kai-fa-he-han-shu-shi-bian-cheng-zai-xian-yan-shi/">
+      《测试驱动开发和函数式编程》在线演示
+    </a></h1>
+  
+  <!-- 给出发布时间 -->
+  <div class="article-date">
+      <!-- post/date.html -->
+<!-- 文章日期显示 -->
+
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-11-27T16:08:27+08:00" pubdate data-updated="true">Nov 27<span>th</span>, 2014</time></div>
+</header>
+<hr />
+<!-- 如果在索引中 -->
+
+  <section class="article-index">
+
+<p>在 Scala 微信群里了解到了 <a href="http://together.iagile.me/activities/28">《万花筒活动: 测试驱动开发和函数式编程 —— 在线代码演示如何对函数式语言 (Scala) 进行测试驱动开发》</a> 这么一个活动，以在线视频会议的形式举行。跟着讲解抄代码，对 <a href="http://baike.baidu.com/subview/76310/8243857.htm#viewPageContent">TDD</a>（Test-Driven Development）有了点粗浅的了解。</p>
+
+<p>讲解围绕一道叫 <a href="http://codingdojo.org/">KataAnagram</a> 的题目展开，用《哈利·波特》里面的例子很好解释。</p>
+
+<blockquote>
+  <p>Tom Marvolo Riddle =&gt; I am Lord Voldemort</p>
+</blockquote>
+
+<p>上面是一个字母重排的过程。给定一个单词 S 和一个单词列表 L，要求从 L 中找到两个词（可以重复），用这两个词的全体字母重排出 S。</p>
+
+<p>讲者主要是用这道题讲解测试驱动开发的思路流程，顺便讲解一下如何在代码重构时从 Java 转换到函数式编程的思维，而不是从算法角度考虑最优。</p>
+
+<p>讲者开始提到测试驱动开发的大致思路是</p>
+
+<ol>
+  <li>写一个失败的测试；</li>
+  <li>写最简单的代码使得测试通过；</li>
+  <li>重构代码和测试。</li>
+</ol>
+
+<p>2、3 步骤应该是迭代进行的。从以下测试代码的撰写思路上，可以看到想法的逐层深入。</p>
+
+</section>
+  <a href="/blog/2014/11/27/ce-shi-qu-dong-kai-fa-he-han-shu-shi-bian-cheng-zai-xian-yan-shi/" style="background: #da3e10; color: #ffffff; border-radius: 5px; border: 4px solid #da3e10;">继续阅读</a>&nbsp;&nbsp;&nbsp;&nbsp;
+<!-- post/tags.html -->
+<!-- 文章标签展示 -->
+
+
+<span class="tags">
+  <font color="#777">Tags: </font>
+  
+    <a class='tag' href='/tag/Scala/'>Scala</a>, <a class='tag' href='/tag/TDD/'>TDD</a>
+  
+</span>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<span class="ds-thread-count" data-thread-key="/blog/2014/11/27/ce-shi-qu-dong-kai-fa-he-han-shu-shi-bian-cheng-zai-xian-yan-shi/" style="color: #777;"></span>
+
+
+
+
+    </article>
   
   
     <article>
@@ -731,85 +808,6 @@ cout&lt;&lt;a; 解答： 浮点数判等，会无限循环么？由于浮点数�
 
     </article>
   
-  
-    <article>
-      <!-- article.html -->
-<!-- 文章展示，区分在索引页和文章页 -->
-<header>
-  <div class="article-tags">
-      <!-- post/categories.html -->
-<!-- 文章类别展示 -->
-
-
-<span class="categories" style="font-size: 16px;">
-  Categories:
-  
-    <a class='category' href='/category/面试求职/'>面试求职</a>
-  
-
-</span>
-
-
-  </div>
-  
-    <h1><a href="/blog/2014/11/18/mian-shi-jing-yan-fen-xiang-zhi-shu-ju-jie-gou-suan-fa-fen-xiang/">
-      面试经验分享之数据结构、算法题
-    </a></h1>
-  
-  <!-- 给出发布时间 -->
-  <div class="article-date">
-      <!-- post/date.html -->
-<!-- 文章日期显示 -->
-
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-11-18T10:18:41+08:00" pubdate data-updated="true">Nov 18<span>th</span>, 2014</time></div>
-</header>
-<hr />
-<!-- 如果在索引中 -->
-
-  <section class="article-index">
-
-<p>面试 IT 企业的研发岗位，数据结构和算法显然是必考的项目。俺只学过普通的数据结构课程，没读过 STL，也没有过 ACM 的训练和比赛经历，在一开始面对这样类型题目的时候，心里还是十分忐忑的。大大小小几十场面试下来，自己在这方面总算有了一定的心得积累，在此抛砖引玉，以飨读者。</p>
-
-<p>在正式介绍题目和准备方法之前，有两点需要说明，</p>
-
-<ul>
-  <li>Google 和 Facebook 这类对算法有很高要求的公司的在线测试我没有参加过（不过在牛人内推帮助下有过面试体验……），这超出了我目前的编码能力范围，网上有不少拿到 Google、Facebook offer 的经验总结文章，可以移步观赏；</li>
-  <li>前段时间在微博上又看到有人说自己把 leetcode 刷了好几遍，不过一些转发评论者觉得， IT 公司面试中的算法考察没有价值，一来工作里用不太上，二来把程序员素质考察搞成了应试教育，他们认为更重要的是应聘者的工程能力。遇到这样的讨论，我一般喜欢和一把稀泥。若干年前， Google、微软的面试题让大家眼前一亮，觉得能选拔出个性十足的聪明人来，不过随着大家对这类题目的适应，可能选拔出来的人也在趋同，至少很多人都会在面试前用心准备，<a href="http://www.oschina.net/news/41616/in-head-hunting-big-data-may-not-be-such-a-big-deal">据报道 Google 最近也是放弃了这类面试题目</a>。没有什么一劳永逸、一成不变的考查方式，毕竟面试是人和人之间的动态“较量”。不要贪恋算法的奇技淫巧，也不要因为题目筛选力度的衰减而否定考察初衷。面试不仅是考验求职者，也同样在考验面试官，<strong>如果问的都是老题儿，那本山大叔肯定都会抢答了</strong>。</li>
-</ul>
-
-<p>言归正传，以下分数据结构题目、算法题目、开放题目三部分来介绍我在面试中碰到的问题。</p>
-
-</section>
-  <a href="/blog/2014/11/18/mian-shi-jing-yan-fen-xiang-zhi-shu-ju-jie-gou-suan-fa-fen-xiang/" style="background: #da3e10; color: #ffffff; border-radius: 5px; border: 4px solid #da3e10;">继续阅读</a>&nbsp;&nbsp;&nbsp;&nbsp;
-<!-- post/tags.html -->
-<!-- 文章标签展示 -->
-
-
-<span class="tags">
-  <font color="#777">Tags: </font>
-  
-    <a class='tag' href='/tag/数据结构/'>数据结构</a>, <a class='tag' href='/tag/算法/'>算法</a>, <a class='tag' href='/tag/面试经验/'>面试经验</a>
-  
-</span>
-&nbsp;&nbsp;&nbsp;&nbsp;
-<span class="ds-thread-count" data-thread-key="/blog/2014/11/18/mian-shi-jing-yan-fen-xiang-zhi-shu-ju-jie-gou-suan-fa-fen-xiang/" style="color: #777;"></span>
-
-
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; Older</a>
@@ -835,6 +833,10 @@ cout&lt;&lt;a; 解答： 浮点数判等，会无限循环么？由于浮点数�
 <ul>
 	
     <li>
+    	<a href="/blog/2014/11/27/ce-shi-qu-dong-kai-fa-he-han-shu-shi-bian-cheng-zai-xian-yan-shi/">《测试驱动开发和函数式编程》在线演示</a>
+    </li>
+    
+    <li>
     	<a href="/blog/2014/11/25/mian-shi-jing-yan-fen-xiang-si-pian/">面试经验分享四篇</a>
     </li>
     
@@ -850,25 +852,21 @@ cout&lt;&lt;a; 解答： 浮点数判等，会无限循环么？由于浮点数�
     	<a href="/blog/2014/11/21/bai-du-teng-xun-yu-sou-hu-de-bi-shi-hui-yi/">2014 年百度、腾讯与搜狐的校招笔试回忆</a>
     </li>
     
-    <li>
-    	<a href="/blog/2014/11/20/pocket-lei-mu-biao-qian-de-zhi-ding/">Pocket 类目标签的制订</a>
-    </li>
-    
 </ul>
         </li>
 <li>
     <h3>Tags</h3>
     <ul class="tag-cloud">
-        <a style="font-size: 136%" href="/tag/octopress/">octopress</a>
+        <a style="font-size: 136%" href="/tag/Scala/">Scala</a>
+<a style="font-size: 136%" href="/tag/octopress/">octopress</a>
+<a style="font-size: 90%" href="/tag/中文搜索/">中文搜索</a>
 <a style="font-size: 164%" href="/tag/效率/">效率</a>
-<a style="font-size: 90%" href="/tag/数据可视化/">数据可视化</a>
 <a style="font-size: 136%" href="/tag/时间管理/">时间管理</a>
 <a style="font-size: 136%" href="/tag/校园招聘/">校园招聘</a>
-<a style="font-size: 90%" href="/tag/游戏策划/">游戏策划</a>
 <a style="font-size: 164%" href="/tag/知识管理/">知识管理</a>
 <a style="font-size: 164%" href="/tag/笔试/">笔试</a>
+<a style="font-size: 90%" href="/tag/网页开发/">网页开发</a>
 <a style="font-size: 210%" href="/tag/面试经验/">面试经验</a>
-<a style="font-size: 90%" href="/tag/飞维美地/">飞维美地</a>
 
     </ul>
 </li><li>
