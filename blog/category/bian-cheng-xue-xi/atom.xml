@@ -4,7 +4,7 @@
   <title><![CDATA[Category: 编程学习 | Blog of 太极儒]]></title>
   <link href="http://frank19900731.github.io/blog/category/bian-cheng-xue-xi/atom.xml" rel="self"/>
   <link href="http://frank19900731.github.io/"/>
-  <updated>2014-11-27T16:48:21+08:00</updated>
+  <updated>2014-11-27T18:27:12+08:00</updated>
   <id>http://frank19900731.github.io/</id>
   <author>
     <name><![CDATA[Frank Song]]></name>
@@ -129,6 +129,13 @@ class Anagram(wordList: List[String]) {</p>
 <p>历次重构的过程写起来就比较啰嗦了，不在这里列出。不过从测试代码一点点完善的过程里，能够看出一个大致的思路。</p>
 
 <p>对于一个小问题，如果技艺熟练，完全有可能直接写出功能代码的最简形式，不过对于一个较大规模的项目来说，这种做法确实有优势，学习了。</p>
+
+<p>最后附上老师课后分享的资料。</p>
+
+<ul>
+  <li><a href="https://github.com/JosephYao/Kata-Anagram/tree/iteration_19/src">代码</a> </li>
+  <li><a href="">视频</a>（待上传）</li>
+</ul>
 ]]></content>
   </entry>
   
