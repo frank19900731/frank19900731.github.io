@@ -24,23 +24,23 @@ exclude_from_search: true
 **2014年11月**
 
 - 11.29 —— [用数据度量用户体验](http://club.alibabatech.org/salon_detail.htm?salonId=55)
-- 11.29 —— Spark 分享 关注微信“码农大会”报名
+- 11.29 —— ✔︎ Spark 分享 关注微信“码农大会”报名 [PPT](http://frank19900731.github.io/downloads/file/Unified%20Big%20Data%20Analytics%20Pipeline.pdf)
 - 11.27 —— [IT运维线下公开课：美团、聚美技术牛人双11后分享架构与运维之道](http://www.huodongxing.com/event/7256700821900)
-- 11.27 —— [万花筒活动: 测试驱动开发和函数式编程](http://together.iagile.me/activities/28)
+- 11.27 —— ✔︎ [万花筒活动: 测试驱动开发和函数式编程](http://together.iagile.me/activities/28)
 - 11.25 —— [Link沙龙：探索资本涌动的互联网金融](http://www.huodongxing.com/event/1256139868800)
-- 11.22 —— [Open Workshop —— Python TDD & Scala从零到入门](http://www.huodongxing.com/event/1256701125300)
+- 11.22 —— ✔︎ [Open Workshop —— Python TDD & Scala从零到入门](http://www.huodongxing.com/event/1256701125300)
 - 11.19 —— [2014技术商业盛典](http://www.cxoworld.com.cn/ctbf2014/)
-- 11.19 —— [无穷沙龙第19期：走近HTML5的应用生态](http://www.huodongxing.com/event/4255809905900)
+- 11.19 —— ✔︎ [无穷沙龙第19期：走近HTML5的应用生态](http://www.huodongxing.com/event/4255809905900)
 - 11.15 —— [百度技术沙龙 之 代码重构与灵活交付](http://www.infoq.com/cn/zones/baidu-salon/content-56.html)
-- 11.15 —— [无穷超声波沙龙: VC争鸣 互联网泡沫真的来了吗？](http://www.huodongxing.com/event/7255576782200)
-- 11.14 —— 移动互联网时代的大数据挖掘技术研讨会 清华大学FIT楼2楼多功能厅
-- 11.5 —— Scaling Deep Learning, from Jeaf Dean  清华大学 FIT 2楼多功能报告厅
+- 11.15 —— ✔︎ [无穷超声波沙龙: VC争鸣 互联网泡沫真的来了吗？](http://www.huodongxing.com/event/7255576782200)
+- 11.14 —— ✔︎ 移动互联网时代的大数据挖掘技术研讨会 清华大学FIT楼2楼多功能厅
+- 11.5 —— ✔︎ Scaling Deep Learning, from Jeaf Dean  清华大学 FIT 2楼多功能报告厅
 
 **2014年9月**
 
-- 9.25 —— FreeWheel 技术分享会 清华大学东主楼
+- 9.25 —— ✔︎ FreeWheel 技术分享会 清华大学东主楼
 - 9.20 —— [百度技术沙龙-人工智能技术应用](http://www.infoq.com/cn/zones/baidu-salon/content-54.html)
 
 **2014年8月**
 
-- 8.16 —— [百度技术沙龙 基于大数据的预测实践](http://www.infoq.com/cn/zones/baidu-salon/content-53.html)
+- 8.16 —— ✔︎ [百度技术沙龙 基于大数据的预测实践](http://www.infoq.com/cn/zones/baidu-salon/content-53.html)
