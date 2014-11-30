@@ -1,11 +1,12 @@
 ---
-layout: post
+layout: wx-default
 title: "Matrix67 博客中智力题粗分类"
 date: 2014-11-29 15:03:44 +0800
-comments: true
+comments: false
 categories: [面试求职]
 tags: [Matrix67, 智力题]
 keywords: Matrix67, 智力题, 几何, 程序算法, 概率统计, 数学证明, 面试题, 益智题目
+exclude_from_search: true
 pc_url: /blog/2014/11/29/matrix67-bo-ke-zhong-zhi-li-ti-cu-fen-lei/
 wx_url: /wx/2014-11-29-matrix67-bo-ke-zhong-zhi-li-ti-cu-fen-lei.html
 ---
