@@ -4,7 +4,7 @@
   <title><![CDATA[Category: 面试求职 | Blog of 太极儒]]></title>
   <link href="http://frank19900731.github.io/blog/category/mian-shi-qiu-zhi/atom.xml" rel="self"/>
   <link href="http://frank19900731.github.io/"/>
-  <updated>2014-11-30T00:42:31+08:00</updated>
+  <updated>2014-11-30T10:46:37+08:00</updated>
   <id>http://frank19900731.github.io/</id>
   <author>
     <name><![CDATA[Frank Song]]></name>
@@ -586,7 +586,7 @@ cout&lt;&lt;count&lt;&lt;endl;
 
 <ol>
   <li>实现 java.util.List 中的基础功能；</li>
-  <li>实现栈，使得 添加、删除、max 操作的复杂度为 O(1)（我脚着好像是不可实现的，想到最好的是添加、删除 O(log)， max 是 O(1)）；</li>
+  <li>实现栈，使得 添加、删除、max 操作的复杂度为 O(1)（<s>我脚着好像是不可实现的，想到最好的是添加、删除 O(log)， max 是 O(1)</s>），实现见 <a href="http://weibo.com/wangrn">正在努力减肥的胖子</a> 同学给出的评论，参考 leetcode 中的<a href="https://oj.leetcode.com/problems/min-stack/">这道题目</a>，惭愧；</li>
   <li>选取任意数据结构实现添加、删除、随机返回三个功能，分析复杂度；</li>
   <li>用数组实现队列，各操作的复杂度分析。</li>
 </ol>
