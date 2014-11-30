@@ -40,7 +40,7 @@ wx_url: /wx/2014-11-18-mian-shi-jing-yan-fen-xiang-zhi-shu-ju-jie-gou-suan-fa-fe
 ####类型一：数据结构实现
 
 1. 实现 java.util.List 中的基础功能；
-2. 实现栈，使得 添加、删除、max 操作的复杂度为 O(1)（我脚着好像是不可实现的，想到最好的是添加、删除 O(log)， max 是 O(1)）；
+2. 实现栈，使得 添加、删除、max 操作的复杂度为 O(1)（<S>我脚着好像是不可实现的，想到最好的是添加、删除 O(log)， max 是 O(1)</S>），[正在努力减肥的胖子](http://weibo.com/wangrn) 同学提示类似 leetcode 中的 [这道题目](https://oj.leetcode.com/problems/min-stack/)，惭愧；
 3. 选取任意数据结构实现添加、删除、随机返回三个功能，分析复杂度；
 4. 用数组实现队列，各操作的复杂度分析。
 
