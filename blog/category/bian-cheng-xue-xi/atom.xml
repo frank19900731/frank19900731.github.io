@@ -4,7 +4,7 @@
   <title><![CDATA[Category: 编程学习 | Blog of 太极儒]]></title>
   <link href="http://frank19900731.github.io/blog/category/bian-cheng-xue-xi/atom.xml" rel="self"/>
   <link href="http://frank19900731.github.io/"/>
-  <updated>2014-12-01T13:42:14+08:00</updated>
+  <updated>2014-12-01T13:46:57+08:00</updated>
   <id>http://frank19900731.github.io/</id>
   <author>
     <name><![CDATA[Frank Song]]></name>
@@ -135,6 +135,7 @@ class Anagram(wordList: List[String]) {</p>
 <ul>
   <li><a href="https://github.com/JosephYao/Kata-Anagram/tree/iteration_19/src">代码</a> </li>
   <li><a href="http://www.tudou.com/programs/view/NUPTlyGkVcU/">视频</a></li>
+  <li><a href="https://www.evernote.com/shard/s188/sh/55ba699d-05f7-4baa-9032-1692fff28cad/c08df590e81753fef302b5773b3b7d8e">Kata 接力</a></li>
 </ul>
 ]]></content>
   </entry>
