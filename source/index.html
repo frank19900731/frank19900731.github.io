@@ -12,6 +12,10 @@ keywords: 清华大学, 自动化系, 机器学习, 效率, 阅读, 编程, 正�
 <article style="background-color: rgba(255, 255, 255, 0.3); padding: 8px 25px 8px 25px; border-radius: 5px; text-align: center;">
     <a class="next" href="{{paginator.previous_page}}">Newer &rarr;</a>
 </article>
+{% else %}
+<article class="wx-entrance" style="background-color: rgba(255, 255, 255, 0.3); padding: 8px 25px 8px 25px; border-radius: 5px; text-align: center; display: none;">
+    <a class="next" href="http://frank19900731.github.io/wx/archives/">移动阅读入口，阅读体验更佳</a>
+</article>
 {% endif %}
 
 {% for post in paginator.posts %}
