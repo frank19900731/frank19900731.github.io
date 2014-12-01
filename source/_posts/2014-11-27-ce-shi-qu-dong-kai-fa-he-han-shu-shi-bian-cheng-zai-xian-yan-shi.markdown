@@ -121,4 +121,5 @@ class Anagram(wordList: List[String]) {
 最后附上老师课后分享的资料。
 
 - [代码](https://github.com/JosephYao/Kata-Anagram/tree/iteration_19/src) 
-- [视频]()（待上传）
+- [视频](http://www.tudou.com/programs/view/NUPTlyGkVcU/)
+- [Kata 接力](https://www.evernote.com/shard/s188/sh/55ba699d-05f7-4baa-9032-1692fff28cad/c08df590e81753fef302b5773b3b7d8e)
