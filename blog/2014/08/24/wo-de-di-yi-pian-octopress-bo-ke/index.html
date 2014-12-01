@@ -12,7 +12,7 @@
   <meta name="author" content="Frank Song">
   <!-- 定义description变量，如果有则用，没有则是正文，前150字 -->
   
-  <meta name="description" content="Categories: 网页开发 我的第一篇 Octopress 博客 Aug 24th, 2014 目录 段落分级 BlockQuote 代码展示 使用 Inline Code 使用脚注 使用目录 使用数学公式 使用链接 使用图片 使用 pullquote 使用表格 使用 Horizontal Rules 使用列表 使用定义列表 为块级元素添加 attribute 为 inline 元素添加 attribute 使用扩展 使用文字修饰 使用 Typographic Symbols 段落分级
+  <meta name="description" content="Categories: 网页开发 我的第一篇 Octopress 博客 Aug 24th, 2014 您可能正在移动设备阅读本文，为获得更好的阅读体验，请点击 移动阅读入口 目录 段落分级 BlockQuote 代码展示 使用 Inline Code 使用脚注 使用目录 使用数学公式 使用链接 使用图片 使用 pullquote 使用表格 使用 Horizontal Rules 使用列表 使用定义列表 为块级元素添加 attribute 为 inline 元素添加 attribute 使用扩展 使用文字修饰 使用 Typographic Symbols 段落分级
 以 # 的个数表示段落层次。 段落分级1
 2
 3
@@ -49,7 +49,7 @@ also possible. This is the outer quote again. 在 blockquote 中添加诸如 hea
 {% blockquote Bobby Willis http://google.com/search?q=pants the search for bobby&#39;s pants %}
 Wheeee!
 {% endblockquote %} Wheeee!Bobby Willis The Search for Bobby&#8217;s Pants 代码展示 方法一：缩进一个 tab 使用缩进展示代码1
-System.out.println(&quot;Hello World!&quot &hellip;">
+System &hellip;">
   <meta name="keywords" content="octopress, kramdown syntax">
   <meta name="baidu-site-verification" content="7O78rNJCOH" />
   <meta name="360-site-verification" content="9ee6dda17557079b8855f9c8201b05bb" />
@@ -111,6 +111,29 @@ System.out.println(&quot;Hello World!&quot &hellip;">
 
         if ($(".mod_lost_child_little")) {
             $(".mod_lost_child_little").css("width", "100%");
+        }
+
+        var isMobile = {
+            Android: function() {
+                return navigator.userAgent.match(/Android/i) ? true : false;
+            },
+            BlackBerry: function() {
+                return navigator.userAgent.match(/BlackBerry/i) ? true : false;
+            },
+            iOS: function() {
+                return navigator.userAgent.match(/iPhone|iPad|iPod/i) ? true : false;
+            },
+            Windows: function() {
+                return navigator.userAgent.match(/IEMobile/i) ? true : false;
+            },
+            any: function() {
+                return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Windows());
+            }
+        };
+
+        if( isMobile.any() )
+        {
+            $('.wx-entrance').show();
         }
     });
   </script>
@@ -358,8 +381,12 @@ System.out.println(&quot;Hello World!&quot &hellip;">
 <time datetime="2014-08-24T21:50:56+08:00" pubdate data-updated="true">Aug 24<span>th</span>, 2014</time></div>
 </header>
 <hr />
+
 <!-- 如果在索引中 -->
 
+<div class="wx-entrance" style="margin-bottom: 20px; display: none;">
+    您可能正在移动设备阅读本文，为获得更好的阅读体验，请点击 <a href="/wx/2014-08-24-wo-de-di-yi-pian-octopress-bo-ke.html">移动阅读入口</a>
+</div>
   <!-- 直接展示出内容 -->
   <section class="article-detail" style="margin-bottom: 20px;"><p><strong>目录</strong></p>
 

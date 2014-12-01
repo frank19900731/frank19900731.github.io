@@ -12,7 +12,7 @@
   <meta name="author" content="Frank Song">
   <!-- 定义description变量，如果有则用，没有则是正文，前150字 -->
   
-  <meta name="description" content="Categories: 编程学习 《Open Workshop — Scala 从零到入门》课堂笔记 Nov 23rd, 2014 目录 关于 ThoughtWorks 培训记录 第一小节 第二小节 第三小节 第四小节 学习材料 写在最后 关于 ThoughtWorks 从 活动行 上了解到有这么一门关于 Scala 的入门培训，周六闲来无事也就去了。一来因为 Scala 语言有 Spark 这样的杀手级应用，自己正要了解学习，二来想体验一些业界培训的氛围。 东直门地铁站 D 口一出就能望见国华投资大厦，活动主办方 ThoughtWorks 在 1105 室。进了公司感觉规模不小，于是在培训开始前查了一下 ThoughtWorks 是干啥的，顿时感觉自己孤陋寡闻了。本次活动的讲师是 ThoughtWorks 的员工吴雪峰，他是 Scala 的大牛，在 github 上有分享一些 培训材料。 培训从早上九点开始，晚上六点结束，包学包问包午饭。培训中间穿插了一些 Social 环节，比如自我介绍，闲话讨论，让人感受到码农大家庭的温暖。有小二十个同学参与了此次活动，都是对 Scala 感兴趣或工作当中要用到，除了我和另外一个叫张淞的同学（《Haskell函数式编程入门》的作者）还没工作，其他都是有业界开发经验的人员。有些人已经用了一阵子 Scala，有些人刚配置好环境，比如俺，不过幸好之前看过 《Haskell 趣学指南》，能够跟上老师节奏。 在 Scala 培训进行的同时，还有一个 Open Party 在公司里举行，加之自己所经历的这次周到细致的培训，我对 ThoughtWorks 这家公司越发好奇。进一步查询获知，ThoughtWorks 举办的分享、报告非常频繁，质量、反响也很好，这其中的推动力是什么呢？ 也许公司自有或长期或短期的利益因素考量，但除此之外，我作为一个小白用户，在他们的活动中学到了知识，认识了同路人，还写了这篇文章分享、宣传，这样的效果应该也是 ThoughWorks 所乐见的吧。知乎上有人提问 在 ThoughtWorks 工作是怎样一种体验？，从回答的字里行间我也看到了对“推动力”问题的解答。 总而言之，对 ThoughtWorks 举办的这次活动表示感谢~ 培训记录 老师讲的东西到自己的耳朵脑子里，从脑子到笔记， &hellip;">
+  <meta name="description" content="Categories: 编程学习 《Open Workshop — Scala 从零到入门》课堂笔记 Nov 23rd, 2014 您可能正在移动设备阅读本文，为获得更好的阅读体验，请点击 移动阅读入口 目录 关于 ThoughtWorks 培训记录 第一小节 第二小节 第三小节 第四小节 学习材料 写在最后 关于 ThoughtWorks 从 活动行 上了解到有这么一门关于 Scala 的入门培训，周六闲来无事也就去了。一来因为 Scala 语言有 Spark 这样的杀手级应用，自己正要了解学习，二来想体验一些业界培训的氛围。 东直门地铁站 D 口一出就能望见国华投资大厦，活动主办方 ThoughtWorks 在 1105 室。进了公司感觉规模不小，于是在培训开始前查了一下 ThoughtWorks 是干啥的，顿时感觉自己孤陋寡闻了。本次活动的讲师是 ThoughtWorks 的员工吴雪峰，他是 Scala 的大牛，在 github 上有分享一些 培训材料。 培训从早上九点开始，晚上六点结束，包学包问包午饭。培训中间穿插了一些 Social 环节，比如自我介绍，闲话讨论，让人感受到码农大家庭的温暖。有小二十个同学参与了此次活动，都是对 Scala 感兴趣或工作当中要用到，除了我和另外一个叫张淞的同学（《Haskell函数式编程入门》的作者）还没工作，其他都是有业界开发经验的人员。有些人已经用了一阵子 Scala，有些人刚配置好环境，比如俺，不过幸好之前看过 《Haskell 趣学指南》，能够跟上老师节奏。 在 Scala 培训进行的同时，还有一个 Open Party 在公司里举行，加之自己所经历的这次周到细致的培训，我对 ThoughtWorks 这家公司越发好奇。进一步查询获知，ThoughtWorks 举办的分享、报告非常频繁，质量、反响也很好，这其中的推动力是什么呢？ 也许公司自有或长期或短期的利益因素考量，但除此之外，我作为一个小白用户，在他们的活动中学到了知识，认识了同路人，还写了这篇文章分享、宣传，这样的效果应该也是 ThoughWorks 所乐见的吧。知乎上有人提问 在 ThoughtWorks 工作是怎样一种体验？，从回答的字里行间我也看到了对“推动力”问题的解答。 总而言之，对 ThoughtWorks 举办的这次活动表示感谢~ 培训记录 &hellip;">
   <meta name="keywords" content="Akka, Spark, Scala, ThoughtWorks, 培训">
   <meta name="baidu-site-verification" content="7O78rNJCOH" />
   <meta name="360-site-verification" content="9ee6dda17557079b8855f9c8201b05bb" />
@@ -74,6 +74,29 @@
 
         if ($(".mod_lost_child_little")) {
             $(".mod_lost_child_little").css("width", "100%");
+        }
+
+        var isMobile = {
+            Android: function() {
+                return navigator.userAgent.match(/Android/i) ? true : false;
+            },
+            BlackBerry: function() {
+                return navigator.userAgent.match(/BlackBerry/i) ? true : false;
+            },
+            iOS: function() {
+                return navigator.userAgent.match(/iPhone|iPad|iPod/i) ? true : false;
+            },
+            Windows: function() {
+                return navigator.userAgent.match(/IEMobile/i) ? true : false;
+            },
+            any: function() {
+                return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Windows());
+            }
+        };
+
+        if( isMobile.any() )
+        {
+            $('.wx-entrance').show();
         }
     });
   </script>
@@ -321,8 +344,12 @@
 <time datetime="2014-11-23T09:56:19+08:00" pubdate data-updated="true">Nov 23<span>rd</span>, 2014</time></div>
 </header>
 <hr />
+
 <!-- 如果在索引中 -->
 
+<div class="wx-entrance" style="margin-bottom: 20px; display: none;">
+    您可能正在移动设备阅读本文，为获得更好的阅读体验，请点击 <a href="/wx/2014-11-23-open-workshop-scalacong-ling-dao-ru-men-ke-tang-bi-ji.html">移动阅读入口</a>
+</div>
   <!-- 直接展示出内容 -->
   <section class="article-detail" style="margin-bottom: 20px;"><p><strong>目录</strong></p>
 

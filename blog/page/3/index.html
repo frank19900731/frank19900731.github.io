@@ -75,6 +75,29 @@
         if ($(".mod_lost_child_little")) {
             $(".mod_lost_child_little").css("width", "100%");
         }
+
+        var isMobile = {
+            Android: function() {
+                return navigator.userAgent.match(/Android/i) ? true : false;
+            },
+            BlackBerry: function() {
+                return navigator.userAgent.match(/BlackBerry/i) ? true : false;
+            },
+            iOS: function() {
+                return navigator.userAgent.match(/iPhone|iPad|iPod/i) ? true : false;
+            },
+            Windows: function() {
+                return navigator.userAgent.match(/IEMobile/i) ? true : false;
+            },
+            any: function() {
+                return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Windows());
+            }
+        };
+
+        if( isMobile.any() )
+        {
+            $('.wx-entrance').show();
+        }
     });
   </script>
 
@@ -318,6 +341,7 @@
 <time datetime="2014-10-25T22:58:48+08:00" pubdate data-updated="true">Oct 25<span>th</span>, 2014</time></div>
 </header>
 <hr />
+
 <!-- 如果在索引中 -->
 
   <section class="article-index">
@@ -398,6 +422,7 @@
 <time datetime="2014-10-23T18:21:07+08:00" pubdate data-updated="true">Oct 23<span>rd</span>, 2014</time></div>
 </header>
 <hr />
+
 <!-- 如果在索引中 -->
 
   <section class="article-index">
@@ -483,6 +508,7 @@
 <time datetime="2014-10-20T22:34:31+08:00" pubdate data-updated="true">Oct 20<span>th</span>, 2014</time></div>
 </header>
 <hr />
+
 <!-- 如果在索引中 -->
 
   <section class="article-index">
@@ -572,6 +598,7 @@
 <time datetime="2014-10-19T21:53:07+08:00" pubdate data-updated="true">Oct 19<span>th</span>, 2014</time></div>
 </header>
 <hr />
+
 <!-- 如果在索引中 -->
 
   <section class="article-index">
@@ -687,6 +714,7 @@
 <time datetime="2014-10-18T22:29:30+08:00" pubdate data-updated="true">Oct 18<span>th</span>, 2014</time></div>
 </header>
 <hr />
+
 <!-- 如果在索引中 -->
 
   <section class="article-index">
@@ -764,6 +792,7 @@
 <time datetime="2014-10-18T22:11:48+08:00" pubdate data-updated="true">Oct 18<span>th</span>, 2014</time></div>
 </header>
 <hr />
+
 <!-- 如果在索引中 -->
 
   <section class="article-index">

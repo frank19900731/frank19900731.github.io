@@ -12,7 +12,7 @@
   <meta name="author" content="Frank Song">
   <!-- 定义description变量，如果有则用，没有则是正文，前150字 -->
   
-  <meta name="description" content="Categories: 编程学习 《测试驱动开发和函数式编程》在线演示 Nov 27th, 2014 在 Scala 微信群里了解到了 《万花筒活动: 测试驱动开发和函数式编程 —— 在线代码演示如何对函数式语言 (Scala) 进行测试驱动开发》 这么一个活动，以在线视频会议的形式举行。跟着讲解抄代码，对 TDD（Test-Driven Development）有了点粗浅的了解。 讲解围绕一道叫 KataAnagram 的题目展开，用《哈利·波特》里面的例子很好解释。 Tom Marvolo Riddle =&gt; I am Lord Voldemort 上面是一个字母重排的过程。给定一个单词 S 和一个单词列表 L，要求从 L 中找到两个词（可以重复），用这两个词的全体字母重排出 S。 讲者主要是用这道题讲解测试驱动开发的思路流程，顺便讲解一下如何在代码重构时从 Java 转换到函数式编程的思维，而不是从算法角度考虑最优。 讲者开始提到测试驱动开发的大致思路是 写一个失败的测试； 写最简单的代码使得测试通过； 重构代码和测试。 2、3 步骤应该是迭代进行的。从以下测试代码的撰写思路上，可以看到想法的逐层深入。 测试代码1
+  <meta name="description" content="Categories: 编程学习 《测试驱动开发和函数式编程》在线演示 Nov 27th, 2014 您可能正在移动设备阅读本文，为获得更好的阅读体验，请点击 移动阅读入口 在 Scala 微信群里了解到了 《万花筒活动: 测试驱动开发和函数式编程 —— 在线代码演示如何对函数式语言 (Scala) 进行测试驱动开发》 这么一个活动，以在线视频会议的形式举行。跟着讲解抄代码，对 TDD（Test-Driven Development）有了点粗浅的了解。 讲解围绕一道叫 KataAnagram 的题目展开，用《哈利·波特》里面的例子很好解释。 Tom Marvolo Riddle =&gt; I am Lord Voldemort 上面是一个字母重排的过程。给定一个单词 S 和一个单词列表 L，要求从 L 中找到两个词（可以重复），用这两个词的全体字母重排出 S。 讲者主要是用这道题讲解测试驱动开发的思路流程，顺便讲解一下如何在代码重构时从 Java 转换到函数式编程的思维，而不是从算法角度考虑最优。 讲者开始提到测试驱动开发的大致思路是 写一个失败的测试； 写最简单的代码使得测试通过； 重构代码和测试。 2、3 步骤应该是迭代进行的。从以下测试代码的撰写思路上，可以看到想法的逐层深入。 测试代码1
 2
 3
 4
@@ -74,7 +74,7 @@
 60
 import org.junit.Assert.assertEquals
 import org.junit.Test
-import org.scalatest.junit.JUnitSuite class TestAnagram extends JUnitSuite { def assertAnagramEqual(expectedAnagram: List[String], input: String, wordList: List[String]) = { val generator = new Anagram(wordList) assertEquals(expectedAnagram, &hellip;">
+import org.scalatest.junit.JUnitSuite class TestAnagram extends JUnitSuite { def assertAnagramEqual(expectedAnagram: List[String], input: String, wordList: List[String]) = { val generator = new Anagram(wordList) &hellip;">
   <meta name="keywords" content="TDD, Scala, 测试驱动开发, 函数式编程, KataAnagram">
   <meta name="baidu-site-verification" content="7O78rNJCOH" />
   <meta name="360-site-verification" content="9ee6dda17557079b8855f9c8201b05bb" />
@@ -136,6 +136,29 @@ import org.scalatest.junit.JUnitSuite class TestAnagram extends JUnitSuite { def
 
         if ($(".mod_lost_child_little")) {
             $(".mod_lost_child_little").css("width", "100%");
+        }
+
+        var isMobile = {
+            Android: function() {
+                return navigator.userAgent.match(/Android/i) ? true : false;
+            },
+            BlackBerry: function() {
+                return navigator.userAgent.match(/BlackBerry/i) ? true : false;
+            },
+            iOS: function() {
+                return navigator.userAgent.match(/iPhone|iPad|iPod/i) ? true : false;
+            },
+            Windows: function() {
+                return navigator.userAgent.match(/IEMobile/i) ? true : false;
+            },
+            any: function() {
+                return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Windows());
+            }
+        };
+
+        if( isMobile.any() )
+        {
+            $('.wx-entrance').show();
         }
     });
   </script>
@@ -383,8 +406,12 @@ import org.scalatest.junit.JUnitSuite class TestAnagram extends JUnitSuite { def
 <time datetime="2014-11-27T16:08:27+08:00" pubdate data-updated="true">Nov 27<span>th</span>, 2014</time></div>
 </header>
 <hr />
+
 <!-- 如果在索引中 -->
 
+<div class="wx-entrance" style="margin-bottom: 20px; display: none;">
+    您可能正在移动设备阅读本文，为获得更好的阅读体验，请点击 <a href="/wx/2014-11-27-ce-shi-qu-dong-kai-fa-he-han-shu-shi-bian-cheng-zai-xian-yan-shi.html">移动阅读入口</a>
+</div>
   <!-- 直接展示出内容 -->
   <section class="article-detail" style="margin-bottom: 20px;"><!-- excerpt start -->
 

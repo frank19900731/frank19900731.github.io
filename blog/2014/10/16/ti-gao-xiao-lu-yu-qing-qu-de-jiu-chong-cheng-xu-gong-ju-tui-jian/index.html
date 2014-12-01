@@ -12,8 +12,8 @@
   <meta name="author" content="Frank Song">
   <!-- 定义description变量，如果有则用，没有则是正文，前150字 -->
   
-  <meta name="description" content="Categories: 工作效率 提高效率与情趣的九种程序工具推荐 Oct 16th, 2014 目录 选题目的 介绍角度 代码开发篇 引言 Git Shell Script 文档整理篇 引言 Markdown Octopress knitr 自我展示篇 tpp jmpress.js 数据展示篇 Shiny D3 其它工具 总结 自己平时爱鼓捣些工程上的小玩意儿，在一次实验室的Paper Reading上给大家分享了自己的一点体会，给大家推荐了几款能够提高工作效率与生活情趣的工具，整理于此。 想了解更多有趣的工具，请持续关注 工作效率 分类。 选题目的 把自己知道的，用过的，感觉有意思或有用的分享给大家，实现自己的知识梳理与输出 让大家在遇到类似应用场景的时候知道有某种工具是很适用的 督促大家掌握某种工具（比如 git，shell，markdown ），进而提升工作效率，也可以以工具为杠杆撬动更多的资源 介绍角度 类型 星级评定（1星-5星） 入门难度 实用性 装X效果 描述 适用场合 实例说明 参考资料 代码开发篇 引言
-摘自《程序员装逼指南》 千万不要说自己是做Java或者.Net的，一下子就屌丝了。PHP也不行，Python稍微有点烂大街，但还是明显要强过前几个。剩下的可以说自己是做Ruby的，但不要做Rails，说Sinatra。Go、Erlang、Clojure、Scala能给80分，你要是说会个Lisp就是85分，Haskell直接捅到90分，但是千万注意，一定要说只是精通Haskell，没事喜欢研究Haskell，千万不要说干这个的。最后再拽出来一个Prolog就成仙了。如果怕被继续追问就说自己做C++的，就是放了个大烟雾弹，让对面也猜不透究竟有几斤几两。C是什么？不知道。 以上顺序列举的编程语言（C、C++除外）学习难度增大，对逻辑思维能力要求提升，代码实现向人的思维靠拢。 TIOBE程序语言排行榜1，2014年5月最新统计（括号内前一数值为排名，后一数值为占比）： Java（2，16.907%） .Net（C# 6，3.745%，VB.NET 11，1.264%，F# 13，1.030%） PHP（7，3.386%） Python（8，3.057%） Ruby（12，1.242%） Go（31，0.423%） Erlang（47，0.236 &hellip;">
+  <meta name="description" content="Categories: 工作效率 提高效率与情趣的九种程序工具推荐 Oct 16th, 2014 您可能正在移动设备阅读本文，为获得更好的阅读体验，请点击 移动阅读入口 目录 选题目的 介绍角度 代码开发篇 引言 Git Shell Script 文档整理篇 引言 Markdown Octopress knitr 自我展示篇 tpp jmpress.js 数据展示篇 Shiny D3 其它工具 总结 自己平时爱鼓捣些工程上的小玩意儿，在一次实验室的Paper Reading上给大家分享了自己的一点体会，给大家推荐了几款能够提高工作效率与生活情趣的工具，整理于此。 想了解更多有趣的工具，请持续关注 工作效率 分类。 选题目的 把自己知道的，用过的，感觉有意思或有用的分享给大家，实现自己的知识梳理与输出 让大家在遇到类似应用场景的时候知道有某种工具是很适用的 督促大家掌握某种工具（比如 git，shell，markdown ），进而提升工作效率，也可以以工具为杠杆撬动更多的资源 介绍角度 类型 星级评定（1星-5星） 入门难度 实用性 装X效果 描述 适用场合 实例说明 参考资料 代码开发篇 引言
+摘自《程序员装逼指南》 千万不要说自己是做Java或者.Net的，一下子就屌丝了。PHP也不行，Python稍微有点烂大街，但还是明显要强过前几个。剩下的可以说自己是做Ruby的，但不要做Rails，说Sinatra。Go、Erlang、Clojure、Scala能给80分，你要是说会个Lisp就是85分，Haskell直接捅到90分，但是千万注意，一定要说只是精通Haskell，没事喜欢研究Haskell，千万不要说干这个的。最后再拽出来一个Prolog就成仙了。如果怕被继续追问就说自己做C++的，就是放了个大烟雾弹，让对面也猜不透究竟有几斤几两。C是什么？不知道。 以上顺序列举的编程语言（C、C++除外）学习难度增大，对逻辑思维能力要求提升，代码实现向人的思维靠拢。 TIOBE程序语言排行榜1，2014年5月最新统计（括号内前一数值为排名，后一数值为占比）： Java（2，16.907%） .Net（C# 6，3.745%，VB.NET 11，1.264%，F# 13，1.030%） PHP（7，3.386%） Python（8，3.057%） Ruby（12，1. &hellip;">
   <meta name="keywords" content="git, shell, markdown, octopress, knitr, tpp, jmpress.js, shiny, d3, Adobe Muse, mordencv, processing, 效率">
   <meta name="baidu-site-verification" content="7O78rNJCOH" />
   <meta name="360-site-verification" content="9ee6dda17557079b8855f9c8201b05bb" />
@@ -75,6 +75,29 @@
 
         if ($(".mod_lost_child_little")) {
             $(".mod_lost_child_little").css("width", "100%");
+        }
+
+        var isMobile = {
+            Android: function() {
+                return navigator.userAgent.match(/Android/i) ? true : false;
+            },
+            BlackBerry: function() {
+                return navigator.userAgent.match(/BlackBerry/i) ? true : false;
+            },
+            iOS: function() {
+                return navigator.userAgent.match(/iPhone|iPad|iPod/i) ? true : false;
+            },
+            Windows: function() {
+                return navigator.userAgent.match(/IEMobile/i) ? true : false;
+            },
+            any: function() {
+                return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Windows());
+            }
+        };
+
+        if( isMobile.any() )
+        {
+            $('.wx-entrance').show();
         }
     });
   </script>
@@ -322,8 +345,12 @@
 <time datetime="2014-10-16T17:28:06+08:00" pubdate data-updated="true">Oct 16<span>th</span>, 2014</time></div>
 </header>
 <hr />
+
 <!-- 如果在索引中 -->
 
+<div class="wx-entrance" style="margin-bottom: 20px; display: none;">
+    您可能正在移动设备阅读本文，为获得更好的阅读体验，请点击 <a href="/wx/2014-10-16-ti-gao-xiao-lu-yu-qing-qu-de-jiu-chong-cheng-xu-gong-ju-tui-jian.html">移动阅读入口</a>
+</div>
   <!-- 直接展示出内容 -->
   <section class="article-detail" style="margin-bottom: 20px;"><p><strong>目录</strong></p>
 

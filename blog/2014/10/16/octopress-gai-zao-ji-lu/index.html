@@ -12,8 +12,8 @@
   <meta name="author" content="Frank Song">
   <!-- 定义description变量，如果有则用，没有则是正文，前150字 -->
   
-  <meta name="description" content="Categories: 网页开发 Octopress 改造记录 Oct 16th, 2014 目录 网上资源 特色工作 支持中文搜索 移动版阅读优化 其它 Octopress 安装不是难事，后期定制可真是慢功夫。以下分两部分介绍自己的定制过程，前一部分是网上资源，后一部分是自己的一点特色工作。 网上资源 安装方法、lunr.js 搜索、社交分享 页面主题选择 中英文加空格 链接在新标签页中打开 公益404页面 豆瓣收藏秀 添加标签云 插入代码块 启用 MathJax、Kramdown 替换、嵌入多说评论 加入文章版权 SEO 优化 Archive分页、Category分页、Tag分页等插件 特色工作 支持中文搜索 lunr.js 功能强大，但不支持中文搜索。其实原因在于没有使用中文分词器，只要对生成的 search.json 文件进行分词即可。用 Java 写了一个 小工具，主要做法是 读取 search.json 对中文内容进行分词 内容写回到 search.json 用法参见这个 脚本，大家可以右上角搜索一下试试。这种方式的问题在于分词分不出就搜索不出来。比如“蛋疼”，也许就查不到，不过这个小工具支持字典扩展。 移动版阅读优化
-想要推广博客，SEO 是一方面，利用社交媒体的分享能力也很关键，但尴尬的是很多主题对移动端支持不够好，需要重新定制 layout。本博客的移动访问入口 在此，供参考。另，CNZZ 的跟踪实时性更好，我的博客是 Google Analytics 和 CNZZ 并用的。 其它 使用 FancyBox 优化图片显示 改造 img 标签，使可以使用相对宽度（这样一来PC端和移动端的图片设置就一样了） 定制多说评论显示 窗口右侧添加临时目录 使用 dlmenu 整合访问入口 原文地址: http://frank19900731.github.io/blog/2014/10/16/octopress-gai-zao-ji-lu/ 作者 Frank Song&nbsp; 发布于 http://frank19900731.github.io&nbsp; 转载请注明 Tags: octopress, 中文搜索 &nbsp;&nbsp;&nbsp;&nbsp; 分享到： 新浪微博 腾讯微博 人人网 微信 豆瓣 更多 « 提高效率与情趣的九种程序工具推荐 &hellip;">
+  <meta name="description" content="Categories: 网页开发 Octopress 改造记录 Oct 16th, 2014 您可能正在移动设备阅读本文，为获得更好的阅读体验，请点击 移动阅读入口 目录 网上资源 特色工作 支持中文搜索 移动版阅读优化 其它 Octopress 安装不是难事，后期定制可真是慢功夫。以下分两部分介绍自己的定制过程，前一部分是网上资源，后一部分是自己的一点特色工作。 网上资源 安装方法、lunr.js 搜索、社交分享 页面主题选择 中英文加空格 链接在新标签页中打开 公益404页面 豆瓣收藏秀 添加标签云 插入代码块 启用 MathJax、Kramdown 替换、嵌入多说评论 加入文章版权 SEO 优化 Archive分页、Category分页、Tag分页等插件 特色工作 支持中文搜索 lunr.js 功能强大，但不支持中文搜索。其实原因在于没有使用中文分词器，只要对生成的 search.json 文件进行分词即可。用 Java 写了一个 小工具，主要做法是 读取 search.json 对中文内容进行分词 内容写回到 search.json 用法参见这个 脚本，大家可以右上角搜索一下试试。这种方式的问题在于分词分不出就搜索不出来。比如“蛋疼”，也许就查不到，不过这个小工具支持字典扩展。 移动版阅读优化
+想要推广博客，SEO 是一方面，利用社交媒体的分享能力也很关键，但尴尬的是很多主题对移动端支持不够好，需要重新定制 layout。本博客的移动访问入口 在此，供参考。另，CNZZ 的跟踪实时性更好，我的博客是 Google Analytics 和 CNZZ 并用的。 其它 使用 FancyBox 优化图片显示 改造 img 标签，使可以使用相对宽度（这样一来PC端和移动端的图片设置就一样了） 定制多说评论显示 窗口右侧添加临时目录 使用 dlmenu 整合访问入口 原文地址: http://frank19900731.github.io/blog/2014/10/16/octopress-gai-zao-ji-lu/ 作者 Frank Song&nbsp; 发布于 http://frank19900731.github.io&nbsp; 转载请注明 Tags: octopress, 中文搜索 &nbsp;&nbsp;&nbsp;&nbsp; 分享到： 新浪微博 &hellip;">
   <meta name="keywords" content="octopress, 中文搜索, json, 分页, 中文字体">
   <meta name="baidu-site-verification" content="7O78rNJCOH" />
   <meta name="360-site-verification" content="9ee6dda17557079b8855f9c8201b05bb" />
@@ -75,6 +75,29 @@
 
         if ($(".mod_lost_child_little")) {
             $(".mod_lost_child_little").css("width", "100%");
+        }
+
+        var isMobile = {
+            Android: function() {
+                return navigator.userAgent.match(/Android/i) ? true : false;
+            },
+            BlackBerry: function() {
+                return navigator.userAgent.match(/BlackBerry/i) ? true : false;
+            },
+            iOS: function() {
+                return navigator.userAgent.match(/iPhone|iPad|iPod/i) ? true : false;
+            },
+            Windows: function() {
+                return navigator.userAgent.match(/IEMobile/i) ? true : false;
+            },
+            any: function() {
+                return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Windows());
+            }
+        };
+
+        if( isMobile.any() )
+        {
+            $('.wx-entrance').show();
         }
     });
   </script>
@@ -322,8 +345,12 @@
 <time datetime="2014-10-16T20:45:34+08:00" pubdate data-updated="true">Oct 16<span>th</span>, 2014</time></div>
 </header>
 <hr />
+
 <!-- 如果在索引中 -->
 
+<div class="wx-entrance" style="margin-bottom: 20px; display: none;">
+    您可能正在移动设备阅读本文，为获得更好的阅读体验，请点击 <a href="/wx/2014-10-16-octopress-gai-zao-ji-lu.html">移动阅读入口</a>
+</div>
   <!-- 直接展示出内容 -->
   <section class="article-detail" style="margin-bottom: 20px;"><p><strong>目录</strong></p>
 
