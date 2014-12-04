@@ -1,0 +1,169 @@
+
+<item>
+    <title>DIY Deep Learning for Vision: A Tutorial with Caffe 报告笔记</title>
+    <link>http://realjenius.com/blog/2014/12/04/diy-deep-learning-for-vision-a-tutorial-with-caffe-bao-gao-bi-ji/</link>
+    <author>R.J. Lorimer</author>
+    <pubDate>2014-12-04T09:56:21+08:00</pubDate>
+    <guid>http://realjenius.com/blog/2014/12/04/diy-deep-learning-for-vision-a-tutorial-with-caffe-bao-gao-bi-ji/</guid>
+    <description><![CDATA[
+     <p><strong>目录</strong></p>
+
+<ul id="markdown-toc">
+  <li><a href="#section">简介</a></li>
+  <li><a href="#section-1">要点记录</a></li>
+  <li><a href="#section-2">提问</a></li>
+  <li><a href="#section-3">总结</a></li>
+</ul>
+
+<!-- excerpt start -->
+
+<h2 id="section">简介</h2>
+
+<p>报告时间是北京时间 12月14日 凌晨一点到两点，主讲人是 Caffe 团队的核心之一 Evan Shelhamer。第一次用 <a href="http://www.gotomeeting.com/online/entry">GoToMeeting</a> 参加视频会议，效果真是不错。</p>
+
+<p>报告后分享出了 <a href="">视频</a> 和 <a href="">展示文件</a>（链接在收到邮件后会补上）。</p>
+
+<p>Caffe 此前听过没用过，所以报告前自己试运行了一下，参照 <a href="http://caffe.berkeleyvision.org/installation.html">官方教程</a>。Caffe 安装、上手都很快，Protobuf 式的层定义很直观，模型修改或算法调整变得很容易，相当于只需要改配置文件。还找到了他们放在 Google Docs 上一个教程 PPT，<a href="https://docs.google.com/presentation/d/1UeKXVgRvvxg9OUdh_UiC5G71UMscNPlvArsWER41PsU/edit#slide=id.p">DIY Deep Learning for Vision: a Hands-On Tutorial with Caffe</a> （已搬到 <a href="http://frank19900731.github.io/downloads/file/Caffe.pptx">墙里</a>），后来发现这次报告的 PPT 就是在这个基础上修改的。</p>
+
+<p>本次报告主要内容是</p>
+
+<ul>
+  <li>对机器学习、深度学习的一些介绍，包括若干深度学习的经典模型；</li>
+  <li>Caffe 的<strong>优势</strong>（模块化、速度、社区支持等）、<strong>基本结构</strong>（网络定义、层定义、Blob等）和<strong>用法</strong>（模型中损失函数、优化方法、共享权重等的配置、应用举例、参数调优的技巧），以及<strong>未来方向</strong>（CPU/GPU 并行化、Pythonification、Fully Convolutional Networks等）。</li>
+</ul>
+
+<p>以下是报告中的截图配上自己的一点笔记，一手资料请参见上面给出的会后分享链接。</p>
+
+<!-- excerpt end -->
+
+<h2 id="section-1">要点记录</h2>
+
+<p>PPT 的首页取自该项目的一个在线 <a href="http://demo.caffe.berkeleyvision.org">demo</a>，输入图片 url，识别物体类别。</p>
+
+<p><a href="http://frank19900731.github.io/img/post/2014-12/3.png" class="img-up" title="DIY Deep Learning for Vision: the Caffe framework"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-12/3.png" width="80%" title="DIY Deep Learning for Vision: the Caffe framework" /></a></p>
+
+<p>左边是浅层特征，各类别物体杂乱无章；右边是深度特征，一些类别有较为明显的分别。特别地，<strong>dog、bird、invertebrate</strong> 这三类动物类别离得较近，而 <strong>building、vehicle、commodity</strong> 这类无生命类别离得较近，可见深度特征的强大。</p>
+
+<p><a href="http://frank19900731.github.io/img/post/2014-12/4.png" class="img-up" title="Why Deep Learning? - 1"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-12/4.png" width="80%" title="Why Deep Learning? - 1" /></a></p>
+
+<p>此外，在深层结构当中，<strong>隐层神经元的激活可能与特定的物体类别有关</strong>，比如有的神经元对人像敏感，而有的对数字或建筑物敏感，最下面一层是闪光灯（或与之类似，比如反光的脑门……）效果。</p>
+
+<p><a href="http://frank19900731.github.io/img/post/2014-12/5.png" class="img-up" title="Why Deep Learning? - 2"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-12/5.png" width="80%" title="Why Deep Learning? - 2" /></a></p>
+
+<p><a href="http://frank19900731.github.io/img/post/2014-12/6.png" class="img-up" title="What is Deep Learning?"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-12/6.png" width="80%" title="What is Deep Learning?" /></a></p>
+
+<p>Caffe 的优势，网络结构的模块化和易表达是显然的，社区资源也同样强大，比如下两页内容。</p>
+
+<p><a href="http://frank19900731.github.io/img/post/2014-12/7.png" class="img-up" title="Why Caffe? In one sip..."><img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-12/7.png" width="80%" title="Why Caffe? In one sip..." /></a></p>
+
+<p>Caffe 的 Reference Models 可供学术使用，比如 AlexNet、R-CNN、CaffeNet，包括模型定义、优化方法和预训练权重。</p>
+
+<p><a href="http://frank19900731.github.io/img/post/2014-12/8.png" class="img-up" title="Reference Models"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-12/8.png" width="80%" title="Reference Models" /></a></p>
+
+<p><a href="http://caffe.berkeleyvision.org/model_zoo.html">Model Zoo</a> 中有用户贡献的模型可供参考使用，比如 VGG、Network-in-Network。</p>
+
+<p><a href="http://frank19900731.github.io/img/post/2014-12/9.png" class="img-up" title="Open Model Collection"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-12/9.png" width="80%" title="Open Model Collection" /></a></p>
+
+<p>Caffe 支持丰富的模型表达形式，包括 DAGs、Weight Sharing 以及 Siamese Network。</p>
+
+<p><a href="http://frank19900731.github.io/img/post/2014-12/10.png" class="img-up" title="Architectures"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-12/10.png" width="80%" title="Architectures" /></a></p>
+
+<p><a href="http://frank19900731.github.io/img/post/2014-12/11.png" class="img-up" title="Brewing by the Numbers..."><img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-12/11.png" width="80%" title="Brewing by the Numbers..." /></a></p>
+
+<p>网络和层定义采用 protobuf 的样式。</p>
+
+<p><a href="http://frank19900731.github.io/img/post/2014-12/12.png" class="img-up" title="Net"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-12/12.png" width="80%" title="Net" /></a></p>
+
+<p>Layer 指的是权重和偏置，可以定义连接数、权重初始化方法等。</p>
+
+<p><a href="http://frank19900731.github.io/img/post/2014-12/13.png" class="img-up" title="Layer"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-12/13.png" width="80%" title="Layer" /></a></p>
+
+<p>Blob 是四维数据结构，保存节点上的数值以及模型参数，可以通过编程在 CPU 和 GPU 间传输。</p>
+
+<p><a href="http://frank19900731.github.io/img/post/2014-12/14.png" class="img-up" title="Blob"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-12/14.png" width="80%" title="Blob" /></a></p>
+
+<p>模型定义之外，还需要一个指定优化策略的配置文件，用以训练模型。</p>
+
+<p><a href="http://frank19900731.github.io/img/post/2014-12/15.png" class="img-up" title="Solving: Training a Net"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-12/15.png" width="80%" title="Solving: Training a Net" /></a></p>
+
+<p>使用 Caffe 训练的一般步骤就是</p>
+
+<ul>
+  <li>数据预处理；</li>
+  <li>模型定义；</li>
+  <li>求解策略定义；</li>
+  <li>运行。</li>
+</ul>
+
+<p>此处给出了两个例子，<a href="http://nbviewer.ipython.org/github/BVLC/caffe/blob/dev/examples/hdf5_classification.ipynb">Logistic Regression</a>，<a href="http://nbviewer.ipython.org/github/BVLC/caffe/blob/dev/examples/hdf5_classification.ipynb">Learn LeNet on MNIST</a>，都很好 follow。</p>
+
+<p><a href="http://frank19900731.github.io/img/post/2014-12/16.png" class="img-up" title="Step-by-Step Recipe"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-12/16.png" width="80%" title="Step-by-Step Recipe" /></a></p>
+
+<p>调参中重点讲了一个 <a href="[Fine-tuning from ImageNet to Style](http://nbviewer.ipython.org/github/BVLC/caffe/blob/dev/examples/hdf5_classification.ipynb)">模型迁移的实例</a>，用某项任务已有模型的参数作为新任务模型的参数初始值，然后进行模型训练。</p>
+
+<p><a href="http://frank19900731.github.io/img/post/2014-12/17.png" class="img-up" title="Fine-tuning Transferring learned weights to kick-start models"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-12/17.png" width="80%" title="Fine-tuning Transferring learned weights to kick-start models" /></a></p>
+
+<p>模型训练一般由浅入深，逐步降低学习速率，以保持预训练参数的某些性质。</p>
+
+<p><a href="http://frank19900731.github.io/img/post/2014-12/18.png" class="img-up" title="Fine-tuning Tricks"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-12/18.png" width="80%" title="Fine-tuning Tricks" /></a></p>
+
+<p>接下来具体讲述了 Loss、Solver、DAG、Weight Sharing 的概念和配置。</p>
+
+<p>对同一模型，不同 Solver 的表现有差。</p>
+
+<p><a href="http://frank19900731.github.io/img/post/2014-12/19.png" class="img-up" title="Solver Showdown: MNIST Autoencoder"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-12/19.png" width="80%" title="Solver Showdown: MNIST Autoencoder" /></a></p>
+
+<p>一般深度学习模型是线性形式的，比如 LeNet，而 Caffe 支持 DAG 形式的模型。</p>
+
+<p><a href="http://frank19900731.github.io/img/post/2014-12/20.png" class="img-up" title="Nets are DAGs"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-12/20.png" width="80%" title="Nets are DAGs" /></a></p>
+
+<p>Caffe 的近期动向，CPU/GPU 并行化、Pythonification、Fully Convolutional Networks等。</p>
+
+<p><a href="http://frank19900731.github.io/img/post/2014-12/21.png" class="img-up" title="NOW ROASTING"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-12/21.png" width="80%" title="NOW ROASTING" /></a></p>
+
+<p>Caffe 的团队，拜 Yangqing Jia 师兄……</p>
+
+<p><a href="http://frank19900731.github.io/img/post/2014-12/22.png" class="img-up" title="Thanks to the Caffe crew"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-12/22.png" width="80%" title="Thanks to the Caffe crew" /></a></p>
+
+<p>文献参考。</p>
+
+<p><a href="http://frank19900731.github.io/img/post/2014-12/23.png" class="img-up" title="References"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-12/23.png" width="80%" title="References" /></a></p>
+
+<h2 id="section-2">提问</h2>
+
+<p>语音回答中，Evan 提到 UCB 的一个团队正在开发 Scala 接口，不过尚属实验性质；Caffe 团队在考虑 和 UCB 的 AMP 团队合作，扩展到 Spark 这一计算平台上；除了已支持的 CPU/GPU 计算，也考虑扩展支持 OpenCl；对于 Theano、Torch，鼓励大家尝试、比较……</p>
+
+<p>文字问答如下，由 Yangqing Jia 回复。</p>
+
+<p><strong>Q: Is the pre-trained model avaialbe for download to accelerate our work on other kinds of images?</strong></p>
+
+<p><strong>A:</strong> FYI - for pretrained models that we release, please refer to the model zoo page here: http://caffe.berkeleyvision.org/model_zoo.html</p>
+
+<hr />
+
+<p><strong>Q: Android platform ?</strong></p>
+
+<p><strong>A:</strong> People have asked about android/ios platforms. In principle this is possible since the code is purely in C, but of course some engineering efforts are needed to write makefiles like Android.mk for this. Our bandwidth is limited and we are focusing on the research part, but we welcome pull requests on github if you write one (and we thank you in advance)! Also, kindly check out the blog post by my colleague Pete Warden about our efforts on running with Jetson TK1: http://petewarden.com/2014/10/25/how-to-run-the-caffe-deep-learning-vision-library-on-nvidias-jetson-mobile-gpu-board/</p>
+
+<hr />
+
+<p><strong>Q: Can you discuss status and/or considerations for adding opencl support (and so be vendor neutral, as opposed to NVIDIA CUDA)?</strong></p>
+
+<p><strong>A:</strong> In terms of using OpenCL - it has been under discussion for a while, but we are kind of shortstaffed so we focus more on the research side - we welcome contributions from open-source communities of course, please join us at github :)</p>
+
+<hr />
+
+<p><strong>Q: do you have an online examples of unsupervised losses</strong></p>
+
+<p><strong>A:</strong> For unsupevised losses and training there is a bundled example of an MNIST autoencoder.</p>
+
+<h2 id="section-3">总结</h2>
+
+<p>“盗取”一页 PPT 作为本文总结。</p>
+
+<p><a href="http://frank19900731.github.io/img/post/2014-12/24.png" class="img-up" title="LAST SIP"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-12/24.png" width="80%" title="LAST SIP" /></a></p>
+
+<p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2014/12/04/diy-deep-learning-for-vision-a-tutorial-with-caffe-bao-gao-bi-ji/">http://frank19900731.github.io/blog/2014/12/04/diy-deep-learning-for-vision-a-tutorial-with-caffe-bao-gao-bi-ji/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
+
+  ]]></description>
+</item>
