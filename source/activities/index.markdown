@@ -13,16 +13,22 @@ exclude_from_search: true
 
 **2014年12月**
 
+- 12.21 —— [百度技术沙龙第五十七期：新时代的前端](http://www.huodongxing.com/event/1258707248200)
 - 12.19 —— [真实的云计算](http://www.huodongxing.com/event/1257701520000)
 - 12.18 —— [2014第四届中国计算机技术大会](http://www.huodongxing.com/event/4253505195800)
 - 12.18 —— [开放物联网大会](http://www.huodongxing.com/event/6258147179100)
 - 12.16 —— [【数盟盛典】首届中国数据科学家峰会](http://www.huodongxing.com/event/9258009835300)
 - 12.14 —— [Couchbase NoSQL技术沙龙](http://www.huodongxing.com/event/6257860025900)
 - 12.13 —— [Spark 北京 Meetup 第四次活动（SparkSQL专题）](http://www.meetup.com/spark-user-beijing-Meetup/events/218888111/)
+- 12.13 —— [IT桔子沙龙第29期（北京）：在线旅游创业投资新趋势探讨](http://www.huodongxing.com/event/2258729501900)
+- 12.11 —— [您的 App 准备好了吗？- App 集成 IM 最佳实践](http://www.huodongxing.com/event/4258310574200)
+- 12.7 —— [即兴喜剧——带你嗨皮 带你飞](http://www.huodongxing.com/event/9258867427800)，话说 朗园Vintage 新奇特活动真多
 - 12.6 —— [搜狐云景第一期技术公开课：公有云PaaS平台实践之路](http://www.huodongxing.com/event/reg_submit?id=7255858320100)
+- 12.5 —— [午夜真梦｜真格基金“真歌与真言”发布会](http://www.huodongxing.com/event/8258825208100)，活动时间是**12月5日 23:30 ～ 12月6日 1:30**！
 - 12.5 —— [2014第十四届中国信息产业经济年会](http://www.huodongxing.com/event/9256111842000)
 - 12.4 —— [【知客数据沙龙】开放与分享的大数据](http://www.huodongxing.com/event/1257998362900)
-- 12.3 —— [DIY Deep Learning for Vision: A Tutorial with Caffe](https://attendee.gotowebinar.com/register/100000000064727422;jsessionid=abcz_yo_oCXn7b1BEtXNu)
+- 12.4 —— ✔︎ [DIY Deep Learning for Vision: A Tutorial with Caffe](https://attendee.gotowebinar.com/register/100000000064727422;jsessionid=abcz_yo_oCXn7b1BEtXNu)
+- 12.3 —— [IBM全国高校移动创新应用开发大赛](http://www.huodongxing.com/event/4258857728900)
 
 **2014年11月**
 
