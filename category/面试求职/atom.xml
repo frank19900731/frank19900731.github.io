@@ -975,7 +975,7 @@
 
 <p><strong>解答：</strong></p>
 
-<p>本题其实是百度笔试的一道题，只有5分，但还是颇有难度的，实际上本题无需进行任何复杂的积分计算。相关系数的均值表达式如下（<strong>这里使用 cos 值作为相关系数，但 matlab 里的函数，比如 corr、corr2、corrcoef，采用别的方法计算相关系数，后面会提到</strong>）</p>
+<p>本题其实是百度笔试的一道题，只有5分，但还是颇有难度的，实际上本题无需进行任何复杂的积分计算。相关系数的均值表达式如下（<strong>这里先使用 cos 值作为相关系数，算出标准差为 <script type="math/tex">\frac { 1 }{ \sqrt { n }  } </script>， 但 matlab 里的函数，比如 corr、corr2、corrcoef，采用其它方法计算相关系数，算出标准差为 <script type="math/tex">\frac { 1 }{ \sqrt { n-1 }  } </script>，后面会提到</strong>）</p>
 
 <script type="math/tex; mode=display">
 E\left( r \right) =\iint { \frac { X\cdot Y }{ \left\| X \right\| \left\| Y \right\|  } \cdot p\left( X \right) \cdot p\left( Y \right) dXdY }  
