@@ -12,20 +12,7 @@
   <meta name="author" content="Frank Song">
   <!-- 定义description变量，如果有则用，没有则是正文，前150字 -->
   
-  <meta name="description" content="Categories: 机器学习 DIY Deep Learning for Vision: A Tutorial With Caffe 报告笔记 Dec 4th, 2014 简介 报告时间是北京时间 12月14日 凌晨一点到两点，主讲人是 Caffe 团队的核心之一 Evan Shelhamer。第一次用 GoToMeeting 参加视频会议，效果真是不错。 报告后分享出了 视频 和 展示文件（链接在收到邮件后会补上）。 Caffe 此前听过没用过，所以报告前自己试运行了一下，参照 官方教程。Caffe 安装、上手都很快，Protobuf 式的层定义很直观，模型修改或算法调整变得很容易，相当于只需要改配置文件。还找到了他们放在 Google Docs 上一个教程 PPT，DIY Deep Learning for Vision: a Hands-On Tutorial with Caffe （已搬到 墙里），后来发现这次报告的 PPT 就是在这个基础上修改的。 本次报告主要内容是 对机器学习、深度学习的一些介绍，包括若干深度学习的经典模型； Caffe 的优势（模块化、速度、社区支持等）、基本结构（网络定义、层定义、Blob等）和用法（模型中损失函数、优化方法、共享权重等的配置、应用举例、参数调优的技巧），以及未来方向（CPU/GPU 并行化、Pythonification、Fully Convolutional Networks等）。 以下是报告中的截图配上自己的一点笔记，一手资料请参见上面给出的会后分享链接。 继续阅读&nbsp;&nbsp;&nbsp;&nbsp; Tags: Caffe, 深度学习 &nbsp;&nbsp;&nbsp;&nbsp; Categories: 杂七杂八 若干有用有趣的网站 Dec 4th, 2014 最近清理收藏夹，有些有用有趣的网站可以拿出来做推荐。 搜索相似的网站 SimilarSiteSearch SimilarSites，下图显示和 tsinghua.edu.cn 相似的网站 数学相关 Mathway，在线计算 &amp; 数学题库 Puzzle 集锦，又一个 Puzzle 3D 绘图网站，示例如下 3D. Hyperbolic Paraboloid1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-# &hellip;">
+  <meta name="description" content="Categories: 机器学习 DIY Deep Learning for Vision: A Tutorial With Caffe 报告笔记 Dec 4th, 2014 简介 报告时间是北京时间 12月14日 凌晨一点到两点，主讲人是 Caffe 团队的核心之一 Evan Shelhamer。第一次用 GoToMeeting 参加视频会议，效果真是不错。 报告后分享出了 视频 和 展示文件。另一讲座，cuDNN: Accelerating Convolutional Neural Networks using GPUs，视频 和 展示文件 也已放出。 Caffe 此前听过没用过，所以报告前自己试运行了一下，参照 官方教程。Caffe 安装、上手都很快，Protobuf 式的层定义很直观，模型修改或算法调整变得很容易，相当于只需要改配置文件。还找到了他们放在 Google Docs 上一个教程 PPT，DIY Deep Learning for Vision: a Hands-On Tutorial with Caffe （已搬到 墙里），后来发现这次报告的 PPT 就是在这个基础上修改的。 本次报告主要内容是 对机器学习、深度学习的一些介绍，包括若干深度学习的经典模型； Caffe 的优势（模块化、速度、社区支持等）、基本结构（网络定义、层定义、Blob等）和用法（模型中损失函数、优化方法、共享权重等的配置、应用举例、参数调优的技巧），以及未来方向（CPU/GPU 并行化、Pythonification、Fully Convolutional Networks等）。 以下是报告中的截图配上自己的一点笔记，一手资料请参见上面给出的会后分享链接。 继续阅读&nbsp;&nbsp;&nbsp;&nbsp; Tags: Caffe, 深度学习 &nbsp;&nbsp;&nbsp;&nbsp; Categories: 杂七杂八 若干有用有趣的网站 Dec 4th, 2014 最近清理收藏夹，有些有用有趣的网站可以拿出来做推荐。 搜索相似的网站 SimilarSiteSearch SimilarSites，下图显示和 tsinghua.edu.cn 相似的网站 数学相关 Mathway，在线计算 &amp; 数学题库 Puzzle 集锦，又一个 Puzzle 3D &hellip;">
   
   <meta name="baidu-site-verification" content="7O78rNJCOH" />
   <meta name="360-site-verification" content="9ee6dda17557079b8855f9c8201b05bb" />
@@ -367,7 +354,7 @@
 
 <p>报告时间是北京时间 12月14日 凌晨一点到两点，主讲人是 Caffe 团队的核心之一 Evan Shelhamer。第一次用 <a href="http://www.gotomeeting.com/online/entry">GoToMeeting</a> 参加视频会议，效果真是不错。</p>
 
-<p>报告后分享出了 <a href="">视频</a> 和 <a href="">展示文件</a>（链接在收到邮件后会补上）。</p>
+<p>报告后分享出了 <a href="http://on-demand-gtc.gputechconf.com/gtcnew/on-demand-gtc.php?searchByKeyword=shelhamer&amp;searchItems=&amp;sessionTopic=&amp;sessionEvent=4&amp;sessionYear=2014&amp;sessionFormat=&amp;submit=&amp;select=+">视频</a> 和 <a href="http://on-demand.gputechconf.com/gtc/2014/webinar/gtc-express-deep-learning-caffee-evan-shelhamer.pdf">展示文件</a>。另一讲座，cuDNN: Accelerating Convolutional Neural Networks using GPUs，<a href="http://on-demand-gtc.gputechconf.com/gtcnew/on-demand-gtc.php?searchByKeyword=cuDNN&amp;searchItems=&amp;sessionTopic=&amp;sessionEvent=4&amp;sessionYear=2014&amp;sessionFormat=&amp;submit=&amp;select=+">视频</a> 和 <a href="http://on-demand.gputechconf.com/gtc/2014/webinar/gtc-express-sharan-chetlur-cudnn-webinar.pdf">展示文件</a> 也已放出。</p>
 
 <p>Caffe 此前听过没用过，所以报告前自己试运行了一下，参照 <a href="http://caffe.berkeleyvision.org/installation.html">官方教程</a>。Caffe 安装、上手都很快，Protobuf 式的层定义很直观，模型修改或算法调整变得很容易，相当于只需要改配置文件。还找到了他们放在 Google Docs 上一个教程 PPT，<a href="https://docs.google.com/presentation/d/1UeKXVgRvvxg9OUdh_UiC5G71UMscNPlvArsWER41PsU/edit#slide=id.p">DIY Deep Learning for Vision: a Hands-On Tutorial with Caffe</a> （已搬到 <a href="/downloads/file/Caffe.pptx">墙里</a>），后来发现这次报告的 PPT 就是在这个基础上修改的。</p>
 
