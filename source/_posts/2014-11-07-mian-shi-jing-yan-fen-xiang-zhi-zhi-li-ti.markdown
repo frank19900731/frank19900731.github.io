@@ -113,13 +113,10 @@ $$\frac{1}{0.1} = 10$$
 	
 **解答：**
 
-本题其实是百度笔试的一道题，只有5分，但还是颇有难度的，实际上本题无需进行任何复杂的积分计算。相关系数的均值表达式如下
+本题其实是百度笔试的一道题，只有5分，但还是颇有难度的，实际上本题无需进行任何复杂的积分计算。相关系数的均值表达式如下（**这里先使用 cos 值作为相关系数，算出标准差为 $$\frac { 1 }{ \sqrt { n }  } $$， 但 matlab 里的函数，比如 corr、corr2、corrcoef，采用其它方法计算相关系数，算出标准差为 $$\frac { 1 }{ \sqrt { n-1 }  } $$，后面会提到**）
 
 $$
-\begin{align}
-E\left( r \right)  &= \iint { \frac { \left( X-EX \right) \cdot \left( Y-EY \right)  }{ \left\| X-EX \right\| \left\| Y-EY \right\|  } \cdot p\left( X \right) \cdot p\left( Y \right) dXdY }  \\
-&= \iint { \frac { X\cdot Y }{ \left\| X \right\| \left\| Y \right\|  } \cdot p\left( X \right) \cdot p\left( Y \right) dXdY } 
-\end{align}
+E\left( r \right) =\iint { \frac { X\cdot Y }{ \left\| X \right\| \left\| Y \right\|  } \cdot p\left( X \right) \cdot p\left( Y \right) dXdY }  
 $$
 
 考察 X （或Y）**关于原点的对称抵消特性**，知期望值为 0。
@@ -130,7 +127,6 @@ $$
 \begin{align}
 Var\left( r \right)  &= E{ \left( r-E\left( r \right)  \right)  }^{ 2 } \\
 &= E{ r }^{ 2 } \\
-&= \iint { \frac { \left( \left( X-EX \right) \cdot \left( Y-EY \right)  \right) ^{ 2 } }{ { \left\| X-EX \right\|  }^{ 2 }{ \left\| Y-EY \right\|  }^{ 2 } } \cdot p\left( X \right) \cdot p\left( Y \right) dXdY }   \\
 &= \iint { \frac { \left( X\cdot Y \right) ^{ 2 } }{ { \left\| X \right\|  }^{ 2 }{ \left\| Y \right\|  }^{ 2 } } \cdot p\left( X \right) \cdot p\left( Y \right) dXdY } \\
 &= \iint { { \left( \frac { X }{ \left\| X \right\|  } \cdot \frac { Y }{ \left\| Y \right\|  }  \right)  }^{ 2 }\cdot p\left( X \right) \cdot p\left( Y \right) dXdY } 
 \end{align}
@@ -158,7 +154,7 @@ $$\int { \frac { { Y }_{ k }^{ 2 } }{ \sum _{ i=1 }^{ n }{ { Y }_{ i }^{ 2 } }  
 
 如果随机向量在球面上是均匀分布的那我们的讨论也就停止了，不过事实并非如此。二维情况，考察单位圆周上的随机向量，斜率的分布（两个正态分布的均值为0时，它们的 [商是柯西分布](http://mathworld.wolfram.com/NormalRatioDistribution.html) ）是不均匀的。在这种不均匀的情况下，想要得到积分值不变的结论好像没有那么直观。受 $${ \left( 0,\quad 0,\quad \dots \quad 1 \right)  }^{ T }$$ 的启发，我想到一个笨办法，还是用到轮换对称性。我们只要**找到值相等的一些表达式，让他们相加等于一个常数即可**。
 
-<span style="color: red;">更正：“不均匀”的说法是有问题的，这个不均匀是相对于斜率的不均匀，对于角度而言是均匀的，可以将柯西分布里的比值变量 $$u$$ 替换为角度 $$\theta $$，由下面的表达式知是均匀分布。</span>
+<span style="color: red;">插入更正：“不均匀”的说法是有问题的，这个不均匀是相对于斜率的不均匀，对于角度而言是均匀的，可以将柯西分布里的比值变量 $$u$$ 替换为角度 $$\theta $$，由下面的表达式知是均匀分布。</span>
 
 $$\int _{ -\infty  }^{ +\infty  }{ \frac { 1 }{ \pi \left( 1+{ u }^{ 2 } \right)  } du } =\int _{ -\frac { \pi  }{ 2 }  }^{ \frac { \pi  }{ 2 }  }{ \frac { 1 }{ \pi \left( 1+\tan ^{ 2 }{ \theta  }  \right)  } \frac { d\theta  }{ \cos ^{ 2 }{ \theta  }  }  } =\int _{ -\frac { \pi  }{ 2 }  }^{ \frac { \pi  }{ 2 }  }{ \frac { d\theta  }{ \pi  }  } $$
 
@@ -166,7 +162,7 @@ $$\int _{ -\infty  }^{ +\infty  }{ \frac { 1 }{ \pi \left( 1+{ u }^{ 2 } \right)
 
 $$\frac { 1 }{ { \left( \sqrt { 2\pi  }  \right)  }^{ n } } { e }^{ -\frac { \sum _{ i=1 }^{ n }{ { x }_{ i }^{ 2 } }  }{ 2 }  }=\frac { 1 }{ { \left( \sqrt { 2\pi  }  \right)  }^{ n } } { e }^{ -\frac { { r }^{ 2 } }{ 2 }  }$$
 
-轮换对称性分两步，首先是**系数轮换**，其次是**符号轮换**，以 4 维情况为例，假设固定向量为
+继续轮换对称性来讲笨办法，分两步。首先是**系数轮换**，其次是**符号轮换**，以 4 维情况为例，假设固定向量为
 
 $${ \left( \frac { 1 }{ \sqrt { 24 }  } ,\quad \frac { 1 }{ \sqrt { 8 }  } ,\quad \frac { 1 }{ \sqrt { 3 }  } ,\quad \frac { 1 }{ \sqrt { 2 }  }  \right)  }^{ T }$$
 
@@ -250,6 +246,75 @@ avar = var(array);
 11 维，单次运行均值为 -0.0011，方差为 0.0908（0.0909）；
 
 23 维，单次运行均值为 0.0003，方差为 0.0433（0.0435）。
+
+----
+
+**然而，正如我们前面提到的**，当我们想要计算两向量相关系数的时候，matlab 中的函数并非求取 cos 值，而是作 [如下计算](http://cn.mathworks.com/help/images/ref/corr2.html)
+
+$$
+r=\frac { \left( X-\overline { X }  \right) \cdot \left( Y-\overline { Y }  \right)  }{ \left\| X-\overline { X }  \right\| \left\| Y-\overline { Y }  \right\|  } 
+$$
+
+其中
+
+$$
+\overline { X } =\frac { \sum _{ i=1 }^{ n }{ { X }_{ i } }  }{ n } { \left( \begin{matrix} 1 & \cdots  & 1 \end{matrix} \right)  }^{ T } \\
+\overline { Y } =\frac { \sum _{ i=1 }^{ n }{ { Y }_{ i } }  }{ n } { \left( \begin{matrix} 1 & \cdots  & 1 \end{matrix} \right)  }^{ T }
+$$
+
+因为减去均值，**n 个变量的自由度就变成了 n-1，不独立**。如果直接采用我们上面的计算方法，化归到单位球上，会发现此时只能在球面的一个环上积分（因为 n 维相加为 0，相当于平面在球面上截出的部分），一个直观的想法是降维，**想办法把其中一维化为 0，而其余 n-1 维独立同分布**，做法如下。
+
+我们在随机向量左边乘上一个正交矩阵（$X\rightarrow AX$），注意
+
+- **多元正态分布的线性变换仍是多元正态分布**；
+- **多元独立正态分布在正交变换下仍保持独立性**。
+
+我们令 A 的第一行是 
+
+$$
+\frac { 1 }{ \sqrt { n }  } { \left( \begin{matrix} 1 & \cdots  & 1 \end{matrix} \right)  }
+$$
+
+其余行通过正交化方法构造。如此一来，在新的坐标下，计算向量减均值为
+
+$$
+\left[ \begin{matrix} \frac { 1 }{ \sqrt { n }  } { \left( \begin{matrix} 1 & \cdots  & 1 \end{matrix} \right)  } \\ \cdots  \\ \cdots  \end{matrix} \right] \left( X-\overline { X }  \right) =\left( \begin{matrix} 0 \\ \cdots  \\ \cdots  \end{matrix} \right) 
+$$
+
+实际上有
+
+$$
+\left[ \begin{matrix} \frac { 1 }{ \sqrt { n }  } { \left( \begin{matrix} 1 & \cdots  & 1 \end{matrix} \right)  } \\ \cdots  \\ \cdots  \\ \cdots  \end{matrix} \right] \overline { X } =\left( \begin{matrix} \frac { \sum _{ i=1 }^{ n }{ { X }_{ i } }  }{ \sqrt { n }  }  \\ 0 \\ \cdots  \\ 0 \end{matrix} \right) 
+$$
+
+结果中除第一维外都是 0，利用到正交阵的性质。
+
+**这一正交变换带来的好处是，变换后独立性仍保持，且减去均值未对独立性造成破坏，剩余的 n-1 个非零随机变量仍旧独立同分布于 N(0, 1)**。
+
+如此一来，我们可以放心的套用之前的计算方法，得到均值为 0，而标准差为 $$\frac { 1 }{ \sqrt { n-1 }  } $$。
+
+以下是 Matlab 仿真结果：
+
+```matlab 相关系数的均值、方差仿真
+array = [];
+n = 5;
+iter = 100000;
+for i = 1:iter
+x = normrnd(0,1,n,1);
+y = normrnd(0,1,n,1);
+array = [array, corr(x, y)];
+end
+avg = mean(array);
+avar = var(array);
+```
+
+10 万个相关系数样本，括号内为 $$\frac{1}{n - 1}$$ 的值
+
+5 维，单次运行均值为 -0.0054，方差为 0.2457（0.25）；
+
+11 维，单次运行均值为 0.0005，方差为 0.1013（0.1）；
+
+23 维，单次运行均值为 -0.0026，方差为 0.0458（0.0455）。
 
 ##其它经典题目
 
