@@ -17,9 +17,9 @@
 //    'retweet_img_url': ''
 //};
 
-var initDisplay = 20;
+var initDisplay = 4;
 var currentIndex = 0;
-var loadPerScroll = 8;
+var loadPerScroll = 4;
 var dataArray;
 var totalLen;
 
@@ -133,7 +133,7 @@ function waterfall() {
 
 function checkScrollSlide() {
     var $lastBox = $('#main>div').last();
-    var lastBoxDis = $lastBox.offset().top - 400;
+    var lastBoxDis = $lastBox.offset().top - 600;
     var scrollTop = $(window).scrollTop();
     var documentH = $(window).height();
     //console.log("lastBoxH - " + lastBoxDis);
