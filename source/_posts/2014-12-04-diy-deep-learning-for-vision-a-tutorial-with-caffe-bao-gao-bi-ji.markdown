@@ -21,7 +21,7 @@ __目录__
 
 报告时间是北京时间 12月14日 凌晨一点到两点，主讲人是 Caffe 团队的核心之一 Evan Shelhamer。第一次用 [GoToMeeting](http://www.gotomeeting.com/online/entry) 参加视频会议，效果真是不错。
 
-报告后分享出了 [视频]() 和 [展示文件]()（链接在收到邮件后会补上）。
+报告后分享出了 [视频](http://on-demand-gtc.gputechconf.com/gtcnew/on-demand-gtc.php?searchByKeyword=shelhamer&searchItems=&sessionTopic=&sessionEvent=4&sessionYear=2014&sessionFormat=&submit=&select=+) 和 [展示文件](http://on-demand.gputechconf.com/gtc/2014/webinar/gtc-express-deep-learning-caffee-evan-shelhamer.pdf)。另一讲座，cuDNN: Accelerating Convolutional Neural Networks using GPUs，[视频](http://on-demand-gtc.gputechconf.com/gtcnew/on-demand-gtc.php?searchByKeyword=cuDNN&searchItems=&sessionTopic=&sessionEvent=4&sessionYear=2014&sessionFormat=&submit=&select=+) 和 [展示文件](http://on-demand.gputechconf.com/gtc/2014/webinar/gtc-express-sharan-chetlur-cudnn-webinar.pdf) 也已放出。
 
 Caffe 此前听过没用过，所以报告前自己试运行了一下，参照 [官方教程](http://caffe.berkeleyvision.org/installation.html)。Caffe 安装、上手都很快，Protobuf 式的层定义很直观，模型修改或算法调整变得很容易，相当于只需要改配置文件。还找到了他们放在 Google Docs 上一个教程 PPT，[DIY Deep Learning for Vision: a Hands-On Tutorial with Caffe](https://docs.google.com/presentation/d/1UeKXVgRvvxg9OUdh_UiC5G71UMscNPlvArsWER41PsU/edit#slide=id.p) （已搬到 [墙里](/downloads/file/Caffe.pptx)），后来发现这次报告的 PPT 就是在这个基础上修改的。
 
