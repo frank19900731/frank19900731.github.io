@@ -19,7 +19,7 @@
 
 var initDisplay = 4;
 var currentIndex = 0;
-var loadPerScroll = 10;
+var loadPerScroll = 2;
 var dataArray;
 var totalLen;
 
@@ -64,7 +64,6 @@ $(window).on('load', function() {
 
 function insertCard(data) {
     var oBox = $('<div>').addClass('box').addClass('module').addClass('already-visible').addClass('come-in').appendTo($('#main'));
-    oBox.hide();
 
     // 添加阅读原微博链接
     var oBarFull = $('<div>').addClass('bar-full').appendTo(oBox);
@@ -110,10 +109,6 @@ function insertCard(data) {
 }
 
 function waterfall() {
-    waterfallF(true);
-}
-
-function waterfallF(flag) {
     var $boxes = $('#main>div'); // 匹配一级div
     var w = $boxes.eq(0).outerWidth();
     var cols = Math.floor($(window).width() / w);
@@ -132,9 +127,6 @@ function waterfallF(flag) {
                 'left': minHIndex * w + 'px'
             })
             hArr[minHIndex] += h;
-        }
-        if (flag) {
-            $(value).show();
         }
     })
 }
