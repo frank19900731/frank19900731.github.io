@@ -17,9 +17,9 @@
 //    'retweet_img_url': ''
 //};
 
-var initDisplay = 4;
+var initDisplay = 8;
 var currentIndex = 0;
-var loadPerScroll = 4;
+var loadPerScroll = 10;
 var dataArray;
 var totalLen;
 
@@ -64,6 +64,7 @@ $(window).on('load', function() {
 
 function insertCard(data) {
     var oBox = $('<div>').addClass('box').addClass('module').addClass('already-visible').addClass('come-in').appendTo($('#main'));
+    oBox.hide();
 
     // 添加阅读原微博链接
     var oBarFull = $('<div>').addClass('bar-full').appendTo(oBox);
@@ -109,6 +110,11 @@ function insertCard(data) {
 }
 
 function waterfall() {
+    setTimeout(waterfallF(false), 2000);
+    setTimeout(waterfallF(true), 2000);
+}
+
+function waterfallF(flag) {
     var $boxes = $('#main>div'); // 匹配一级div
     var w = $boxes.eq(0).outerWidth();
     var cols = Math.floor($(window).width() / w);
@@ -127,6 +133,9 @@ function waterfall() {
                 'left': minHIndex * w + 'px'
             })
             hArr[minHIndex] += h;
+        }
+        if (flag) {
+            $(value).show();
         }
     })
 }
