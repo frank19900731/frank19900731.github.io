@@ -17,7 +17,7 @@
 //    'retweet_img_url': ''
 //};
 
-var initDisplay = 8;
+var initDisplay = 4;
 var currentIndex = 0;
 var loadPerScroll = 10;
 var dataArray;
@@ -110,8 +110,7 @@ function insertCard(data) {
 }
 
 function waterfall() {
-    setTimeout(waterfallF(false), 2000);
-    setTimeout(waterfallF(true), 2000);
+    waterfallF(true);
 }
 
 function waterfallF(flag) {
