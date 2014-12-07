@@ -17,9 +17,9 @@
 //    'retweet_img_url': ''
 //};
 
-var initDisplay = 4;
+var initDisplay = 8;
 var currentIndex = 0;
-var loadPerScroll = 2;
+var loadPerScroll = 8;
 var dataArray;
 var totalLen;
 
