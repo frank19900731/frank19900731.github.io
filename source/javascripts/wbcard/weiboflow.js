@@ -19,7 +19,7 @@
 
 var initDisplay = 4;
 var currentIndex = 0;
-var loadPerScroll = 4;
+var loadPerScroll = 2;
 var dataArray;
 var totalLen;
 
