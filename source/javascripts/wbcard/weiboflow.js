@@ -19,11 +19,37 @@
 //    'retweet_img_size': '120,120'
 //};
 
+
+var isMobile = {
+    Android: function() {
+        return navigator.userAgent.match(/Android/i) ? true : false;
+    },
+    BlackBerry: function() {
+        return navigator.userAgent.match(/BlackBerry/i) ? true : false;
+    },
+    iOS: function() {
+        return navigator.userAgent.match(/iPhone|iPad|iPod/i) ? true : false;
+    },
+    Windows: function() {
+        return navigator.userAgent.match(/IEMobile/i) ? true : false;
+    },
+    any: function() {
+        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Windows());
+    }
+};
+
 var initDisplay = 20;
 var currentIndex = 0;
 var loadPerScroll = 30;
+var fadeInTime = 2000;
 var dataArray;
 var totalLen;
+var mobile = isMobile.any()
+
+if( mobile )
+{
+    loadPerScroll = 2;
+}
 
 //var jsonFile = "json/" + $.query.get('year') + ".json";
 $.getJSON("/json/2014.json", function(data) {
@@ -78,6 +104,9 @@ function calHeight(size) {
 
 function insertCard(data) {
     var oBox = $('<div>').addClass('box').addClass('module').addClass('already-visible').addClass('come-in').appendTo($('#main'));
+    if (!mobile) {
+        oBox.css('opacity', 0);
+    }
 
     // 添加阅读原微博链接
     var oBarFull = $('<div>').addClass('bar-full').appendTo(oBox);
@@ -119,6 +148,12 @@ function insertCard(data) {
             var oImgUp = $('<a>').addClass('img_up').attr('href', data.img_url).appendTo(oImgCenter);
             $('<img>').addClass('post_img').attr('src', data.img_url).css({'height': calHeight(data.img_size)}).appendTo(oImgUp);
         }
+    }
+
+    if(!mobile) {
+        oBox.animate({
+            opacity: 1
+        }, fadeInTime, "swing")
     }
 }
 
