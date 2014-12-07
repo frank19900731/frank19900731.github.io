@@ -41,12 +41,14 @@ var isMobile = {
 var initDisplay = 20;
 var currentIndex = 0;
 var loadPerScroll = 30;
+var fadeInTime = 2000;
 var dataArray;
 var totalLen;
 
 if( isMobile.any() )
 {
-    loadPerScroll = 8;
+    loadPerScroll = 2;
+    fadeInTime = 500;
 }
 
 //var jsonFile = "json/" + $.query.get('year') + ".json";
@@ -148,7 +150,7 @@ function insertCard(data) {
 
     oBox.animate({
         opacity: 1
-    }, 2000, "swing")
+    }, fadeInTime, "swing")
 }
 
 function waterfall() {
