@@ -64,6 +64,7 @@ $(window).on('load', function() {
 
 function insertCard(data) {
     var oBox = $('<div>').addClass('box').addClass('module').addClass('already-visible').addClass('come-in').appendTo($('#main'));
+    oBox.hide(); // 先隐藏，等待图片加载完毕
 
     // 添加阅读原微博链接
     var oBarFull = $('<div>').addClass('bar-full').appendTo(oBox);
@@ -96,14 +97,18 @@ function insertCard(data) {
         $('<p>').addClass('left_text').text(data.retweet_text).appendTo(oRetweet);
         if (data.retweet_img_url != undefined) { // 如果转发的微博有图片
             var oImgUp = $('<a>').addClass('img_up').attr('href', data.retweet_img_url).appendTo(oRetweet);
-            $('<img>').addClass('post_img').attr('src', data.retweet_img_url).appendTo(oImgUp);
+            $('<img>').addClass('post_img').attr('src', data.retweet_img_url).appendTo(oImgUp).load(function() {
+                oBox.show();
+            });
         }
     } else { // 转发的时候发不了图片
         // 添加图片，可能没有
         if (data.img_url != undefined) {
             var oImgCenter = $('<div>').addClass('img_center').appendTo(oContent);
             var oImgUp = $('<a>').addClass('img_up').attr('href', data.img_url).appendTo(oImgCenter);
-            $('<img>').addClass('post_img').attr('src', data.img_url).appendTo(oImgUp);
+            $('<img>').addClass('post_img').attr('src', data.img_url).appendTo(oImgUp).load(function() {
+                oBox.show();
+            });
         }
     }
 }
