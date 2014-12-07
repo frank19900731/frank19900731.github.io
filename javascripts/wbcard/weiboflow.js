@@ -10,16 +10,18 @@
 //    'poster_link': 'http://weibo.com/frank19900731',
 //    'text': 'abcdefg,haha',
 //    'img_url': 'http://ww3.sinaimg.cn/large/744779d6jw1elom0gzy2lj20k90h444g.jpg',
+//    'img_size': '120,120',
 //
 //    'retweet_poster_name': '',
 //    'retweet_poster_link': '',
 //    'retweet_text': '',
-//    'retweet_img_url': ''
+//    'retweet_img_url': '',
+//    'retweet_img_size': '120,120'
 //};
 
-var initDisplay = 8;
+var initDisplay = 20;
 var currentIndex = 0;
-var loadPerScroll = 8;
+var loadPerScroll = 30;
 var dataArray;
 var totalLen;
 
@@ -62,6 +64,18 @@ $(window).on('load', function() {
     })
 })
 
+function calHeight(size) {
+    var arr = size.split(",");
+    var width = parseInt(arr[0]);
+    var height = parseInt(arr[1]);
+    if (Math.floor(120 * width / height) <= 200) { // 计算得到的宽度太大
+        return "120px";
+    } else {
+        height = Math.floor(200 * height / width);
+        return height + "px";
+    }
+}
+
 function insertCard(data) {
     var oBox = $('<div>').addClass('box').addClass('module').addClass('already-visible').addClass('come-in').appendTo($('#main'));
 
@@ -96,14 +110,14 @@ function insertCard(data) {
         $('<p>').addClass('left_text').text(data.retweet_text).appendTo(oRetweet);
         if (data.retweet_img_url != undefined) { // 如果转发的微博有图片
             var oImgUp = $('<a>').addClass('img_up').attr('href', data.retweet_img_url).appendTo(oRetweet);
-            $('<img>').addClass('post_img').attr('src', data.retweet_img_url).appendTo(oImgUp);
+            $('<img>').addClass('post_img').attr('src', data.retweet_img_url).css({'height': calHeight(data.retweet_img_size)}).appendTo(oImgUp);
         }
     } else { // 转发的时候发不了图片
         // 添加图片，可能没有
         if (data.img_url != undefined) {
             var oImgCenter = $('<div>').addClass('img_center').appendTo(oContent);
             var oImgUp = $('<a>').addClass('img_up').attr('href', data.img_url).appendTo(oImgCenter);
-            $('<img>').addClass('post_img').attr('src', data.img_url).appendTo(oImgUp);
+            $('<img>').addClass('post_img').attr('src', data.img_url).css({'height': calHeight(data.img_size)}).appendTo(oImgUp);
         }
     }
 }
@@ -133,7 +147,7 @@ function waterfall() {
 
 function checkScrollSlide() {
     var $lastBox = $('#main>div').last();
-    var lastBoxDis = $lastBox.offset().top - 600;
+    var lastBoxDis = $lastBox.offset().top + 300;
     var scrollTop = $(window).scrollTop();
     var documentH = $(window).height();
     //console.log("lastBoxH - " + lastBoxDis);
