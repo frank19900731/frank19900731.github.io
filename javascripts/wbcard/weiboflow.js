@@ -44,11 +44,11 @@ var loadPerScroll = 30;
 var fadeInTime = 2000;
 var dataArray;
 var totalLen;
+var mobile = isMobile.any()
 
-if( isMobile.any() )
+if( mobile )
 {
     loadPerScroll = 2;
-    fadeInTime = 500;
 }
 
 //var jsonFile = "json/" + $.query.get('year') + ".json";
@@ -104,7 +104,9 @@ function calHeight(size) {
 
 function insertCard(data) {
     var oBox = $('<div>').addClass('box').addClass('module').addClass('already-visible').addClass('come-in').appendTo($('#main'));
-    oBox.css('opacity', 0);
+    if (!mobile) {
+        oBox.css('opacity', 0);
+    }
 
     // 添加阅读原微博链接
     var oBarFull = $('<div>').addClass('bar-full').appendTo(oBox);
@@ -148,9 +150,11 @@ function insertCard(data) {
         }
     }
 
-    oBox.animate({
-        opacity: 1
-    }, fadeInTime, "swing")
+    if(!mobile) {
+        oBox.animate({
+            opacity: 1
+        }, fadeInTime, "swing")
+    }
 }
 
 function waterfall() {
