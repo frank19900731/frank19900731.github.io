@@ -41,7 +41,7 @@ var isMobile = {
 var initDisplay = 20;
 var currentIndex = 0;
 var loadPerScroll = 30;
-var fadeInTime = 500;
+var fadeInTime = 2000;
 var dataArray;
 var totalLen;
 var currentYear = 2014;
