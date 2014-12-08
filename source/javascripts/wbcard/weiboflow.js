@@ -41,7 +41,7 @@ var isMobile = {
 var initDisplay = 20;
 var currentIndex = 0;
 var loadPerScroll = 30;
-var fadeInTime = 500;
+var fadeInTime = 2000;
 var dataArray;
 var totalLen;
 var currentYear = 2014;
@@ -52,7 +52,7 @@ if( mobile )
     loadPerScroll = 8;
 }
 
-jsonLoad("json/2014.json");
+jsonLoad("/json/2014.json");
 
 $(window).on('load', function() {
     $('.img_up').fancybox({
@@ -102,7 +102,7 @@ function jumpTo(year) {
         $('<div>').attr('id', 'main').appendTo($('#row'));
         $("html, body").animate({ scrollTop: 0 }, 120);
         currentIndex = 0;
-        jsonLoad("json/" + year + ".json");
+        jsonLoad("/json/" + year + ".json");
         currentYear = year;
     }
 }
