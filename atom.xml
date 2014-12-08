@@ -4,7 +4,7 @@
   <title><![CDATA[Blog of 太极儒]]></title>
   <link href="http://frank19900731.github.io/atom.xml" rel="self"/>
   <link href="http://frank19900731.github.io/"/>
-  <updated>2014-12-07T20:16:12+08:00</updated>
+  <updated>2014-12-08T12:27:13+08:00</updated>
   <id>http://frank19900731.github.io/</id>
   <author>
     <name><![CDATA[Frank Song]]></name>
@@ -168,6 +168,8 @@
 <p><strong>Q: do you have an online examples of unsupervised losses</strong></p>
 
 <p><strong>A:</strong> For unsupevised losses and training there is a bundled example of an MNIST autoencoder.</p>
+
+<p>更多的问答（60+）请参见主办方提供的 <a href="http://frank19900731.github.io/downloads/file/Q&amp;A_Transcript.docx">Q&amp;A Transcript</a>。</p>
 
 <h2 id="section-3">总结</h2>
 
@@ -1962,6 +1964,10 @@
   <li>吃喝玩乐</li>
   <li>其它知识</li>
 </ol>
+
+<p><strong>2014年12月8日第一次修订</strong></p>
+
+<p><strong>信息科学</strong> 一级分类 中补充 <strong>数据库</strong> 二级分类。</p>
 
 <p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2014/11/20/pocket-lei-mu-biao-qian-de-zhi-ding/">http://frank19900731.github.io/blog/2014/11/20/pocket-lei-mu-biao-qian-de-zhi-ding/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
 ]]></content>

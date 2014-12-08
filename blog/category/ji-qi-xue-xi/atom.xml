@@ -4,7 +4,7 @@
   <title><![CDATA[Category: 机器学习 | Blog of 太极儒]]></title>
   <link href="http://frank19900731.github.io/blog/category/ji-qi-xue-xi/atom.xml" rel="self"/>
   <link href="http://frank19900731.github.io/"/>
-  <updated>2014-12-07T20:16:12+08:00</updated>
+  <updated>2014-12-08T12:27:13+08:00</updated>
   <id>http://frank19900731.github.io/</id>
   <author>
     <name><![CDATA[Frank Song]]></name>
@@ -168,6 +168,8 @@
 <p><strong>Q: do you have an online examples of unsupervised losses</strong></p>
 
 <p><strong>A:</strong> For unsupevised losses and training there is a bundled example of an MNIST autoencoder.</p>
+
+<p>更多的问答（60+）请参见主办方提供的 <a href="/downloads/file/Q&amp;A_Transcript.docx">Q&amp;A Transcript</a>。</p>
 
 <h2 id="section-3">总结</h2>
 
