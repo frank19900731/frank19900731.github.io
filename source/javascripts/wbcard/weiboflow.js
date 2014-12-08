@@ -41,9 +41,10 @@ var isMobile = {
 var initDisplay = 20;
 var currentIndex = 0;
 var loadPerScroll = 30;
-var fadeInTime = 2000;
+var fadeInTime = 500;
 var dataArray;
 var totalLen;
+var currentYear = 2014;
 var mobile = isMobile.any()
 
 if( mobile )
@@ -51,16 +52,9 @@ if( mobile )
     loadPerScroll = 8;
 }
 
-//var jsonFile = "json/" + $.query.get('year') + ".json";
-$.getJSON("/json/2014.json", function(data) {
-    dataArray = data;
-    totalLen = dataArray.length;
-    $.each(data, function(index, value) {
-        if (index < initDisplay) {
-            insertCard(value);
-            currentIndex += 1;
-        }
-    })
+jsonLoad("json/2014.json");
+
+$(window).on('load', function() {
     $('.img_up').fancybox({
         helpers: {
             overlay: {
@@ -68,10 +62,7 @@ $.getJSON("/json/2014.json", function(data) {
             }
         }
     });
-    waterfall();
-})
 
-$(window).on('load', function() {
     waterfall();
     $(window).on('scroll', function() {
         if(checkScrollSlide()) {
@@ -90,7 +81,34 @@ $(window).on('load', function() {
     })
 })
 
+function jsonLoad(jsonFile) {
+    //var jsonFile = "json/" + $.query.get('year') + ".json";
+    $.getJSON(jsonFile, function(data) {
+        dataArray = data;
+        totalLen = dataArray.length;
+        $.each(data, function(index, value) {
+            if (index < initDisplay) {
+                insertCard(value);
+                currentIndex += 1;
+            }
+        })
+        waterfall();
+    })
+}
+
+function jumpTo(year) {
+    if (year != currentYear) {
+        $('#main').remove();
+        $('<div>').attr('id', 'main').appendTo($('#row'));
+        $("html, body").animate({ scrollTop: 0 }, 120);
+        currentIndex = 0;
+        jsonLoad("json/" + year + ".json");
+        currentYear = year;
+    }
+}
+
 function calHeight(size) {
+    console.log(size);
     var arr = size.split(",");
     var width = parseInt(arr[0]);
     var height = parseInt(arr[1]);
@@ -129,14 +147,14 @@ function insertCard(data) {
 
     // 添加正文
     $('<hr>').appendTo(oContent);
-    $('<p>').text(data.text).appendTo(oContent);
+    $('<p>').html(data.text).appendTo(oContent);
 
     // 添加转发的微博，可能没有
     if (data.retweet_text != undefined) {
         var oRetweet = $('<div>').addClass('retweet_post').appendTo(oContent);
         var oPleft = $('<p>').addClass('left_text').appendTo(oRetweet);
         $('<a>').attr('href', data.retweet_poster_link).attr('target', '_blank').text(data.retweet_poster_name).appendTo(oPleft);
-        $('<p>').addClass('left_text').text(data.retweet_text).appendTo(oRetweet);
+        $('<p>').addClass('left_text').html(data.retweet_text).appendTo(oRetweet);
         if (data.retweet_img_url != undefined) { // 如果转发的微博有图片
             var oImgUp = $('<a>').addClass('img_up').attr('href', data.retweet_img_url).appendTo(oRetweet);
             $('<img>').addClass('post_img').attr('src', data.retweet_img_url).css({'height': calHeight(data.retweet_img_size)}).appendTo(oImgUp);
@@ -146,6 +164,8 @@ function insertCard(data) {
         if (data.img_url != undefined) {
             var oImgCenter = $('<div>').addClass('img_center').appendTo(oContent);
             var oImgUp = $('<a>').addClass('img_up').attr('href', data.img_url).appendTo(oImgCenter);
+            console.log(data['img_url']);
+            console.log(data['img_size']);
             $('<img>').addClass('post_img').attr('src', data.img_url).css({'height': calHeight(data.img_size)}).appendTo(oImgUp);
         }
     }
@@ -178,6 +198,8 @@ function waterfall() {
             hArr[minHIndex] += h;
         }
     })
+
+    $('body').css('height', (Math.max.apply(null, hArr) + 50) + 'px');
 }
 
 function checkScrollSlide() {
