@@ -48,7 +48,7 @@ var mobile = isMobile.any()
 
 if( mobile )
 {
-    loadPerScroll = 2;
+    loadPerScroll = 8;
 }
 
 //var jsonFile = "json/" + $.query.get('year') + ".json";

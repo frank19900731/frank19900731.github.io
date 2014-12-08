@@ -153,6 +153,8 @@ Caffe 的团队，拜 Yangqing Jia 师兄……
 
 **A:** For unsupevised losses and training there is a bundled example of an MNIST autoencoder.
 
+更多的问答（60+）请参见主办方提供的 [Q&A Transcript](/downloads/file/Q&A_Transcript.docx)。
+
 ##总结
 
 “盗取”一页 PPT 作为本文总结。
