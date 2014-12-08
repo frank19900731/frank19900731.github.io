@@ -13,15 +13,20 @@ exclude_from_search: true
 
 **2014年12月**
 
+- 12.21 —— [开发者最佳实践日·第8期－互联网产品从设计到上线](http://www.huodongxing.com/event/reg_submit?id=2259553711300)
 - 12.21 —— [百度技术沙龙第五十七期：新时代的前端](http://www.huodongxing.com/event/1258707248200)
 - 12.19 —— [真实的云计算](http://www.huodongxing.com/event/1257701520000)
 - 12.18 —— [2014第四届中国计算机技术大会](http://www.huodongxing.com/event/4253505195800)
 - 12.18 —— [开放物联网大会](http://www.huodongxing.com/event/6258147179100)
-- 12.16 —— [【数盟盛典】首届中国数据科学家峰会](http://www.huodongxing.com/event/9258009835300)
+- 12.16 —— [无穷沙龙第20期 通往万物互联之路：硬件O2O如何破局](http://www.huodongxing.com/event/reg_submit?id=4259549601700)
+- 12.16 —— [【数盟盛典】首届中国数据科学家峰会](http://www.huodongxing.com/event/9258009835300)，**已延期**
+- 12.14 —— 【深度学习哪家强？ 百度阿里“深度”碰撞】 漆远、余凯主讲 时间 12月14日下午2点 北京大学理教302
 - 12.14 —— [Couchbase NoSQL技术沙龙](http://www.huodongxing.com/event/6257860025900)
 - 12.13 —— [Spark 北京 Meetup 第四次活动（SparkSQL专题）](http://www.meetup.com/spark-user-beijing-Meetup/events/218888111/)
 - 12.13 —— [IT桔子沙龙第29期（北京）：在线旅游创业投资新趋势探讨](http://www.huodongxing.com/event/2258729501900)
 - 12.11 —— [您的 App 准备好了吗？- App 集成 IM 最佳实践](http://www.huodongxing.com/event/4258310574200)
+- 12.11 —— [红帽原厂培训免费听！--Docker技术分享](http://www.huodongxing.com/event/reg_submit?id=9259557837500)
+- 12.9 —— [兴趣社交——移动社交的下一站](http://www.huodongxing.com/event/reg_submit?id=1259152345100)
 - 12.7 —— [即兴喜剧——带你嗨皮 带你飞](http://www.huodongxing.com/event/9258867427800)，话说 朗园Vintage 新奇特活动真多
 - 12.6 —— [搜狐云景第一期技术公开课：公有云PaaS平台实践之路](http://www.huodongxing.com/event/reg_submit?id=7255858320100)
 - 12.5 —— [午夜真梦｜真格基金“真歌与真言”发布会](http://www.huodongxing.com/event/8258825208100)，活动时间是**12月5日 23:30 ～ 12月6日 1:30**！
