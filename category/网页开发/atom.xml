@@ -1,5 +1,31 @@
 
 <item>
+    <title>微博卡片 — 微博收藏的可视化</title>
+    <link>http://realjenius.com/blog/2014/12/09/wei-bo-qia-pian-wei-bo-shou-cang-de-ke-shi-hua/</link>
+    <author>R.J. Lorimer</author>
+    <pubDate>2014-12-09T15:23:26+08:00</pubDate>
+    <guid>http://realjenius.com/blog/2014/12/09/wei-bo-qia-pian-wei-bo-shou-cang-de-ke-shi-hua/</guid>
+    <description><![CDATA[
+     <!-- excerpt start -->
+
+<p>平时自己会有一些新浪微博的收藏，主要是跟自己专业、兴趣相关的资讯、资料，随着积累的增多，如何有效回顾这些收藏成为了一个问题。</p>
+
+<p>使用新浪微博自带的收藏页面，感觉翻页浏览不便；后来会在收藏的同时，把微博内容、图片分门别类拷贝到笔记中，但又不便于可视化。于是萌生了自己做一个微博可视化页面的想法，采用较为流行的瀑布流布局，每一条微博以卡片的形式展示。给出 <a href="https://github.com/frank19900731/weibocard">项目地址</a>  和 <a href="http://frank19900731.github.io/weibocard-demo/">Demo</a>。</p>
+
+<p><a href="http://frank19900731.github.io/img/post/2014-12/25.png" class="img-up" title="微博卡片 Demo"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-12/25.png" width="80%" title="微博卡片 Demo" /></a></p>
+
+<p>项目使用新浪微博 Python SDK 抓取已收藏的微博，mongodb 做存储，根据查询条件生成 json 文件供前端可视化，前端瀑布流是从 <a href="http://www.imooc.com/learn/101">这门课</a> 中学到的。多说一句，慕课网里关于前端的教学内容非常丰富，很适合我这种半瓶醋选手……</p>
+
+<p>我只简单地实现了时间区间的提取，不过有了微博数据和可视化骨架在，定制精细化的整理、阅读方式应该不难。</p>
+
+<!-- excerpt end -->
+
+<p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2014/12/09/wei-bo-qia-pian-wei-bo-shou-cang-de-ke-shi-hua/">http://frank19900731.github.io/blog/2014/12/09/wei-bo-qia-pian-wei-bo-shou-cang-de-ke-shi-hua/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
+
+  ]]></description>
+</item>
+
+<item>
     <title>Octopress 改造记录</title>
     <link>http://realjenius.com/blog/2014/10/16/octopress-gai-zao-ji-lu/</link>
     <author>R.J. Lorimer</author>
