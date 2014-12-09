@@ -56,8 +56,8 @@
       <file leaf-file-name="weiboflow-demo.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/javascripts/wbcard/weiboflow-demo.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.39020538" vertical-offset="456" max-vertical-offset="3857">
-              <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.57030016" vertical-offset="456" max-vertical-offset="3857">
+              <caret line="43" column="13" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -272,7 +272,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="730" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -619,16 +619,16 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="133">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding>
-            <element signature="e#15458#15619#1" expanded="true" />
-            <element signature="e#15991#16152#1" expanded="true" />
-            <element signature="e#16215#16376#1" expanded="true" />
-            <element signature="e#16604#16765#1" expanded="true" />
-            <element signature="e#17773#17934#1" expanded="true" />
-            <element signature="e#19007#19168#1" expanded="true" />
-            <element signature="e#19627#19788#1" expanded="true" />
-            <element signature="e#32546#32707#1" expanded="true" />
-            <element signature="e#37040#38905#1" expanded="true" />
-            <element signature="e#39042#39891#1" expanded="true" />
+            <element signature="e#15458#15619#1" expanded="false" />
+            <element signature="e#15991#16152#1" expanded="false" />
+            <element signature="e#16215#16376#1" expanded="false" />
+            <element signature="e#16604#16765#1" expanded="false" />
+            <element signature="e#17773#17934#1" expanded="false" />
+            <element signature="e#19007#19168#1" expanded="false" />
+            <element signature="e#19627#19788#1" expanded="false" />
+            <element signature="e#32546#32707#1" expanded="false" />
+            <element signature="e#37040#38905#1" expanded="false" />
+            <element signature="e#39042#39891#1" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -693,8 +693,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/javascripts/wbcard/weiboflow-demo.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.39020538" vertical-offset="456" max-vertical-offset="3857">
-          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.57030016" vertical-offset="456" max-vertical-offset="3857">
+          <caret line="43" column="13" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
           <folding />
         </state>
       </provider>
