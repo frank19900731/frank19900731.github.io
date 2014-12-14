@@ -143,6 +143,12 @@
         <lastmod>2014-12-09T15:47:50+08:00</lastmod>
     </url>
     <url>
+        <loc>
+            http://frank19900731.github.io/blog/2014/12/14/mei-zhou-ruan-zhi-ri-ji-ruan-jian-chronories/
+        </loc>
+        <lastmod>2014-12-14T19:46:55+08:00</lastmod>
+    </url>
+    <url>
         <loc>http://frank19900731.github.io/404.html</loc>
         <lastmod>2014-11-20T10:59:16+08:00</lastmod>
     </url>
@@ -156,7 +162,7 @@
     </url>
     <url>
         <loc>http://frank19900731.github.io/archives/</loc>
-        <lastmod>2014-12-09T15:47:50+08:00</lastmod>
+        <lastmod>2014-12-14T19:46:55+08:00</lastmod>
     </url>
     <url>
         <loc>http://frank19900731.github.io/assets/bootstrap/docs/about.html</loc>
@@ -180,7 +186,7 @@
     </url>
     <url>
         <loc>http://frank19900731.github.io/assets/bootstrap/docs/</loc>
-        <lastmod>2014-12-09T15:47:50+08:00</lastmod>
+        <lastmod>2014-12-14T19:46:55+08:00</lastmod>
     </url>
     <url>
         <loc>http://frank19900731.github.io/assets/bootstrap/docs/javascript.html</loc>
@@ -192,15 +198,15 @@
     </url>
     <url>
         <loc>http://frank19900731.github.io/blog/categories/</loc>
-        <lastmod>2014-12-09T15:47:50+08:00</lastmod>
+        <lastmod>2014-12-14T19:46:55+08:00</lastmod>
     </url>
     <url>
         <loc>http://frank19900731.github.io/blog/</loc>
-        <lastmod>2014-12-09T15:47:50+08:00</lastmod>
+        <lastmod>2014-12-14T19:46:55+08:00</lastmod>
     </url>
     <url>
         <loc>http://frank19900731.github.io/blog/tags/</loc>
-        <lastmod>2014-12-09T15:47:50+08:00</lastmod>
+        <lastmod>2014-12-14T19:46:55+08:00</lastmod>
     </url>
     <url>
         <loc>http://frank19900731.github.io/booklist/</loc>
@@ -212,7 +218,7 @@
     </url>
     <url>
         <loc>http://frank19900731.github.io/</loc>
-        <lastmod>2014-12-09T15:47:50+08:00</lastmod>
+        <lastmod>2014-12-14T19:46:55+08:00</lastmod>
     </url>
     <url>
         <loc>http://frank19900731.github.io/movielist/</loc>
@@ -377,11 +383,17 @@
         <lastmod>2014-12-09T15:48:42+08:00</lastmod>
     </url>
     <url>
+        <loc>
+            http://frank19900731.github.io/wx/2014-12-14-mei-zhou-ruan-zhi-ri-ji-ruan-jian-chronories.html
+        </loc>
+        <lastmod>2014-12-14T19:47:45+08:00</lastmod>
+    </url>
+    <url>
         <loc>http://frank19900731.github.io/wx/archives/</loc>
-        <lastmod>2014-12-09T15:47:50+08:00</lastmod>
+        <lastmod>2014-12-14T19:46:55+08:00</lastmod>
     </url>
     <url>
         <loc>http://frank19900731.github.io/archives//</loc>
-        <lastmod>2014-12-09T15:47:50+08:00</lastmod>
+        <lastmod>2014-12-14T19:46:55+08:00</lastmod>
     </url>
 </urlset>
