@@ -804,7 +804,14 @@
 <ul>
   <li>不要纠结于是否是最佳思路，要保证能在 10-15 分钟内给出一个解决方案，并分析复杂度；</li>
   <li>基础的可以读读 <a href="http://weibo.com/julyweibo?topnav=1&amp;wvr=6&amp;topsug=1">@研究者July</a> 的这本 <a href="http://frank19900731.github.io/ebook/the-art-of-programming-by-july/index.html">电子书</a>，更深入的可以阅读 CSDN 等博客中大牛们写的 ACM 解题报告；</li>
-  <li><a href="http://www.hihocoder.com/">hihocoder</a>、<a href="http://www.topcoder.com/">topcoder</a>、<a href="https://oj.leetcode.com/">leetcode</a>、<a href="https://codility.com/">codility</a>、<a href="http://poj.org/">POJ</a> 等网站择一练手。</li>
+  <li><a href="http://www.hihocoder.com/">hihocoder</a>、<a href="http://www.topcoder.com/">topcoder</a>、<a href="https://oj.leetcode.com/">leetcode</a>、<a href="https://codility.com/">codility</a>、<a href="http://poj.org/">POJ</a> 等网站择一练手;</li>
+  <li><a href="https://github.com/soulmachine">Soulmachine</a> 在 Github 中有高质量的学习资料，适合系统学习 &amp; 临时抱佛脚
+    <ul>
+      <li><a href="https://github.com/soulmachine/leetcode">LeetCode 题解</a></li>
+      <li><a href="https://github.com/soulmachine/acm-cheat-sheet">ACM Cheat Sheet</a></li>
+      <li><a href="https://github.com/soulmachine/hackerrank">HackerRank题解</a></li>
+    </ul>
+  </li>
 </ul>
 
 <h2 id="section-13">开放题目</h2>
