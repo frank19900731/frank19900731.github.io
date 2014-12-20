@@ -4,7 +4,7 @@
   <title><![CDATA[Blog of 太极儒]]></title>
   <link href="http://frank19900731.github.io/atom.xml" rel="self"/>
   <link href="http://frank19900731.github.io/"/>
-  <updated>2014-12-20T11:58:26+08:00</updated>
+  <updated>2014-12-20T21:28:15+08:00</updated>
   <id>http://frank19900731.github.io/</id>
   <author>
     <name><![CDATA[Frank Song]]></name>
@@ -12,6 +12,86 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Wunderlist 添加快捷键启动]]></title>
+    <link href="http://frank19900731.github.io/blog/2014/12/20/wunderlist-tian-jia-kuai-jie-jian-qi-dong/"/>
+    <updated>2014-12-20T19:36:23+08:00</updated>
+    <id>http://frank19900731.github.io/blog/2014/12/20/wunderlist-tian-jia-kuai-jie-jian-qi-dong</id>
+    <content type="html"><![CDATA[<!-- excerpt start -->
+<p>Wunderlist 可以设置全局快捷键快速添加新条目。按下快捷键，Wunderlist 软件启动，定位到 Index 组、 Add an item 输入框。</p>
+
+<p><a href="http://frank19900731.github.io/img/post/2014-12/33.png" class="img-up" title="Wunderlist 添加新条目"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-12/33.png" width="90%" title="Wunderlist 添加新条目" /></a></p>
+
+<p>这个功能其实一直被我用于 Wunderlist 的快速启动（在Dock里隐藏了…）。然而在 Wunderlist 的最近一次更新中，<strong>全局添加新条目不再能进入软件主体界面，而代之以快速输入框</strong>。</p>
+
+<p><a href="http://frank19900731.github.io/img/post/2014-12/32.png" class="img-up" title="Wunderlist 添加新条目"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-12/32.png" width="60%" title="Wunderlist 添加新条目" /></a></p>
+
+<p>考虑到依靠快捷键进入 Wunderlist 主界面的习惯已经根深蒂固，而 Wunderlist 本身又不再提供类似的功能，只能自己想办法。</p>
+
+<p>一种方式是借助 Alfred/Quicksilver 进行快速搜索，不过我还是懒得打字。然后想到了在 <code>System Preferences -&gt; Keyboard -&gt; Shortcuts</code> 里添加快捷键，不过支持用户自定义的只能是该程序菜单中已有的命令（但没有对应快捷键），而且还不是全局的。</p>
+
+<p>最后这个小任务是通过使用 Automator 定制了一个 Service 并关联快捷键完成的。</p>
+
+<!-- excerpt end -->
+
+<p>Automator 是 Mac 自带软件中的一个神器，顾名思义是能够将我们从繁重的体力活里解脱出来的，让电脑自动执行既定任务。此前用它做过文件重命名、图片尺寸批量调整的任务。</p>
+
+<p>Automator 可以创制不同种类的文件，但本质上都是工作流，遵循 <code>Input -&gt; Step-1 -&gt; Step-2 …</code> 的处理模式。其中，Application 除没有软件界面，与真实软件无二，可以显示于 Launchpad 和 Dock 中，而 Service 是这次任务所需要的。</p>
+
+<p><a href="http://frank19900731.github.io/img/post/2014-12/34.png" class="img-up" title="Automator 创建新文件"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-12/34.png" width="60%" title="Automator 创建新文件" /></a></p>
+
+<p>Automator 相当于一个拖拽式应用开发 IDE。在搜索框中输入 launch，将 Launch Application 拖拽到右边。Service 的输入选择 no input，而 Lanuch Application 自然选择 Wunderlist。保存文件，只需要指定文件名，因为保存目录默认是 <code>~/Library/Services</code>。</p>
+
+<p><a href="http://frank19900731.github.io/img/post/2014-12/35.png" class="img-up" title="Automator Service"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-12/35.png" width="90%" title="Automator Service" /></a></p>
+
+<p>此时在应用菜单的 Services 中就可以看到刚才创建的 Service（launch wunderlist），点击即可打开 Wunderlist 主界面。然而，并不是任意程序都有 Services 这一菜单项的，目前只发现了<strong>爱奇艺、搜狐影音客户端这两朵奇葩</strong>。</p>
+
+<p><a href="http://frank19900731.github.io/img/post/2014-12/36.png" class="img-up" title="Service"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-12/36.png" width="70%" title="Service" /></a></p>
+
+<p>接下来的任务就是给这个 Service 关联快捷键，在 <code>System Preferences -&gt; Keyboard -&gt; Shortcuts -&gt; Services</code> 中找到 General，其中就有我们刚才创建的 Service，设置快捷键即可。</p>
+
+<p><a href="http://frank19900731.github.io/img/post/2014-12/37.png" class="img-up" title="为 Service 添加快捷键"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-12/37.png" width="70%" title="为 Service 添加快捷键" /></a></p>
+
+<p>如法炮制，我们可以给 Hide All Applications 设置快捷键，相当于显示桌面的功能。然而在使用过程中发现，<strong>唯独在按下快捷键时处于 Focus 状态的窗口无法最小化，所以只能再跟着按一次 Command + M</strong>…</p>
+
+<p>Automator 给我们封装了很多模块功能，但不可能覆盖到所有的用户需求，所以支持用户脚本，脚本种类可以是 Apple Script、JavaScript、Shell Script（<strong>包括 Perl、Python、Ruby</strong>）。</p>
+
+<p>上面我们用到的启动应用程序的模块，相当于运行如下 Apple Script</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>启动应用程序</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class="applescript"><span class="line"><span class="k">tell</span> <span class="nb">application</span> <span class="s2">&quot;Wunderlist&quot;</span> <span class="k">to</span> <span class="nb">launch</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>还有很多日常工作可以通过使用 Automator 来简化，比如</p>
+
+<ul>
+  <li>文件批量重命名；</li>
+  <li>图片批量尺寸调整，生成缩略图；</li>
+  <li><a href="http://luisroman.nl/post/40857635243/automating-ssh-logins-with-autossh-automator-and">开机自动 SSH 登录</a>；</li>
+  <li>快速打开一系列软件、网页；</li>
+  <li>一键退出所有程序；</li>
+  <li>根据选择的文本创建文件；</li>
+  <li>……</li>
+</ul>
+
+<p>当然，更多复杂功能的实现还有赖于对 Apple Script 等脚本的掌握。</p>
+
+<p>【阅读推荐】</p>
+
+<ul>
+  <li><a href="https://help.apple.com/automator/mac/10.10/index.html?localePath=en.lproj%23/aut6e8156d85">Automator Help</a></li>
+  <li><a href="http://computers.tutsplus.com/tutorials/10-awesome-uses-for-automator-explained--mac-15845">10 Awesome Uses for Automator Explained</a></li>
+  <li><a href="http://www.maclife.com/article/features/15_automator_and_applescripts_you_can%E2%80%99t_live_without">15 Automator and AppleScripts You Can’t Live Without</a></li>
+  <li><a href="http://luisroman.nl/post/40857635243/automating-ssh-logins-with-autossh-automator-and">Automating SSH logins with Autossh, Automator and Applescript</a></li>
+  <li><a href="http://mac.softpedia.com/get/Automator-Actions---Workflows/">Automator Actions &amp; Workflows for Downloads</a></li>
+  <li><a href="http://bbs.feng.com/read-htm-tid-8045539.html">【Automator】炮筒机器人流程实例</a>，内附 Apple Script 教程</li>
+  <li><a href="http://www.macworld.com/article/1133821/automatordownloads.html">8 great Automator downloads</a></li>
+</ul>
+
+<p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2014/12/20/wunderlist-tian-jia-kuai-jie-jian-qi-dong/">http://frank19900731.github.io/blog/2014/12/20/wunderlist-tian-jia-kuai-jie-jian-qi-dong/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[每周一软之日记软件 Chronories]]></title>
@@ -3879,66 +3959,6 @@ r=\frac { \left( X-\overline { X }  \right) \cdot \left( Y-\overline { Y }  \rig
 </ol>
 
 <p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2014/10/20/ji-mou-you-xi-gong-si-mian-shi-jing-li/">http://frank19900731.github.io/blog/2014/10/20/ji-mou-you-xi-gong-si-mian-shi-jing-li/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[IDG 联合招聘笔试回忆]]></title>
-    <link href="http://frank19900731.github.io/blog/2014/10/19/idg-lian-he-zhao-pin-bi-shi-hui-yi/"/>
-    <updated>2014-10-19T21:53:07+08:00</updated>
-    <id>http://frank19900731.github.io/blog/2014/10/19/idg-lian-he-zhao-pin-bi-shi-hui-yi</id>
-    <content type="html"><![CDATA[<!-- excerpt start -->
-
-<p>IDG 投资的公司有脸萌、蘑菇街、果壳网等，详见此<a href="http://campus.idgvc.ourats.com/about-us/companys">链接</a>。对于这些小规模创业公司自己还是挺感兴趣的，参加联合招聘也很省事，笔试题目（B卷）回忆如下。</p>
-
-<h2 id="section">选择题</h2>
-
-<ol>
-  <li>三个汽水瓶可以换一瓶汽水，要让28人都喝一瓶，买几瓶水？    答： 19瓶。</li>
-  <li>50人中有两人生日相同的概率是多少？    答：0.97（注意是选择题，不是当场算的……）。</li>
-  <li>1000人，三场演出，分别有500，350，250人观看，400人至少看两场，100人看三场，问多少人一场没看？    答：400人。</li>
-  <li>逻辑判断，条件一：<code>x or y</code>；条件二：<code>not y or not z</code>；条件三：<code>非z 则 非y</code>，可以肯定的是哪项？    答：x 为 true。假设 非x，则 y，则 非z，则 非y，矛盾。</li>
-  <li>安卓属于那种系统？    答：软实时系统 。</li>
-  <li>分布式系统 与 网络系统 的区别？    答：协调多个机器完成同一任务。</li>
-  <li>位示图的作用？    答：管理磁盘空间。</li>
-  <li>6 个方块排一排，用三种颜色涂刷，要求相邻方块不同色且三种颜色都用上，有几种涂法？    答：90种。<code>3 * 2^5 - 3*2</code></li>
-  <li>二叉树，第五层最多有多少个节点？（根节点是第一层）   答：16。</li>
-  <li>红球、黑球、白球共60个，摸了一阵，统计红球大约15%，黑球大约45%，问有多少个白球？    答：16。</li>
-  <li>253的16进制和二进制表示？    答：0xFD，11111101</li>
-  <li>ABCDE，不可能的出栈顺序？</li>
-  <li>快速排序，第一次运行后的结果是？</li>
-  <li>程序题，问 c 的输出是多少？    答：-1。</li>
-</ol>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>程序题</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-<span class="line-number">5</span>
-<span class="line-number">6</span>
-</pre></td><td class="code"><pre><code class="c"><span class="line"><span class="kt">int</span> <span class="n">a</span> <span class="o">=</span><span class="mi">0</span><span class="p">;</span>
-</span><span class="line"><span class="kt">int</span> <span class="n">c</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-</span><span class="line"><span class="k">do</span> <span class="p">{</span>
-</span><span class="line">    <span class="o">--</span><span class="n">c</span><span class="p">;</span>
-</span><span class="line">    <span class="n">a</span> <span class="o">=</span> <span class="n">a</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span>
-</span><span class="line"><span class="p">}</span> <span class="k">while</span><span class="p">(</span><span class="n">a</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-<p>还有一道想不起来了……</p>
-
-<h2 id="section-1">综合题</h2>
-
-<ol>
-  <li>链表每隔K个翻转，要求常数空间存储，代码实现。比如 <code>1-&gt;2-&gt;3-&gt;4-&gt;5-&gt;6</code>，k=2 变成  <code>2-&gt;1-&gt;4-&gt;3-&gt;6-&gt;5</code>，k=3 变成  <code>3-&gt;2-&gt;1-&gt;6-&gt;5-&gt;4</code>。</li>
-  <li>M X N方格，从 (0,0) 走到 (M,N) 有多少种走法记为L，如果 M、N 很大那么 L 这个数也是很大的，设计算法计算 L % 13。</li>
-</ol>
-
-<h2 id="section-2">总结</h2>
-
-<p>一开始 IDG 说将由很牛的 ACM 选手出题，心里挺忐忑，现场做题才发现不是这样。虽然题目不难，不过限时 1 小时，自己只是将将做完。</p>
-
-<!-- excerpt end -->
-
-<p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2014/10/19/idg-lian-he-zhao-pin-bi-shi-hui-yi/">http://frank19900731.github.io/blog/2014/10/19/idg-lian-he-zhao-pin-bi-shi-hui-yi/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
 ]]></content>
   </entry>
   

@@ -12,7 +12,7 @@
   <meta name="author" content="Frank Song">
   <!-- 定义description变量，如果有则用，没有则是正文，前150字 -->
   
-  <meta name="description" content="Categories: Mac 使用 每周一软之日记软件 Chronories Dec 14th, 2014 打算写一个“每周一软”系列，主要记录我在 Mac 平台下的软件使用感受和建议。作为一个收藏控和工具控，我曾对自己接触过的 Mac 软件做过一个分类整理，详见 《Mac 实用软件及功能吐血总结》。“每周一软”与这份总结不同，一来会有更为详尽的介绍，二来都是我在工作生活中使用频率较高的，算是优中选优。 每篇介绍将分功能介绍、界面设计、易用性、稳定性、跨平台、类似软件、闪光点、缺点这八块，希望给大家一个较为全面的认识。 第一个要推荐的软件是日记软件 —— Chronories。 话说 Chronories 是一款下架停更的软件（但还是可以用的……），之所以把它放在第一个来介绍，一方面是因为自己用得久，有感情，再者它确实强大有用。 功能介绍 Chronories 是著名的 Synium Software 公司的产品。 与其说它是一款日记软件，不如说是在记录日志。 这一日志数据既有我们主动录入的，比如日常感想、心情、照片，也有被 Chronories 在后台默默记录下的丰富信息。 Chronories 以天为单位，可以记录的内容类别如下 Diary Entry —— 日记条目 Your Mood —— 心情 Interesting Topics —— 感兴趣的话题 Places —— 地点 Contacts —— 联系人 @Computer Activity —— 一天中的电脑活跃度，表现为折线图 @Local Weather —— 本地天气 @Application Used —— 不同软件的使用时长 @Music —— 在 iTunes 听过的音乐 @RSS News Headlines —— 你所录入的 RSS 当天的更新 Desktop Screenshots —— 截屏 Other Images —— 其它录入的图片 iSight Photos —— 摄像头拍摄，大部分情况下是自拍…… @e-mails —— Mail 当日收到的邮件 @Chat Statistics —— Message 聊天记录 @Visited Websites —— 当日访问过的网站 @iCal Appointment —— iCal 中的安排 继续阅读&nbsp;&nbsp;& &hellip;">
+  <meta name="description" content="Categories: Mac 使用 Wunderlist 添加快捷键启动 Dec 20th, 2014 Wunderlist 可以设置全局快捷键快速添加新条目。按下快捷键，Wunderlist 软件启动，定位到 Index 组、 Add an item 输入框。 这个功能其实一直被我用于 Wunderlist 的快速启动（在Dock里隐藏了…）。然而在 Wunderlist 的最近一次更新中，全局添加新条目不再能进入软件主体界面，而代之以快速输入框。 考虑到依靠快捷键进入 Wunderlist 主界面的习惯已经根深蒂固，而 Wunderlist 本身又不再提供类似的功能，只能自己想办法。 一种方式是借助 Alfred/Quicksilver 进行快速搜索，不过我还是懒得打字。然后想到了在 System Preferences -&gt; Keyboard -&gt; Shortcuts 里添加快捷键，不过支持用户自定义的只能是该程序菜单中已有的命令（但没有对应快捷键），而且还不是全局的。 最后这个小任务是通过使用 Automator 定制了一个 Service 并关联快捷键完成的。 继续阅读&nbsp;&nbsp;&nbsp;&nbsp; Tags: mac软件 &nbsp;&nbsp;&nbsp;&nbsp; Categories: Mac 使用 每周一软之日记软件 Chronories Dec 14th, 2014 打算写一个“每周一软”系列，主要记录我在 Mac 平台下的软件使用感受和建议。作为一个收藏控和工具控，我曾对自己接触过的 Mac 软件做过一个分类整理，详见 《Mac 实用软件及功能吐血总结》。“每周一软”与这份总结不同，一来会有更为详尽的介绍，二来都是我在工作生活中使用频率较高的，算是优中选优。 每篇介绍将分功能介绍、界面设计、易用性、稳定性、跨平台、类似软件、闪光点、缺点这八块，希望给大家一个较为全面的认识。 第一个要推荐的软件是日记软件 —— Chronories。 话说 Chronories 是一款下架停更的软件（但还是可以用的……），之所以把它放在第一个来介绍，一方面是因为自己用得久，有感情，再者它确实强大有用。 功能介绍 Chronories 是著名的 Synium Software 公司的产品。 与其说它是一款日记软件， &hellip;">
   
   <meta name="baidu-site-verification" content="7O78rNJCOH" />
   <meta name="360-site-verification" content="9ee6dda17557079b8855f9c8201b05bb" />
@@ -166,7 +166,7 @@
     <button>Open Menu</button>
     <ul class="dl-menu">
         <li><a href="/">Home</a></li>
-        <li><a href="/archives/">Archives (26)</a></li>
+        <li><a href="/archives/">Archives (27)</a></li>
         <li>
             <a href="#">Categories (7)</a>
             <ul class="dl-submenu">
@@ -174,7 +174,7 @@
                 <li><a href="/blog/categories">All Categories (7)</a>
                 <li style="color: #CCCCCC; line-height: 150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Top 5</li>
 
-                <li><a href='/category/面试求职'>面试求职 (12)</a></li><li><a href='/category/工作效率'>工作效率 (5)</a></li><li><a href='/category/网页开发'>网页开发 (3)</a></li><li><a href='/category/Mac 使用'>Mac 使用 (2)</a></li><li><a href='/category/编程学习'>编程学习 (2)</a></li>
+                <li><a href='/category/面试求职'>面试求职 (12)</a></li><li><a href='/category/工作效率'>工作效率 (5)</a></li><li><a href='/category/网页开发'>网页开发 (3)</a></li><li><a href='/category/Mac 使用'>Mac 使用 (3)</a></li><li><a href='/category/编程学习'>编程学习 (2)</a></li>
             </ul>
         </li>
         <li><a href="/blog/tags">All Tags (38)</a>
@@ -248,6 +248,10 @@
 <ul>
 	
     <li>
+    	<a href="/blog/2014/12/20/wunderlist-tian-jia-kuai-jie-jian-qi-dong/">Wunderlist 添加快捷键启动</a>
+    </li>
+    
+    <li>
     	<a href="/blog/2014/12/14/mei-zhou-ruan-zhi-ri-ji-ruan-jian-chronories/">每周一软之日记软件 Chronories</a>
     </li>
     
@@ -263,17 +267,13 @@
     	<a href="/blog/2014/12/04/ruo-gan-you-yong-you-qu-de-wang-zhan/">若干有用有趣的网站</a>
     </li>
     
-    <li>
-    	<a href="/blog/2014/11/29/matrix67-bo-ke-zhong-zhi-li-ti-cu-fen-lei/">Matrix67 博客中智力题粗分类</a>
-    </li>
-    
 </ul>
         </li>
 <li>
     <h3>Tags</h3>
     <ul class="tag-cloud">
         <a style="font-size: 136%" href="/tag/Scala/">Scala</a>
-<a style="font-size: 136%" href="/tag/mac软件/">mac软件</a>
+<a style="font-size: 164%" href="/tag/mac软件/">mac软件</a>
 <a style="font-size: 164%" href="/tag/效率/">效率</a>
 <a style="font-size: 136%" href="/tag/数据可视化/">数据可视化</a>
 <a style="font-size: 136%" href="/tag/时间管理/">时间管理</a>
@@ -301,6 +301,88 @@
 		
       <div class="blog-index">
   
+  
+  
+    <article>
+      <!-- article.html -->
+<!-- 文章展示，区分在索引页和文章页 -->
+<header>
+  <div class="article-tags">
+      <!-- post/categories.html -->
+<!-- 文章类别展示 -->
+
+
+<span class="categories" style="font-size: 16px;">
+  Categories:
+  
+    <a class='category' href='/category/Mac 使用/'>Mac 使用</a>
+  
+
+</span>
+
+
+  </div>
+  
+    <h1><a href="/blog/2014/12/20/wunderlist-tian-jia-kuai-jie-jian-qi-dong/">
+      Wunderlist 添加快捷键启动
+    </a></h1>
+  
+  <!-- 给出发布时间 -->
+  <div class="article-date">
+      <!-- post/date.html -->
+<!-- 文章日期显示 -->
+
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-12-20T19:36:23+08:00" pubdate data-updated="true">Dec 20<span>th</span>, 2014</time></div>
+</header>
+<hr />
+
+<!-- 如果在索引中 -->
+
+  <section class="article-index">
+<p>Wunderlist 可以设置全局快捷键快速添加新条目。按下快捷键，Wunderlist 软件启动，定位到 Index 组、 Add an item 输入框。</p>
+
+<p><a href="/img/post/2014-12/33.png" class="img-up" title="Wunderlist 添加新条目"><img class="imgcenter" src="/img/post/2014-12/33.png" width="90%" title="Wunderlist 添加新条目" /></a></p>
+
+<p>这个功能其实一直被我用于 Wunderlist 的快速启动（在Dock里隐藏了…）。然而在 Wunderlist 的最近一次更新中，<strong>全局添加新条目不再能进入软件主体界面，而代之以快速输入框</strong>。</p>
+
+<p><a href="/img/post/2014-12/32.png" class="img-up" title="Wunderlist 添加新条目"><img class="imgcenter" src="/img/post/2014-12/32.png" width="60%" title="Wunderlist 添加新条目" /></a></p>
+
+<p>考虑到依靠快捷键进入 Wunderlist 主界面的习惯已经根深蒂固，而 Wunderlist 本身又不再提供类似的功能，只能自己想办法。</p>
+
+<p>一种方式是借助 Alfred/Quicksilver 进行快速搜索，不过我还是懒得打字。然后想到了在 <code>System Preferences -&gt; Keyboard -&gt; Shortcuts</code> 里添加快捷键，不过支持用户自定义的只能是该程序菜单中已有的命令（但没有对应快捷键），而且还不是全局的。</p>
+
+<p>最后这个小任务是通过使用 Automator 定制了一个 Service 并关联快捷键完成的。</p>
+
+</section>
+  <a href="/blog/2014/12/20/wunderlist-tian-jia-kuai-jie-jian-qi-dong/" style="background: #da3e10; color: #ffffff; border-radius: 5px; border: 4px solid #da3e10;">继续阅读</a>&nbsp;&nbsp;&nbsp;&nbsp;
+<!-- post/tags.html -->
+<!-- 文章标签展示 -->
+
+
+<span class="tags">
+  <font color="#777">Tags: </font>
+  
+    <a class='tag' href='/tag/mac软件/'>mac软件</a>
+  
+</span>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<span class="ds-thread-count" data-thread-key="/blog/2014/12/20/wunderlist-tian-jia-kuai-jie-jian-qi-dong/" style="color: #777;"></span>
+
+
+
+
+    </article>
   
   
     <article>
@@ -832,97 +914,6 @@
 
     </article>
   
-  
-    <article>
-      <!-- article.html -->
-<!-- 文章展示，区分在索引页和文章页 -->
-<header>
-  <div class="article-tags">
-      <!-- post/categories.html -->
-<!-- 文章类别展示 -->
-
-
-<span class="categories" style="font-size: 16px;">
-  Categories:
-  
-    <a class='category' href='/category/编程学习/'>编程学习</a>
-  
-
-</span>
-
-
-  </div>
-  
-    <h1><a href="/blog/2014/11/27/ce-shi-qu-dong-kai-fa-he-han-shu-shi-bian-cheng-zai-xian-yan-shi/">
-      《测试驱动开发和函数式编程》在线演示
-    </a></h1>
-  
-  <!-- 给出发布时间 -->
-  <div class="article-date">
-      <!-- post/date.html -->
-<!-- 文章日期显示 -->
-
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-11-27T16:08:27+08:00" pubdate data-updated="true">Nov 27<span>th</span>, 2014</time></div>
-</header>
-<hr />
-
-<!-- 如果在索引中 -->
-
-  <section class="article-index">
-
-<p>在 Scala 微信群里了解到了 <a href="http://together.iagile.me/activities/28">《万花筒活动: 测试驱动开发和函数式编程 —— 在线代码演示如何对函数式语言 (Scala) 进行测试驱动开发》</a> 这么一个活动，以在线视频会议的形式举行。跟着讲解抄代码，对 <a href="http://baike.baidu.com/subview/76310/8243857.htm#viewPageContent">TDD</a>（Test-Driven Development）有了点粗浅的了解。</p>
-
-<p>讲解围绕一道叫 <a href="http://codingdojo.org/">KataAnagram</a> 的题目展开，用《哈利·波特》里面的例子很好解释。</p>
-
-<blockquote>
-  <p>Tom Marvolo Riddle =&gt; I am Lord Voldemort</p>
-</blockquote>
-
-<p>上面是一个字母重排的过程。给定一个单词 S 和一个单词列表 L，要求从 L 中找到两个词（可以重复），用这两个词的全体字母重排出 S。</p>
-
-<p>讲者主要是用这道题讲解测试驱动开发的思路流程，顺便讲解一下如何在代码重构时从 Java 转换到函数式编程的思维，而不是从算法角度考虑最优。</p>
-
-<p>讲者开始提到测试驱动开发的大致思路是</p>
-
-<ol>
-  <li>写一个失败的测试；</li>
-  <li>写最简单的代码使得测试通过；</li>
-  <li>重构代码和测试。</li>
-</ol>
-
-<p>2、3 步骤应该是迭代进行的。从以下测试代码的撰写思路上，可以看到想法的逐层深入。</p>
-
-</section>
-  <a href="/blog/2014/11/27/ce-shi-qu-dong-kai-fa-he-han-shu-shi-bian-cheng-zai-xian-yan-shi/" style="background: #da3e10; color: #ffffff; border-radius: 5px; border: 4px solid #da3e10;">继续阅读</a>&nbsp;&nbsp;&nbsp;&nbsp;
-<!-- post/tags.html -->
-<!-- 文章标签展示 -->
-
-
-<span class="tags">
-  <font color="#777">Tags: </font>
-  
-    <a class='tag' href='/tag/Scala/'>Scala</a>, <a class='tag' href='/tag/TDD/'>TDD</a>
-  
-</span>
-&nbsp;&nbsp;&nbsp;&nbsp;
-<span class="ds-thread-count" data-thread-key="/blog/2014/11/27/ce-shi-qu-dong-kai-fa-he-han-shu-shi-bian-cheng-zai-xian-yan-shi/" style="color: #777;"></span>
-
-
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; Older</a>
@@ -948,6 +939,10 @@
 <ul>
 	
     <li>
+    	<a href="/blog/2014/12/20/wunderlist-tian-jia-kuai-jie-jian-qi-dong/">Wunderlist 添加快捷键启动</a>
+    </li>
+    
+    <li>
     	<a href="/blog/2014/12/14/mei-zhou-ruan-zhi-ri-ji-ruan-jian-chronories/">每周一软之日记软件 Chronories</a>
     </li>
     
@@ -963,17 +958,13 @@
     	<a href="/blog/2014/12/04/ruo-gan-you-yong-you-qu-de-wang-zhan/">若干有用有趣的网站</a>
     </li>
     
-    <li>
-    	<a href="/blog/2014/11/29/matrix67-bo-ke-zhong-zhi-li-ti-cu-fen-lei/">Matrix67 博客中智力题粗分类</a>
-    </li>
-    
 </ul>
         </li>
 <li>
     <h3>Tags</h3>
     <ul class="tag-cloud">
         <a style="font-size: 136%" href="/tag/Scala/">Scala</a>
-<a style="font-size: 136%" href="/tag/mac软件/">mac软件</a>
+<a style="font-size: 164%" href="/tag/mac软件/">mac软件</a>
 <a style="font-size: 164%" href="/tag/效率/">效率</a>
 <a style="font-size: 136%" href="/tag/数据可视化/">数据可视化</a>
 <a style="font-size: 136%" href="/tag/时间管理/">时间管理</a>
