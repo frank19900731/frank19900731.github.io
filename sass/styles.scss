@@ -19,6 +19,10 @@
 @import "theme.scss";
 @import "typography.scss";
 
+.foo {
+  overflow: scroll;
+}
+
 .foo table{
   font-size:16px;
   text-align:left;

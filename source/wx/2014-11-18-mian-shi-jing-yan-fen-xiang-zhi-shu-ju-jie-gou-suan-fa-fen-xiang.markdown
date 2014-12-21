@@ -108,7 +108,11 @@ wx_url: /wx/2014-11-18-mian-shi-jing-yan-fen-xiang-zhi-shu-ju-jie-gou-suan-fa-fe
 
 - 不要纠结于是否是最佳思路，要保证能在 10-15 分钟内给出一个解决方案，并分析复杂度；
 - 基础的可以读读 [@研究者July](http://weibo.com/julyweibo?topnav=1&wvr=6&topsug=1) 的这本 [电子书](http://frank19900731.github.io/ebook/the-art-of-programming-by-july/index.html)，更深入的可以阅读 CSDN 等博客中大牛们写的 ACM 解题报告；
-- [hihocoder](http://www.hihocoder.com/)、[topcoder](http://www.topcoder.com/)、[leetcode](https://oj.leetcode.com/)、[codility](https://codility.com/)、[POJ](http://poj.org/) 等网站择一练手。
+- [hihocoder](http://www.hihocoder.com/)、[topcoder](http://www.topcoder.com/)、[leetcode](https://oj.leetcode.com/)、[codility](https://codility.com/)、[POJ](http://poj.org/) 等网站择一练手;
+- [Soulmachine](https://github.com/soulmachine) 在 Github 中有高质量的学习资料，适合系统学习 & 临时抱佛脚
+	- [LeetCode 题解](https://github.com/soulmachine/leetcode)
+	- [ACM Cheat Sheet](https://github.com/soulmachine/acm-cheat-sheet)
+	- [HackerRank题解](https://github.com/soulmachine/hackerrank)
 
 ##开放题目
 
