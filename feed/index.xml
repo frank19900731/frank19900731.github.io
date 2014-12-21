@@ -4,7 +4,7 @@
   <title><![CDATA[Blog of 太极儒]]></title>
   <link href="http://frank19900731.github.io/feed" rel="self"/>
   <link href="http://frank19900731.github.io/"/>
-  <updated>2014-12-21T16:45:23+08:00</updated>
+  <updated>2014-12-21T16:58:59+08:00</updated>
   <id>http://frank19900731.github.io/</id>
   <author>
     <name><![CDATA[Frank Song]]></name>
@@ -133,8 +133,7 @@
 <ul>
   <li><code>Marboo</code>
     <ul>
-      <li>功能堆砌，集成了 remark.js、emacs-org、csv、photo、vectab（曲谱）、reStructuredText、压缩文件（zip、tar.gz）等，缺乏为写作而考虑的设计；</li>
-      <li>界面一般，响应不快；</li>
+      <li>功能繁多，集成了 remark.js、emacs-org、csv、photo、vectab（曲谱）、reStructuredText、压缩文件（zip、tar.gz）等，佩服作者对于如此多工具的掌握，不过缺乏专为写作考虑的设计；</li>
     </ul>
   </li>
   <li><code>Marked2</code>
@@ -339,7 +338,7 @@
 
 <p><strong>借助 jQuery、MathJax 实现公式输入</strong>。~~表示 Raw Source，也即 Ulysses 本身不对其做解析。</p>
 
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>输入代码</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>公式支持</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
 <span class="line-number">2</span>
 <span class="line-number">3</span>
 <span class="line-number">4</span>
@@ -409,7 +408,7 @@
 
 <p><strong>借助 highlightjs 实现代码高亮</strong>。</p>
 
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>代码高亮支持</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
 <span class="line-number">2</span>
 <span class="line-number">3</span>
 <span class="line-number">4</span>
