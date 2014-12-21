@@ -139,12 +139,14 @@ Ulysses 支持 iCloud 同步和 Daedalus 同步，后者是 iOS 上的一个文�
 - `Texts`、`Haroopad`
 	- **内生支持代码高亮、公式、图表，适合科研、工程人员写作**；
 	- **后者免费**；
+- `MacDown`，由 [@永不停息的恐龙哥](http://weibo.com/dinosaurliu) 推荐
+	- **内生支持代码高亮、公式**，关键是 [开源](https://github.com/uranusjr/macdown)；
 - `Mou` 
 	- 支持 Tumblr 和 Scriptogr.am 发布；
 	- 可模拟打字机的按键声音，喜好因人而异吧；
 	- 内生支持公式。
 
-总的来说，**文艺青年推荐 Byword、Typed**，**技术青年推荐 Haroopad**。
+总的来说，**文艺青年推荐 Byword、Typed**，**技术青年推荐 Haroopad、MacDown**。
 
 ####文档管理类
 
