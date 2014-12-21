@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Mac 使用 | Blog of 太极儒]]></title>
   <link href="http://frank19900731.github.io/blog/category/mac-shi-yong/atom.xml" rel="self"/>
   <link href="http://frank19900731.github.io/"/>
-  <updated>2014-12-21T19:13:12+08:00</updated>
+  <updated>2014-12-21T21:53:25+08:00</updated>
   <id>http://frank19900731.github.io/</id>
   <author>
     <name><![CDATA[Frank Song]]></name>
@@ -204,6 +204,11 @@
       <li><strong>后者免费</strong>；</li>
     </ul>
   </li>
+  <li><code>MacDown</code>，由 <a href="http://weibo.com/dinosaurliu">@永不停息的恐龙哥</a> 推荐
+    <ul>
+      <li><strong>内生支持代码高亮、公式</strong>，关键是 <a href="https://github.com/uranusjr/macdown">开源</a>；</li>
+    </ul>
+  </li>
   <li><code>Mou</code> 
     <ul>
       <li>支持 Tumblr 和 Scriptogr.am 发布；</li>
@@ -213,7 +218,7 @@
   </li>
 </ul>
 
-<p>总的来说，<strong>文艺青年推荐 Byword、Typed</strong>，<strong>技术青年推荐 Haroopad</strong>。</p>
+<p>总的来说，<strong>文艺青年推荐 Byword、Typed</strong>，<strong>技术青年推荐 Haroopad、MacDown</strong>。</p>
 
 <h4 id="section-9">文档管理类</h4>
 
