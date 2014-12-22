@@ -1,5 +1,125 @@
 
 <item>
+    <title>数说 2014</title>
+    <link>http://realjenius.com/blog/2014/12/23/shu-shuo-2014/</link>
+    <author>R.J. Lorimer</author>
+    <pubDate>2014-12-23T01:31:29+08:00</pubDate>
+    <guid>http://realjenius.com/blog/2014/12/23/shu-shuo-2014/</guid>
+    <description><![CDATA[
+     <div style="width: 100%; text-align: center;">
+<canvas id="mail-from"></canvas>
+</div>
+<hr />
+
+<div style="width: 100%; text-align: center;">
+<canvas id="mail-session"></canvas>
+</div>
+<hr />
+
+<div style="width: 100%; text-align: center;">
+<canvas id="application-2014"></canvas>
+</div>
+<hr />
+
+<div style="width: 100%; text-align: center;">
+<canvas id="application-2014-half"></canvas>
+</div>
+<hr />
+
+<div style="width: 100%; text-align: center;">
+<canvas id="websites"></canvas>
+</div>
+
+<script type="text/javascript" src="http://frank19900731.github.io/javascripts/Chart.js"></script>
+
+<script type="text/javascript">
+       $.getJSON("/json/data2014.json", function(data) {
+           var ctx = $("#mail-from").get(0).getContext("2d");
+           var chdata = data['mail-from'];
+           new Chart(ctx).Doughnut(chdata, {
+               segmentShowStroke : true,
+               segmentStrokeWidth : 2,
+               segmentStrokeColor : 'rgba(255, 255, 255, 0.1)',
+               responsive: true
+           });
+
+           ctx = $("#mail-session").get(0).getContext("2d");
+           chdata = {
+               labels : data['mail-session']['label'],
+               datasets : [
+                   {
+                       fillColor : "rgba(151,187,205,0.5)",
+                       strokeColor : "rgba(151,187,205,1)",
+                       pointColor : "rgba(151,187,205,1)",
+                       pointStrokeColor : "#fff",
+                       data : data['mail-session']['data']
+                   }
+               ]
+           };
+           new Chart(ctx).Bar(chdata, {responsive: true});
+
+           ctx = $("#application-2014").get(0).getContext("2d");
+           chdata = {
+               labels : data['application-2014']['label'],
+               datasets : [
+                   {
+                       fillColor : "rgba(188, 220, 92,0.5)",
+                       strokeColor : "rgba(188, 220, 92,1)",
+                       pointColor : "rgba(188, 220, 92,1)",
+                       pointStrokeColor : "#fff",
+                       data : data['application-2014']['data2']
+                   },
+                   {
+                       fillColor : "rgba(151,187,205,0.5)",
+                       strokeColor : "rgba(151,187,205,1)",
+                       pointColor : "rgba(151,187,205,1)",
+                       pointStrokeColor : "#fff",
+                       data : data['application-2014']['data1']
+                   }
+               ]
+           };
+           new Chart(ctx).Line(chdata, {responsive: true});
+
+           ctx = $("#application-2014-half").get(0).getContext("2d");
+           chdata = {
+               labels : data['application-2014-1']['label'],
+               datasets : [
+                   {
+                       fillColor : "rgba(188, 220, 92,0.5)",
+                       strokeColor : "rgba(188, 220, 92,1)",
+                       pointColor : "rgba(188, 220, 92,1)",
+                       pointStrokeColor : "#fff",
+                       data : data['application-2014-1']['data2']
+                   },
+                   {
+                       fillColor : "rgba(151,187,205,0.5)",
+                       strokeColor : "rgba(151,187,205,1)",
+                       pointColor : "rgba(151,187,205,1)",
+                       pointStrokeColor : "#fff",
+                       data : data['application-2014-1']['data1']
+                   }
+               ]
+           };
+           new Chart(ctx).Line(chdata, {responsive: true});
+
+           ctx = $("#websites").get(0).getContext("2d");
+           chdata = data['websites'];
+           new Chart(ctx).Doughnut(chdata, {
+               segmentShowStroke : true,
+               segmentStrokeWidth : 2,
+               segmentStrokeColor : 'rgba(255, 255, 255, 0.1)',
+               responsive: true
+           });
+
+       });
+</script>
+
+<p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2014/12/23/shu-shuo-2014/">http://frank19900731.github.io/blog/2014/12/23/shu-shuo-2014/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
+
+  ]]></description>
+</item>
+
+<item>
     <title>Pocket 类目标签的制订</title>
     <link>http://realjenius.com/blog/2014/11/20/pocket-lei-mu-biao-qian-de-zhi-ding/</link>
     <author>R.J. Lorimer</author>
