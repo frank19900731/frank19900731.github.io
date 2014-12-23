@@ -4,7 +4,7 @@
   <title><![CDATA[Blog of 太极儒]]></title>
   <link href="http://frank19900731.github.io/feed" rel="self"/>
   <link href="http://frank19900731.github.io/"/>
-  <updated>2014-12-23T02:21:31+08:00</updated>
+  <updated>2014-12-23T13:25:19+08:00</updated>
   <id>http://frank19900731.github.io/</id>
   <author>
     <name><![CDATA[Frank Song]]></name>
@@ -18,113 +18,38 @@
     <link href="http://frank19900731.github.io/blog/2014/12/23/shu-shuo-2014/"/>
     <updated>2014-12-23T01:31:29+08:00</updated>
     <id>http://frank19900731.github.io/blog/2014/12/23/shu-shuo-2014</id>
-    <content type="html"><![CDATA[<div style="width: 100%; text-align: center;">
-<canvas id="mail-from"></canvas>
-</div>
-<hr />
-
-<div style="width: 100%; text-align: center;">
-<canvas id="mail-session"></canvas>
-</div>
-<hr />
-
-<div style="width: 100%; text-align: center;">
-<canvas id="application-2014"></canvas>
-</div>
-<hr />
-
-<div style="width: 100%; text-align: center;">
-<canvas id="application-2014-half"></canvas>
-</div>
-<hr />
-
-<div style="width: 100%; text-align: center;">
-<canvas id="websites"></canvas>
+    <content type="html"><![CDATA[<div style="width: 100%;">
+    <div>
+        <div id="mail-from-legend" style="text-align: left;"></div>
+        <canvas id="mail-from" style="margin-top: 20px;"></canvas>
+    </div>
+    <hr />
+    <canvas id="mail-session"></canvas>
+    
+    <div style="position: relative;">
+        <canvas id="application-2014"></canvas>
+        <div id="application-2014-legend" style="position: absolute; top: 20px; right: 20px; text-align: left;"></div>
+    </div>
+    <hr />
+    <div style="position: relative;">
+        <canvas id="application-2014-half"></canvas>
+        <div id="application-2014-half-legend" style="position: absolute; top: 20px; right: 20px; text-align: left;"></div>
+    </div>
+    <hr />
+    <div>
+        <div id="websites-legend" style="text-align: left;"></div>
+        <canvas id="websites" style="margin-top: 20px;"></canvas>
+    </div>
+        
+    <div style="position: relative;">
+        <canvas id="network"></canvas>
+        <div id="network-legend" style="position: absolute; top: 20px; right: 20px; text-align: left;"></div>
+    </div>
 </div>
 
 <script type="text/javascript" src="http://frank19900731.github.io/javascripts/Chart.js"></script>
 
-<script type="text/javascript">
-       $.getJSON("/json/data2014.json", function(data) {
-           var ctx = $("#mail-from").get(0).getContext("2d");
-           var chdata = data['mail-from'];
-           new Chart(ctx).Doughnut(chdata, {
-               segmentShowStroke : true,
-               segmentStrokeWidth : 2,
-               segmentStrokeColor : 'rgba(255, 255, 255, 0.1)',
-               responsive: true
-           });
-
-           ctx = $("#mail-session").get(0).getContext("2d");
-           chdata = {
-               labels : data['mail-session']['label'],
-               datasets : [
-                   {
-                       fillColor : "rgba(151,187,205,0.5)",
-                       strokeColor : "rgba(151,187,205,1)",
-                       pointColor : "rgba(151,187,205,1)",
-                       pointStrokeColor : "#fff",
-                       data : data['mail-session']['data']
-                   }
-               ]
-           };
-           new Chart(ctx).Bar(chdata, {responsive: true});
-
-           ctx = $("#application-2014").get(0).getContext("2d");
-           chdata = {
-               labels : data['application-2014']['label'],
-               datasets : [
-                   {
-                       fillColor : "rgba(188, 220, 92,0.5)",
-                       strokeColor : "rgba(188, 220, 92,1)",
-                       pointColor : "rgba(188, 220, 92,1)",
-                       pointStrokeColor : "#fff",
-                       data : data['application-2014']['data2']
-                   },
-                   {
-                       fillColor : "rgba(151,187,205,0.5)",
-                       strokeColor : "rgba(151,187,205,1)",
-                       pointColor : "rgba(151,187,205,1)",
-                       pointStrokeColor : "#fff",
-                       data : data['application-2014']['data1']
-                   }
-               ]
-           };
-           new Chart(ctx).Line(chdata, {responsive: true});
-
-           ctx = $("#application-2014-half").get(0).getContext("2d");
-           chdata = {
-               labels : data['application-2014-1']['label'],
-               datasets : [
-                   {
-                       fillColor : "rgba(188, 220, 92,0.5)",
-                       strokeColor : "rgba(188, 220, 92,1)",
-                       pointColor : "rgba(188, 220, 92,1)",
-                       pointStrokeColor : "#fff",
-                       data : data['application-2014-1']['data2']
-                   },
-                   {
-                       fillColor : "rgba(151,187,205,0.5)",
-                       strokeColor : "rgba(151,187,205,1)",
-                       pointColor : "rgba(151,187,205,1)",
-                       pointStrokeColor : "#fff",
-                       data : data['application-2014-1']['data1']
-                   }
-               ]
-           };
-           new Chart(ctx).Line(chdata, {responsive: true});
-
-           ctx = $("#websites").get(0).getContext("2d");
-           chdata = data['websites'];
-           new Chart(ctx).Doughnut(chdata, {
-               segmentShowStroke : true,
-               segmentStrokeWidth : 2,
-               segmentStrokeColor : 'rgba(255, 255, 255, 0.1)',
-               responsive: true
-           });
-
-       });
-</script>
+<script type="text/javascript" src="http://frank19900731.github.io/javascripts/mychart.js"></script>
 
 <p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2014/12/23/shu-shuo-2014/">http://frank19900731.github.io/blog/2014/12/23/shu-shuo-2014/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
 ]]></content>

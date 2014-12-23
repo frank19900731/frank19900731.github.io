@@ -12,7 +12,9 @@
   <meta name="author" content="Frank Song">
   <!-- 定义description变量，如果有则用，没有则是正文，前150字 -->
   
-  <meta name="description" content="Categories: 工作效率 数说 2014 Dec 23rd, 2014 您可能正在移动设备阅读本文，为获得更好的阅读体验，请点击 移动阅读入口 $.getJSON("/json/data2014.json", function(data) { var ctx = $("#mail-from").get(0).getContext("2d"); var chdata = data['mail-from']; new Chart(ctx).Doughnut(chdata, { segmentShowStroke : true, segmentStrokeWidth : 2, segmentStrokeColor : 'rgba(255, 255, 255, 0.1)', responsive: true }); ctx = $("#mail-session").get(0).getContext("2d"); chdata = { labels : data['mail-session']['label'], datasets : [ { fillColor : "rgba(151,187,205,0.5)", strokeColor : "rgba(151,187,205,1)", pointColor : "rgba(151,187,205,1)", pointStrokeColor : "#fff", data : data['mail-session']['data'] } ] }; new Chart(ctx).Bar(chdata, {responsive: true}); ctx = $("#application-2014").get(0).getContext("2d"); chdata = { labels : data['application-2014']['label'], datasets : [ { fillColor : "rgba(188, 220, 92,0.5)", strokeColor : "rgba(188, 220, 92,1)", pointColor : "rgba(188, 220, 92,1)", pointStrokeColor : "#fff", data : data['application- &hellip;">
+  <meta name="description" content=" Categories: 工作效率 数说 2014 Dec 23rd, 2014 您可能正在移动设备阅读本文，为获得更好的阅读体验，请点击 移动阅读入口 原文地址: http://frank19900731.github.io/blog/2014/12/23/shu-shuo-2014/ 作者 Frank Song&nbsp; 发布于 http://frank19900731.github.io&nbsp; 转载请注明 Tags: 数据可视化, 阶段总结 &nbsp;&nbsp;&nbsp;&nbsp; 分享到： 新浪微博 腾讯微博 人人网 微信 豆瓣 更多 « 每周一软之 Markdown 笔记软件 &hellip; <!--
+Please enable JavaScript to view the comments powered by Disqus.
+--> Commented Most This Month ">
   <meta name="keywords" content="chart.js, 数据可视化, 阶段总结">
   <meta name="baidu-site-verification" content="7O78rNJCOH" />
   <meta name="360-site-verification" content="9ee6dda17557079b8855f9c8201b05bb" />
@@ -352,113 +354,38 @@
     您可能正在移动设备阅读本文，为获得更好的阅读体验，请点击 <a href="/wx/2014-12-23-shu-shuo-2014.html">移动阅读入口</a>
 </div>
   <!-- 直接展示出内容 -->
-  <section class="article-detail" style="margin-bottom: 20px;"><div style="width: 100%; text-align: center;">
-<canvas id="mail-from"></canvas>
-</div>
-<hr />
-
-<div style="width: 100%; text-align: center;">
-<canvas id="mail-session"></canvas>
-</div>
-<hr />
-
-<div style="width: 100%; text-align: center;">
-<canvas id="application-2014"></canvas>
-</div>
-<hr />
-
-<div style="width: 100%; text-align: center;">
-<canvas id="application-2014-half"></canvas>
-</div>
-<hr />
-
-<div style="width: 100%; text-align: center;">
-<canvas id="websites"></canvas>
+  <section class="article-detail" style="margin-bottom: 20px;"><div style="width: 100%;">
+    <div>
+        <div id="mail-from-legend" style="text-align: left;"></div>
+        <canvas id="mail-from" style="margin-top: 20px;"></canvas>
+    </div>
+    <hr />
+    <canvas id="mail-session"></canvas>
+    
+    <div style="position: relative;">
+        <canvas id="application-2014"></canvas>
+        <div id="application-2014-legend" style="position: absolute; top: 20px; right: 20px; text-align: left;"></div>
+    </div>
+    <hr />
+    <div style="position: relative;">
+        <canvas id="application-2014-half"></canvas>
+        <div id="application-2014-half-legend" style="position: absolute; top: 20px; right: 20px; text-align: left;"></div>
+    </div>
+    <hr />
+    <div>
+        <div id="websites-legend" style="text-align: left;"></div>
+        <canvas id="websites" style="margin-top: 20px;"></canvas>
+    </div>
+        
+    <div style="position: relative;">
+        <canvas id="network"></canvas>
+        <div id="network-legend" style="position: absolute; top: 20px; right: 20px; text-align: left;"></div>
+    </div>
 </div>
 
 <script type="text/javascript" src="/javascripts/Chart.js"></script>
 
-<script type="text/javascript">
-       $.getJSON("/json/data2014.json", function(data) {
-           var ctx = $("#mail-from").get(0).getContext("2d");
-           var chdata = data['mail-from'];
-           new Chart(ctx).Doughnut(chdata, {
-               segmentShowStroke : true,
-               segmentStrokeWidth : 2,
-               segmentStrokeColor : 'rgba(255, 255, 255, 0.1)',
-               responsive: true
-           });
-
-           ctx = $("#mail-session").get(0).getContext("2d");
-           chdata = {
-               labels : data['mail-session']['label'],
-               datasets : [
-                   {
-                       fillColor : "rgba(151,187,205,0.5)",
-                       strokeColor : "rgba(151,187,205,1)",
-                       pointColor : "rgba(151,187,205,1)",
-                       pointStrokeColor : "#fff",
-                       data : data['mail-session']['data']
-                   }
-               ]
-           };
-           new Chart(ctx).Bar(chdata, {responsive: true});
-
-           ctx = $("#application-2014").get(0).getContext("2d");
-           chdata = {
-               labels : data['application-2014']['label'],
-               datasets : [
-                   {
-                       fillColor : "rgba(188, 220, 92,0.5)",
-                       strokeColor : "rgba(188, 220, 92,1)",
-                       pointColor : "rgba(188, 220, 92,1)",
-                       pointStrokeColor : "#fff",
-                       data : data['application-2014']['data2']
-                   },
-                   {
-                       fillColor : "rgba(151,187,205,0.5)",
-                       strokeColor : "rgba(151,187,205,1)",
-                       pointColor : "rgba(151,187,205,1)",
-                       pointStrokeColor : "#fff",
-                       data : data['application-2014']['data1']
-                   }
-               ]
-           };
-           new Chart(ctx).Line(chdata, {responsive: true});
-
-           ctx = $("#application-2014-half").get(0).getContext("2d");
-           chdata = {
-               labels : data['application-2014-1']['label'],
-               datasets : [
-                   {
-                       fillColor : "rgba(188, 220, 92,0.5)",
-                       strokeColor : "rgba(188, 220, 92,1)",
-                       pointColor : "rgba(188, 220, 92,1)",
-                       pointStrokeColor : "#fff",
-                       data : data['application-2014-1']['data2']
-                   },
-                   {
-                       fillColor : "rgba(151,187,205,0.5)",
-                       strokeColor : "rgba(151,187,205,1)",
-                       pointColor : "rgba(151,187,205,1)",
-                       pointStrokeColor : "#fff",
-                       data : data['application-2014-1']['data1']
-                   }
-               ]
-           };
-           new Chart(ctx).Line(chdata, {responsive: true});
-
-           ctx = $("#websites").get(0).getContext("2d");
-           chdata = data['websites'];
-           new Chart(ctx).Doughnut(chdata, {
-               segmentShowStroke : true,
-               segmentStrokeWidth : 2,
-               segmentStrokeColor : 'rgba(255, 255, 255, 0.1)',
-               responsive: true
-           });
-
-       });
-</script>
+<script type="text/javascript" src="/javascripts/mychart.js"></script>
 
 <p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2014/12/23/shu-shuo-2014/">http://frank19900731.github.io/blog/2014/12/23/shu-shuo-2014/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
 </section>
