@@ -6,34 +6,320 @@
     <pubDate>2014-12-23T01:31:29+08:00</pubDate>
     <guid>http://realjenius.com/blog/2014/12/23/shu-shuo-2014/</guid>
     <description><![CDATA[
-     <div style="width: 100%;">
-    <div>
-        <div id="mail-from-legend" style="text-align: left;"></div>
-        <canvas id="mail-from" style="margin-top: 20px;"></canvas>
-    </div>
-    <hr />
-    <canvas id="mail-session"></canvas>
-    
-    <div style="position: relative;">
-        <canvas id="application-2014"></canvas>
-        <div id="application-2014-legend" style="position: absolute; top: 20px; right: 20px; text-align: left;"></div>
-    </div>
-    <hr />
-    <div style="position: relative;">
-        <canvas id="application-2014-half"></canvas>
-        <div id="application-2014-half-legend" style="position: absolute; top: 20px; right: 20px; text-align: left;"></div>
-    </div>
-    <hr />
-    <div>
-        <div id="websites-legend" style="text-align: left;"></div>
-        <canvas id="websites" style="margin-top: 20px;"></canvas>
-    </div>
-        
-    <div style="position: relative;">
-        <canvas id="network"></canvas>
-        <div id="network-legend" style="position: absolute; top: 20px; right: 20px; text-align: left;"></div>
-    </div>
+     <p><strong>目录</strong></p>
+
+<ul id="markdown-toc">
+  <li><a href="#section">写在前面</a></li>
+  <li><a href="#section-1">邮件</a></li>
+  <li><a href="#section-2">应用程序</a></li>
+  <li><a href="#section-3">网页访问</a></li>
+  <li><a href="#section-4">网络流量</a></li>
+  <li><a href="#section-5">看过17部电影</a></li>
+  <li><a href="#section-6">玩过3款游戏</a></li>
+  <li><a href="#section-7">追过9部视频</a></li>
+  <li><a href="#section-8">完整读过0本纸版书</a></li>
+  <li><a href="#section-9">写了33篇博客</a></li>
+  <li><a href="#section-10">撰写周报21篇、月报5篇，完成日常任务打分表80份</a></li>
+  <li><a href="#section-11">参与报告/讲座/会议20场</a></li>
+  <li><a href="#section-12">添置了6个设备</a></li>
+  <li><a href="#section-13">参加54场面试，7场笔试</a></li>
+  <li><a href="#section-14">其它</a></li>
+  <li><a href="#section-15">总结</a></li>
+</ul>
+
+<!-- excerpt start -->
+
+<h2 id="section">写在前面</h2>
+
+<p>打小对数字和总结有感情，所以就有了这篇 《数说 2014》。</p>
+
+<p><strong>数据不能告诉你全部，但数据对真实情况的刻画比你自以为的更客观</strong>。</p>
+
+<blockquote><p>数据可能给你当头棒喝，因为你在某些方面乏善可陈；</p><p>数据可能让你羞愧难当，因为它拆穿了你的自以为是；</p><p>数据可能令你懊悔不已，因为你看到了大把时间的浪费。</p></blockquote>
+
+<p><strong>希望在年末的细细回望，能督促自己在新的一年里过得更加充实，像个年轻人应该有的样子</strong>。</p>
+
+<!-- excerpt end -->
+
+<h2 id="section-1">邮件</h2>
+
+<p>2014 年邮件往来一万余封。</p>
+
+<p>发送方面，126 邮箱（Frank）发出 926 封，gamil 邮箱（宋成儒）发出 255封，负责维护的博士生论坛邮箱（Forum）发出 298 封。</p>
+
+<p>接收方面，数量靠前的，除了讨厌的广告、推荐（好东西传送门还是很赞的，CSDN 偶尔赞），只剩下四个个人账号。</p>
+
+<ul>
+  <li>刘新益老师负责就业，发了很多就业相关的信息；</li>
+  <li>黄海燕老师在系办负责研究生相关的工作，信息比较杂。</li>
+  <li>花隽芃是上任系研会主席，陈苏是上任研会学术副主席，俺作为上任学术助理协助他俩儿举办了清华大学第 366 期博士生论坛，想想也是颇感慨的。</li>
+</ul>
+
+<p>具体收发统计如下（图表数据来自 <a href="http://frank19900731.github.io/blog/2014/12/14/mei-zhou-ruan-zhi-ri-ji-ruan-jian-chronories/">Chronories</a>，由 <a href="http://www.chartjs.org/">Chart.js</a> 生成，下同）。</p>
+
+<div style="width: 100%; margin-bottom: 20px;">
+   <div id="mail-from-legend" style="text-align: left;"></div>
+   <canvas id="mail-from" style="margin-top: 20px;"></canvas>
 </div>
+
+<p>下图是分时段的收信量统计，看来应该<strong>多在中午十二点和下午六点查收/删除邮件</strong>，感觉是一句废话。</p>
+
+<canvas id="mail-session"></canvas>
+
+<h2 id="section-2">应用程序</h2>
+
+<p>2014 年全年应用程序使用情况统计如下，单位是小时。Launched 表示软件打开（在内存中驻留吧），Active 表示软件使用（获得输入焦点吧）。</p>
+
+<div style="position: relative; width: 100%; margin-bottom: 10px;">
+   <canvas id="application-2014"></canvas>
+   <div id="application-2014-legend" style="position: absolute; top: 20px; right: 20px; text-align: left;"></div>
+</div>
+
+<p>稍作分析</p>
+
+<ul>
+  <li>因为 Finder 在系统中始终处于 Launched 状态，所以粗略估计 <strong>2014 年电脑开机时间超过 180 天</strong>；</li>
+  <li>Chrome 使用时间远远领先于其它软件，达到 50 天，<strong>结合下节网页访问的统计，不少时间浪费在社交媒体和视频网站上了</strong>。</li>
+  <li>开着不用的典型软件是 Google Chrome、Mail、ZOC、Evernote、WeChat、OmniFocus。</li>
+  <li>QSanguosha 就是太阳神三国杀，作为唯一一款游戏软件<strong>赫然在列</strong>。</li>
+</ul>
+
+<p>其中一些软件是从下半年开始使用的，所以为了更接近目前的状况，还统计了 2014 年下半年应用程序使用情况。</p>
+
+<div style="position: relative;">
+   <canvas id="application-2014-half"></canvas>
+   <div id="application-2014-half-legend" style="position: absolute; top: 20px; right: 20px; text-align: left;"></div>
+</div>
+
+<p>Ulysses、ByWord 使用时间占比增加，Evernote 已经看不见了。</p>
+
+<p><strong>明年希望看到阅读类、笔记类和编程类软件的使用时间有较大提高</strong>。</p>
+
+<h2 id="section-3">网页访问</h2>
+
+<p>域名访问量统计，非一级域名。</p>
+
+<div style="width: 100%; margin-bottom: 20px;">
+   <div id="websites-legend" style="text-align: left;"></div>
+   <canvas id="websites" style="margin-top: 20px;"></canvas>
+</div>
+
+<ul>
+  <li>百度访问次数 23316 次还是让我很惊讶的，Google 访问次数是 8605 次。相比与 Google 的专业性，百度的快或许更实用，使用 Google 的场景，<strong>一种是预感肯定百度不到想要结果，另一种是确实没百度到想要的结果</strong>；</li>
+  <li>微博（包括 t.cn，绝大部分是从微博来的）、人人（我真心不觉得有这么多访问，但事实就是如此）、优酷，是三大时间吸血鬼，这还不算上移动端的访问；</li>
+  <li>localhost 访问次数多是因为有本地调试和本地 Wiki；</li>
+  <li>百度百科、github 访问次数排名尚可，略感欣慰。</li>
+</ul>
+
+<p><strong>明年，人人、优酷还是算了吧，没什么营养，微博多用客户端，只关注有价值的分组</strong>。</p>
+
+<h2 id="section-4">网络流量</h2>
+
+<p>清华特色网络流量统计，数据来自清华大学校园网，单位 G。</p>
+
+<div style="position: relative; margin-bottom: 10px;">
+   <canvas id="network"></canvas>
+   <div id="network-legend" style="position: absolute; top: 20px; right: 20px; text-align: left;"></div>
+</div>
+
+<p>近来网络访问有些猖獗，没营养又三俗的节目就别看了，<strong>浪费流量事小，浪费生命事大</strong>。</p>
+
+<p>补一句，毕业了最不留恋的就是学校的网络。</p>
+
+<h2 id="section-5">看过17部电影</h2>
+
+<p>对科幻影片依旧无兴趣，没看过欧美电影，也没看过美剧！</p>
+
+<p>喜欢国产写实影片，以及日本虐心片。</p>
+
+<ul>
+  <li><a href="http://movie.douban.com/subject/25779218/">匆匆那年（电影）</a></li>
+  <li><a href="http://movie.douban.com/subject/24695611/">北平无战事</a></li>
+  <li><a href="http://movie.douban.com/subject/24879858/">分手大师</a></li>
+  <li><a href="http://movie.douban.com/subject/25798222/">亲爱的</a></li>
+  <li><a href="http://movie.douban.com/subject/25717233/">心花路放</a></li>
+  <li><a href="http://movie.douban.com/subject/10545939/">黄金时代</a></li>
+  <li><a href="http://movie.douban.com/subject/24743711/">催眠大师</a></li>
+  <li><a href="http://movie.douban.com/subject/3732800/">我们天上见</a></li>
+  <li><a href="http://movie.douban.com/subject/3036997/">立春</a></li>
+  <li><a href="http://movie.douban.com/subject/4268598/">告白</a></li>
+  <li><a href="http://movie.douban.com/subject/1292444/">大逃杀</a></li>
+  <li><a href="http://movie.douban.com/subject/24843198/">同桌的你</a></li>
+  <li><a href="http://movie.douban.com/subject/24736566/">北京爱情故事（电影）</a></li>
+  <li><a href="http://movie.douban.com/subject/1756073/">我们俩</a></li>
+  <li><a href="http://movie.douban.com/subject/1293323/">大红灯笼高高挂</a></li>
+  <li><a href="http://movie.douban.com/subject/24735062/">青春派</a></li>
+  <li><a href="http://movie.douban.com/subject/1291858/">鬼子来了</a></li>
+</ul>
+
+<h2 id="section-6">玩过3款游戏</h2>
+
+<ul>
+  <li>太阳神三国杀</li>
+  <li>千军破2</li>
+  <li>影之刃</li>
+</ul>
+
+<p>影之刃、千军破2 都是为了网易游戏面试玩的，太阳神三国杀纯消磨时光。太阳神三国杀的 Mac 端那叫一个渣，顺手、过拆就能让程序崩溃，始终无人维护。即便如此，我还玩得挺嗨，也是服了自己。</p>
+
+<p><strong>本年度手机端只有影之刃一款游戏，Mac 端只有太阳神三国杀一款，均已卸载，千军破2 已停玩，望继续保持</strong>。</p>
+
+<h2 id="section-7">追过9部视频</h2>
+
+<ul>
+  <li>晓松奇谈（周五）</li>
+  <li>罗辑思维（周五）</li>
+  <li>鸿观（周五）</li>
+  <li>相征（周四）</li>
+  <li>都嘟（周三、周六）</li>
+  <li>奇葩说（周六、周日）</li>
+  <li>历代经济变革得失</li>
+  <li>万万没想到、报告老板</li>
+  <li><a href="http://i.youku.com/u/UMTE3Njc4ODM2">张坤解说三国杀</a>（不定）</li>
+</ul>
+
+<p>看三国杀解说是最无脑的放松方式，虽然我已经多年不上 Online 实操，<strong>明年要戒掉平时的，只看周末娱乐</strong>。</p>
+
+<h2 id="section-8">完整读过0本纸版书</h2>
+
+<p>回想一下好像确实是这样。</p>
+
+<ul>
+  <li>到图书馆借书主要是为参阅章节，比如《具体数学》，<strong>特别缺乏系统性学习</strong>；</li>
+  <li>今年本身买书就很少，有电子书则不会购买纸质书，主要是考虑到快毕业了，减轻搬家负担；</li>
+  <li>读了很多技术教程、博客，人文类书籍阅读很少。</li>
+</ul>
+
+<blockquote><p>书读得少人就容易浮躁，视频看得多人就容易浮夸。</p></blockquote>
+
+<p><strong>毕业了就不能以学生身份为借口，何况岁数也不小了，明年要踏踏实实在书籍阅读上给自己做一点规划</strong>。</p>
+
+<h2 id="section-9">写了33篇博客</h2>
+
+<p>新浪博客两篇</p>
+
+<ul>
+  <li><a href="http://blog.sina.com.cn/s/blog_64ac3ab10101f4it.html">Mac实用软件及功能吐血总结</a></li>
+  <li><a href="http://blog.sina.com.cn/s/blog_64ac3ab10102uwjo.html">word2vec代码注释</a></li>
+</ul>
+
+<p>Github 的博客 31 篇</p>
+
+<ul>
+  <li><a href="http://frank19900731.github.io/blog/2014/08/24/wo-de-di-yi-pian-octopress-bo-ke/">我的第一篇 Octopress 博客</a></li>
+  <li><a href="http://frank19900731.github.io/blog/2014/09/01/2015nian-xiao-zhao-ru-kou/">2015年校招入口</a></li>
+  <li><a href="http://frank19900731.github.io/blog/2014/10/16/ti-gao-xiao-lu-yu-qing-qu-de-jiu-chong-cheng-xu-gong-ju-tui-jian/">提高效率与情趣的九种程序工具推荐</a></li>
+  <li><a href="http://frank19900731.github.io/blog/2014/10/16/octopress-gai-zao-ji-lu/">Octopress 改造记录</a></li>
+  <li><a href="http://frank19900731.github.io/blog/2014/10/18/yosemite-sheng-ji-ji-hou-xu/">Yosemite 升级及后续</a></li>
+  <li><a href="http://frank19900731.github.io/blog/2014/10/18/fei-wei-mei-di-bi-shi-hui-yi/">飞维美地笔试回忆</a></li>
+  <li><a href="http://frank19900731.github.io/blog/2014/10/19/idg-lian-he-zhao-pin-bi-shi-hui-yi/">IDG 联合招聘笔试回忆</a></li>
+  <li><a href="http://frank19900731.github.io/blog/2014/10/20/ji-mou-you-xi-gong-si-mian-shi-jing-li/">记某游戏公司面试经历</a></li>
+  <li><a href="http://frank19900731.github.io/blog/2014/10/23/wo-de-zhi-shi-guan-li-jing-yan-yu-gong-ju-fen-xiang/">我的知识管理经验与工具分享</a></li>
+  <li><a href="http://frank19900731.github.io/blog/2014/10/25/qiu-zhi-ji-de-yi-dian-jing-yan-zhi-tan/">求职季的一点经验之谈</a></li>
+  <li><a href="http://frank19900731.github.io/blog/2014/10/27/wo-de-shi-jian-guan-li-jing-yan-yu-gong-ju-fen-xiang/">我的时间管理经验与工具分享</a></li>
+  <li><a href="http://frank19900731.github.io/blog/2014/11/06/mian-shi-jing-yan-zhi-ji-qi-xue-xi-da-shu-ju-wen-ti/">面试经验分享之机器学习、大数据问题</a></li>
+  <li><a href="http://frank19900731.github.io/blog/2014/11/07/mian-shi-jing-yan-fen-xiang-zhi-zhi-li-ti/">面试经验分享之智力题</a></li>
+  <li><a href="http://frank19900731.github.io/blog/2014/11/13/yi-ge-gong-ju-kong-de-xiao-lu-guan/">一个工具控的效率观</a></li>
+  <li><a href="http://frank19900731.github.io/blog/2014/11/18/mian-shi-jing-yan-fen-xiang-zhi-shu-ju-jie-gou-suan-fa-fen-xiang/">面试经验分享之数据结构、算法题</a></li>
+  <li><a href="http://frank19900731.github.io/blog/2014/11/20/pocket-lei-mu-biao-qian-de-zhi-ding/">Pocket 类目标签的制订</a></li>
+  <li><a href="http://frank19900731.github.io/blog/2014/11/21/bai-du-teng-xun-yu-sou-hu-de-bi-shi-hui-yi/">2014 年百度、腾讯与搜狐的校招笔试回忆</a></li>
+  <li><a href="http://frank19900731.github.io/blog/2014/11/23/open-workshop-scalacong-ling-dao-ru-men-ke-tang-bi-ji/">《Open Workshop — Scala 从零到入门》课堂笔记</a></li>
+  <li><a href="http://frank19900731.github.io/blog/2014/11/25/mian-shi-jing-yan-fen-xiang-zhi-bian-cheng-yu-yan-ti/">面试经验分享之编程语言题</a></li>
+  <li><a href="http://frank19900731.github.io/blog/2014/11/25/mian-shi-jing-yan-fen-xiang-si-pian/">面试经验分享四篇</a></li>
+  <li><a href="http://frank19900731.github.io/blog/2014/11/27/ce-shi-qu-dong-kai-fa-he-han-shu-shi-bian-cheng-zai-xian-yan-shi/">《测试驱动开发和函数式编程》在线演示</a></li>
+  <li><a href="http://frank19900731.github.io/blog/2014/11/29/matrix67-bo-ke-zhong-zhi-li-ti-cu-fen-lei/">Matrix67 博客中智力题粗分类</a></li>
+  <li><a href="http://frank19900731.github.io/blog/2014/12/04/ruo-gan-you-yong-you-qu-de-wang-zhan/">若干有用有趣的网站</a></li>
+  <li><a href="http://frank19900731.github.io/blog/2014/12/04/diy-deep-learning-for-vision-a-tutorial-with-caffe-bao-gao-bi-ji/">DIY Deep Learning for Vision: A Tutorial with Caffe 报告笔记</a></li>
+  <li><a href="http://frank19900731.github.io/blog/2014/12/09/wei-bo-qia-pian-wei-bo-shou-cang-de-ke-shi-hua/">微博卡片 — 微博收藏的可视化</a></li>
+  <li><a href="http://frank19900731.github.io/blog/2014/12/14/mei-zhou-ruan-zhi-ri-ji-ruan-jian-chronories/">每周一软之日记软件 Chronories</a></li>
+  <li><a href="http://frank19900731.github.io/blog/2014/12/20/wunderlist-tian-jia-kuai-jie-jian-qi-dong/">Wunderlist 添加快捷键启动</a></li>
+  <li><a href="http://frank19900731.github.io/blog/2014/12/21/mei-zhou-ruan-zhi-markdown-bi-ji-ruan-jian-ulysses-iii/">每周一软之 Markdown 笔记软件 Ulysses III</a></li>
+  <li><a href="http://frank19900731.github.io/blog/2014/12/23/shu-shuo-2014/">数说 2014</a></li>
+  <li>年终总结，待撰写</li>
+  <li>每周一软，待撰写</li>
+</ul>
+
+<p><strong>明年希望继续减少无病呻吟，保证一周1-2篇。缩短博客撰写时间，书面化的弊端就是耽于形式</strong>。</p>
+
+<h2 id="section-10">撰写周报21篇、月报5篇，完成日常任务打分表80份</h2>
+
+<p>8月11日那周开始写周报，8月末开始写月报，就是在周/月末抽半小时，对照任务管理软件梳理本周/月事项，总结得失，提出下阶段目标。现在回头翻看，说给自己听的鸡汤、对自己提出的批评、骂人/感谢的话等等，都鲜活还原了记录时的场景……</p>
+
+<p>周报、月报对自己而言有三点好处</p>
+
+<ul>
+  <li>及时总结，快速调整状态；</li>
+  <li><strong>机械、规律的行为，让工作、生活体现出阶段性，这阶段感是我从研究生不再上课以来一直求而不得的，阶段感带来紧张性，有助于避免拖延</strong>；</li>
+  <li>汇集成一份完整、真实的年度总结，从中可以看到自己的成长、发现缺点不足，真心不是年底才想写就能够写出来的。</li>
+</ul>
+
+<p>10月13日制定日常任务完成度打分表并开始执行，目前每天在50分左右徘徊，明年应该会有大修订，并<strong>争取更高的完成度</strong>。</p>
+
+<p>根据周报、月报的记录，自己这一年<strong>在加强运动、规律作息方面做的最差</strong>，特别是进入冬季以后。要向6月到8月的表现看齐，早七点半、晚十一点半，上班后应该就能做到吧。</p>
+
+<h2 id="section-11">参与报告/讲座/会议20场</h2>
+
+<ul>
+  <li>Randomized Methods in Big Data Analytics, Ping Ma</li>
+  <li>阿里图像搜索分享，雷音</li>
+  <li>ICML 2014</li>
+  <li>Statistical Learning Theory, Jerry Zhu</li>
+  <li>CCF ADL-46 机器学习</li>
+  <li>The Future of Mobile Computing, Hedy Lamarr</li>
+  <li>Deep Learning in Object Detection, Segmentation, and Recognition, Xiaogang Wang</li>
+  <li>Imaging Arithmetic Physics U Math &gt; Physics + Math, Gaurav Sharma</li>
+  <li>Making the Impossible Possible Randomized Machine Learning Algorithms for Big Data, Rong Jin</li>
+  <li>移动互联网时代的大数据挖掘技术研讨会，三星</li>
+  <li>DIY Deep Learning for Vision: A Tutorial with Caffe</li>
+  <li>Scaling Deep Learning, Jeaf Dean</li>
+  <li>百度、阿里深度学习碰撞，余凯、漆远 </li>
+  <li>百度技术沙龙53期，基于大数据的预测实践</li>
+  <li>无穷沙龙 互联网泡沫真的来了吗</li>
+  <li>无穷沙龙 走近 HTML5 的应用生态</li>
+  <li>FreeWheel 技术分享，王迪</li>
+  <li>万花筒活动: 测试驱动开发和函数式编程，姚若舟</li>
+  <li>Open Workshop — Scala 从零到入门，吴雪峰</li>
+  <li>码农大会 Spark 分享，连城</li>
+</ul>
+
+<p>如果听的时候热血沸腾，散场了就忘了个干净，那真的就是浪费了时间，不如不去。所以参加报告/讲座/会议一定要注意三点</p>
+
+<ul>
+  <li>认真听、认真记，不要指望自己会再听一遍录音/看一遍录像；</li>
+  <li><strong>带着问题听，积极提问</strong>；</li>
+  <li><strong>务必在当天查一查在听讲中遇到的陌生技术与概念，考虑是否可以为己所用</strong>。</li>
+</ul>
+
+<h2 id="section-12">添置了6个设备</h2>
+
+<ul>
+  <li>希捷 4T 移动硬盘，快毕业了，赶紧从北邮人、六维扒东西；</li>
+  <li>三星 1T SSD，血本效率投资，还是很值的；</li>
+  <li>Apple Magic Trackpad，基本没用;</li>
+  <li>Wacom 数位板，写公式、画草图很实用；</li>
+  <li>红米 Note，与中国移动携手保障了求职季里的通信畅通；</li>
+  <li>小米手环，当闹钟用很实在。</li>
+</ul>
+
+<h2 id="section-13">参加54场面试，7场笔试</h2>
+
+<p>其中实习面试 5 面，求职面试 49 面（电面 5 面）。</p>
+
+<p>面试大部分集中在 9、10 月份，从八月初开始准备。一个自认为比较好也比较推荐的习惯是，<strong>在笔试、面试过后立刻回忆内容，针对弱点和错误进行学习完善</strong>。我的一般做法是从面试地点出来后用手机录制自己的快速复述，并务必在当年做书面化整理。</p>
+
+<h2 id="section-14">其它</h2>
+
+<ul>
+  <li>运动健康统计缺乏数据，期待小米手环能开放 API；</li>
+  <li>阅读论文篇数、写代码行数未知，明年要做规范的整理和统计，不是说越多越好，而是要用心积累；</li>
+  <li>和父母的联系次数很多，和父母呆在一起的天数很少，想想就要工作了，可以拿来陪父母的时间又少了，不免伤感。</li>
+</ul>
+
+<h2 id="section-15">总结</h2>
+
+<p>2014年，自己最深刻的一个感受是自身想法、观念变化越来越快，因为即将面临的是人生很重要的过渡期——从读书到工作。有压力，才会逼迫自己去思考之前懒得思考的问题。随着经验的累积、信息的收集与分析、和他人沟通讨论的深入，逐渐在自己身上发现了一些可喜的变化。不夸张地说，有时候回头看一个月前的自己，都会觉得幼稚可笑。</p>
+
+<p><strong>有方向的忙碌才是充实</strong>，庆幸自己在2014年即将结束的时候，似乎找到了自己的方向，而属于2014年的诸多遗憾，希望在新的一年一一实现。</p>
 
 <script type="text/javascript" src="http://frank19900731.github.io/javascripts/Chart.js"></script>
 

@@ -169,7 +169,7 @@ $.getJSON("/json/data2014.json", function(data) {
             labels : data['network']['label'],
             datasets : [
                 {
-                    label: 'Launched',
+                    label: '2013 年',
                     fillColor : "rgba(188, 220, 92,0.5)",
                     strokeColor : "rgba(188, 220, 92,1)",
                     pointColor : "rgba(188, 220, 92,1)",
@@ -177,7 +177,7 @@ $.getJSON("/json/data2014.json", function(data) {
                     data : data['network']['data2013']
                 },
                 {
-                    label: 'Active',
+                    label: '2014 年',
                     fillColor : "rgba(151,187,205,0.5)",
                     strokeColor : "rgba(151,187,205,1)",
                     pointColor : "rgba(151,187,205,1)",
