@@ -1,0 +1,398 @@
+
+{
+    "timeline":
+    {
+        "endDate": "2014,12,31",
+    "headline":"求职日记",
+        "type":"default",
+    "startDate":"2014,3,5",
+        "date": [
+            {
+                "startDate":"2014,3,1",
+        "endDate": "2014,3,31",
+        "headline":"三月"
+      },
+            {
+                "startDate":"2014,3,5",
+        "headline":"收到阿里面试通知",
+                "text":"复习数据结构、算法。"
+      },
+            {
+                "startDate":"2014,3,7",
+                "headline":"阿里面试",
+                "text":"盖坤、昙宗都是非常 nice 的学长，两场面试着实让我认识到自己身上的不少问题。"
+      },
+			{
+                "startDate":"2014,3,12",
+                "headline":"微软宣讲会",
+                "text":"微软暑期实习申请。<br>找到一个内推群投递了腾讯TST计划。<br>了解到天猫推荐大赛，决定以赛带练，为求职做准备。"
+      },
+			{
+                "startDate":"2014,3,16",
+                "headline":"天猫大赛第一天",
+                "text":"14、15 日闭门鼓捣，16 日查看结果排名第五；<br>把已有算法迁移到 Hadoop + Hive 上，为第二阶段早作准备。"
+      },
+			{
+                "startDate":"2014,3,18",
+                "headline":"参加阿里巴巴技术论坛",
+                "text":"在马云的演讲中感受不到侵入性，但头脑不自觉的被他的想法占据。"
+      },
+
+			{
+                "endDate": "2014,4,30",
+        "startDate":"2014,4,1",
+                "headline":"四月"
+      },
+			{
+                "startDate":"2014,4,12",
+                "headline":"微软在线笔试",
+                "text":"腾讯笔试、微软在线笔试、博士生论坛都赶在这一天。<br>腾讯笔试是没法去了，晚上七点到九点偷跑回房间参加微软在线笔试。<br>对于在线编程测试，自己的积累还是很不足，255 分，悲剧了。"
+      },
+			{
+                "startDate":"2014,4,24",
+                "headline":"阿里实习终面",
+                "text":"多等了两个小时才面上。<br>面试官问，“你觉得自己做过的最有深度的事情是什么”，答，“做过了的就觉着都没啥深度，不会的才觉得有深度”。"
+      },
+			{
+                "startDate":"2014,4,30",
+                "headline":"收到阿里实习生录用意向书",
+                "text":"算法工程师岗位"
+      },
+      {
+        "endDate": "2014,5,31",
+        "startDate": "2014,5,1",
+        "headline": "五月"
+      },
+      {
+                "startDate":"2014,5,12",
+                "headline":"天猫推荐大赛退赛",
+                "text":"进入大赛第二轮，但作为实习同学，应要求退赛。"
+      },
+			{
+                "startDate":"2014,5,15",
+                "headline":"IBM GBS 面试",
+                "text":"做单面的准备，却遭遇群面。身着 T恤衫站在西装革履的众人当中，人生还有比这更尴尬的么。<br>想要逃脱，但还是坚持下来了……"
+      },
+			{
+                "startDate":"2014,5,25",
+                "headline":"IBM 二面",
+                "text":"二对一面试，都是准备到的问题。"
+      },
+      {
+        "endDate": "2014,6,30",
+        "startDate": "2014,6,1",
+        "headline": "六月"
+      },
+      {
+                "startDate":"2014,6,3",
+                "headline":"IBM GBS 实习 Offer"
+      },
+			{
+                "startDate":"2014,6,12",
+                "headline":"阿里巴巴入职体检"
+      },
+			{
+                "startDate":"2014,6,19",
+                "headline":"阿里巴巴报到"
+      },
+			{
+                "endDate": "2014,7,31",
+        "startDate":"2014,7,1",
+                "headline":"七月"
+      },
+      {
+                "startDate":"2014,7,30",
+                "headline":"阿里转正面试一面"
+      },
+			{
+                "startDate":"2014,7,31",
+                "headline":"内推网易游戏、百度上海"
+      },
+
+
+
+
+			{
+                "endDate": "2014,8,31",
+        "startDate":"2014,8,1",
+                "headline":"八月"
+      }
+      ,
+      {
+                "startDate":"2014,8,2",
+                "headline":"内推大众点评"
+      }
+      ,
+      {
+                "startDate":"2014,8,5",
+                "headline":"百度上海电话面试",
+                "text":"下午两点、晚上九点各面一次，百度上海的工程师也是蛮拼的，没有然后。"
+      },
+      {
+                "startDate":"2014,8,13",
+                "headline":"阿里转正面试二面",
+                "text": "技术主管面试"
+      },
+      {
+                "startDate":"2014,8,14",
+                "headline":"阿里转正面试三面",
+                "text":"HR 面试"
+      },
+      {
+                "startDate":"2014,8,18",
+                "headline":"阿里转正面试四面",
+                "text":"又是等了好久才面上，已经是在阿里经历的第七面了，七面通过。"
+      },
+      {
+                "startDate":"2014,8,28",
+                "headline":"阿里巴巴 Offer"
+      },
+      {
+                "startDate":"2014,8,30",
+                "headline":"内推小米、360"
+      },
+      {
+        "startDate":"2014,9,2",
+                "headline":"内推百度、腾讯，均在北京"
+      },
+      {
+                "startDate":"2014,9,4",
+                "headline":"腾讯北京面试",
+                "text":"腾讯地图，没然后。"
+      },
+      {
+                "startDate":"2014,9,9",
+                "headline":"小米面试",
+                "text":"好像叫新技术部门，没然后。"
+      },
+      {
+                "startDate":"2014,9,11",
+                "headline":"网易游戏宣讲会"
+      },
+      {
+                "text": "游戏策划。",
+        "startDate":"2014,9,15",
+                "headline":"网易游戏电面"
+      },
+      {
+                "startDate":"2014,9,17",
+                "headline":"百度面试",
+                "text":"商务搜索部门，没然后。"
+      },
+      {
+                "startDate":"2014,9,19",
+                "headline":"360 面试",
+                "text":"商业广告部门，四面通过。<br>宜信公司清华宣讲，因面试未能参加，据说非常火爆。"
+      },
+      {
+                "startDate":"2014,9,20",
+                "headline":"大众点评在线笔试",
+                "text":"笔挂了。"
+      },
+      {
+                "startDate":"2014,9,22",
+                "headline":"360 Offer"
+      },
+      {
+                "startDate":"2014,9,23",
+                "headline":"宜信面试",
+                "text":"参加腾讯宣讲会，特别水，来了一个讲情怀都讲得很拙劣的年轻人。"
+      },
+      {
+                "startDate":"2014,9,25",
+                "headline":"参加 FreeWheel 的技术分享",
+                "text":"放弃小米笔试。"
+      },
+      {
+                "startDate":"2014,9,26",
+                "headline":"百度笔试",
+                "text":"<a href=\"http://frank19900731.github.io/blog/2014/11/21/bai-du-teng-xun-yu-sou-hu-de-bi-shi-hui-yi/\" target=\"_blank\">笔试题回忆</a>。<br>格灵深瞳宣讲会。"
+      },
+      {
+                "text": "<a href=\"http://frank19900731.github.io/blog/2014/11/21/bai-du-teng-xun-yu-sou-hu-de-bi-shi-hui-yi/\" target=\"_blank\">笔试题回忆</a>。",
+        "startDate":"2014,9,27",
+                "headline":"腾讯笔试"
+      },
+      {
+                "startDate":"2014,9,29",
+                "headline":"网易游戏面试",
+                "text":"梦断杭州，悲剧了。<br><a href=\"http://frank19900731.github.io/blog/2014/10/20/ji-mou-you-xi-gong-si-mian-shi-jing-li/\" target=\"_blank\">面试回忆</a>。"
+      },
+      {
+                "startDate":"2014,9,30",
+                "headline":"梳理总结九月份得失"
+      },
+      {
+                "endDate": "2014,10,31",
+        "startDate":"2014,10,1",
+                "headline":"十月"
+      },
+      {
+                "startDate":"2014,10,9",
+                "headline":"IBM CRL 电面"
+      },
+      {
+                "startDate":"2014,10,10",
+                "headline":"IBM CRL 面试、腾讯面试",
+                "text":"由于误选服从城市调剂，腾讯给我安排了深圳游戏部门的数据挖掘岗位，放弃。"
+      },
+      {
+                "startDate":"2014,10,12",
+                "headline":"百度面试",
+                "text":"三面通过。"
+      },
+      {
+        "startDate": "2014,10,13",
+        "headline": "领取就业推荐表"
+      },
+      {
+                "startDate":"2014,10,14",
+                "headline":"搜狐笔试",
+                "text":"<a href=\"http://frank19900731.github.io/blog/2014/11/21/bai-du-teng-xun-yu-sou-hu-de-bi-shi-hui-yi/\" target=\"_blank\">笔试题回忆</a>，笔挂了。"
+      },
+      {
+                "startDate":"2014,10,15",
+                "headline":"飞维美地宣讲会"
+      },
+      {
+                "text": "<a href=\"http://frank19900731.github.io/blog/2014/10/18/fei-wei-mei-di-bi-shi-hui-yi/\" target=\"_blank\">笔试题回忆</a>。",
+        "startDate":"2014,10,17",
+                "headline":"飞维美地笔试"
+      },
+      {
+                "startDate":"2014,10,19",
+                "headline":"IDG 宣讲会，现场笔试",
+                "text":"<a href=\"http://frank19900731.github.io/blog/2014/10/19/idg-lian-he-zhao-pin-bi-shi-hui-yi/\" target=\"_blank\">笔试题回忆</a>，其实是 IDG 投资的公司联合组织的。"
+      },
+      {
+                "startDate":"2014,10,20",
+                "headline":"飞维美地面试",
+                "text":"三面通过。"
+      },
+      {
+                "startDate":"2014,10,21",
+                "headline":"IDG 面试"
+      },
+      {
+                "startDate":"2014,10,22",
+                "headline":"猿题库面试",
+                "text":"三面通过。<br>百度面签。"
+      },
+      {
+                "startDate":"2014,10,26",
+                "headline":"IBM CRL Presentation"
+      },
+      {
+                "startDate":"2014,10,31",
+                "headline":"拒绝 360 Offer"
+      },
+      {
+                "endDate": "2014,11,30",
+        "startDate":"2014,11,1",
+                "headline":"十一月"
+      },
+      {
+                "startDate":"2014,11,2",
+                "headline":"宜信面试",
+                "text":"Joyce Zhang 面试，受益匪浅。"
+      },
+      {
+                "startDate":"2014,11,3",
+                "headline":"宜信终面",
+                "text":"宜信总计五面通过。<br>收到系里通知可以领取三方了，就是不去领，任性！"
+      },
+      {
+                "startDate":"2014,11,4",
+                "headline":"揽胜科技面试",
+                "text":"两面通过。"
+      },
+      {
+                "startDate":"2014,11,5",
+                "headline":"FreeWheel Offer",
+                "text":"内推 Google 上海……"
+      },
+      {
+                "startDate":"2014,11,6",
+                "headline":"世坤宣讲会"
+      },
+      {
+                "startDate":"2014,11,7",
+                "headline":"揽胜科技 Offer"
+      },
+      {
+                "startDate":"2014,11,8",
+                "headline":"宜信 Offer"
+      },
+      {
+                "startDate":"2014,11,10",
+                "headline":"IBM CRL 终面",
+                "text":"终面通过。"
+      },
+      {
+                "startDate":"2014,11,11",
+                "headline":"到支付宝北京交流",
+                "text":"中午到阿里巴巴（通惠）感受双十一。<br>果壳网两轮面试，没难度，但也没然后，估计是我问期权惹到 HR 了？"
+      },
+      {
+                "startDate":"2014,11,12",
+                "headline":"和 FreeWheel 部门主管交流"
+      },
+      {
+                "startDate":"2014,11,13",
+                "headline":"注册中心开具本科成绩单",
+                "text":"世坤、Google 都需要。"
+      },
+      {
+                "startDate":"2014,11,15",
+                "headline":"拒绝 IBM CRL Offer"
+      },
+      {
+                "startDate":"2014,11,16",
+                "headline":"世坤笔试"
+      },
+      {
+                "startDate":"2014,11,19",
+                "headline":"Google 电面"
+      },
+      {
+                "startDate":"2014,11,21",
+                "headline":"世坤一轮面试"
+      },
+      {
+                "startDate":"2014,11,26",
+                "headline":"世坤二轮面试"
+      },
+      {
+                "startDate":"2014,11,27",
+                "headline":"拒绝宜信 Offer"
+      },
+      {
+                "endDate": "2014,12,31",
+        "startDate":"2014,12,1",
+                "headline":"十二月"
+      },
+      {
+                "startDate":"2014,12,1",
+                "headline":"宜信更改 Offer 条件"
+      },
+      {
+                "startDate":"2014,12,4",
+                "headline":"忍痛拒绝宜信 Offer"
+      },
+      {
+                "startDate":"2014,12,15",
+                "headline":"Google 第一轮 Onsite 面试"
+      },
+      {
+                "text": "Google 面试流程结束，应该没有然后，但达到了丰富体验的目的。",
+        "startDate":"2014,12,19",
+                "headline":"Google 第二轮 Onsite 面试"
+      },
+      {
+                "text": "最后，要对求职季里给予过我帮助的人道声感谢。<br>感谢靖世、晗导、小强、侯导为代表的实验室师兄的大力支持，不厌其烦地解答我在求职中的疑惑；<br>感谢杨焜师兄在实习期间的指导，也一并感谢其他团队成员对我的帮助；<br>感谢喻川、闫成哲，毕业季的讨论交流让我受益良多。<br><br>感谢宜信 Joyce Zhang 女士和魏旋学长，<br>感谢 FreeWheel 的王迪学长和吴頔先生，<br>感谢 IBM CRL 的金锋、田启明学长，<br>感谢猿题库的郭常圳、邓澍军老师，<br>感谢揽胜科技的诸葛越女士，<br>感谢他们在面试中及之后给予我的无私关照，与他们的交流让我学到很多。<br><br>2014 是焦虑中带着美好的一年，我会记得它。",
+        "startDate":"2014,12,24",
+                "headline":"致谢 2014"
+      }
+    ]
+    }
+}

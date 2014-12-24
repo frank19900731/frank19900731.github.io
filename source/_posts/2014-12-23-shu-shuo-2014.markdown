@@ -116,7 +116,7 @@ Ulysses、ByWord 使用时间占比增加，Evernote 已经看不见了。
 
 补一句，毕业了最不留恋的就是学校的网络。
 
-##看过17部电影
+##看过18部电影
 
 对科幻影片依旧无兴趣，没看过欧美电影，也没看过美剧！
 
@@ -125,6 +125,7 @@ Ulysses、ByWord 使用时间占比增加，Evernote 已经看不见了。
 * [匆匆那年（电影）](http://movie.douban.com/subject/25779218/)
 * [北平无战事](http://movie.douban.com/subject/24695611/)
 * [分手大师](http://movie.douban.com/subject/24879858/)
+* [后会无期](http://movie.douban.com/subject/25805741/)
 * [亲爱的](http://movie.douban.com/subject/25798222/)
 * [心花路放](http://movie.douban.com/subject/25717233/)
 * [黄金时代](http://movie.douban.com/subject/10545939/)
@@ -216,7 +217,7 @@ Github 的博客 31 篇
 * [Wunderlist 添加快捷键启动](http://frank19900731.github.io/blog/2014/12/20/wunderlist-tian-jia-kuai-jie-jian-qi-dong/)
 * [每周一软之 Markdown 笔记软件 Ulysses III](http://frank19900731.github.io/blog/2014/12/21/mei-zhou-ruan-zhi-markdown-bi-ji-ruan-jian-ulysses-iii/)
 * [数说 2014](http://frank19900731.github.io/blog/2014/12/23/shu-shuo-2014/)
-* 年终总结，待撰写
+* [2014 面试终结篇](http://frank19900731.github.io/blog/2014/12/24/2014-qiu-zhi-hui-wang/)
 * 每周一软，待撰写
 
 **明年希望继续减少无病呻吟，保证一周1-2篇。缩短博客撰写时间，书面化的弊端就是耽于形式**。

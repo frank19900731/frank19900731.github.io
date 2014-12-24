@@ -54,8 +54,8 @@
   max-width: 45px;
 }
 
-.article-detail h1, .article-detail h2, .article-detail h3,
-.article-detail h4, .article-detail h5, .article-detail h6 {
+.article-detail>h1, .article-detail>h2, .article-detail>h3,
+.article-detail>h4, .article-detail>h5, .article-detail>h6 {
   border-radius: 20px;
   padding-left: 15px;
   padding-top: 5px;
@@ -77,29 +77,29 @@
   color: white;
 }
 
-.article-detail h1 {
+.article-detail>h1 {
   width: 100%;
   margin-left: -20px;
 }
 
-.article-detail h2 {
+.article-detail>h2 {
   width: 85%;
   margin-left: -10px;
 }
 
-.article-detail h3 {
+.article-detail>h3 {
   width: 60%;
 }
 
-.article-detail h4 {
+.article-detail>h4 {
   width: 40%;
 }
 
-.article-detail h5 {
+.article-detail>h5 {
   width: 30%;
 }
 
-.article-detail h6 {
+.article-detail>h6 {
   width: 30%;
 }
 
