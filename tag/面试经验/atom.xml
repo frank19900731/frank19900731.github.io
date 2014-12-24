@@ -17,6 +17,7 @@
 		width:		'100%',
 		height:		'700',
 		source:		'/json/qiuzhi2014.json',
+		font:		'my',
 		embed_id:	'my-timeline'
 		});
 	});
