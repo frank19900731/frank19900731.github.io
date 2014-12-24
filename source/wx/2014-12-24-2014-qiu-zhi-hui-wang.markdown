@@ -22,6 +22,7 @@ wx_url: /wx/2014-12-24-2014-qiu-zhi-hui-wang.html
 		width:		'100%',
 		height:		'700',
 		source:		'/json/qiuzhi2014.json',
+		font:		'my',
 		embed_id:	'my-timeline'
 		});
 	});
