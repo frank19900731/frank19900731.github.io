@@ -1,5 +1,84 @@
 
 <item>
+    <title>2014 面试终结篇</title>
+    <link>http://realjenius.com/blog/2014/12/24/2014-qiu-zhi-hui-wang/</link>
+    <author>R.J. Lorimer</author>
+    <pubDate>2014-12-24T18:41:55+08:00</pubDate>
+    <guid>http://realjenius.com/blog/2014/12/24/2014-qiu-zhi-hui-wang/</guid>
+    <description><![CDATA[
+     <p>谨以此文作为过去一年求职经历的回顾，此后不再撰写相关内容。</p>
+
+<script type="text/javascript" src="http://frank19900731.github.io/javascripts/timeline/js/storyjs-embed.js"></script>
+
+<script>
+	$(document).ready(function() {
+		createStoryJS({
+		type:		'timeline',
+		width:		'100%',
+		height:		'700',
+		source:		'/json/qiuzhi2014.json',
+		embed_id:	'my-timeline'
+		});
+	});
+</script>
+
+<div id="my-timeline" style="opacity: 0.7;"></div>
+
+<p><br /></p>
+
+<!-- excerpt start -->
+
+<p>2014 年，也就这么磕磕绊绊的走过来了，对行业的了解在深入，对自己的不足也认识得更清楚。</p>
+
+<p>内推期间的连续碰壁不免让人心灰意冷，但更值得反复回味、总结反思。了解业界的需求，在此基础上为自己安排知识、技能方面的学习、训练，辅之以面试技巧的归纳，逐渐就会在之后的面试中看到进步与提升。当然，单纯为面试而准备的知识可能很快就会遗忘，所以<strong>一开始就要抱有长久打算</strong>，要对自己的工作前途负责，而不仅仅定位为面试准备。</p>
+
+<p>找工作到最后感觉和考大学挺像的</p>
+
+<ul>
+  <li>牛翻天了也只能上一所大学；</li>
+  <li>并不是最牛的大学才有成才机会；</li>
+  <li>牛逼大学混日子出来也是渣渣；</li>
+  <li>牛逼大学能给你能力背书，真实能力还得靠你自己提升。</li>
+</ul>
+
+<hr />
+
+<p>最后，要对求职季里给予过我帮助的人道声感谢。</p>
+
+<p>感谢靖世、晗导、小强、侯导为代表的实验室师兄的大力支持，不厌其烦地解答我在求职中的疑惑；</p>
+
+<p>感谢杨焜师兄在实习期间的指导，也一并感谢其他团队成员对我的帮助；</p>
+
+<p>感谢喻川、闫成哲，毕业季的讨论交流让我受益良多。</p>
+
+<p><br /></p>
+
+<p>感谢宜信 Joyce Zhang 女士和魏旋学长，</p>
+
+<p>感谢 FreeWheel 的王迪学长和吴頔先生，</p>
+
+<p>感谢 IBM CRL 的金锋、田启明学长，</p>
+
+<p>感谢猿题库的郭常圳、邓澍军老师，</p>
+
+<p>感谢揽胜科技的诸葛越女士，</p>
+
+<p>感谢他们在面试中及之后给予我的无私关照，与他们的交流让我学到很多。</p>
+
+<p><br /></p>
+
+<p>2014 是<strong>焦虑中带着美好</strong>的一年，我会记得它。</p>
+
+<p><br /></p>
+
+<!-- excerpt end -->
+
+<p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2014/12/24/2014-qiu-zhi-hui-wang/">http://frank19900731.github.io/blog/2014/12/24/2014-qiu-zhi-hui-wang/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
+
+  ]]></description>
+</item>
+
+<item>
     <title>Matrix67 博客中智力题粗分类</title>
     <link>http://realjenius.com/blog/2014/11/29/matrix67-bo-ke-zhong-zhi-li-ti-cu-fen-lei/</link>
     <author>R.J. Lorimer</author>
@@ -1708,69 +1787,6 @@ r=\frac { \left( X-\overline { X }  \right) \cdot \left( Y-\overline { Y }  \rig
 </ol>
 
 <p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2014/10/20/ji-mou-you-xi-gong-si-mian-shi-jing-li/">http://frank19900731.github.io/blog/2014/10/20/ji-mou-you-xi-gong-si-mian-shi-jing-li/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
-
-  ]]></description>
-</item>
-
-<item>
-    <title>IDG 联合招聘笔试回忆</title>
-    <link>http://realjenius.com/blog/2014/10/19/idg-lian-he-zhao-pin-bi-shi-hui-yi/</link>
-    <author>R.J. Lorimer</author>
-    <pubDate>2014-10-19T21:53:07+08:00</pubDate>
-    <guid>http://realjenius.com/blog/2014/10/19/idg-lian-he-zhao-pin-bi-shi-hui-yi/</guid>
-    <description><![CDATA[
-     <!-- excerpt start -->
-
-<p>IDG 投资的公司有脸萌、蘑菇街、果壳网等，详见此<a href="http://campus.idgvc.ourats.com/about-us/companys">链接</a>。对于这些小规模创业公司自己还是挺感兴趣的，参加联合招聘也很省事，笔试题目（B卷）回忆如下。</p>
-
-<h2 id="section">选择题</h2>
-
-<ol>
-  <li>三个汽水瓶可以换一瓶汽水，要让28人都喝一瓶，买几瓶水？    答： 19瓶。</li>
-  <li>50人中有两人生日相同的概率是多少？    答：0.97（注意是选择题，不是当场算的……）。</li>
-  <li>1000人，三场演出，分别有500，350，250人观看，400人至少看两场，100人看三场，问多少人一场没看？    答：400人。</li>
-  <li>逻辑判断，条件一：<code>x or y</code>；条件二：<code>not y or not z</code>；条件三：<code>非z 则 非y</code>，可以肯定的是哪项？    答：x 为 true。假设 非x，则 y，则 非z，则 非y，矛盾。</li>
-  <li>安卓属于那种系统？    答：软实时系统 。</li>
-  <li>分布式系统 与 网络系统 的区别？    答：协调多个机器完成同一任务。</li>
-  <li>位示图的作用？    答：管理磁盘空间。</li>
-  <li>6 个方块排一排，用三种颜色涂刷，要求相邻方块不同色且三种颜色都用上，有几种涂法？    答：90种。<code>3 * 2^5 - 3*2</code></li>
-  <li>二叉树，第五层最多有多少个节点？（根节点是第一层）   答：16。</li>
-  <li>红球、黑球、白球共60个，摸了一阵，统计红球大约15%，黑球大约45%，问有多少个白球？    答：16。</li>
-  <li>253的16进制和二进制表示？    答：0xFD，11111101</li>
-  <li>ABCDE，不可能的出栈顺序？</li>
-  <li>快速排序，第一次运行后的结果是？</li>
-  <li>程序题，问 c 的输出是多少？    答：-1。</li>
-</ol>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>程序题</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-<span class="line-number">5</span>
-<span class="line-number">6</span>
-</pre></td><td class="code"><pre><code class="c"><span class="line"><span class="kt">int</span> <span class="n">a</span> <span class="o">=</span><span class="mi">0</span><span class="p">;</span>
-</span><span class="line"><span class="kt">int</span> <span class="n">c</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-</span><span class="line"><span class="k">do</span> <span class="p">{</span>
-</span><span class="line">    <span class="o">--</span><span class="n">c</span><span class="p">;</span>
-</span><span class="line">    <span class="n">a</span> <span class="o">=</span> <span class="n">a</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span>
-</span><span class="line"><span class="p">}</span> <span class="k">while</span><span class="p">(</span><span class="n">a</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-<p>还有一道想不起来了……</p>
-
-<h2 id="section-1">综合题</h2>
-
-<ol>
-  <li>链表每隔K个翻转，要求常数空间存储，代码实现。比如 <code>1-&gt;2-&gt;3-&gt;4-&gt;5-&gt;6</code>，k=2 变成  <code>2-&gt;1-&gt;4-&gt;3-&gt;6-&gt;5</code>，k=3 变成  <code>3-&gt;2-&gt;1-&gt;6-&gt;5-&gt;4</code>。</li>
-  <li>M X N方格，从 (0,0) 走到 (M,N) 有多少种走法记为L，如果 M、N 很大那么 L 这个数也是很大的，设计算法计算 L % 13。</li>
-</ol>
-
-<h2 id="section-2">总结</h2>
-
-<p>一开始 IDG 说将由很牛的 ACM 选手出题，心里挺忐忑，现场做题才发现不是这样。虽然题目不难，不过限时 1 小时，自己只是将将做完。</p>
-
-<!-- excerpt end -->
-
-<p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2014/10/19/idg-lian-he-zhao-pin-bi-shi-hui-yi/">http://frank19900731.github.io/blog/2014/10/19/idg-lian-he-zhao-pin-bi-shi-hui-yi/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
 
   ]]></description>
 </item>

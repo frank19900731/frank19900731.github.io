@@ -4,7 +4,7 @@
   <title><![CDATA[Blog of 太极儒]]></title>
   <link href="http://frank19900731.github.io/feed" rel="self"/>
   <link href="http://frank19900731.github.io/"/>
-  <updated>2014-12-24T10:18:04+08:00</updated>
+  <updated>2014-12-24T22:19:14+08:00</updated>
   <id>http://frank19900731.github.io/</id>
   <author>
     <name><![CDATA[Frank Song]]></name>
@@ -12,6 +12,82 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[2014 面试终结篇]]></title>
+    <link href="http://frank19900731.github.io/blog/2014/12/24/2014-qiu-zhi-hui-wang/"/>
+    <updated>2014-12-24T18:41:55+08:00</updated>
+    <id>http://frank19900731.github.io/blog/2014/12/24/2014-qiu-zhi-hui-wang</id>
+    <content type="html"><![CDATA[<p>谨以此文作为过去一年求职经历的回顾，此后不再撰写相关内容。</p>
+
+<script type="text/javascript" src="http://frank19900731.github.io/javascripts/timeline/js/storyjs-embed.js"></script>
+
+<script>
+	$(document).ready(function() {
+		createStoryJS({
+		type:		'timeline',
+		width:		'100%',
+		height:		'700',
+		source:		'/json/qiuzhi2014.json',
+		embed_id:	'my-timeline'
+		});
+	});
+</script>
+
+<div id="my-timeline" style="opacity: 0.7;"></div>
+
+<p><br /></p>
+
+<!-- excerpt start -->
+
+<p>2014 年，也就这么磕磕绊绊的走过来了，对行业的了解在深入，对自己的不足也认识得更清楚。</p>
+
+<p>内推期间的连续碰壁不免让人心灰意冷，但更值得反复回味、总结反思。了解业界的需求，在此基础上为自己安排知识、技能方面的学习、训练，辅之以面试技巧的归纳，逐渐就会在之后的面试中看到进步与提升。当然，单纯为面试而准备的知识可能很快就会遗忘，所以<strong>一开始就要抱有长久打算</strong>，要对自己的工作前途负责，而不仅仅定位为面试准备。</p>
+
+<p>找工作到最后感觉和考大学挺像的</p>
+
+<ul>
+  <li>牛翻天了也只能上一所大学；</li>
+  <li>并不是最牛的大学才有成才机会；</li>
+  <li>牛逼大学混日子出来也是渣渣；</li>
+  <li>牛逼大学能给你能力背书，真实能力还得靠你自己提升。</li>
+</ul>
+
+<hr />
+
+<p>最后，要对求职季里给予过我帮助的人道声感谢。</p>
+
+<p>感谢靖世、晗导、小强、侯导为代表的实验室师兄的大力支持，不厌其烦地解答我在求职中的疑惑；</p>
+
+<p>感谢杨焜师兄在实习期间的指导，也一并感谢其他团队成员对我的帮助；</p>
+
+<p>感谢喻川、闫成哲，毕业季的讨论交流让我受益良多。</p>
+
+<p><br /></p>
+
+<p>感谢宜信 Joyce Zhang 女士和魏旋学长，</p>
+
+<p>感谢 FreeWheel 的王迪学长和吴頔先生，</p>
+
+<p>感谢 IBM CRL 的金锋、田启明学长，</p>
+
+<p>感谢猿题库的郭常圳、邓澍军老师，</p>
+
+<p>感谢揽胜科技的诸葛越女士，</p>
+
+<p>感谢他们在面试中及之后给予我的无私关照，与他们的交流让我学到很多。</p>
+
+<p><br /></p>
+
+<p>2014 是<strong>焦虑中带着美好</strong>的一年，我会记得它。</p>
+
+<p><br /></p>
+
+<!-- excerpt end -->
+
+<p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2014/12/24/2014-qiu-zhi-hui-wang/">http://frank19900731.github.io/blog/2014/12/24/2014-qiu-zhi-hui-wang/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[数说 2014]]></title>
@@ -248,7 +324,7 @@
   <li><a href="http://frank19900731.github.io/blog/2014/12/20/wunderlist-tian-jia-kuai-jie-jian-qi-dong/">Wunderlist 添加快捷键启动</a></li>
   <li><a href="http://frank19900731.github.io/blog/2014/12/21/mei-zhou-ruan-zhi-markdown-bi-ji-ruan-jian-ulysses-iii/">每周一软之 Markdown 笔记软件 Ulysses III</a></li>
   <li><a href="http://frank19900731.github.io/blog/2014/12/23/shu-shuo-2014/">数说 2014</a></li>
-  <li>年终总结，待撰写</li>
+  <li><a href="http://frank19900731.github.io/blog/2014/12/24/2014-qiu-zhi-hui-wang/">2014 面试终结篇</a></li>
   <li>每周一软，待撰写</li>
 </ul>
 
@@ -4144,121 +4220,6 @@ r=\frac { \left( X-\overline { X }  \right) \cdot \left( Y-\overline { Y }  \rig
 <a href="http://frank19900731.github.io/img/post/2014-10/12.png" class="img-up" title="Producteev"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2014-10/12.png" width="20%" title="Producteev" /></a></p>
 
 <p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2014/10/27/wo-de-shi-jian-guan-li-jing-yan-yu-gong-ju-fen-xiang/">http://frank19900731.github.io/blog/2014/10/27/wo-de-shi-jian-guan-li-jing-yan-yu-gong-ju-fen-xiang/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[求职季的一点经验之谈]]></title>
-    <link href="http://frank19900731.github.io/blog/2014/10/25/qiu-zhi-ji-de-yi-dian-jing-yan-zhi-tan/"/>
-    <updated>2014-10-25T22:58:48+08:00</updated>
-    <id>http://frank19900731.github.io/blog/2014/10/25/qiu-zhi-ji-de-yi-dian-jing-yan-zhi-tan</id>
-    <content type="html"><![CDATA[<p><strong>目录</strong></p>
-
-<ul id="markdown-toc">
-  <li><a href="#section">早点准备好自己的中英文简历</a></li>
-  <li><a href="#section-1">准备一个靠谱的手机号和靠谱的手机</a></li>
-  <li><a href="#section-2">复习职位相关知识点</a></li>
-  <li><a href="#section-3">准备自我介绍，回顾项目与实习经历</a></li>
-  <li><a href="#tag">及时查阅收件箱与垃圾邮箱，对重要邮件做标记或打 tag，方便处理与查找</a></li>
-  <li><a href="#section-4">暑期实习，把握内推机会</a></li>
-  <li><a href="#section-5">笔试、面试结束后马上回忆题目，回到学校后查缺补漏</a></li>
-  <li><a href="#section-6">和同学朋友结伴申请</a></li>
-  <li><a href="#section-7">总结</a></li>
-</ul>
-
-<p>废话少说，直接干货。</p>
-
-<!-- excerpt start -->
-
-<h2 id="section">早点准备好自己的中英文简历</h2>
-
-<ul>
-  <li>我自己使用的是 mordencv 模板，正反面打印，分别介绍了自己的教育背景、专业学习、个人爱好、科研与实习经历、校内职务、校内奖励和语言水平，有新进展则更新；</li>
-  <li>关于简历书写网上有很多的教诲，不再赘述，只想强调一点，要能自圆其说，写了但讲不明白是很尴尬的；</li>
-  <li>不同的面试官关注点不同，有的侧重项目，有的侧重实习，还有的会问兴趣爱好，我的一个兴趣爱好 —— Mac 下的软件使用就曾被问及，这个跟技术也不沾边儿，不过能反映出我在某个方面确实动过脑子，也算是给面试官一个爱钻研的印象吧。</li>
-</ul>
-
-<h2 id="section-1">准备一个靠谱的手机号和靠谱的手机</h2>
-
-<p>招聘季短信、电话的价值都是很高的，能否接到通知直接关乎申请的成败，不要觉得 HR 姐姐会执着的找你，候选人有的是，不差你这一个。</p>
-
-<!-- excerpt end -->
-
-<h2 id="section-2">复习职位相关知识点</h2>
-
-<p>仅以算法工程师（外加一点点软开）为例，需要准备的知识可能有</p>
-
-<ul>
-  <li>程序语言基础，C++、Java 至少得熟一个吧；</li>
-  <li>数据库；</li>
-  <li>操作系统基础知识，如多线程；</li>
-  <li>机器学习（模型、原理、适用场景与推导），大数据处理（主要是 hadoop）；</li>
-  <li>数据结构与算法；</li>
-  <li>智力题，如一些概率问题。</li>
-</ul>
-
-<p>我准备的主要途径是复习教材、跟踪系列分享以及重要知识点默记</p>
-
-<ul>
-  <li><code>复习教材</code> 每个人心中都有几本经典教材吧，不要畏难，先找一个下午把整本书翻完作为预热，然后找自己概念模糊的章节细读，个人经验来看，<strong>想要一章一章的把书看完，一般很难坚持到第三章的，这是大实话</strong>；</li>
-  <li><code>跟踪系列分享</code> 比如<a href="http://blog.csdn.net/morewindows/article/category/859207">白话经典算法</a>、<a href="http://blog.csdn.net/v_july_v">结构之法算法之道</a> 以及 <a href="https://github.com/julycoding/The-Art-Of-Programming-by-July">The Art of Programming</a>，这类资源实用性很强；</li>
-  <li><code>重要知识点默记</code> 我自己准备了一个<strong>精美的硬壳本</strong>（精美是重点，破纸早扔了），每一页记录的是基础的、重要的算法代码与模型推导，每隔几天或每当重要面试前自我抽查、默写。</li>
-</ul>
-
-<h2 id="section-3">准备自我介绍，回顾项目与实习经历</h2>
-
-<ul>
-  <li>自我介绍是必备的，不要觉得自己都写在简历上了你就看呗，求职的是你自己，面试官没有义务去做阅读理解；一个流畅并略带特色（可以体现幽默、博学、阳光等）的自我介绍，一方面可以给面试官好的第一印象，还可以<strong>将面试官引导到你希望他考察你的地方</strong>，比如你可以强调引以为豪的项目，也可以强调某种算法模型，而这个模型其实你已经在复习知识点的时候研究得很透彻了；</li>
-  <li>对于自己做过的项目与实习，由于时间久远或者表达能力上的欠缺，你未必能保证给面试官介绍得通透，所以，还是花点时间回顾并书面化为好，每次面试都能用得上。</li>
-</ul>
-
-<h2 id="tag">及时查阅收件箱与垃圾邮箱，对重要邮件做标记或打 tag，方便处理与查找</h2>
-
-<p>学校宣讲会的通知，重要材料的填写，笔试、面试通知（可能包含确认链接），等等，多了就可能遗忘，自己就曾让一封英语测试邮件睡了十天，要么新注册一个邮箱专门用于求职，要么每当看到重要邮件就做标记或打tag，逐个处理完成后再消除标记。</p>
-
-<h2 id="section-4">暑期实习，把握内推机会</h2>
-
-<p>如果有暑期实习的机会，请尽可能按照找工作的标准争取，主要有以下五方面好处</p>
-
-<ul>
-  <li>面试能力大练兵；</li>
-  <li>暑假过得充实，与求职季完美衔接；</li>
-  <li>公司前辈都能分享求职经验，甚至帮你内推其它公司；</li>
-  <li>可以获得实习转正机会；</li>
-  <li>拿到别的公司的实习机会但没有去，也可能入选该公司的提前批面试。</li>
-</ul>
-
-<h2 id="section-5">笔试、面试结束后马上回忆题目，回到学校后查缺补漏</h2>
-
-<ul>
-  <li>对于参加过的笔试、面试，自己都有详细的记录与分析，确实能在这个过程中感受自身的能力提升，会在之后的博文中与大家分享；</li>
-  <li>求职季每天记录求职笔记，包括今天申请了什么公司、接到了什么通知、学习/复习了什么知识、与谁有过讨论、笔试/面试感受如何等等，效果嘛，谁用谁知道，最起码现在写博客做分享的素材是不愁的。</li>
-</ul>
-
-<h2 id="section-6">和同学朋友结伴申请</h2>
-
-<p>找一个对子或者建立一个小组，互相分享感兴趣的职位信息，这样做的好处是</p>
-
-<ul>
-  <li>大家的申请进度互为参照，比如我没有收到笔试通知且伙伴也没有收到笔试通知，这很可能是正常现象，我没有收到但伙伴收到了，那就是哪里出问题了；</li>
-  <li>信息整合，各取所需；</li>
-  <li>面试经验可共享。</li>
-</ul>
-
-<h2 id="section-7">总结</h2>
-
-<p>总的来说，求职季是对脑力、体力的双重考验，如果能在这个过程里边求职边思考，相信经过一个求职季的历练，你一定会有大过 offer 的感悟与收获。</p>
-
-<p>接下来，我将从以下四方面分享一下自己的面试总结，欢迎持续关注。</p>
-
-<ol>
-  <li><a href="http://frank19900731.github.io/blog/2014/11/06/mian-shi-jing-yan-zhi-ji-qi-xue-xi-da-shu-ju-wen-ti/">机器学习、大数据问题</a></li>
-  <li><a href="http://frank19900731.github.io/blog/2014/11/07/mian-shi-jing-yan-fen-xiang-zhi-zhi-li-ti/">智力题</a></li>
-  <li><a href="http://frank19900731.github.io/blog/2014/11/18/mian-shi-jing-yan-fen-xiang-zhi-shu-ju-jie-gou-suan-fa-fen-xiang/">数据结构与算法题</a></li>
-  <li><a href="http://frank19900731.github.io/blog/2014/11/25/mian-shi-jing-yan-fen-xiang-zhi-bian-cheng-yu-yan-ti/">编程语言题</a></li>
-</ol>
-
-<p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2014/10/25/qiu-zhi-ji-de-yi-dian-jing-yan-zhi-tan/">http://frank19900731.github.io/blog/2014/10/25/qiu-zhi-ji-de-yi-dian-jing-yan-zhi-tan/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
 ]]></content>
   </entry>
   
