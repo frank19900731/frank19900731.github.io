@@ -1,0 +1,293 @@
+<!-- layout/wx-default.html -->
+
+<!-- head.html -->
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <!-- 标签页标题 -->
+  <title>每周一软之 Proxifier - Blog of 太极儒</title>
+  <meta name="author" content="Frank Song">
+  <!-- 定义description变量，如果有则用，没有则是正文，前150字 -->
+  
+  <meta name="description" content="目录 功能介绍 界面设计 易用性 稳定性 跨平台 类似软件 闪光点 缺点 周四以来，Mail 里无法查收/发送 Gmail 邮件，为此鼓捣了好一阵子。最后，考虑到好多移动设备也需要查看邮件，索性买一个 VPN 账号。简单对比了一下选择了 风驰，一方面速度、稳定性都很不错，另一方面 270 块能够支持 3 个设备同时登陆且无限时间还真是挺划算的，可谓物美价廉。注意要注册两个账号，一个用另一个的邀请链接购买，可返利 40% 并可提现到支付宝 。 鼓捣的过程里接触到 Proxifier 等一干软件，在此把粗浅的认识记录下来。 功能介绍 Proxifier 可以针对具体的应用设置网络代理，类似于 SwitchySharp 的 Auto Switch Mode，使得部分软件（网址或ip）使用代理访问网络，而其它软件（网址或ip）正常访问网络。 支持 Socks4、Socks5、Https、Http 协议的代理； 可配置代理服务器链，均衡流量，支持使用不同协议； 路由表形式配置不同应用程序的网络访问行为，可以是直连、禁止访问或代理三种形式； 访问行为可具体指明域名、IP和端口，支持通配符； 带有日志输出，可以配置级别，提供时时流量统计图示； 可配置通过代理服务器进行 DNS 解析。 What is the Difference Between Proxy Types 这篇文章简要讲解了 http、socks 代理以及 VPN 的优缺点，之前不甚了解。 界面设计 界面设计普通。 易用性 容易使用。 稳定性 稳定性良好。 跨平台 支持 Windows、OS X。 类似软件 确切地说不是类似软件，而是相关软件。 Proxifier 需要填写代理，可以在网上寻找相关服务（收费或免费），也可以自己搭建。 goagent 提供 http、https 代理（似乎支持过 socks5 ？），缺点是可能会隔段时间失效，需要更新 ip 列表。 CCProxy 一款知名的国产代理服务器软件，配合 Proxifier 可以实现局域网共享网络访问。 Shadowsocks 分服务器端和客户端，服务器端提供 socks 代理，用法可以是 把 VPN 转为代理进而共享； 部署到国外的 VPS 上，身边有同学这么做。 GoAgentX 集成了 goagent、Shadowsocks、SSH 等工具， &hellip;">
+  <meta name="keywords" content="VPN, Proxifier, SwitchySharp, Socks5, Socks4, Https, Http, goagent, CCProxy, Shadowsocks, GoAgentX, chnroutes">
+  <meta name="baidu-site-verification" content="7O78rNJCOH" />
+  <meta name="360-site-verification" content="9ee6dda17557079b8855f9c8201b05bb" />
+  <meta name="msvalidate.01" content="408D13BCB6B6CE4973F6CD9E6A9E8195" />
+  <meta name="sogou_site_verification" content="CtgkJPDjga"/>
+  <meta name="chinaz-site-verification" content="081e7651-48c6-4c2f-a569-99321685eab1" />
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://frank19900731.github.io/wx/2014-12-28-mei-zhou-yi-ruan-zhi-proxifier.html">
+  <!-- 网站小图标 -->
+  <link href="/favicon.ico" rel="icon">
+  <link href="/stylesheets/bootstrap/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="/stylesheets/bootstrap/responsive.css" rel="stylesheet" type="text/css">
+  <!-- 网站样式文件 -->
+  <link href="/stylesheets/styles.css" media="screen, projection" rel="stylesheet" type="text/css">
+
+  <link href="/atom.xml" rel="alternate" title="Blog of 太极儒" type="application/atom+xml">
+
+  <script src="/javascripts/modernizr.custom.js"></script>
+  <!-- jQuery -->
+  <!--script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script-->
+  <script src="/javascripts/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+
+  <!-- 其它js代码 -->
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <script src="/javascripts/jquery.sidr.min.js"></script>
+  <script src="/javascripts/ah-blue.js"></script>
+  <script type="text/javascript" src="/javascripts/fancybox/jquery.fancybox.pack.js"></script>
+  <link rel="stylesheet" type="text/css" href="/javascripts/fancybox/jquery.fancybox.css" media="screen" />
+
+  <link href="/stylesheets/component.css" rel="stylesheet" type="text/css">
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+        if ($(".img-up")) {
+            $(".img-up").fancybox();
+        }
+        if ($(".imgleft")) {
+            $(".imgleft").parent().parent().css("text-align", "left");
+        }
+        if ($(".imgright")) {
+            $(".imgright").parent().parent().css("text-align", "right");
+        }
+        if ($(".imgcenter")) {
+            $(".imgcenter").parent().parent().css("text-align", "center");
+        }
+        if ($(".imgleft-no-shadow")) {
+            $(".imgleft-no-shadow").parent().parent().css("text-align", "left");
+        }
+        if ($(".imgright-no-shadow")) {
+            $(".imgright-no-shadow").parent().parent().css("text-align", "right");
+        }
+        if ($(".imgcenter-no-shadow")) {
+            $(".imgcenter-no-shadow").parent().parent().css("text-align", "center");
+        }
+
+        if ($(".mod_lost_child_little")) {
+            $(".mod_lost_child_little").css("width", "100%");
+        }
+    });
+  </script>
+
+  <style>
+      body {
+          background-image: none;
+      }
+
+      tr.content {
+          line-height: 300%;
+          border-top: 1px dotted #000;
+      }
+
+      table.mulu {
+          width: 95%; margin: 10px auto 40px;
+      }
+
+      .gutter {
+          width: 7%;
+      }
+  </style>
+
+  <!-- custom/head.html -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      jax: ["input/TeX", "output/HTML-CSS"],
+      tex2jax: {
+        inlineMath: [ ['$', '$'], ["\\(", "\\)"] ],
+        displayMath: [ ['$$', '$$'], ["\\[", "\\]"] ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+      //,
+      //displayAlign: "left",
+      //displayIndent: "2em"
+    });
+
+    function addBlankTargetForLinks () {
+
+      $('a[href^="http"]').each(function(){
+
+        $(this).attr('target', '_blank');
+
+      });
+
+    }
+
+    $(document).bind('DOMNodeInserted', function(event) {
+
+      addBlankTargetForLinks();
+
+    });
+
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"></script>
+  <!-- google_analytics.html -->
+
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-51950124-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head> 
+
+<body style="background-color: rgba(255, 255, 255, 0.3);">
+
+<div class="row-fluid marketing">
+<div class="span2"> </div>
+<div class="span8">
+<div class="container-narrow" style="margin-top: 20px;">
+
+      <div class="masthead">
+        <ul class="nav nav-pills pull-right">
+          <li><a href="/wx/archives/">博客目录</a></li>
+          <li><a href="/blog/2014/12/28/mei-zhou-yi-ruan-zhi-proxifier/">PC端阅读</a></li>
+        </ul>
+        <h3 class="muted">&nbsp;&nbsp;&nbsp;&nbsp;太极儒</h3>
+      </div>
+
+	  <hr style="width: 100%;">
+
+      <div style="padding: 8px 25px 8px 25px;">
+        <h1>
+          每周一软之 Proxifier
+        </h1>
+
+        <div class="article-date" style="margin-bottom: 40px;">
+            <!-- post/date.html -->
+<!-- 文章日期显示 -->
+
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-12-28T17:19:15+08:00" pubdate data-updated="true">Dec 28<span>th</span>, 2014</time>
+        </div>
+      <p><strong>目录</strong></p>
+
+<ul id="markdown-toc">
+  <li><a href="#section">功能介绍</a></li>
+  <li><a href="#section-1">界面设计</a></li>
+  <li><a href="#section-2">易用性</a></li>
+  <li><a href="#section-3">稳定性</a></li>
+  <li><a href="#section-4">跨平台</a></li>
+  <li><a href="#section-5">类似软件</a></li>
+  <li><a href="#section-6">闪光点</a></li>
+  <li><a href="#section-7">缺点</a></li>
+</ul>
+
+<!-- excerpt start -->
+
+<p>周四以来，Mail 里无法查收/发送 Gmail 邮件，为此鼓捣了好一阵子。最后，考虑到好多移动设备也需要查看邮件，索性买一个 VPN 账号。简单对比了一下选择了 <a href="https://www.fengchinet.com/">风驰</a>，一方面速度、稳定性都很不错，另一方面 270 块能够支持 3 个设备同时登陆且无限时间还真是挺划算的，可谓物美价廉。注意要注册两个账号，一个用另一个的邀请链接购买，可返利 40% 并可提现到支付宝 。</p>
+
+<p>鼓捣的过程里接触到 Proxifier 等一干软件，在此把粗浅的认识记录下来。</p>
+
+<h2 id="section">功能介绍</h2>
+
+<p><a href="http://www.proxifier.com/documentation/v3/">Proxifier</a> 可以针对具体的应用设置网络代理，类似于 SwitchySharp 的 Auto Switch Mode，使得部分软件（网址或ip）使用代理访问网络，而其它软件（网址或ip）正常访问网络。</p>
+
+<ul>
+  <li>支持 Socks4、Socks5、Https、Http 协议的代理；</li>
+  <li>可配置代理服务器链，均衡流量，支持使用不同协议；</li>
+  <li>路由表形式配置不同应用程序的网络访问行为，可以是直连、禁止访问或代理三种形式；</li>
+  <li>访问行为可具体指明域名、IP和端口，支持通配符；</li>
+  <li>带有日志输出，可以配置级别，提供时时流量统计图示；</li>
+  <li>可配置通过代理服务器进行 DNS 解析。</li>
+</ul>
+
+<p><a href="http://chris.olstrom.com/privacy/proxy-types/">What is the Difference Between Proxy Types</a> 这篇文章简要讲解了 http、socks 代理以及 VPN 的优缺点，之前不甚了解。</p>
+
+<!-- excerpt end -->
+
+<h2 id="section-1">界面设计</h2>
+
+<p>界面设计普通。</p>
+
+<p><a href="/img/post/2014-12/43.png" class="img-up" title="主界面与 Proxy 列表"><img class="imgcenter" src="/img/post/2014-12/43.png" width="80%" title="主界面与 Proxy 列表" /></a></p>
+
+<p><a href="/img/post/2014-12/44.png" class="img-up" title="添加 Proxy"><img class="imgcenter" src="/img/post/2014-12/44.png" width="60%" title="添加 Proxy" /></a></p>
+
+<h2 id="section-2">易用性</h2>
+
+<p>容易使用。</p>
+
+<h2 id="section-3">稳定性</h2>
+
+<p>稳定性良好。</p>
+
+<h2 id="section-4">跨平台</h2>
+
+<p>支持 Windows、OS X。</p>
+
+<h2 id="section-5">类似软件</h2>
+
+<p>确切地说不是类似软件，而是相关软件。</p>
+
+<p>Proxifier 需要填写代理，可以在网上寻找相关服务（收费或免费），也可以自己搭建。</p>
+
+<ul>
+  <li><a href="https://github.com/goagent/goagent">goagent</a> 提供 http、https 代理（<a href="https://code.google.com/p/goagent/issues/detail?id=5988">似乎支持过 socks5 ？</a>），缺点是<strong>可能会隔段时间失效</strong>，<strong>需要更新 ip 列表</strong>。 </li>
+  <li><a href="http://www.ccproxy.com/">CCProxy</a> 一款知名的国产代理服务器软件，<a href="http://www.ccproxy.com/proxifier-tou-ming-dai-li.htm">配合 Proxifier 可以实现局域网共享网络访问</a>。</li>
+  <li><a href="https://github.com/shadowsocks/shadowsocks">Shadowsocks</a> 分服务器端和客户端，服务器端提供 socks 代理，用法可以是
+    <ul>
+      <li>把 VPN 转为代理进而共享；</li>
+      <li>部署到国外的 VPS 上，身边有同学这么做。</li>
+    </ul>
+  </li>
+  <li><a href="https://github.com/ohdarling/GoAgentX">GoAgentX</a> 集成了 goagent、Shadowsocks、SSH 等工具，提供图形界面配置。</li>
+</ul>
+
+<p>类似的网络工具还有很多，看得头都大了，挂一漏万，有一个好使就行。</p>
+
+<p>还有一个工具是在使用 VPN 时会用到的，就是 <a href="https://github.com/jimmyxu/chnroutes">chnroutes</a> 。chnroutes 通过 ip 配置实现 VPN 分流，减轻 VPN 负担，提高国内网站的访问速度。具体做法貌似是设置用 VPN 传输所有网络流量，但是会<strong>使用 route 命令将一些 ip 地址路由到非 VPN  线路的网关上</strong>。</p>
+
+<h2 id="section-6">闪光点</h2>
+
+<ul>
+  <li>配置灵活，可以为单个软件提供代理服务，特别是<strong>当该软件不提供代理设置的时候</strong>很有用。</li>
+</ul>
+
+<h2 id="section-7">缺点</h2>
+
+<p>其实我很想寻找一款能够<strong>指定某个应用是否使用 VPN 进行联网</strong>的软件，在我并不清楚该应用可能访问的 ip 范围的时候，chnroutes 难以提供帮助，而 Proxifier 显然也没法满足这种需求……</p>
+
+<p>一种做法是，在个人服务器/云主机上配置 VPN 和 chnroutes，在笔记本上使用 Proxifier 连接该 socks 代理，并配置相关应用程序的访问行为。</p>
+
+      <div style="margin-top: 30px;">
+      本文原载于 <a href="http://frank19900731.github.io" target="_blank">http://frank19900731.github.io</a> (为获得更好的阅读效果，请在PC端访问此链接)，作者宋成儒，微信号 frank19900731，微博 <a href="http://weibo.com/frank19900731" target="_blank">@太极儒</a> 。
+      </div>
+      </div>
+
+</div> <!-- /container -->
+</div>
+<div class="span2"></div>
+</div>
+
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1253436508'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s6.cnzz.com/z_stat.php%3Fid%3D1253436508%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+</body>
+</html>
