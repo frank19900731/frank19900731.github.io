@@ -1,0 +1,433 @@
+<!-- layout/wx-default.html -->
+
+<!-- head.html -->
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <!-- 标签页标题 -->
+  <title>Gollum 开机启动配置 - Blog of 太极儒</title>
+  <meta name="author" content="Frank Song">
+  <!-- 定义description变量，如果有则用，没有则是正文，前150字 -->
+  
+  <meta name="description" content="目录 Gollum 介绍 安装 配置 编码错误 配置本地 MathJax 微调界面 开机启动 总结 Gollum 介绍 Gollum 是一个轻量级的 Wiki 框架，可以管理以 Git Repository 形式存在的文件夹。相比于 Mediawiki，文档迁移性更灵活，界面也清新美观。支持多种文档格式，包括 Markdown、MediaWiki、Org-mode、Plain Text、reStructuredText、RDoc、Textile 等。 Gollum 自带公式输入支持，可自定义 MathJax 的配置；支持图片拖拽插入（并自动上传），这是让我觉得很方便的一点。美中不足的是，Gollum 不支持中文命名的文件，所以 如果 Git Repository 中包含中文命名文档，则无法正确显示； 对于中文名称链接，Gollum 会将该名称转为拼音形式作为文件名，相应链接、文档标题也都是拼音； 如果上传图片是中文命名的，也无法正确显示。 安装 按照 说明 安装即可。 Gollum 安装过程可能会比较慢，或者报 TIME_OUT 错误，可切换至 淘宝镜像。 配置 编码错误 编辑文档过程中，特别是使用非 Gollum 网页编辑器编辑文档并提交，可能会出现 incompatible character encodings: UTF-8 and ASCII-8BIT 编码错误，需要 修改 gitlab-grit 中的 index.rb 代码的第 176 行 如下 Gollum Encoding Fix1
+tree_contents[k] = &quot;%s %s\0%s&quot; % [tmode, obj.name.force_encoding(&#39;ASCII-8BIT&#39;), sha] 也就是加入了强制编码。 gitlab-grit 的路径，如果使用 rvm 的 ruby 安装，是 /Users/frank/.rvm/rubies/ruby-X.X.X/lib/ruby/gems/X.X.X/gems/gitlab-grit/lib/grit/index.rb 如果使用系统 ruby 安装，则是 /Library/Ruby/Gems/X.X.X/gems/gitlab-grit/lib/grit/index.rb 。 配置本地 MathJax &hellip;">
+  <meta name="keywords" content="Gollum, Ruby, 开机启动, Rvm, launchctl, Mac">
+  <meta name="baidu-site-verification" content="7O78rNJCOH" />
+  <meta name="360-site-verification" content="9ee6dda17557079b8855f9c8201b05bb" />
+  <meta name="msvalidate.01" content="408D13BCB6B6CE4973F6CD9E6A9E8195" />
+  <meta name="sogou_site_verification" content="CtgkJPDjga"/>
+  <meta name="chinaz-site-verification" content="081e7651-48c6-4c2f-a569-99321685eab1" />
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://frank19900731.github.io/wx/2015-01-02-gollum-kai-ji-qi-dong-pei-zhi.html">
+  <!-- 网站小图标 -->
+  <link href="/favicon.ico" rel="icon">
+  <link href="/stylesheets/bootstrap/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="/stylesheets/bootstrap/responsive.css" rel="stylesheet" type="text/css">
+  <!-- 网站样式文件 -->
+  <link href="/stylesheets/styles.css" media="screen, projection" rel="stylesheet" type="text/css">
+
+  <link href="/atom.xml" rel="alternate" title="Blog of 太极儒" type="application/atom+xml">
+
+  <script src="/javascripts/modernizr.custom.js"></script>
+  <!-- jQuery -->
+  <!--script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script-->
+  <script src="/javascripts/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+
+  <!-- 其它js代码 -->
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <script src="/javascripts/jquery.sidr.min.js"></script>
+  <script src="/javascripts/ah-blue.js"></script>
+  <script type="text/javascript" src="/javascripts/fancybox/jquery.fancybox.pack.js"></script>
+  <link rel="stylesheet" type="text/css" href="/javascripts/fancybox/jquery.fancybox.css" media="screen" />
+
+  <link href="/stylesheets/component.css" rel="stylesheet" type="text/css">
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+        if ($(".img-up")) {
+            $(".img-up").fancybox();
+        }
+        if ($(".imgleft")) {
+            $(".imgleft").parent().parent().css("text-align", "left");
+        }
+        if ($(".imgright")) {
+            $(".imgright").parent().parent().css("text-align", "right");
+        }
+        if ($(".imgcenter")) {
+            $(".imgcenter").parent().parent().css("text-align", "center");
+        }
+        if ($(".imgleft-no-shadow")) {
+            $(".imgleft-no-shadow").parent().parent().css("text-align", "left");
+        }
+        if ($(".imgright-no-shadow")) {
+            $(".imgright-no-shadow").parent().parent().css("text-align", "right");
+        }
+        if ($(".imgcenter-no-shadow")) {
+            $(".imgcenter-no-shadow").parent().parent().css("text-align", "center");
+        }
+
+        if ($(".mod_lost_child_little")) {
+            $(".mod_lost_child_little").css("width", "100%");
+        }
+    });
+  </script>
+
+  <style>
+      body {
+          background-image: none;
+      }
+
+      tr.content {
+          line-height: 300%;
+          border-top: 1px dotted #000;
+      }
+
+      table.mulu {
+          width: 95%; margin: 10px auto 40px;
+      }
+
+      .gutter {
+          width: 7%;
+      }
+  </style>
+
+  <!-- custom/head.html -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      jax: ["input/TeX", "output/HTML-CSS"],
+      tex2jax: {
+        inlineMath: [ ['$', '$'], ["\\(", "\\)"] ],
+        displayMath: [ ['$$', '$$'], ["\\[", "\\]"] ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+      //,
+      //displayAlign: "left",
+      //displayIndent: "2em"
+    });
+
+    function addBlankTargetForLinks () {
+
+      $('a[href^="http"]').each(function(){
+
+        $(this).attr('target', '_blank');
+
+      });
+
+    }
+
+    $(document).bind('DOMNodeInserted', function(event) {
+
+      addBlankTargetForLinks();
+
+    });
+
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"></script>
+  <!-- google_analytics.html -->
+
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-51950124-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head> 
+
+<body style="background-color: rgba(255, 255, 255, 0.3);">
+
+<div class="row-fluid marketing">
+<div class="span2"> </div>
+<div class="span8">
+<div class="container-narrow" style="margin-top: 20px;">
+
+      <div class="masthead">
+        <ul class="nav nav-pills pull-right">
+          <li><a href="/wx/archives/">博客目录</a></li>
+          <li><a href="/blog/2015/01/02/gollum-kai-ji-qi-dong-pei-zhi/">PC端阅读</a></li>
+        </ul>
+        <h3 class="muted">&nbsp;&nbsp;&nbsp;&nbsp;太极儒</h3>
+      </div>
+
+	  <hr style="width: 100%;">
+
+      <div style="padding: 8px 25px 8px 25px;">
+        <h1>
+          Gollum 开机启动配置
+        </h1>
+
+        <div class="article-date" style="margin-bottom: 40px;">
+            <!-- post/date.html -->
+<!-- 文章日期显示 -->
+
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2015-01-02T09:31:32+08:00" pubdate data-updated="true">Jan 2<span>nd</span>, 2015</time>
+        </div>
+      <p><strong>目录</strong></p>
+
+<ul id="markdown-toc">
+  <li><a href="#gollum-">Gollum 介绍</a></li>
+  <li><a href="#section">安装</a></li>
+  <li><a href="#section-1">配置</a>    <ul>
+      <li><a href="#section-2">编码错误</a></li>
+      <li><a href="#mathjax">配置本地 MathJax</a></li>
+      <li><a href="#section-3">微调界面</a></li>
+    </ul>
+  </li>
+  <li><a href="#section-4">开机启动</a></li>
+  <li><a href="#section-5">总结</a></li>
+</ul>
+
+<!-- excerpt start -->
+
+<h2 id="gollum-">Gollum 介绍</h2>
+
+<p><a href="https://github.com/gollum/gollum">Gollum</a> 是一个轻量级的 Wiki 框架，可以管理以 Git Repository 形式存在的文件夹。相比于 Mediawiki，文档迁移性更灵活，界面也清新美观。支持多种文档格式，包括 Markdown、MediaWiki、Org-mode、Plain Text、reStructuredText、RDoc、Textile 等。</p>
+
+<p><a href="/img/post/2015-1/1.png" class="img-up" title="Gollum 界面"><img class="imgcenter" src="/img/post/2015-1/1.png" width="90%" title="Gollum 界面" /></a></p>
+
+<p>Gollum 自带公式输入支持，可自定义 MathJax 的配置；<strong>支持图片拖拽插入</strong>（并自动上传），这是让我觉得很方便的一点。美中不足的是，Gollum 不支持中文命名的文件，所以</p>
+
+<ul>
+  <li>如果 Git Repository 中包含中文命名文档，则无法正确显示；</li>
+  <li>对于中文名称链接，Gollum 会将该名称<strong>转为拼音形式作为文件名</strong>，相应链接、文档标题也都是拼音；</li>
+  <li>如果上传图片是中文命名的，也无法正确显示。</li>
+</ul>
+
+<h2 id="section">安装</h2>
+
+<p>按照 <a href="https://github.com/gollum/gollum#installation">说明</a> 安装即可。</p>
+
+<p>Gollum 安装过程可能会比较慢，或者报 TIME_OUT 错误，可切换至 <a href="http://ruby.taobao.org/">淘宝镜像</a>。</p>
+
+<!-- excerpt end -->
+
+<h2 id="section-1">配置</h2>
+
+<h3 id="section-2">编码错误</h3>
+
+<p>编辑文档过程中，特别是使用非 Gollum 网页编辑器编辑文档<strong>并提交</strong>，可能会出现 <code>incompatible character encodings: UTF-8 and ASCII-8BIT</code> 编码错误，需要 <a href="https://github.com/gollum/gollum/issues/843">修改 gitlab-grit 中的 index.rb 代码的第 176 行</a> 如下</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>Gollum Encoding Fix</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class="ruby"><span class="line"><span class="n">tree_contents</span><span class="o">[</span><span class="n">k</span><span class="o">]</span> <span class="o">=</span> <span class="s2">&quot;%s %s</span><span class="se">\0</span><span class="s2">%s&quot;</span> <span class="o">%</span> <span class="o">[</span><span class="n">tmode</span><span class="p">,</span> <span class="n">obj</span><span class="o">.</span><span class="n">name</span><span class="o">.</span><span class="n">force_encoding</span><span class="p">(</span><span class="s1">&#39;ASCII-8BIT&#39;</span><span class="p">),</span> <span class="n">sha</span><span class="o">]</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>也就是加入了强制编码。</p>
+
+<p>gitlab-grit 的路径，如果使用 rvm 的 ruby 安装，是 </p>
+
+<p><code>/Users/frank/.rvm/rubies/ruby-X.X.X/lib/ruby/gems/X.X.X/gems/gitlab-grit/lib/grit/index.rb</code></p>
+
+<p>如果使用系统 ruby 安装，则是</p>
+
+<p><code>/Library/Ruby/Gems/X.X.X/gems/gitlab-grit/lib/grit/index.rb</code> 。</p>
+
+<h3 id="mathjax">配置本地 MathJax</h3>
+
+<p>因为可能离线查看文档，所以最好将 MathJax 的请求引到本地，下载 <a href="https://github.com/mathjax/MathJax">MathJax</a> 到本地服务器即可，然后修改 Gollum 模板定义。</p>
+
+<p>同上述，文件路径是</p>
+
+<p><code>/Users/frank/.rvm/rubies/ruby-X.X.X/lib/ruby/gems/X.X.X/gems/gollum/lib/gollum/templates/layout.mustache</code></p>
+
+<p>或</p>
+
+<p><code>/Library/Ruby/Gems/X.X.X/gems/gollum/lib/gollum/templates/layout.mustache</code> 。</p>
+
+<p>第 54 行修改为</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>MathJax 请求修改</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class="javascript"><span class="line"><span class="nx">j</span><span class="p">.</span><span class="nx">src</span> <span class="o">=</span> <span class="s1">&#39;//localhost/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML&#39;</span><span class="p">;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<h3 id="section-3">微调界面</h3>
+
+<p>Gollum 的界面定制起来很方便，修改 gollum.css 或者 -&#92;- css 参数指定都可以。</p>
+
+<p>gollum.css 的路径是</p>
+
+<p><code>/Users/frank/.rvm/rubies/ruby-X.X.X/lib/ruby/gems/X.X.X/gems/gollum/lib/gollum/public/gollum/css/gollum.css</code></p>
+
+<p>或</p>
+
+<p><code>/Library/Ruby/Gems/X.X.X/gems/gollum/lib/gollum/public/gollum/css/gollum.css</code> 。</p>
+
+<p>标题是 h1 、左浮动，菜单是 ul、右浮动。当标题较长时，二者配合搭配不好看，修改为</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>标题样式修改</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+</pre></td><td class="code"><pre><code class="css"><span class="line"><span class="nf">#head</span> <span class="nt">h1</span> <span class="p">{</span>
+</span><span class="line">  <span class="k">font-size</span><span class="o">:</span> <span class="m">1.5em</span><span class="p">;</span>
+</span><span class="line">  <span class="c">/* float: left; */</span>
+</span><span class="line">  <span class="k">line-height</span><span class="o">:</span> <span class="k">normal</span><span class="p">;</span>
+</span><span class="line">  <span class="c">/* margin: 0; */</span>
+</span><span class="line">  <span class="k">margin-bottom</span><span class="o">:</span> <span class="m">20px</span><span class="p">;</span>
+</span><span class="line">  <span class="k">padding</span><span class="o">:</span> <span class="m">0</span> <span class="m">0</span> <span class="m">0</span> <span class="m">0.667em</span><span class="p">;</span>
+</span><span class="line"><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<h2 id="section-4">开机启动</h2>
+
+<p>通常步骤就是把在命令行启动的命令写成脚本，<a href="http://www.tanhao.me/talk/1287.html">按照一定方式加入开机启动</a> 就可以了。然而实际当中被<strong>坑惨了</strong>，主要因为我除了 Octopress 就没怎么用过 ruby。问题有二</p>
+
+<ul>
+  <li>Mac 自带的 ruby 是 2.0.0 的，也就是 <code>/usr/bin/ruby</code> 指定的那个，rvm 的版本与之并存，可以通过 <code>rvm system</code> 或者 <code>rvm use X.X.X</code> 来切换，按照我的 bash 环境变量配置，Gollum 被安装到 rvm 下的 ruby 中；</li>
+  <li>launchctl 的运行环境与 bash 不同，即便 <code>source ~/.bash_profile</code>，或者 <code>rvm use X.X.X</code>，<strong>环境变量里仍然只有系统自带的 ruby</strong>，想用 rvm 的 ruby 就得自己 export PATH。</li>
+</ul>
+
+<p>最后，成功配置开机启动的流程如下。</p>
+
+<ul>
+  <li><code>rvm system</code>，将 Gollum 安装在系统自带 ruby 里；</li>
+  <li>编写 plist 文件</li>
+</ul>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>开机启动 plist 文件</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+<span class="line-number">11</span>
+<span class="line-number">12</span>
+<span class="line-number">13</span>
+<span class="line-number">14</span>
+</pre></td><td class="code"><pre><code class="xml"><span class="line"><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span>
+</span><span class="line"><span class="cp">&lt;!DOCTYPE plist PUBLIC &quot;-//Apple//DTD PLIST 1.0//EN&quot; &quot;http://www.apple.com/DTDs/PropertyList-1.0.dtd&quot;&gt;</span>
+</span><span class="line"><span class="nt">&lt;plist</span> <span class="na">version=</span><span class="s">&quot;1.0&quot;</span><span class="nt">&gt;</span>
+</span><span class="line"><span class="nt">&lt;dict&gt;</span>
+</span><span class="line">    <span class="nt">&lt;key&gt;</span>Label<span class="nt">&lt;/key&gt;</span>
+</span><span class="line">    <span class="nt">&lt;string&gt;</span>com.frank.loginscript<span class="nt">&lt;/string&gt;</span>
+</span><span class="line">    <span class="nt">&lt;key&gt;</span>ProgramArguments<span class="nt">&lt;/key&gt;</span>
+</span><span class="line">    <span class="nt">&lt;array&gt;</span>
+</span><span class="line">        <span class="nt">&lt;string&gt;</span>/Users/frank/Documents/Startup/startup.sh<span class="nt">&lt;/string&gt;</span>
+</span><span class="line">    <span class="nt">&lt;/array&gt;</span>
+</span><span class="line">    <span class="nt">&lt;key&gt;</span>RunAtLoad<span class="nt">&lt;/key&gt;</span>
+</span><span class="line">    <span class="nt">&lt;true/&gt;</span>
+</span><span class="line"><span class="nt">&lt;/dict&gt;</span>
+</span><span class="line"><span class="nt">&lt;/plist&gt;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<ul>
+  <li>创建 /usr/bin/gollum，根据 ruby 的配置加载 Gollum。</li>
+</ul>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>/usr/bin/gollum</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+<span class="line-number">11</span>
+<span class="line-number">12</span>
+<span class="line-number">13</span>
+<span class="line-number">14</span>
+<span class="line-number">15</span>
+<span class="line-number">16</span>
+<span class="line-number">17</span>
+<span class="line-number">18</span>
+<span class="line-number">19</span>
+<span class="line-number">20</span>
+<span class="line-number">21</span>
+<span class="line-number">22</span>
+<span class="line-number">23</span>
+</pre></td><td class="code"><pre><code class="bash"><span class="line"><span class="c">#!/usr/bin/env ruby_executable_hooks</span>
+</span><span class="line"><span class="c">#</span>
+</span><span class="line"><span class="c"># This file was generated by RubyGems.</span>
+</span><span class="line"><span class="c">#</span>
+</span><span class="line"><span class="c"># The application &#39;gollum&#39; is installed as part of a gem, and</span>
+</span><span class="line"><span class="c"># this file is here to facilitate running it.</span>
+</span><span class="line"><span class="c">#</span>
+</span><span class="line">
+</span><span class="line">require <span class="s1">&#39;rubygems&#39;</span>
+</span><span class="line">
+</span><span class="line"><span class="nv">version</span> <span class="o">=</span> <span class="s2">&quot;&gt;= 0&quot;</span>
+</span><span class="line">
+</span><span class="line"><span class="k">if </span>ARGV.first
+</span><span class="line">  <span class="nv">str</span> <span class="o">=</span> ARGV.first
+</span><span class="line">  <span class="nv">str</span> <span class="o">=</span> str.dup.force_encoding<span class="o">(</span><span class="s2">&quot;BINARY&quot;</span><span class="o">)</span> <span class="k">if </span>str.respond_to? :force_encoding
+</span><span class="line">  <span class="k">if </span><span class="nv">str</span> <span class="o">=</span>~ /<span class="se">\A</span>_<span class="o">(</span>.*<span class="o">)</span>_<span class="se">\z</span>/ and Gem::Version.correct?<span class="o">(</span><span class="nv">$1</span><span class="o">)</span> <span class="k">then</span>
+</span><span class="line"><span class="k">    </span><span class="nv">version</span> <span class="o">=</span> <span class="nv">$1</span>
+</span><span class="line">    ARGV.shift
+</span><span class="line">  end
+</span><span class="line">end
+</span><span class="line">
+</span><span class="line">gem <span class="s1">&#39;gollum&#39;</span>, version
+</span><span class="line">load Gem.bin_path<span class="o">(</span><span class="s1">&#39;gollum&#39;</span>, <span class="s1">&#39;gollum&#39;</span>, version<span class="o">)</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<ul>
+  <li>编写启动脚本，其中 <code>export PATH</code> 是为了指定 <code>ruby_executable_hooks</code> 的路径。查了一下，系统自带的 ruby 没这个可执行文件，虽然这里用的是 rvm ruby 里的，但没问题……如果不加，则会返回错误代码 127，找不到命令。</li>
+</ul>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>启动脚本</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+</pre></td><td class="code"><pre><code class="bash"><span class="line"><span class="nb">export </span><span class="nv">PATH</span><span class="o">=</span><span class="nv">$PATH</span>:/Users/frank/.rvm/rubies/ruby-X.X.X/lib/ruby/gems/X.X.X/bin
+</span><span class="line">/usr/bin/gollum --allow-upload dir --mathjax --show-all --gollum-path /Users/frank/gitlab/wiki-of-taijiru
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p><code>/usr/bin/gollum</code> 是为了方便以后全局使用而添加的，能根据我对 ruby 的切换调用相应的 Gollum。其实大可以把启动脚本直接写成</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>启动脚本（2）</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class="bash"><span class="line">/Library/Ruby/Gems/X.X.X/gems/gollum/bin/gollum --allow-upload dir --mathjax --show-all --gollum-path /Users/frank/gitlab/wiki-of-taijiru
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<h2 id="section-5">总结</h2>
+
+<p>本以为很简单的启动配置花了我好长时间，主要是对 ruby 开发环境配置的不熟悉和对 Launch Daemon 的环境变量不了解造成的。这让我想起大一时第一次配置 Apache 的情境，无论怎么修改 index.html，浏览器显示都没有变化。最后终于发现，我修改的是自己通过源码安装的 apache，而每次开关的是系统自带 apache……</p>
+
+<p>不过也正是在查这种傻逼错误的过程里，自己才会去搜索大量资料反复调试，对相关工具的了解也更深。<strong>菜逼的提升，大抵如此吧 ^-^</strong>。</p>
+
+      <div style="margin-top: 30px;">
+      本文原载于 <a href="http://frank19900731.github.io" target="_blank">http://frank19900731.github.io</a> (为获得更好的阅读效果，请在PC端访问此链接)，作者宋成儒，微信号 frank19900731，微博 <a href="http://weibo.com/frank19900731" target="_blank">@太极儒</a> 。
+      </div>
+      </div>
+
+</div> <!-- /container -->
+</div>
+<div class="span2"></div>
+</div>
+
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1253436508'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s6.cnzz.com/z_stat.php%3Fid%3D1253436508%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+</body>
+</html>
