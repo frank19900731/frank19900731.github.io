@@ -218,7 +218,7 @@ Github 的博客 31 篇
 * [每周一软之 Markdown 笔记软件 Ulysses III](http://frank19900731.github.io/blog/2014/12/21/mei-zhou-ruan-zhi-markdown-bi-ji-ruan-jian-ulysses-iii/)
 * [数说 2014](http://frank19900731.github.io/blog/2014/12/23/shu-shuo-2014/)
 * [2014 面试终结篇](http://frank19900731.github.io/blog/2014/12/24/2014-qiu-zhi-hui-wang/)
-* 每周一软，待撰写
+* [每周一软之 Proxifier](http://frank19900731.github.io/blog/2014/12/28/mei-zhou-yi-ruan-zhi-proxifier/)
 
 **明年希望继续减少无病呻吟，保证一周1-2篇。缩短博客撰写时间，书面化的弊端就是耽于形式**。
 

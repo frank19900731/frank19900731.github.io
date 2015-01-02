@@ -9,10 +9,11 @@ keywords: 清华大学, 自动化系, 机器学习, 效率, 阅读, 编程, 正�
 exclude_from_search: true
 ---
 
+{% img imgcenter-no-shadow /img/feature/m-7.jpeg 20% 父子 %}
 {% img imgcenter-no-shadow /img/feature/m-6.jpeg 40% 奇葩说 %}
 {% img imgcenter-no-shadow /img/feature/m-5.jpeg 20% 冷宫传 %}
-{% img imgcenter-no-shadow /img/feature/m-4.jpeg 20% 包笑公堂 %}
 
+{% img imgcenter-no-shadow /img/feature/m-4.jpeg 20% 包笑公堂 %}
 {% img imgcenter-no-shadow /img/feature/m-3.jpeg 20% 匆匆那年 %}
 {% img imgcenter-no-shadow /img/feature/m-2.jpeg 20% 唐顿庄园 %}
 {% img imgcenter-no-shadow /img/feature/m-1.jpeg 20% 北平无战事 %}

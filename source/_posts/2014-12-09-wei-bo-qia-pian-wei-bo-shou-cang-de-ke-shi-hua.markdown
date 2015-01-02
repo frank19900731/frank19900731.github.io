@@ -4,8 +4,8 @@ title: "微博卡片 — 微博收藏的可视化"
 date: 2014-12-09 15:23:26 +0800
 comments: true
 categories: [网页开发]
-tags: [Pytohn, Mongodb, 数据可视化, 瀑布流布局]
-keywords: Pytohn, Mongodb, 数据可视化, 瀑布流布局
+tags: [Python, Mongodb, 数据可视化, 瀑布流布局]
+keywords: Python, Mongodb, 数据可视化, 瀑布流布局
 pc_url: /blog/2014/12/09/wei-bo-qia-pian-wei-bo-shou-cang-de-ke-shi-hua/
 wx_url: /wx/2014-12-09-wei-bo-qia-pian-wei-bo-shou-cang-de-ke-shi-hua.html
 ---
