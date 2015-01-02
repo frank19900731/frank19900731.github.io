@@ -96,6 +96,8 @@
 
 <p>一种做法是，在个人服务器/云主机上配置 VPN 和 chnroutes，在笔记本上使用 Proxifier 连接该 socks 代理，并配置相关应用程序的访问行为。</p>
 
+<p>2015.1.2 补充：在 <a href="http://www.weibo.com/1883627565">@连城404</a> 的 <a href="http://www.weibo.com/1883627565/BDFuZ9dX0">微博</a> 上看到他就是这种做法，用 SSH 隧道连接。</p>
+
 <p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2014/12/28/mei-zhou-yi-ruan-zhi-proxifier/">http://frank19900731.github.io/blog/2014/12/28/mei-zhou-yi-ruan-zhi-proxifier/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
 
   ]]></description>

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Mac 使用 | Blog of 太极儒]]></title>
   <link href="http://frank19900731.github.io/blog/category/mac-shi-yong/atom.xml" rel="self"/>
   <link href="http://frank19900731.github.io/"/>
-  <updated>2015-01-02T12:07:57+08:00</updated>
+  <updated>2015-01-02T17:36:54+08:00</updated>
   <id>http://frank19900731.github.io/</id>
   <author>
     <name><![CDATA[Frank Song]]></name>
@@ -107,6 +107,8 @@
 <p>其实我很想寻找一款能够<strong>指定某个应用是否使用 VPN 进行联网</strong>的软件，在我并不清楚该应用可能访问的 ip 范围的时候，chnroutes 难以提供帮助，而 Proxifier 显然也没法满足这种需求……</p>
 
 <p>一种做法是，在个人服务器/云主机上配置 VPN 和 chnroutes，在笔记本上使用 Proxifier 连接该 socks 代理，并配置相关应用程序的访问行为。</p>
+
+<p>2015.1.2 补充：在 <a href="http://www.weibo.com/1883627565">@连城404</a> 的 <a href="http://www.weibo.com/1883627565/BDFuZ9dX0">微博</a> 上看到他就是这种做法，用 SSH 隧道连接。</p>
 ]]></content>
   </entry>
   

@@ -26,7 +26,7 @@ var loadPerScroll = 30; // load another number per scroll
 var fadeInTime = 2000;
 var dataArray; // hold json data
 var totalLen; // total number, length of dataArray
-var currentYear = 2014; // current year data
+var currentYear = 2015; // current year data
 var mobile = isMobile.any()
 
 if( mobile )
