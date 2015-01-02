@@ -26,7 +26,6 @@ var loadPerScroll = 30; // load another number per scroll
 var fadeInTime = 2000;
 var dataArray; // hold json data
 var totalLen; // total number, length of dataArray
-var currentYear = 2015; // current year data
 var mobile = isMobile.any()
 
 if( mobile )
@@ -34,7 +33,7 @@ if( mobile )
     loadPerScroll = 8; // on mobile client, load less per scorll
 }
 
-jsonLoad("/json/2014.json");
+jsonLoad("/json/" + currentYear + ".json");
 
 $(window).on('load', function() {
     $('.img_up').fancybox({
