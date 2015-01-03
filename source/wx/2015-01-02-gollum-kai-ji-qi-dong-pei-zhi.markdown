@@ -78,7 +78,7 @@ j.src = '//localhost/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
 
 ###微调界面
 
-Gollum 的界面定制起来很方便，修改 gollum.css 或者 -\\\\- css 参数指定都可以。
+Gollum 的界面定制起来很方便，修改 gollum.css 或者 -\\-css 参数指定都可以。
 
 gollum.css 的路径是
 
@@ -100,6 +100,58 @@ gollum.css 的路径是
   padding: 0 0 0 0.667em;
 }
 ```
+
+现在我们改用 custom.css 做两处定制
+
+- 二级列表与一级列表项目上下边缘的长度太大，因为默认样式只定义了 `ul`，没有考虑二级列表的情况，我们希望**多级列表的行是等间距的**；
+- 表格内容（`tbody`）没有扩展到整个表格（`table`）区域，视觉效果是表格偏向页面左侧，我们希望**表格居中、内容充满**。
+
+在 Git Repository 的根目录下创建 custom.css，编辑内容为
+
+```css 二级列表与表格居中定制
+li > ul {
+  margin: 0 !important;
+}
+
+.center90 {
+	margin: 0 auto !important;
+	width: 90%;
+	display: table !important;
+}
+
+.center80 {
+	margin: 0 auto !important;
+	width: 80%;
+	display: table !important;
+}
+``` 
+
+`center90` 表示表格宽度占父元素 90% 且居中显示，表格内容充满此区域。
+
+保存 custom.css，此时还看不到正确显示，需要 `git commit` 后查看。
+
+关于表格还要多说一句，如果想实现单元格的**多列/行合并**（columnspan/rowspan），Markdown 是做不到的，可以写 Html 代码，或者改用 MediaWiki 格式的文档。推荐一个 [在线表格生成器](http://www.tablesgenerator.com/)（貌似在墙外），支持 Latex、HTML、Plain Text、Markdown、MediaWiki 格式的表格生成，也可参考 [MediaWiki 的语法](http://pub.lcair.com/index.php?title=MediaWiki%E8%AF%AD%E6%B3%95)。
+
+那么问题来了，如何将表格的类定义为 `center90` 、`center80` ？
+
+MediaWiki 支持直接设置，而 Gollum 使用的 Markdown 编译器则不支持类的设定（本博客使用的 kramdown 是可以的）。一个简单的想法是使用内嵌 JS 代码进行设置，然而由于 Gollum 使用了 [Sanitization Rules](https://github.com/gollum/gollum/blob/master/docs/sanitization.md)（相关代码在 [gollum-lib](https://github.com/gollum/gollum-lib) 中），所以还是需要一番设置的，见下节介绍。
+
+### 嵌入 JS 代码
+
+还是在根目录下，创建 config.rb，编辑内容为
+
+```ruby 让 Gollum 支持 script 标签和 src 属性
+sanitizer = Gollum::Sanitization.new
+sanitizer.elements.concat ['script'] # Tags
+sanitizer.attributes[:all].push 'src' # Attributes
+Precious::App.set(:wiki_options, {:sanitization => sanitizer})
+```
+
+上段代码的作用是将 script 标签加入白名单，并支持 script 的 src 属性。为什么需要 src 呢，直接在 script 标签里写 JS 代码不行么？
+
+貌似这么直接整确实不行，script 标签里的内容在解析后会被套上一层 `CDATA` 标记，导致 JS 代码无法执行，不过我没有具体研究 CDATA 是什么时候被加进来的。**改用 src 引入 JS 文件的方式是验证通过的**，这样也能让 MD 文档显得比较干净。
+
+重启 Gollum，用 -\\-config 指定 config.rb 的路径即可。
 
 ##开机启动
 
@@ -162,14 +214,14 @@ load Gem.bin_path('gollum', 'gollum', version)
 
 ```bash 启动脚本
 export PATH=$PATH:/Users/frank/.rvm/rubies/ruby-X.X.X/lib/ruby/gems/X.X.X/bin
-/usr/bin/gollum --allow-upload dir --mathjax --show-all --gollum-path /Users/frank/gitlab/wiki-of-taijiru
+/usr/bin/gollum --allow-upload dir --mathjax --show-all --config /Users/frank/gitlab/wiki-of-taijiru/config.rb --gollum-path /Users/frank/gitlab/wiki-of-taijiru
 ```
 
 `/usr/bin/gollum` 是为了方便以后全局使用而添加的，能根据我对 ruby 的切换调用相应的 Gollum。其实大可以把启动脚本直接写成
 
 ```bash 启动脚本（2）
-/Library/Ruby/Gems/X.X.X/gems/gollum/bin/gollum --allow-upload dir --mathjax --show-all --gollum-path /Users/frank/gitlab/wiki-of-taijiru
-```
+/Library/Ruby/Gems/X.X.X/gems/gollum/bin/gollum --allow-upload dir --mathjax --show-all --config /Users/frank/gitlab/wiki-of-taijiru/config.rb --gollum-path /Users/frank/gitlab/wiki-of-taijiru
+``` 
 
 ##总结
 
