@@ -4,7 +4,7 @@
   <title><![CDATA[Category: 工作效率 | Blog of 太极儒]]></title>
   <link href="http://frank19900731.github.io/blog/category/gong-zuo-xiao-lu/atom.xml" rel="self"/>
   <link href="http://frank19900731.github.io/"/>
-  <updated>2015-01-02T18:32:10+08:00</updated>
+  <updated>2015-01-03T16:34:30+08:00</updated>
   <id>http://frank19900731.github.io/</id>
   <author>
     <name><![CDATA[Frank Song]]></name>
@@ -27,6 +27,7 @@
       <li><a href="#section-2">编码错误</a></li>
       <li><a href="#mathjax">配置本地 MathJax</a></li>
       <li><a href="#section-3">微调界面</a></li>
+      <li><a href="#js-">嵌入 JS 代码</a></li>
     </ul>
   </li>
   <li><a href="#section-4">开机启动</a></li>
@@ -97,7 +98,7 @@ j.src = '//localhost/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
 
 <h3 id="section-3">微调界面</h3>
 
-<p>Gollum 的界面定制起来很方便，修改 gollum.css 或者 -\- css 参数指定都可以。</p>
+<p>Gollum 的界面定制起来很方便，修改 gollum.css 或者 -\-css 参数指定都可以。</p>
 
 <p>gollum.css 的路径是</p>
 
@@ -119,6 +120,60 @@ j.src = '//localhost/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
   padding: 0 0 0 0.667em;
 }
 </code></p>
+
+<p>现在我们改用 custom.css 做两处定制</p>
+
+<ul>
+  <li>二级列表与一级列表项目上下边缘的长度太大，因为默认样式只定义了 <code>ul</code>，没有考虑二级列表的情况，我们希望<strong>多级列表的行是等间距的</strong>；</li>
+  <li>表格内容（<code>tbody</code>）没有扩展到整个表格（<code>table</code>）区域，视觉效果是表格偏向页面左侧，我们希望<strong>表格居中、内容充满</strong>。</li>
+</ul>
+
+<p>在 Git Repository 的根目录下创建 custom.css，编辑内容为</p>
+
+<p>```css 二级列表与表格居中定制
+li &gt; ul {
+  margin: 0 !important;
+}</p>
+
+<p>.center90 {
+	margin: 0 auto !important;
+	width: 90%;
+	display: table !important;
+}</p>
+
+<p>.center80 {
+	margin: 0 auto !important;
+	width: 80%;
+	display: table !important;
+}
+``` </p>
+
+<p><code>center90</code> 表示表格宽度占父元素 90% 且居中显示，表格内容充满此区域。</p>
+
+<p>保存 custom.css，此时还看不到正确显示，需要 <code>git commit</code> 后查看。</p>
+
+<p>关于表格还要多说一句，如果想实现单元格的<strong>多列/行合并</strong>（columnspan/rowspan），Markdown 是做不到的，可以写 Html 代码，或者改用 MediaWiki 格式的文档。推荐一个 <a href="http://www.tablesgenerator.com/">在线表格生成器</a>（貌似在墙外），支持 Latex、HTML、Plain Text、Markdown、MediaWiki 格式的表格生成，也可参考 <a href="http://pub.lcair.com/index.php?title=MediaWiki%E8%AF%AD%E6%B3%95">MediaWiki 的语法</a>。</p>
+
+<p>那么问题来了，如何将表格的类定义为 <code>center90</code> 、<code>center80</code> ？</p>
+
+<p>MediaWiki 支持直接设置，而 Gollum 使用的 Markdown 编译器则不支持类的设定（本博客使用的 kramdown 是可以的）。一个简单的想法是使用内嵌 JS 代码进行设置，然而由于 Gollum 使用了 <a href="https://github.com/gollum/gollum/blob/master/docs/sanitization.md">Sanitization Rules</a>（相关代码在 <a href="https://github.com/gollum/gollum-lib">gollum-lib</a> 中），所以还是需要一番设置的，见下节介绍。</p>
+
+<h3 id="js-">嵌入 JS 代码</h3>
+
+<p>还是在根目录下，创建 config.rb，编辑内容为</p>
+
+<p><code>ruby 让 Gollum 支持 script 标签和 src 属性
+sanitizer = Gollum::Sanitization.new
+sanitizer.elements.concat ['script'] # Tags
+sanitizer.attributes[:all].push 'src' # Attributes
+Precious::App.set(:wiki_options, {:sanitization =&gt; sanitizer})
+</code></p>
+
+<p>上段代码的作用是将 script 标签加入白名单，并支持 script 的 src 属性。为什么需要 src 呢，直接在 script 标签里写 JS 代码不行么？</p>
+
+<p>貌似这么直接整确实不行，script 标签里的内容在解析后会被套上一层 <code>CDATA</code> 标记，导致 JS 代码无法执行，不过我没有具体研究 CDATA 是什么时候被加进来的。<strong>改用 src 引入 JS 文件的方式是验证通过的</strong>，这样也能让 MD 文档显得比较干净。</p>
+
+<p>重启 Gollum，用 -\-config 指定 config.rb 的路径即可。</p>
 
 <h2 id="section-4">开机启动</h2>
 
@@ -189,14 +244,14 @@ load Gem.bin_path(‘gollum’, ‘gollum’, version)
 
 <p><code>bash 启动脚本
 export PATH=$PATH:/Users/frank/.rvm/rubies/ruby-X.X.X/lib/ruby/gems/X.X.X/bin
-/usr/bin/gollum --allow-upload dir --mathjax --show-all --gollum-path /Users/frank/gitlab/wiki-of-taijiru
+/usr/bin/gollum --allow-upload dir --mathjax --show-all --config /Users/frank/gitlab/wiki-of-taijiru/config.rb --gollum-path /Users/frank/gitlab/wiki-of-taijiru
 </code></p>
 
 <p><code>/usr/bin/gollum</code> 是为了方便以后全局使用而添加的，能根据我对 ruby 的切换调用相应的 Gollum。其实大可以把启动脚本直接写成</p>
 
 <p><code>bash 启动脚本（2）
-/Library/Ruby/Gems/X.X.X/gems/gollum/bin/gollum --allow-upload dir --mathjax --show-all --gollum-path /Users/frank/gitlab/wiki-of-taijiru
-</code></p>
+/Library/Ruby/Gems/X.X.X/gems/gollum/bin/gollum --allow-upload dir --mathjax --show-all --config /Users/frank/gitlab/wiki-of-taijiru/config.rb --gollum-path /Users/frank/gitlab/wiki-of-taijiru
+</code> </p>
 
 <h2 id="section-5">总结</h2>
 
