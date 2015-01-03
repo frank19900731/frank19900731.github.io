@@ -4,7 +4,7 @@
   <title><![CDATA[Blog of 太极儒]]></title>
   <link href="http://frank19900731.github.io/atom.xml" rel="self"/>
   <link href="http://frank19900731.github.io/"/>
-  <updated>2015-01-03T16:34:30+08:00</updated>
+  <updated>2015-01-04T02:32:15+08:00</updated>
   <id>http://frank19900731.github.io/</id>
   <author>
     <name><![CDATA[Frank Song]]></name>
@@ -12,6 +12,98 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[每周一软之 Sapiens]]></title>
+    <link href="http://frank19900731.github.io/blog/2015/01/04/mei-zhou-ruan-zhi-sapiens/"/>
+    <updated>2015-01-04T00:37:59+08:00</updated>
+    <id>http://frank19900731.github.io/blog/2015/01/04/mei-zhou-ruan-zhi-sapiens</id>
+    <content type="html"><![CDATA[<p><strong>目录</strong></p>
+
+<ul id="markdown-toc">
+  <li><a href="#section">功能介绍</a></li>
+  <li><a href="#section-1">界面设计</a></li>
+  <li><a href="#section-2">易用性</a></li>
+  <li><a href="#section-3">稳定性</a></li>
+  <li><a href="#section-4">跨平台</a></li>
+  <li><a href="#section-5">类似软件</a></li>
+  <li><a href="#section-6">闪光点</a></li>
+  <li><a href="#section-7">缺点</a></li>
+</ul>
+
+<!-- excerpt start -->
+
+<p>在这么一个<strong>读图时代</strong>、<strong>看脸时代</strong>，软件的颜值也称得上一个重要的衡量指标。Sapien 除了有一张美丽的面孔，还有那么点小情趣，挺讨人喜欢的。</p>
+
+<h2 id="section">功能介绍</h2>
+
+<p>Sapiens 是一个软件快速启动工具，且目前只支持软件快速打开，没有打开文件、执行脚本啦什么旁的功能。</p>
+
+<p>Sapiens 除了通常的快捷键启动方式，还有<strong>画圈圈</strong>启动方式，具体见如下动态图。从动态图还可以看出它默认<strong>列举你最近用过的软件</strong>。</p>
+
+<p><a href="http://frank19900731.github.io/img/post/2015-1/1.gif" class="img-up" title="动态图"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-1/1.gif" width="70%" title="动态图" /></a></p>
+
+<blockquote><p>兰花指微翘，食指指尖在触摸板上看似不经意的划出那一弯圆月，美美的界面就映入眼帘，真真儿的是让人陶醉呢……</p></blockquote>
+
+<p><strong>转向顺时针、逆时针皆可</strong>，圈数触发可以设置在 1 - 3 圈，默认是 1.4 圈。经测试设置为 1 圈的时候，大概也就是<strong>一圈半</strong>能识别出的水平。注意<strong>手速稍快些</strong>，<strong>画的圆半径不要太小</strong>，试过几次就能很熟练了。</p>
+
+<!-- excerpt end -->
+
+<p>既漂亮又有情趣，倘若是无脑，那也就是平平啦，不过人家可是结合了人工智能的呦。</p>
+
+<p><a href="http://frank19900731.github.io/img/post/2015-1/3.png" class="img-up" title="Artificial Inteligence"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-1/3.png" width="70%" title="Artificial Inteligence" /></a></p>
+
+<p>把 <strong>About Sapiens’ Artificial Intelligence</strong> 那抄录下来。</p>
+
+<blockquote><p>Sapiens tries to predict the applications you will want to launch.</p><p>Sapiens understands what applications you use and learns how you interact with your Mac. For this reason it may take 2-3 days (it really depends how often you use your mac daily) for it to have enough brain power for making accurate predictions.</p><p>Also, as your habits change Sapiens keeps adapting to them by constantly learning from you.</p></blockquote>
+
+<p>就是说，你把人家来安装，我来把你细观察，你想吃饭我端碗，你想拉屎我递纸，把你伺候好好的，一辈子都随你意。</p>
+
+<h2 id="section-1">界面设计</h2>
+
+<p>提供五种布局，默认的如下图。</p>
+
+<p><a href="http://frank19900731.github.io/img/post/2015-1/2.png" class="img-up" title="Sapiens 图示"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-1/2.png" width="70%" title="Sapiens 图示" /></a></p>
+
+<p>可以设置 <strong>Desktop Mirroring Effect</strong>，圆内背景就是桌面背景加了遮罩的效果，配合上<strong>动态壁纸</strong>，确实八错。</p>
+
+<h2 id="section-2">易用性</h2>
+
+<p>傻瓜软件。</p>
+
+<h2 id="section-3">稳定性</h2>
+
+<p>稳定，未遇异常。</p>
+
+<h2 id="section-4">跨平台</h2>
+
+<p>无。</p>
+
+<h2 id="section-5">类似软件</h2>
+
+<p>提到快速启动软件，那头两把交椅自然就是 <a href="http://www.alfredapp.com/">Alfred</a> 和 <a href="http://qsapp.com/">QuickSilver</a> ，前者闭源收费（确切的说是高级功能收费），后者开源免费。</p>
+
+<p>二者都有很强的附加功能，比如文件搜索、删除、压缩、查看详情啦，脚本执行、iTunes 控制啦等。关于它们的对比网上有 <a href="http://www.v2ex.com/t/42050">很多讨论</a>，不在这里多说。 </p>
+
+<p>QuickSilver 有自己的插件列表，因为是开源的，所以也可以自己开发，不过门槛应该比较高吧？Alfred 有一个 Workflow 模式，是收费功能，可以通过撰写脚本、连接模块实现自己想要的功能，就相当于一个插件定制系统了（有点类似于 Automator），适合于普通程序员。</p>
+
+<p>本人最早使用的是 QucikSilver，习惯积累下来也就没有转到 Alfred，也是因为前者已经能够满足所需。最近尝试用用 Alfred，也别落伍太多，先从这个 <a href="https://github.com/hzlzh/AlfredWorkflow.com">Workflow 列表</a> 看起吧，这个 <a href="http://lucifr.com/2011/11/30/alfred-and-some-recommanded-extensions/">博客</a> 中也有很多 Alfred 相关内容。</p>
+
+<p>不过我还是有点想不明白为什么要把那么多功能都堆到这个小软件里，自动和手动差别就这么大么，还是说在追求些别的什么。</p>
+
+<p>最主要的原因是我还不够 Geek 吧……</p>
+
+<h2 id="section-6">闪光点</h2>
+
+<p>漂亮。</p>
+
+<h2 id="section-7">缺点</h2>
+
+<p>既然漂亮，就别要求那么高了。</p>
+
+<p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2015/01/04/mei-zhou-ruan-zhi-sapiens/">http://frank19900731.github.io/blog/2015/01/04/mei-zhou-ruan-zhi-sapiens/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Gollum 开机启动配置]]></title>
@@ -3867,403 +3959,6 @@
 <p><strong>未完待续</strong></p>
 
 <p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2014/11/13/yi-ge-gong-ju-kong-de-xiao-lu-guan/">http://frank19900731.github.io/blog/2014/11/13/yi-ge-gong-ju-kong-de-xiao-lu-guan/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[面试经验分享之智力题]]></title>
-    <link href="http://frank19900731.github.io/blog/2014/11/07/mian-shi-jing-yan-fen-xiang-zhi-zhi-li-ti/"/>
-    <updated>2014-11-07T14:56:13+08:00</updated>
-    <id>http://frank19900731.github.io/blog/2014/11/07/mian-shi-jing-yan-fen-xiang-zhi-zhi-li-ti</id>
-    <content type="html"><![CDATA[<p><strong>目录</strong></p>
-
-<ul id="markdown-toc">
-  <li><a href="#section">前言</a></li>
-  <li><a href="#section-1">题目介绍</a></li>
-  <li><a href="#section-2">其它经典题目</a></li>
-  <li><a href="#section-3">总结</a></li>
-</ul>
-
-<!-- excerpt start -->
-
-<h2 id="section">前言</h2>
-<p>我在算法工程师面试中遇到的智力题主要是指涉及到一些数学计算、证明的题目，基本是中小学奥数题。喜欢问这类问题的主要有互联网创业公司或外企，招收数值策划的游戏公司，当然，更多的是金融、投资相关的企业。从题目类型上分，有排列组合题、概率题等。</p>
-
-<h2 id="section-1">题目介绍</h2>
-
-<p><strong>题目一：给定天平，问要称重1-N N种不同质量，最少需要多少种砝码？</strong></p>
-
-<p><strong>1）砝码只允许放在天平的一端；</strong></p>
-
-<p><strong>2）砝码可以放在天平的两端。</strong></p>
-
-<p><strong>解答：</strong> </p>
-
-<ul>
-  <li>只允许放在一边的情况，开始自己以为是斐波那契数列，不过显然数列生成方式里存在冗余（1+2=3）。1、2 肯定是最基本的数字，<strong>新添加的砝码质量应该是原砝码集合所能称量的最大质量加一</strong>，如此生成的数列就是2的幂次，1，2，4，……想到正整数二进制表达的唯一性，应该是不存在冗余的。可表示性是有了，对于1-N N种不同的质量，最少需要 <script type="math/tex">\left\lceil \log _{ 2 }{ (N+1) }  \right\rceil </script> 种不同的砝码，那是不是最少的呢？这种做法没有冗余，且表示范围是砝码的排列组合（每一个砝码可用可不用），应该就是最少了的，不过这不是严格证明。</li>
-  <li>允许放在两边的情况，1、3是最基本的，因为 2 可以用 3-1 表达，<strong>新添加砝码的质量应该满足的条件是原砝码集合所能称量的最大质量加上这个最大质量的下一个质量</strong>。这种构造方法同样没有冗余，且表示范围是砝码的排列组合（每一砝码可加、可减、可不用，再排除掉和非正数的情况），所以应该也是最少的。按照这个思路生成的数列就是3的幂次，1，3，9，27……可以用数学归纳法证明如下。</li>
-</ul>
-
-<!-- excerpt end -->
-
-<p><strong>证明：数列 <script type="math/tex">1，3，…，3^{n-1}</script>，任取其中若干进行加减组合可以表示 <script type="math/tex">1</script> 到 <script type="math/tex">\frac{3^n - 1}{2}</script> （允许减法的排列组合所能表示的最大范围）间的不同数值。</strong></p>
-
-<p>1）<script type="math/tex">k=1</script> 时，显然满足；</p>
-
-<p>2）<script type="math/tex">k=n</script> 时，有 <script type="math/tex">1，3，……，3^{n-1}</script> 可以表出 <script type="math/tex">1</script> 到 <script type="math/tex">\frac{3^n - 1}{2}</script>；</p>
-
-<p>3）<script type="math/tex">k=n+1</script> 时，要证明 <script type="math/tex">1，3，……，3^n</script> 可以表出 <script type="math/tex">1</script> 到 <script type="math/tex">\frac{3^{n+1} - 1}{2}</script> </p>
-
-<p>3-1）<script type="math/tex">1</script> 到 <script type="math/tex">\frac{3^n - 1}{2}</script> 显然可由 <script type="math/tex">1，3，……，3^{n-1}</script> 表出； </p>
-
-<p>3-2）<script type="math/tex">\frac{3^n + 1}{2}</script> 到 <script type="math/tex">3^n - 1</script> 可以由 <script type="math/tex">3^n</script> 减去 <script type="math/tex">\frac{3^n - 1}{2}</script>  到 <script type="math/tex">1</script> 表出；</p>
-
-<p>3-3）<script type="math/tex">3^n</script> 是新加入的数，可以单独表出；</p>
-
-<p>3-4）<script type="math/tex">3^n + 1</script> 到 <script type="math/tex">\frac{3^{n+1} - 1}{2}</script> 可以由 <script type="math/tex">3^n</script> 加上 <script type="math/tex">1</script> 到 <script type="math/tex">\frac{3^n - 1}{2}</script> 表出。</p>
-
-<p>综上，有原命题成立。</p>
-
-<p>有关本题的更多讨论参见果壳网的 <a href="http://www.guokr.com/article/3742/">这篇文章</a>。</p>
-
-<p><strong>题目二：如下图所示概率密度分布，左边平缓，右边陡峭，指定中位数的位置，问均值在中位数的左侧还是右侧？</strong></p>
-
-<p><a href="http://frank19900731.github.io/img/post/2014-11/1.png" class="img-up" title="概率分布，中位数和均值的位置关系"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-11/1.png" width="40%" title="概率分布，中位数和均值的位置关系" /></a></p>
-
-<p><strong>解答：</strong> </p>
-
-<p>我的感觉是均值在中位数的左侧，不过我希望用严格的数学推导证明出来，后来发现很有难度，因为没有给出概率密度分布的具体形式。面试官及时“制止”了我，让我想一点直观的解释。</p>
-
-<p>我觉得可以用收入分布来类比，左边高收入人群少，右边是低收入群体，占很大的比重。统计局公布的人居年收入是均值，网友纷纷表示自己拉低了平均收入，不上网的人收入水平可能更低一些。综上，姑且认为超过一半的人收入不及均值（只是为回答问题而做的推测，超过平均水平的一般不会自己说出来，所以可能统计有偏差），也即中位数在均值的右侧。</p>
-
-<p>面试官给出的解释比我的好很多。类比一把斧头的质量密度，中位数左右的半边斧头质量相等，而均值则是斧头的支撑平衡点（假设均值为0，这个支撑平衡点就是原点），根据力矩平衡原理，支撑点要比中位数更偏向斧头的木把儿一边。</p>
-
-<p><strong>题目三：玩家打怪，通关一次掉落 A 装备的概率是 0.1，掉落 B 装备的概率是0.2，该玩家要获得 A、B 两件装备的期望通关次数是多少？</strong></p>
-
-<p><strong>解答：</strong> </p>
-
-<p>画图表示 A 和 B 的关系</p>
-
-<p><a href="http://frank19900731.github.io/img/post/2014-11/2.png" class="img-up" title="A 和 B 的三种关系"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-11/2.png" width="70%" title="A 和 B 的三种关系" /></a></p>
-
-<ul>
-  <li>如果 A 和 B 是互斥事件，首先考虑第一次拿到一件装备的期望通关次数，这件装备有 <script type="math/tex">\frac{1}{3}</script> 的可能性是 A，<script type="math/tex">\frac{2}{3}</script> 的可能性是 B，接下来根据几何分布的无后效性进行计算，期望次数为 </li>
-</ul>
-
-<script type="math/tex; mode=display">\frac{1}{0.1 + 0.2} + \frac{1}{3}  \times  \frac{1}{0.2} + \frac{2}{3} \times \frac{1}{0.1} = \frac{35}{3}</script>
-
-<ul>
-  <li>如果 B 事件 包含 A 事件，则期望次数为 </li>
-</ul>
-
-<script type="math/tex; mode=display">\frac{1}{0.1} = 10</script>
-
-<ul>
-  <li>其他情况，期望次数在 <script type="math/tex">10</script> 和 <script type="math/tex">\frac{35}{3}</script> 之间。</li>
-</ul>
-
-<p><strong>变式：玩家一打掉落 A 装备的怪，玩家二打掉落 B 装备的怪，相互独立，他们协作收集 A、B 两件装备，则期望多少轮集齐？</strong></p>
-
-<ul>
-  <li>
-    <p>思路一：有三种可能性，先拿到 A 再拿到 B，概率是 <script type="math/tex">\frac{4}{14}</script>，先拿到 B 再拿到 A，概率是 <script type="math/tex">\frac { 9 }{ 14 } </script>； A、B同时拿到，概率是 <script type="math/tex">\frac { 1 }{ 14 }</script> 。这些概率可以通过列写等比数列求和公式得到，本文不赘述，因为思路二提供了更简单的计算方法。计算期望得 </p>
-
-    <script type="math/tex; mode=display">\frac{4}{14} \times  \frac{1}{0.2} + \frac{9}{14}  \times  \frac{1}{0.1} + \frac{1}{14} \times \frac{1}{0.1 \times 0.2} = \frac{80}{7}</script>
-
-    <p>关于最后一项 <script type="math/tex">\frac{1}{14} \times \frac{1}{0.1 \times 0.2}</script> 的解释是，玩家一、二一定是在某一轮同时分别获得 A 和 B，那么可以认为是<strong>一个人在玩，而该关卡要么同时掉落 A 和 B，要么什么也不掉落</strong>。由这样一种解释也就自然想到了思路二。</p>
-  </li>
-  <li>
-    <p>思路二：玩家一、玩家二可以统一为一个人，只不过这个人在通关后获得 A、B 的概率是相互独立的，<script type="math/tex">P\left( AB \right) =P\left( A \right) \cdot P\left( B \right) </script>。由此前的计算思路可得期望为 </p>
-
-    <script type="math/tex; mode=display">\frac{1}{0.28} + \frac{0.08}{0.28} \times  \frac{1}{0.2} + \frac{0.18}{0.28}  \times  \frac{1}{0.1} + \frac{0.02}{0.28} \times 0 = \frac{80}{7}</script>
-  </li>
-</ul>
-
-<p><strong>题目四：一群人每人说一到一百间的整数，接近平均数的三分之二的人会获奖，该说什么数字才能使获奖机率最大？</strong></p>
-
-<p><strong>解答：</strong> </p>
-
-<p>假设每个人都是理性的，那么没有人会选择 67-100，再次分析可知没有人会选择 45-66，以此类推，最终只有选择 1。<strong>不过实际当中并不是所有人都这么聪明理性，做适当的假设可以得到更接近真实情况的结果</strong>。</p>
-
-<blockquote><p>1987年，《金融时报》刊登了一个很诡异的广告，说你可以随便写一个0~100（与本题略有不同）之间的整数	寄回编辑部，然后如果你写的这个数最接近所有寄来的数的平均数的2/3，你就可以获得一张伦敦到纽约的头等舱往返机票。最后得到的结果是……平均数为18.9。也就是写13的人赢了。</p></blockquote>
-
-<p>更多分析见果壳网的 <a href="http://www.guokr.com/question/292144/">这篇文章</a>。</p>
-
-<p><strong>题目五：考虑 n 维向量 X、Y，其中每个元素独立同分布，分布为 N(0，1)，请计算 X、Y 相关系数的均值和标准差。</strong></p>
-
-<p><strong>解答：</strong></p>
-
-<p>本题其实是百度笔试的一道题，只有5分，但还是颇有难度的，实际上本题无需进行任何复杂的积分计算。相关系数的均值表达式如下（<strong>这里先使用 cos 值作为相关系数，算出标准差为 <script type="math/tex">\frac { 1 }{ \sqrt { n }  } </script>， 但 matlab 里的函数，比如 corr、corr2、corrcoef，采用其它方法计算相关系数，算出标准差为 <script type="math/tex">\frac { 1 }{ \sqrt { n-1 }  } </script>，后面会提到</strong>）</p>
-
-<script type="math/tex; mode=display">
-E\left( r \right) =\iint { \frac { X\cdot Y }{ \left\| X \right\| \left\| Y \right\|  } \cdot p\left( X \right) \cdot p\left( Y \right) dXdY }  
-</script>
-
-<p>考察 X （或Y）<strong>关于原点的对称抵消特性</strong>，知期望值为 0。</p>
-
-<p>相关系数的方差表达式为：</p>
-
-<script type="math/tex; mode=display">% &lt;![CDATA[
-
-\begin{align}
-Var\left( r \right)  &= E{ \left( r-E\left( r \right)  \right)  }^{ 2 } \\
-&= E{ r }^{ 2 } \\
-&= \iint { \frac { \left( X\cdot Y \right) ^{ 2 } }{ { \left\| X \right\|  }^{ 2 }{ \left\| Y \right\|  }^{ 2 } } \cdot p\left( X \right) \cdot p\left( Y \right) dXdY } \\
-&= \iint { { \left( \frac { X }{ \left\| X \right\|  } \cdot \frac { Y }{ \left\| Y \right\|  }  \right)  }^{ 2 }\cdot p\left( X \right) \cdot p\left( Y \right) dXdY } 
-\end{align}
- %]]&gt;</script>
-
-<p>最后一个式子中，X、Y 的关系是对称的，几何含义是<strong>单位球面上两个随机向量的内积平方的期望</strong>。与其让 X、Y 都随机，我们可以固定其中一个，只计算<strong>随机向量和固定向量的内积平方的期望</strong>，<strong>如果任取固定向量都有这个期望值相同，那么这个期望就是本题的待求期望</strong>。</p>
-
-<p>我们先取固定向量为 <script type="math/tex">{ \left( 0,\quad 0,\quad \dots \quad 1 \right)  }^{ T }</script>，则积分式子转化为</p>
-
-<script type="math/tex; mode=display">\int { \frac { { Y }_{ n }^{ 2 } }{ \sum _{ i=1 }^{ n }{ { Y }_{ i }^{ 2 } }  } \cdot p\left( Y \right) dY } </script>
-
-<p>乍一看分子分母都是卡方分布，不过二者不是相互独立的，也就不构成 F 分布，怎么求解呢？要用到 <script type="math/tex">{ Y }_{ i }</script> 的轮换对称性。</p>
-
-<script type="math/tex; mode=display">\int { \frac { { Y }_{ 1 }^{ 2 } }{ \sum _{ i=1 }^{ n }{ { Y }_{ i }^{ 2 } }  } \cdot p\left( Y \right) dY } =\dots =\int { \frac { { Y }_{ n }^{ 2 } }{ \sum _{ i=1 }^{ n }{ { Y }_{ i }^{ 2 } }  } \cdot p\left( Y \right) dY } </script>
-
-<p>又</p>
-
-<script type="math/tex; mode=display">\sum _{ k=1 }^{ n }{ \int { \frac { { Y }_{ k }^{ 2 } }{ \sum _{ i=1 }^{ n }{ { Y }_{ i }^{ 2 } }  } \cdot p\left( Y \right) dY }  } =1</script>
-
-<p>所以</p>
-
-<script type="math/tex; mode=display">\int { \frac { { Y }_{ k }^{ 2 } }{ \sum _{ i=1 }^{ n }{ { Y }_{ i }^{ 2 } }  } \cdot p\left( Y \right) dY } =\frac { 1 }{ n } ,\quad k=1,2,\dots ,n </script>
-
-<p>也就是说标准差为 <script type="math/tex">\frac { 1 }{ \sqrt { n }  } </script> 咯？</p>
-
-<p>如果随机向量在球面上是均匀分布的那我们的讨论也就停止了，不过事实并非如此。二维情况，考察单位圆周上的随机向量，斜率的分布（两个正态分布的均值为0时，它们的 <a href="http://mathworld.wolfram.com/NormalRatioDistribution.html">商是柯西分布</a> ）是不均匀的。在这种不均匀的情况下，想要得到积分值不变的结论好像没有那么直观。受 <script type="math/tex">{ \left( 0,\quad 0,\quad \dots \quad 1 \right)  }^{ T }</script> 的启发，我想到一个笨办法，还是用到轮换对称性。我们只要<strong>找到值相等的一些表达式，让他们相加等于一个常数即可</strong>。</p>
-
-<p><span style="color: red;">插入更正：“不均匀”的说法是有问题的，这个不均匀是相对于斜率的不均匀，对于角度而言是均匀的，可以将柯西分布里的比值变量 <script type="math/tex">u</script> 替换为角度 <script type="math/tex">\theta </script>，由下面的表达式知是均匀分布。</span></p>
-
-<script type="math/tex; mode=display">\int _{ -\infty  }^{ +\infty  }{ \frac { 1 }{ \pi \left( 1+{ u }^{ 2 } \right)  } du } =\int _{ -\frac { \pi  }{ 2 }  }^{ \frac { \pi  }{ 2 }  }{ \frac { 1 }{ \pi \left( 1+\tan ^{ 2 }{ \theta  }  \right)  } \frac { d\theta  }{ \cos ^{ 2 }{ \theta  }  }  } =\int _{ -\frac { \pi  }{ 2 }  }^{ \frac { \pi  }{ 2 }  }{ \frac { d\theta  }{ \pi  }  } </script>
-
-<p><span style="color: red;">高维情况如下式所示，某向量的概率密度只与向量长度有关，而与角度无关，所以放缩到单位球面上关于角度是均匀的，所以只需要计算 <script type="math/tex">{ \left( 0,\quad 0,\quad \dots \quad 1 \right)  }^{ T }</script> 一种情况就可以。</span></p>
-
-<script type="math/tex; mode=display">\frac { 1 }{ { \left( \sqrt { 2\pi  }  \right)  }^{ n } } { e }^{ -\frac { \sum _{ i=1 }^{ n }{ { x }_{ i }^{ 2 } }  }{ 2 }  }=\frac { 1 }{ { \left( \sqrt { 2\pi  }  \right)  }^{ n } } { e }^{ -\frac { { r }^{ 2 } }{ 2 }  }</script>
-
-<p>继续轮换对称性来讲笨办法，分两步。首先是<strong>系数轮换</strong>，其次是<strong>符号轮换</strong>，以 4 维情况为例，假设固定向量为</p>
-
-<script type="math/tex; mode=display">{ \left( \frac { 1 }{ \sqrt { 24 }  } ,\quad \frac { 1 }{ \sqrt { 8 }  } ,\quad \frac { 1 }{ \sqrt { 3 }  } ,\quad \frac { 1 }{ \sqrt { 2 }  }  \right)  }^{ T }</script>
-
-<p>系数轮换是指以下四个固定向量计算得到的积分结果是相同的</p>
-
-<script type="math/tex; mode=display">
-{ \left( \frac { 1 }{ \sqrt { 24 }  } ,\quad \frac { 1 }{ \sqrt { 8 }  } ,\quad \frac { 1 }{ \sqrt { 3 }  } ,\quad \frac { 1 }{ \sqrt { 2 }  }  \right)  }^{ T }
-</script>
-
-<script type="math/tex; mode=display">
-{ \left( \frac { 1 }{ \sqrt { 8 }  } ,\quad \frac { 1 }{ \sqrt { 3 }  } ,\quad \frac { 1 }{ \sqrt { 2 }  } ,\quad \frac { 1 }{ \sqrt { 24 }  }  \right)  }^{ T }
-</script>
-
-<script type="math/tex; mode=display">
-{ \left( \frac { 1 }{ \sqrt { 3 }  } ,\quad \frac { 1 }{ \sqrt { 2 }  } ,\quad \frac { 1 }{ \sqrt { 24 }  } ,\quad \frac { 1 }{ \sqrt { 8 }  }  \right)  }^{ T }
-</script>
-
-<script type="math/tex; mode=display">
-{ \left( \frac { 1 }{ \sqrt { 2 }  } ,\quad \frac { 1 }{ \sqrt { 24 }  } ,\quad \frac { 1 }{ \sqrt { 8 }  } ,\quad \frac { 1 }{ \sqrt { 3 }  }  \right)  }^{ T }
-</script>
-
-<p>符号对称性是指以下八个固定向量计算得到的积分结果是相同的</p>
-
-<script type="math/tex; mode=display">
-{ \left( \frac { 1 }{ \sqrt { 24 }  } ,\quad \frac { 1 }{ \sqrt { 8 }  } ,\quad \frac { 1 }{ \sqrt { 3 }  } ,\quad \frac { 1 }{ \sqrt { 2 }  }  \right)  }^{ T }
-</script>
-
-<script type="math/tex; mode=display">
-{ \left( -\frac { 1 }{ \sqrt { 24 }  } ,\quad \frac { 1 }{ \sqrt { 8 }  } ,\quad \frac { 1 }{ \sqrt { 3 }  } ,\quad \frac { 1 }{ \sqrt { 2 }  }  \right)  }^{ T }
-</script>
-
-<script type="math/tex; mode=display">
-{ \left( \frac { 1 }{ \sqrt { 24 }  } ,\quad -\frac { 1 }{ \sqrt { 8 }  } ,\quad \frac { 1 }{ \sqrt { 3 }  } ,\quad \frac { 1 }{ \sqrt { 2 }  }  \right)  }^{ T }
-</script>
-
-<script type="math/tex; mode=display">
-{ \left( \frac { 1 }{ \sqrt { 24 }  } ,\quad \frac { 1 }{ \sqrt { 8 }  } ,\quad -\frac { 1 }{ \sqrt { 3 }  } ,\quad \frac { 1 }{ \sqrt { 2 }  }  \right)  }^{ T }
-</script>
-
-<script type="math/tex; mode=display">
-{ \left( \frac { 1 }{ \sqrt { 24 }  } ,\quad \frac { 1 }{ \sqrt { 8 }  } ,\quad \frac { 1 }{ \sqrt { 3 }  } ,\quad -\frac { 1 }{ \sqrt { 2 }  }  \right)  }^{ T }
-</script>
-
-<script type="math/tex; mode=display">
-{ \left( -\frac { 1 }{ \sqrt { 24 }  } ,\quad -\frac { 1 }{ \sqrt { 8 }  } ,\quad \frac { 1 }{ \sqrt { 3 }  } ,\quad \frac { 1 }{ \sqrt { 2 }  }  \right)  }^{ T }
-</script>
-
-<script type="math/tex; mode=display">
-{ \left( -\frac { 1 }{ \sqrt { 24 }  } ,\quad \frac { 1 }{ \sqrt { 8 }  } ,\quad -\frac { 1 }{ \sqrt { 3 }  } ,\quad \frac { 1 }{ \sqrt { 2 }  }  \right)  }^{ T }
-</script>
-
-<script type="math/tex; mode=display">
-{ \left( -\frac { 1 }{ \sqrt { 24 }  } ,\quad \frac { 1 }{ \sqrt { 8 }  } ,\quad \frac { 1 }{ \sqrt { 3 }  } ,\quad -\frac { 1 }{ \sqrt { 2 }  }  \right)  }^{ T }
-</script>
-
-<p><strong>系数轮换是为了保证加和结果中各平方项系数相等，可约去分母，符号轮换是为了保证加和结果中的交叉项系数为 0</strong>。对于 4 维向量，我们经过系数轮换和符号轮换获得了 32（<script type="math/tex">= 4 \times 8</script>） 个等值的积分表达式，累加和等于 8，每个积分表达式的值是 <script type="math/tex">{ \frac { 1 }{ 4 }  }</script>，也即 <script type="math/tex">{ \frac { 1 }{ n }  }</script>。</p>
-
-<p>简单总结一下，系数轮换我们采用循环移位的策略，也就是 n 组系数；每组系数对应 <script type="math/tex">{ { 2 }^{ n-1 } }</script> 种（因为是平方，所以一半和另一半是等价的）符号选择。<strong>对于任给的固定向量，总可以通过这样的构造辅助等价固定向量的方式求解，而求得的积分结果总是 <script type="math/tex">{ \frac { 1 }{ n }  }</script></strong>。</p>
-
-<p>综上，<strong>相关系数的均值是 0，标准差是 <script type="math/tex">{ \frac { 1 }{ \sqrt { n }  }  }</script></strong>。</p>
-
-<p>以下是 Matlab 仿真结果：</p>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>相关系数的均值、方差仿真</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-<span class="line-number">5</span>
-<span class="line-number">6</span>
-<span class="line-number">7</span>
-<span class="line-number">8</span>
-<span class="line-number">9</span>
-<span class="line-number">10</span>
-</pre></td><td class="code"><pre><code class="matlab"><span class="line"><span class="n">array</span> <span class="p">=</span> <span class="p">[];</span>
-</span><span class="line"><span class="n">n</span> <span class="p">=</span> <span class="mi">5</span><span class="p">;</span>
-</span><span class="line"><span class="n">iter</span> <span class="p">=</span> <span class="mi">100000</span><span class="p">;</span>
-</span><span class="line"><span class="k">for</span> <span class="nb">i</span> <span class="p">=</span> <span class="mi">1</span><span class="p">:</span><span class="n">iter</span>
-</span><span class="line"><span class="n">x</span> <span class="p">=</span> <span class="n">normrnd</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="n">n</span><span class="p">,</span><span class="mi">1</span><span class="p">);</span>
-</span><span class="line"><span class="n">y</span> <span class="p">=</span> <span class="n">normrnd</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="n">n</span><span class="p">,</span><span class="mi">1</span><span class="p">);</span>
-</span><span class="line"><span class="n">array</span> <span class="p">=</span> <span class="p">[</span><span class="n">array</span><span class="p">,</span> <span class="n">sum</span><span class="p">(</span><span class="n">x</span><span class="o">.*</span><span class="n">y</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">norm</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">*</span><span class="n">norm</span><span class="p">(</span><span class="n">y</span><span class="p">))];</span>
-</span><span class="line"><span class="k">end</span>
-</span><span class="line"><span class="n">avg</span> <span class="p">=</span> <span class="n">mean</span><span class="p">(</span><span class="n">array</span><span class="p">);</span>
-</span><span class="line"><span class="n">avar</span> <span class="p">=</span> <span class="n">var</span><span class="p">(</span><span class="n">array</span><span class="p">);</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<p>10 万个相关系数样本，括号内为 <script type="math/tex">\frac{1}{n}</script> 的值</p>
-
-<p>5 维，单次运行均值为 -0.0023，方差为 0.1999（0.2）；</p>
-
-<p>11 维，单次运行均值为 -0.0011，方差为 0.0908（0.0909）；</p>
-
-<p>23 维，单次运行均值为 0.0003，方差为 0.0433（0.0435）。</p>
-
-<hr />
-
-<p><strong>然而，正如我们前面提到的</strong>，当我们想要计算两向量相关系数的时候，matlab 中的函数并非求取 cos 值，而是作 <a href="http://cn.mathworks.com/help/images/ref/corr2.html">如下计算</a></p>
-
-<script type="math/tex; mode=display">
-r=\frac { \left( X-\overline { X }  \right) \cdot \left( Y-\overline { Y }  \right)  }{ \left\| X-\overline { X }  \right\| \left\| Y-\overline { Y }  \right\|  } 
-</script>
-
-<p>其中</p>
-
-<script type="math/tex; mode=display">% &lt;![CDATA[
-
-\overline { X } =\frac { \sum _{ i=1 }^{ n }{ { X }_{ i } }  }{ n } { \left( \begin{matrix} 1 & \cdots  & 1 \end{matrix} \right)  }^{ T } \\
-\overline { Y } =\frac { \sum _{ i=1 }^{ n }{ { Y }_{ i } }  }{ n } { \left( \begin{matrix} 1 & \cdots  & 1 \end{matrix} \right)  }^{ T }
- %]]&gt;</script>
-
-<p>因为减去均值，<strong>n 个变量的自由度就变成了 n-1，不独立</strong>。如果直接采用我们上面的计算方法，化归到单位球上，会发现此时只能在球面的一个环上积分（因为 n 维相加为 0，相当于平面在球面上截出的部分），一个直观的想法是降维，<strong>想办法把其中一维化为 0，而其余 n-1 维独立同分布</strong>，做法如下。</p>
-
-<p>我们在随机向量左边乘上一个正交矩阵（$X\rightarrow AX$），注意</p>
-
-<ul>
-  <li><strong>多元正态分布的线性变换仍是多元正态分布</strong>；</li>
-  <li><strong>多元独立正态分布在正交变换下仍保持独立性</strong>。</li>
-</ul>
-
-<p>我们令 A 的第一行是 </p>
-
-<script type="math/tex; mode=display">% &lt;![CDATA[
-
-\frac { 1 }{ \sqrt { n }  } { \left( \begin{matrix} 1 & \cdots  & 1 \end{matrix} \right)  }
- %]]&gt;</script>
-
-<p>其余行通过正交化方法构造。如此一来，在新的坐标下，计算向量减均值为</p>
-
-<script type="math/tex; mode=display">% &lt;![CDATA[
-
-\left[ \begin{matrix} \frac { 1 }{ \sqrt { n }  } { \left( \begin{matrix} 1 & \cdots  & 1 \end{matrix} \right)  } \\ \cdots  \\ \cdots  \end{matrix} \right] \left( X-\overline { X }  \right) =\left( \begin{matrix} 0 \\ \cdots  \\ \cdots  \end{matrix} \right) 
- %]]&gt;</script>
-
-<p>实际上有</p>
-
-<script type="math/tex; mode=display">% &lt;![CDATA[
-
-\left[ \begin{matrix} \frac { 1 }{ \sqrt { n }  } { \left( \begin{matrix} 1 & \cdots  & 1 \end{matrix} \right)  } \\ \cdots  \\ \cdots  \\ \cdots  \end{matrix} \right] \overline { X } =\left( \begin{matrix} \frac { \sum _{ i=1 }^{ n }{ { X }_{ i } }  }{ \sqrt { n }  }  \\ 0 \\ \cdots  \\ 0 \end{matrix} \right) 
- %]]&gt;</script>
-
-<p>结果中除第一维外都是 0，利用到正交阵的性质。</p>
-
-<p><strong>这一正交变换带来的好处是，变换后独立性仍保持，且减去均值未对独立性造成破坏，剩余的 n-1 个非零随机变量仍旧独立同分布于 N(0, 1)</strong>。</p>
-
-<p>如此一来，我们可以放心的套用之前的计算方法，得到均值为 0，而标准差为 <script type="math/tex">\frac { 1 }{ \sqrt { n-1 }  } </script>。</p>
-
-<p>以下是 Matlab 仿真结果：</p>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>相关系数的均值、方差仿真</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-<span class="line-number">5</span>
-<span class="line-number">6</span>
-<span class="line-number">7</span>
-<span class="line-number">8</span>
-<span class="line-number">9</span>
-<span class="line-number">10</span>
-</pre></td><td class="code"><pre><code class="matlab"><span class="line"><span class="n">array</span> <span class="p">=</span> <span class="p">[];</span>
-</span><span class="line"><span class="n">n</span> <span class="p">=</span> <span class="mi">5</span><span class="p">;</span>
-</span><span class="line"><span class="n">iter</span> <span class="p">=</span> <span class="mi">100000</span><span class="p">;</span>
-</span><span class="line"><span class="k">for</span> <span class="nb">i</span> <span class="p">=</span> <span class="mi">1</span><span class="p">:</span><span class="n">iter</span>
-</span><span class="line"><span class="n">x</span> <span class="p">=</span> <span class="n">normrnd</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="n">n</span><span class="p">,</span><span class="mi">1</span><span class="p">);</span>
-</span><span class="line"><span class="n">y</span> <span class="p">=</span> <span class="n">normrnd</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="n">n</span><span class="p">,</span><span class="mi">1</span><span class="p">);</span>
-</span><span class="line"><span class="n">array</span> <span class="p">=</span> <span class="p">[</span><span class="n">array</span><span class="p">,</span> <span class="n">corr</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)];</span>
-</span><span class="line"><span class="k">end</span>
-</span><span class="line"><span class="n">avg</span> <span class="p">=</span> <span class="n">mean</span><span class="p">(</span><span class="n">array</span><span class="p">);</span>
-</span><span class="line"><span class="n">avar</span> <span class="p">=</span> <span class="n">var</span><span class="p">(</span><span class="n">array</span><span class="p">);</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<p>10 万个相关系数样本，括号内为 <script type="math/tex">\frac{1}{n - 1}</script> 的值</p>
-
-<p>5 维，单次运行均值为 -0.0054，方差为 0.2457（0.25）；</p>
-
-<p>11 维，单次运行均值为 0.0005，方差为 0.1013（0.1）；</p>
-
-<p>23 维，单次运行均值为 -0.0026，方差为 0.0458（0.0455）。</p>
-
-<h2 id="section-2">其它经典题目</h2>
-
-<ol>
-  <li><a href="http://baike.baidu.com/view/2499752.htm?fr=aladdin">卡特兰数</a> 相关问题
-    <ul>
-      <li>括号化</li>
-      <li>出栈次序</li>
-      <li><a href="http://blog.csdn.net/jtlyuan/article/details/7440591">找钱问题</a></li>
-    </ul>
-  </li>
-  <li><a href="http://blog.sina.com.cn/s/blog_519169510101bljn.html">帽子问题</a></li>
-  <li><a href="http://blog.csdn.net/wangshihui512/article/details/8860193">海盗分金</a></li>
-  <li><a href="http://www.zhihu.com/question/25420139">宝石升级</a></li>
-  <li>……</li>
-</ol>
-
-<h2 id="section-3">总结</h2>
-
-<ul>
-  <li>简要复习概率、期望、常见概率分布、排列组合等知识；</li>
-  <li>金融、投资领域的面试参加的不多，过段时间再补充几道有关概率、博弈论的题目;</li>
-  <li>多关注 <a href="http://www.matrix67.com/blog/">Matrix67</a> 上的题目分享。
-    <ul>
-      <li><a href="http://www.matrix67.com/blog/archives/501">分享一些有趣的面试智力题（上）</a></li>
-      <li><a href="http://www.matrix67.com/blog/archives/502">分享一些有趣的面试智力题（下）</a></li>
-      <li><a href="http://www.matrix67.com/blog/archives/2671">10个精彩的智力问题</a></li>
-      <li>……</li>
-    </ul>
-  </li>
-</ul>
-
-<p>继 <code>机器学习、大数据问题</code>、<code>智力题</code>，接下来的博文还会陆续分享 <code>编程语言题</code> 和 <code>数据结构与算法题</code>，敬请期待。</p>
-
-<p>访问入口：</p>
-
-<ul>
-  <li><a href="http://frank19900731.github.io/blog/2014/11/06/mian-shi-jing-yan-zhi-ji-qi-xue-xi-da-shu-ju-wen-ti/">机器学习、大数据问题</a></li>
-  <li><a href="http://frank19900731.github.io/blog/2014/11/07/mian-shi-jing-yan-fen-xiang-zhi-zhi-li-ti/">智力题</a></li>
-  <li><a href="http://frank19900731.github.io/blog/2014/11/18/mian-shi-jing-yan-fen-xiang-zhi-shu-ju-jie-gou-suan-fa-fen-xiang/">数据结构与算法题</a></li>
-  <li><a href="http://frank19900731.github.io/blog/2014/11/25/mian-shi-jing-yan-fen-xiang-zhi-bian-cheng-yu-yan-ti/">编程语言题</a></li>
-</ul>
-
-<p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2014/11/07/mian-shi-jing-yan-fen-xiang-zhi-zhi-li-ti/">http://frank19900731.github.io/blog/2014/11/07/mian-shi-jing-yan-fen-xiang-zhi-zhi-li-ti/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
 ]]></content>
   </entry>
   

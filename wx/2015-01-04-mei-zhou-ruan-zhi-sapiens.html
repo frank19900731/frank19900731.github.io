@@ -1,0 +1,286 @@
+<!-- layout/wx-default.html -->
+
+<!-- head.html -->
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <!-- 标签页标题 -->
+  <title>每周一软之 Sapiens - Blog of 太极儒</title>
+  <meta name="author" content="Frank Song">
+  <!-- 定义description变量，如果有则用，没有则是正文，前150字 -->
+  
+  <meta name="description" content="目录 功能介绍 界面设计 易用性 稳定性 跨平台 类似软件 闪光点 缺点 在这么一个读图时代、看脸时代，软件的颜值也称得上一个重要的衡量指标。Sapien 除了有一张美丽的面孔，还有那么点小情趣，挺讨人喜欢的。 功能介绍 Sapiens 是一个软件快速启动工具，且目前只支持软件快速打开，没有打开文件、执行脚本啦什么旁的功能。 Sapiens 除了通常的快捷键启动方式，还有画圈圈启动方式，具体见如下动态图。从动态图还可以看出它默认列举你最近用过的软件。 兰花指微翘，食指指尖在触摸板上看似不经意的划出那一弯圆月，美美的界面就映入眼帘，真真儿的是让人陶醉呢…… 转向顺时针、逆时针皆可，圈数触发可以设置在 1 - 3 圈，默认是 1.4 圈。经测试设置为 1 圈的时候，大概也就是一圈半能识别出的水平。注意手速稍快些，画的圆半径不要太小，试过几次就能很熟练了。 既漂亮又有情趣，倘若是无脑，那也就是平平啦，不过人家可是结合了人工智能的呦。 把 About Sapiens’ Artificial Intelligence 那抄录下来。 Sapiens tries to predict the applications you will want to launch.Sapiens understands what applications you use and learns how you interact with your Mac. For this reason it may take 2-3 days (it really depends how often you use your mac daily) for it to have enough brain power for making accurate predictions.Also, as your habits change Sapiens keeps adapting to them by constantly learning from you. 就是说，你把人家来安装，我来把你细观察，你想吃饭我端碗，你想拉屎我递纸，把你伺候好好的，一辈子都随你意。 界面设计 提供五种布局，默认的如下图。 可以设置 Desktop Mirroring Effect，圆内背景就是桌面背景加了遮罩的效果，配合上动态壁纸 &hellip;">
+  <meta name="keywords" content="mac, 每周一软, Sapiens, QuickSilver, Alfred, Workflow">
+  <meta name="baidu-site-verification" content="7O78rNJCOH" />
+  <meta name="360-site-verification" content="9ee6dda17557079b8855f9c8201b05bb" />
+  <meta name="msvalidate.01" content="408D13BCB6B6CE4973F6CD9E6A9E8195" />
+  <meta name="sogou_site_verification" content="CtgkJPDjga"/>
+  <meta name="chinaz-site-verification" content="081e7651-48c6-4c2f-a569-99321685eab1" />
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://frank19900731.github.io/wx/2015-01-04-mei-zhou-ruan-zhi-sapiens.html">
+  <!-- 网站小图标 -->
+  <link href="/favicon.ico" rel="icon">
+  <link href="/stylesheets/bootstrap/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="/stylesheets/bootstrap/responsive.css" rel="stylesheet" type="text/css">
+  <!-- 网站样式文件 -->
+  <link href="/stylesheets/styles.css" media="screen, projection" rel="stylesheet" type="text/css">
+
+  <link href="/atom.xml" rel="alternate" title="Blog of 太极儒" type="application/atom+xml">
+
+  <script src="/javascripts/modernizr.custom.js"></script>
+  <!-- jQuery -->
+  <!--script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script-->
+  <script src="/javascripts/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+
+  <!-- 其它js代码 -->
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <script src="/javascripts/jquery.sidr.min.js"></script>
+  <script src="/javascripts/ah-blue.js"></script>
+  <script type="text/javascript" src="/javascripts/fancybox/jquery.fancybox.pack.js"></script>
+  <link rel="stylesheet" type="text/css" href="/javascripts/fancybox/jquery.fancybox.css" media="screen" />
+
+  <link href="/stylesheets/component.css" rel="stylesheet" type="text/css">
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+        if ($(".img-up")) {
+            $(".img-up").fancybox();
+        }
+        if ($(".imgleft")) {
+            $(".imgleft").parent().parent().css("text-align", "left");
+        }
+        if ($(".imgright")) {
+            $(".imgright").parent().parent().css("text-align", "right");
+        }
+        if ($(".imgcenter")) {
+            $(".imgcenter").parent().parent().css("text-align", "center");
+        }
+        if ($(".imgleft-no-shadow")) {
+            $(".imgleft-no-shadow").parent().parent().css("text-align", "left");
+        }
+        if ($(".imgright-no-shadow")) {
+            $(".imgright-no-shadow").parent().parent().css("text-align", "right");
+        }
+        if ($(".imgcenter-no-shadow")) {
+            $(".imgcenter-no-shadow").parent().parent().css("text-align", "center");
+        }
+
+        if ($(".mod_lost_child_little")) {
+            $(".mod_lost_child_little").css("width", "100%");
+        }
+    });
+  </script>
+
+  <style>
+      body {
+          background-image: none;
+      }
+
+      tr.content {
+          line-height: 300%;
+          border-top: 1px dotted #000;
+      }
+
+      table.mulu {
+          width: 95%; margin: 10px auto 40px;
+      }
+
+      .gutter {
+          width: 7%;
+      }
+  </style>
+
+  <!-- custom/head.html -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      jax: ["input/TeX", "output/HTML-CSS"],
+      tex2jax: {
+        inlineMath: [ ['$', '$'], ["\\(", "\\)"] ],
+        displayMath: [ ['$$', '$$'], ["\\[", "\\]"] ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+      //,
+      //displayAlign: "left",
+      //displayIndent: "2em"
+    });
+
+    function addBlankTargetForLinks () {
+
+      $('a[href^="http"]').each(function(){
+
+        $(this).attr('target', '_blank');
+
+      });
+
+    }
+
+    $(document).bind('DOMNodeInserted', function(event) {
+
+      addBlankTargetForLinks();
+
+    });
+
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"></script>
+  <!-- google_analytics.html -->
+
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-51950124-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head> 
+
+<body style="background-color: rgba(255, 255, 255, 0.3);">
+
+<div class="row-fluid marketing">
+<div class="span2"> </div>
+<div class="span8">
+<div class="container-narrow" style="margin-top: 20px;">
+
+      <div class="masthead">
+        <ul class="nav nav-pills pull-right">
+          <li><a href="/wx/archives/">博客目录</a></li>
+          <li><a href="/blog/2015/01/04/mei-zhou-ruan-zhi-sapiens/">PC端阅读</a></li>
+        </ul>
+        <h3 class="muted">&nbsp;&nbsp;&nbsp;&nbsp;太极儒</h3>
+      </div>
+
+	  <hr style="width: 100%;">
+
+      <div style="padding: 8px 25px 8px 25px;">
+        <h1>
+          每周一软之 Sapiens
+        </h1>
+
+        <div class="article-date" style="margin-bottom: 40px;">
+            <!-- post/date.html -->
+<!-- 文章日期显示 -->
+
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2015-01-04T00:37:59+08:00" pubdate data-updated="true">Jan 4<span>th</span>, 2015</time>
+        </div>
+      <p><strong>目录</strong></p>
+
+<ul id="markdown-toc">
+  <li><a href="#section">功能介绍</a></li>
+  <li><a href="#section-1">界面设计</a></li>
+  <li><a href="#section-2">易用性</a></li>
+  <li><a href="#section-3">稳定性</a></li>
+  <li><a href="#section-4">跨平台</a></li>
+  <li><a href="#section-5">类似软件</a></li>
+  <li><a href="#section-6">闪光点</a></li>
+  <li><a href="#section-7">缺点</a></li>
+</ul>
+
+<!-- excerpt start -->
+
+<p>在这么一个<strong>读图时代</strong>、<strong>看脸时代</strong>，软件的颜值也称得上一个重要的衡量指标。Sapien 除了有一张美丽的面孔，还有那么点小情趣，挺讨人喜欢的。</p>
+
+<h2 id="section">功能介绍</h2>
+
+<p>Sapiens 是一个软件快速启动工具，且目前只支持软件快速打开，没有打开文件、执行脚本啦什么旁的功能。</p>
+
+<p>Sapiens 除了通常的快捷键启动方式，还有<strong>画圈圈</strong>启动方式，具体见如下动态图。从动态图还可以看出它默认<strong>列举你最近用过的软件</strong>。</p>
+
+<p><a href="/img/post/2015-1/1.gif" class="img-up" title="动态图"><img class="imgcenter" src="/img/post/2015-1/1.gif" width="70%" title="动态图" /></a></p>
+
+<blockquote><p>兰花指微翘，食指指尖在触摸板上看似不经意的划出那一弯圆月，美美的界面就映入眼帘，真真儿的是让人陶醉呢……</p></blockquote>
+
+<p><strong>转向顺时针、逆时针皆可</strong>，圈数触发可以设置在 1 - 3 圈，默认是 1.4 圈。经测试设置为 1 圈的时候，大概也就是<strong>一圈半</strong>能识别出的水平。注意<strong>手速稍快些</strong>，<strong>画的圆半径不要太小</strong>，试过几次就能很熟练了。</p>
+
+<!-- excerpt end -->
+
+<p>既漂亮又有情趣，倘若是无脑，那也就是平平啦，不过人家可是结合了人工智能的呦。</p>
+
+<p><a href="/img/post/2015-1/3.png" class="img-up" title="Artificial Inteligence"><img class="imgcenter" src="/img/post/2015-1/3.png" width="70%" title="Artificial Inteligence" /></a></p>
+
+<p>把 <strong>About Sapiens’ Artificial Intelligence</strong> 那抄录下来。</p>
+
+<blockquote><p>Sapiens tries to predict the applications you will want to launch.</p><p>Sapiens understands what applications you use and learns how you interact with your Mac. For this reason it may take 2-3 days (it really depends how often you use your mac daily) for it to have enough brain power for making accurate predictions.</p><p>Also, as your habits change Sapiens keeps adapting to them by constantly learning from you.</p></blockquote>
+
+<p>就是说，你把人家来安装，我来把你细观察，你想吃饭我端碗，你想拉屎我递纸，把你伺候好好的，一辈子都随你意。</p>
+
+<h2 id="section-1">界面设计</h2>
+
+<p>提供五种布局，默认的如下图。</p>
+
+<p><a href="/img/post/2015-1/2.png" class="img-up" title="Sapiens 图示"><img class="imgcenter" src="/img/post/2015-1/2.png" width="70%" title="Sapiens 图示" /></a></p>
+
+<p>可以设置 <strong>Desktop Mirroring Effect</strong>，圆内背景就是桌面背景加了遮罩的效果，配合上<strong>动态壁纸</strong>，确实八错。</p>
+
+<h2 id="section-2">易用性</h2>
+
+<p>傻瓜软件。</p>
+
+<h2 id="section-3">稳定性</h2>
+
+<p>稳定，未遇异常。</p>
+
+<h2 id="section-4">跨平台</h2>
+
+<p>无。</p>
+
+<h2 id="section-5">类似软件</h2>
+
+<p>提到快速启动软件，那头两把交椅自然就是 <a href="http://www.alfredapp.com/">Alfred</a> 和 <a href="http://qsapp.com/">QuickSilver</a> ，前者闭源收费（确切的说是高级功能收费），后者开源免费。</p>
+
+<p>二者都有很强的附加功能，比如文件搜索、删除、压缩、查看详情啦，脚本执行、iTunes 控制啦等。关于它们的对比网上有 <a href="http://www.v2ex.com/t/42050">很多讨论</a>，不在这里多说。 </p>
+
+<p>QuickSilver 有自己的插件列表，因为是开源的，所以也可以自己开发，不过门槛应该比较高吧？Alfred 有一个 Workflow 模式，是收费功能，可以通过撰写脚本、连接模块实现自己想要的功能，就相当于一个插件定制系统了（有点类似于 Automator），适合于普通程序员。</p>
+
+<p>本人最早使用的是 QucikSilver，习惯积累下来也就没有转到 Alfred，也是因为前者已经能够满足所需。最近尝试用用 Alfred，也别落伍太多，先从这个 <a href="https://github.com/hzlzh/AlfredWorkflow.com">Workflow 列表</a> 看起吧，这个 <a href="http://lucifr.com/2011/11/30/alfred-and-some-recommanded-extensions/">博客</a> 中也有很多 Alfred 相关内容。</p>
+
+<p>不过我还是有点想不明白为什么要把那么多功能都堆到这个小软件里，自动和手动差别就这么大么，还是说在追求些别的什么。</p>
+
+<p>最主要的原因是我还不够 Geek 吧……</p>
+
+<h2 id="section-6">闪光点</h2>
+
+<p>漂亮。</p>
+
+<h2 id="section-7">缺点</h2>
+
+<p>既然漂亮，就别要求那么高了。</p>
+
+      <div style="margin-top: 30px;">
+      本文原载于 <a href="http://frank19900731.github.io" target="_blank">http://frank19900731.github.io</a> (为获得更好的阅读效果，请在PC端访问此链接)，作者宋成儒，微信号 frank19900731，微博 <a href="http://weibo.com/frank19900731" target="_blank">@太极儒</a> 。
+      </div>
+      </div>
+
+</div> <!-- /container -->
+</div>
+<div class="span2"></div>
+</div>
+
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1253436508'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s6.cnzz.com/z_stat.php%3Fid%3D1253436508%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+</body>
+</html>
