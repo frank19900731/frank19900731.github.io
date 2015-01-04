@@ -75,4 +75,6 @@ wx_url: /wx/2014-12-24-2014-qiu-zhi-hui-wang.html
 
 <br>
 
+附面试分享 PPT [下载](/downloads/file/Tips.pdf)
+
 <!-- excerpt end -->
