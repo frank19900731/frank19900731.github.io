@@ -14,6 +14,7 @@ exclude_from_search: true
 **2015年1月**
 
 - 1.17 —— [最佳App开发模式 - APICloud帮助创业团队和开发者快速布局移动互联网](http://www.huodongxing.com/event/reg_submit?id=3262757671000)
+- 1.10 —— Go 语言北京技术聚会  下午一点 北京市朝阳区光华路4号 东方梅地亚中心A座15层
 - 1.9 —— [SoLoMo Party【第十二期】解密大数据与程序化购买](http://www.huodongxing.com/event/4261017535800?utm_source=events&utm_medium=block&utm_campaign=hdxevents)
 - 1.7 —— [指尖上的商机——移动应用“营”在流量](http://www.huodongxing.com/event/3260891725600?utm_source=events&utm_medium=block&utm_campaign=hdxevents)
 
