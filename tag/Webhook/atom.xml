@@ -261,7 +261,7 @@
 </span><span class="line">chmod -R o+rwx /path/to/your/webcontent
 </span></code></pre></td></tr></table></div></figure></notextile></div>
 
-<p>让 www-data 有权限执行 git 命令，并操作网页内容文件夹。</p>
+<p>让 <code>www-data</code> 有权限执行 git 命令，并操作网页内容文件夹。</p>
 
 <p>到这里，已经将 Octopress 迁移到 Gitlab 上，并完成 修改 -&gt; 提交 -&gt; 自动更新的功能。</p>
 
