@@ -1,0 +1,325 @@
+<!-- layout/wx-default.html -->
+
+<!-- head.html -->
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <!-- 标签页标题 -->
+  <title>每周一软之 XnConvert - Blog of 太极儒</title>
+  <meta name="author" content="Frank Song">
+  <!-- 定义description变量，如果有则用，没有则是正文，前150字 -->
+  
+  <meta name="description" content="目录 功能介绍 界面设计 易用性 稳定性 跨平台 类似软件 闪光点 缺点 功能介绍 XnConvert 是一个跨平台的图片批处理工具，提供 resize、crop、rotate、高斯模糊等在内的 80 多种图像操作，支持 500 余种图像格式的读入、70 余种图像格式生成，可以定制输出图片的命名格式。XnConvert 比较适合照片整理（重命名、加水印等）、网页图片素材准备（图片放缩、加图像掩模、模糊等）等批处理任务。 XnConvert 以工作流的方式定制图片的处理过程，使用起来非常简单。 首先确定选择输入图片或图片文件夹。 然后在图片上定义操作行为和参数。 上图顺序定义了三种行为，核大小为 13*13 的高斯模糊，垂直翻转，长宽减半。Resize 中还有一些参数可调，比如填充模式（fit 或 fill 或 longest side 或 shortest side 等）和降采样方法（Bilinear、BSpline、Lanczos 等）。 最后定义输出文件夹、输出文件格式和命名方式。 除输出到文件夹，还可以传给 Email 或 Zip 等。 命名方式支持格式化表达，比如 {Filename}_{Current Date [m_d_Y]}。 XnConvert 的工作流有两种保存方式，一种是后缀名为 xbs 的 XML 格式文件，可以被 XnConvert 重新载入。 xbs 文件示例1
+2
+3
+4
+5
+6
+7
+8
+9
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;XnView_script version=&quot;1.0&quot; name=&quot;a&quot;&gt; &lt;Gaussian_blur size=&quot;13&quot;/&gt; &lt;Mirror method=&quot;0&quot;/&gt; &lt;Resize mode=&quot;4&quot; width=&quot;50&quot; height=&quot;50&quot; unit=&quot;1&quot; ratio=&quot;true&quot; orientation=&quot;false&quot; enlarge=&quot;0&quot; &hellip;">
+  <meta name="keywords" content="mac, 每周一软, XnConvert, 图片处理">
+  <meta name="baidu-site-verification" content="7O78rNJCOH" />
+  <meta name="360-site-verification" content="9ee6dda17557079b8855f9c8201b05bb" />
+  <meta name="msvalidate.01" content="408D13BCB6B6CE4973F6CD9E6A9E8195" />
+  <meta name="sogou_site_verification" content="CtgkJPDjga"/>
+  <meta name="chinaz-site-verification" content="081e7651-48c6-4c2f-a569-99321685eab1" />
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://frank19900731.github.io/wx/2015-01-11-mei-zhou-yi-ruan-zhi-xnconvert.html">
+  <!-- 网站小图标 -->
+  <link href="/favicon.ico" rel="icon">
+  <link href="/stylesheets/bootstrap/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="/stylesheets/bootstrap/responsive.css" rel="stylesheet" type="text/css">
+  <!-- 网站样式文件 -->
+  <link href="/stylesheets/styles.css" media="screen, projection" rel="stylesheet" type="text/css">
+
+  <link href="/atom.xml" rel="alternate" title="Blog of 太极儒" type="application/atom+xml">
+
+  <script src="/javascripts/modernizr.custom.js"></script>
+  <!-- jQuery -->
+  <!--script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script-->
+  <script src="/javascripts/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+
+  <!-- 其它js代码 -->
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <script src="/javascripts/jquery.sidr.min.js"></script>
+  <script src="/javascripts/ah-blue.js"></script>
+  <script type="text/javascript" src="/javascripts/fancybox/jquery.fancybox.pack.js"></script>
+  <link rel="stylesheet" type="text/css" href="/javascripts/fancybox/jquery.fancybox.css" media="screen" />
+
+  <link href="/stylesheets/component.css" rel="stylesheet" type="text/css">
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+        if ($(".img-up")) {
+            $(".img-up").fancybox();
+        }
+        if ($(".imgleft")) {
+            $(".imgleft").parent().parent().css("text-align", "left");
+        }
+        if ($(".imgright")) {
+            $(".imgright").parent().parent().css("text-align", "right");
+        }
+        if ($(".imgcenter")) {
+            $(".imgcenter").parent().parent().css("text-align", "center");
+        }
+        if ($(".imgleft-no-shadow")) {
+            $(".imgleft-no-shadow").parent().parent().css("text-align", "left");
+        }
+        if ($(".imgright-no-shadow")) {
+            $(".imgright-no-shadow").parent().parent().css("text-align", "right");
+        }
+        if ($(".imgcenter-no-shadow")) {
+            $(".imgcenter-no-shadow").parent().parent().css("text-align", "center");
+        }
+
+        if ($(".mod_lost_child_little")) {
+            $(".mod_lost_child_little").css("width", "100%");
+        }
+    });
+  </script>
+
+  <style>
+      body {
+          background-image: none;
+      }
+
+      tr.content {
+          line-height: 300%;
+          border-top: 1px dotted #000;
+      }
+
+      table.mulu {
+          width: 95%; margin: 10px auto 40px;
+      }
+
+      .gutter {
+          width: 7%;
+      }
+  </style>
+
+  <!-- custom/head.html -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      jax: ["input/TeX", "output/HTML-CSS"],
+      tex2jax: {
+        inlineMath: [ ['$', '$'], ["\\(", "\\)"] ],
+        displayMath: [ ['$$', '$$'], ["\\[", "\\]"] ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+      //,
+      //displayAlign: "left",
+      //displayIndent: "2em"
+    });
+
+    function addBlankTargetForLinks () {
+
+      $('a[href^="http"]').each(function(){
+
+        $(this).attr('target', '_blank');
+
+      });
+
+    }
+
+    $(document).bind('DOMNodeInserted', function(event) {
+
+      addBlankTargetForLinks();
+
+    });
+
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"></script>
+  <!-- google_analytics.html -->
+
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-51950124-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head> 
+
+<body style="background-color: rgba(255, 255, 255, 0.3);">
+
+<div class="row-fluid marketing">
+<div class="span2"> </div>
+<div class="span8">
+<div class="container-narrow" style="margin-top: 20px;">
+
+      <div class="masthead">
+        <ul class="nav nav-pills pull-right">
+          <li><a href="/wx/archives/">博客目录</a></li>
+          <li><a href="/blog/2015/01/11/mei-zhou-yi-ruan-zhi-xnconvert/">PC端阅读</a></li>
+        </ul>
+        <h3 class="muted">&nbsp;&nbsp;&nbsp;&nbsp;太极儒</h3>
+      </div>
+
+	  <hr style="width: 100%;">
+
+      <div style="padding: 8px 25px 8px 25px;">
+        <h1>
+          每周一软之 XnConvert
+        </h1>
+
+        <div class="article-date" style="margin-bottom: 40px;">
+            <!-- post/date.html -->
+<!-- 文章日期显示 -->
+
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2015-01-11T22:32:29+08:00" pubdate data-updated="true">Jan 11<span>th</span>, 2015</time>
+        </div>
+      <p><strong>目录</strong></p>
+
+<ul id="markdown-toc">
+  <li><a href="#section">功能介绍</a></li>
+  <li><a href="#section-1">界面设计</a></li>
+  <li><a href="#section-2">易用性</a></li>
+  <li><a href="#section-3">稳定性</a></li>
+  <li><a href="#section-4">跨平台</a></li>
+  <li><a href="#section-5">类似软件</a></li>
+  <li><a href="#section-6">闪光点</a></li>
+  <li><a href="#section-7">缺点</a></li>
+</ul>
+
+<!-- excerpt start -->
+
+<h2 id="section">功能介绍</h2>
+
+<p><a href="http://www.xnview.com/en/xnconvert/">XnConvert</a> 是一个跨平台的图片批处理工具，提供 resize、crop、rotate、高斯模糊等在内的 80 多种图像操作，支持 <a href="http://www.xnview.com/en/xnconvert/#formats">500 余种图像格式</a>的读入、70 余种图像格式生成，可以定制输出图片的命名格式。XnConvert 比较适合照片整理（重命名、加水印等）、网页图片素材准备（图片放缩、加图像掩模、模糊等）等批处理任务。</p>
+
+<p>XnConvert 以<strong>工作流</strong>的方式定制图片的处理过程，使用起来非常简单。</p>
+
+<p>首先确定选择输入图片或图片文件夹。</p>
+
+<p><a href="/img/post/2015-1/5.png" class="img-up" title="输入图片"><img class="imgcenter" src="/img/post/2015-1/5.png" width="80%" title="输入图片" /></a></p>
+
+<p>然后在图片上定义操作行为和参数。</p>
+
+<p><a href="/img/post/2015-1/6.png" class="img-up" title="操作行为和参数"><img class="imgcenter" src="/img/post/2015-1/6.png" width="80%" title="操作行为和参数" /></a></p>
+
+<p>上图顺序定义了三种行为，<strong>核大小为 13*13 的高斯模糊</strong>，<strong>垂直翻转</strong>，<strong>长宽减半</strong>。Resize 中还有一些参数可调，比如填充模式（fit 或 fill 或 longest side 或 shortest side 等）和降采样方法（Bilinear、BSpline、Lanczos 等）。</p>
+
+<p>最后定义输出文件夹、输出文件格式和命名方式。</p>
+
+<p><a href="/img/post/2015-1/7.png" class="img-up" title="输出文件夹和命名方式"><img class="imgcenter" src="/img/post/2015-1/7.png" width="80%" title="输出文件夹和命名方式" /></a></p>
+
+<p>除输出到文件夹，还可以传给 Email 或 Zip 等。</p>
+
+<p>命名方式支持格式化表达，比如  <code>{Filename}_{Current Date [m_d_Y]}</code>。</p>
+
+<!-- excerpt end -->
+
+<p>XnConvert 的工作流有两种保存方式，一种是后缀名为 xbs 的 XML 格式文件，可以被 XnConvert 重新载入。</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>xbs 文件示例</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+</pre></td><td class="code"><pre><code class="xml"><span class="line"><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span><span class="nt">&lt;XnView_script</span> <span class="na">version=</span><span class="s">&quot;1.0&quot;</span> <span class="na">name=</span><span class="s">&quot;a&quot;</span><span class="nt">&gt;</span>
+</span><span class="line">    <span class="nt">&lt;Gaussian_blur</span> <span class="na">size=</span><span class="s">&quot;13&quot;</span><span class="nt">/&gt;</span>
+</span><span class="line">    <span class="nt">&lt;Mirror</span> <span class="na">method=</span><span class="s">&quot;0&quot;</span><span class="nt">/&gt;</span>
+</span><span class="line">    <span class="nt">&lt;Resize</span> <span class="na">mode=</span><span class="s">&quot;4&quot;</span> <span class="na">width=</span><span class="s">&quot;50&quot;</span> <span class="na">height=</span><span class="s">&quot;50&quot;</span> <span class="na">unit=</span><span class="s">&quot;1&quot;</span> <span class="na">ratio=</span><span class="s">&quot;true&quot;</span> <span class="na">orientation=</span><span class="s">&quot;false&quot;</span> <span class="na">enlarge=</span><span class="s">&quot;0&quot;</span> <span class="na">resample=</span><span class="s">&quot;7&quot;</span> <span class="na">gamma_correct=</span><span class="s">&quot;false&quot;</span><span class="nt">/&gt;</span>
+</span><span class="line">    <span class="nt">&lt;Output</span> <span class="na">folder=</span><span class="s">&quot;/Users/frank/Desktop/&quot;</span> <span class="na">filename=</span><span class="s">&quot;modified&quot;</span> <span class="na">case=</span><span class="s">&quot;0&quot;</span> <span class="na">format=</span><span class="s">&quot;JPEG&quot;</span><span class="nt">&gt;</span>
+</span><span class="line">        <span class="nt">&lt;Options</span> <span class="na">overwrite=</span><span class="s">&quot;1&quot;</span> <span class="na">orgDate=</span><span class="s">&quot;false&quot;</span> <span class="na">keepMeta=</span><span class="s">&quot;true&quot;</span> <span class="na">keepICC=</span><span class="s">&quot;false&quot;</span> <span class="na">keepFolder=</span><span class="s">&quot;false&quot;</span> <span class="na">delOrg=</span><span class="s">&quot;false&quot;</span> <span class="na">multipage=</span><span class="s">&quot;false&quot;</span> <span class="na">allPages=</span><span class="s">&quot;false&quot;</span> <span class="na">openExplorer=</span><span class="s">&quot;false&quot;</span> <span class="na">openBrowser=</span><span class="s">&quot;false&quot;</span> <span class="na">clearItems=</span><span class="s">&quot;false&quot;</span><span class="nt">/&gt;</span>
+</span><span class="line">        <span class="nt">&lt;JPEG</span> <span class="na">quality=</span><span class="s">&quot;80&quot;</span> <span class="na">progressive=</span><span class="s">&quot;false&quot;</span> <span class="na">optimizeHuffman=</span><span class="s">&quot;false&quot;</span> <span class="na">rebuildThumb=</span><span class="s">&quot;true&quot;</span> <span class="na">orgQuality=</span><span class="s">&quot;false&quot;</span> <span class="na">DCTMethod=</span><span class="s">&quot;0&quot;</span> <span class="na">subSampling=</span><span class="s">&quot;0&quot;</span> <span class="na">smoothFactor=</span><span class="s">&quot;0&quot;</span><span class="nt">/&gt;</span>
+</span><span class="line">    <span class="nt">&lt;/Output&gt;</span>
+</span><span class="line"><span class="nt">&lt;/XnView_script&gt;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>另一种是导出为命令行，可以用 <a href="http://www.xnview.com/en/nconvert/">nconvert</a> 执行。nconvert 是免费的命令行工具，XnConvert 只是它的可视化壳子。<code>nconvert -help</code> 显示支持的 80 种操作和众多图片文件格式。</p>
+
+<p>以之前定义的工作流为例，导出如下命令行。</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>nconvert 命令示例</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class="bash"><span class="line">nconvert -gauss 13 -yflip -ratio -rtype lanczos -resize 50% 50%
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<h2 id="section-1">界面设计</h2>
+
+<p>实用无美感。</p>
+
+<h2 id="section-2">易用性</h2>
+
+<p>简单直接，非常易用。</p>
+
+<h2 id="section-3">稳定性</h2>
+
+<p>稳定，不会因文件数量大而崩溃。</p>
+
+<h2 id="section-4">跨平台</h2>
+
+<p>Windows、Mac、Linux 通用。</p>
+
+<h2 id="section-5">类似软件</h2>
+
+<p><code>Photoshop</code>、<code>Acorn</code> 等图片处理软件功能强大，门槛相应也高，消耗资源多。<code>Photoshop</code> 支持<strong>动作录制批处理</strong>。</p>
+
+<p><code>Image Smith</code> 也是一款比较全能的图片批处理软件，但经验是使用中容易崩溃；<code>PhotoResize Pro</code> 功能较少，主要是图片大小调整和重命名。 </p>
+
+<p>Matlab、Python、R 等编程语言都能找到自己的图片处理工具箱（自带或者开源的），有一定的学习成本，需要可视化界面的话得自己编写。</p>
+
+<p><code>Automator</code> 支持一些图片操作，可以编写工作流。</p>
+
+<p>Mac 自带 <code>sips</code> 命令支持一些图片操作，其它图片处理相关的命令行或包应该还有不少，就不继续查找列举了。</p>
+
+<h2 id="section-6">闪光点</h2>
+
+<ul>
+  <li>提供命令行工具，方便嵌入到程序中使用；</li>
+  <li>工作流操作模式，可保存重用。</li>
+</ul>
+
+<h2 id="section-7">缺点</h2>
+
+<ul>
+  <li>软件界面简陋；</li>
+  <li>命令行工具不开源。</li>
+</ul>
+
+      <div style="margin-top: 30px;">
+      本文原载于 <a href="http://frank19900731.github.io" target="_blank">http://frank19900731.github.io</a> (为获得更好的阅读效果，请在PC端访问此链接)，作者宋成儒，微信号 frank19900731，微博 <a href="http://weibo.com/frank19900731" target="_blank">@太极儒</a> 。
+      </div>
+      </div>
+
+</div> <!-- /container -->
+</div>
+<div class="span2"></div>
+</div>
+
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1253436508'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s6.cnzz.com/z_stat.php%3Fid%3D1253436508%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+</body>
+</html>

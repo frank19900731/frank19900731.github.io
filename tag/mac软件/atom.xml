@@ -1,5 +1,130 @@
 
 <item>
+    <title>每周一软之 XnConvert</title>
+    <link>http://realjenius.com/blog/2015/01/11/mei-zhou-yi-ruan-zhi-xnconvert/</link>
+    <author>R.J. Lorimer</author>
+    <pubDate>2015-01-11T22:32:29+08:00</pubDate>
+    <guid>http://realjenius.com/blog/2015/01/11/mei-zhou-yi-ruan-zhi-xnconvert/</guid>
+    <description><![CDATA[
+     <p><strong>目录</strong></p>
+
+<ul id="markdown-toc">
+  <li><a href="#section">功能介绍</a></li>
+  <li><a href="#section-1">界面设计</a></li>
+  <li><a href="#section-2">易用性</a></li>
+  <li><a href="#section-3">稳定性</a></li>
+  <li><a href="#section-4">跨平台</a></li>
+  <li><a href="#section-5">类似软件</a></li>
+  <li><a href="#section-6">闪光点</a></li>
+  <li><a href="#section-7">缺点</a></li>
+</ul>
+
+<!-- excerpt start -->
+
+<h2 id="section">功能介绍</h2>
+
+<p><a href="http://www.xnview.com/en/xnconvert/">XnConvert</a> 是一个跨平台的图片批处理工具，提供 resize、crop、rotate、高斯模糊等在内的 80 多种图像操作，支持 <a href="http://www.xnview.com/en/xnconvert/#formats">500 余种图像格式</a>的读入、70 余种图像格式生成，可以定制输出图片的命名格式。XnConvert 比较适合照片整理（重命名、加水印等）、网页图片素材准备（图片放缩、加图像掩模、模糊等）等批处理任务。</p>
+
+<p>XnConvert 以<strong>工作流</strong>的方式定制图片的处理过程，使用起来非常简单。</p>
+
+<p>首先确定选择输入图片或图片文件夹。</p>
+
+<p><a href="http://frank19900731.github.io/img/post/2015-1/5.png" class="img-up" title="输入图片"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-1/5.png" width="80%" title="输入图片" /></a></p>
+
+<p>然后在图片上定义操作行为和参数。</p>
+
+<p><a href="http://frank19900731.github.io/img/post/2015-1/6.png" class="img-up" title="操作行为和参数"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-1/6.png" width="80%" title="操作行为和参数" /></a></p>
+
+<p>上图顺序定义了三种行为，<strong>核大小为 13*13 的高斯模糊</strong>，<strong>垂直翻转</strong>，<strong>长宽减半</strong>。Resize 中还有一些参数可调，比如填充模式（fit 或 fill 或 longest side 或 shortest side 等）和降采样方法（Bilinear、BSpline、Lanczos 等）。</p>
+
+<p>最后定义输出文件夹、输出文件格式和命名方式。</p>
+
+<p><a href="http://frank19900731.github.io/img/post/2015-1/7.png" class="img-up" title="输出文件夹和命名方式"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-1/7.png" width="80%" title="输出文件夹和命名方式" /></a></p>
+
+<p>除输出到文件夹，还可以传给 Email 或 Zip 等。</p>
+
+<p>命名方式支持格式化表达，比如  <code>{Filename}_{Current Date [m_d_Y]}</code>。</p>
+
+<!-- excerpt end -->
+
+<p>XnConvert 的工作流有两种保存方式，一种是后缀名为 xbs 的 XML 格式文件，可以被 XnConvert 重新载入。</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+</pre></td><td class="code"><pre><code class="xml"><span class="line"><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span><span class="nt">&lt;XnView_script</span> <span class="na">version=</span><span class="s">&quot;1.0&quot;</span> <span class="na">name=</span><span class="s">&quot;a&quot;</span><span class="nt">&gt;</span>
+</span><span class="line">    <span class="nt">&lt;Gaussian_blur</span> <span class="na">size=</span><span class="s">&quot;13&quot;</span><span class="nt">/&gt;</span>
+</span><span class="line">    <span class="nt">&lt;Mirror</span> <span class="na">method=</span><span class="s">&quot;0&quot;</span><span class="nt">/&gt;</span>
+</span><span class="line">    <span class="nt">&lt;Resize</span> <span class="na">mode=</span><span class="s">&quot;4&quot;</span> <span class="na">width=</span><span class="s">&quot;50&quot;</span> <span class="na">height=</span><span class="s">&quot;50&quot;</span> <span class="na">unit=</span><span class="s">&quot;1&quot;</span> <span class="na">ratio=</span><span class="s">&quot;true&quot;</span> <span class="na">orientation=</span><span class="s">&quot;false&quot;</span> <span class="na">enlarge=</span><span class="s">&quot;0&quot;</span> <span class="na">resample=</span><span class="s">&quot;7&quot;</span> <span class="na">gamma_correct=</span><span class="s">&quot;false&quot;</span><span class="nt">/&gt;</span>
+</span><span class="line">    <span class="nt">&lt;Output</span> <span class="na">folder=</span><span class="s">&quot;/Users/frank/Desktop/&quot;</span> <span class="na">filename=</span><span class="s">&quot;modified&quot;</span> <span class="na">case=</span><span class="s">&quot;0&quot;</span> <span class="na">format=</span><span class="s">&quot;JPEG&quot;</span><span class="nt">&gt;</span>
+</span><span class="line">        <span class="nt">&lt;Options</span> <span class="na">overwrite=</span><span class="s">&quot;1&quot;</span> <span class="na">orgDate=</span><span class="s">&quot;false&quot;</span> <span class="na">keepMeta=</span><span class="s">&quot;true&quot;</span> <span class="na">keepICC=</span><span class="s">&quot;false&quot;</span> <span class="na">keepFolder=</span><span class="s">&quot;false&quot;</span> <span class="na">delOrg=</span><span class="s">&quot;false&quot;</span> <span class="na">multipage=</span><span class="s">&quot;false&quot;</span> <span class="na">allPages=</span><span class="s">&quot;false&quot;</span> <span class="na">openExplorer=</span><span class="s">&quot;false&quot;</span> <span class="na">openBrowser=</span><span class="s">&quot;false&quot;</span> <span class="na">clearItems=</span><span class="s">&quot;false&quot;</span><span class="nt">/&gt;</span>
+</span><span class="line">        <span class="nt">&lt;JPEG</span> <span class="na">quality=</span><span class="s">&quot;80&quot;</span> <span class="na">progressive=</span><span class="s">&quot;false&quot;</span> <span class="na">optimizeHuffman=</span><span class="s">&quot;false&quot;</span> <span class="na">rebuildThumb=</span><span class="s">&quot;true&quot;</span> <span class="na">orgQuality=</span><span class="s">&quot;false&quot;</span> <span class="na">DCTMethod=</span><span class="s">&quot;0&quot;</span> <span class="na">subSampling=</span><span class="s">&quot;0&quot;</span> <span class="na">smoothFactor=</span><span class="s">&quot;0&quot;</span><span class="nt">/&gt;</span>
+</span><span class="line">    <span class="nt">&lt;/Output&gt;</span>
+</span><span class="line"><span class="nt">&lt;/XnView_script&gt;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>另一种是导出为命令行，可以用 <a href="http://www.xnview.com/en/nconvert/">nconvert</a> 执行。nconvert 是免费的命令行工具，XnConvert 只是它的可视化壳子。<code>nconvert -help</code> 显示支持的 80 种操作和众多图片文件格式。</p>
+
+<p>以之前定义的工作流为例，导出如下命令行。</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class="bash"><span class="line">nconvert -gauss 13 -yflip -ratio -rtype lanczos -resize 50% 50%
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<h2 id="section-1">界面设计</h2>
+
+<p>实用无美感。</p>
+
+<h2 id="section-2">易用性</h2>
+
+<p>简单直接，非常易用。</p>
+
+<h2 id="section-3">稳定性</h2>
+
+<p>稳定，不会因文件数量大而崩溃。</p>
+
+<h2 id="section-4">跨平台</h2>
+
+<p>Windows、Mac、Linux 通用。</p>
+
+<h2 id="section-5">类似软件</h2>
+
+<p><code>Photoshop</code>、<code>Acorn</code> 等图片处理软件功能强大，门槛相应也高，消耗资源多。Photoshop 支持<strong>动作录制批处理</strong>。</p>
+
+<p>Image Smith 也是一款比较全能的图片批处理软件，但经验是使用中容易崩溃；PhotoResize Pro 功能较少，主要是图片大小调整和重命名。 </p>
+
+<p>Matlab、Python、R 等编程语言都能找到自己的图片处理工具箱（自带或者开源的），有一定的学习成本，需要可视化界面的话得自己编写。</p>
+
+<p>Automator 支持一些图片操作，可以编写工作流。</p>
+
+<p>Mac 自带 <code>sips</code> 命令支持一些图片操作，其它图片处理相关的命令行或包应该还有不少，就不继续查找列举了。</p>
+
+<h2 id="section-6">闪光点</h2>
+
+<ul>
+  <li>提供命令行工具，方便嵌入到程序中使用；</li>
+  <li>工作流操作模式，可保存重用。</li>
+</ul>
+
+<h2 id="section-7">缺点</h2>
+
+<ul>
+  <li>软件界面简陋；</li>
+  <li>命令行工具不开源。</li>
+</ul>
+
+<p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2015/01/11/mei-zhou-yi-ruan-zhi-xnconvert/">http://frank19900731.github.io/blog/2015/01/11/mei-zhou-yi-ruan-zhi-xnconvert/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
+
+  ]]></description>
+</item>
+
+<item>
     <title>每周一软之 Sapiens</title>
     <link>http://realjenius.com/blog/2015/01/04/mei-zhou-ruan-zhi-sapiens/</link>
     <author>R.J. Lorimer</author>

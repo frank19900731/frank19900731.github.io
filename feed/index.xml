@@ -4,7 +4,7 @@
   <title><![CDATA[Blog of 太极儒]]></title>
   <link href="http://frank19900731.github.io/feed" rel="self"/>
   <link href="http://frank19900731.github.io/"/>
-  <updated>2015-01-10T23:03:17+08:00</updated>
+  <updated>2015-01-11T22:38:22+08:00</updated>
   <id>http://frank19900731.github.io/</id>
   <author>
     <name><![CDATA[Frank Song]]></name>
@@ -12,6 +12,128 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[每周一软之 XnConvert]]></title>
+    <link href="http://frank19900731.github.io/blog/2015/01/11/mei-zhou-yi-ruan-zhi-xnconvert/"/>
+    <updated>2015-01-11T22:32:29+08:00</updated>
+    <id>http://frank19900731.github.io/blog/2015/01/11/mei-zhou-yi-ruan-zhi-xnconvert</id>
+    <content type="html"><![CDATA[<p><strong>目录</strong></p>
+
+<ul id="markdown-toc">
+  <li><a href="#section">功能介绍</a></li>
+  <li><a href="#section-1">界面设计</a></li>
+  <li><a href="#section-2">易用性</a></li>
+  <li><a href="#section-3">稳定性</a></li>
+  <li><a href="#section-4">跨平台</a></li>
+  <li><a href="#section-5">类似软件</a></li>
+  <li><a href="#section-6">闪光点</a></li>
+  <li><a href="#section-7">缺点</a></li>
+</ul>
+
+<!-- excerpt start -->
+
+<h2 id="section">功能介绍</h2>
+
+<p><a href="http://www.xnview.com/en/xnconvert/">XnConvert</a> 是一个跨平台的图片批处理工具，提供 resize、crop、rotate、高斯模糊等在内的 80 多种图像操作，支持 <a href="http://www.xnview.com/en/xnconvert/#formats">500 余种图像格式</a>的读入、70 余种图像格式生成，可以定制输出图片的命名格式。XnConvert 比较适合照片整理（重命名、加水印等）、网页图片素材准备（图片放缩、加图像掩模、模糊等）等批处理任务。</p>
+
+<p>XnConvert 以<strong>工作流</strong>的方式定制图片的处理过程，使用起来非常简单。</p>
+
+<p>首先确定选择输入图片或图片文件夹。</p>
+
+<p><a href="http://frank19900731.github.io/img/post/2015-1/5.png" class="img-up" title="输入图片"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-1/5.png" width="80%" title="输入图片" /></a></p>
+
+<p>然后在图片上定义操作行为和参数。</p>
+
+<p><a href="http://frank19900731.github.io/img/post/2015-1/6.png" class="img-up" title="操作行为和参数"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-1/6.png" width="80%" title="操作行为和参数" /></a></p>
+
+<p>上图顺序定义了三种行为，<strong>核大小为 13*13 的高斯模糊</strong>，<strong>垂直翻转</strong>，<strong>长宽减半</strong>。Resize 中还有一些参数可调，比如填充模式（fit 或 fill 或 longest side 或 shortest side 等）和降采样方法（Bilinear、BSpline、Lanczos 等）。</p>
+
+<p>最后定义输出文件夹、输出文件格式和命名方式。</p>
+
+<p><a href="http://frank19900731.github.io/img/post/2015-1/7.png" class="img-up" title="输出文件夹和命名方式"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-1/7.png" width="80%" title="输出文件夹和命名方式" /></a></p>
+
+<p>除输出到文件夹，还可以传给 Email 或 Zip 等。</p>
+
+<p>命名方式支持格式化表达，比如  <code>{Filename}_{Current Date [m_d_Y]}</code>。</p>
+
+<!-- excerpt end -->
+
+<p>XnConvert 的工作流有两种保存方式，一种是后缀名为 xbs 的 XML 格式文件，可以被 XnConvert 重新载入。</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+</pre></td><td class="code"><pre><code class="xml"><span class="line"><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span><span class="nt">&lt;XnView_script</span> <span class="na">version=</span><span class="s">&quot;1.0&quot;</span> <span class="na">name=</span><span class="s">&quot;a&quot;</span><span class="nt">&gt;</span>
+</span><span class="line">    <span class="nt">&lt;Gaussian_blur</span> <span class="na">size=</span><span class="s">&quot;13&quot;</span><span class="nt">/&gt;</span>
+</span><span class="line">    <span class="nt">&lt;Mirror</span> <span class="na">method=</span><span class="s">&quot;0&quot;</span><span class="nt">/&gt;</span>
+</span><span class="line">    <span class="nt">&lt;Resize</span> <span class="na">mode=</span><span class="s">&quot;4&quot;</span> <span class="na">width=</span><span class="s">&quot;50&quot;</span> <span class="na">height=</span><span class="s">&quot;50&quot;</span> <span class="na">unit=</span><span class="s">&quot;1&quot;</span> <span class="na">ratio=</span><span class="s">&quot;true&quot;</span> <span class="na">orientation=</span><span class="s">&quot;false&quot;</span> <span class="na">enlarge=</span><span class="s">&quot;0&quot;</span> <span class="na">resample=</span><span class="s">&quot;7&quot;</span> <span class="na">gamma_correct=</span><span class="s">&quot;false&quot;</span><span class="nt">/&gt;</span>
+</span><span class="line">    <span class="nt">&lt;Output</span> <span class="na">folder=</span><span class="s">&quot;/Users/frank/Desktop/&quot;</span> <span class="na">filename=</span><span class="s">&quot;modified&quot;</span> <span class="na">case=</span><span class="s">&quot;0&quot;</span> <span class="na">format=</span><span class="s">&quot;JPEG&quot;</span><span class="nt">&gt;</span>
+</span><span class="line">        <span class="nt">&lt;Options</span> <span class="na">overwrite=</span><span class="s">&quot;1&quot;</span> <span class="na">orgDate=</span><span class="s">&quot;false&quot;</span> <span class="na">keepMeta=</span><span class="s">&quot;true&quot;</span> <span class="na">keepICC=</span><span class="s">&quot;false&quot;</span> <span class="na">keepFolder=</span><span class="s">&quot;false&quot;</span> <span class="na">delOrg=</span><span class="s">&quot;false&quot;</span> <span class="na">multipage=</span><span class="s">&quot;false&quot;</span> <span class="na">allPages=</span><span class="s">&quot;false&quot;</span> <span class="na">openExplorer=</span><span class="s">&quot;false&quot;</span> <span class="na">openBrowser=</span><span class="s">&quot;false&quot;</span> <span class="na">clearItems=</span><span class="s">&quot;false&quot;</span><span class="nt">/&gt;</span>
+</span><span class="line">        <span class="nt">&lt;JPEG</span> <span class="na">quality=</span><span class="s">&quot;80&quot;</span> <span class="na">progressive=</span><span class="s">&quot;false&quot;</span> <span class="na">optimizeHuffman=</span><span class="s">&quot;false&quot;</span> <span class="na">rebuildThumb=</span><span class="s">&quot;true&quot;</span> <span class="na">orgQuality=</span><span class="s">&quot;false&quot;</span> <span class="na">DCTMethod=</span><span class="s">&quot;0&quot;</span> <span class="na">subSampling=</span><span class="s">&quot;0&quot;</span> <span class="na">smoothFactor=</span><span class="s">&quot;0&quot;</span><span class="nt">/&gt;</span>
+</span><span class="line">    <span class="nt">&lt;/Output&gt;</span>
+</span><span class="line"><span class="nt">&lt;/XnView_script&gt;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>另一种是导出为命令行，可以用 <a href="http://www.xnview.com/en/nconvert/">nconvert</a> 执行。nconvert 是免费的命令行工具，XnConvert 只是它的可视化壳子。<code>nconvert -help</code> 显示支持的 80 种操作和众多图片文件格式。</p>
+
+<p>以之前定义的工作流为例，导出如下命令行。</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class="bash"><span class="line">nconvert -gauss 13 -yflip -ratio -rtype lanczos -resize 50% 50%
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<h2 id="section-1">界面设计</h2>
+
+<p>实用无美感。</p>
+
+<h2 id="section-2">易用性</h2>
+
+<p>简单直接，非常易用。</p>
+
+<h2 id="section-3">稳定性</h2>
+
+<p>稳定，不会因文件数量大而崩溃。</p>
+
+<h2 id="section-4">跨平台</h2>
+
+<p>Windows、Mac、Linux 通用。</p>
+
+<h2 id="section-5">类似软件</h2>
+
+<p><code>Photoshop</code>、<code>Acorn</code> 等图片处理软件功能强大，门槛相应也高，消耗资源多。Photoshop 支持<strong>动作录制批处理</strong>。</p>
+
+<p>Image Smith 也是一款比较全能的图片批处理软件，但经验是使用中容易崩溃；PhotoResize Pro 功能较少，主要是图片大小调整和重命名。 </p>
+
+<p>Matlab、Python、R 等编程语言都能找到自己的图片处理工具箱（自带或者开源的），有一定的学习成本，需要可视化界面的话得自己编写。</p>
+
+<p>Automator 支持一些图片操作，可以编写工作流。</p>
+
+<p>Mac 自带 <code>sips</code> 命令支持一些图片操作，其它图片处理相关的命令行或包应该还有不少，就不继续查找列举了。</p>
+
+<h2 id="section-6">闪光点</h2>
+
+<ul>
+  <li>提供命令行工具，方便嵌入到程序中使用；</li>
+  <li>工作流操作模式，可保存重用。</li>
+</ul>
+
+<h2 id="section-7">缺点</h2>
+
+<ul>
+  <li>软件界面简陋；</li>
+  <li>命令行工具不开源。</li>
+</ul>
+
+<p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2015/01/11/mei-zhou-yi-ruan-zhi-xnconvert/">http://frank19900731.github.io/blog/2015/01/11/mei-zhou-yi-ruan-zhi-xnconvert/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[用 Webhook 在 Gitlab 中实现类 Github Pages 效果]]></title>
@@ -3860,202 +3982,6 @@
 <p><strong>信息科学</strong> 一级分类 中补充 <strong>数据库</strong> 二级分类。</p>
 
 <p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2014/11/20/pocket-lei-mu-biao-qian-de-zhi-ding/">http://frank19900731.github.io/blog/2014/11/20/pocket-lei-mu-biao-qian-de-zhi-ding/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[面试经验分享之数据结构、算法题]]></title>
-    <link href="http://frank19900731.github.io/blog/2014/11/18/mian-shi-jing-yan-fen-xiang-zhi-shu-ju-jie-gou-suan-fa-fen-xiang/"/>
-    <updated>2014-11-18T10:18:41+08:00</updated>
-    <id>http://frank19900731.github.io/blog/2014/11/18/mian-shi-jing-yan-fen-xiang-zhi-shu-ju-jie-gou-suan-fa-fen-xiang</id>
-    <content type="html"><![CDATA[<ul id="markdown-toc">
-  <li><a href="#section">前言</a></li>
-  <li><a href="#section-1">数据结构题目</a>    <ul>
-      <li><a href="#section-2">概述</a></li>
-      <li><a href="#section-3">分类讨论</a>        <ul>
-          <li><a href="#section-4">类型一：数据结构实现</a></li>
-          <li><a href="#section-5">类型二：数据结构应用</a></li>
-        </ul>
-      </li>
-      <li><a href="#section-6">准备建议</a></li>
-    </ul>
-  </li>
-  <li><a href="#section-7">算法题目</a>    <ul>
-      <li><a href="#section-8">概述</a></li>
-      <li><a href="#section-9">分类讨论</a>        <ul>
-          <li><a href="#section-10">类型一：经典算法实现题</a></li>
-          <li><a href="#section-11">类型二：思维益智题</a></li>
-        </ul>
-      </li>
-      <li><a href="#section-12">准备建议</a></li>
-    </ul>
-  </li>
-  <li><a href="#section-13">开放题目</a></li>
-  <li><a href="#section-14">总结</a></li>
-</ul>
-
-<h2 id="section">前言</h2>
-
-<!-- excerpt start -->
-
-<p>面试 IT 企业的研发岗位，数据结构和算法显然是必考的项目。俺只学过普通的数据结构课程，没读过 STL，也没有过 ACM 的训练和比赛经历，在一开始面对这样类型题目的时候，心里还是十分忐忑的。大大小小几十场面试下来，自己在这方面总算有了一定的心得积累，在此抛砖引玉，以飨读者。</p>
-
-<p>在正式介绍题目和准备方法之前，有两点需要说明，</p>
-
-<ul>
-  <li>Google 和 Facebook 这类对算法有很高要求的公司的在线测试我没有参加过（不过在牛人内推帮助下有过面试体验……），这超出了我目前的编码能力范围，网上有不少拿到 Google、Facebook offer 的经验总结文章，可以移步观赏；</li>
-  <li>前段时间在微博上又看到有人说自己把 leetcode 刷了好几遍，不过一些转发评论者觉得， IT 公司面试中的算法考察没有价值，一来工作里用不太上，二来把程序员素质考察搞成了应试教育，他们认为更重要的是应聘者的工程能力。遇到这样的讨论，我一般喜欢和一把稀泥。若干年前， Google、微软的面试题让大家眼前一亮，觉得能选拔出个性十足的聪明人来，不过随着大家对这类题目的适应，可能选拔出来的人也在趋同，至少很多人都会在面试前用心准备，<a href="http://www.oschina.net/news/41616/in-head-hunting-big-data-may-not-be-such-a-big-deal">据报道 Google 最近也是放弃了这类面试题目</a>。没有什么一劳永逸、一成不变的考查方式，毕竟面试是人和人之间的动态“较量”。不要贪恋算法的奇技淫巧，也不要因为题目筛选力度的衰减而否定考察初衷。面试不仅是考验求职者，也同样在考验面试官，<strong>如果问的都是老题儿，那本山大叔肯定都会抢答了</strong>。</li>
-</ul>
-
-<p>言归正传，以下分数据结构题目、算法题目、开放题目三部分来介绍我在面试中碰到的问题。</p>
-
-<!-- excerpt end -->
-
-<h2 id="section-1">数据结构题目</h2>
-
-<h3 id="section-2">概述</h3>
-
-<p>虽然课本由简到繁、由难到易地介绍了诸多数据结构，<strong>我在面试中被问到的却还都是基本类型</strong>，比如堆栈、队列、链表、二叉树。题目主要有两类，数据结构实现和具体情境下数据结构的应用。</p>
-
-<h3 id="section-3">分类讨论</h3>
-
-<h4 id="section-4">类型一：数据结构实现</h4>
-
-<ol>
-  <li>实现 java.util.List 中的基础功能；</li>
-  <li>实现栈，使得 添加、删除、max 操作的复杂度为 O(1)（<s>我脚着好像是不可实现的，想到最好的是添加、删除 O(log)， max 是 O(1)</s>），实现见 <a href="http://weibo.com/wangrn">正在努力减肥的胖子</a> 同学给出的评论，参考 leetcode 中的<a href="https://oj.leetcode.com/problems/min-stack/">这道题目</a>，惭愧；</li>
-  <li>选取任意数据结构实现添加、删除、随机返回三个功能，分析复杂度；</li>
-  <li>用数组实现队列，各操作的复杂度分析。</li>
-</ol>
-
-<h4 id="section-5">类型二：数据结构应用</h4>
-
-<ol>
-  <li>两棵树相加——对应位置两棵树都有值则相加，对应位置只有一棵树有值则取该值；</li>
-  <li>用速度不同的指针可以判断链表中是否有环，问两速度满足怎样的关系可以保证发现环；</li>
-  <li>如何在语料中寻找频繁出现的字串，分析复杂度（tire树）；</li>
-  <li>中缀表达式转逆波兰表达式，逆波兰表达式求值；</li>
-  <li>数据解压缩，3(a4(ab))    -&gt;    aababababaababababaabababab；</li>
-  <li><a href="http://www.xuebuyuan.com/600249.html">二叉树的文件存储</a>。</li>
-</ol>
-
-<h3 id="section-6">准备建议</h3>
-
-<p>上上之选当然是看《算法导论》，<a href="http://vdisk.weibo.com/s/G0pA_">书</a> 和 <a href="http://v.163.com/special/opencourse/algorithms.html">公开课</a> 都算。时间精力不足又想临时抱佛脚，清华大学计算机系邓俊辉老师的 <a href="http://www.amazon.cn/%E6%B8%85%E5%8D%8E%E5%A4%A7%E5%AD%A6%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E5%88%97%E6%95%99%E6%9D%90-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E9%82%93%E4%BF%8A%E8%BE%89/dp/B00FEC2GYM/ref=sr_1_1?ie=UTF8&amp;qid=1416641186&amp;sr=8-1&amp;keywords=%E9%82%93%E4%BF%8A%E8%BE%89">教材</a> 是好选择，也可以看 <a href="https://www.xuetangx.com/courses/TsinghuaX/30240184_1X/_/about">公开课</a>。注意<strong>熟记不同数据结构的不同操作的不同实现方式</strong>（比如 <a href="http://www.matrix67.com/blog/archives/1255">哈希表的插入删除查找</a>）<strong>的复杂度分析</strong>，不管面试官给你出的题目是难是易，妥妥儿的会问复杂度。</p>
-
-<h2 id="section-7">算法题目</h2>
-
-<h3 id="section-8">概述</h3>
-
-<p>有过面试经历的企业（BAT、小米、宜信、猿题库、FreeWheel等）当中，还没有谁问过我需要复杂算法（比方说 <a href="http://zhidao.baidu.com/link?url=lx07DdsUSQO-zbwOqhlOCbXpT7Qj8pOtOHQ5G6JhNZYnT1vlgaBly5sOwZzqAhkZsqugfJRiRw1y7q857V44La">此链接</a> 中的很多知识点）才能解决的问题。我遇到的算法题目大致可以分为两类：</p>
-
-<ul>
-  <li>经典算法实现题 快速排序、归并排序、堆排序、KMP算法等都是重点，<strong>重要的是代码的正确性，其次是复杂度分析</strong>，当然，人家也不都是直接问你怎么实现这个具体算法，而是包装到情境里；</li>
-  <li>思维益智题 考察你分析问题的能力，大部分可以归结到二分、动态规划、递归上，<strong>重要的是思路，其次是尽量低的复杂度，再次是代码的正确性</strong>。</li>
-</ul>
-
-<p>下面具体介绍我遇到的两种类型题目中的问题。</p>
-
-<h3 id="section-9">分类讨论</h3>
-
-<h4 id="section-10">类型一：经典算法实现题</h4>
-
-<ol>
-  <li>实现快速排序、归并排序、堆排序，各排序算法复杂度分析；</li>
-  <li>实现KMP，解释原理；</li>
-  <li>迷宫的深度搜索、广度搜索；</li>
-  <li>写 find 函数，在目标串中匹配模式串（要考虑中文字符的情况）。</li>
-</ol>
-
-<h4 id="section-11">类型二：思维益智题</h4>
-
-<ol>
-  <li>数列中找第 k 大的数字（与快排或堆排序有关）；</li>
-  <li>两个有序数组，寻找归并排序后数组的中位数/第 k 大数字（与二分有关）；</li>
-  <li>一维数组，swap 其中的几对数字（每个数字只属于一次 swap 操作），实现查找（与二分有关）；</li>
-  <li>一个有序数组，其中一个数字发生变异，但不知道变异后会不会影响整体序，如何实现查找；</li>
-  <li>二维数组，每行递增，每列递增
-    <ul>
-      <li>实现查找；</li>
-      <li>二维数组，每行递增，每列递增，求第 k 大的数；</li>
-      <li>任意交换其中的两数，发现并恢复；</li>
-    </ul>
-  </li>
-  <li>寻找字符串中第一个只出现一次的字符；</li>
-  <li>统计数列中的逆序对（归并排序有关）；</li>
-  <li>最长公共子串（动态规划有关）；</li>
-  <li>最大子序列和，<a href="http://blog.csdn.net/caopengcs/article/details/36899787">允许交换一次的最大子序列和</a>；</li>
-  <li>给定数组，寻找 next big（堆排序有关）；</li>
-  <li>一维有序数组，经过循环位移后，最小的数出现在数列中间
-    <ul>
-      <li>如果原数组严格递增，如何找这个最小数；</li>
-      <li>如果原数组严格递增或递减，如何找这个最小数；</li>
-      <li>如果原数组非严格递增或递减，如何找这个最小数；</li>
-    </ul>
-  </li>
-  <li>数组可能是递增、递减、递减后递增、递增后递减四种情况，递增递减都是非严格的，如果有转折点，返回转折点的值，否则返回-1；</li>
-  <li>单向网络，起点和终点唯一且连通，寻找那些一旦被删除将导致起点终点无法连通的点；</li>
-  <li>有序数组寻找和为某数的一对数字；</li>
-  <li><a href="http://www.cnblogs.com/fuzhe1989/p/3428553.html">墙里能装多少水</a>；</li>
-  <li>打印螺旋数组；</li>
-  <li>打印组合数；</li>
-  <li>字符数组，统计指定区间内的回文串个数。 </li>
-</ol>
-
-<h3 id="section-12">准备建议</h3>
-
-<ul>
-  <li>不要纠结于是否是最佳思路，要保证能在 10-15 分钟内给出一个解决方案，并分析复杂度；</li>
-  <li>基础的可以读读 <a href="http://weibo.com/julyweibo?topnav=1&amp;wvr=6&amp;topsug=1">@研究者July</a> 的这本 <a href="http://frank19900731.github.io/ebook/the-art-of-programming-by-july/index.html">电子书</a>，更深入的可以阅读 CSDN 等博客中大牛们写的 ACM 解题报告；</li>
-  <li><a href="http://www.hihocoder.com/">hihocoder</a>、<a href="http://www.topcoder.com/">topcoder</a>、<a href="https://oj.leetcode.com/">leetcode</a>、<a href="https://codility.com/">codility</a>、<a href="http://poj.org/">POJ</a> 等网站择一练手;</li>
-  <li><a href="https://github.com/soulmachine">Soulmachine</a> 在 Github 中有高质量的学习资料，适合系统学习 &amp; 临时抱佛脚
-    <ul>
-      <li><a href="https://github.com/soulmachine/leetcode">LeetCode 题解</a></li>
-      <li><a href="https://github.com/soulmachine/acm-cheat-sheet">ACM Cheat Sheet</a></li>
-      <li><a href="https://github.com/soulmachine/hackerrank">HackerRank题解</a></li>
-    </ul>
-  </li>
-</ul>
-
-<h2 id="section-13">开放题目</h2>
-
-<p>这类开放题目让你自主选择数据结构，主要是考察求职者对于数据结构的特性与使用场景的综合理解，在面对具体应用场景时能否运用已有的数据结构和算法知识提出合理的解决方案。一般来说在这类问题里哈希表的出场率会比较高……例题如下</p>
-
-<ol>
-  <li>大数据量的 url log，怎么去重且统计每个 url 的出现次数，复杂度分析；</li>
-  <li>设计 cache 系统
-    <ul>
-      <li>设计 cache 的接口；</li>
-      <li>可以用什么数据结构实现；</li>
-      <li>如何实现可伸缩的容量；</li>
-      <li>cache 的空间管理策略，比如 cache 哪些条目，何时清理；</li>
-      <li>cache 系统启动时分配多大的空间，之后按照怎样的策略增大；</li>
-    </ul>
-  </li>
-  <li>设计爬虫；</li>
-  <li>流媒体播放客户端从多个完全相同的发送方接收视频包，同一发送方的包会按序到达，不同发送方的包则不一定，有可能会丢包，但还是要保证播放流畅度，设计播放客户端的算法。 </li>
-</ol>
-
-<h2 id="section-14">总结</h2>
-
-<ul>
-  <li>数据结构和算法的基础知识还是十分重要的，大部分题目的思路来源于此；</li>
-  <li>训练自己算法复杂度的分析能力，<strong>有的时候对复杂度的分析会反过来会帮助你找到更好的算法</strong>；</li>
-  <li>一定量的题目积累很重要，就好像准备高考数学压轴题一样，见识的越多，思路来得越快，当然，前提是你能够<strong>不断总结反思</strong>。</li>
-</ul>
-
-<p>继 <code>机器学习、大数据问题</code>、<code>智力题</code>、<code>数据结构与算法题</code>，我们在最后还会分享 <code>编程语言题</code>，敬请期待。</p>
-
-<p>访问入口：</p>
-
-<ul>
-  <li><a href="http://frank19900731.github.io/blog/2014/11/06/mian-shi-jing-yan-zhi-ji-qi-xue-xi-da-shu-ju-wen-ti/">机器学习、大数据问题</a></li>
-  <li><a href="http://frank19900731.github.io/blog/2014/11/07/mian-shi-jing-yan-fen-xiang-zhi-zhi-li-ti/">智力题</a></li>
-  <li><a href="http://frank19900731.github.io/blog/2014/11/18/mian-shi-jing-yan-fen-xiang-zhi-shu-ju-jie-gou-suan-fa-fen-xiang/">数据结构与算法题</a></li>
-  <li><a href="http://frank19900731.github.io/blog/2014/11/25/mian-shi-jing-yan-fen-xiang-zhi-bian-cheng-yu-yan-ti/">编程语言题</a></li>
-</ul>
-
-<p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2014/11/18/mian-shi-jing-yan-fen-xiang-zhi-shu-ju-jie-gou-suan-fa-fen-xiang/">http://frank19900731.github.io/blog/2014/11/18/mian-shi-jing-yan-fen-xiang-zhi-shu-ju-jie-gou-suan-fa-fen-xiang/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
 ]]></content>
   </entry>
   
