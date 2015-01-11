@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Mac 使用 | Blog of 太极儒]]></title>
   <link href="http://frank19900731.github.io/blog/category/mac-shi-yong/atom.xml" rel="self"/>
   <link href="http://frank19900731.github.io/"/>
-  <updated>2015-01-11T22:38:22+08:00</updated>
+  <updated>2015-01-11T22:48:25+08:00</updated>
   <id>http://frank19900731.github.io/</id>
   <author>
     <name><![CDATA[Frank Song]]></name>
@@ -61,7 +61,7 @@
 
 <p>XnConvert 的工作流有两种保存方式，一种是后缀名为 xbs 的 XML 格式文件，可以被 XnConvert 重新载入。</p>
 
-<p><code>xml
+<p><code>xml xbs 文件示例
 &lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;XnView_script version="1.0" name="a"&gt;
     &lt;Gaussian_blur size="13"/&gt;
     &lt;Mirror method="0"/&gt;
@@ -77,7 +77,7 @@
 
 <p>以之前定义的工作流为例，导出如下命令行。</p>
 
-<p><code>bash
+<p><code>bash nconvert 命令示例
 nconvert -gauss 13 -yflip -ratio -rtype lanczos -resize 50% 50%  
 </code></p>
 
