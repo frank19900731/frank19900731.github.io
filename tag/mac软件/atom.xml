@@ -1,5 +1,159 @@
 
 <item>
+    <title>每周一软之 Wordify</title>
+    <link>http://realjenius.com/blog/2015/01/18/mei-zhou-yi-ruan-zhi-wordify/</link>
+    <author>R.J. Lorimer</author>
+    <pubDate>2015-01-18T15:43:55+08:00</pubDate>
+    <guid>http://realjenius.com/blog/2015/01/18/mei-zhou-yi-ruan-zhi-wordify/</guid>
+    <description><![CDATA[
+     <p><strong>目录</strong></p>
+
+<ul id="markdown-toc">
+  <li><a href="#section">功能介绍</a></li>
+  <li><a href="#section-1">界面设计</a></li>
+  <li><a href="#section-2">易用性</a></li>
+  <li><a href="#section-3">稳定性</a></li>
+  <li><a href="#section-4">跨平台</a></li>
+  <li><a href="#section-5">类似软件</a>    <ul>
+      <li><a href="#section-6">标签云</a></li>
+      <li><a href="#section-7">艺术字</a></li>
+      <li><a href="#ascii-">ASCII 码字符画</a></li>
+    </ul>
+  </li>
+  <li><a href="#section-8">闪光点</a></li>
+  <li><a href="#section-9">缺点</a></li>
+</ul>
+
+<!-- excerpt start -->
+
+<h2 id="section">功能介绍</h2>
+
+<p><a href="http://www.wordifyapp.com/">Wordify</a> 是一款字符画生成软件。用户选择图片，并可指定或调整</p>
+
+<ul>
+  <li>关键词</li>
+  <li>单词数目</li>
+  <li>单词排布方向（水平、垂直、随机）</li>
+  <li>字体、颜色</li>
+  <li>输出文件格式</li>
+  <li><strong>图像二值化结果</strong></li>
+</ul>
+
+<p>最终得到一幅略显酷炫的字符画。</p>
+
+<p><strong>原图</strong>：</p>
+
+<p><a href="http://frank19900731.github.io/img/post/2015-1/1.JPG" class="img-up" title="原图"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-1/1.JPG" width="60%" title="原图" /></a></p>
+
+<!-- excerpt end -->
+
+<p><strong>二值化调整</strong>：</p>
+
+<p><a href="http://frank19900731.github.io/img/post/2015-1/8.png" class="img-up" title="二值化调整"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-1/8.png" width="80%" title="二值化调整" /></a></p>
+
+<p><strong>字符画结果</strong>：</p>
+
+<p><a href="http://frank19900731.github.io/img/post/2015-1/9.png" class="img-up" title="字符画生成结果"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-1/9.png" width="90%" title="字符画生成结果" /></a></p>
+
+<p>生成效果是随机的，可多次调整取最佳；单词重复设置相当于提高相应单词的权重。</p>
+
+<h2 id="section-1">界面设计</h2>
+
+<p>美观清爽。</p>
+
+<p><a href="http://frank19900731.github.io/img/post/2015-1/10.png" class="img-up" title="Wordify 界面"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-1/10.png" width="80%" title="Wordify 界面" /></a></p>
+
+<h2 id="section-2">易用性</h2>
+
+<p>简洁易用。</p>
+
+<h2 id="section-3">稳定性</h2>
+
+<p>运行稳定。</p>
+
+<h2 id="section-4">跨平台</h2>
+
+<p>支持 iOS。</p>
+
+<h2 id="section-5">类似软件</h2>
+
+<p>字符画并不止 Wordify 生成的这种样式，其它相关工具介绍如下。</p>
+
+<h3 id="section-6">标签云</h3>
+
+<ul>
+  <li><a href="http://www.jasondavies.com/wordcloud/#%2F%2Fwww.jasondavies.com%2Fwordtree%2Fcat-in-the-hat.txt">D3</a> </li>
+  <li><a href="http://115.28.18.88/keywordExtractDemo">清语</a></li>
+  <li>WordPack，一款 iOS 应用</li>
+</ul>
+
+<p><strong>D3 Word Cloud</strong></p>
+
+<p><a href="http://frank19900731.github.io/img/post/2015-1/11.png" class="img-up" title="D3 Word Cloud"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-1/11.png" width="80%" title="D3 Word Cloud" /></a></p>
+
+<h3 id="section-7">艺术字</h3>
+
+<ul>
+  <li><a href="http://www.figlet.org/">figlet</a>，a program for making large letters out of ordinary text</li>
+  <li><a href="https://github.com/viisual/ASCII-Decorator">ASCII-Decorator</a>， 基于 figlet 的 Sublime 插件</li>
+</ul>
+
+<p><strong>Figlet 效果</strong></p>
+
+<p><a href="http://frank19900731.github.io/img/post/2015-1/12.png" class="img-up" title="Figlet 效果"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-1/12.png" width="80%" title="Figlet 效果" /></a></p>
+
+<h3 id="ascii-">ASCII 码字符画</h3>
+
+<ul>
+  <li>Mac 应用
+    <ul>
+      <li><a href="http://www.jave.de/">Jave</a>，Java Ascii Versatile Editor，原始而古老，用起来费劲……</li>
+      <li><a href="http://monodraw.helftone.com/">Monodraw</a>，Powerful ASCII art editor，开发中，<strong>未开放下载</strong></li>
+      <li><a href="https://itunes.apple.com/us/app/sweetie/id547106404?mt=12">Sweetie</a>，算是可用软件中功能较全、效果较好的一个，见下图</li>
+    </ul>
+  </li>
+  <li>iOS 应用
+    <ul>
+      <li>Image2Ascii</li>
+    </ul>
+  </li>
+  <li>在线转换
+    <ul>
+      <li><a href="http://www.typorganism.com/asciiomatic/">1</a>，要求 JPEG 格式，尺寸是 60*50</li>
+      <li><a href="http://www.degraeve.com/img2txt.php">2</a></li>
+      <li><a href="http://life.chacuo.net/convertphoto2char">3</a></li>
+    </ul>
+  </li>
+  <li>编程实现
+    <ul>
+      <li><a href="http://everet.org/python-ascii-art.html">Python 生成字符画</a></li>
+      <li><a href="http://www.zoneky.com/blog/2014/07/10/ASCII-Art-algorithms/">Javascript 生成字符画</a></li>
+    </ul>
+  </li>
+</ul>
+
+<p><strong>Sweetie 效果</strong></p>
+
+<p><a href="http://frank19900731.github.io/img/post/2015-1/13.png" class="img-up" title="Sweetie 效果"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-1/13.png" width="80%" title="Sweetie 效果" /></a></p>
+
+<p><strong>Image2Ascii 效果</strong></p>
+
+<p><a href="http://frank19900731.github.io/img/post/2015-1/14.png" class="img-up" title="Image2Ascii 效果"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-1/14.png" width="70%" title="Image2Ascii 效果" /></a></p>
+
+<h2 id="section-8">闪光点</h2>
+
+<p>定制较丰富，界面与生成的图片都很美观。</p>
+
+<h2 id="section-9">缺点</h2>
+
+<p>想得到一幅满意的字符画需要反复尝试，希望有更细致的交互式调整。</p>
+
+<p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2015/01/18/mei-zhou-yi-ruan-zhi-wordify/">http://frank19900731.github.io/blog/2015/01/18/mei-zhou-yi-ruan-zhi-wordify/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
+
+  ]]></description>
+</item>
+
+<item>
     <title>每周一软之 XnConvert</title>
     <link>http://realjenius.com/blog/2015/01/11/mei-zhou-yi-ruan-zhi-xnconvert/</link>
     <author>R.J. Lorimer</author>

@@ -1,0 +1,346 @@
+<!-- layout/wx-default.html -->
+
+<!-- head.html -->
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <!-- 标签页标题 -->
+  <title>每周一软之 Wordify - Blog of 太极儒</title>
+  <meta name="author" content="Frank Song">
+  <!-- 定义description变量，如果有则用，没有则是正文，前150字 -->
+  
+  <meta name="description" content="目录 功能介绍 界面设计 易用性 稳定性 跨平台 类似软件 标签云 艺术字 ASCII 码字符画 闪光点 缺点 功能介绍 Wordify 是一款字符画生成软件。用户选择图片，并可指定或调整 关键词 单词数目 单词排布方向（水平、垂直、随机） 字体、颜色 输出文件格式 图像二值化结果 最终得到一幅略显酷炫的字符画。 原图： 二值化调整： 字符画结果： 生成效果是随机的，可多次调整取最佳；单词重复设置相当于提高相应单词的权重。 界面设计 美观清爽。 易用性 简洁易用。 稳定性 运行稳定。 跨平台 支持 iOS。 类似软件 字符画并不止 Wordify 生成的这种样式，其它相关工具介绍如下。 标签云 D3 清语 WordPack，一款 iOS 应用 D3 Word Cloud 艺术字 figlet，a program for making large letters out of ordinary text ASCII-Decorator， 基于 figlet 的 Sublime 插件 Figlet 效果 ASCII 码字符画 Mac 应用 Jave，Java Ascii Versatile Editor，原始而古老，用起来费劲…… Monodraw，Powerful ASCII art editor，开发中，未开放下载 Sweetie，算是可用软件中功能较全、效果较好的一个，见下图 iOS 应用 Image2Ascii 在线转换 1，要求 JPEG 格式，尺寸是 60*50 2 3 编程实现 Python 生成字符画 Javascript 生成字符画 Sweetie 效果 Image2Ascii 效果 闪光点 定制较丰富，界面与生成的图片都很美观。 缺点 想得到一幅满意的字符画需要反复尝试，希望有更细致的交互式调整。
+">
+  <meta name="keywords" content="mac, 每周一软, 字符画, Wordify, Word Cloud,  Image2Ascii, Sweetie, Monodraw">
+  <meta name="baidu-site-verification" content="7O78rNJCOH" />
+  <meta name="360-site-verification" content="9ee6dda17557079b8855f9c8201b05bb" />
+  <meta name="msvalidate.01" content="408D13BCB6B6CE4973F6CD9E6A9E8195" />
+  <meta name="sogou_site_verification" content="CtgkJPDjga"/>
+  <meta name="chinaz-site-verification" content="081e7651-48c6-4c2f-a569-99321685eab1" />
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://frank19900731.github.io/wx/2015-01-18-mei-zhou-yi-ruan-zhi-wordify.html">
+  <!-- 网站小图标 -->
+  <link href="/favicon.ico" rel="icon">
+  <link href="/stylesheets/bootstrap/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="/stylesheets/bootstrap/responsive.css" rel="stylesheet" type="text/css">
+  <!-- 网站样式文件 -->
+  <link href="/stylesheets/styles.css" media="screen, projection" rel="stylesheet" type="text/css">
+
+  <link href="/atom.xml" rel="alternate" title="Blog of 太极儒" type="application/atom+xml">
+
+  <script src="/javascripts/modernizr.custom.js"></script>
+  <!-- jQuery -->
+  <!--script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script-->
+  <script src="/javascripts/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+
+  <!-- 其它js代码 -->
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <script src="/javascripts/jquery.sidr.min.js"></script>
+  <script src="/javascripts/ah-blue.js"></script>
+  <script type="text/javascript" src="/javascripts/fancybox/jquery.fancybox.pack.js"></script>
+  <link rel="stylesheet" type="text/css" href="/javascripts/fancybox/jquery.fancybox.css" media="screen" />
+
+  <link href="/stylesheets/component.css" rel="stylesheet" type="text/css">
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+        if ($(".img-up")) {
+            $(".img-up").fancybox();
+        }
+        if ($(".imgleft")) {
+            $(".imgleft").parent().parent().css("text-align", "left");
+        }
+        if ($(".imgright")) {
+            $(".imgright").parent().parent().css("text-align", "right");
+        }
+        if ($(".imgcenter")) {
+            $(".imgcenter").parent().parent().css("text-align", "center");
+        }
+        if ($(".imgleft-no-shadow")) {
+            $(".imgleft-no-shadow").parent().parent().css("text-align", "left");
+        }
+        if ($(".imgright-no-shadow")) {
+            $(".imgright-no-shadow").parent().parent().css("text-align", "right");
+        }
+        if ($(".imgcenter-no-shadow")) {
+            $(".imgcenter-no-shadow").parent().parent().css("text-align", "center");
+        }
+
+        if ($(".mod_lost_child_little")) {
+            $(".mod_lost_child_little").css("width", "100%");
+        }
+    });
+  </script>
+
+  <style>
+      body {
+          background-image: none;
+      }
+
+      tr.content {
+          line-height: 300%;
+          border-top: 1px dotted #000;
+      }
+
+      table.mulu {
+          width: 95%; margin: 10px auto 40px;
+      }
+
+      .gutter {
+          width: 7%;
+      }
+  </style>
+
+  <!-- custom/head.html -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      jax: ["input/TeX", "output/HTML-CSS"],
+      tex2jax: {
+        inlineMath: [ ['$', '$'], ["\\(", "\\)"] ],
+        displayMath: [ ['$$', '$$'], ["\\[", "\\]"] ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+      //,
+      //displayAlign: "left",
+      //displayIndent: "2em"
+    });
+
+    function addBlankTargetForLinks () {
+
+      $('a[href^="http"]').each(function(){
+
+        $(this).attr('target', '_blank');
+
+      });
+
+    }
+
+    $(document).bind('DOMNodeInserted', function(event) {
+
+      addBlankTargetForLinks();
+
+    });
+
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"></script>
+  <!-- google_analytics.html -->
+
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-51950124-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head> 
+
+<body style="background-color: rgba(255, 255, 255, 0.3);">
+
+<div class="row-fluid marketing">
+<div class="span2"> </div>
+<div class="span8">
+<div class="container-narrow" style="margin-top: 20px;">
+
+      <div class="masthead">
+        <ul class="nav nav-pills pull-right">
+          <li><a href="/wx/archives/">博客目录</a></li>
+          <li><a href="/blog/2015/01/18/mei-zhou-yi-ruan-zhi-wordify/">PC端阅读</a></li>
+        </ul>
+        <h3 class="muted">&nbsp;&nbsp;&nbsp;&nbsp;太极儒</h3>
+      </div>
+
+	  <hr style="width: 100%;">
+
+      <div style="padding: 8px 25px 8px 25px;">
+        <h1>
+          每周一软之 Wordify
+        </h1>
+
+        <div class="article-date" style="margin-bottom: 40px;">
+            <!-- post/date.html -->
+<!-- 文章日期显示 -->
+
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2015-01-18T15:43:55+08:00" pubdate data-updated="true">Jan 18<span>th</span>, 2015</time>
+        </div>
+      <p><strong>目录</strong></p>
+
+<ul id="markdown-toc">
+  <li><a href="#section">功能介绍</a></li>
+  <li><a href="#section-1">界面设计</a></li>
+  <li><a href="#section-2">易用性</a></li>
+  <li><a href="#section-3">稳定性</a></li>
+  <li><a href="#section-4">跨平台</a></li>
+  <li><a href="#section-5">类似软件</a>    <ul>
+      <li><a href="#section-6">标签云</a></li>
+      <li><a href="#section-7">艺术字</a></li>
+      <li><a href="#ascii-">ASCII 码字符画</a></li>
+    </ul>
+  </li>
+  <li><a href="#section-8">闪光点</a></li>
+  <li><a href="#section-9">缺点</a></li>
+</ul>
+
+<!-- excerpt start -->
+
+<h2 id="section">功能介绍</h2>
+
+<p><a href="http://www.wordifyapp.com/">Wordify</a> 是一款字符画生成软件。用户选择图片，并可指定或调整</p>
+
+<ul>
+  <li>关键词</li>
+  <li>单词数目</li>
+  <li>单词排布方向（水平、垂直、随机）</li>
+  <li>字体、颜色</li>
+  <li>输出文件格式</li>
+  <li><strong>图像二值化结果</strong></li>
+</ul>
+
+<p>最终得到一幅略显酷炫的字符画。</p>
+
+<p><strong>原图</strong>：</p>
+
+<p><a href="/img/post/2015-1/1.JPG" class="img-up" title="原图"><img class="imgcenter" src="/img/post/2015-1/1.JPG" width="60%" title="原图" /></a></p>
+
+<!-- excerpt end -->
+
+<p><strong>二值化调整</strong>：</p>
+
+<p><a href="/img/post/2015-1/8.png" class="img-up" title="二值化调整"><img class="imgcenter" src="/img/post/2015-1/8.png" width="80%" title="二值化调整" /></a></p>
+
+<p><strong>字符画结果</strong>：</p>
+
+<p><a href="/img/post/2015-1/9.png" class="img-up" title="字符画生成结果"><img class="imgcenter" src="/img/post/2015-1/9.png" width="90%" title="字符画生成结果" /></a></p>
+
+<p>生成效果是随机的，可多次调整取最佳；单词重复设置相当于提高相应单词的权重。</p>
+
+<h2 id="section-1">界面设计</h2>
+
+<p>美观清爽。</p>
+
+<p><a href="/img/post/2015-1/10.png" class="img-up" title="Wordify 界面"><img class="imgcenter" src="/img/post/2015-1/10.png" width="80%" title="Wordify 界面" /></a></p>
+
+<h2 id="section-2">易用性</h2>
+
+<p>简洁易用。</p>
+
+<h2 id="section-3">稳定性</h2>
+
+<p>运行稳定。</p>
+
+<h2 id="section-4">跨平台</h2>
+
+<p>支持 iOS。</p>
+
+<h2 id="section-5">类似软件</h2>
+
+<p>字符画并不止 Wordify 生成的这种样式，其它相关工具介绍如下。</p>
+
+<h3 id="section-6">标签云</h3>
+
+<ul>
+  <li><a href="http://www.jasondavies.com/wordcloud/#%2F%2Fwww.jasondavies.com%2Fwordtree%2Fcat-in-the-hat.txt">D3</a> </li>
+  <li><a href="http://115.28.18.88/keywordExtractDemo">清语</a></li>
+  <li>WordPack，一款 iOS 应用</li>
+</ul>
+
+<p><strong>D3 Word Cloud</strong></p>
+
+<p><a href="/img/post/2015-1/11.png" class="img-up" title="D3 Word Cloud"><img class="imgcenter" src="/img/post/2015-1/11.png" width="80%" title="D3 Word Cloud" /></a></p>
+
+<h3 id="section-7">艺术字</h3>
+
+<ul>
+  <li><a href="http://www.figlet.org/">figlet</a>，a program for making large letters out of ordinary text</li>
+  <li><a href="https://github.com/viisual/ASCII-Decorator">ASCII-Decorator</a>， 基于 figlet 的 Sublime 插件</li>
+</ul>
+
+<p><strong>Figlet 效果</strong></p>
+
+<p><a href="/img/post/2015-1/12.png" class="img-up" title="Figlet 效果"><img class="imgcenter" src="/img/post/2015-1/12.png" width="80%" title="Figlet 效果" /></a></p>
+
+<h3 id="ascii-">ASCII 码字符画</h3>
+
+<ul>
+  <li>Mac 应用
+    <ul>
+      <li><a href="http://www.jave.de/">Jave</a>，Java Ascii Versatile Editor，原始而古老，用起来费劲……</li>
+      <li><a href="http://monodraw.helftone.com/">Monodraw</a>，Powerful ASCII art editor，开发中，<strong>未开放下载</strong></li>
+      <li><a href="https://itunes.apple.com/us/app/sweetie/id547106404?mt=12">Sweetie</a>，算是可用软件中功能较全、效果较好的一个，见下图</li>
+    </ul>
+  </li>
+  <li>iOS 应用
+    <ul>
+      <li>Image2Ascii</li>
+    </ul>
+  </li>
+  <li>在线转换
+    <ul>
+      <li><a href="http://www.typorganism.com/asciiomatic/">1</a>，要求 JPEG 格式，尺寸是 60*50</li>
+      <li><a href="http://www.degraeve.com/img2txt.php">2</a></li>
+      <li><a href="http://life.chacuo.net/convertphoto2char">3</a></li>
+    </ul>
+  </li>
+  <li>编程实现
+    <ul>
+      <li><a href="http://everet.org/python-ascii-art.html">Python 生成字符画</a></li>
+      <li><a href="http://www.zoneky.com/blog/2014/07/10/ASCII-Art-algorithms/">Javascript 生成字符画</a></li>
+    </ul>
+  </li>
+</ul>
+
+<p><strong>Sweetie 效果</strong></p>
+
+<p><a href="/img/post/2015-1/13.png" class="img-up" title="Sweetie 效果"><img class="imgcenter" src="/img/post/2015-1/13.png" width="80%" title="Sweetie 效果" /></a></p>
+
+<p><strong>Image2Ascii 效果</strong></p>
+
+<p><a href="/img/post/2015-1/14.png" class="img-up" title="Image2Ascii 效果"><img class="imgcenter" src="/img/post/2015-1/14.png" width="70%" title="Image2Ascii 效果" /></a></p>
+
+<h2 id="section-8">闪光点</h2>
+
+<p>定制较丰富，界面与生成的图片都很美观。</p>
+
+<h2 id="section-9">缺点</h2>
+
+<p>想得到一幅满意的字符画需要反复尝试，希望有更细致的交互式调整。</p>
+
+      <div style="margin-top: 30px;">
+      本文原载于 <a href="http://frank19900731.github.io" target="_blank">http://frank19900731.github.io</a> (为获得更好的阅读效果，请在PC端访问此链接)，作者宋成儒，微信号 frank19900731，微博 <a href="http://weibo.com/frank19900731" target="_blank">@太极儒</a> 。
+      </div>
+      </div>
+
+</div> <!-- /container -->
+</div>
+<div class="span2"></div>
+</div>
+
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1253436508'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s6.cnzz.com/z_stat.php%3Fid%3D1253436508%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+</body>
+</html>

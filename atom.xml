@@ -4,7 +4,7 @@
   <title><![CDATA[Blog of 太极儒]]></title>
   <link href="http://frank19900731.github.io/atom.xml" rel="self"/>
   <link href="http://frank19900731.github.io/"/>
-  <updated>2015-01-18T01:43:26+08:00</updated>
+  <updated>2015-01-18T21:21:06+08:00</updated>
   <id>http://frank19900731.github.io/</id>
   <author>
     <name><![CDATA[Frank Song]]></name>
@@ -12,6 +12,157 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[每周一软之 Wordify]]></title>
+    <link href="http://frank19900731.github.io/blog/2015/01/18/mei-zhou-yi-ruan-zhi-wordify/"/>
+    <updated>2015-01-18T15:43:55+08:00</updated>
+    <id>http://frank19900731.github.io/blog/2015/01/18/mei-zhou-yi-ruan-zhi-wordify</id>
+    <content type="html"><![CDATA[<p><strong>目录</strong></p>
+
+<ul id="markdown-toc">
+  <li><a href="#section">功能介绍</a></li>
+  <li><a href="#section-1">界面设计</a></li>
+  <li><a href="#section-2">易用性</a></li>
+  <li><a href="#section-3">稳定性</a></li>
+  <li><a href="#section-4">跨平台</a></li>
+  <li><a href="#section-5">类似软件</a>    <ul>
+      <li><a href="#section-6">标签云</a></li>
+      <li><a href="#section-7">艺术字</a></li>
+      <li><a href="#ascii-">ASCII 码字符画</a></li>
+    </ul>
+  </li>
+  <li><a href="#section-8">闪光点</a></li>
+  <li><a href="#section-9">缺点</a></li>
+</ul>
+
+<!-- excerpt start -->
+
+<h2 id="section">功能介绍</h2>
+
+<p><a href="http://www.wordifyapp.com/">Wordify</a> 是一款字符画生成软件。用户选择图片，并可指定或调整</p>
+
+<ul>
+  <li>关键词</li>
+  <li>单词数目</li>
+  <li>单词排布方向（水平、垂直、随机）</li>
+  <li>字体、颜色</li>
+  <li>输出文件格式</li>
+  <li><strong>图像二值化结果</strong></li>
+</ul>
+
+<p>最终得到一幅略显酷炫的字符画。</p>
+
+<p><strong>原图</strong>：</p>
+
+<p><a href="http://frank19900731.github.io/img/post/2015-1/1.JPG" class="img-up" title="原图"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-1/1.JPG" width="60%" title="原图" /></a></p>
+
+<!-- excerpt end -->
+
+<p><strong>二值化调整</strong>：</p>
+
+<p><a href="http://frank19900731.github.io/img/post/2015-1/8.png" class="img-up" title="二值化调整"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-1/8.png" width="80%" title="二值化调整" /></a></p>
+
+<p><strong>字符画结果</strong>：</p>
+
+<p><a href="http://frank19900731.github.io/img/post/2015-1/9.png" class="img-up" title="字符画生成结果"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-1/9.png" width="90%" title="字符画生成结果" /></a></p>
+
+<p>生成效果是随机的，可多次调整取最佳；单词重复设置相当于提高相应单词的权重。</p>
+
+<h2 id="section-1">界面设计</h2>
+
+<p>美观清爽。</p>
+
+<p><a href="http://frank19900731.github.io/img/post/2015-1/10.png" class="img-up" title="Wordify 界面"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-1/10.png" width="80%" title="Wordify 界面" /></a></p>
+
+<h2 id="section-2">易用性</h2>
+
+<p>简洁易用。</p>
+
+<h2 id="section-3">稳定性</h2>
+
+<p>运行稳定。</p>
+
+<h2 id="section-4">跨平台</h2>
+
+<p>支持 iOS。</p>
+
+<h2 id="section-5">类似软件</h2>
+
+<p>字符画并不止 Wordify 生成的这种样式，其它相关工具介绍如下。</p>
+
+<h3 id="section-6">标签云</h3>
+
+<ul>
+  <li><a href="http://www.jasondavies.com/wordcloud/#%2F%2Fwww.jasondavies.com%2Fwordtree%2Fcat-in-the-hat.txt">D3</a> </li>
+  <li><a href="http://115.28.18.88/keywordExtractDemo">清语</a></li>
+  <li>WordPack，一款 iOS 应用</li>
+</ul>
+
+<p><strong>D3 Word Cloud</strong></p>
+
+<p><a href="http://frank19900731.github.io/img/post/2015-1/11.png" class="img-up" title="D3 Word Cloud"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-1/11.png" width="80%" title="D3 Word Cloud" /></a></p>
+
+<h3 id="section-7">艺术字</h3>
+
+<ul>
+  <li><a href="http://www.figlet.org/">figlet</a>，a program for making large letters out of ordinary text</li>
+  <li><a href="https://github.com/viisual/ASCII-Decorator">ASCII-Decorator</a>， 基于 figlet 的 Sublime 插件</li>
+</ul>
+
+<p><strong>Figlet 效果</strong></p>
+
+<p><a href="http://frank19900731.github.io/img/post/2015-1/12.png" class="img-up" title="Figlet 效果"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-1/12.png" width="80%" title="Figlet 效果" /></a></p>
+
+<h3 id="ascii-">ASCII 码字符画</h3>
+
+<ul>
+  <li>Mac 应用
+    <ul>
+      <li><a href="http://www.jave.de/">Jave</a>，Java Ascii Versatile Editor，原始而古老，用起来费劲……</li>
+      <li><a href="http://monodraw.helftone.com/">Monodraw</a>，Powerful ASCII art editor，开发中，<strong>未开放下载</strong></li>
+      <li><a href="https://itunes.apple.com/us/app/sweetie/id547106404?mt=12">Sweetie</a>，算是可用软件中功能较全、效果较好的一个，见下图</li>
+    </ul>
+  </li>
+  <li>iOS 应用
+    <ul>
+      <li>Image2Ascii</li>
+    </ul>
+  </li>
+  <li>在线转换
+    <ul>
+      <li><a href="http://www.typorganism.com/asciiomatic/">1</a>，要求 JPEG 格式，尺寸是 60*50</li>
+      <li><a href="http://www.degraeve.com/img2txt.php">2</a></li>
+      <li><a href="http://life.chacuo.net/convertphoto2char">3</a></li>
+    </ul>
+  </li>
+  <li>编程实现
+    <ul>
+      <li><a href="http://everet.org/python-ascii-art.html">Python 生成字符画</a></li>
+      <li><a href="http://www.zoneky.com/blog/2014/07/10/ASCII-Art-algorithms/">Javascript 生成字符画</a></li>
+    </ul>
+  </li>
+</ul>
+
+<p><strong>Sweetie 效果</strong></p>
+
+<p><a href="http://frank19900731.github.io/img/post/2015-1/13.png" class="img-up" title="Sweetie 效果"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-1/13.png" width="80%" title="Sweetie 效果" /></a></p>
+
+<p><strong>Image2Ascii 效果</strong></p>
+
+<p><a href="http://frank19900731.github.io/img/post/2015-1/14.png" class="img-up" title="Image2Ascii 效果"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-1/14.png" width="70%" title="Image2Ascii 效果" /></a></p>
+
+<h2 id="section-8">闪光点</h2>
+
+<p>定制较丰富，界面与生成的图片都很美观。</p>
+
+<h2 id="section-9">缺点</h2>
+
+<p>想得到一幅满意的字符画需要反复尝试，希望有更细致的交互式调整。</p>
+
+<p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2015/01/18/mei-zhou-yi-ruan-zhi-wordify/">http://frank19900731.github.io/blog/2015/01/18/mei-zhou-yi-ruan-zhi-wordify/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[每周一软之 XnConvert]]></title>
@@ -3909,79 +4060,6 @@
     </li>
   </ol>
 </div>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Pocket 类目标签的制订]]></title>
-    <link href="http://frank19900731.github.io/blog/2014/11/20/pocket-lei-mu-biao-qian-de-zhi-ding/"/>
-    <updated>2014-11-20T00:52:08+08:00</updated>
-    <id>http://frank19900731.github.io/blog/2014/11/20/pocket-lei-mu-biao-qian-de-zhi-ding</id>
-    <content type="html"><![CDATA[<!-- excerpt start -->
-
-<p>由于Pocket自身不带有分类或建目录的功能，所以类目只能以标签的方式体现。综合个人使用习惯并参考了 <a href="http://www.zwbk.org/MyLemmaShow.aspx?lid=116762#137">《中文百科知识体系目录》</a>，特制订分类体系。此分类体系亦适用于其它知识积累工具。</p>
-
-<h2 id="section">2014年11月20日第一次制订</h2>
-
-<p><strong>一级类目共20个，其中只有信息科学下设二级类目，有21个。</strong></p>
-
-<p><strong>各类目间可能有重叠，特定网页可能与多个类目相关，由本人判决该网页的最大相关类目。</strong></p>
-
-<p><strong>如果判决标准中存在某种规律或约定，会在今后修订时注明。</strong></p>
-
-<ol>
-  <li>宗教哲学   </li>
-  <li>政治政策</li>
-  <li>法律法规  </li>
-  <li>文化艺术     </li>
-  <li>历史典故</li>
-  <li>天文地理 </li>
-  <li>社会科学</li>
-  <li>健康养生</li>
-  <li>生物医学</li>
-  <li>数理科学
-<!-- excerpt end --></li>
-  <li>化学化工</li>
-  <li>农林环境</li>
-  <li>工程技术</li>
-  <li>信息科学
-    <ul>
-      <li>编程方法</li>
-      <li>实用软件</li>
-      <li>脚本编程</li>
-      <li>网页编程</li>
-      <li>网页设计</li>
-      <li>网络安全</li>
-      <li>操作系统</li>
-      <li>数据结构</li>
-      <li>算法设计</li>
-      <li>系统架构</li>
-      <li>产品设计</li>
-      <li>机器学习</li>
-      <li>数据挖掘</li>
-      <li>统计</li>
-      <li>优化建模</li>
-      <li>大数据处理</li>
-      <li>计算机视觉</li>
-      <li>自然语言处理</li>
-      <li>业界动态</li>
-      <li>互联网创业</li>
-      <li>互联网其它</li>
-    </ul>
-  </li>
-  <li>经济管理</li>
-  <li>军事科技  </li>
-  <li>人物</li>
-  <li>效率</li>
-  <li>吃喝玩乐</li>
-  <li>其它知识</li>
-</ol>
-
-<p><strong>2014年12月8日第一次修订</strong></p>
-
-<p><strong>信息科学</strong> 一级分类 中补充 <strong>数据库</strong> 二级分类。</p>
-
-<p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2014/11/20/pocket-lei-mu-biao-qian-de-zhi-ding/">http://frank19900731.github.io/blog/2014/11/20/pocket-lei-mu-biao-qian-de-zhi-ding/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
 ]]></content>
   </entry>
   
