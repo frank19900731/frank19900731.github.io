@@ -11,6 +11,10 @@ exclude_from_search: true
 
 ## 2015
 
+{% img imgcenter-no-shadow /img/feature/m-2015-5.jpeg 20% 父亲 父子篇 %}
+{% img imgcenter-no-shadow /img/feature/m-2015-4.jpeg 20% 父亲 父女篇 %}
+{% img imgcenter-no-shadow /img/feature/m-2015-3.jpeg 20% 赢家  %}
+
 {% img imgcenter-no-shadow /img/feature/m-2015-2.jpeg 20% 一步之遥 %}
 {% img imgcenter-no-shadow /img/feature/m-2015-1.jpeg 20% 匆匆那年 %}
 
