@@ -1,5 +1,306 @@
 
 <item>
+    <title>Mac 下安装 WeCenter 并添加代码高亮功能</title>
+    <link>http://realjenius.com/blog/2015/01/26/mac-xia-an-zhuang-wecenter-bing-tian-jia-dai-ma-gao-liang-gong-neng/</link>
+    <author>R.J. Lorimer</author>
+    <pubDate>2015-01-26T02:02:10+08:00</pubDate>
+    <guid>http://realjenius.com/blog/2015/01/26/mac-xia-an-zhuang-wecenter-bing-tian-jia-dai-ma-gao-liang-gong-neng/</guid>
+    <description><![CDATA[
+     <p><strong>目录</strong></p>
+
+<ul id="markdown-toc">
+  <li><a href="#wecenter">为什么选择 WeCenter</a></li>
+  <li><a href="#wecenter-">WeCenter 安装</a></li>
+  <li><a href="#section">代码高亮定制</a></li>
+  <li><a href="#section-1">参考代码</a></li>
+</ul>
+
+<!-- excerpt start -->
+
+<h2 id="wecenter">为什么选择 WeCenter</h2>
+
+<p>最近考虑将部分笔记任务从 Ulysses 中分离出来，于是想到给自己建一个类似知乎的问答系统。我会将对一些<strong>技术问题的解决和概念理解</strong>录入问答系统，可视化界面和搜索功能方便自己日后查看、查询。</p>
+
+<p>一圈 <a href="http://www.oschina.net/project/tag/299/qa">选下来</a>，觉得 WeCenter 不错，主要考虑到</p>
+
+<ul>
+  <li>界面更美观，也有 <a href="http://www.wecenter.com/category/templates/">模板</a>，无须太多定制；</li>
+  <li>PHP + mysql + Bootstrap，对我而言二次开发上手容易些；</li>
+  <li>功能、界面与知乎类似，满足我的全部需求。</li>
+</ul>
+
+<h2 id="wecenter-">WeCenter 安装</h2>
+
+<p>接下来就是 <a href="http://www.wecenter.com/downloads/">下载</a> 安装。WeCenter 要求 PHP 支持 FreeType 以显示验证码，而 Mac 自带的 PHP 无此支持，所以需要重新编译 PHP。</p>
+
+<p>采用 homebrew 安装方式，方便今后管理 PHP 的其它扩展支持，具体安装方式如下。</p>
+
+<!-- excerpt end -->
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>使用 brew 编译安装 PHP</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+</pre></td><td class="code"><pre><code class="bash"><span class="line">brew update
+</span><span class="line">brew tap homebrew/dupes
+</span><span class="line">brew tap josegonzalez/homebrew-php
+</span><span class="line">brew install php55 --with-gmp --with-imap --with-tidy --with-debug --with-mysql<span class="o">=</span>/usr/local/mysql --without-snmp
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>mysql 是我从 <a href="http://dev.mysql.com/downloads/mysql/">官网</a> 下载安装包安装的，默认路径是 <code>/usr/local/mysql</code>；<code>--without-snmp</code> 选项的加入可以消除 <strong>Error 139 - make: *** [ext/phar/phar.php]</strong> 的编译问题，不影响后续使用。关于这个编译问题，网上有说可以通过 <code>brew uninstall openssl</code> 解决，不过尝试无效，还有说清空 brew 所有安装，感觉代价太大了……</p>
+
+<p><code>brew options php55</code> 查看其它编译选项。brew 会自动下载安装 FreeType、jpeg 等模块，然后编译 PHP 5.5。 </p>
+
+<p>编译成功后，在 <code>/usr/local/Cellar/php55/5.5.20/libexec/apache2</code> 目录下会存在一个名为 <code>libphp5.so</code> 的模块，可用于在 apache 的配置文件中替换系统 PHP。</p>
+
+<p>我所使用的 apache 是 <a href="http://www.apple.com/osx/server/">Server</a>  自带的，考虑到它提供很多应用支持，比如 VPN、Wiki 等。配置文件不是通常的 httpd.conf，而是 <code>/Library/Server/Web/Config/apache2/httpd_server_app.conf</code>，修改如下。</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>修改 apache 配置文件</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+</pre></td><td class="code"><pre><code class="bash"><span class="line"><span class="c"># LoadModule php5_module libexec/apache2/libphp5.so</span>
+</span><span class="line">LoadModule php5_module /usr/local/Cellar/php55/5.5.20/libexec/apache2/libphp5.so
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>当然，要注意配置文件修改前后 apache 的关闭与重启。</p>
+
+<h2 id="section">代码高亮定制</h2>
+
+<p>WeCenter 基本设置容易上手，<a href="http://wenda.wecenter.com/">社区</a> 里有不少介绍，只是在代码高亮定制方面，官方未提供，社区讨论也少，缺乏适用于新版本 WeCenter 的方法。在这个 <a href="http://wenda.wecenter.com/question/22147">问题</a> 的启发下，自己初步实现了<strong>对 WeCenter 3.0.2 的代码高亮支持</strong>。</p>
+
+<p><a href="http://wenda.wecenter.com/question/22147">问题</a> 中的做法是使用 <a href="http://qbnz.com/highlighter/">GeSHi</a> 进行代码渲染，MediaWiki 选用的也是这个。将 <a href="http://wenda.wecenter.com/question/22147">问题</a> 提供的 <a href="http://wenda.wecenter.com/file/download/file_name-U2VydmljZXMuemlw__url-aHR0cDovL3dlbmRhLndlY2VudGVyLmNvbS91cGxvYWRzL3F1ZXN0aW9ucy8yMDE1MDEyNC9jMzIxNzNkZWY5MzA2N2IwMjFhYjIzMDUyYmNiYTZmYQ==">代码</a> 解压缩到 <code>wecenter-root/system/Services</code> 中，<strong>注意不要覆盖 Markdown.php</strong>，我们要自己修改，操作步骤如下，文末附有参考代码压缩包。</p>
+
+<ul>
+  <li>在 Markdown.php 头部引入 GeSHi Parser。</li>
+</ul>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>引入GeSHi Parser</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+</pre></td><td class="code"><pre><code class="php"><span class="line"><span class="k">include</span><span class="p">(</span><span class="nb">dirname</span><span class="p">(</span><span class="nb">dirname</span><span class="p">(</span><span class="k">__FILE__</span><span class="p">))</span> <span class="o">.</span> <span class="s1">&#39;/Services/geshi/geshi.php&#39;</span><span class="p">);</span>
+</span><span class="line">
+</span><span class="line"><span class="c1">// Load umodified Michel Fortin&#39;s PHP Markdown Extra: http://michelf.com/projects/php-markdown/</span>
+</span><span class="line"><span class="nb">define</span><span class="p">(</span><span class="s1">&#39;MARKDOWN_PARSER_CLASS&#39;</span><span class="p">,</span>  <span class="s1">&#39;MarkdownExtraGeshi_Parser&#39;</span><span class="p">);</span>
+</span><span class="line"><span class="k">include</span><span class="p">(</span><span class="nb">dirname</span><span class="p">(</span><span class="nb">dirname</span><span class="p">(</span><span class="k">__FILE__</span><span class="p">))</span> <span class="o">.</span> <span class="s1">&#39;/Services/markdown_extra/markdown.php&#39;</span><span class="p">);</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<ul>
+  <li>原样添加 <a href="http://wenda.wecenter.com/question/22147">问题</a> 代码中调用 GeSHi Parser 进行代码解析的函数 syntaxHighlight 。</li>
+</ul>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>调用 GeSHi Parser 进行代码解析</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+</pre></td><td class="code"><pre><code class="php"><span class="line"><span class="k">protected</span> <span class="k">function</span> <span class="nf">syntaxHighlight</span><span class="p">(</span><span class="nv">$matches</span><span class="p">)</span>
+</span><span class="line"><span class="p">{</span>
+</span><span class="line">	<span class="nv">$geshi</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">GeSHi</span><span class="p">(</span><span class="nv">$matches</span><span class="p">[</span><span class="mi">3</span><span class="p">],</span> <span class="k">empty</span><span class="p">(</span><span class="nv">$matches</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span> <span class="o">?</span> <span class="s2">&quot;txt&quot;</span> <span class="o">:</span> <span class="nv">$matches</span><span class="p">[</span><span class="mi">2</span><span class="p">]);</span>
+</span><span class="line">	<span class="k">return</span> <span class="nv">$geshi</span><span class="o">-&gt;</span><span class="na">parse_code</span><span class="p">();</span>
+</span><span class="line"><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<ul>
+  <li>修改 _doCodeBlocks_callback 函数。</li>
+</ul>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>_doCodeBlocks_callback</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+<span class="line-number">11</span>
+<span class="line-number">12</span>
+<span class="line-number">13</span>
+<span class="line-number">14</span>
+<span class="line-number">15</span>
+<span class="line-number">16</span>
+<span class="line-number">17</span>
+<span class="line-number">18</span>
+<span class="line-number">19</span>
+<span class="line-number">20</span>
+<span class="line-number">21</span>
+<span class="line-number">22</span>
+<span class="line-number">23</span>
+<span class="line-number">24</span>
+<span class="line-number">25</span>
+<span class="line-number">26</span>
+<span class="line-number">27</span>
+<span class="line-number">28</span>
+<span class="line-number">29</span>
+<span class="line-number">30</span>
+<span class="line-number">31</span>
+<span class="line-number">32</span>
+<span class="line-number">33</span>
+<span class="line-number">34</span>
+<span class="line-number">35</span>
+<span class="line-number">36</span>
+<span class="line-number">37</span>
+<span class="line-number">38</span>
+<span class="line-number">39</span>
+<span class="line-number">40</span>
+<span class="line-number">41</span>
+<span class="line-number">42</span>
+<span class="line-number">43</span>
+<span class="line-number">44</span>
+<span class="line-number">45</span>
+<span class="line-number">46</span>
+<span class="line-number">47</span>
+<span class="line-number">48</span>
+</pre></td><td class="code"><pre><code class="php"><span class="line"><span class="k">protected</span> <span class="k">function</span> <span class="nf">_doCodeBlocks_callback</span><span class="p">(</span><span class="nv">$matches</span><span class="p">)</span> <span class="p">{</span>
+</span><span class="line">	<span class="nv">$codeblock</span> <span class="o">=</span> <span class="nv">$matches</span><span class="p">[</span><span class="mi">1</span><span class="p">];</span>
+</span><span class="line">
+</span><span class="line">	<span class="c1"># outdent 会去掉行首tab/多空格，不采用，直接按照输入代码样式来，建议代码缩进为2空格</span>
+</span><span class="line">	<span class="c1">// $codeblock = $this-&gt;outdent($codeblock);</span>
+</span><span class="line">	<span class="c1">// $codeblock = htmlspecialchars($codeblock, ENT_NOQUOTES);</span>
+</span><span class="line">
+</span><span class="line">	<span class="c1"># trim leading newlines and trailing newlines</span>
+</span><span class="line">	<span class="nv">$codeblock</span> <span class="o">=</span> <span class="nb">preg_replace</span><span class="p">(</span><span class="s1">&#39;/\A\n+|\n+\z/&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="nv">$codeblock</span><span class="p">);</span>
+</span><span class="line">	
+</span><span class="line">	<span class="c1"># 替换特殊字符，可能不完善</span>
+</span><span class="line">	<span class="nv">$codeblock</span> <span class="o">=</span> <span class="nb">str_replace</span><span class="p">(</span><span class="k">array</span><span class="p">(</span>
+</span><span class="line">		<span class="s1">&#39;&amp;lt;&#39;</span><span class="p">,</span>
+</span><span class="line">		<span class="s1">&#39;&amp;quot;&#39;</span><span class="p">,</span>
+</span><span class="line">		<span class="s1">&#39;&amp;amp;&#39;</span>
+</span><span class="line">	<span class="p">),</span> <span class="k">array</span><span class="p">(</span>
+</span><span class="line">		<span class="s1">&#39;&lt;&#39;</span><span class="p">,</span>
+</span><span class="line">		<span class="s1">&#39;&quot;&#39;</span><span class="p">,</span>
+</span><span class="line">		<span class="s1">&#39;&amp;&#39;</span>
+</span><span class="line">	<span class="p">),</span> <span class="nv">$codeblock</span><span class="p">);</span>
+</span><span class="line">
+</span><span class="line">	<span class="c1">## call geshi to render the code</span>
+</span><span class="line">	<span class="nv">$codeblock</span> <span class="o">=</span> <span class="nb">preg_replace_callback</span><span class="p">(</span>
+</span><span class="line">		<span class="s1">&#39;/^(\{\{lang:([\w]+)\}\}\n|)(.*?)$/s&#39;</span><span class="p">,</span> <span class="c1">// greedy_code</span>
+</span><span class="line">		<span class="k">array</span><span class="p">(</span><span class="nv">$this</span><span class="p">,</span> <span class="s1">&#39;syntaxHighlight&#39;</span><span class="p">),</span>
+</span><span class="line">		<span class="nv">$codeblock</span>
+</span><span class="line">	<span class="p">);</span>
+</span><span class="line">
+</span><span class="line">	<span class="c1">// 将代码每一行包裹入 &lt;p&gt;</span>
+</span><span class="line">	<span class="nv">$codeblock</span> <span class="o">=</span> <span class="nb">preg_replace</span><span class="p">(</span><span class="s1">&#39;/^(.+?)$/m&#39;</span><span class="p">,</span> <span class="s1">&#39;&lt;p&gt;${1}&lt;/p&gt;&#39;</span><span class="p">,</span> <span class="nv">$codeblock</span><span class="p">);</span>
+</span><span class="line">	<span class="nv">$codeblock</span> <span class="o">=</span> <span class="nb">str_replace</span><span class="p">(</span><span class="k">array</span><span class="p">(</span> <span class="c1"># 特殊处理第一行和最后一行</span>
+</span><span class="line">		<span class="s1">&#39;style=&quot;font-family:monospace;&quot;&gt;&#39;</span><span class="p">,</span>
+</span><span class="line">		<span class="s1">&#39;&lt;/pre&gt;&#39;</span>
+</span><span class="line">	<span class="p">),</span> <span class="k">array</span><span class="p">(</span>
+</span><span class="line">		<span class="s1">&#39;style=&quot;font-family:monospace;&quot;&gt;&lt;p&gt;&#39;</span><span class="p">,</span>
+</span><span class="line">		<span class="s1">&#39;&lt;/p&gt;&lt;/pre&gt;&#39;</span>
+</span><span class="line">	<span class="p">),</span> <span class="nx">substr</span><span class="p">(</span><span class="nv">$codeblock</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="nb">strlen</span><span class="p">(</span><span class="nv">$codeblock</span><span class="p">)</span> <span class="o">-</span> <span class="mi">7</span><span class="p">));</span>
+</span><span class="line">
+</span><span class="line">	<span class="c1"># GeSHi 已添加 &lt;pre&gt; 标签</span>
+</span><span class="line">	<span class="c1">// $codeblock = &quot;&lt;pre class=\&quot;prettyprint\&quot;&gt;$codeblock\n&lt;/pre&gt;&quot;;</span>
+</span><span class="line">
+</span><span class="line">	<span class="c1"># 输出测试</span>
+</span><span class="line">	<span class="c1">// $fp = fopen(&quot;/Library/Server/Web/Data/Sites/Default/qa/test.txt&quot;, &#39;w&#39;);</span>
+</span><span class="line">	<span class="c1">// fwrite($fp, $codeblock);</span>
+</span><span class="line">	<span class="c1">// fclose($fp);</span>
+</span><span class="line">
+</span><span class="line">	<span class="k">return</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">hashBlock</span><span class="p">(</span><span class="nv">$codeblock</span><span class="p">);</span>
+</span><span class="line"><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<ul>
+  <li>修改样式代码 <code>wecenter-root/static/css/default/common.css</code>，使超过显示区域长度的代码可横向滚动查看。</li>
+</ul>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>修改 common.css</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+<span class="line-number">11</span>
+<span class="line-number">12</span>
+<span class="line-number">13</span>
+</pre></td><td class="code"><pre><code class="css"><span class="line"><span class="c">/* 注释掉下面这一行，两个选择器分开写，.wmd-preview pre 不变，.markitup-box pre 的 overflow 属性为 scroll */</span>
+</span><span class="line"><span class="c">/*.wmd-preview pre, .markitup-box pre {padding: 16px;line-height: 20px;overflow: hidden; border: none; border-radius: 3px; background-color: #f7f7f7;font-size: 14px;}*/</span>
+</span><span class="line"><span class="nc">.wmd-preview</span> <span class="nt">pre</span> <span class="p">{</span><span class="k">padding</span><span class="o">:</span> <span class="m">16px</span><span class="p">;</span><span class="k">line-height</span><span class="o">:</span> <span class="m">20px</span><span class="p">;</span><span class="k">overflow</span><span class="o">:</span> <span class="k">hidden</span><span class="p">;</span> <span class="k">border</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span> <span class="k">border</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span> <span class="m">3px</span><span class="p">;</span> <span class="k">background-color</span><span class="o">:</span> <span class="m">#f7f7f7</span><span class="p">;</span><span class="k">font-size</span><span class="o">:</span> <span class="m">14px</span><span class="p">;}</span>
+</span><span class="line"><span class="nc">.markitup-box</span> <span class="nt">pre</span> <span class="p">{</span><span class="k">padding</span><span class="o">:</span> <span class="m">16px</span><span class="p">;</span><span class="k">line-height</span><span class="o">:</span> <span class="m">20px</span><span class="p">;</span><span class="k">overflow</span><span class="o">:</span> <span class="k">scroll</span><span class="p">;</span> <span class="k">border</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span> <span class="k">border</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span> <span class="m">3px</span><span class="p">;</span> <span class="k">background-color</span><span class="o">:</span> <span class="m">#f7f7f7</span><span class="p">;</span><span class="k">font-size</span><span class="o">:</span> <span class="m">14px</span><span class="p">;}</span>
+</span><span class="line">
+</span><span class="line"><span class="o">...</span>
+</span><span class="line">
+</span><span class="line">
+</span><span class="line"><span class="c">/* 末尾添加自定义属性  */</span>
+</span><span class="line"><span class="nc">.markitup-box</span> <span class="nt">pre</span> <span class="o">&gt;</span> <span class="nt">p</span> <span class="p">{</span>
+</span><span class="line">	<span class="k">display</span><span class="o">:</span> <span class="k">inline</span><span class="o">-</span><span class="k">block</span><span class="p">;</span>
+</span><span class="line">	<span class="k">padding</span><span class="o">:</span> <span class="m">0</span> <span class="cp">!important</span><span class="p">;</span>
+</span><span class="line"><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<ul>
+  <li>在 {{{ 与 }}} 间先输入 {{lang:php}}，表示以下为 PHP 代码（其它格式可参见 <a href="http://qbnz.com/highlighter/">GeSHi 官网</a> 左边栏），然后正常输入代码并显示。</li>
+</ul>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>输入代码评论</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+<span class="line-number">11</span>
+<span class="line-number">12</span>
+<span class="line-number">13</span>
+<span class="line-number">14</span>
+<span class="line-number">15</span>
+<span class="line-number">16</span>
+<span class="line-number">17</span>
+<span class="line-number">18</span>
+<span class="line-number">19</span>
+<span class="line-number">20</span>
+<span class="line-number">21</span>
+</pre></td><td class="code"><pre><code class="robotframework"><span class="line"><span class="c">protected function _doImages_inline_callback($matches) {</span><span class="p"></span>
+</span><span class="line"><span class="p">  </span><span class="c">$whole_match = $matches[1];</span><span class="p"></span>
+</span><span class="line"><span class="p">  </span><span class="c">$alt_text = $matches[2];</span><span class="p"></span>
+</span><span class="line"><span class="p">  </span><span class="c">$url = $matches[3] == &#39;&#39; ? $matches[4] : $matches[3];</span><span class="p"></span>
+</span><span class="line"><span class="p">  </span><span class="c">$title = &amp;$matches[7];</span><span class="p"></span>
+</span><span class="line">
+</span><span class="line">
+</span><span class="line">
+</span><span class="line"><span class="p">  </span><span class="c">$alt_text = $this-&gt;encodeAttribute($alt_text);</span><span class="p"></span>
+</span><span class="line"><span class="p">  </span><span class="c">$url = $this-&gt;encodeAttribute($url);</span><span class="p"></span>
+</span><span class="line"><span class="p">  </span><span class="c">$result = &quot;&lt;img src=\&quot;$url\&quot; alt=\&quot;$alt_text\&quot;&quot;;</span><span class="p"></span>
+</span><span class="line"><span class="p">  </span><span class="c">if (isset($title)) {</span><span class="p"></span>
+</span><span class="line"><span class="p">    </span><span class="c">$title = $this-&gt;encodeAttribute($title);</span><span class="p"></span>
+</span><span class="line"><span class="p">    </span><span class="c">$result .= &quot; title=\&quot;$title\&quot;&quot;; # $title already quoted</span><span class="p"></span>
+</span><span class="line"><span class="p">  </span><span class="c">}</span><span class="p"></span>
+</span><span class="line"><span class="p">  </span><span class="c">$result .= $this-&gt;empty_element_suffix;</span><span class="p"></span>
+</span><span class="line">
+</span><span class="line">
+</span><span class="line">
+</span><span class="line"><span class="p">  </span><span class="c">return $this-&gt;hashPart($result);</span><span class="p"></span>
+</span><span class="line"><span class="c">}</span><span class="p"></span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>显示效果如下。</p>
+
+<p><a href="http://frank19900731.github.io/img/post/2015-1/15.png" class="img-up" title="代码显示效果"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-1/15.png" width="90%" title="代码显示效果" /></a></p>
+
+<p>注意到我们的代码输入采用两空格缩进，显示起来较美观；想设置 n 空行，在代码输入中应有 n+2 空行。</p>
+
+<p>至此，初步实现了 WeCenter 3.0.2 中的代码高亮功能，剩余工作就是在实践中微调，比如 <strong>Shell 脚本行注释的 # 可能会被 Markdown 解析成标题</strong>，可以自定义转义进行处理，诸如此类。</p>
+
+<h2 id="section-1">参考代码</h2>
+
+<p>附 <a href="http://frank19900731.github.io/downloads/file/Services.rar">参考代码</a>。</p>
+
+<p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2015/01/26/mac-xia-an-zhuang-wecenter-bing-tian-jia-dai-ma-gao-liang-gong-neng/">http://frank19900731.github.io/blog/2015/01/26/mac-xia-an-zhuang-wecenter-bing-tian-jia-dai-ma-gao-liang-gong-neng/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
+
+  ]]></description>
+</item>
+
+<item>
     <title>Gollum 开机启动配置</title>
     <link>http://realjenius.com/blog/2015/01/02/gollum-kai-ji-qi-dong-pei-zhi/</link>
     <author>R.J. Lorimer</author>
