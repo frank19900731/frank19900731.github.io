@@ -11,8 +11,13 @@ exclude_from_search: true
 
 工业界线下的分享、报告还真不少，定期列出一些感兴趣的，有空了去某几个听听，长长见识，也能认识些前辈。
 
+**2015年2月**
+
+- 2.8 —— [2015京东移动技术峰会](http://www.huodongxing.com/event/reg_submit?id=1265743230000)
+
 **2015年1月**
 
+- 1.30 —— Towards Scalable Analysis of Images and Videos, by Eric Xing  4:00 pm 智能化大厦学术报告厅
 - 1.24 —— [开发者最佳开发者实践日·第9期－分布式计算实践分享](http://www.huodongxing.com/event/reg_submit?id=7263580432200)
 - 1.17 —— [最佳App开发模式 - APICloud帮助创业团队和开发者快速布局移动互联网](http://www.huodongxing.com/event/reg_submit?id=3262757671000)
 - 1.10 —— Go 语言北京技术聚会  1:00 pm 北京市朝阳区光华路4号 东方梅地亚中心A座15层
