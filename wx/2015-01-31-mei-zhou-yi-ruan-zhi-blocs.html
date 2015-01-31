@@ -1,0 +1,317 @@
+<!-- layout/wx-default.html -->
+
+<!-- head.html -->
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <!-- 标签页标题 -->
+  <title>每周一软之 Blocs - Blog of 太极儒</title>
+  <meta name="author" content="Frank Song">
+  <!-- 定义description变量，如果有则用，没有则是正文，前150字 -->
+  
+  <meta name="description" content="目录 功能介绍 界面设计 易用性 稳定性 跨平台 类似软件 闪光点 缺点 功能介绍 Blocs 是一款拖拽式网页生成器，页面布局基于 Bootstrap，主要帮助用户生成 此类样式 的页面（Blocs 官方主页 也是这种风格）。这款工具用户友好度很高，不会网页编程或者对 Bootstrap 不熟悉人可以用它快速定制特定风格的主页（可用作产品介绍、个人主页或博客模板），之后可在导出的网页代码基础上进行二次开发，实现布局调整或动态效果。 软件使用的大致思路是 创建一个 Web Page，用户可以在上面划分不同的 Bloc，页首导航（一个）、中部内容（多个）、页尾信息（多个），分别有布局模板供选择； 在每个 Bloc 中可以添加 Brics，也就是文本、图片、按钮、链接等内容； 对于 Page、Bloc、Brics，都可以进一步设置属性以调整显示效果。 页面设置完成，可导出包含 HTML、图片、CSS、Javascript 等文件在内的文件夹，上传网页服务器供访问。 在此附上我用 Blocs 制作的 Demo，配图、配色比较马虎…… 界面设计 美观精致。 易用性 简单易用。 稳定性 未发现崩溃。 跨平台 无。 类似软件 程序员可能会选用 WebStorm、Sublime 等软件作为自己网页编程的 IDE，而小白用户则需要借助类似 Blocs 的软件，从而实现少写代码、甚至不写代码制作网页的目的。这些快捷工具在应付简单任务的时候可能比 Webstorm、Sublime 等更高效，所以我自己也会用到。它们大致可以分为四类，✔︎ 表示推荐。 编码式 ✔︎ Xpressive，定制细致，适合网页开发初学者； Coda，较简陋； 拖拽式 ✔︎ Macaw，适合设计师使用； ✔︎ Google Web Designer，翻墙可用，有详细的帮助文档； Sparkle，比 Macaw 功能简单，也不错； Sandvox，样式老套； Freeway Pro，样式老套； 混合式 ✔︎ Adobe Muse，教程多多，功能强大，非常推荐； Rapid Weaver，功能普通； Lucid，非网页设计，官方介绍相当于一个 JavaScript Lego，可视化添加 JS 动态效果，比如 json 文件的异步加载、处理； Flux，和 Lucid 属于同一公司，样式老套； 模板管理式 ✔︎ &hellip;">
+  <meta name="keywords" content="mac软件, 每周一软, 网页编程, 拖拽式, Bootstrap, Webstrom, Sublime, Xpressive, Macaw, Google Web Desinger, Adobe Muse, Cactus, Blogo">
+  <meta name="baidu-site-verification" content="7O78rNJCOH" />
+  <meta name="360-site-verification" content="9ee6dda17557079b8855f9c8201b05bb" />
+  <meta name="msvalidate.01" content="408D13BCB6B6CE4973F6CD9E6A9E8195" />
+  <meta name="sogou_site_verification" content="CtgkJPDjga"/>
+  <meta name="chinaz-site-verification" content="081e7651-48c6-4c2f-a569-99321685eab1" />
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://frank19900731.github.io/wx/2015-01-31-mei-zhou-yi-ruan-zhi-blocs.html">
+  <!-- 网站小图标 -->
+  <link href="/favicon.ico" rel="icon">
+  <link href="/stylesheets/bootstrap/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="/stylesheets/bootstrap/responsive.css" rel="stylesheet" type="text/css">
+  <!-- 网站样式文件 -->
+  <link href="/stylesheets/styles.css" media="screen, projection" rel="stylesheet" type="text/css">
+
+  <link href="/atom.xml" rel="alternate" title="Blog of 太极儒" type="application/atom+xml">
+
+  <script src="/javascripts/modernizr.custom.js"></script>
+  <!-- jQuery -->
+  <!--script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script-->
+  <script src="/javascripts/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+
+  <!-- 其它js代码 -->
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <script src="/javascripts/jquery.sidr.min.js"></script>
+  <script src="/javascripts/ah-blue.js"></script>
+  <script type="text/javascript" src="/javascripts/fancybox/jquery.fancybox.pack.js"></script>
+  <link rel="stylesheet" type="text/css" href="/javascripts/fancybox/jquery.fancybox.css" media="screen" />
+
+  <link href="/stylesheets/component.css" rel="stylesheet" type="text/css">
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+        if ($(".img-up")) {
+            $(".img-up").fancybox();
+        }
+        if ($(".imgleft")) {
+            $(".imgleft").parent().parent().css("text-align", "left");
+        }
+        if ($(".imgright")) {
+            $(".imgright").parent().parent().css("text-align", "right");
+        }
+        if ($(".imgcenter")) {
+            $(".imgcenter").parent().parent().css("text-align", "center");
+        }
+        if ($(".imgleft-no-shadow")) {
+            $(".imgleft-no-shadow").parent().parent().css("text-align", "left");
+        }
+        if ($(".imgright-no-shadow")) {
+            $(".imgright-no-shadow").parent().parent().css("text-align", "right");
+        }
+        if ($(".imgcenter-no-shadow")) {
+            $(".imgcenter-no-shadow").parent().parent().css("text-align", "center");
+        }
+
+        if ($(".mod_lost_child_little")) {
+            $(".mod_lost_child_little").css("width", "100%");
+        }
+    });
+  </script>
+
+  <style>
+      body {
+          background-image: none;
+      }
+
+      tr.content {
+          line-height: 300%;
+          border-top: 1px dotted #000;
+      }
+
+      table.mulu {
+          width: 95%; margin: 10px auto 40px;
+      }
+
+      .gutter {
+          width: 7%;
+      }
+  </style>
+
+  <!-- custom/head.html -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      jax: ["input/TeX", "output/HTML-CSS"],
+      tex2jax: {
+        inlineMath: [ ['$', '$'], ["\\(", "\\)"] ],
+        displayMath: [ ['$$', '$$'], ["\\[", "\\]"] ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+      //,
+      //displayAlign: "left",
+      //displayIndent: "2em"
+    });
+
+    function addBlankTargetForLinks () {
+
+      $('a[href^="http"]').each(function(){
+
+        $(this).attr('target', '_blank');
+
+      });
+
+    }
+
+    $(document).bind('DOMNodeInserted', function(event) {
+
+      addBlankTargetForLinks();
+
+    });
+
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"></script>
+  <!-- google_analytics.html -->
+
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-51950124-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head> 
+
+<body style="background-color: rgba(255, 255, 255, 0.3);">
+
+<div class="row-fluid marketing">
+<div class="span2"> </div>
+<div class="span8">
+<div class="container-narrow" style="margin-top: 20px;">
+
+      <div class="masthead">
+        <ul class="nav nav-pills pull-right">
+          <li><a href="/wx/archives/">博客目录</a></li>
+          <li><a href="/blog/2015/01/31/mei-zhou-yi-ruan-zhi-blocs/">PC端阅读</a></li>
+        </ul>
+        <h3 class="muted">&nbsp;&nbsp;&nbsp;&nbsp;太极儒</h3>
+      </div>
+
+	  <hr style="width: 100%;">
+
+      <div style="padding: 8px 25px 8px 25px;">
+        <h1>
+          每周一软之 Blocs
+        </h1>
+
+        <div class="article-date" style="margin-bottom: 40px;">
+            <!-- post/date.html -->
+<!-- 文章日期显示 -->
+
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2015-01-31T16:19:58+08:00" pubdate data-updated="true">Jan 31<span>st</span>, 2015</time>
+        </div>
+      <p><strong>目录</strong></p>
+
+<ul id="markdown-toc">
+  <li><a href="#section">功能介绍</a></li>
+  <li><a href="#section-1">界面设计</a></li>
+  <li><a href="#section-2">易用性</a></li>
+  <li><a href="#section-3">稳定性</a></li>
+  <li><a href="#section-4">跨平台</a></li>
+  <li><a href="#section-5">类似软件</a></li>
+  <li><a href="#section-6">闪光点</a></li>
+  <li><a href="#section-7">缺点</a></li>
+</ul>
+
+<!-- excerpt start -->
+
+<h2 id="section">功能介绍</h2>
+
+<p><a href="http://blocsapp.com/">Blocs</a> 是一款拖拽式网页生成器，页面布局基于 Bootstrap，主要帮助用户生成 <a href="https://www.meteor.com/">此类样式</a> 的页面（Blocs <a href="http://blocsapp.com/">官方主页</a> 也是这种风格）。这款工具<strong>用户友好度很高</strong>，<strong>不会网页编程</strong>或者<strong>对 Bootstrap 不熟悉</strong>人可以用它快速定制特定风格的主页（可用作产品介绍、个人主页或博客模板），之后可在导出的网页代码基础上进行二次开发，实现<strong>布局调整</strong>或<strong>动态效果</strong>。</p>
+
+<p>软件使用的大致思路是</p>
+
+<ul>
+  <li>创建一个 <strong>Web Page</strong>，用户可以在上面划分不同的 <strong>Bloc</strong>，页首导航（一个）、中部内容（多个）、页尾信息（多个），分别有<strong>布局模板</strong>供选择；</li>
+</ul>
+
+<p><a href="/img/post/2015-1/20.png" class="img-up" title="添加 Bloc"><img class="imgcenter" src="/img/post/2015-1/20.png" width="90%" title="添加 Bloc" /></a></p>
+
+<!-- excerpt end -->
+
+<ul>
+  <li>在每个 <strong>Bloc</strong> 中可以添加 <strong>Brics</strong>，也就是文本、图片、按钮、链接等内容；</li>
+</ul>
+
+<p><a href="/img/post/2015-1/21.png" class="img-up" title="添加 Bric"><img class="imgcenter" src="/img/post/2015-1/21.png" width="90%" title="添加 Bric" /></a></p>
+
+<ul>
+  <li>对于 <strong>Page</strong>、<strong>Bloc</strong>、<strong>Brics</strong>，都可以进一步设置属性以调整显示效果。</li>
+</ul>
+
+<p><a href="/img/post/2015-1/22.png" class="img-up" title="Image 控件的属性"><img class="imgcenter" src="/img/post/2015-1/22.png" width="90%" title="Image 控件的属性" /></a></p>
+
+<p>页面设置完成，可导出包含 HTML、图片、CSS、Javascript 等文件在内的文件夹，上传网页服务器供访问。</p>
+
+<p>在此附上我用 Blocs 制作的 <a href="/demo/poem/index.html">Demo</a>，配图、配色比较马虎……</p>
+
+<h2 id="section-1">界面设计</h2>
+
+<p>美观精致。</p>
+
+<p><a href="/img/post/2015-1/19.png" class="img-up" title="软件界面"><img class="imgcenter" src="/img/post/2015-1/19.png" width="90%" title="软件界面" /></a></p>
+
+<h2 id="section-2">易用性</h2>
+
+<p>简单易用。</p>
+
+<h2 id="section-3">稳定性</h2>
+
+<p>未发现崩溃。</p>
+
+<h2 id="section-4">跨平台</h2>
+
+<p>无。</p>
+
+<h2 id="section-5">类似软件</h2>
+
+<p>程序员可能会选用 <a href="http://www.jetbrains.com/webstorm/">WebStorm</a>、<a href="http://www.sublimetext.com/">Sublime</a> 等软件作为自己网页编程的 IDE，而小白用户则需要借助类似 Blocs 的软件，从而实现少写代码、甚至不写代码制作网页的目的。这些快捷工具在应付简单任务的时候可能比 Webstorm、Sublime 等更高效，所以我自己也会用到。它们大致可以分为四类，✔︎ <strong>表示推荐</strong>。</p>
+
+<ul>
+  <li>编码式
+    <ul>
+      <li>✔︎ <a href="http://xpressive.org/">Xpressive</a>，定制细致，适合网页开发初学者；</li>
+      <li><a href="http://www.panic.com/coda/">Coda</a>，较简陋；</li>
+    </ul>
+  </li>
+  <li>拖拽式
+    <ul>
+      <li>✔︎ <a href="http://www.macaw.co/">Macaw</a>，适合设计师使用；</li>
+      <li>✔︎ <a href="http://www.google.com/webdesigner/">Google Web Designer</a>，翻墙可用，有详细的<a href="https://support.google.com/webdesigner/?hl=zh-Hans#topic=3178270">帮助文档</a>；</li>
+      <li><a href="http://sparkle.cx/">Sparkle</a>，比 Macaw 功能简单，也不错；</li>
+      <li><a href="http://www.karelia.com/products/sandvox/">Sandvox</a>，样式老套；</li>
+      <li><a href="http://www.softpress.com/freeway-pro/">Freeway Pro</a>，样式老套；</li>
+    </ul>
+  </li>
+  <li>混合式
+    <ul>
+      <li>✔︎ <a href="http://muse.adobe.com/">Adobe Muse</a>，教程多多，功能强大，<strong>非常推荐</strong>；</li>
+      <li><a href="http://realmacsoftware.com/rapidweaver">Rapid Weaver</a>，功能普通；</li>
+      <li><a href="http://www.theescapers.com/lucid/index.html">Lucid</a>，非网页设计，官方介绍相当于一个 JavaScript Lego，可视化添加 JS 动态效果，比如 json 文件的异步加载、处理；</li>
+      <li><a href="http://www.theescapers.com/flux/index.html">Flux</a>，和 Lucid 属于同一公司，样式老套；</li>
+    </ul>
+  </li>
+  <li>模板管理式
+    <ul>
+      <li>✔︎ <a href="http://cactusformac.com/">Cactus</a>，使用 Django 模板生成博客、相册、个人信息三种静态网站，样式简单，但<strong>清新耐看</strong>；</li>
+      <li>✔︎ <a href="http://www.getblogo.com/">Blogo</a>，WordPress 站点管理，PC 端查看、编写、发布；</li>
+      <li><a href="http://serverpress.com/products/desktopserver/">Desktop Server</a>，WordPress 部署与管理，小白专属。</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="section-6">闪光点</h2>
+
+<ul>
+  <li>较短时间的学习、操作就可以生成<strong>美观</strong>、<strong>实用</strong>的网页，这是它相比类似软件最大的优势。</li>
+</ul>
+
+<h2 id="section-7">缺点</h2>
+
+<ul>
+  <li>网页元素的属性定制还不够丰富（比如网页标题都无处修改），希望<strong>允许添加 CSS 代码</strong>（像 Xpressive 那样）；</li>
+  <li>用户无法添加模板，只能使用软件自带的，想修改布局，只能去编辑导出的网页；</li>
+  <li>拖拽式编辑器，没有代码查看、编辑的功能，至少可以<strong>增加一个使用其它编辑器打开的按键</strong>，方便二次开发。</li>
+</ul>
+
+      <div style="margin-top: 30px;">
+      本文原载于 <a href="http://frank19900731.github.io" target="_blank">http://frank19900731.github.io</a> (为获得更好的阅读效果，请在PC端访问此链接)，作者宋成儒，微信号 frank19900731，微博 <a href="http://weibo.com/frank19900731" target="_blank">@太极儒</a> 。
+      </div>
+      </div>
+
+</div> <!-- /container -->
+</div>
+<div class="span2"></div>
+</div>
+
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1253436508'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s6.cnzz.com/z_stat.php%3Fid%3D1253436508%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+</body>
+</html>

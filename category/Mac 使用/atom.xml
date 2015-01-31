@@ -1,5 +1,131 @@
 
 <item>
+    <title>每周一软之 Blocs</title>
+    <link>http://realjenius.com/blog/2015/01/31/mei-zhou-yi-ruan-zhi-blocs/</link>
+    <author>R.J. Lorimer</author>
+    <pubDate>2015-01-31T16:19:58+08:00</pubDate>
+    <guid>http://realjenius.com/blog/2015/01/31/mei-zhou-yi-ruan-zhi-blocs/</guid>
+    <description><![CDATA[
+     <p><strong>目录</strong></p>
+
+<ul id="markdown-toc">
+  <li><a href="#section">功能介绍</a></li>
+  <li><a href="#section-1">界面设计</a></li>
+  <li><a href="#section-2">易用性</a></li>
+  <li><a href="#section-3">稳定性</a></li>
+  <li><a href="#section-4">跨平台</a></li>
+  <li><a href="#section-5">类似软件</a></li>
+  <li><a href="#section-6">闪光点</a></li>
+  <li><a href="#section-7">缺点</a></li>
+</ul>
+
+<!-- excerpt start -->
+
+<h2 id="section">功能介绍</h2>
+
+<p><a href="http://blocsapp.com/">Blocs</a> 是一款拖拽式网页生成器，页面布局基于 Bootstrap，主要帮助用户生成 <a href="https://www.meteor.com/">此类样式</a> 的页面（Blocs <a href="http://blocsapp.com/">官方主页</a> 也是这种风格）。这款工具<strong>用户友好度很高</strong>，<strong>不会网页编程</strong>或者<strong>对 Bootstrap 不熟悉</strong>人可以用它快速定制特定风格的主页（可用作产品介绍、个人主页或博客模板），之后可在导出的网页代码基础上进行二次开发，实现<strong>布局调整</strong>或<strong>动态效果</strong>。</p>
+
+<p>软件使用的大致思路是</p>
+
+<ul>
+  <li>创建一个 <strong>Web Page</strong>，用户可以在上面划分不同的 <strong>Bloc</strong>，页首导航（一个）、中部内容（多个）、页尾信息（多个），分别有<strong>布局模板</strong>供选择；</li>
+</ul>
+
+<p><a href="http://frank19900731.github.io/img/post/2015-1/20.png" class="img-up" title="添加 Bloc"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-1/20.png" width="90%" title="添加 Bloc" /></a></p>
+
+<!-- excerpt end -->
+
+<ul>
+  <li>在每个 <strong>Bloc</strong> 中可以添加 <strong>Brics</strong>，也就是文本、图片、按钮、链接等内容；</li>
+</ul>
+
+<p><a href="http://frank19900731.github.io/img/post/2015-1/21.png" class="img-up" title="添加 Bric"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-1/21.png" width="90%" title="添加 Bric" /></a></p>
+
+<ul>
+  <li>对于 <strong>Page</strong>、<strong>Bloc</strong>、<strong>Brics</strong>，都可以进一步设置属性以调整显示效果。</li>
+</ul>
+
+<p><a href="http://frank19900731.github.io/img/post/2015-1/22.png" class="img-up" title="Image 控件的属性"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-1/22.png" width="90%" title="Image 控件的属性" /></a></p>
+
+<p>页面设置完成，可导出包含 HTML、图片、CSS、Javascript 等文件在内的文件夹，上传网页服务器供访问。</p>
+
+<p>在此附上我用 Blocs 制作的 <a href="http://frank19900731.github.io/demo/poem/index.html">Demo</a>，配图、配色比较马虎……</p>
+
+<h2 id="section-1">界面设计</h2>
+
+<p>美观精致。</p>
+
+<p><a href="http://frank19900731.github.io/img/post/2015-1/19.png" class="img-up" title="软件界面"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-1/19.png" width="90%" title="软件界面" /></a></p>
+
+<h2 id="section-2">易用性</h2>
+
+<p>简单易用。</p>
+
+<h2 id="section-3">稳定性</h2>
+
+<p>未发现崩溃。</p>
+
+<h2 id="section-4">跨平台</h2>
+
+<p>无。</p>
+
+<h2 id="section-5">类似软件</h2>
+
+<p>程序员可能会选用 <a href="http://www.jetbrains.com/webstorm/">WebStorm</a>、<a href="http://www.sublimetext.com/">Sublime</a> 等软件作为自己网页编程的 IDE，而小白用户则需要借助类似 Blocs 的软件，从而实现少写代码、甚至不写代码制作网页的目的。这些快捷工具在应付简单任务的时候可能比 Webstorm、Sublime 等更高效，所以我自己也会用到。它们大致可以分为四类，✔︎ <strong>表示推荐</strong>。</p>
+
+<ul>
+  <li>编码式
+    <ul>
+      <li>✔︎ <a href="http://xpressive.org/">Xpressive</a>，定制细致，适合网页开发初学者；</li>
+      <li><a href="http://www.panic.com/coda/">Coda</a>，较简陋；</li>
+    </ul>
+  </li>
+  <li>拖拽式
+    <ul>
+      <li>✔︎ <a href="http://www.macaw.co/">Macaw</a>，适合设计师使用；</li>
+      <li>✔︎ <a href="http://www.google.com/webdesigner/">Google Web Designer</a>，翻墙可用，有详细的<a href="https://support.google.com/webdesigner/?hl=zh-Hans#topic=3178270">帮助文档</a>；</li>
+      <li><a href="http://sparkle.cx/">Sparkle</a>，比 Macaw 功能简单，也不错；</li>
+      <li><a href="http://www.karelia.com/products/sandvox/">Sandvox</a>，样式老套；</li>
+      <li><a href="http://www.softpress.com/freeway-pro/">Freeway Pro</a>，样式老套；</li>
+    </ul>
+  </li>
+  <li>混合式
+    <ul>
+      <li>✔︎ <a href="http://muse.adobe.com/">Adobe Muse</a>，教程多多，功能强大，<strong>非常推荐</strong>；</li>
+      <li><a href="http://realmacsoftware.com/rapidweaver">Rapid Weaver</a>，功能普通；</li>
+      <li><a href="http://www.theescapers.com/lucid/index.html">Lucid</a>，非网页设计，官方介绍相当于一个 JavaScript Lego，可视化添加 JS 动态效果，比如 json 文件的异步加载、处理；</li>
+      <li><a href="http://www.theescapers.com/flux/index.html">Flux</a>，和 Lucid 属于同一公司，样式老套；</li>
+    </ul>
+  </li>
+  <li>模板管理式
+    <ul>
+      <li>✔︎ <a href="http://cactusformac.com/">Cactus</a>，使用 Django 模板生成博客、相册、个人信息三种静态网站，样式简单，但<strong>清新耐看</strong>；</li>
+      <li>✔︎ <a href="http://www.getblogo.com/">Blogo</a>，WordPress 站点管理，PC 端查看、编写、发布；</li>
+      <li><a href="http://serverpress.com/products/desktopserver/">Desktop Server</a>，WordPress 部署与管理，小白专属。</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="section-6">闪光点</h2>
+
+<ul>
+  <li>较短时间的学习、操作就可以生成<strong>美观</strong>、<strong>实用</strong>的网页，这是它相比类似软件最大的优势。</li>
+</ul>
+
+<h2 id="section-7">缺点</h2>
+
+<ul>
+  <li>网页元素的属性定制还不够丰富（比如网页标题都无处修改），希望<strong>允许添加 CSS 代码</strong>（像 Xpressive 那样）；</li>
+  <li>用户无法添加模板，只能使用软件自带的，想修改布局，只能去编辑导出的网页；</li>
+  <li>拖拽式编辑器，没有代码查看、编辑的功能，至少可以<strong>增加一个使用其它编辑器打开的按键</strong>，方便二次开发。</li>
+</ul>
+
+<p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2015/01/31/mei-zhou-yi-ruan-zhi-blocs/">http://frank19900731.github.io/blog/2015/01/31/mei-zhou-yi-ruan-zhi-blocs/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
+
+  ]]></description>
+</item>
+
+<item>
     <title>每周一软之 Bartender</title>
     <link>http://realjenius.com/blog/2015/01/25/mei-zhou-yi-ruan-zhi-bartender/</link>
     <author>R.J. Lorimer</author>
