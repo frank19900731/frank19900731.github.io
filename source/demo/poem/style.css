@@ -14,7 +14,8 @@ a:hover{text-decoration: none;}
 
 /* Globals type styling */
     h1, h2, h3, h4, h5, h6, p, label, .btn, a{
-	font-family:"Helvetica";
+	/*font-family:"Helvetica";*/
+	font-family: "Hiragino Sans GB","Microsoft YaHei","STXihei","SimHei",Arial,sans-serif,sans-serif;
 }
 
 
