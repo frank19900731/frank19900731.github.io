@@ -15,6 +15,7 @@
     <script type="text/javascript" src="/javascripts/wbcard/modernizr.js"></script>
     <script type="text/javascript" src="/javascripts/jquery.min.js"></script>
     <script type="text/javascript" src="/javascripts/wbcard/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/javascripts/lunr.min.js"></script>
     <script type="text/javascript" src="/javascripts/wbcard/weiboflow.js"></script>
     <script type="text/javascript" src="/javascripts/wbcard/index.js"></script>
 
@@ -58,7 +59,15 @@
             </li>
             <li><a href="https://github.com/frank19900731/weibocard" target="_blank">Github</a></li>
             <li><a href="http://frank19900731.github.io">返回博客</a></li>
-            <li></li>
+            <li>
+                <form class="navbar-form navbar-left" role="search" id="searchForm" action="javascript:searchSubmit()">
+                    <div class="form-group">
+                        <i class="fa fa-search"></i>
+                        <input type="text" class="form-control" placeholder="Search" name="searchKeyWord" id="search-text">
+                        <a id="search_cancel" class="btn btn-sm btn-primary" style="display: none;" onclick="wbcard_cancel_search()">取消</a>
+                    </div>
+                </form>
+            </li>
         </ul>
     </div>
 

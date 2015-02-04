@@ -24,16 +24,17 @@ var initDisplay = 20; // number to display on initialization
 var currentIndex = 0; // record number has been displayed
 var loadPerScroll = 30; // load another number per scroll
 var fadeInTime = 2000;
-var dataArray; // hold json data
+var dataArray = null; // hold json data
+var dataArrayBackup = null;
 var totalLen; // total number, length of dataArray
-var mobile = isMobile.any()
+var mobile = isMobile.any();
 
 if( mobile )
 {
     loadPerScroll = 8; // on mobile client, load less per scorll
 }
 
-jsonLoad("/json/" + currentYear + ".json");
+jsonLoad("json/" + currentYear + ".json");
 
 $(window).on('load', function() {
     $('.img_up').fancybox({
@@ -64,6 +65,7 @@ $(window).on('load', function() {
 function jsonLoad(jsonFile) {
     $.getJSON(jsonFile, function(data) {
         dataArray = data;
+        dataArrayBackup = dataArray;
         totalLen = dataArray.length;
         $.each(data, function(index, value) { // initialization
             if (index < initDisplay) {
@@ -76,12 +78,14 @@ function jsonLoad(jsonFile) {
 }
 
 function jumpTo(year) {
+    lunrIndex = null;
+    wbcard_cancel_search();
     if (year != currentYear) {
         $('#main').remove();
         $('<div>').attr('id', 'main').appendTo($('#row'));
         $("html, body").animate({ scrollTop: 0 }, 120);
         currentIndex = 0;
-        jsonLoad("/json/" + year + ".json");
+        jsonLoad("json/" + year + ".json");
         currentYear = year;
     }
 }
@@ -194,4 +198,79 @@ function checkScrollSlide() {
     var scrollTop = $(window).scrollTop();
     var documentH = $(window).height();
     return (lastBoxDis < scrollTop + documentH) ? true : false;
+}
+
+/****************************** search ******************************/
+
+var lunrIndex = null;
+var searchResult = null;
+
+function wbcard_lunr_init() {
+    lunrIndex = lunr(function () {
+        this.field('search_field');
+        this.ref("_id_");
+    });
+    if (dataArrayBackup != null) {
+        for(var i = 0; i< dataArrayBackup.length; i++)
+            lunrIndex.add(dataArrayBackup[i]);
+        console.log("Lunr search successfully inited.")
+    }
+}
+
+function searchSubmit() {
+    wbcard_search($("#search-text").val());
+}
+
+function wbcard_search(query) {
+    if (lunrIndex == null) {
+        wbcard_lunr_init();
+    }
+    searchResult = new Array(); // 清空
+
+    tmpRes = lunrIndex.search(query);
+    for(var i = 0; i < tmpRes.length; i++) {
+        searchResult.push(dataArrayBackup[parseInt(tmpRes[i]['ref'])]);
+    }
+
+    $("#search_cancel").height($("#search-text").height());
+    $("#search_cancel").css('display', 'inherit');
+    displaySearchResult();
+}
+
+function wbcard_cancel_search() {
+    if(searchResult != null) {
+        searchResult = null;
+        $("#search_cancel").css('display', 'none');
+        $("#search-text").val("");
+        displaySearchResult();
+    }
+}
+
+function displaySearchResult() {
+    $('#main').remove();
+    $('<div>').attr('id', 'main').appendTo($('#row'));
+    $("html, body").animate({ scrollTop: 0 }, 120);
+    currentIndex = 0;
+
+    if(searchResult == null) {
+        dataArray = dataArrayBackup;
+    } else {
+        dataArray = searchResult;
+    }
+    if(dataArray.length > 0) {
+        totalLen = dataArray.length;
+        $.each(dataArray, function(index, value) { // initialization
+            if (index < initDisplay) {
+                insertCard(value);
+                currentIndex += 1;
+            }
+        })
+        waterfall();
+    } else {
+        $("#main").css("text-align", 'center');
+        $("<div>").addClass("alert alert-warning").css({
+            'width': '40%',
+            'margin': 'auto'
+        }).text("没有匹配项。").appendTo($("#main"));
+    }
 }
