@@ -34,7 +34,7 @@ if( mobile )
     loadPerScroll = 8; // on mobile client, load less per scorll
 }
 
-jsonLoad("json/" + currentYear + ".json");
+jsonLoad(json_prefix + currentYear + ".json");
 
 $(window).on('load', function() {
     $('.img_up').fancybox({
@@ -85,7 +85,7 @@ function jumpTo(year) {
         $('<div>').attr('id', 'main').appendTo($('#row'));
         $("html, body").animate({ scrollTop: 0 }, 120);
         currentIndex = 0;
-        jsonLoad("json/" + year + ".json");
+        jsonLoad(json_prefix + year + ".json");
         currentYear = year;
     }
 }
