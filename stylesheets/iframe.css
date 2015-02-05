@@ -1,0 +1,9 @@
+.templateModels {
+    background: white !important;
+    margin: auto !important;
+    border-radius: 20px !important;
+}
+
+html, body {
+    background: none !important;
+}
