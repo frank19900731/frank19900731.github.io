@@ -214,8 +214,12 @@ dt {
   line-height: 150%;
 }
 
-#frame-404 {
-  width: 80%;
+.iframe-wrapper {
+  width: 654px;
+  height: 470px
   margin: auto;
-  height: 500px;
+}
+
+#frame-404 {
+  border-radius: 20px;
 }

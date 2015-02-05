@@ -8,12 +8,7 @@ footer: false
 exclude_from_search: true
 ---
 
+<div class="iframe-wrapper">
 <iframe id="frame-404" scrolling='no' frameborder='0' src='http://yibo.iyiyun.com/Home/Distribute/ad404/key/15456' style='display:block;'>
-
 </iframe>
-
-<script type="text/javascript">
-    $("<link>").attr("href", "http://frank19900731.github.io/stylesheets/iframe.css")
-            .attr("rel", "stylesheet").attr("type", "text/css")
-            .appendTo($("#frame-404").contents().find("body"));
-</script>
+</div>
