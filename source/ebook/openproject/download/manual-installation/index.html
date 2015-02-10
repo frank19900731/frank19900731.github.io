@@ -1,0 +1,636 @@
+
+<!doctype html>
+<!--[if lt IE 7 ]> <html class="no-js ie6" lang="en-US" prefix="og: http://ogp.me/ns#"> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js ie7" lang="en-US" prefix="og: http://ogp.me/ns#"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js ie8" lang="en-US" prefix="og: http://ogp.me/ns#"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js" lang="en-US" prefix="og: http://ogp.me/ns#"> <!--<![endif]-->
+<head>
+
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+<title>Manual Installation - OpenProjectOpenProject</title>
+
+<link rel="stylesheet" href="../../wp-content/plugins/sitepress-multilingual-cms/res/css/language-selector-v=3.1.5.css" type="text/css" media="all" />
+
+<link rel="stylesheet" href="../../wp-content/themes/BootstrapParallax/open_icons.css" type="text/css" />
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="pingback" href="../../xmlrpc.php" />
+
+<link href="../../wp-content/themes/BootstrapParallax/images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+<link href="https://www.openproject.org/wp-content/themes/BootstrapParallax/images/apple-touch-icon.png" rel="apple-touch-icon">
+<link href="../../wp-content/themes/BootstrapParallax/images/apple-touch-icon-precomposed.png" rel="apple-touch-icon-precomposed">
+<link href="../../wp-content/themes/BootstrapParallax/images/apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes="76x76">
+<link href="../../wp-content/themes/BootstrapParallax/images/apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes="120x120">
+<link href="../../wp-content/themes/BootstrapParallax/images/apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes="152x152">
+
+<!--[if IE 7]>
+  <link rel="stylesheet" href="../../wp-content/themes/BootstrapParallax/css/font-awesome-ie7.min.css">
+<![endif]-->
+
+
+<!-- This site is optimized with the Yoast WordPress SEO plugin v1.7.1 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="Install OpenProject manually."/>
+<link rel="canonical" href="index.html" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Manual Installation - OpenProject" />
+<meta property="og:description" content="Install OpenProject manually." />
+<meta property="og:url" content="https://www.openproject.org/download/manual-installation/" />
+<meta property="og:site_name" content="OpenProject" />
+<!-- / Yoast WordPress SEO plugin. -->
+
+<link rel="alternate" type="application/rss+xml" title="OpenProject &raquo; Feed" href="../../feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="OpenProject &raquo; Comments Feed" href="../../comments/feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="OpenProject &raquo; Manual Installation Comments Feed" href="feed/index.html" />
+<link rel='stylesheet' id='bxslider-css-css'  href='../../wp-content/plugins/kiwi-logo-carousel/third-party/jquery.bxslider/jquery.bxslider-ver=4.1.css' type='text/css' media='' />
+<link rel='stylesheet' id='kiwi-logo-carousel-styles-css'  href='../../wp-content/plugins/kiwi-logo-carousel/custom-styles-ver=4.1.css' type='text/css' media='' />
+<link rel='stylesheet' id='bootstrap-styles-css'  href='../../wp-content/themes/BootstrapParallax/css/bootstrap-responsive-ver=2.3.1.css' type='text/css' media='all' />
+<link rel='stylesheet' id='bootstrap-css'  href='../../wp-content/themes/BootstrapParallax/css/bootstrap-ver=2.3.1.css' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-css'  href='../../wp-content/themes/BootstrapParallax/css/font-awesome.min-ver=3.0.css' type='text/css' media='all' />
+<link rel='stylesheet' id='colorbox-css'  href='../../wp-content/themes/BootstrapParallax/css/colorbox-ver=1.3.19.css' type='text/css' media='all' />
+<link rel='stylesheet' id='responsive-style-css'  href='../../wp-content/themes/BootstrapParallax/style-ver=2.3.1.css' type='text/css' media='all' />
+<!-- This site uses the Google Analytics by Yoast plugin v5.3 - Universal disabled - https://yoast.com/wordpress/plugins/google-analytics/ -->
+<script type="text/javascript">
+
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-42469541-2']);
+	_gaq.push(['_gat._forceSSL']);
+	_gaq.push(['_trackPageview']);
+
+	(function () {
+		var ga = document.createElement('script');
+		ga.type = 'text/javascript';
+		ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(ga, s);
+	})();
+
+</script>
+<!-- / Google Analytics by Yoast -->
+<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js?ver=1.7.1'></script>
+<script type='text/javascript' src='../../wp-content/plugins/alter-reset-password-form-action/password-r-ver=4.1.js'></script>
+<script type='text/javascript' src='../../wp-content/themes/BootstrapParallax/js/responsive-modernizr-ver=2.5.3.js'></script>
+<script type='text/javascript' src='../../wp-content/themes/BootstrapParallax/js/bootstrap-ver=4.1.js'></script>
+<script type='text/javascript' src='../../wp-content/themes/BootstrapParallax/js/strap-extras-ver=4.1.js'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="../../xmlrpc.php-rsd.xml" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../../wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.1" />
+<link rel='shortlink' href='index.html' />
+<meta name="generator" content="WPML ver:3.1.5 stt:1;0" />
+
+<style type="text/css">																																																																																																														
+</style>    <script type="text/javascript">
+    // <![CDATA[
+    jQuery(document).ready(function($){
+        $("a[rel='colorbox']").colorbox({
+                transition:'elastic', 
+                opacity:'0.7', 
+                maxHeight:'90%'
+        });
+        $("a.gallery").colorbox({
+                rel:'group'
+        });
+        $("a[rel='colorboxvideo']").colorbox({
+                iframe:true, 
+                transition:'elastic', 
+                opacity:'0.7',
+                innerWidth:'60%', 
+                innerHeight:'80%'
+        });
+    });  
+    // ]]>
+    </script>
+<style>.section1-main {
+                    background: url("../../wp-content/uploads/2014/09/11.jpg") 50% 0 fixed; 
+                }
+                .section4-main {
+                    background-image: url("../../wp-content/uploads/2014/09/collaboration-background.jpg");
+                    /* background-repeat: no-repeat; */
+                    background-attachment: fixed;
+                    background-position: 50% 0;
+                }
+                .features-header {
+                    background: url("../../wp-content/uploads/2014/09/features.jpg") 50% 0 fixed;
+                }
+                .opensource-header {
+                    background: url("../../wp-content/uploads/2014/09/openproject-org-sub-category.jpg") 50% 0 fixed;
+                }
+                .download-header {
+                    background: url("../../wp-content/uploads/2014/10/mountains.jpg") 50% 0 fixed;
+                }
+                .blog-header {
+                    background: url("../../wp-content/uploads/2014/10/header-blog.jpg") 50% 0 fixed;
+                }
+                .help-header {
+                    background: url("../../wp-content/uploads/2014/09/help.jpg") 50% 0 fixed;
+                }
+                .search-header {
+                    background: url("../../wp-content/uploads/2014/09/help.jpg") 50% 0 fixed;
+                }
+                .imprint-header {
+                    background: url("../../wp-content/uploads/2014/10/imprint.jpg") 50% 0 fixed;
+                }
+                .contact-header {
+                    background: url("../../wp-content/uploads/2014/10/imprint.jpg") 50% 0 fixed;
+                }
+                .error-header {
+                    background: url("../../wp-content/uploads/2014/10/imprint.jpg") 50% 0 fixed;
+                }
+                </style>
+<link rel="stylesheet" href="../../wp-content/themes/BootstrapParallax/build/style1.css" type="text/css" />
+<link rel="stylesheet" href="../../wp-content/themes/BootstrapParallax/build/tablet-style.css" type="text/css" />
+<link rel="stylesheet" href="../../wp-content/themes/BootstrapParallax/build/style-mobile.css" type="text/css" />
+<!--<script src="--><!--/js/transify.js"></script>-->
+<script src="../../wp-content/themes/BootstrapParallax/js/jquery.color-2.1.2.min.js"></script>
+<script src="../../wp-content/themes/BootstrapParallax/js/scripts.js"></script>
+<script src="../../wp-content/themes/BootstrapParallax/js/top-nav-transify.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!--[if (gte IE 6)&(lte IE 8)]>
+    <script type="text/javascript" src="../../wp-content/themes/BootstrapParallax/js/selectivizr.js"></script>
+    <![endif]-->
+
+<style>
+.affix
+{
+    background-color: #fff;
+    width: 100%;
+    top: 0px;
+}
+</style>
+
+</head>
+
+<body class="page page-id-2539 page-child parent-pageid-50 page-template page-template-download page-template-download-php">
+                 
+
+         
+        <div id="header">
+  
+        
+       
+	
+    <div class="navbar navbar-fixed-top ">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+
+                       <div id="logo"><a href="../../index.html" title="OpenProject" rel="homepage">
+            <img src="../../wp-content/uploads/2014/09/logo1.png" alt="OpenProject"/>
+            </a></div><!-- end of #logo -->
+                    
+
+
+
+          <div class="nav-collapse collapse">
+			   <ul id="menu-top-menu" class="nav"><li class="menu-item search-form"><form class="form-search" id="op-search-form" action="http://www.openproject.org/">
+  <div class="input-append">
+    <input type="text" class="span2 search-query show-input-form" placeholder="Search &hellip;" name="s" id="s" value="" />
+    <button type="submit" class="search-btn search-form-active"><i class="icon icon-search3 icon-flip-horizontal"></i></button>
+  </div>
+</form></li><li id="menu-item-365" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-365"><a href="../../features/index.html">Features<a href="../../features/index.html" class="dropdown-toggle" data-toggle="dropdown"> <i class="icon icon-arrow-right5-2"></i><i class="icon icon-arrow-right5-3"></i></a>
+<ul class="dropdown-menu">
+	<li id="menu-item-463" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-463"><a href="../../features/work-packages/index.html">Work Packages</a></li>
+	<li id="menu-item-461" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-461"><a href="../../features/timelines/index.html">Timelines</a></li>
+	<li id="menu-item-373" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-373"><a href="../../features/agile-scrum/index.html">Agile and Scrum</a></li>
+	<li id="menu-item-462" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-462"><a href="../../features/wiki/index.html">Wiki</a></li>
+	<li id="menu-item-460" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-460"><a href="../../features/time-and-costs/index.html">Time and Costs</a></li>
+	<li id="menu-item-459" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-459"><a href="../../features/more/index.html">More</a></li>
+</ul>
+</li>
+<li id="menu-item-1081" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor current-menu-ancestor current-menu-parent current-page-parent current_page_parent current_page_ancestor menu-item-has-children dropdown active open menu-item-1081"><a href="../index.html">Download<a href="../index.html" class="dropdown-toggle" data-toggle="dropdown"> <i class="icon icon-arrow-right5-2"></i><i class="icon icon-arrow-right5-3"></i></a>
+<ul class="dropdown-menu">
+	<li id="menu-item-3315" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3315"><a href="../setup-scenarios/index.html">Setup Scenarios</a></li>
+	<li id="menu-item-3313" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3313"><a href="../packaged-installation-core/index.html">Packaged Installation Core</a></li>
+	<li id="menu-item-3887" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3887"><a href="../packaged-installation-community/index.html">Packaged Installation Community</a></li>
+	<li id="menu-item-3317" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2539 current_page_item active open menu-item-3317"><a href="index.html">Manual Installation</a></li>
+	<li id="menu-item-3319" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3319"><a href="../upgrade-guides/index.html">Upgrade Guide</a></li>
+	<li id="menu-item-3320" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3320"><a href="../backup-guide/index.html">Backup Guide</a></li>
+	<li id="menu-item-3321" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3321"><a href="../install-plugins/index.html">Install Plugins</a></li>
+	<li id="menu-item-3322" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3322"><a href="../../systemrequirements/index.html">System Requirements</a></li>
+	<li id="menu-item-3312" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3312"><a href="../release-notes/index.html">Release Notes</a></li>
+</ul>
+</li>
+<li id="menu-item-367" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-367"><a href="../../help/index.html">Help<a href="../../help/index.html" class="dropdown-toggle" data-toggle="dropdown"> <i class="icon icon-arrow-right5-2"></i><i class="icon icon-arrow-right5-3"></i></a>
+<ul class="dropdown-menu">
+	<li id="menu-item-3323" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3323"><a href="../../help/user-guides/index.html">User Guides</a></li>
+	<li id="menu-item-3324" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3324"><a href="../../help/faq/index.html">FAQ</a></li>
+	<li id="menu-item-3325" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3325"><a href="../../help/user-guides/keyboard-shortcuts-access-keys/index.html">Shortcuts</a></li>
+	<li id="menu-item-3329" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3329"><a href="https://community.openproject.org/projects/openproject/boards">Forum</a></li>
+</ul>
+</li>
+<li id="menu-item-959" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-959"><a href="https://openproject-demo.org/"><span><button type="submit" name="Login" class="login">Demo</button></span></a></li>
+</ul>            
+                       </div>
+
+        </div>
+        </div>
+     </div>           
+
+           
+ 
+    </div><!-- end of #header -->
+        
+	    
+    
+
+<div id="wrapper" class="clearfix opensource">
+
+    <section id="section1" class="opensource-header download-header" data-speed="4" data-type="background">
+
+        <div id="text-28" class="widget_text">			<div class="textwidget"><div class="banner-text centered centered-sm">
+<h1 class="headline-teaser">Download and <em>Install</em></h1><p>Have full control of <strong>your</strong> project data. 
+Run OpenProject on your <strong>own servers</strong>
+within <strong>your infrastructure.</strong></p>
+</div></div>
+		</div>
+    </section>
+
+    <section id="section2" class="opensource-nav clearfix">
+        <div id="text-27" class="widget_text">			<div class="textwidget"><div class="get-started">
+
+<fieldset>
+<p>Be part of a <b>worldwide community</b> of open source enthusiasts</p><a  href="https://community.openproject.org/projects/openproject/wiki/Contribution/"class="button-blue" style="margin-left:20px">Contribute</a><a  href="https://community.openproject.org/projects/openproject/wiki/Report_a_bug"class="button-yellow" style="margin-left:20px">Report bug</a>
+</fieldset>
+
+</div></div>
+		</div>    </section>
+    <section id="section3" class="opensource-content double-content clearfix">
+<div class="center-wrapper">
+
+        <div class="opensource-menu double-content-menu">
+<div style="width: 334px;"></div>
+            <ul id="menu-download-and-installation" class="menu"><li id="menu-item-2505" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor current-page-parent menu-item-2505"><a href="../index.html">Overview</a></li>
+<li id="menu-item-4265" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4265"><a href="../openproject-demo/index.html">OpenProject Demo</a></li>
+<li id="menu-item-1377" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1377"><a href="../setup-scenarios/index.html">Setup Scenarios</a></li>
+<li id="menu-item-2583" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2583"><a href="../packaged-installation-core/index.html">Packaged Installation Core</a></li>
+<li id="menu-item-3821" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3821"><a href="../packaged-installation-community/index.html">Packaged Installation Community</a></li>
+<li id="menu-item-2541" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2539 current_page_item active open menu-item-2541"><a href="index.html">Manual Installation</a></li>
+<li id="menu-item-2545" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2545"><a href="../upgrade-guides/index.html">Upgrade Guide</a></li>
+<li id="menu-item-2537" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2537"><a href="../backup-guide/index.html">Backup Guide</a></li>
+<li id="menu-item-2631" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-2631"><a href="../install-plugins/index.html">Plugins<a href="../install-plugins/index.html" class="dropdown-toggle" data-toggle="dropdown"> <i class="icon icon-arrow-right5-2"></i><i class="icon icon-arrow-right5-3"></i></a>
+<ul class="dropdown-menu">
+	<li id="menu-item-4078" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4078"><a href="../install-plugins/openproject-plugins/index.html">OpenProject Plugins</a></li>
+</ul>
+</li>
+<li id="menu-item-2542" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2542"><a href="../../systemrequirements/index.html">System Requirements</a></li>
+<li id="menu-item-2762" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-2762"><a href="../release-notes/index.html">Release Notes<a href="../release-notes/index.html" class="dropdown-toggle" data-toggle="dropdown"> <i class="icon icon-arrow-right5-2"></i><i class="icon icon-arrow-right5-3"></i></a>
+<ul class="dropdown-menu">
+	<li id="menu-item-4298" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4298"><a href="../release-notes/openproject-4-0-6/index.html">OpenProject 4.0.6</a></li>
+	<li id="menu-item-4062" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4062"><a href="../release-notes/openproject-4-0-5/index.html">OpenProject 4.0.5</a></li>
+	<li id="menu-item-3330" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3330"><a href="../release-notes/openproject-4-0-4/index.html">OpenProject 4.0.4</a></li>
+	<li id="menu-item-3026" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3026"><a href="../release-notes/openproject-4-0-2/index.html">OpenProject 4.0.2</a></li>
+	<li id="menu-item-2928" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2928"><a href="../release-notes/openproject-4-0-1/index.html">OpenProject 4.0.1</a></li>
+	<li id="menu-item-2764" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2764"><a href="../release-notes/openproject-4-0/index.html">OpenProject 4.0.0</a></li>
+	<li id="menu-item-4063" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4063"><a href="../release-notes/openproject-3-0-17/index.html">OpenProject 3.0.17</a></li>
+	<li id="menu-item-3027" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3027"><a href="../release-notes/openproject-3-0-16/index.html">OpenProject 3.0.16</a></li>
+	<li id="menu-item-2925" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2925"><a href="../release-notes/openproject-3-0-15/index.html">OpenProject 3.0.15</a></li>
+	<li id="menu-item-2765" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2765"><a href="../release-notes/openproject-3-0-14/index.html">OpenProject 3.0.14</a></li>
+	<li id="menu-item-2755" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2755"><a href="../release-notes/openproject-3-0-13/index.html">OpenProject 3.0.13</a></li>
+	<li id="menu-item-2756" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2756"><a href="../release-notes/openproject-3-0-12/index.html">OpenProject 3.0.12</a></li>
+	<li id="menu-item-2757" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2757"><a href="../release-notes/openproject-3-0-11/index.html">OpenProject 3.0.11</a></li>
+	<li id="menu-item-2758" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2758"><a href="../release-notes/openproject-3-0-8/index.html">OpenProject 3.0.8</a></li>
+	<li id="menu-item-2759" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2759"><a href="../release-notes/openproject-3-0-4/index.html">OpenProject 3.0.4</a></li>
+	<li id="menu-item-2760" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2760"><a href="../release-notes/openproject-3-0-3/index.html">OpenProject 3.0.3</a></li>
+	<li id="menu-item-2761" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2761"><a href="../release-notes/openproject-3-0-1/index.html">OpenProject 3.0.1</a></li>
+	<li id="menu-item-2768" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2768"><a href="../release-notes/openproject-3-0-0/index.html">OpenProject 3.0.0</a></li>
+</ul>
+</li>
+</ul>
+        </div>
+
+        <div class="opensource-content-container double-content-container">
+
+                            
+                    <div id="post-2539" class="post-2539 page type-page status-publish hentry">
+                        <div class="post-entry">
+                            <h1>Manual Installation of OpenProject 4.0 with Apache on Debian 7.7 or Ubuntu 14.04 LTS</h1>
+<p><strong>This guide  helps you to deploy OpenProject 4.0. Please, be aware that:</strong></p>
+<ol class="task-list">
+<li>This guide requires that you have a clean <strong>Debian 7.7 x64</strong> or <strong>Ubuntu 14.04 x64</strong> installation with administrative rights. We have tested the installation guide on a Debian minimal netinstall image and on an Ubuntu Server image, but it should work on any derivative.</li>
+<li>OpenProject will be installed with a MySQL database (the guide should work analogous with PostgreSQL).</li>
+<li>OpenProject will be served in a production environment with Apache (this guide should work analogous with other servers, like nginx and others)</li>
+</ol>
+<p>In this guide, we will install <strong>OpenProject 4.0</strong> with a <strong>MySQL</strong> database. Openproject will be served with the <strong>Apache</strong> web server. When your server needs to reboot, OpenProject should start automatically with your server.</p>
+<p>Note: We have highlighted commands to execute like this</p>
+<pre class="lang:default decode:true ">[user@host] command</pre>
+<p>Where the <code>user</code> is the operating system user the command is executed with. The <code>host</code> is either <code>debian</code> (when the command is Debian-specific), <code>ubuntu</code> (when the command is Ubuntu-specific), or <code>all</code> (when the command shall be executed on either operating system).</p>
+<p>If you find any bugs or you have any recommendations for improving this tutorial, please, feel free to create a pull request against this guide.</p>
+<h2><a class="anchor" href="https://github.com/opf/openproject/blob/hotfix/user_guide/doc/installation_guides/ubuntu-trusty-14-04-lts-and-debian-wheezy-7-7-production.md#prepare-your-environment" name="user-content-prepare-your-environment"></a>Prepare Your Environment</h2>
+<p>Install tools needed to compile Ruby and run OpenProject:</p>
+<h3><a class="anchor" href="https://github.com/opf/openproject/blob/hotfix/user_guide/doc/installation_guides/ubuntu-trusty-14-04-lts-and-debian-wheezy-7-7-production.md#only-on-debian" name="user-content-only-on-debian"></a>Only on Debian</h3>
+<pre class="lang:default decode:true ">[root@debian] apt-get update
+[root@debian] apt-get install git curl build-essential zlib1g-dev libyaml-dev libssl-dev libmysqlclient-dev libpq-dev libsqlite3-dev memcached libffi5</pre>
+<h3> <a class="anchor" href="https://github.com/opf/openproject/blob/hotfix/user_guide/doc/installation_guides/ubuntu-trusty-14-04-lts-and-debian-wheezy-7-7-production.md#only-on-ubuntu" name="user-content-only-on-ubuntu"></a>Only on Ubuntu</h3>
+<pre class="lang:default decode:true ">[root@ubuntu] apt-get update
+[root@ubuntu] apt-get install git curl zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libmysqlclient-dev libpq-dev libxml2-dev libxslt1-dev libcurl4-openssl-dev python-software-properties memcached libgdbm-dev libncurses5-dev automake libtool bison libffi-dev</pre>
+<h3> Debian and Ubuntu</h3>
+<p>Create a dedicated user for OpenProject:</p>
+<pre class="lang:default decode:true">[root@all] groupadd openproject
+[root@all] useradd --create-home --gid openproject openproject
+[root@all] passwd openproject (enter desired password)</pre>
+<h2><a class="anchor" href="https://github.com/opf/openproject/blob/hotfix/user_guide/doc/installation_guides/ubuntu-trusty-14-04-lts-and-debian-wheezy-7-7-production.md#install-database-mysql-packages" name="user-content-install-database-mysql-packages"></a>Install Database (MySQL) Packages</h2>
+<p>During installation, you have to enter a password for the mysql root-user.</p>
+<pre class="lang:default decode:true">[root@all] apt-get install mysql-server mysql-client</pre>
+<p>As a reference, we have installed the following MySQL version:</p>
+<pre class="lang:default decode:true">[root@all] mysql --version
+              mysql  Ver 14.14 Distrib 5.5.40, for debian-linux-gnu (x86_64) using readline 6.3</pre>
+<p>Create the OpenProject MySQL-user and database:</p>
+<pre class="lang:default decode:true ">[root@all] mysql -u root -p</pre>
+<p>You may replace the string <code>"openproject"</code> with the desired username and database-name. The password<code>"my_password"</code> should definitely be changed.</p>
+<pre class="lang:default decode:true">mysql&gt; CREATE DATABASE openproject CHARACTER SET utf8;
+mysql&gt; CREATE USER 'openproject'@'localhost' IDENTIFIED BY 'my_password';
+mysql&gt; GRANT ALL PRIVILEGES ON openproject.* TO 'openproject'@'localhost';
+mysql&gt; \q</pre>
+<h2><a class="anchor" href="https://github.com/opf/openproject/blob/hotfix/user_guide/doc/installation_guides/ubuntu-trusty-14-04-lts-and-debian-wheezy-7-7-production.md#install-nodejs" name="user-content-install-nodejs"></a>Install Node.js</h2>
+<p>We will install the latest 0.10.x version of Node.js via <a href="https://pypi.pythn.org/pypi/nodeenv">nodeenv</a>:</p>
+<pre class="lang:default decode:true">[root@all] apt-get install python python-pip
+[root@all] pip install nodeenv</pre>
+<h2><a class="anchor" href="https://github.com/opf/openproject/blob/hotfix/user_guide/doc/installation_guides/ubuntu-trusty-14-04-lts-and-debian-wheezy-7-7-production.md#install-ruby" name="user-content-install-ruby"></a>Install Ruby</h2>
+<p>Switch to the dedicated OpenProject-user (user <code>openproject</code> in our case):</p>
+<pre class="lang:default decode:true">[root@all] su openproject -c "bash -l"</pre>
+<p>Switch to the user&#8217;s home directory &#8230;</p>
+<pre class="lang:default decode:true">[openproject@all] cd ~</pre>
+<p>&#8230; and install RVM (Ruby Version Manager)</p>
+<pre class="lang:default decode:true">[openproject@all] \curl -sSL https://get.rvm.io | bash -s stable</pre>
+<p>It can be that curl fails to download the RVM source, because of the missing GPG key. If that is the case, download the key (as suggested in the error message):</p>
+<pre class="lang:default decode:true">[openproject@all] gpg --keyserver hkp://keys.gnupg.net --recv-keys D39DC0E3</pre>
+<p>Then try to download RVM again and continue the installation with:</p>
+<pre class="lang:default decode:true">[openproject@all] source $HOME/.rvm/scripts/rvm
+[openproject@all] rvm autolibs disable
+[openproject@all] rvm install 2.1.4
+[openproject@all] rvm use --default 2.1.4
+[openproject@all] gem install bundler</pre>
+<p>As a reference, we have installed the following version of bundler:</p>
+<pre class="lang:default decode:true">[openproject@all] bundle --version
+                  Bundler version 1.7.4</pre>
+<h2><a class="anchor" href="https://github.com/opf/openproject/blob/hotfix/user_guide/doc/installation_guides/ubuntu-trusty-14-04-lts-and-debian-wheezy-7-7-production.md#activate-nodejs" name="user-content-activate-nodejs"></a>Activate Node.js</h2>
+<pre class="lang:default decode:true">[openproject@all] cd ~
+[openproject@all] nodeenv nodeenv
+[openproject@all] source ./nodeenv/bin/activate
+[openproject@all] npm -g install bower</pre>
+<p>As a reference, the following Node.js and NPM versions have been installed on our system:</p>
+<pre class="lang:default decode:true">[openproject@all] node --version
+                  v0.10.33
+[openproject@all] npm --version
+                  1.4.28
+[openproject@all] bower --version
+                  1.3.12</pre>
+<h2><a class="anchor" href="https://github.com/opf/openproject/blob/hotfix/user_guide/doc/installation_guides/ubuntu-trusty-14-04-lts-and-debian-wheezy-7-7-production.md#install-openproject" name="user-content-install-openproject"></a>Install OpenProject</h2>
+<pre class="lang:default decode:true">[openproject@all] cd ~
+[openproject@all] git clone https://github.com/opf/openproject.git
+[openproject@all] cd openproject
+[openproject@all] git checkout stable
+[openproject@all] bundle install
+[openproject@all] npm install
+[openproject@all] bower install</pre>
+<h2><a class="anchor" href="https://github.com/opf/openproject/blob/hotfix/user_guide/doc/installation_guides/ubuntu-trusty-14-04-lts-and-debian-wheezy-7-7-production.md#configure-openproject" name="user-content-configure-openproject"></a>Configure OpenProject</h2>
+<p>Create and configure the database configuration file in <code>config/database.yml</code> (relative to the openproject-directory).</p>
+<pre class="lang:default decode:true">[openproject@all] cp config/database.yml.example config/database.yml</pre>
+<p>Now edit the <code>config/database.yml</code> file and insert your database credentials. It should look like this (just with your database name, username, and password):</p>
+<pre class="lang:default decode:true">production:
+  adapter: mysql2
+  database: openproject
+  host: localhost
+  username: openproject
+  password: openproject
+  encoding: utf8
+
+development:
+  adapter: mysql2
+  database: openproject
+  host: localhost
+  username: openproject
+  password: openproject
+  encoding: utf8</pre>
+<p>Configure email notifications (using a gmail account as an example) by creating configuration.yml in <code>config</code> directory.</p>
+<pre class="lang:default decode:true">[openproject@all] cp config/configuration.yml.example config/configuration.yml</pre>
+<p>Now, edit the <code>configuration.yml</code> file as you like.</p>
+<pre class="lang:default decode:true">production:                          #main level
+  email_delivery_method: :smtp       #settings for the production environment
+  smtp_address: smtp.gmail.com
+  smtp_port: 587
+  smtp_domain: smtp.gmail.com
+  smtp_user_name: ***@gmail.com
+  smtp_password: ****
+  smtp_enable_starttls_auto: true
+  smtp_authentication: plain</pre>
+<p>Add this line into <code>configuration.yml</code> file at the of of file for better performance of OpenProject:</p>
+<pre class="lang:default decode:true">rails_cache_store: :memcache</pre>
+<p><strong>NOTE:</strong> You should validate your .yml-files, for example with <a href="http://www.yamllint.com/">http://www.yamllint.com/</a>. Both, the <code>database.yml</code> and<code>configuration.yml</code> file are sensitive to whitespace. It is pretty easy to write invalid .yml files without seeing the error. Validating those files prevents you from such errors.</p>
+<h2><a class="anchor" href="https://github.com/opf/openproject/blob/hotfix/user_guide/doc/installation_guides/ubuntu-trusty-14-04-lts-and-debian-wheezy-7-7-production.md#finish-the-installation-of-openproject" name="user-content-finish-the-installation-of-openproject"></a>Finish the Installation of OpenProject</h2>
+<pre class="lang:default decode:true">[openproject@all] cd ~/openproject
+[openproject@all] bundle exec rake db:create:all
+[openproject@all] bundle exec rake generate_secret_token
+[openproject@all] RAILS_ENV="production" bundle exec rake db:migrate
+[openproject@all] RAILS_ENV="production" bundle exec rake db:seed
+[openproject@all] RAILS_ENV="production" bundle exec rake assets:precompile</pre>
+<h2><a class="anchor" href="https://github.com/opf/openproject/blob/hotfix/user_guide/doc/installation_guides/ubuntu-trusty-14-04-lts-and-debian-wheezy-7-7-production.md#serve-openproject-with-apache-and-passenger" name="user-content-serve-openproject-with-apache-and-passenger"></a>Serve OpenProject with Apache and Passenger</h2>
+<p>OpenProject will be served by the Rails application server &#8220;Passenger&#8221;, and the apache webserver. We set up the system in a way, that automatically starts OpenProject with the operating system.</p>
+<h3><a class="anchor" href="https://github.com/opf/openproject/blob/hotfix/user_guide/doc/installation_guides/ubuntu-trusty-14-04-lts-and-debian-wheezy-7-7-production.md#only-on-debian-1" name="user-content-only-on-debian-1"></a>Only on Debian</h3>
+<p>First, exit the current bash session with the <code>openproject</code> user, so that we are again in a root shell. Then, we prepare apache and passenger:</p>
+<pre class="lang:default decode:true">[openproject@debian] exit
+[root@debian] apt-get install apache2 libcurl4-gnutls-dev apache2-threaded-dev libapr1-dev libaprutil1-dev
+[root@debian] chmod o+x "/home/openproject"</pre>
+<p>Now, the Passenger gem is installed and integrated into apache.</p>
+<pre class="lang:default decode:true">[root@debian] su - openproject -c "bash -l"
+[openproject@debian] cd ~/openproject
+[openproject@debian] gem install passenger
+[openproject@debian] passenger-install-apache2-module</pre>
+<p>Follow the instructions passenger provides. The passenger installer will ask you the question in &#8220;Which languages are you interested in?&#8221;. We are interested only in ruby.</p>
+<p>As told by the installer, add this lines to <code>/etc/apache2/apache2.conf</code>. But before copy&amp;pasting the following lines, check if the content (especially the version numbers!) is the same as the <code>passenger-install-apache2-module</code> installer said. When you&#8217;re in doubt, do what passenger tells you.</p>
+<pre class="lang:default decode:true">LoadModule passenger_module /home/openproject/.rvm/gems/ruby-2.1.4/gems/passenger-4.0.53/buildout/apache2/mod_passenger.so
+&lt;IfModule mod_passenger.c&gt;
+  PassengerRoot /home/openproject/.rvm/gems/ruby-2.1.4/gems/passenger-4.0.53
+  PassengerDefaultRuby /home/openproject/.rvm/gems/ruby-2.1.4/wrappers/ruby
+&lt;/IfModule&gt;</pre>
+<p>As the root user, create the file <code>/etc/apache2/conf.d/openproject.conf</code> with the following contents:</p>
+<pre class="lang:default decode:true">&lt;VirtualHost *:80&gt;
+   ServerName www.myopenprojectsite.com
+   # !!! Be sure to point DocumentRoot to 'public'!
+   DocumentRoot /home/openproject/openproject/public
+   &lt;Directory /home/openproject/openproject/public&gt;
+      # This relaxes Apache security settings.
+      AllowOverride all
+      # MultiViews must be turned off.
+      Options -MultiViews
+      # Uncomment this if you're on Apache &gt;= 2.4:
+      #Require all granted
+   &lt;/Directory&gt;
+&lt;/VirtualHost&gt;</pre>
+<h3><a class="anchor" href="https://github.com/opf/openproject/blob/hotfix/user_guide/doc/installation_guides/ubuntu-trusty-14-04-lts-and-debian-wheezy-7-7-production.md#only-on-ubuntu-1" name="user-content-only-on-ubuntu-1"></a>Only on Ubuntu</h3>
+<p>First, exit the current bash session with the <code>openproject</code> user, so that we are again in a root shell. Then, we prepare apache and passenger:</p>
+<pre class="lang:default decode:true">[openproject@ubuntu] exit
+[root@ubuntu] apt-get install apache2 libcurl4-gnutls-dev apache2-threaded-dev libapr1-dev libaprutil1-dev
+[root@ubuntu] chmod o+x "/home/openproject"</pre>
+<p>As a reference, the following version of apache was installed:</p>
+<pre class="lang:default decode:true">[root@ubuntu] apache --version</pre>
+<p>Now, the Passenger gem is installed and integrated into apache.</p>
+<pre class="lang:default decode:true">[root@ubuntu] su - openproject -c "bash -l"
+[openproject@ubuntu] cd ~/openproject
+[openproject@ubuntu] gem install passenger
+[openproject@ubuntu] passenger-install-apache2-module</pre>
+<p>Follow the instructions passenger provides. The passenger installer will ask you the question in &#8220;Which languages are you interested in?&#8221;. We are interested only in ruby.</p>
+<p>The passenger installer tells us to edit the apache config files. To do this, continue as the root user:</p>
+<pre class="lang:default decode:true">[openproject@ubuntu] exit</pre>
+<p>As told by the installer, create the file <code>/etc/apache2/mods-available/passenger.load</code> and add the following line. But before copy&amp;pasting the following lines, check if the content (especially the version numbers!) is the same as the <code>passenger-install-apache2-module</code> installer said. When you&#8217;re in doubt, do what passenger tells you.</p>
+<pre class="lang:default decode:true">LoadModule passenger_module /home/openproject/.rvm/gems/ruby-2.1.4/gems/passenger-4.0.53/buildout/apache2/mod_passenger.so</pre>
+<p>Then create the file <code>/etc/apache2/mods-available/passenger.conf</code> with the following contents (again, take care of the version numbers!):</p>
+<pre class="lang:default decode:true ">&lt;IfModule mod_passenger.c&gt;
+  PassengerRoot /home/openproject/.rvm/gems/ruby-2.1.4/gems/passenger-4.0.53
+  PassengerDefaultRuby /home/openproject/.rvm/gems/ruby-2.1.4/wrappers/ruby
+&lt;/IfModule&gt;</pre>
+<p>&nbsp;</p>
+<p>Then run:</p>
+<pre class="lang:default decode:true">[root@openproject] a2enmod passenger</pre>
+<p>As the root user, create the file <code>/etc/apache2/sites-available/openproject.conf</code> with the following contents:</p>
+<pre class="lang:default decode:true">&lt;VirtualHost *:80&gt;
+   ServerName www.myopenprojectsite.com
+   # !!! Be sure to point DocumentRoot to 'public'!
+   DocumentRoot /home/openproject/openproject/public
+   &lt;Directory /home/openproject/openproject/public&gt;
+      # This relaxes Apache security settings.
+      AllowOverride all
+      # MultiViews must be turned off.
+      Options -MultiViews
+      # Uncomment this if you're on Apache &gt;= 2.4:
+      Require all granted
+   &lt;/Directory&gt;
+&lt;/VirtualHost&gt;</pre>
+<p>Let&#8217;s enable our new <code>openproject</code> site (and disable the default site, if necessary)</p>
+<pre class="lang:default decode:true">[root@ubuntu] a2dissite 000-default
+[root@ubuntu] a2ensite openproject</pre>
+<h3><a class="anchor" href="https://github.com/opf/openproject/blob/hotfix/user_guide/doc/installation_guides/ubuntu-trusty-14-04-lts-and-debian-wheezy-7-7-production.md#debian-and-ubuntu-1" name="user-content-debian-and-ubuntu-1"></a>Debian and Ubuntu</h3>
+<p>Now, we (re-)start Apache:</p>
+<pre class="lang:default decode:true">[root@all] service apache2 reload</pre>
+<p>Your OpenProject installation should be accessible on port 80 (http). A default admin-account is created for you having the following credentials:</p>
+<pre class="lang:default decode:true">Username: admin
+Password: admin</pre>
+<p>Please, change the password on the first login. Also, we highly recommend to configure the SSL module in Apache for https communication.</p>
+<h2><a class="anchor" href="https://github.com/opf/openproject/blob/hotfix/user_guide/doc/installation_guides/ubuntu-trusty-14-04-lts-and-debian-wheezy-7-7-production.md#activate-background-jobs" name="user-content-activate-background-jobs"></a>Activate Background Jobs</h2>
+<p>OpenProject sends (some) mails asynchronously by using background jobs. All such jobs are collected in a queue, so that a separate process can work on them. This means that we have to start the background worker. To automate this, we put the background worker into a cronjob.</p>
+<pre class="lang:default decode:true">[root@all] su - openproject -c "bash -l"
+[openproject@all] crontab -e</pre>
+<p>Now, the crontab file opens in the standard editor. Add the following entry to the file:</p>
+<pre class="lang:default decode:true ">*/1 * * * * cd /home/openproject/openproject; /home/openproject/.rvm/gems/ruby-2.1.4/wrappers/rake jobs:workoff<code> </code></pre>
+<p>This will start the worker job every minute.</p>
+<h2><a class="anchor" href="https://github.com/opf/openproject/blob/hotfix/user_guide/doc/installation_guides/ubuntu-trusty-14-04-lts-and-debian-wheezy-7-7-production.md#follow-ups" name="user-content-follow-ups"></a>Follow-Ups</h2>
+<p>Your OpenProject installation is ready to run. However, there are some things to consider:</p>
+<ul class="task-list">
+<li>Regularly backup your OpenProject installation. See the <a href="https://community.openproject.org/projects/openproject/wiki/Create_Backups">backup guide</a> for details.</li>
+<li>Serve OpenProject via https</li>
+<li>Enable Repositories for your OpenProject projects</li>
+<li>Watch for OpenProject updates. We advise to always run the latest stable version of OpenProject (especially for security updates). You can find out about new OpenProject releases in our <a href="https://community.openproject.org/projects/openproject/news">news</a>, or on <a href="https://twitter.com/openproject">twitter</a>.</li>
+</ul>
+<h2><a class="anchor" href="https://github.com/opf/openproject/blob/hotfix/user_guide/doc/installation_guides/ubuntu-trusty-14-04-lts-and-debian-wheezy-7-7-production.md#plug-in-installation-optional" name="user-content-plug-in-installation-optional"></a>Plug-In Installation (Optional)</h2>
+<p>This step is optional.</p>
+<p>OpenProject can be extended by various plug-ins, which extend OpenProject&#8217;s capabilities. For general information and a list of all plug-ins known to us, refer to to the <a title="Install Plugins" href="../install-plugins/index.html">plug-in page</a>.</p>
+<h2>Troubleshooting</h2>
+<p>You can find the error logs for apache here:</p>
+<pre class="lang:default decode:true">/var/log/apache2/error.log</pre>
+<p>The OpenProject logfile can be found here:</p>
+<pre class="lang:default decode:true">/home/openproject/openproject/log/production.log</pre>
+<p>If an error occurs, it should be logged there.</p>
+<p>If you need to restart the server (for example after a configuration change), do</p>
+<pre class="lang:default decode:true  ">[openproject@all] touch ~/openproject/tmp/restart.txt</pre>
+<h2><a class="anchor" href="https://github.com/opf/openproject/blob/hotfix/user_guide/doc/installation_guides/ubuntu-trusty-14-04-lts-and-debian-wheezy-7-7-production.md#questions-comments-and-feedback" name="user-content-questions-comments-and-feedback"></a>Questions, Comments, and Feedback</h2>
+<p>If you have any further questions, comments, feedback, or an idea to enhance this guide, please take a look at the <a title="Manual Installation Questions" href="../../help/faq/manual-installation-questions/index.html">Frequently Asked Questions </a>or tell us at the appropriate community <a href="https://community.openproject.org/projects/openproject/boards/9">forum</a>. <a href="https://twitter.com/openproject">Follow OpenProject on twitter</a>, and follow the news on <a href="../../index.html">openproject.org</a> to stay up to date.</p>
+                        </div><!-- end of .post-entry -->
+                     </div><!-- end of #post-2539 -->
+
+                            
+        </div>
+
+</div>
+    </section>
+
+    <!-- Section #8 -->
+    <section id="section8" class="clearfix follow-us" data-speed="4" data-type="background">
+        <div class="container">
+            <div id="text-16" class="widget-wrapper widget_text">			<div class="textwidget"><div class="border"></div>
+<fieldset>
+<div><a target="_blank" href="https://twitter.com/openproject"><span class="hide-link">Follow us on</span> <i class="twitter-text"></a></i></div>
+<div><a target="_blank" href="https://github.com/opf/openproject"><span class="hide-link">Fork us on</span> <i class="github-text"></i></a></div>
+</fieldset>
+</div>
+		</div>        </div>
+    </section>
+</div><!-- end of wrapper-->
+
+     
+<!-- Section #9 footer -->
+<footer id="footer" class="footer" data-speed="10" data-type="background">
+    <div class="container">
+        <div class="row-fluid footer-top">
+            <div class="span4">
+            <div id="text-7" class="widget_text">			<div class="textwidget"><ul class="breadcrumb"><li><span>You are here: </span><a href="../../index.html">Home</a><span class="divider">/</span></li><li><a href="../index.html">Download</a></li> <span class="divider">/</span> <li class="current">Manual Installation</li></ul></div>
+		</div>            </div>
+        </div>
+        <div class="row-fluid footer-middle">
+            <div class="span4">
+            <div id="nav_menu-4" class="widget_nav_menu"><div id="widget-title-two" class="widget-title-footer"><h2>DOWNLOAD</h2></div><div class="menu-footer-download-container"><ul id="menu-footer-download" class="menu"><li id="menu-item-2810" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor current-page-parent menu-item-2810"><a href="../index.html">Overview</a></li>
+<li id="menu-item-2811" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2811"><a href="../setup-scenarios/index.html">Setup Scenarios</a></li>
+<li id="menu-item-2812" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2812"><a href="../packaged-installation-core/index.html">Packaged Installation Core</a></li>
+<li id="menu-item-3886" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3886"><a href="../packaged-installation-community/index.html">Packaged Installation Community</a></li>
+<li id="menu-item-2813" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2539 current_page_item menu-item-2813"><a href="index.html">Manual Installation</a></li>
+<li id="menu-item-2814" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2814"><a href="../upgrade-guides/index.html">Upgrade Guide</a></li>
+<li id="menu-item-2815" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2815"><a href="../backup-guide/index.html">Backup Guide</a></li>
+<li id="menu-item-2816" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2816"><a href="../install-plugins/index.html">Install Plugins</a></li>
+<li id="menu-item-2817" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2817"><a href="../../systemrequirements/index.html">System Requirements</a></li>
+<li id="menu-item-2818" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2818"><a href="../release-notes/index.html">Release Notes</a></li>
+</ul></div></div><div id="nav_menu-5" class="widget_nav_menu"><div id="widget-title-two" class="widget-title-footer"><h2>FEATURES</h2></div><div class="menu-footer-features-container"><ul id="menu-footer-features" class="menu"><li id="menu-item-2691" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2691"><a href="../../features/index.html">Overview</a></li>
+<li id="menu-item-85" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-85"><a title="Collaborative Project Planning" href="../../features/work-packages/index.html">Work Packages</a></li>
+<li id="menu-item-87" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-87"><a title="Timelines" href="../../features/timelines/index.html">Timelines</a></li>
+<li id="menu-item-88" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-88"><a title="Agile and Scrum" href="../../features/agile-scrum/index.html">Agile and Scrum</a></li>
+<li id="menu-item-90" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-90"><a title="Wiki" href="../../features/wiki/index.html">Wiki</a></li>
+<li id="menu-item-91" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-91"><a title="Documents" href="../../features/time-and-costs/index.html">Time and Costs</a></li>
+<li id="menu-item-1523" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1523"><a href="../../features/more/index.html">More</a></li>
+</ul></div></div><div id="nav_menu-7" class="widget_nav_menu"><div id="widget-title-two" class="widget-title-footer"><h2>HELP</h2></div><div class="menu-footer-help-container"><ul id="menu-footer-help" class="menu"><li id="menu-item-4426" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4426"><a href="../../category/blog/index.html">Blog</a></li>
+<li id="menu-item-117" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-117"><a href="../../help/user-guides/index.html">User Guides</a></li>
+<li id="menu-item-2404" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2404"><a href="../../help/faq/index.html">FAQ</a></li>
+<li id="menu-item-2405" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2405"><a href="../../help/user-guides/keyboard-shortcuts-access-keys/index.html">Keyboard Shortcuts and Access Keys</a></li>
+<li id="menu-item-2407" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2407"><a href="https://community.openproject.org/projects/openproject/boards">Forum</a></li>
+</ul></div></div>            </div>
+        </div>
+        <div class="row-fluid footer-bottom">
+            <div class="span4">
+            <div id="text-19" class="widget_text"><div id="widget-title-three" class="widget-title-footer"><h2>Language:</h2></div>			<div class="textwidget"></div>
+		</div><div id="icl_lang_sel_widget-2" class="widget_icl_lang_sel_widget"><div id="lang_sel"  >
+    <ul>
+        <li><a href="index.html#" class="lang_sel_sel icl-en">
+                            
+            <img  class="iclflag" src="../../wp-content/plugins/sitepress-multilingual-cms/res/flags/en.png" alt="en"  title="EN" />                                
+            &nbsp;EN</a>                    </li>
+    </ul>    
+</div>
+</div><div id="nav_menu-3" class="widget_nav_menu"><div class="menu-bottom-menu-container"><ul id="menu-bottom-menu" class="menu"><li id="menu-item-29" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29"><a href="../../contact-us/index.html">Contact Us</a></li>
+<li id="menu-item-272" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-272"><a href="../../sitemap_index.xml">Sitemap</a></li>
+<li id="menu-item-28" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28"><a href="../../imprint/index.html">Legal notice</a></li>
+</ul></div></div><div id="text-2" class="widget_text">			<div class="textwidget">&copy; 2015 - OpenProject. All rights reserved.</div>
+		</div>            </div>
+        </div>
+    </div>
+</footer>
+
+<script>jQuery(document).ready(function(){jQuery(".kiwi-logo-carousel-default").bxSlider({mode:"horizontal",speed:500,infiniteLoop:true,hideControlOnEnd:false,captions:false,ticker:false,tickerHover:false,adaptiveHeight:false,responsive:true,pager:false,controls:true,autoControls:false,minSlides:1,maxSlides:4,moveSlides:1,slideWidth:200,auto:true,pause:4000,useCSS:false});jQuery(".kiwi-logo-carousel-landing-page").bxSlider({mode:"horizontal",speed:500,infiniteLoop:true,hideControlOnEnd:false,captions:false,ticker:false,tickerHover:false,adaptiveHeight:false,responsive:true,pager:false,controls:true,autoControls:false,minSlides:1,maxSlides:4,moveSlides:1,slideWidth:200,auto:true,pause:4000,useCSS:false});});</script><script type='text/javascript' src='../../wp-content/themes/BootstrapParallax/js/responsive-scripts-ver=1.1.0.js'></script>
+<script type='text/javascript' src='../../wp-content/themes/BootstrapParallax/js/responsive-plugins-ver=1.1.0.js'></script>
+<script type='text/javascript' src='../../wp-content/themes/BootstrapParallax/js/jquery.colorbox-min-ver=1.3.19.js'></script>
+<script type='text/javascript' src='../../wp-includes/js/comment-reply.min-ver=4.1.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var icl_vars = {"current_language":"en","icl_home":"http:\/\/www.openproject.org\/"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='../../wp-content/plugins/sitepress-multilingual-cms/res/js/sitepress-ver=4.1.js'></script>
+<script type='text/javascript' src='../../wp-content/plugins/kiwi-logo-carousel/third-party/jquery.bxslider/jquery.bxslider-ver=4.1.js'></script>
+
+</body>
+</html>

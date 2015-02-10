@@ -1,0 +1,506 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html class="no-js ie6" lang="en-US" prefix="og: http://ogp.me/ns#"> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js ie7" lang="en-US" prefix="og: http://ogp.me/ns#"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js ie8" lang="en-US" prefix="og: http://ogp.me/ns#"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js" lang="en-US" prefix="og: http://ogp.me/ns#"> <!--<![endif]-->
+<head>
+
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+<title>OpenProject 4.0.4 (and 4.0.3) releasedOpenProject</title>
+
+<link rel="stylesheet" href="../../../../wp-content/plugins/sitepress-multilingual-cms/res/css/language-selector-v=3.1.5.css" type="text/css" media="all" />
+
+<link rel="stylesheet" href="../../../../wp-content/themes/BootstrapParallax/open_icons.css" type="text/css" />
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="pingback" href="../../../../xmlrpc.php" />
+
+<link href="../../../../wp-content/themes/BootstrapParallax/images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+<link href="https://www.openproject.org/wp-content/themes/BootstrapParallax/images/apple-touch-icon.png" rel="apple-touch-icon">
+<link href="../../../../wp-content/themes/BootstrapParallax/images/apple-touch-icon-precomposed.png" rel="apple-touch-icon-precomposed">
+<link href="../../../../wp-content/themes/BootstrapParallax/images/apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes="76x76">
+<link href="../../../../wp-content/themes/BootstrapParallax/images/apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes="120x120">
+<link href="../../../../wp-content/themes/BootstrapParallax/images/apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes="152x152">
+
+<!--[if IE 7]>
+  <link rel="stylesheet" href="../../../../wp-content/themes/BootstrapParallax/css/font-awesome-ie7.min.css">
+<![endif]-->
+
+
+<!-- This site is optimized with the Yoast WordPress SEO plugin v1.7.1 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="OpenProject 4.0.4 (and 4.0.3) have been released which contain several bug fixes."/>
+<link rel="canonical" href="index.html" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="OpenProject 4.0.4 (and 4.0.3) released" />
+<meta property="og:description" content="OpenProject 4.0.4 (and 4.0.3) have been released which contain several bug fixes." />
+<meta property="og:url" content="https://www.openproject.org/2014/12/11/openproject-4-0-4-4-0-3-released/" />
+<meta property="og:site_name" content="OpenProject" />
+<meta property="article:section" content="Blog" />
+<meta property="article:published_time" content="2014-12-11T15:32:35+00:00" />
+<meta property="article:modified_time" content="2015-01-16T16:30:59+00:00" />
+<meta property="og:updated_time" content="2015-01-16T16:30:59+00:00" />
+<!-- / Yoast WordPress SEO plugin. -->
+
+<link rel="alternate" type="application/rss+xml" title="OpenProject &raquo; Feed" href="../../../../feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="OpenProject &raquo; Comments Feed" href="../../../../comments/feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="OpenProject &raquo; OpenProject 4.0.4 (and 4.0.3) released Comments Feed" href="https://www.openproject.org/2014/12/11/openproject-4-0-4-4-0-3-released/feed/" />
+<link rel='stylesheet' id='bxslider-css-css'  href='../../../../wp-content/plugins/kiwi-logo-carousel/third-party/jquery.bxslider/jquery.bxslider-ver=4.1.css' type='text/css' media='' />
+<link rel='stylesheet' id='kiwi-logo-carousel-styles-css'  href='../../../../wp-content/plugins/kiwi-logo-carousel/custom-styles-ver=4.1.css' type='text/css' media='' />
+<link rel='stylesheet' id='bootstrap-styles-css'  href='../../../../wp-content/themes/BootstrapParallax/css/bootstrap-responsive-ver=2.3.1.css' type='text/css' media='all' />
+<link rel='stylesheet' id='bootstrap-css'  href='../../../../wp-content/themes/BootstrapParallax/css/bootstrap-ver=2.3.1.css' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-css'  href='../../../../wp-content/themes/BootstrapParallax/css/font-awesome.min-ver=3.0.css' type='text/css' media='all' />
+<link rel='stylesheet' id='colorbox-css'  href='../../../../wp-content/themes/BootstrapParallax/css/colorbox-ver=1.3.19.css' type='text/css' media='all' />
+<link rel='stylesheet' id='responsive-style-css'  href='../../../../wp-content/themes/BootstrapParallax/style-ver=2.3.1.css' type='text/css' media='all' />
+<!-- This site uses the Google Analytics by Yoast plugin v5.3 - Universal disabled - https://yoast.com/wordpress/plugins/google-analytics/ -->
+<script type="text/javascript">
+
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-42469541-2']);
+	_gaq.push(['_gat._forceSSL']);
+	_gaq.push(['_trackPageview']);
+
+	(function () {
+		var ga = document.createElement('script');
+		ga.type = 'text/javascript';
+		ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(ga, s);
+	})();
+
+</script>
+<!-- / Google Analytics by Yoast -->
+<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js?ver=1.7.1'></script>
+<script type='text/javascript' src='../../../../wp-content/plugins/alter-reset-password-form-action/password-r-ver=4.1.js'></script>
+<script type='text/javascript' src='../../../../wp-content/themes/BootstrapParallax/js/responsive-modernizr-ver=2.5.3.js'></script>
+<script type='text/javascript' src='../../../../wp-content/themes/BootstrapParallax/js/bootstrap-ver=4.1.js'></script>
+<script type='text/javascript' src='../../../../wp-content/themes/BootstrapParallax/js/strap-extras-ver=4.1.js'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="../../../../xmlrpc.php-rsd.xml" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../../../../wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.1" />
+<link rel='shortlink' href='http://www.openproject.org/?p=4114' />
+<meta name="generator" content="WPML ver:3.1.5 stt:1;0" />
+
+<style type="text/css">																																																																																																														
+</style>    <script type="text/javascript">
+    // <![CDATA[
+    jQuery(document).ready(function($){
+        $("a[rel='colorbox']").colorbox({
+                transition:'elastic', 
+                opacity:'0.7', 
+                maxHeight:'90%'
+        });
+        $("a.gallery").colorbox({
+                rel:'group'
+        });
+        $("a[rel='colorboxvideo']").colorbox({
+                iframe:true, 
+                transition:'elastic', 
+                opacity:'0.7',
+                innerWidth:'60%', 
+                innerHeight:'80%'
+        });
+    });  
+    // ]]>
+    </script>
+<style>.section1-main {
+                    background: url("../../../../wp-content/uploads/2014/09/11.jpg") 50% 0 fixed; 
+                }
+                .section4-main {
+                    background-image: url("../../../../wp-content/uploads/2014/09/collaboration-background.jpg");
+                    /* background-repeat: no-repeat; */
+                    background-attachment: fixed;
+                    background-position: 50% 0;
+                }
+                .features-header {
+                    background: url("../../../../wp-content/uploads/2014/09/features.jpg") 50% 0 fixed;
+                }
+                .opensource-header {
+                    background: url("../../../../wp-content/uploads/2014/09/openproject-org-sub-category.jpg") 50% 0 fixed;
+                }
+                .download-header {
+                    background: url("../../../../wp-content/uploads/2014/10/mountains.jpg") 50% 0 fixed;
+                }
+                .blog-header {
+                    background: url("../../../../wp-content/uploads/2014/10/header-blog.jpg") 50% 0 fixed;
+                }
+                .help-header {
+                    background: url("../../../../wp-content/uploads/2014/09/help.jpg") 50% 0 fixed;
+                }
+                .search-header {
+                    background: url("../../../../wp-content/uploads/2014/09/help.jpg") 50% 0 fixed;
+                }
+                .imprint-header {
+                    background: url("../../../../wp-content/uploads/2014/10/imprint.jpg") 50% 0 fixed;
+                }
+                .contact-header {
+                    background: url("../../../../wp-content/uploads/2014/10/imprint.jpg") 50% 0 fixed;
+                }
+                .error-header {
+                    background: url("../../../../wp-content/uploads/2014/10/imprint.jpg") 50% 0 fixed;
+                }
+                </style>
+<link rel="stylesheet" href="../../../../wp-content/themes/BootstrapParallax/build/style1.css" type="text/css" />
+<link rel="stylesheet" href="../../../../wp-content/themes/BootstrapParallax/build/tablet-style.css" type="text/css" />
+<link rel="stylesheet" href="../../../../wp-content/themes/BootstrapParallax/build/style-mobile.css" type="text/css" />
+<!--<script src="--><!--/js/transify.js"></script>-->
+<script src="../../../../wp-content/themes/BootstrapParallax/js/jquery.color-2.1.2.min.js"></script>
+<script src="../../../../wp-content/themes/BootstrapParallax/js/scripts.js"></script>
+<script src="../../../../wp-content/themes/BootstrapParallax/js/top-nav-transify.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!--[if (gte IE 6)&(lte IE 8)]>
+    <script type="text/javascript" src="../../../../wp-content/themes/BootstrapParallax/js/selectivizr.js"></script>
+    <![endif]-->
+
+<style>
+.affix
+{
+    background-color: #fff;
+    width: 100%;
+    top: 0px;
+}
+</style>
+
+</head>
+
+<body class="single single-post postid-4114 single-format-standard">
+                 
+
+         
+        <div id="header">
+  
+        
+       
+	
+    <div class="navbar navbar-fixed-top ">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+
+                       <div id="logo"><a href="../../../../index.html" title="OpenProject" rel="homepage">
+            <img src="../../../../wp-content/uploads/2014/09/logo1.png" alt="OpenProject"/>
+            </a></div><!-- end of #logo -->
+                    
+
+
+
+          <div class="nav-collapse collapse">
+			   <ul id="menu-top-menu" class="nav"><li class="menu-item search-form"><form class="form-search" id="op-search-form" action="http://www.openproject.org/">
+  <div class="input-append">
+    <input type="text" class="span2 search-query show-input-form" placeholder="Search &hellip;" name="s" id="s" value="" />
+    <button type="submit" class="search-btn search-form-active"><i class="icon icon-search3 icon-flip-horizontal"></i></button>
+  </div>
+</form></li><li id="menu-item-365" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-365"><a href="../../../../features/index.html">Features<a href="../../../../features/index.html" class="dropdown-toggle" data-toggle="dropdown"> <i class="icon icon-arrow-right5-2"></i><i class="icon icon-arrow-right5-3"></i></a>
+<ul class="dropdown-menu">
+	<li id="menu-item-463" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-463"><a href="../../../../features/work-packages/index.html">Work Packages</a></li>
+	<li id="menu-item-461" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-461"><a href="../../../../features/timelines/index.html">Timelines</a></li>
+	<li id="menu-item-373" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-373"><a href="../../../../features/agile-scrum/index.html">Agile and Scrum</a></li>
+	<li id="menu-item-462" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-462"><a href="../../../../features/wiki/index.html">Wiki</a></li>
+	<li id="menu-item-460" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-460"><a href="../../../../features/time-and-costs/index.html">Time and Costs</a></li>
+	<li id="menu-item-459" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-459"><a href="../../../../features/more/index.html">More</a></li>
+</ul>
+</li>
+<li id="menu-item-1081" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-1081"><a href="../../../../download/index.html">Download<a href="../../../../download/index.html" class="dropdown-toggle" data-toggle="dropdown"> <i class="icon icon-arrow-right5-2"></i><i class="icon icon-arrow-right5-3"></i></a>
+<ul class="dropdown-menu">
+	<li id="menu-item-3315" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3315"><a href="../../../../download/setup-scenarios/index.html">Setup Scenarios</a></li>
+	<li id="menu-item-3313" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3313"><a href="../../../../download/packaged-installation-core/index.html">Packaged Installation Core</a></li>
+	<li id="menu-item-3887" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3887"><a href="../../../../download/packaged-installation-community/index.html">Packaged Installation Community</a></li>
+	<li id="menu-item-3317" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3317"><a href="../../../../download/manual-installation/index.html">Manual Installation</a></li>
+	<li id="menu-item-3319" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3319"><a href="../../../../download/upgrade-guides/index.html">Upgrade Guide</a></li>
+	<li id="menu-item-3320" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3320"><a href="../../../../download/backup-guide/index.html">Backup Guide</a></li>
+	<li id="menu-item-3321" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3321"><a href="../../../../download/install-plugins/index.html">Install Plugins</a></li>
+	<li id="menu-item-3322" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3322"><a href="../../../../systemrequirements/index.html">System Requirements</a></li>
+	<li id="menu-item-3312" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3312"><a href="../../../../download/release-notes/index.html">Release Notes</a></li>
+</ul>
+</li>
+<li id="menu-item-367" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown menu-item-367"><a href="../../../../help/index.html">Help<a href="../../../../help/index.html" class="dropdown-toggle" data-toggle="dropdown"> <i class="icon icon-arrow-right5-2"></i><i class="icon icon-arrow-right5-3"></i></a>
+<ul class="dropdown-menu">
+	<li id="menu-item-3323" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3323"><a href="../../../../help/user-guides/index.html">User Guides</a></li>
+	<li id="menu-item-3324" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3324"><a href="../../../../help/faq/index.html">FAQ</a></li>
+	<li id="menu-item-3325" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3325"><a href="../../../../help/user-guides/keyboard-shortcuts-access-keys/index.html">Shortcuts</a></li>
+	<li id="menu-item-3329" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3329"><a href="https://community.openproject.org/projects/openproject/boards">Forum</a></li>
+</ul>
+</li>
+<li id="menu-item-959" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-959"><a href="https://openproject-demo.org/"><span><button type="submit" name="Login" class="login">Demo</button></span></a></li>
+</ul>            
+                       </div>
+
+        </div>
+        </div>
+     </div>           
+
+           
+ 
+    </div><!-- end of #header -->
+        
+	    
+    
+<div id="wrapper" class="clearfix blog">
+
+    <!-- Section #1 -->
+    <section id="section1" class="blog-header" data-speed="4" data-type="background">
+        <div class="container">
+            <div id="text-14" class="widget_text">			<div class="textwidget"><div class="banner-text centered centered-sm">
+<h1 class="headline-teaser">Our <em>Blog</em></h1><p>Read our news, ideas & product updates here</p>
+</div></div>
+		</div>        </div>
+    </section>
+
+    <!-- Section #2 -->
+    <section id="section2" class="blog-content double-content clearfix" data-speed="4" data-type="background">
+        <div class="center-wrapper">
+            <div class="blog-menu double-content-menu">
+                
+<div id="sidebar" class="sidebar">
+                
+        
+            <!--<div class="sidebar-title"><h2>Archives</h2></div>-->
+            <div class="blog-menu ug-menu-title">
+                <i class="icon icon-calendar2"></i>Archives            </div>
+            <div class="clearfix"></div>
+            <ul class="menu">	<li><a href='https://www.openproject.org/2015/01/'>January 2015</a></li>
+	<li><a href='../../index.html'>December 2014</a></li>
+	<li><a href='../../../11/index.html'>November 2014</a></li>
+	<li><a href='https://www.openproject.org/2014/10/'>October 2014</a></li>
+	<li><a href='../../../09/index.html'>September 2014</a></li>
+</ul>
+
+
+        
+    </div><!-- end of #widgets -->
+
+
+
+            </div>
+            <div class="double-content-container">
+                <div id="content-blog" class="content-blog">
+                    <div class="part-head visible-phone"><span class="blog-page-title">Blog</span></div>
+                            <div class="workpackage-breadcrumbs clearfix visible-desktop">
+                                <a class="icon icon-home2" href="../../../../index.html"></a><span class="divider"></span>
+                                                                    <ul class="breadcrumb"><li><span>You are here: </span><a href="../../../../index.html">Home</a><span class="divider">/</span></li><li><a href="../../../../category/blog/index.html">Blog</a> <span class="divider">/</span> </li> <li><a href="../../index.html">December 2014</a><span class="divider">/</span></li> <li>OpenProject 4.0.4 (and 4.0.3) released</li></ul>                                                            </div>
+
+
+                            <div id="post-4114" class="post-4114 post type-post status-publish format-standard hentry category-blog">
+                                <div class="clearboth"></div>
+                                <div class="row-fluid post-meta-head">
+
+                                    <div class="span2 post-big-date hidden-phone">
+                                        <span class="big-date-number">11</span>
+                                        <div class="row-fluid">
+                                            <div class="span12">
+                                                <span class="article-month">December</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="span10 post-big-title">
+                                        <h1 class="post-title">OpenProject 4.0.4 (and 4.0.3) released</h1>
+                                        <div class="row-fluid">
+                                            <div class="span12">
+                                                                                                        <span class="meta-link post-author">By: <a href="https://www.openproject.org/author/robin/"
+                                                                                               title="View all posts by Robin Wagner"
+                                                            >Robin Wagner</a>
+                                                    </span>
+                                                    <span class="meta-link post-date">
+                                                <i class="icon icon-calendar"></i> <a href="index.html">December 11, 2014</a>
+                                                    </span>
+                                                    <span class="meta-link post-comments">
+                                                                                                          <span class="comments-link">
+                                                            <a href="index.html#respond" title="Comment on OpenProject 4.0.4 (and 4.0.3) released"><i class="icon icon-quote"></i> 0</a>                                                        </span>
+                                                                                                       </span>
+                                                    </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="post-entry">
+                                    <p><strong>OpenProject 4.0.4 (and 4.0.3) have been released which contain several bug fixes.</strong></p>
+<div class="wiki">
+<p><strong>We advise everyone to update their OpenProject installations to OpenProject 4.0.4.</strong></p>
+<p><span id="more-4114"></span></p>
+<h2>OpenProject 4.0.3</h2>
+<p>OpenProject 4.0.3 fixes several bugs relating to the work package table. In addition, font errors in Chrome have been addressed.</p>
+<ul>
+<li>Under some circumstances no text was displayed when using Chrome. This error has been fixed (<a class="issue work_package status-22 priority-2 closed" title="No text rendered at all on some versions of Chrome (closed)" href="https://community.openproject.org/work_packages/17567">#17567</a>)</li>
+<li>Custom fields of type user and version are now properly displayed in the work package table (<a class="issue work_package status-22 priority-2 closed" title="Missing user links in work package list for custom fields of type user (closed)" href="https://community.openproject.org/work_packages/17660">#17660</a>, <a class="issue work_package status-22 priority-2 closed" title="Custom values for CF of type version not properly displayed in work package list (closed)" href="https://community.openproject.org/work_packages/17630">#17630</a>)</li>
+<li>Wrong error messages when using queries have been addressed (<a class="issue work_package status-22 priority-2 closed" title="Error message &quot;Unable to retrieve query&quot; wrongly displayed when changing WP attributes in query (closed)" href="https://community.openproject.org/work_packages/17572">#17572</a>)</li>
+<li>It is now possible to remove grouping options from queries which was not possible before (<a class="issue work_package status-22 priority-2 closed" title="Removing grouping not saved on existing queries (closed)" href="https://community.openproject.org/work_packages/17570">#17570</a>)</li>
+<li>Errors occuring insubfolder installations of OpenProject have been resolved (<a class="issue work_package status-22 priority-3 closed" title="Parent change via wp-detail view stuck at loading in subfolder installation (closed)" href="https://community.openproject.org/work_packages/17566">#17566</a>, <a class="issue work_package status-22 priority-3 closed" title="Export function throws &quot;object not found&quot; error when used in subfolder installation (closed)" href="https://community.openproject.org/work_packages/17564">#17564</a>)</li>
+<li>It is possible again to display multiple timelines in a wiki page (by using a macro) (<a class="issue work_package status-22 priority-2 closed" title="Not possible to display more than one timeline via macro in wiki (closed)" href="https://community.openproject.org/work_packages/17568">#17568</a>)</li>
+</ul>
+<p>In addition, there has been a small change to the backlogs plugin:</p>
+<ul>
+<li>The function &#8220;Copy tasks&#8221; has been renamed to &#8220;Copy work packages&#8221; when duplicating work packages with children (<a class="issue work_package status-22 priority-2 closed" title="Rename &quot;Copy tasks&quot; to &quot;Copy work packages&quot; on copy of work package (with Backlogs enabled) (closed)" href="https://community.openproject.org/work_packages/17602">#17602</a>).</li>
+</ul>
+<h2>OpenProject 4.0.4</h2>
+<p>An additional bug fix has been added with OpenProject 4.0.4:</p>
+<ul>
+<li>Due to a regression it was not possible to group by attributes which are not displayed in the work package list. This has been resolved (<a class="issue work_package status-22 priority-2 closed" title="500 on WP table on grouping by non displayed column (closed)" href="https://community.openproject.org/work_packages/17738">#17738</a>).</li>
+</ul>
+<h2>List of changes</h2>
+<p>For a complete list of changes, please refer to the <a class="external" href="https://community.openproject.org/versions/543">Changelog v4.0.3</a> and <a class="external" href="https://community.openproject.org/versions/559">Changelog v.4.0.4</a>.</p>
+</div>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+                                    
+
+                                    
+
+                                </div><!-- end of .post-entry -->
+
+                                <div class="post-data">
+                                                                    </div><!-- end of .post-data -->
+
+                                <div class="post-edit"></div>
+                                <div id="comments-template">
+                                    
+
+
+
+
+    								<div id="respond" class="comment-respond">
+				<h3 id="reply-title" class="comment-reply-title">Add your comments here <small><a rel="nofollow" id="cancel-comment-reply-link" href="index.html#respond" style="display:none;">Cancel reply</a></small></h3>
+									<form action="https://www.openproject.org/wp-comments-post.php" method="post" id="commentform" class="comment-form form-horizontal">
+																										<div class="control-group"><label class="control-label" for="author">Name</label> <div class="controls">
+                          <input id="author" name="author" type="text" value="" size="30" required />
+                    </div>
+                </div>
+<div class="control-group">
+                     <label class="control-label" for="email">E-mail</label><div class="controls"><input id="email" name="email" type="email" value="" size="30" required />
+                    </div>
+                </div>
+
+<div class="captchaSizeDivSmall"><img id="si_image_com" class="si-captcha" src="https://www.openproject.org/wp-content/plugins/si-captcha-for-wordpress/captcha/securimage_show.php?si_sm_captcha=1&si_form_id=com&prefix=z3JtmmhyHp5CUrTB" width="132" height="45" alt="CAPTCHA Image" title="CAPTCHA Image" />
+    <input id="si_code_com" name="si_code_com" type="hidden"  value="z3JtmmhyHp5CUrTB" />
+    <div id="si_refresh_com">
+<a href="index.html#" rel="nofollow" title="Refresh Image" onclick="si_captcha_refresh('si_image_com','com','/wp-content/plugins/si-captcha-for-wordpress/captcha','http://www.openproject.org/wp-content/plugins/si-captcha-for-wordpress/captcha/securimage_show.php?si_sm_captcha=1&amp;si_form_id=com&amp;prefix='); return false;">
+      <img class="captchaImgRefresh" src="../../../../wp-content/plugins/si-captcha-for-wordpress/captcha/images/refresh.png" width="22" height="20" alt="Refresh Image" onclick="this.blur();" /></a>
+  </div>
+  </div>
+<br />
+<p><label id="captcha_code_label" for="captcha_code" >Captcha SPAM</label><span class="required"></span>
+<input id="captcha_code" name="captcha_code" type="text" size="6"  />
+</p>												<div class="clearfix"></div>
+                <div class="control-group the-comment-field">
+                   <label class="control-label" for="comment">Message</label>
+                   <div class="controls">
+                      <textarea id="comment" name="comment" rows="8" aria-required="true" required></textarea>
+                   </div>
+                   </div>						<p class="form-allowed-tags" id="form-allowed-tags">You may use these <abbr title="HyperText Markup Language">HTML</abbr> tags and attributes:  <code>&lt;a href=&quot;&quot; title=&quot;&quot;&gt; &lt;abbr title=&quot;&quot;&gt; &lt;acronym title=&quot;&quot;&gt; &lt;b&gt; &lt;blockquote cite=&quot;&quot;&gt; &lt;cite&gt; &lt;code&gt; &lt;del datetime=&quot;&quot;&gt; &lt;em&gt; &lt;i&gt; &lt;q cite=&quot;&quot;&gt; &lt;strike&gt; &lt;strong&gt; </code></p>						<p class="form-submit">
+							<input name="submit" type="submit" id="submit" class="submit" value="Add Comment" />
+							<input type='hidden' name='comment_post_ID' value='4114' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+						</p>
+						        
+        <input type="hidden" name="icl_comment_language" value="en" />
+        
+          
+        					</form>
+							</div><!-- #respond -->
+			
+
+                                </div>
+                            </div><!-- end of #post-4114 -->
+
+                                        </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section #8 -->
+    <section id="section8" class="clearfix follow-us" data-speed="4" data-type="background">
+        <div class="container">
+            <div id="text-16" class="widget-wrapper widget_text">			<div class="textwidget"><div class="border"></div>
+<fieldset>
+<div><a target="_blank" href="https://twitter.com/openproject"><span class="hide-link">Follow us on</span> <i class="twitter-text"></a></i></div>
+<div><a target="_blank" href="https://github.com/opf/openproject"><span class="hide-link">Fork us on</span> <i class="github-text"></i></a></div>
+</fieldset>
+</div>
+		</div>        </div>
+    </section>
+</div><!-- end of wrapper-->
+
+     
+<!-- Section #9 footer -->
+<footer id="footer" class="footer" data-speed="10" data-type="background">
+    <div class="container">
+        <div class="row-fluid footer-top">
+            <div class="span4">
+            <div id="text-7" class="widget_text">			<div class="textwidget"><ul class="breadcrumb"><li><span>You are here: </span><a href="../../../../index.html">Home</a><span class="divider">/</span></li><li><a href="../../../../category/blog/index.html">Blog</a> <span class="divider">/</span> </li> <li><a href="../../index.html">December 2014</a><span class="divider">/</span></li> <li>OpenProject 4.0.4 (and 4.0.3) released</li></ul></div>
+		</div>            </div>
+        </div>
+        <div class="row-fluid footer-middle">
+            <div class="span4">
+            <div id="nav_menu-4" class="widget_nav_menu"><div id="widget-title-two" class="widget-title-footer"><h2>DOWNLOAD</h2></div><div class="menu-footer-download-container"><ul id="menu-footer-download" class="menu"><li id="menu-item-2810" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2810"><a href="../../../../download/index.html">Overview</a></li>
+<li id="menu-item-2811" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2811"><a href="../../../../download/setup-scenarios/index.html">Setup Scenarios</a></li>
+<li id="menu-item-2812" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2812"><a href="../../../../download/packaged-installation-core/index.html">Packaged Installation Core</a></li>
+<li id="menu-item-3886" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3886"><a href="../../../../download/packaged-installation-community/index.html">Packaged Installation Community</a></li>
+<li id="menu-item-2813" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2813"><a href="../../../../download/manual-installation/index.html">Manual Installation</a></li>
+<li id="menu-item-2814" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2814"><a href="../../../../download/upgrade-guides/index.html">Upgrade Guide</a></li>
+<li id="menu-item-2815" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2815"><a href="../../../../download/backup-guide/index.html">Backup Guide</a></li>
+<li id="menu-item-2816" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2816"><a href="../../../../download/install-plugins/index.html">Install Plugins</a></li>
+<li id="menu-item-2817" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2817"><a href="../../../../systemrequirements/index.html">System Requirements</a></li>
+<li id="menu-item-2818" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2818"><a href="../../../../download/release-notes/index.html">Release Notes</a></li>
+</ul></div></div><div id="nav_menu-5" class="widget_nav_menu"><div id="widget-title-two" class="widget-title-footer"><h2>FEATURES</h2></div><div class="menu-footer-features-container"><ul id="menu-footer-features" class="menu"><li id="menu-item-2691" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2691"><a href="../../../../features/index.html">Overview</a></li>
+<li id="menu-item-85" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-85"><a title="Collaborative Project Planning" href="../../../../features/work-packages/index.html">Work Packages</a></li>
+<li id="menu-item-87" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-87"><a title="Timelines" href="../../../../features/timelines/index.html">Timelines</a></li>
+<li id="menu-item-88" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-88"><a title="Agile and Scrum" href="../../../../features/agile-scrum/index.html">Agile and Scrum</a></li>
+<li id="menu-item-90" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-90"><a title="Wiki" href="../../../../features/wiki/index.html">Wiki</a></li>
+<li id="menu-item-91" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-91"><a title="Documents" href="../../../../features/time-and-costs/index.html">Time and Costs</a></li>
+<li id="menu-item-1523" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1523"><a href="../../../../features/more/index.html">More</a></li>
+</ul></div></div><div id="nav_menu-7" class="widget_nav_menu"><div id="widget-title-two" class="widget-title-footer"><h2>HELP</h2></div><div class="menu-footer-help-container"><ul id="menu-footer-help" class="menu"><li id="menu-item-4426" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-4426"><a href="../../../../category/blog/index.html">Blog</a></li>
+<li id="menu-item-117" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-117"><a href="../../../../help/user-guides/index.html">User Guides</a></li>
+<li id="menu-item-2404" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2404"><a href="../../../../help/faq/index.html">FAQ</a></li>
+<li id="menu-item-2405" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2405"><a href="../../../../help/user-guides/keyboard-shortcuts-access-keys/index.html">Keyboard Shortcuts and Access Keys</a></li>
+<li id="menu-item-2407" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2407"><a href="https://community.openproject.org/projects/openproject/boards">Forum</a></li>
+</ul></div></div>            </div>
+        </div>
+        <div class="row-fluid footer-bottom">
+            <div class="span4">
+            <div id="text-19" class="widget_text"><div id="widget-title-three" class="widget-title-footer"><h2>Language:</h2></div>			<div class="textwidget"></div>
+		</div><div id="icl_lang_sel_widget-2" class="widget_icl_lang_sel_widget"><div id="lang_sel"  >
+    <ul>
+        <li><a href="index.html#" class="lang_sel_sel icl-en">
+                            
+            <img  class="iclflag" src="../../../../wp-content/plugins/sitepress-multilingual-cms/res/flags/en.png" alt="en"  title="EN" />                                
+            &nbsp;EN</a>                    </li>
+    </ul>    
+</div>
+</div><div id="nav_menu-3" class="widget_nav_menu"><div class="menu-bottom-menu-container"><ul id="menu-bottom-menu" class="menu"><li id="menu-item-29" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29"><a href="../../../../contact-us/index.html">Contact Us</a></li>
+<li id="menu-item-272" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-272"><a href="../../../../sitemap_index.xml">Sitemap</a></li>
+<li id="menu-item-28" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28"><a href="../../../../imprint/index.html">Legal notice</a></li>
+</ul></div></div><div id="text-2" class="widget_text">			<div class="textwidget">&copy; 2015 - OpenProject. All rights reserved.</div>
+		</div>            </div>
+        </div>
+    </div>
+</footer>
+
+<script>jQuery(document).ready(function(){jQuery(".kiwi-logo-carousel-default").bxSlider({mode:"horizontal",speed:500,infiniteLoop:true,hideControlOnEnd:false,captions:false,ticker:false,tickerHover:false,adaptiveHeight:false,responsive:true,pager:false,controls:true,autoControls:false,minSlides:1,maxSlides:4,moveSlides:1,slideWidth:200,auto:true,pause:4000,useCSS:false});jQuery(".kiwi-logo-carousel-landing-page").bxSlider({mode:"horizontal",speed:500,infiniteLoop:true,hideControlOnEnd:false,captions:false,ticker:false,tickerHover:false,adaptiveHeight:false,responsive:true,pager:false,controls:true,autoControls:false,minSlides:1,maxSlides:4,moveSlides:1,slideWidth:200,auto:true,pause:4000,useCSS:false});});</script><script type='text/javascript' src='../../../../wp-content/plugins/si-captcha-for-wordpress/captcha/si_captcha-ver=1.0.js'></script>
+<script type='text/javascript' src='../../../../wp-content/themes/BootstrapParallax/js/responsive-scripts-ver=1.1.0.js'></script>
+<script type='text/javascript' src='../../../../wp-content/themes/BootstrapParallax/js/responsive-plugins-ver=1.1.0.js'></script>
+<script type='text/javascript' src='../../../../wp-content/themes/BootstrapParallax/js/jquery.colorbox-min-ver=1.3.19.js'></script>
+<script type='text/javascript' src='../../../../wp-includes/js/comment-reply.min-ver=4.1.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var icl_vars = {"current_language":"en","icl_home":"http:\/\/www.openproject.org\/"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='../../../../wp-content/plugins/sitepress-multilingual-cms/res/js/sitepress-ver=4.1.js'></script>
+<script type='text/javascript' src='../../../../wp-content/plugins/kiwi-logo-carousel/third-party/jquery.bxslider/jquery.bxslider-ver=4.1.js'></script>
+
+</body>
+</html>
