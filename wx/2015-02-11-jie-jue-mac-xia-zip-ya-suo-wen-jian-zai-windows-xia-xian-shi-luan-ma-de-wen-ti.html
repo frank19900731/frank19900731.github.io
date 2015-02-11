@@ -1,0 +1,754 @@
+<!-- layout/wx-default.html -->
+
+<!-- head.html -->
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <!-- 标签页标题 -->
+  <title>解决 Mac 下 zip 压缩文件在 Windows 中显示乱码的问题 - Blog of 太极儒</title>
+  <meta name="author" content="Frank Song">
+  <!-- 定义description变量，如果有则用，没有则是正文，前150字 -->
+  
+  <meta name="description" content="目录 问题描述 解决方案 Keka 右键菜单添加 p7zip 压缩 总结 附录 The Unarchiver Cmd Tools 支持的编码格式 问题描述 Mac 下通过右键菜单中的 Compress 生成的压缩包，在 Windows 下解压缩可能出现乱码，如下图所示。 知乎上关于这个问题的 解答 是 Mac OS X 系统自带的压缩程序对 zip 文件名用 UTF-8 编码，但 zip 文件头中没有声明 PKZIP 高版本增加的 Unicode 位。Windows 会认为文件名是 ANSI 编码，结果显示乱码。 经过简单的资料阅读和测试，我大概验证了下这种解释。 用 locale 命令查看我的 MBP 系统编码，确实是 UTF-8。 系统编码1
+2
+3
+4
+5
+6
+7
+8
+9
+$&gt; locale
+LANG=&quot;zh_CN.UTF-8&quot;
+LC_COLLATE=&quot;zh_CN.UTF-8&quot;
+LC_CTYPE=&quot;zh_CN.UTF-8&quot;
+LC_MESSAGES=&quot;zh_CN.UTF-8&quot;
+LC_MONETARY=&quot;zh_CN.UTF-8&quot;
+LC_NUMERIC=&quot;zh_CN.UTF-8&quot;
+LC_TIME=&quot;zh_CN.UTF-8&quot;
+LC_ALL= 关于 ANSI 编码 ，在中文 Windows 系统中可能是 GBK 编码，而在其他语言的 Windows 系统又可能是别的。可以想见，Mac 下打出的压缩包在不同语言的 Windows 下会乱得各具特色。 当然，并不是所有解压缩软件都会一股脑地用 ANSI 编码进行解压。有的解压软件能够自动识别（文件名）编码并不确定的时候请使用者选择，比如 Mac 下的 The Unarchiver。根据我在中文 Win7 下的测试，不同的解压缩软件对压缩文件的默认“理解”也是不同的，快压会解出乱码，而 7zip、Winrar 则可以正确解码。 一种直观的想法是，可以对文件名给出统一编码格式或者将编码写进压缩文件供解压缩程序读取。然而，Zip files and Encoding – I hate you. 中提到 The Zip spec does not seem to know that &hellip;">
+  <meta name="keywords" content="压缩文件, 乱码, 7z, Keka, The Unarchiver, 编码格式, Zip, Automator, 右键菜单">
+  <meta name="baidu-site-verification" content="7O78rNJCOH" />
+  <meta name="360-site-verification" content="9ee6dda17557079b8855f9c8201b05bb" />
+  <meta name="msvalidate.01" content="408D13BCB6B6CE4973F6CD9E6A9E8195" />
+  <meta name="sogou_site_verification" content="CtgkJPDjga"/>
+  <meta name="chinaz-site-verification" content="081e7651-48c6-4c2f-a569-99321685eab1" />
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://frank19900731.github.io/wx/2015-02-11-jie-jue-mac-xia-zip-ya-suo-wen-jian-zai-windows-xia-xian-shi-luan-ma-de-wen-ti.html">
+  <!-- 网站小图标 -->
+  <link href="/favicon.ico" rel="icon">
+  <link href="/stylesheets/bootstrap/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="/stylesheets/bootstrap/responsive.css" rel="stylesheet" type="text/css">
+  <!-- 网站样式文件 -->
+  <link href="/stylesheets/styles.css" media="screen, projection" rel="stylesheet" type="text/css">
+
+  <link href="/atom.xml" rel="alternate" title="Blog of 太极儒" type="application/atom+xml">
+
+  <script src="/javascripts/modernizr.custom.js"></script>
+  <!-- jQuery -->
+  <!--script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script-->
+  <script src="/javascripts/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+
+  <!-- 其它js代码 -->
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <script src="/javascripts/jquery.sidr.min.js"></script>
+  <script src="/javascripts/ah-blue.js"></script>
+  <script type="text/javascript" src="/javascripts/fancybox/jquery.fancybox.pack.js"></script>
+  <link rel="stylesheet" type="text/css" href="/javascripts/fancybox/jquery.fancybox.css" media="screen" />
+
+  <link href="/stylesheets/component.css" rel="stylesheet" type="text/css">
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+        if ($(".img-up")) {
+            $(".img-up").fancybox();
+        }
+        if ($(".imgleft")) {
+            $(".imgleft").parent().parent().css("text-align", "left");
+        }
+        if ($(".imgright")) {
+            $(".imgright").parent().parent().css("text-align", "right");
+        }
+        if ($(".imgcenter")) {
+            $(".imgcenter").parent().parent().css("text-align", "center");
+        }
+        if ($(".imgleft-no-shadow")) {
+            $(".imgleft-no-shadow").parent().parent().css("text-align", "left");
+        }
+        if ($(".imgright-no-shadow")) {
+            $(".imgright-no-shadow").parent().parent().css("text-align", "right");
+        }
+        if ($(".imgcenter-no-shadow")) {
+            $(".imgcenter-no-shadow").parent().parent().css("text-align", "center");
+        }
+
+        if ($(".mod_lost_child_little")) {
+            $(".mod_lost_child_little").css("width", "100%");
+        }
+    });
+  </script>
+
+  <style>
+      body {
+          background-image: none;
+      }
+
+      tr.content {
+          line-height: 300%;
+          border-top: 1px dotted #000;
+      }
+
+      table.mulu {
+          width: 95%; margin: 10px auto 40px;
+      }
+
+      .gutter {
+          width: 7%;
+      }
+  </style>
+
+  <!-- custom/head.html -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      jax: ["input/TeX", "output/HTML-CSS"],
+      tex2jax: {
+        inlineMath: [ ['$', '$'], ["\\(", "\\)"] ],
+        displayMath: [ ['$$', '$$'], ["\\[", "\\]"] ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+      //,
+      //displayAlign: "left",
+      //displayIndent: "2em"
+    });
+
+    function addBlankTargetForLinks () {
+
+      $('a[href^="http"]').each(function(){
+
+        $(this).attr('target', '_blank');
+
+      });
+
+    }
+
+    $(document).bind('DOMNodeInserted', function(event) {
+
+      addBlankTargetForLinks();
+
+    });
+
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"></script>
+  <!-- google_analytics.html -->
+
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-51950124-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head> 
+
+<body style="background-color: rgba(255, 255, 255, 0.3);">
+
+<div class="row-fluid marketing">
+<div class="span2"> </div>
+<div class="span8">
+<div class="container-narrow" style="margin-top: 20px;">
+
+      <div class="masthead">
+        <ul class="nav nav-pills pull-right">
+          <li><a href="/wx/archives/">博客目录</a></li>
+          <li><a href="/blog/2015/02/11/jie-jue-mac-xia-zip-ya-suo-wen-jian-zai-windows-xia-xian-shi-luan-ma-de-wen-ti/">PC端阅读</a></li>
+        </ul>
+        <h3 class="muted">&nbsp;&nbsp;&nbsp;&nbsp;太极儒</h3>
+      </div>
+
+	  <hr style="width: 100%;">
+
+      <div style="padding: 8px 25px 8px 25px;">
+        <h1>
+          解决 Mac 下 Zip 压缩文件在 Windows 中显示乱码的问题
+        </h1>
+
+        <div class="article-date" style="margin-bottom: 40px;">
+            <!-- post/date.html -->
+<!-- 文章日期显示 -->
+
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2015-02-11T21:14:26+08:00" pubdate data-updated="true">Feb 11<span>th</span>, 2015</time>
+        </div>
+      <p><strong>目录</strong></p>
+
+<ul id="markdown-toc">
+  <li><a href="#section">问题描述</a></li>
+  <li><a href="#section-1">解决方案</a>    <ul>
+      <li><a href="#keka">Keka</a></li>
+      <li><a href="#p7zip-">右键菜单添加 p7zip 压缩</a></li>
+    </ul>
+  </li>
+  <li><a href="#section-2">总结</a></li>
+  <li><a href="#section-3">附录</a>    <ul>
+      <li><a href="#the-unarchiver-cmd-tools-">The Unarchiver Cmd Tools 支持的编码格式</a></li>
+    </ul>
+  </li>
+</ul>
+
+<!-- excerpt start -->
+
+<h2 id="section">问题描述</h2>
+
+<p>Mac 下通过<strong>右键菜单中的 Compress</strong> 生成的压缩包，在 Windows 下解压缩可能出现乱码，如下图所示。</p>
+
+<p><a href="/img/post/2015-2/5.png" class="img-up" title="Windows 上解压缩乱码"><img class="imgcenter" src="/img/post/2015-2/5.png" width="80%" title="Windows 上解压缩乱码" /></a></p>
+
+<p>知乎上关于这个问题的 <a href="http://www.zhihu.com/question/19646289">解答</a> 是</p>
+
+<blockquote>
+  <p>Mac OS X 系统自带的压缩程序对 zip 文件名用 UTF-8 编码，但 zip 文件头中没有声明 PKZIP 高版本增加的 Unicode 位。Windows 会认为文件名是 ANSI 编码，结果显示乱码。</p>
+</blockquote>
+
+<p>经过简单的资料阅读和测试，我大概验证了下这种解释。</p>
+
+<!-- excerpt end -->
+
+<p>用 <code>locale</code> 命令查看我的 MBP 系统编码，确实是 UTF-8。</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>系统编码</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+</pre></td><td class="code"><pre><code class="bash"><span class="line"><span class="nv">$&gt;</span> locale
+</span><span class="line"><span class="nv">LANG</span><span class="o">=</span><span class="s2">&quot;zh_CN.UTF-8&quot;</span>
+</span><span class="line"><span class="nv">LC_COLLATE</span><span class="o">=</span><span class="s2">&quot;zh_CN.UTF-8&quot;</span>
+</span><span class="line"><span class="nv">LC_CTYPE</span><span class="o">=</span><span class="s2">&quot;zh_CN.UTF-8&quot;</span>
+</span><span class="line"><span class="nv">LC_MESSAGES</span><span class="o">=</span><span class="s2">&quot;zh_CN.UTF-8&quot;</span>
+</span><span class="line"><span class="nv">LC_MONETARY</span><span class="o">=</span><span class="s2">&quot;zh_CN.UTF-8&quot;</span>
+</span><span class="line"><span class="nv">LC_NUMERIC</span><span class="o">=</span><span class="s2">&quot;zh_CN.UTF-8&quot;</span>
+</span><span class="line"><span class="nv">LC_TIME</span><span class="o">=</span><span class="s2">&quot;zh_CN.UTF-8&quot;</span>
+</span><span class="line"><span class="nv">LC_ALL</span><span class="o">=</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>关于 <a href="http://baike.baidu.com/subview/185282/6215666.htm">ANSI 编码</a> ，在中文 Windows 系统中可能是 GBK 编码，而在其他语言的 Windows 系统又可能是别的。可以想见，Mac 下打出的压缩包在不同语言的 Windows 下会<strong>乱得各具特色</strong>。</p>
+
+<p>当然，并不是所有解压缩软件都会一股脑地用 ANSI 编码进行解压。有的解压软件能够<strong>自动识别（文件名）编码</strong>并不确定的时候请使用者选择，比如 Mac 下的 <a href="http://unarchiver.c3.cx/unarchiver">The Unarchiver</a>。根据我在中文 Win7 下的测试，不同的解压缩软件对压缩文件的默认“理解”也是不同的，快压会解出乱码，而 7zip、Winrar 则可以正确解码。</p>
+
+<p>一种直观的想法是，可以<strong>对文件名给出统一编码格式</strong>或者<strong>将编码写进压缩文件供解压缩程序读取</strong>。然而，<a href="http://marcosc.com/2008/12/zip-files-and-encoding-i-hate-you/">Zip files and Encoding – I hate you.</a> 中提到</p>
+
+<blockquote>
+  <p>The Zip spec does not seem to know that there are normalization models for UTF-8, when there are actually 4 (or more, because there is some non-standard ones too!). The Zip file gives no guidance as to how file names inside zip files are to be normalized.</p>
+
+  <p>…</p>
+
+  <p>The Zip spec says that the only supported encodings are CP437 and UTF-8, but everyone has ignored that. Implementers just encode file names however they want (usually byte for byte as they are in the OS… </p>
+</blockquote>
+
+<p>很遗憾，<strong>Mac 自带的 zip 命令</strong>就属于最后一句中 Implementers。虽然我不是很清楚“<strong>文件头中没有声明 PKZIP 高版本增加的 Unicode 位</strong>”中的细节，不过后来通过比较发现，无乱码和有乱码的 zip 文件，以 16进制方式查看时，文件名中<strong>中文字符的编码是一样的</strong>，<strong>不同之处确实在 zip 文件头</strong>。</p>
+
+<h2 id="section-1">解决方案</h2>
+
+<h3 id="keka">Keka</h3>
+
+<p>知乎 <a href="http://www.zhihu.com/question/19646289">解答</a> 中顺带给出了解决方案</p>
+
+<blockquote>
+  <p>解决方法：用第三方软件。我推荐 Keka，支持格式多，加密、分卷、压缩比调节等功能都有，还支持中文菜单和界面。最重要的：免费。详细介绍在 <a href="http://t.cn/hGy98k">http://t.cn/hGy98k</a></p>
+</blockquote>
+
+<p>链接里给出的是 <a href="http://www.kekaosx.com/en/">Keka</a> 这个软件，下图是软件运行界面。</p>
+
+<p><a href="/img/post/2015-2/6.png" class="img-up" title="Keka 运行界面"><img class="imgcenter" src="/img/post/2015-2/6.png" width="45%" title="Keka 运行界面" /></a></p>
+
+<p>将需要打入压缩包的文件拖拽到软件界面里即可执行压缩。Keka 可以勾选 <code>Exclude Mac resource forks</code> 选项，这样压缩包中就不会出现 <strong>__MACOSX</strong> 或  <strong>.DS_Store</strong> 文件。经测试，快压的乱码问题也随之消失。</p>
+
+<p>然而，由于此软件图标过于丑陋<strong>甚至会引发不适</strong>，使得一些用户不得不舍弃之。其实把 <code>/Applications/Keka.app/Contents/Resources</code> 下的 icns 图标文件替换下就好了。</p>
+
+<p><a href="/img/post/2015-2/7.png" class="img-up" title="Keka Logo"><img class="imgcenter" src="/img/post/2015-2/7.png" width="40%" title="Keka Logo" /></a></p>
+
+<p>以上为第一种方法。</p>
+
+<ol>
+  <li><a href="http://www.kekaosx.com/en/">Keka</a>，可行。</li>
+  <li>上传到百度文库然后下载，无效。</li>
+  <li>使用 YemuZip 等号称与 Windows 兼容的软件，无效，仅能删除 .DS_Store 一类的文件。</li>
+  <li>修改后缀 zip 为 rar，无效。</li>
+  <li>使用 p7zip 命令行，可行。</li>
+</ol>
+
+<p>2 - 4 分别是网上给出的“可行”方案，由于没有触及<strong>文件名编码格式</strong>这个核心问题，所以都不可行。</p>
+
+<p>第 5 种方案 7z 命令行是可行的，下一段中会介绍。其实 <strong>Keka 也是基于 7z 压缩的</strong>，一方面可见 <code>/Applications/Keka.app/Contents/Resources</code> 目录下的可执行文件，另一方面，我对比了 Keka 和 7z 对同一个文本文件的压缩结果，<strong>二进制表示完全一致</strong>。</p>
+
+<h3 id="p7zip-">右键菜单添加 p7zip 压缩</h3>
+
+<p>首先通过 <code>brew install p7zip</code> 安装 p7zip，其它安装方式可见 <a href="http://www.7-zip.org/download.html">官网</a>。</p>
+
+<p>7z 命令的使用方法是</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>7z help</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+<span class="line-number">11</span>
+<span class="line-number">12</span>
+<span class="line-number">13</span>
+<span class="line-number">14</span>
+<span class="line-number">15</span>
+<span class="line-number">16</span>
+<span class="line-number">17</span>
+<span class="line-number">18</span>
+<span class="line-number">19</span>
+<span class="line-number">20</span>
+<span class="line-number">21</span>
+<span class="line-number">22</span>
+<span class="line-number">23</span>
+<span class="line-number">24</span>
+<span class="line-number">25</span>
+<span class="line-number">26</span>
+<span class="line-number">27</span>
+<span class="line-number">28</span>
+<span class="line-number">29</span>
+<span class="line-number">30</span>
+<span class="line-number">31</span>
+<span class="line-number">32</span>
+<span class="line-number">33</span>
+<span class="line-number">34</span>
+</pre></td><td class="code"><pre><code class="bash"><span class="line"><span class="nv">$&gt;</span> 7z
+</span><span class="line">Usage: 7z &lt;<span class="nb">command</span>&gt; <span class="o">[</span>&lt;switches&gt;...<span class="o">]</span> &lt;archive_name&gt; <span class="o">[</span>&lt;file_names&gt;...<span class="o">]</span>
+</span><span class="line">       <span class="o">[</span>&lt;@listfiles...&gt;<span class="o">]</span>
+</span><span class="line">
+</span><span class="line">&lt;Commands&gt;
+</span><span class="line">  a: Add files to archive
+</span><span class="line">  b: Benchmark
+</span><span class="line">  d: Delete files from archive
+</span><span class="line">  e: Extract files from archive <span class="o">(</span>without using directory names<span class="o">)</span>
+</span><span class="line">  l: List contents of archive
+</span><span class="line">  t: Test integrity of archive
+</span><span class="line">  u: Update files to archive
+</span><span class="line">  x: eXtract files with full paths
+</span><span class="line">&lt;Switches&gt;
+</span><span class="line">  -ai<span class="o">[</span>r<span class="o">[</span>-|0<span class="o">]]{</span>@listfile|!wildcard<span class="o">}</span>: Include archives
+</span><span class="line">  -ax<span class="o">[</span>r<span class="o">[</span>-|0<span class="o">]]{</span>@listfile|!wildcard<span class="o">}</span>: eXclude archives
+</span><span class="line">  -bd: Disable percentage indicator
+</span><span class="line">  -i<span class="o">[</span>r<span class="o">[</span>-|0<span class="o">]]{</span>@listfile|!wildcard<span class="o">}</span>: Include filenames
+</span><span class="line">  -m<span class="o">{</span>Parameters<span class="o">}</span>: <span class="nb">set </span>compression Method
+</span><span class="line">  -o<span class="o">{</span>Directory<span class="o">}</span>: <span class="nb">set </span>Output directory
+</span><span class="line">  -p<span class="o">{</span>Password<span class="o">}</span>: <span class="nb">set </span>Password
+</span><span class="line">  -r<span class="o">[</span>-|0<span class="o">]</span>: Recurse subdirectories
+</span><span class="line">  -scs<span class="o">{</span>UTF-8 | WIN | DOS<span class="o">}</span>: <span class="nb">set </span>charset <span class="k">for </span>list files
+</span><span class="line">  -sfx<span class="o">[{</span>name<span class="o">}]</span>: Create SFX archive
+</span><span class="line">  -si<span class="o">[{</span>name<span class="o">}]</span>: <span class="nb">read </span>data from stdin
+</span><span class="line">  -slt: show technical information <span class="k">for </span>l <span class="o">(</span>List<span class="o">)</span> <span class="nb">command</span>
+</span><span class="line">  -so: write data to stdout
+</span><span class="line">  -ssc<span class="o">[</span>-<span class="o">]</span>: <span class="nb">set </span>sensitive <span class="k">case </span>mode
+</span><span class="line">  -t<span class="o">{</span>Type<span class="o">}</span>: Set <span class="nb">type </span>of archive
+</span><span class="line">  -u<span class="o">[</span>-<span class="o">][</span>p#<span class="o">][</span>q#<span class="o">][</span>r#<span class="o">][</span>x#<span class="o">][</span>y#<span class="o">][</span>z#<span class="o">][</span>!newArchiveName<span class="o">]</span>: Update options
+</span><span class="line">  -v<span class="o">{</span>Size<span class="o">}[</span>b|k|m|g<span class="o">]</span>: Create volumes
+</span><span class="line">  -w<span class="o">[{</span>path<span class="o">}]</span>: assign Work directory. Empty path means a temporary directory
+</span><span class="line">  -x<span class="o">[</span>r<span class="o">[</span>-|0<span class="o">]]]{</span>@listfile|!wildcard<span class="o">}</span>: eXclude filenames
+</span><span class="line">  -y: assume Yes on all queries
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>我们将要用到的参数是</p>
+
+<ul>
+  <li>a 添加文件到压缩包；</li>
+  <li>-t 压缩文件格式；</li>
+  <li>-r 递归调用；</li>
+  <li>-xr@ 列表文件，记录不希望被打入压缩包的文件/文件夹的名称。</li>
+</ul>
+
+<p>我们希望在 Automator 中创建一个服务，接收文件名或文件夹名作为输入参数，编写脚本调用 7z 命令对输入文件进行压缩并输出到源文件夹；添加这个服务到右键菜单中，用法与系统自带的 Compress 相同，我们将其命名为 <code>Compress with 7z</code>。</p>
+
+<p>一个动态效果是</p>
+
+<p><a href="/img/post/2015-2/1.gif" class="img-up" title="运行效果"><img class="imgcenter" src="/img/post/2015-2/1.gif" width="60%" title="运行效果" /></a></p>
+
+<p>以下是具体操作步骤。</p>
+
+<ul>
+  <li>打开 Automator，新建服务（Service）；</li>
+  <li>Service receives selected <strong>files or folders</strong>, in <strong>any application</strong>；</li>
+  <li>搜索框输入 shell，拖拽 Run Shell Script 到右侧；</li>
+  <li>输入压缩脚本（之后详述）；</li>
+  <li>保存，将这个系统服务命名为 <code>Compress with 7z</code>；</li>
+  <li>进入 系统设置（System Preferences），选择 Keyboard -&gt; Shortcuts -&gt; Services，在 Files and Folders 列表中找到 <code>Compress with 7z</code>，勾选，设置快捷键（可选，如果无效则可能是冲突，换个试试）。</li>
+</ul>
+
+<p>操作完成后，Automator 的显示为</p>
+
+<p><a href="/img/post/2015-2/8.png" class="img-up" title="Automator Compress with 7z"><img class="imgcenter" src="/img/post/2015-2/8.png" width="90%" title="Automator Compress with 7z" /></a></p>
+
+<p>系统设置（System Preferences）显示为</p>
+
+<p><a href="/img/post/2015-2/10.png" class="img-up" title="系统设置"><img class="imgcenter" src="/img/post/2015-2/10.png" width="70%" title="系统设置" /></a></p>
+
+<p>右键菜单显示为</p>
+
+<p><a href="/img/post/2015-2/9.png" class="img-up" title="右键菜单"><img class="imgcenter" src="/img/post/2015-2/9.png" width="40%" title="右键菜单" /></a></p>
+
+<p>关于<strong>添加右键菜单项</strong>可以参考 <a href="http://www.hongkiat.com/blog/customize-mac-right-click-menu/">Create Customize Shortcut In Mac’s Right Click Menu [Guide]</a>。要注意的是，如果当前操作关联 5 个以上 Service，则这些 Service 会以二级菜单的形式显示，所以尽量在系统设置（System Preferences）-&gt; Keyboard 中把没用的勾选掉。</p>
+
+<p><a href="/img/post/2015-2/11.png" class="img-up" title="右键菜单，Service 较多"><img class="imgcenter" src="/img/post/2015-2/11.png" width="60%" title="右键菜单，Service 较多" /></a></p>
+
+<p>最后介绍脚本编写，参考自 <a href="http://superuser.com/questions/91147/how-to-set-mac-os-xs-default-compression-format">How to set Mac OS X’s Default Compression Format?</a>，给出代码和注释版代码。</p>
+
+<p>代码</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>压缩脚本</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+<span class="line-number">11</span>
+<span class="line-number">12</span>
+<span class="line-number">13</span>
+<span class="line-number">14</span>
+</pre></td><td class="code"><pre><code class="bash"><span class="line"><span class="nb">set</span> -e
+</span><span class="line"><span class="nv">compress_method</span><span class="o">=</span><span class="s2">&quot;7z&quot;</span>
+</span><span class="line"><span class="o">[[</span> <span class="nv">$# </span><span class="o">=</span> 1 <span class="o">]]</span> <span class="o">&amp;&amp;</span> <span class="nv">name</span><span class="o">=</span><span class="k">${</span><span class="nv">1</span><span class="p">##*/</span><span class="k">}</span> <span class="o">||</span> <span class="nv">name</span><span class="o">=</span>archive
+</span><span class="line"><span class="nv">base</span><span class="o">=</span><span class="k">${</span><span class="nv">1</span><span class="p">%/*</span><span class="k">}</span>
+</span><span class="line"><span class="nb">cd</span> <span class="s2">&quot;$base&quot;</span>
+</span><span class="line">
+</span><span class="line"><span class="nv">i</span><span class="o">=</span>2
+</span><span class="line"><span class="o">[[</span> -e <span class="s2">&quot;$name.$compress_method&quot;</span> <span class="o">]]</span> <span class="o">&amp;&amp;</span> <span class="nv">name</span><span class="o">=</span><span class="s2">&quot;$name-$i&quot;</span>
+</span><span class="line"><span class="k">while</span> <span class="o">[[</span> -e <span class="s2">&quot;$name.$compress_method&quot;</span> <span class="o">]]</span>; <span class="k">do </span><span class="nv">name</span><span class="o">=</span><span class="s2">&quot;${name%??}-$((++i))&quot;</span>; <span class="k">done</span>
+</span><span class="line">
+</span><span class="line"><span class="nb">echo</span> <span class="s2">&quot;.DS_Store&quot;</span> &gt;&gt; .exclude_file_list
+</span><span class="line">/usr/local/bin/7z a -r -t<span class="s2">&quot;$compress_method&quot;</span> ./<span class="s2">&quot;$name.$compress_method&quot;</span> <span class="s2">&quot;${@#&quot;</span><span class="nv">$base</span><span class="s2">&quot;/}&quot;</span> -xr@.exclude_file_list
+</span><span class="line">rm .exclude_file_list
+</span><span class="line">open -R ./<span class="s2">&quot;$name.$compress_method&quot;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>注释版代码</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>压缩脚本 注释版</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+<span class="line-number">11</span>
+<span class="line-number">12</span>
+<span class="line-number">13</span>
+<span class="line-number">14</span>
+<span class="line-number">15</span>
+<span class="line-number">16</span>
+<span class="line-number">17</span>
+<span class="line-number">18</span>
+<span class="line-number">19</span>
+<span class="line-number">20</span>
+<span class="line-number">21</span>
+<span class="line-number">22</span>
+<span class="line-number">23</span>
+<span class="line-number">24</span>
+<span class="line-number">25</span>
+<span class="line-number">26</span>
+<span class="line-number">27</span>
+</pre></td><td class="code"><pre><code class="bash"><span class="line"><span class="nb">set</span> -e
+</span><span class="line"><span class="c"># 设置压缩文件格式，可以修改为 zip、rar 等</span>
+</span><span class="line"><span class="nv">compress_method</span><span class="o">=</span><span class="s2">&quot;7z&quot;</span>
+</span><span class="line"><span class="c"># 如果只有一个文件，则将压缩包命名为 文件名.7z；</span>
+</span><span class="line"><span class="c"># 如果有多个文件，则将压缩包命名为 archive.7z。</span>
+</span><span class="line"><span class="c"># ${1##*/} 的写法是路径模式匹配，参见 http://blog.sina.com.cn/s/blog_ac9fdc0b0101ls9n.html</span>
+</span><span class="line"><span class="o">[[</span> <span class="nv">$# </span><span class="o">=</span> 1 <span class="o">]]</span> <span class="o">&amp;&amp;</span> <span class="nv">name</span><span class="o">=</span><span class="k">${</span><span class="nv">1</span><span class="p">##*/</span><span class="k">}</span> <span class="o">||</span> <span class="nv">name</span><span class="o">=</span>archive
+</span><span class="line"><span class="c"># ${1%/*} 仍是路径模式匹配，获得待压缩文件、文件夹所在的文件夹</span>
+</span><span class="line"><span class="nv">base</span><span class="o">=</span><span class="k">${</span><span class="nv">1</span><span class="p">%/*</span><span class="k">}</span>
+</span><span class="line"><span class="nb">cd</span> <span class="s2">&quot;$base&quot;</span>
+</span><span class="line">
+</span><span class="line"><span class="c"># 新压缩包编号递增，防止重名</span>
+</span><span class="line"><span class="nv">i</span><span class="o">=</span>2
+</span><span class="line"><span class="o">[[</span> -e <span class="s2">&quot;$name.$compress_method&quot;</span> <span class="o">]]</span> <span class="o">&amp;&amp;</span> <span class="nv">name</span><span class="o">=</span><span class="s2">&quot;$name-$i&quot;</span>
+</span><span class="line"><span class="c"># ${name%??} 仍是路径模式匹配，删除最后两个字符，可以想见，编号是两位数及以上就不对了，不过 0-9 共 10 个也是够了</span>
+</span><span class="line"><span class="k">while</span> <span class="o">[[</span> -e <span class="s2">&quot;$name.$compress_method&quot;</span> <span class="o">]]</span>; <span class="k">do </span><span class="nv">name</span><span class="o">=</span><span class="s2">&quot;${name%??}-$((++i))&quot;</span>; <span class="k">done</span>
+</span><span class="line">
+</span><span class="line"><span class="c"># 创建列表文件，该文件记录不希望被打入压缩包的文件/文件夹的名称，可以使用正则表达式</span>
+</span><span class="line"><span class="nb">echo</span> <span class="s2">&quot;.DS_Store&quot;</span> &gt;&gt; .exclude_file_list
+</span><span class="line"><span class="c"># 调用 7z 进行压缩</span>
+</span><span class="line"><span class="c"># ${@#&quot;$base&quot;/} 是路径匹配，去除输入的文件列表的路径前缀</span>
+</span><span class="line"><span class="c"># -xr@.exclude_file_list 指定列表文件</span>
+</span><span class="line">/usr/local/bin/7z a -r -t<span class="s2">&quot;$compress_method&quot;</span> ./<span class="s2">&quot;$name.$compress_method&quot;</span> <span class="s2">&quot;${@#&quot;</span><span class="nv">$base</span><span class="s2">&quot;/}&quot;</span> -xr@.exclude_file_list
+</span><span class="line"><span class="c"># 删除列表文件</span>
+</span><span class="line">rm .exclude_file_list
+</span><span class="line"><span class="c"># 打开 Finder，显示压缩结果</span>
+</span><span class="line">open -R ./<span class="s2">&quot;$name.$compress_method&quot;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<h2 id="section-2">总结</h2>
+
+<p>本文总结、探讨了网上关于 <strong>Mac 下的 Zip 压缩包在 Windows 中显示乱码</strong>这一问题的成因与解决方案，并提出了一个<strong>右键菜单添加 p7zip 压缩</strong>的解决方案。</p>
+
+<p>最后，要推荐 <a href="http://unarchiver.c3.cx/commandline">The Unarchiver Cmd Tools</a>，支持不同平台、支持文件名编码的自动识别或指定编码，相信会对常在 Linux、Windows 间转运压缩包的同学有所帮助。</p>
+
+<h2 id="section-3">附录</h2>
+
+<h3 id="the-unarchiver-cmd-tools-">The Unarchiver Cmd Tools 支持的编码格式</h3>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>支持的编码格式</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+<span class="line-number">11</span>
+<span class="line-number">12</span>
+<span class="line-number">13</span>
+<span class="line-number">14</span>
+<span class="line-number">15</span>
+<span class="line-number">16</span>
+<span class="line-number">17</span>
+<span class="line-number">18</span>
+<span class="line-number">19</span>
+<span class="line-number">20</span>
+<span class="line-number">21</span>
+<span class="line-number">22</span>
+<span class="line-number">23</span>
+<span class="line-number">24</span>
+<span class="line-number">25</span>
+<span class="line-number">26</span>
+<span class="line-number">27</span>
+<span class="line-number">28</span>
+<span class="line-number">29</span>
+<span class="line-number">30</span>
+<span class="line-number">31</span>
+<span class="line-number">32</span>
+<span class="line-number">33</span>
+<span class="line-number">34</span>
+<span class="line-number">35</span>
+<span class="line-number">36</span>
+<span class="line-number">37</span>
+<span class="line-number">38</span>
+<span class="line-number">39</span>
+<span class="line-number">40</span>
+<span class="line-number">41</span>
+<span class="line-number">42</span>
+<span class="line-number">43</span>
+<span class="line-number">44</span>
+<span class="line-number">45</span>
+<span class="line-number">46</span>
+<span class="line-number">47</span>
+<span class="line-number">48</span>
+<span class="line-number">49</span>
+<span class="line-number">50</span>
+<span class="line-number">51</span>
+<span class="line-number">52</span>
+<span class="line-number">53</span>
+<span class="line-number">54</span>
+<span class="line-number">55</span>
+<span class="line-number">56</span>
+<span class="line-number">57</span>
+<span class="line-number">58</span>
+<span class="line-number">59</span>
+<span class="line-number">60</span>
+<span class="line-number">61</span>
+<span class="line-number">62</span>
+<span class="line-number">63</span>
+<span class="line-number">64</span>
+<span class="line-number">65</span>
+<span class="line-number">66</span>
+<span class="line-number">67</span>
+<span class="line-number">68</span>
+<span class="line-number">69</span>
+<span class="line-number">70</span>
+<span class="line-number">71</span>
+<span class="line-number">72</span>
+<span class="line-number">73</span>
+<span class="line-number">74</span>
+<span class="line-number">75</span>
+<span class="line-number">76</span>
+<span class="line-number">77</span>
+<span class="line-number">78</span>
+<span class="line-number">79</span>
+<span class="line-number">80</span>
+<span class="line-number">81</span>
+<span class="line-number">82</span>
+<span class="line-number">83</span>
+<span class="line-number">84</span>
+<span class="line-number">85</span>
+<span class="line-number">86</span>
+<span class="line-number">87</span>
+<span class="line-number">88</span>
+<span class="line-number">89</span>
+<span class="line-number">90</span>
+<span class="line-number">91</span>
+<span class="line-number">92</span>
+<span class="line-number">93</span>
+<span class="line-number">94</span>
+<span class="line-number">95</span>
+<span class="line-number">96</span>
+<span class="line-number">97</span>
+<span class="line-number">98</span>
+<span class="line-number">99</span>
+<span class="line-number">100</span>
+<span class="line-number">101</span>
+<span class="line-number">102</span>
+<span class="line-number">103</span>
+</pre></td><td class="code"><pre><code class="bash"><span class="line"><span class="nv">$&gt;</span> unar -encoding list
+</span><span class="line">Available encodings are:
+</span><span class="line">  * macintosh: Western <span class="o">(</span>Mac OS Roman<span class="o">)</span>
+</span><span class="line">  * x-mac-japanese: Japanese <span class="o">(</span>Mac OS<span class="o">)</span>
+</span><span class="line">  * x-mac-trad-chinese: Traditional Chinese <span class="o">(</span>Mac OS<span class="o">)</span>
+</span><span class="line">  * x-mac-korean: Korean <span class="o">(</span>Mac OS<span class="o">)</span>
+</span><span class="line">  * x-mac-arabic: Arabic <span class="o">(</span>Mac OS<span class="o">)</span>
+</span><span class="line">  * x-mac-hebrew: Hebrew <span class="o">(</span>Mac OS<span class="o">)</span>
+</span><span class="line">  * x-mac-greek: Greek <span class="o">(</span>Mac OS<span class="o">)</span>
+</span><span class="line">  * x-mac-cyrillic: Cyrillic <span class="o">(</span>Mac OS<span class="o">)</span>
+</span><span class="line">  * x-mac-devanagari: Devanagari <span class="o">(</span>Mac OS<span class="o">)</span>
+</span><span class="line">  * x-mac-gurmukhi: Gurmukhi <span class="o">(</span>Mac OS<span class="o">)</span>
+</span><span class="line">  * x-mac-gujarati: Gujarati <span class="o">(</span>Mac OS<span class="o">)</span>
+</span><span class="line">  * x-mac-thai: Thai <span class="o">(</span>Mac OS<span class="o">)</span>
+</span><span class="line">  * x-mac-simp-chinese: Simplified Chinese <span class="o">(</span>Mac OS<span class="o">)</span>
+</span><span class="line">  * x-mac-tibetan: Tibetan <span class="o">(</span>Mac OS<span class="o">)</span>
+</span><span class="line">  * x-mac-centraleurroman: Central European <span class="o">(</span>Mac OS<span class="o">)</span>
+</span><span class="line">  * x-mac-symbol: Symbol <span class="o">(</span>Mac OS<span class="o">)</span>
+</span><span class="line">  * x-mac-dingbats: Dingbats <span class="o">(</span>Mac OS<span class="o">)</span>
+</span><span class="line">  * x-mac-turkish: Turkish <span class="o">(</span>Mac OS<span class="o">)</span>
+</span><span class="line">  * x-mac-croatian: Croatian <span class="o">(</span>Mac OS<span class="o">)</span>
+</span><span class="line">  * x-mac-icelandic: Icelandic <span class="o">(</span>Mac OS<span class="o">)</span>
+</span><span class="line">  * x-mac-romanian: Romanian <span class="o">(</span>Mac OS<span class="o">)</span>
+</span><span class="line">  * x-mac-celtic: Celtic <span class="o">(</span>Mac OS<span class="o">)</span>
+</span><span class="line">  * x-mac-gaelic: Gaelic <span class="o">(</span>Mac OS<span class="o">)</span>
+</span><span class="line">  * x-mac-farsi: Farsi <span class="o">(</span>Mac OS<span class="o">)</span>
+</span><span class="line">  * x-mac-ukrainian: Cyrillic <span class="o">(</span>Mac OS Ukrainian<span class="o">)</span>
+</span><span class="line">  * x-mac-inuit: Inuit <span class="o">(</span>Mac OS<span class="o">)</span>
+</span><span class="line">  * utf-16: Unicode <span class="o">(</span>UTF-16<span class="o">)</span>
+</span><span class="line">  * utf-7: Unicode <span class="o">(</span>UTF-7<span class="o">)</span>
+</span><span class="line">  * utf-8: Unicode <span class="o">(</span>UTF-8<span class="o">)</span>
+</span><span class="line">  * utf-32: Unicode <span class="o">(</span>UTF-32<span class="o">)</span>
+</span><span class="line">  * utf-16be: Unicode <span class="o">(</span>UTF-16BE<span class="o">)</span>
+</span><span class="line">  * utf-16le: Unicode <span class="o">(</span>UTF-16LE<span class="o">)</span>
+</span><span class="line">  * utf-32be: Unicode <span class="o">(</span>UTF-32BE<span class="o">)</span>
+</span><span class="line">  * utf-32le: Unicode <span class="o">(</span>UTF-32LE<span class="o">)</span>
+</span><span class="line">  * iso-8859-1: Western <span class="o">(</span>ISO Latin 1<span class="o">)</span>
+</span><span class="line">  * iso-8859-2: Central European <span class="o">(</span>ISO Latin 2<span class="o">)</span>
+</span><span class="line">  * iso-8859-3: Western <span class="o">(</span>ISO Latin 3<span class="o">)</span>
+</span><span class="line">  * iso-8859-4: Central European <span class="o">(</span>ISO Latin 4<span class="o">)</span>
+</span><span class="line">  * iso-8859-5: Cyrillic <span class="o">(</span>ISO 8859-5<span class="o">)</span>
+</span><span class="line">  * iso-8859-6: Arabic <span class="o">(</span>ISO 8859-6<span class="o">)</span>
+</span><span class="line">  * iso-8859-7: Greek <span class="o">(</span>ISO 8859-7<span class="o">)</span>
+</span><span class="line">  * iso-8859-8: Hebrew <span class="o">(</span>ISO 8859-8<span class="o">)</span>
+</span><span class="line">  * iso-8859-9: Turkish <span class="o">(</span>ISO Latin 5<span class="o">)</span>
+</span><span class="line">  * iso-8859-10: Nordic <span class="o">(</span>ISO Latin 6<span class="o">)</span>
+</span><span class="line">  * iso-8859-11: Thai <span class="o">(</span>ISO 8859-11<span class="o">)</span>
+</span><span class="line">  * iso-8859-13: Baltic <span class="o">(</span>ISO Latin 7<span class="o">)</span>
+</span><span class="line">  * iso-8859-14: Celtic <span class="o">(</span>ISO Latin 8<span class="o">)</span>
+</span><span class="line">  * iso-8859-15: Western <span class="o">(</span>ISO Latin 9<span class="o">)</span>
+</span><span class="line">  * iso-8859-16: Romanian <span class="o">(</span>ISO Latin 10<span class="o">)</span>
+</span><span class="line">  * cp437: Latin-US <span class="o">(</span>DOS<span class="o">)</span>
+</span><span class="line">  * cp737: Greek <span class="o">(</span>DOS<span class="o">)</span>
+</span><span class="line">  * cp775: Baltic <span class="o">(</span>DOS<span class="o">)</span>
+</span><span class="line">  * cp850: Western <span class="o">(</span>DOS Latin 1<span class="o">)</span>
+</span><span class="line">  * cp851: Greek <span class="o">(</span>DOS Greek 1<span class="o">)</span>
+</span><span class="line">  * cp852: Central European <span class="o">(</span>DOS Latin 2<span class="o">)</span>
+</span><span class="line">  * cp855: Cyrillic <span class="o">(</span>DOS<span class="o">)</span>
+</span><span class="line">  * cp857: Turkish <span class="o">(</span>DOS<span class="o">)</span>
+</span><span class="line">  * cp860: Portuguese <span class="o">(</span>DOS<span class="o">)</span>
+</span><span class="line">  * cp861: Icelandic <span class="o">(</span>DOS<span class="o">)</span>
+</span><span class="line">  * cp862: Hebrew <span class="o">(</span>DOS<span class="o">)</span>
+</span><span class="line">  * cp863: Canadian French <span class="o">(</span>DOS<span class="o">)</span>
+</span><span class="line">  * cp864: Arabic <span class="o">(</span>DOS<span class="o">)</span>
+</span><span class="line">  * cp865: Nordic <span class="o">(</span>DOS<span class="o">)</span>
+</span><span class="line">  * cp866: Russian <span class="o">(</span>DOS<span class="o">)</span>
+</span><span class="line">  * cp869: Greek <span class="o">(</span>DOS Greek 2<span class="o">)</span>
+</span><span class="line">  * cp874: Thai <span class="o">(</span>Windows, DOS<span class="o">)</span>
+</span><span class="line">  * cp932: Japanese <span class="o">(</span>Windows, DOS<span class="o">)</span>
+</span><span class="line">  * cp936: Simplified Chinese <span class="o">(</span>Windows, DOS<span class="o">)</span>
+</span><span class="line">  * cp949: Korean <span class="o">(</span>Windows, DOS<span class="o">)</span>
+</span><span class="line">  * cp950: Traditional Chinese <span class="o">(</span>Windows, DOS<span class="o">)</span>
+</span><span class="line">  * windows-1252: Western <span class="o">(</span>Windows Latin 1<span class="o">)</span>
+</span><span class="line">  * windows-1250: Central European <span class="o">(</span>Windows Latin 2<span class="o">)</span>
+</span><span class="line">  * windows-1251: Cyrillic <span class="o">(</span>Windows<span class="o">)</span>
+</span><span class="line">  * windows-1253: Greek <span class="o">(</span>Windows<span class="o">)</span>
+</span><span class="line">  * windows-1254: Turkish <span class="o">(</span>Windows Latin 5<span class="o">)</span>
+</span><span class="line">  * windows-1255: Hebrew <span class="o">(</span>Windows<span class="o">)</span>
+</span><span class="line">  * windows-1256: Arabic <span class="o">(</span>Windows<span class="o">)</span>
+</span><span class="line">  * windows-1257: Baltic <span class="o">(</span>Windows<span class="o">)</span>
+</span><span class="line">  * windows-1258: Vietnamese <span class="o">(</span>Windows<span class="o">)</span>
+</span><span class="line">  * us-ascii: Western <span class="o">(</span>ASCII<span class="o">)</span>
+</span><span class="line">  * Shift_JIS: Japanese <span class="o">(</span>Shift JIS X0213<span class="o">)</span>
+</span><span class="line">  * GBK: Chinese <span class="o">(</span>GBK<span class="o">)</span>
+</span><span class="line">  * gb18030: Chinese <span class="o">(</span>GB 18030<span class="o">)</span>
+</span><span class="line">  * iso-2022-jp: Japanese <span class="o">(</span>ISO 2022-JP<span class="o">)</span>
+</span><span class="line">  * iso-2022-jp-2: Japanese <span class="o">(</span>ISO 2022-JP-2<span class="o">)</span>
+</span><span class="line">  * iso-2022-jp-1: Japanese <span class="o">(</span>ISO 2022-JP-1<span class="o">)</span>
+</span><span class="line">  * iso-2022-cn: Chinese <span class="o">(</span>ISO 2022-CN<span class="o">)</span>
+</span><span class="line">  * iso-2022-kr: Korean <span class="o">(</span>ISO 2022-KR<span class="o">)</span>
+</span><span class="line">  * euc-jp: Japanese <span class="o">(</span>EUC<span class="o">)</span>
+</span><span class="line">  * gb2312: Simplified Chinese <span class="o">(</span>GB 2312<span class="o">)</span>
+</span><span class="line">  * euc-tw: Traditional Chinese <span class="o">(</span>EUC<span class="o">)</span>
+</span><span class="line">  * euc-kr: Korean <span class="o">(</span>EUC<span class="o">)</span>
+</span><span class="line">  * shift_jis: Japanese <span class="o">(</span>Shift JIS<span class="o">)</span>
+</span><span class="line">  * koi8-r: Cyrillic <span class="o">(</span>KOI8-R<span class="o">)</span>
+</span><span class="line">  * big5: Traditional Chinese <span class="o">(</span>Big 5<span class="o">)</span>
+</span><span class="line">  * x-mac-roman-latin1: Western <span class="o">(</span>Mac Mail<span class="o">)</span>
+</span><span class="line">  * hz-gb-2312: Simplified Chinese <span class="o">(</span>HZ GB 2312<span class="o">)</span>
+</span><span class="line">  * big5-hkscs: Traditional Chinese <span class="o">(</span>Big 5 HKSCS<span class="o">)</span>
+</span><span class="line">  * koi8-u: Ukrainian <span class="o">(</span>KOI8-U<span class="o">)</span>
+</span><span class="line">  * x-nextstep: Western <span class="o">(</span>NextStep<span class="o">)</span>
+</span><span class="line">  * ibm037: Western <span class="o">(</span>EBCDIC Latin 1<span class="o">)</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+      <div style="margin-top: 30px;">
+      本文原载于 <a href="http://frank19900731.github.io" target="_blank">http://frank19900731.github.io</a> (为获得更好的阅读效果，请在PC端访问此链接)，作者宋成儒，微信号 frank19900731，微博 <a href="http://weibo.com/frank19900731" target="_blank">@太极儒</a> 。
+      </div>
+      </div>
+
+</div> <!-- /container -->
+</div>
+<div class="span2"></div>
+</div>
+
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1253436508'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s6.cnzz.com/z_stat.php%3Fid%3D1253436508%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+</body>
+</html>
