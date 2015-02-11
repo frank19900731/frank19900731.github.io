@@ -3,7 +3,7 @@ layout: wx-default
 title: "解决 Mac 下 zip 压缩文件在 Windows 中显示乱码的问题"
 date: 2015-02-11 21:14:26 +0800
 comments: false
-categories: [Mac使用]
+categories: [Mac 使用]
 tags: [压缩文件, 乱码, 7z]
 keywords: 压缩文件, 乱码, 7z, Keka, The Unarchiver, 编码格式, Zip, Automator, 右键菜单
 exclude_from_search: true
