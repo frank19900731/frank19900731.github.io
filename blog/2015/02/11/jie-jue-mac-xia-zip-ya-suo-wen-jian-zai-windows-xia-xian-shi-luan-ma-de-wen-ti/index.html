@@ -12,7 +12,7 @@
   <meta name="author" content="Frank Song">
   <!-- 定义description变量，如果有则用，没有则是正文，前150字 -->
   
-  <meta name="description" content="Categories: Mac使用 解决 Mac 下 Zip 压缩文件在 Windows 中显示乱码的问题 Feb 11th, 2015 您可能正在移动设备阅读本文，为获得更好的阅读体验，请点击 移动阅读入口 目录 问题描述 解决方案 Keka 右键菜单添加 p7zip 压缩 总结 附录 The Unarchiver Cmd Tools 支持的编码格式 问题描述 Mac 下通过右键菜单中的 Compress 生成的压缩包，在 Windows 下解压缩可能出现乱码，如下图所示。 知乎上关于这个问题的 解答 是 Mac OS X 系统自带的压缩程序对 zip 文件名用 UTF-8 编码，但 zip 文件头中没有声明 PKZIP 高版本增加的 Unicode 位。Windows 会认为文件名是 ANSI 编码，结果显示乱码。 经过简单的资料阅读和测试，我大概验证了下这种解释。 用 locale 命令查看我的 MBP 系统编码，确实是 UTF-8。 系统编码1
+  <meta name="description" content="Categories: Mac 使用 解决 Mac 下 Zip 压缩文件在 Windows 中显示乱码的问题 Feb 11th, 2015 您可能正在移动设备阅读本文，为获得更好的阅读体验，请点击 移动阅读入口 目录 问题描述 解决方案 Keka 右键菜单添加 p7zip 压缩 总结 附录 The Unarchiver Cmd Tools 支持的编码格式 问题描述 Mac 下通过右键菜单中的 Compress 生成的压缩包，在 Windows 下解压缩可能出现乱码，如下图所示。 知乎上关于这个问题的 解答 是 Mac OS X 系统自带的压缩程序对 zip 文件名用 UTF-8 编码，但 zip 文件头中没有声明 PKZIP 高版本增加的 Unicode 位。Windows 会认为文件名是 ANSI 编码，结果显示乱码。 经过简单的资料阅读和测试，我大概验证了下这种解释。 用 locale 命令查看我的 MBP 系统编码，确实是 UTF-8。 系统编码1
 2
 3
 4
@@ -185,13 +185,13 @@ LC_ALL= 关于 ANSI 编码 ，在中文 Windows 系统中可能是 GBK 编码，
         <li><a href="/">Home</a></li>
         <li><a href="/archives/">Archives (41)</a></li>
         <li>
-            <a href="#">Categories (8)</a>
+            <a href="#">Categories (7)</a>
             <ul class="dl-submenu">
                 <li class="dl-back"><a href="#">Back</a></li>
-                <li><a href="/blog/categories">All Categories (8)</a>
+                <li><a href="/blog/categories">All Categories (7)</a>
                 <li style="color: #CCCCCC; line-height: 150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Top 5</li>
 
-                <li><a href='/category/面试求职'>面试求职 (13)</a></li><li><a href='/category/Mac 使用'>Mac 使用 (11)</a></li><li><a href='/category/工作效率'>工作效率 (8)</a></li><li><a href='/category/网页开发'>网页开发 (4)</a></li><li><a href='/category/编程学习'>编程学习 (2)</a></li>
+                <li><a href='/category/面试求职'>面试求职 (13)</a></li><li><a href='/category/Mac 使用'>Mac 使用 (12)</a></li><li><a href='/category/工作效率'>工作效率 (8)</a></li><li><a href='/category/网页开发'>网页开发 (4)</a></li><li><a href='/category/编程学习'>编程学习 (2)</a></li>
             </ul>
         </li>
         <li><a href="/blog/tags">All Tags (48)</a>
@@ -333,7 +333,7 @@ LC_ALL= 关于 ANSI 编码 ，在中文 Windows 系统中可能是 GBK 编码，
 <span class="categories" style="font-size: 16px;">
   Categories:
   
-    <a class='category' href='/category/Mac使用/'>Mac使用</a>
+    <a class='category' href='/category/Mac 使用/'>Mac 使用</a>
   
 
 </span>
