@@ -3,7 +3,7 @@ layout: post
 title: "每周一软之 SiteSucker"
 date: 2015-02-12 01:38:02 +0800
 comments: true
-categories: [Mac 软件]
+categories: [Mac 使用]
 tags: [mac软件, 每周一软]
 keywords: mac软件, 每周一软, SiteSucker, Easy Script Copier, Adobe Acrobat, curl, wget, 网页抓取
 pc_url: /blog/2015/02/12/mei-zhou-yi-ruan-zhi-sitesucker/
