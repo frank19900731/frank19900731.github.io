@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Mac 使用 | Blog of 太极儒]]></title>
   <link href="http://frank19900731.github.io/blog/category/mac-shi-yong/atom.xml" rel="self"/>
   <link href="http://frank19900731.github.io/"/>
-  <updated>2015-02-12T01:40:16+08:00</updated>
+  <updated>2015-02-12T17:07:48+08:00</updated>
   <id>http://frank19900731.github.io/</id>
   <author>
     <name><![CDATA[Frank Song]]></name>
@@ -100,7 +100,7 @@ LC_ALL=
 <p>以上为第一种方法。</p>
 
 <ol>
-  <li><a href="http://www.kekaosx.com/en/">Keka</a>，可行。</li>
+  <li><a href="http://www.kekaosx.com/en/">Keka</a>，可行。不过每次<strong>打开软件并拖拽文件</strong>的操作会略显繁琐。</li>
   <li>上传到百度文库然后下载，无效。</li>
   <li>使用 YemuZip 等号称与 Windows 兼容的软件，无效，仅能删除 .DS_Store 一类的文件。</li>
   <li>修改后缀 zip 为 rar，无效。</li>
@@ -109,7 +109,7 @@ LC_ALL=
 
 <p>2 - 4 分别是网上给出的“可行”方案，由于没有触及<strong>文件名编码格式</strong>这个核心问题，所以都不可行。</p>
 
-<p>第 5 种方案 7z 命令行是可行的，下一段中会介绍。其实 <strong>Keka 也是基于 7z 压缩的</strong>，一方面可见 <code>/Applications/Keka.app/Contents/Resources</code> 目录下的可执行文件，另一方面，我对比了 Keka 和 7z 对同一个文本文件的压缩结果，<strong>二进制表示完全一致</strong>。</p>
+<p>第 5 种方案 7z 命令行是可行的，且可以集成到右键菜单中，使用方便，下一段中会介绍。其实 <strong>Keka 也是基于 7z 压缩的</strong>，一方面可见 <code>/Applications/Keka.app/Contents/Resources</code> 目录下的可执行文件，另一方面，我对比了 Keka 和 7z 对同一个文本文件的压缩结果，<strong>二进制表示完全一致</strong>。</p>
 
 <h3 id="p7zip-">右键菜单添加 p7zip 压缩</h3>
 

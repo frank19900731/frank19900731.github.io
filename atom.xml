@@ -4,7 +4,7 @@
   <title><![CDATA[Blog of 太极儒]]></title>
   <link href="http://frank19900731.github.io/atom.xml" rel="self"/>
   <link href="http://frank19900731.github.io/"/>
-  <updated>2015-02-12T01:40:16+08:00</updated>
+  <updated>2015-02-12T17:07:48+08:00</updated>
   <id>http://frank19900731.github.io/</id>
   <author>
     <name><![CDATA[Frank Song]]></name>
@@ -12,6 +12,247 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[每周一软之 SiteSucker]]></title>
+    <link href="http://frank19900731.github.io/blog/2015/02/12/mei-zhou-yi-ruan-zhi-sitesucker/"/>
+    <updated>2015-02-12T01:38:02+08:00</updated>
+    <id>http://frank19900731.github.io/blog/2015/02/12/mei-zhou-yi-ruan-zhi-sitesucker</id>
+    <content type="html"><![CDATA[<p><strong>目录</strong></p>
+
+<ul id="markdown-toc">
+  <li><a href="#section">功能介绍</a></li>
+  <li><a href="#section-1">界面设计</a></li>
+  <li><a href="#section-2">易用性</a></li>
+  <li><a href="#section-3">稳定性</a></li>
+  <li><a href="#section-4">跨平台</a></li>
+  <li><a href="#section-5">类似软件</a></li>
+  <li><a href="#section-6">闪光点</a></li>
+  <li><a href="#section-7">缺点</a></li>
+</ul>
+
+<!-- excerpt start -->
+
+<h2 id="section">功能介绍</h2>
+
+<p><a href="http://www.sitesucker.us/mac/mac.html">SiteSucker</a> 是一款站点下载软件，<strong>复制站点结构</strong>，<strong>下载相关资源文件</strong>，包括 HTML、JS、CSS、图片、视频等，以方便离线查看。</p>
+
+<p>离线查看主要有两种原因，一种是觉得很有价值，比如 API 文档，需要随时查看；另一种就是网页反应太慢，不如一次性下载完成，本地快速查看。基于第二种原因，我用 SiteSucker 对 <a href="https://www.openproject.org/">OpenProject 站点</a> 做了 <a href="http://frank19900731.github.io/ebook/openproject/">镜像</a>，看起来不错的样子。</p>
+
+<p>作为一款爬虫软件，SiteSucker 的下载设置和 wget、curl 等命令行工具的参数设置是相似的，它的优势主要体现在：</p>
+
+<ol>
+  <li>图形化界面操作，免除参数记忆，配置可以保存再利用；</li>
+  <li>可以方便地暂停、继续、终止、保存抓取过程；</li>
+  <li>自带详细的日志输出，为参数调整提供有价值的参考。</li>
+</ol>
+
+<p>图形界面设置的精细程度毕竟不如命令行工具，不过对于常见的教程备份、博客备份等需求，我觉得还是绰绰有余的；而更复杂的任务，可能需要<strong>根据抓取结果迭代调整参数设置</strong>来完成。对于一些 <strong>JS 效果复杂</strong>的网页，可能不仅是 SiteSucker，连 wget 都无法胜任了（因为没法模拟一些人为操作去获取链接）。</p>
+
+<!-- excerpt end -->
+
+<p>接下来，我大概从一个用户需求的角度介绍 SiteSucker 的功能。</p>
+
+<ul>
+  <li><strong>首先指定种子 url 作为起始，从抓取页面中提取新的 url 作为接下来的抓取目标，可想而知这个过程可能无穷尽的进行下去，如何界定范围？</strong>
+    <ul>
+      <li>SiteSucker 对 <code>Path Constraints</code> 提供 5 种设置，假设种子 url 是 http://frank19900731.github.io/wx/archives/
+        <ul>
+          <li><strong>None</strong>  无限制 ；</li>
+          <li><strong>Host</strong>  与种子 url 属同一个（子）域，即 http://frank19900731.github.io/*；</li>
+          <li><strong>Subdomains</strong>   可以是其它子域（也包括父域），比如 http://hello.github.io/<em>，http://github.io/</em>，但不可以是国家代码子域，比如（如果有的话）http://frank19900731.github.io.hk；</li>
+          <li><strong>Directory</strong>  与种子 url 属于统一路径，即 http://frank19900731.github.io/wx/archives/*；</li>
+          <li><strong>Paths Settings</strong>  当前 url + 自定义 <code>Paths Settings</code>。</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><strong>接上条，如何自定义</strong> <code>Paths Settings</code> <strong>?</strong>
+    <ul>
+      <li><code>Paths to Include</code> &amp; <code>Paths to Exclude</code>，顾名思义定义希望被抓取/不希望被抓取的模式；</li>
+      <li>可以采用正则表达式定义；</li>
+      <li>不论 <code>Path Constraints</code> 的选择，<code>Paths Settings</code> 始终是生效的，引用 <a href="http://ricks-apps.com/osx/sitesucker/archive/2.x/2.6.x/2.6/manuals/en/pgs/Overview.html">官方教程</a> 的一段话总结 <strong>SiteSucker 如何判定一个 url 是否该被抓取</strong>：</li>
+    </ul>
+  </li>
+</ul>
+
+<blockquote>
+  <p>If this is the <strong>original URL</strong> (that is, the URL specified in the Web URL text box), then SiteSucker downloads the file.</p>
+
+  <p>Otherwise, if the URL begins with one of the strings (or matches one of the regular expressions) in the <strong>Paths to Exclude</strong> text box, then the file is not downloaded.</p>
+
+  <p>Otherwise, if the URL meets the requirements of the current <strong>Path Constraint</strong> setting, then the file is downloaded.</p>
+
+  <p>Otherwise, if the URL begins with one of the strings (or matches one of the regular expressions) in the <strong>Paths to Include</strong> text box, then SiteSucker downloads the file.</p>
+
+  <p>Otherwise, if the <strong>Include Supporting Files</strong> setting is on and the URL references a non-HTML file type, then SiteSucker downloads the file.</p>
+
+  <p>Otherwise, SiteSucker does not download the file.</p>
+</blockquote>
+
+<ul>
+  <li><strong>设置了</strong>  <code>Path Constraints</code>、<code>Paths Settings</code>，<strong>但还是可能有抓取遗漏，如何查看漏抓 url ？</strong>
+    <ul>
+      <li>勾选 <code>Export External Links</code>，下载目录中名为 _ExternalLinks.html 的文件记录了漏抓 url，可以将他们填入 <code>Paths Settings</code>，重新抓取。</li>
+    </ul>
+  </li>
+  <li><strong>一些网站需要登录才能抓取，在 SiteSucker 中如何处理？</strong>
+    <ul>
+      <li>一种登录方式是<strong>弹出框</strong>，比如路由器管理页面，SiteSucker 会首先查询 Keychain 中的密码记录，如果没有则弹出登陆框让用户输入；</li>
+      <li>另一种登录方式是<strong>页面登录</strong>，比如人人网。菜单栏点击 Control -&gt; Open Browser 弹出浏览框，在浏览框中登录即可下载，如下图所示。</li>
+    </ul>
+  </li>
+</ul>
+
+<p><a href="http://frank19900731.github.io/img/post/2015-2/14.png" class="img-up" title="登录下载"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-2/14.png" width="70%" title="登录下载" /></a></p>
+
+<ul>
+  <li><strong>不希望抓取某些类型的文件，比如压缩包、视频等，该如何设置？</strong>
+    <ul>
+      <li><code>File Types</code> 中选择 <code>Disallow Specified File Types</code>，然后指定相关文件类型。</li>
+    </ul>
+  </li>
+  <li><strong>希望同时抓取多个网页，怎样设置连接数？</strong>
+    <ul>
+      <li>Preferences 中可以设置连接数，如下图。</li>
+    </ul>
+  </li>
+</ul>
+
+<p><a href="http://frank19900731.github.io/img/post/2015-2/13.png" class="img-up" title="设置连接数"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-2/13.png" width="60%" title="设置连接数" /></a></p>
+
+<ul>
+  <li><strong>一些站点需要隔段时间抓去一次（比如博客），文件覆盖方式如何设置？</strong>
+    <ul>
+      <li><code>File Replacement</code> 提供三种选择
+        <ul>
+          <li><strong>Never</strong>  不覆盖；</li>
+          <li><strong>Always</strong>  总是覆盖；</li>
+          <li><strong>With Newer</strong>  保留较新的那个。</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><strong>如何将 HTML 中的文件链接（如 JS、CSS）修改为本地引用？</strong>
+    <ul>
+      <li><code>File Modification</code> 设置为 <strong>Localize</strong></li>
+    </ul>
+  </li>
+  <li><strong>如何突破 robots.txt 的限制（不建议）？</strong>
+    <ul>
+      <li>勾选 <code>Ignore Robot Exclusions</code>。</li>
+    </ul>
+  </li>
+  <li><strong>如何查看抓取日志？</strong>
+    <ul>
+      <li><code>Logs</code> 中勾选日志级别，log 文件会生成在已设置的下载文件夹中，有如下格式的记录。分析未抓取链接的原因，进行可能的参数调整。</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>SiteSucker 日志记录</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+<span class="line-number">11</span>
+<span class="line-number">12</span>
+<span class="line-number">13</span>
+<span class="line-number">14</span>
+<span class="line-number">15</span>
+<span class="line-number">16</span>
+<span class="line-number">17</span>
+<span class="line-number">18</span>
+<span class="line-number">19</span>
+</pre></td><td class="code"><pre><code class="bash"><span class="line">2/12/15, 11:55:35 AM - MEDIA TYPE: <span class="s2">&quot;http://frank19900731.github.io/&quot;</span> has a media <span class="nb">type </span>of
+</span><span class="line">	text/html
+</span><span class="line">...
+</span><span class="line">2/12/15, 11:55:35 AM - WARNING: Unable to download <span class="s2">&quot;http://blog.sina.com/frank19900731&quot;</span>,
+</span><span class="line">	referenced from <span class="s2">&quot;http://frank19900731.github.io&quot;</span>,
+</span><span class="line">	because its path is not allowed
+</span><span class="line">2/12/15, 11:55:35 AM - WARNING: Unable to download <span class="s2">&quot;http://weibo.sina.com/frank19900731&quot;</span>,
+</span><span class="line">	referenced from <span class="s2">&quot;http://frank19900731.github.io&quot;</span>,
+</span><span class="line">	because its path is not allowed
+</span><span class="line">...
+</span><span class="line">2/12/15, 11:55:35 AM - WARNING: May not be able to follow all links on <span class="s2">&quot;http://frank19900731.github.io&quot;</span>
+</span><span class="line">	because it uses JavaScript
+</span><span class="line">2/12/15, 11:55:35 AM - HISTORY: Downloaded <span class="s2">&quot;http://frank19900731.github.io&quot;</span>
+</span><span class="line">2/12/15, 11:55:35 AM - MEDIA TYPE: <span class="s2">&quot;http://frank19900731.github.io/favicon.ico&quot;</span> has a media <span class="nb">type </span>of
+</span><span class="line">	image/x-icon
+</span><span class="line">2/12/15, 11:55:36 AM - HISTORY: Downloaded <span class="s2">&quot;http://frank19900731.github.io/favicon.ico&quot;</span>
+</span><span class="line">2/12/15, 11:55:36 AM - MEDIA TYPE: <span class="s2">&quot;http://frank19900731.github.io/javascripts/modernizr.custom.js&quot;</span> has a media <span class="nb">type </span>of
+</span><span class="line">	application/javascript
+</span><span class="line">...
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>其它参数诸如最大扩展层数、默认页面编码、超时设置等都是网页抓取的基本设置，不再讨论。更多功能使用详见 <a href="http://ricks-apps.com/osx/sitesucker/archive/2.x/2.6.x/2.6/manuals/en/pgs/Overview.html">官方教程</a>。</p>
+
+<h2 id="section-1">界面设计</h2>
+
+<p>简单直接。</p>
+
+<p><a href="http://frank19900731.github.io/img/post/2015-2/15.png" class="img-up" title="SiteSucker 界面"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-2/15.png" width="75%" title="SiteSucker 界面" /></a></p>
+
+<h2 id="section-2">易用性</h2>
+
+<p>如<a href="#section">功能介绍</a>中所述，不同站点的提取难度不尽相同，摸索<strong>一套行之有效的参数</strong>的过程可能会比较复杂。</p>
+
+<h2 id="section-3">稳定性</h2>
+
+<p>稳定性好。</p>
+
+<h2 id="section-4">跨平台</h2>
+
+<p>支持 <a href="http://www.sitesucker.us/ios/ios.html">iOS</a>，网页站点可以打包在 iOS 和 OSX 间传输，对应 File -&gt; (Un)Pack Downloads 的功能。</p>
+
+<h2 id="section-5">类似软件</h2>
+
+<ul>
+  <li>命令行工具 <a href="http://curl.haxx.se/">curl</a>、 <a href="https://www.gnu.org/software/wget/">wget</a>
+    <ul>
+      <li><strong>上手简单</strong>，以 wget 为例，抓取一般站点只需 <code>wget -r -p -np -k url</code> 一条命令；</li>
+      <li>深入研究一下，可以进行更精细的设置，也可二次开发；</li>
+      <li>也有单条 wget 处理不好的情况，比如一些页面代码中可见 <code>css?v=x.x.x</code> 的写法，一般是为了 <a href="http://blog.csdn.net/zanychou/article/details/8813076">清除客户端缓存</a>，但 wget 会将其直接保存为 <code>css?v=x.x.x</code>（于是离线站点无法加载这一文件），可见这个 <a href="http://superuser.com/questions/703435/using-wget-to-download-css-with-get-params">提问</a>，而不是像 SiteSucker 那样识别并保存为 css 文件。</li>
+    </ul>
+  </li>
+  <li>Adobe Acrobat
+    <ul>
+      <li>Adobe Acrobat 支持<strong>从网页创建 PDF</strong>，也可以抓取站点，如下图。</li>
+    </ul>
+  </li>
+</ul>
+
+<p><a href="http://frank19900731.github.io/img/post/2015-2/12.png" class="img-up" title="Adobe Acrobat 抓取页面"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-2/12.png" width="80%" title="Adobe Acrobat 抓取页面" /></a></p>
+
+<ul>
+  <li><a href="http://www.sentenzadesktop.com/easy-script-copier/">Easy Script Copier</a>
+    <ul>
+      <li>抓取单个页面及相应的 JS、CSS，<strong>扒取网页格式</strong>很管用。</li>
+    </ul>
+  </li>
+  <li>网页抓取框架，如 <a href="http://nutch.apache.org/">Apache Nutch</a>、<a href="https://github.com/scrapy/scrapy">Scrapy</a> 等，功能自然更强大，对普通用户有较高的使用门槛。然而，对于大多数日常需求，还是有种<strong>大炮打蚊子</strong>的赶脚。</li>
+</ul>
+
+<h2 id="section-6">闪光点</h2>
+
+<ul>
+  <li>可视化定制，功能丰富，特别是支持<strong>登录抓取</strong>。</li>
+</ul>
+
+<h2 id="section-7">缺点</h2>
+
+<p>官网上有介绍 SiteSucker 的 <a href="http://www.sitesucker.us/mac/limitations.html">Limitations</a>。</p>
+
+<p>总的来说是良心之作，硬要说缺点不如说是建议：如果能有一个插件系统，用户可以开发、分享网页处理过程中某个具体处理环节的代码就更好了。</p>
+
+<p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2015/02/12/mei-zhou-yi-ruan-zhi-sitesucker/">http://frank19900731.github.io/blog/2015/02/12/mei-zhou-yi-ruan-zhi-sitesucker/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[解决 Mac 下 zip 压缩文件在 Windows 中显示乱码的问题]]></title>
@@ -113,7 +354,7 @@
 <p>以上为第一种方法。</p>
 
 <ol>
-  <li><a href="http://www.kekaosx.com/en/">Keka</a>，可行。</li>
+  <li><a href="http://www.kekaosx.com/en/">Keka</a>，可行。不过每次<strong>打开软件并拖拽文件</strong>的操作会略显繁琐。</li>
   <li>上传到百度文库然后下载，无效。</li>
   <li>使用 YemuZip 等号称与 Windows 兼容的软件，无效，仅能删除 .DS_Store 一类的文件。</li>
   <li>修改后缀 zip 为 rar，无效。</li>
@@ -122,7 +363,7 @@
 
 <p>2 - 4 分别是网上给出的“可行”方案，由于没有触及<strong>文件名编码格式</strong>这个核心问题，所以都不可行。</p>
 
-<p>第 5 种方案 7z 命令行是可行的，下一段中会介绍。其实 <strong>Keka 也是基于 7z 压缩的</strong>，一方面可见 <code>/Applications/Keka.app/Contents/Resources</code> 目录下的可执行文件，另一方面，我对比了 Keka 和 7z 对同一个文本文件的压缩结果，<strong>二进制表示完全一致</strong>。</p>
+<p>第 5 种方案 7z 命令行是可行的，且可以集成到右键菜单中，使用方便，下一段中会介绍。其实 <strong>Keka 也是基于 7z 压缩的</strong>，一方面可见 <code>/Applications/Keka.app/Contents/Resources</code> 目录下的可执行文件，另一方面，我对比了 Keka 和 7z 对同一个文本文件的压缩结果，<strong>二进制表示完全一致</strong>。</p>
 
 <h3 id="p7zip-">右键菜单添加 p7zip 压缩</h3>
 
@@ -3567,363 +3808,6 @@
 <p>大家有什么有用有趣的网站也欢迎在评论里贴粗来。</p>
 
 <p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2014/12/04/ruo-gan-you-yong-you-qu-de-wang-zhan/">http://frank19900731.github.io/blog/2014/12/04/ruo-gan-you-yong-you-qu-de-wang-zhan/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Matrix67 博客中智力题粗分类]]></title>
-    <link href="http://frank19900731.github.io/blog/2014/11/29/matrix67-bo-ke-zhong-zhi-li-ti-cu-fen-lei/"/>
-    <updated>2014-11-29T15:03:44+08:00</updated>
-    <id>http://frank19900731.github.io/blog/2014/11/29/matrix67-bo-ke-zhong-zhi-li-ti-cu-fen-lei</id>
-    <content type="html"><![CDATA[<p><strong>目录</strong></p>
-
-<ul id="markdown-toc">
-  <li><a href="#section">前言</a></li>
-  <li><a href="#section-1">几何题</a></li>
-  <li><a href="#section-2">概率统计</a></li>
-  <li><a href="#section-3">程序算法</a></li>
-  <li><a href="#section-4">数学证明</a></li>
-  <li><a href="#section-5">益智趣题</a>    <ul>
-      <li><a href="#section-6">组合数学与图论</a></li>
-      <li><a href="#section-7">博弈/最优策略</a></li>
-      <li><a href="#section-8">几何相关</a></li>
-      <li><a href="#section-9">物理方法</a></li>
-      <li><a href="#section-10">有趣的构造</a></li>
-      <li><a href="#section-11">趣题集锦</a></li>
-      <li><a href="#section-12">其它</a></li>
-    </ul>
-  </li>
-  <li><a href="#section-13">总结</a></li>
-</ul>
-
-<h2 id="section">前言</h2>
-
-<!-- excerpt start -->
-
-<p>如果不是为了准备面试（其实也很适合面试官看看），自己可能迟迟不会有把 <a href="http://www.matrix67.com/blog/">Matrix67</a> 大牛的博客“刷一遍”的动力。“刷一遍”显然是夸张的说法，一来我只是看了有出题可能性的文章，偏爱有生活化表达形式的题目，比如概率博弈问题，其它的如果证明计算较复杂或需要有背景知识，则可能不适合；二来在看的过程中也发现，M 牛的一些博文已经成了死链，且有些文章话未尽而终、下篇不可寻，也就更“刷不完”了。</p>
-
-<p>除了显见的接触更多有趣的数学问题和思维方法这点好处之外，看 M 牛博客带来的其它收获是</p>
-
-<ul>
-  <li>在评论中学习了不少其他牛人的观点，获得了他们的博客链接，如
-    <ul>
-      <li><a href="http://zhiqiang.org/blog/">阅微堂</a> </li>
-    </ul>
-  </li>
-  <li>了解到一些高质量数学 puzzle，如
-    <ul>
-      <li><a href="http://domino.research.ibm.com/Comm/wwwr_ponder.nsf/Challenges/December2014.html">IBM Ponder This</a></li>
-      <li><a href="http://www.brand.site.co.il/riddles/usingyourhead.html">UyHiP</a></li>
-    </ul>
-  </li>
-  <li>了解数学科普读物和网络资源若干，如
-    <ul>
-      <li><a href="http://www.douban.com/link2/?url=http%3A%2F%2Fbook.douban.com%2Fsubject%2F1414810%2F&amp;query=proofs+from+the+book&amp;cat_id=1001&amp;type=search&amp;pos=0">Proofs from THE BOOK</a></li>
-      <li><a href="http://www.douban.com/link2/?url=http%3A%2F%2Fbook.douban.com%2Fsubject%2F1320282%2F&amp;query=%E4%BB%80%E4%B9%88%E6%98%AF%E6%95%B0%E5%AD%A6&amp;cat_id=1001&amp;type=search&amp;pos=0">什么是数学</a></li>
-      <li><a href="http://www.cut-the-knot.org/">cut-the-knot</a></li>
-    </ul>
-  </li>
-</ul>
-
-<p>我所关注的题目大概可以分为以下种类型，匹配的一句话介绍不保证全面。</p>
-
-<ul>
-  <li>几何题
-    <ul>
-      <li>用初等几何的方法求值、证明，尺规作图；</li>
-    </ul>
-  </li>
-  <li>概率统计
-    <ul>
-      <li>概率与期望的巧算；</li>
-    </ul>
-  </li>
-  <li>程序算法
-    <ul>
-      <li>M 牛对于某道题目的求解或对一类算法的理解总结；</li>
-    </ul>
-  </li>
-  <li>数学证明
-    <ul>
-      <li>一些经典结论的另类证明思路，增进对已知结论的理解；</li>
-    </ul>
-  </li>
-  <li>趣题
-    <ul>
-      <li>通过一些巧妙的证明思路和构造方法解题，最是赏心悦目，与组合数学、图论、博弈论等有关。</li>
-    </ul>
-  </li>
-</ul>
-
-<p>以下分别列举。我会用 ★ 标记出自己觉得称得上简单精妙的计算/证明/构造，以及有趣的结论，不打算完整阅读的朋友可以选看。</p>
-
-<p>其中有四道题是 ★★，确实很感动 ~&gt;-&lt;~。</p>
-
-<ul>
-  <li><a href="http://www.matrix67.com/blog/archives/3638">用数学解赌博问题不稀奇，用赌博解数学问题才牛B</a> </li>
-  <li><a href="http://www.matrix67.com/blog/archives/2494">Buffon投针实验：究竟为什么是pi？</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/954">趣题：用最少的“并行交换”完成排序</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/4248">趣题：能否把三维空间分成无穷个圆？</a></li>
-</ul>
-
-<!-- excerpt end -->
-
-<h2 id="section-1">几何题</h2>
-
-<ul>
-  <li><a href="http://www.matrix67.com/blog/archives/5293">趣题：平行线之间的正方形</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/5398">趣题：不用三角函数求出∠BAC的度数</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/5883">趣题：圆中的两个相切的半圆</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/5321">趣题：斜边上的动点</a></li>
-  <li>★ <a href="http://www.matrix67.com/blog/archives/4545">经典证明：等边三角形内一点到各顶点的距离长可构成一个三角形</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/4485">趣题：不用相似怎么办？</a></li>
-  <li>★ <a href="http://www.matrix67.com/blog/archives/2946">也说Pizza问题：分享几个漂亮的证明</a></li>
-  <li>★ <a href="http://www.matrix67.com/blog/archives/2896">趣题：三角形两顶点在直线上滑动时第三点的轨迹</a></li>
-  <li>★ <a href="http://www.matrix67.com/blog/archives/2447">趣题：货架上的听装可乐</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/2383">空间想象能力挑战：立方体相邻面两对角线的最近距离？</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/507">趣题：空间四边形外切于给定球，求证四切点共面</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/505">趣题：用正三角形和正四边形构成凸多边形</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/497">神奇的锈规作图：单用一个只能画单位圆的圆规如何作等边三角形</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/466">几道经典的几何作图趣题</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/314">趣题：等腰直角三角形与勾股定理形式的条件</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/312">趣题：内切圆与最大内接矩形</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/231">借用点其它的东西，你或许可以三等分角</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/204">趣题：哪条线段最长，哪条线段最短</a></li>
-  <li>★ <a href="http://www.matrix67.com/blog/archives/58">几个把平面几何问题的辅助线做到空间去的数学趣题</a></li>
-</ul>
-
-<h2 id="section-2">概率统计</h2>
-
-<ul>
-  <li><a href="http://www.matrix67.com/blog/archives/5165">趣题：测量两根木棒长度的更优方案</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/6015">Penney 的游戏：正所谓后发制人，先发制于人</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/6151">趣题：用两枚硬币随机生成 1 到 n 之间的整数</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/4534">生成函数的妙用：平均抛掷多少次硬币才会出现连续两个正面？</a></li>
-  <li>★ <a href="http://www.matrix67.com/blog/archives/4429">趣题：公司应该雇用多少员工？</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/4125">趣题：随机折断的木棒</a></li>
-  <li>★ <a href="http://www.matrix67.com/blog/archives/3936">趣题：平均要取到第几个随机数才会让序列第一次下降</a></li>
-  <li>★★ <a href="http://www.matrix67.com/blog/archives/3638">用数学解赌博问题不稀奇，用赌博解数学问题才牛B</a> </li>
-  <li>★ <a href="http://www.matrix67.com/blog/archives/3507">惊人的答案：平均要取多少个(0,1)中的随机数才能让和超过1</a></li>
-  <li>★★ <a href="http://www.matrix67.com/blog/archives/2494">Buffon投针实验：究竟为什么是pi？</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/2339">趣题：构造骰子使其与两个标准骰子等价</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/879">随机洗牌：哪一种算法是正确的？</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/572">设计调查问卷的艺术：怎样才能绝对地保证个人隐私不被泄露</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/432">非传递性骰子：A比B好，B比C好，A不一定比C好</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/412">概率学的创立：Chevalier de Méré问题</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/366">KMP算法与一个经典概率问题</a></li>
-  <li>★ <a href="http://www.matrix67.com/blog/archives/364">趣题：直觉 VS 理性思考 经典概率问题</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/273">趣题：非常具有启发性的概率问题</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/251">又是黑色星期五！为什么总是黑色星期五呢？</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/191">又一个比较诡异的悖论</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/205">趣题：阿米巴的生存</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/136">信息学竞赛中可能有用的概率学知识</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/120">什么是生成函数？</a></li>
-</ul>
-
-<h2 id="section-3">程序算法</h2>
-
-<ul>
-  <li><a href="http://www.matrix67.com/blog/archives/5190">网络流和棒球赛淘汰问题</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/3985">神秘常量复出！用0x077CB531计算末尾0的个数</a></li>
-  <li>★ <a href="http://www.matrix67.com/blog/archives/3066">如此排序能成吗？</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/2605">贪心算法的一个出人意料的应用</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/1255">一个简单而有用的数据结构</a></li>
-  <li>★ <a href="http://www.matrix67.com/blog/archives/1241">趣题：在双向有序链表中查找指定的数</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/1089">趣题：用正则表达式判断一个二进制数是否能被3整除</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/1057">漫话二分（下）</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/1013">漫话二分（上）</a></li>
-  <li>★★ <a href="http://www.matrix67.com/blog/archives/954">趣题：用最少的“并行交换”完成排序</a></li>
-  <li>★ <a href="http://www.matrix67.com/blog/archives/944">趣题：只用赋值、自增和循环操作实现减法运算</a></li>
-  <li>★ <a href="http://www.matrix67.com/blog/archives/901">停机问题、Chaitin常数与万能证明方法</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/858">趣题：用最少的块移动实现逆序操作</a></li>
-  <li>★ <a href="http://www.matrix67.com/blog/archives/813">趣题：用位运算生成下一个含有k个1的二进制数</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/730">思考的乐趣：UyHiP趣题之用最少的块移动实现逆序操作</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/511">趣题：寻找出现了奇数次的数</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/475">牛B的正则表达式：素数判定与线性方程求解</a></li>
-  <li>★ <a href="http://www.matrix67.com/blog/archives/415">趣题：经典二分问题的一个扩展</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/393">计算阶乘的另一些有趣的算法</a></li>
-  <li>★ <a href="http://www.matrix67.com/blog/archives/371">标题党 之 密码学家用PS3成功预测美国2008大选结果</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/362">旧闻一则：神秘的0x5f3759df 不可思议的Quake III源码</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/342">趣题：Anagram辅助程序的数据结构</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/331">Google面试题中的两道趣题</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/333">编辑距离、拼写检查与度量空间：一个有趣的数据结构</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/276">十个利用矩阵乘法解决的经典题目</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/268">位运算简介及实用技巧（四）：实战篇</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/266">位运算简介及实用技巧（三）：进阶篇(2)</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/264">位运算简介及实用技巧（二）：进阶篇(1)</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/263">位运算简介及实用技巧（一）：基础篇</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/185">OI之外的一些东西：简单谈谈排序网络</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/178">从零开始学算法：十种排序算法介绍（下）</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/166">从零开始学算法：十种排序算法介绍（中）</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/166">从零开始学算法：十种排序算法介绍（上）</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/115">KMP算法详解</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/112">最长公共上升子序列的另一个O(mn)的算法</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/92">《数据结构与算法分析》5000字缩写（下）</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/91">《数据结构与算法分析》5000字缩写（中）</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/90">《数据结构与算法分析》5000字缩写（上）</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/30">原创科普说明文：递归</a></li>
-</ul>
-
-<h2 id="section-4">数学证明</h2>
-
-<ul>
-  <li><a href="http://www.matrix67.com/blog/archives/5562">立方和公式的一个组合数学证明</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/6105">利用重心推导平方和公式</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/4955">正多边形的滚动与旋轮线下方的面积</a></li>
-  <li>★ <a href="http://www.matrix67.com/blog/archives/4891">Fibonacci数列性质的组合证明</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/2904">经典证明：1+2+3+…+(n-1) = C(n,2)</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/2753">利用阶乘因子数公式证明素数无穷多</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/2700">经典证明：用信息熵证明素数无穷多</a></li>
-  <li>★ <a href="http://www.matrix67.com/blog/archives/768">最酷的证明：Pick定理另类证法</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/495#more-495">《什么是数学》读书笔记（一）：反证法、数学归纳法与唯一分解定理</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/358">局部变动原理：算术平均数不小于几何平均数</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/228">推荐： The Hundred Greatest Theorems</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/206">又一种证明根号2是无理数的方法</a></li>
-  <li>★ <a href="http://www.matrix67.com/blog/archives/156">令人称奇的简单证明：五种方法证明根号2是无理数</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/5094">经典证明：Ptolemy定理的无字证明</a></li>
-</ul>
-
-<h2 id="section-5">益智趣题</h2>
-
-<p>益智趣题的数量很多，想要准确的细分类较难，所以标题里的“粗分类”用在这里了……</p>
-
-<h3 id="section-6">组合数学与图论</h3>
-
-<ul>
-  <li>★ <a href="http://www.matrix67.com/blog/archives/801">趣题：奇怪的有向图 任两点间两步之内可达的路径有且仅有一条</a></li>
-  <li>★ <a href="http://www.matrix67.com/blog/archives/751">趣题：2n+1个点中任n个都与同一点相连，则存在一个连接所有点的点</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/746">趣题：循环赛中总存在一人“可传递一次”地打败了所有人</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/461">趣题：鸽笼原理的应用 IMO 2001 Problem #3</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/2538">趣题：某个经典结论的妙用</a></li>
-</ul>
-
-<h3 id="section-7">博弈/最优策略</h3>
-
-<ul>
-  <li><a href="http://www.matrix67.com/blog/archives/5523">趣题：庄家的秘密序列</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/4966">趣题：八根并排放置的水管</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/4631">趣题：旋转桌子避免灯泡全亮</a></li>
-  <li>★ <a href="http://www.matrix67.com/blog/archives/456">趣题：猜帽子游戏与Hamming编码</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/452">很诡异的博弈问题分析方法</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/444">100囚犯问题、100囚犯问题加强版与选择公理（下）</a></li>
-  <li>★ <a href="http://www.matrix67.com/blog/archives/443">100囚犯问题、100囚犯问题加强版与选择公理（上）</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/3771">UyHiP趣题：100囚犯之黑白手套</a></li>
-  <li>★ <a href="http://www.matrix67.com/blog/archives/2762">趣题：数轴上的潜水艇</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/2712">瓶魔悖论与不完全信息</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/1671">一道智力题：世上最毒的毒药</a></li>
-</ul>
-
-<h3 id="section-8">几何相关</h3>
-
-<ul>
-  <li><a href="http://www.matrix67.com/blog/archives/5270">经典证明：任意三角形都能被分成n≥4个等腰三角形</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/5382">趣题：设计多边形围墙使得对于某一观察点所有的墙都不完全可见</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/5313">趣题：同时等分三角形周长和面积的直线</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/4525">趣题：能否在等边三角形点阵中画一个正方形？</a></li>
-  <li>★ <a href="http://www.matrix67.com/blog/archives/4480">盯着结论看，直到它变得显然成立为止</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/5040">贴着另一枚硬币旋转一周则自身转了两周：不同的解释方法</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/5004">趣题：构造多边形使得过边界上某一点的任意直线均能等分面积</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/5521">两两接触的等粗且无限长的圆柱体</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/5495">趣题：把比萨分成若干等份使得至少有一份不含边</a></li>
-  <li>★ <a href="http://www.matrix67.com/blog/archives/3878">趣题：面积为1的凸多边形总能放进一个面积为2的矩形里</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/853">为什么平分圆面积的所有曲线中以直径最短？</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/528">趣题：直尺不够长时如何作出连接两点的直线？</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/405">趣题：n为奇数时，正n边形的三角形剖分内有且仅有一个锐角三角形</a></li>
-  <li>★ <a href="http://www.matrix67.com/blog/archives/300">趣题：单位正方形内相互分离的两个小正方形，其边长和小于1</a></li>
-  <li>★ <a href="http://www.matrix67.com/blog/archives/6204">趣题：构造点集使得每条直线上的点都一样多</a></li>
-</ul>
-
-<h3 id="section-9">物理方法</h3>
-
-<ul>
-  <li><a href="http://www.matrix67.com/blog/archives/470">物理方法解决数学问题（五）：一个与椭圆有关的性质</a></li>
-  <li>★ <a href="http://www.matrix67.com/blog/archives/422">物理方法解决数学问题（四）：Fermat-Torricelli问题</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/419">物理方法解决数学问题（三）：神奇的Fermat原理</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/392">物理方法解决数学问题（二）：Archimedes与球体积公式</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/391">物理方法解决数学问题（一）：从一个简单的平面几何题谈起</a></li>
-</ul>
-
-<h3 id="section-10">有趣的构造</h3>
-
-<ul>
-  <li><a href="http://www.matrix67.com/blog/archives/4731">经典证明：能否在平面上写下不可数个不相交的Y？</a></li>
-  <li>★★ <a href="http://www.matrix67.com/blog/archives/4248">趣题：能否把三维空间分成无穷个圆？</a></li>
-  <li>★ <a href="http://www.matrix67.com/blog/archives/3851">画圈圈和画叉叉的区别</a></li>
-  <li>★ <a href="http://www.matrix67.com/blog/archives/4459">趣题：连接多个数字串时怎样避免歧义？</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/2830">如何构造一个平滑的最大值函数</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/910">趣题：如何用集合来定义有序对</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/733">趣题：奇怪的自然数集划分</a></li>
-  <li>★ <a href="http://www.matrix67.com/blog/archives/330">函数上某一点导数为正，该点邻域不一定形成单增区间</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/304">趣题：用最简单的话来描述一个集合</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/698">趣题：构造一个[0,1]到(0,1)的一一映射</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/1972">趣题：构造整数域上的函数f使得f(f(n))等于-n</a></li>
-</ul>
-
-<h3 id="section-11">趣题集锦</h3>
-
-<p>题目描述简短，有不少精彩解答，就不逐个加 ★ 了。</p>
-
-<ul>
-  <li><a href="http://www.matrix67.com/blog/archives/5083">难倒犹太人的五个数学问题</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/4881">12个经典的行程问题</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/4649">难倒犹太人的11个数学问题</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/3243">Which Way Did the Bicycle Go 趣题选（下）</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/3172">Which Way Did the Bicycle Go 趣题选（中）</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/3113">Which Way Did the Bicycle Go 趣题选（上）</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/2671">10个精彩的智力问题</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/2348">最近几天碰到的几个有趣的问题</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/1591">Harvard-MIT Mathematics Tournament 2009: Guts Round</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/502">分享一些有趣的面试智力题（下）</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/501">分享一些有趣的面试智力题（上）</a></li>
-</ul>
-
-<h3 id="section-12">其它</h3>
-
-<ul>
-  <li><a href="http://www.matrix67.com/blog/archives/5330">UyHiP趣题：用最少的称重次数验证硬币的重量</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/4793">趣题：舞台里的狮子</a></li>
-  <li>★ <a href="http://www.matrix67.com/blog/archives/4698">UyHiP趣题：按照盒子的三边长之和来计费有没有漏洞？</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/4690">趣题：只允许加倍操作的水桶倒水问题</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/4644">趣题：从1到4000中各位数字之和能被4整除的有多少个？</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/4491">千万不要迷信规律：大反例合集</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/5167">趣题：证明边权递增的路径始终存在</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/5182">趣题：Alice和Bob的等值交易</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/5070">趣题：证明所有乘积的总和与分拆的方式无关</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/5063">趣题：由0和1构成的虫子</a></li>
-  <li>★ <a href="http://www.matrix67.com/blog/archives/4746">趣题：所有人手上的糖数最终会变得一样多</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/6090">趣题：竞技场里的狮子能否保证抓住最高速度相同的小明？</a></li>
-  <li>★ <a href="http://www.matrix67.com/blog/archives/5941">在 2048 里能够得到的最大的数是多少？</a></li>
-  <li>★ <a href="http://www.matrix67.com/blog/archives/4361">趣题：老鼠与毒药问题的推广</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/4318">不动点与线性代数</a></li>
-  <li>★ <a href="http://www.matrix67.com/blog/archives/4270">UyHiP趣题：如果每个人都随大流，结果会怎样？</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/4263">UyHiP趣题：拉灯游戏总有解吗？</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/4064">趣题：两步猜出多项式的各项系数</a></li>
-  <li>★ <a href="http://www.matrix67.com/blog/archives/1160">趣题：匿名的消息广播</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/996">UyHiP趣题：(√2 +√3)^1948小数点后第48位是多少？</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/959">《从一到无穷大》选谈：思维的尺度</a></li>
-  <li>★ <a href="http://www.matrix67.com/blog/archives/701">“解答和题目一样长”：更多的一句话证明</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/548">趣题：不断将各数替换为右侧比其小的数的个数，数列终将不再变化</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/351">等高线模式：解决极大极小问题的另类策略</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/396">趣题：估算小数点后第三位</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/173">Think Outside the Box: 一道原创智力题</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/127">关于套套：最近流行的一道智力题</a></li>
-  <li>★ <a href="http://www.matrix67.com/blog/archives/33">非常奇妙的证明：图形必在格点之外</a></li>
-  <li><a href="http://www.matrix67.com/blog/archives/83">几个很强的数列</a></li>
-</ul>
-
-<h2 id="section-13">总结</h2>
-
-<p>虽然链接数量很多，不过穿插在平时作碎片阅读也会很快的，更何况你会发现看着看着<strong>根本停不下来</strong>！</p>
-
-<p>10 年的时间过去，在博客中评论的同学的博客很多已经寻不见踪迹或停更，但 M 牛还是能一直坚持到今天，真的是不容易。个人揣想，一方面是真的热爱，另一方面围绕这个博客也形成了一个小圈子，大家的期待也是一种动力，再就是为了<strong>吸引 MM</strong> 吧……</p>
-
-<p>如果新浪博客的一些生活杂记也算的话，自己的博龄也四年多了。<strong>回看曾经的一些篇文章，不免觉得幼稚、小家子气</strong>。博客搬到这里也算是一种决裂，从此更多的记录工作生活中的思考、遇到的实际问题与解决方法等，这样一来，文章也会更有<strong>生命力</strong>一些。</p>
-
-<p>M 牛博客的高度是无法企及了，只是希望自己能够坚持下去。</p>
-
-<p><strong>立存此照，以观后效</strong>。</p>
-
-<p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2014/11/29/matrix67-bo-ke-zhong-zhi-li-ti-cu-fen-lei/">http://frank19900731.github.io/blog/2014/11/29/matrix67-bo-ke-zhong-zhi-li-ti-cu-fen-lei/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
 ]]></content>
   </entry>
   

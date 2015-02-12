@@ -183,12 +183,12 @@ LC_ALL= 关于 ANSI 编码 ，在中文 Windows 系统中可能是 GBK 编码，
     <button>Open Menu</button>
     <ul class="dl-menu">
         <li><a href="/">Home</a></li>
-        <li><a href="/archives/">Archives (41)</a></li>
+        <li><a href="/archives/">Archives (42)</a></li>
         <li>
-            <a href="#">Categories (7)</a>
+            <a href="#">Categories (8)</a>
             <ul class="dl-submenu">
                 <li class="dl-back"><a href="#">Back</a></li>
-                <li><a href="/blog/categories">All Categories (7)</a>
+                <li><a href="/blog/categories">All Categories (8)</a>
                 <li style="color: #CCCCCC; line-height: 150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Top 5</li>
 
                 <li><a href='/category/面试求职'>面试求职 (13)</a></li><li><a href='/category/Mac 使用'>Mac 使用 (12)</a></li><li><a href='/category/工作效率'>工作效率 (8)</a></li><li><a href='/category/网页开发'>网页开发 (4)</a></li><li><a href='/category/编程学习'>编程学习 (2)</a></li>
@@ -267,6 +267,10 @@ LC_ALL= 关于 ANSI 编码 ，在中文 Windows 系统中可能是 GBK 编码，
 <ul>
 	
     <li>
+    	<a href="/blog/2015/02/12/mei-zhou-yi-ruan-zhi-sitesucker/">每周一软之 SiteSucker</a>
+    </li>
+    
+    <li>
     	<a href="/blog/2015/02/11/jie-jue-mac-xia-zip-ya-suo-wen-jian-zai-windows-xia-xian-shi-luan-ma-de-wen-ti/">解决 Mac 下 Zip 压缩文件在 Windows 中显示乱码的问题</a>
     </li>
     
@@ -282,25 +286,21 @@ LC_ALL= 关于 ANSI 编码 ，在中文 Windows 系统中可能是 GBK 编码，
     	<a href="/blog/2015/01/26/mac-xia-an-zhuang-wecenter-bing-tian-jia-dai-ma-gao-liang-gong-neng/">Mac 下安装 WeCenter 并添加代码高亮功能</a>
     </li>
     
-    <li>
-    	<a href="/blog/2015/01/25/mei-zhou-yi-ruan-zhi-bartender/">每周一软之 Bartender</a>
-    </li>
-    
 </ul>
         </li>
 <li>
     <h3>Tags</h3>
     <ul class="tag-cloud">
-        <a style="font-size: 125%" href="/tag/Scala/">Scala</a>
+        <a style="font-size: 123%" href="/tag/Scala/">Scala</a>
 <a style="font-size: 210%" href="/tag/mac软件/">mac软件</a>
-<a style="font-size: 145%" href="/tag/效率/">效率</a>
-<a style="font-size: 145%" href="/tag/数据可视化/">数据可视化</a>
-<a style="font-size: 125%" href="/tag/时间管理/">时间管理</a>
-<a style="font-size: 125%" href="/tag/智力题/">智力题</a>
-<a style="font-size: 200%" href="/tag/每周一软/">每周一软</a>
-<a style="font-size: 159%" href="/tag/知识管理/">知识管理</a>
-<a style="font-size: 145%" href="/tag/笔试/">笔试</a>
-<a style="font-size: 187%" href="/tag/面试经验/">面试经验</a>
+<a style="font-size: 143%" href="/tag/效率/">效率</a>
+<a style="font-size: 143%" href="/tag/数据可视化/">数据可视化</a>
+<a style="font-size: 123%" href="/tag/时间管理/">时间管理</a>
+<a style="font-size: 123%" href="/tag/智力题/">智力题</a>
+<a style="font-size: 201%" href="/tag/每周一软/">每周一软</a>
+<a style="font-size: 157%" href="/tag/知识管理/">知识管理</a>
+<a style="font-size: 143%" href="/tag/笔试/">笔试</a>
+<a style="font-size: 184%" href="/tag/面试经验/">面试经验</a>
 
     </ul>
 </li><li>
@@ -466,7 +466,7 @@ LC_ALL= 关于 ANSI 编码 ，在中文 Windows 系统中可能是 GBK 编码，
 <p>以上为第一种方法。</p>
 
 <ol>
-  <li><a href="http://www.kekaosx.com/en/">Keka</a>，可行。</li>
+  <li><a href="http://www.kekaosx.com/en/">Keka</a>，可行。不过每次<strong>打开软件并拖拽文件</strong>的操作会略显繁琐。</li>
   <li>上传到百度文库然后下载，无效。</li>
   <li>使用 YemuZip 等号称与 Windows 兼容的软件，无效，仅能删除 .DS_Store 一类的文件。</li>
   <li>修改后缀 zip 为 rar，无效。</li>
@@ -475,7 +475,7 @@ LC_ALL= 关于 ANSI 编码 ，在中文 Windows 系统中可能是 GBK 编码，
 
 <p>2 - 4 分别是网上给出的“可行”方案，由于没有触及<strong>文件名编码格式</strong>这个核心问题，所以都不可行。</p>
 
-<p>第 5 种方案 7z 命令行是可行的，下一段中会介绍。其实 <strong>Keka 也是基于 7z 压缩的</strong>，一方面可见 <code>/Applications/Keka.app/Contents/Resources</code> 目录下的可执行文件，另一方面，我对比了 Keka 和 7z 对同一个文本文件的压缩结果，<strong>二进制表示完全一致</strong>。</p>
+<p>第 5 种方案 7z 命令行是可行的，且可以集成到右键菜单中，使用方便，下一段中会介绍。其实 <strong>Keka 也是基于 7z 压缩的</strong>，一方面可见 <code>/Applications/Keka.app/Contents/Resources</code> 目录下的可执行文件，另一方面，我对比了 Keka 和 7z 对同一个文本文件的压缩结果，<strong>二进制表示完全一致</strong>。</p>
 
 <h3 id="p7zip-">右键菜单添加 p7zip 压缩</h3>
 
@@ -945,7 +945,7 @@ LC_ALL= 关于 ANSI 编码 ，在中文 Windows 系统中可能是 GBK 编码，
              <a href="/blog/2015/02/08/mei-zhou-yi-ruan-zhi-blotter/">« 每周一软之 Blotter</a> 
         </span>
         <span style="float:right">
-            
+             <a href="/blog/2015/02/12/mei-zhou-yi-ruan-zhi-sitesucker/">每周一软之 SiteSucker » </a> 
         </span>
     </div>
 

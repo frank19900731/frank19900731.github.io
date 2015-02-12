@@ -1,0 +1,244 @@
+
+<item>
+    <title>每周一软之 SiteSucker</title>
+    <link>http://realjenius.com/blog/2015/02/12/mei-zhou-yi-ruan-zhi-sitesucker/</link>
+    <author>R.J. Lorimer</author>
+    <pubDate>2015-02-12T01:38:02+08:00</pubDate>
+    <guid>http://realjenius.com/blog/2015/02/12/mei-zhou-yi-ruan-zhi-sitesucker/</guid>
+    <description><![CDATA[
+     <p><strong>目录</strong></p>
+
+<ul id="markdown-toc">
+  <li><a href="#section">功能介绍</a></li>
+  <li><a href="#section-1">界面设计</a></li>
+  <li><a href="#section-2">易用性</a></li>
+  <li><a href="#section-3">稳定性</a></li>
+  <li><a href="#section-4">跨平台</a></li>
+  <li><a href="#section-5">类似软件</a></li>
+  <li><a href="#section-6">闪光点</a></li>
+  <li><a href="#section-7">缺点</a></li>
+</ul>
+
+<!-- excerpt start -->
+
+<h2 id="section">功能介绍</h2>
+
+<p><a href="http://www.sitesucker.us/mac/mac.html">SiteSucker</a> 是一款站点下载软件，<strong>复制站点结构</strong>，<strong>下载相关资源文件</strong>，包括 HTML、JS、CSS、图片、视频等，以方便离线查看。</p>
+
+<p>离线查看主要有两种原因，一种是觉得很有价值，比如 API 文档，需要随时查看；另一种就是网页反应太慢，不如一次性下载完成，本地快速查看。基于第二种原因，我用 SiteSucker 对 <a href="https://www.openproject.org/">OpenProject 站点</a> 做了 <a href="http://frank19900731.github.io/ebook/openproject/">镜像</a>，看起来不错的样子。</p>
+
+<p>作为一款爬虫软件，SiteSucker 的下载设置和 wget、curl 等命令行工具的参数设置是相似的，它的优势主要体现在：</p>
+
+<ol>
+  <li>图形化界面操作，免除参数记忆，配置可以保存再利用；</li>
+  <li>可以方便地暂停、继续、终止、保存抓取过程；</li>
+  <li>自带详细的日志输出，为参数调整提供有价值的参考。</li>
+</ol>
+
+<p>图形界面设置的精细程度毕竟不如命令行工具，不过对于常见的教程备份、博客备份等需求，我觉得还是绰绰有余的；而更复杂的任务，可能需要<strong>根据抓取结果迭代调整参数设置</strong>来完成。对于一些 <strong>JS 效果复杂</strong>的网页，可能不仅是 SiteSucker，连 wget 都无法胜任了（因为没法模拟一些人为操作去获取链接）。</p>
+
+<!-- excerpt end -->
+
+<p>接下来，我大概从一个用户需求的角度介绍 SiteSucker 的功能。</p>
+
+<ul>
+  <li><strong>首先指定种子 url 作为起始，从抓取页面中提取新的 url 作为接下来的抓取目标，可想而知这个过程可能无穷尽的进行下去，如何界定范围？</strong>
+    <ul>
+      <li>SiteSucker 对 <code>Path Constraints</code> 提供 5 种设置，假设种子 url 是 http://frank19900731.github.io/wx/archives/
+        <ul>
+          <li><strong>None</strong>  无限制 ；</li>
+          <li><strong>Host</strong>  与种子 url 属同一个（子）域，即 http://frank19900731.github.io/*；</li>
+          <li><strong>Subdomains</strong>   可以是其它子域（也包括父域），比如 http://hello.github.io/<em>，http://github.io/</em>，但不可以是国家代码子域，比如（如果有的话）http://frank19900731.github.io.hk；</li>
+          <li><strong>Directory</strong>  与种子 url 属于统一路径，即 http://frank19900731.github.io/wx/archives/*；</li>
+          <li><strong>Paths Settings</strong>  当前 url + 自定义 <code>Paths Settings</code>。</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><strong>接上条，如何自定义</strong> <code>Paths Settings</code> <strong>?</strong>
+    <ul>
+      <li><code>Paths to Include</code> &amp; <code>Paths to Exclude</code>，顾名思义定义希望被抓取/不希望被抓取的模式；</li>
+      <li>可以采用正则表达式定义；</li>
+      <li>不论 <code>Path Constraints</code> 的选择，<code>Paths Settings</code> 始终是生效的，引用 <a href="http://ricks-apps.com/osx/sitesucker/archive/2.x/2.6.x/2.6/manuals/en/pgs/Overview.html">官方教程</a> 的一段话总结 <strong>SiteSucker 如何判定一个 url 是否该被抓取</strong>：</li>
+    </ul>
+  </li>
+</ul>
+
+<blockquote>
+  <p>If this is the <strong>original URL</strong> (that is, the URL specified in the Web URL text box), then SiteSucker downloads the file.</p>
+
+  <p>Otherwise, if the URL begins with one of the strings (or matches one of the regular expressions) in the <strong>Paths to Exclude</strong> text box, then the file is not downloaded.</p>
+
+  <p>Otherwise, if the URL meets the requirements of the current <strong>Path Constraint</strong> setting, then the file is downloaded.</p>
+
+  <p>Otherwise, if the URL begins with one of the strings (or matches one of the regular expressions) in the <strong>Paths to Include</strong> text box, then SiteSucker downloads the file.</p>
+
+  <p>Otherwise, if the <strong>Include Supporting Files</strong> setting is on and the URL references a non-HTML file type, then SiteSucker downloads the file.</p>
+
+  <p>Otherwise, SiteSucker does not download the file.</p>
+</blockquote>
+
+<ul>
+  <li><strong>设置了</strong>  <code>Path Constraints</code>、<code>Paths Settings</code>，<strong>但还是可能有抓取遗漏，如何查看漏抓 url ？</strong>
+    <ul>
+      <li>勾选 <code>Export External Links</code>，下载目录中名为 _ExternalLinks.html 的文件记录了漏抓 url，可以将他们填入 <code>Paths Settings</code>，重新抓取。</li>
+    </ul>
+  </li>
+  <li><strong>一些网站需要登录才能抓取，在 SiteSucker 中如何处理？</strong>
+    <ul>
+      <li>一种登录方式是<strong>弹出框</strong>，比如路由器管理页面，SiteSucker 会首先查询 Keychain 中的密码记录，如果没有则弹出登陆框让用户输入；</li>
+      <li>另一种登录方式是<strong>页面登录</strong>，比如人人网。菜单栏点击 Control -&gt; Open Browser 弹出浏览框，在浏览框中登录即可下载，如下图所示。</li>
+    </ul>
+  </li>
+</ul>
+
+<p><a href="http://frank19900731.github.io/img/post/2015-2/14.png" class="img-up" title="登录下载"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-2/14.png" width="70%" title="登录下载" /></a></p>
+
+<ul>
+  <li><strong>不希望抓取某些类型的文件，比如压缩包、视频等，该如何设置？</strong>
+    <ul>
+      <li><code>File Types</code> 中选择 <code>Disallow Specified File Types</code>，然后指定相关文件类型。</li>
+    </ul>
+  </li>
+  <li><strong>希望同时抓取多个网页，怎样设置连接数？</strong>
+    <ul>
+      <li>Preferences 中可以设置连接数，如下图。</li>
+    </ul>
+  </li>
+</ul>
+
+<p><a href="http://frank19900731.github.io/img/post/2015-2/13.png" class="img-up" title="设置连接数"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-2/13.png" width="60%" title="设置连接数" /></a></p>
+
+<ul>
+  <li><strong>一些站点需要隔段时间抓去一次（比如博客），文件覆盖方式如何设置？</strong>
+    <ul>
+      <li><code>File Replacement</code> 提供三种选择
+        <ul>
+          <li><strong>Never</strong>  不覆盖；</li>
+          <li><strong>Always</strong>  总是覆盖；</li>
+          <li><strong>With Newer</strong>  保留较新的那个。</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><strong>如何将 HTML 中的文件链接（如 JS、CSS）修改为本地引用？</strong>
+    <ul>
+      <li><code>File Modification</code> 设置为 <strong>Localize</strong></li>
+    </ul>
+  </li>
+  <li><strong>如何突破 robots.txt 的限制（不建议）？</strong>
+    <ul>
+      <li>勾选 <code>Ignore Robot Exclusions</code>。</li>
+    </ul>
+  </li>
+  <li><strong>如何查看抓取日志？</strong>
+    <ul>
+      <li><code>Logs</code> 中勾选日志级别，log 文件会生成在已设置的下载文件夹中，有如下格式的记录。分析未抓取链接的原因，进行可能的参数调整。</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>SiteSucker 日志记录</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+<span class="line-number">11</span>
+<span class="line-number">12</span>
+<span class="line-number">13</span>
+<span class="line-number">14</span>
+<span class="line-number">15</span>
+<span class="line-number">16</span>
+<span class="line-number">17</span>
+<span class="line-number">18</span>
+<span class="line-number">19</span>
+</pre></td><td class="code"><pre><code class="bash"><span class="line">2/12/15, 11:55:35 AM - MEDIA TYPE: <span class="s2">&quot;http://frank19900731.github.io/&quot;</span> has a media <span class="nb">type </span>of
+</span><span class="line">	text/html
+</span><span class="line">...
+</span><span class="line">2/12/15, 11:55:35 AM - WARNING: Unable to download <span class="s2">&quot;http://blog.sina.com/frank19900731&quot;</span>,
+</span><span class="line">	referenced from <span class="s2">&quot;http://frank19900731.github.io&quot;</span>,
+</span><span class="line">	because its path is not allowed
+</span><span class="line">2/12/15, 11:55:35 AM - WARNING: Unable to download <span class="s2">&quot;http://weibo.sina.com/frank19900731&quot;</span>,
+</span><span class="line">	referenced from <span class="s2">&quot;http://frank19900731.github.io&quot;</span>,
+</span><span class="line">	because its path is not allowed
+</span><span class="line">...
+</span><span class="line">2/12/15, 11:55:35 AM - WARNING: May not be able to follow all links on <span class="s2">&quot;http://frank19900731.github.io&quot;</span>
+</span><span class="line">	because it uses JavaScript
+</span><span class="line">2/12/15, 11:55:35 AM - HISTORY: Downloaded <span class="s2">&quot;http://frank19900731.github.io&quot;</span>
+</span><span class="line">2/12/15, 11:55:35 AM - MEDIA TYPE: <span class="s2">&quot;http://frank19900731.github.io/favicon.ico&quot;</span> has a media <span class="nb">type </span>of
+</span><span class="line">	image/x-icon
+</span><span class="line">2/12/15, 11:55:36 AM - HISTORY: Downloaded <span class="s2">&quot;http://frank19900731.github.io/favicon.ico&quot;</span>
+</span><span class="line">2/12/15, 11:55:36 AM - MEDIA TYPE: <span class="s2">&quot;http://frank19900731.github.io/javascripts/modernizr.custom.js&quot;</span> has a media <span class="nb">type </span>of
+</span><span class="line">	application/javascript
+</span><span class="line">...
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>其它参数诸如最大扩展层数、默认页面编码、超时设置等都是网页抓取的基本设置，不再讨论。更多功能使用详见 <a href="http://ricks-apps.com/osx/sitesucker/archive/2.x/2.6.x/2.6/manuals/en/pgs/Overview.html">官方教程</a>。</p>
+
+<h2 id="section-1">界面设计</h2>
+
+<p>简单直接。</p>
+
+<p><a href="http://frank19900731.github.io/img/post/2015-2/15.png" class="img-up" title="SiteSucker 界面"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-2/15.png" width="75%" title="SiteSucker 界面" /></a></p>
+
+<h2 id="section-2">易用性</h2>
+
+<p>如<a href="#section">功能介绍</a>中所述，不同站点的提取难度不尽相同，摸索<strong>一套行之有效的参数</strong>的过程可能会比较复杂。</p>
+
+<h2 id="section-3">稳定性</h2>
+
+<p>稳定性好。</p>
+
+<h2 id="section-4">跨平台</h2>
+
+<p>支持 <a href="http://www.sitesucker.us/ios/ios.html">iOS</a>，网页站点可以打包在 iOS 和 OSX 间传输，对应 File -&gt; (Un)Pack Downloads 的功能。</p>
+
+<h2 id="section-5">类似软件</h2>
+
+<ul>
+  <li>命令行工具 <a href="http://curl.haxx.se/">curl</a>、 <a href="https://www.gnu.org/software/wget/">wget</a>
+    <ul>
+      <li><strong>上手简单</strong>，以 wget 为例，抓取一般站点只需 <code>wget -r -p -np -k url</code> 一条命令；</li>
+      <li>深入研究一下，可以进行更精细的设置，也可二次开发；</li>
+      <li>也有单条 wget 处理不好的情况，比如一些页面代码中可见 <code>css?v=x.x.x</code> 的写法，一般是为了 <a href="http://blog.csdn.net/zanychou/article/details/8813076">清除客户端缓存</a>，但 wget 会将其直接保存为 <code>css?v=x.x.x</code>（于是离线站点无法加载这一文件），可见这个 <a href="http://superuser.com/questions/703435/using-wget-to-download-css-with-get-params">提问</a>，而不是像 SiteSucker 那样识别并保存为 css 文件。</li>
+    </ul>
+  </li>
+  <li>Adobe Acrobat
+    <ul>
+      <li>Adobe Acrobat 支持<strong>从网页创建 PDF</strong>，也可以抓取站点，如下图。</li>
+    </ul>
+  </li>
+</ul>
+
+<p><a href="http://frank19900731.github.io/img/post/2015-2/12.png" class="img-up" title="Adobe Acrobat 抓取页面"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-2/12.png" width="80%" title="Adobe Acrobat 抓取页面" /></a></p>
+
+<ul>
+  <li><a href="http://www.sentenzadesktop.com/easy-script-copier/">Easy Script Copier</a>
+    <ul>
+      <li>抓取单个页面及相应的 JS、CSS，<strong>扒取网页格式</strong>很管用。</li>
+    </ul>
+  </li>
+  <li>网页抓取框架，如 <a href="http://nutch.apache.org/">Apache Nutch</a>、<a href="https://github.com/scrapy/scrapy">Scrapy</a> 等，功能自然更强大，对普通用户有较高的使用门槛。然而，对于大多数日常需求，还是有种<strong>大炮打蚊子</strong>的赶脚。</li>
+</ul>
+
+<h2 id="section-6">闪光点</h2>
+
+<ul>
+  <li>可视化定制，功能丰富，特别是支持<strong>登录抓取</strong>。</li>
+</ul>
+
+<h2 id="section-7">缺点</h2>
+
+<p>官网上有介绍 SiteSucker 的 <a href="http://www.sitesucker.us/mac/limitations.html">Limitations</a>。</p>
+
+<p>总的来说是良心之作，硬要说缺点不如说是建议：如果能有一个插件系统，用户可以开发、分享网页处理过程中某个具体处理环节的代码就更好了。</p>
+
+<p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2015/02/12/mei-zhou-yi-ruan-zhi-sitesucker/">http://frank19900731.github.io/blog/2015/02/12/mei-zhou-yi-ruan-zhi-sitesucker/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
+
+  ]]></description>
+</item>
