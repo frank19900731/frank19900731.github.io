@@ -24,7 +24,7 @@ Ulysses III （下称 Ulysses）是一款 Markdown 笔记软件，五月份相�
 
 Ulysses 是 AppStore 的 **Best of 2013** 之一，目前全球累计300多条评分，平均是四星半，可以从其漂亮的 [官方网站](http://www.ulyssesapp.com/) 上获得概要介绍。
 
-Ulysses 在中国市场售价 237 软妹币，可以从官网下载 Demo 试用，也可以到 [MacGG](http://www.macgg.com/archives/category/mac%E8%BD%AF%E4%BB%B6) 下载（你懂得），不过不是最新版本。考虑到 Ulysses 对自己这一年的成长帮助确实大，将来也很可能长期使用，狠狠心，买了作为送给自己的新年礼物了……虽然 AppStore 页面内容加载慢，扣费那可真叫一个快，前脚输入 Apple 账号密码，后脚信用卡扣费通知就到了，**没有任何菊花延迟**！
+Ulysses 在中国市场售价 283 软妹币，可以从官网下载 Demo 试用，也可以到 [MacGG](http://www.macgg.com/archives/category/mac%E8%BD%AF%E4%BB%B6) 下载（你懂得），不过不是最新版本。考虑到 Ulysses 对自己这一年的成长帮助确实大，将来也很可能长期使用，狠狠心，买了作为送给自己的新年礼物了……虽然 AppStore 页面内容加载慢，扣费那可真叫一个快，前脚输入 Apple 账号密码，后脚信用卡扣费通知就到了，**没有任何菊花延迟**！
 
 言归正传，还是分八个方面加以分析，重点在 [类似软件](#section-6)。
 
