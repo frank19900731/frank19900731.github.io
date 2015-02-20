@@ -1,5 +1,108 @@
 
 <item>
+    <title>每周一软之 VideoGIF</title>
+    <link>http://realjenius.com/blog/2015/02/20/mei-zhou-yi-ruan-zhi-videogif/</link>
+    <author>R.J. Lorimer</author>
+    <pubDate>2015-02-20T19:46:58+08:00</pubDate>
+    <guid>http://realjenius.com/blog/2015/02/20/mei-zhou-yi-ruan-zhi-videogif/</guid>
+    <description><![CDATA[
+     <p><strong>目录</strong></p>
+
+<ul id="markdown-toc">
+  <li><a href="#section">功能介绍</a></li>
+  <li><a href="#section-1">界面设计</a></li>
+  <li><a href="#section-2">易用性</a></li>
+  <li><a href="#section-3">稳定性</a></li>
+  <li><a href="#section-4">跨平台</a></li>
+  <li><a href="#section-5">类似软件</a></li>
+  <li><a href="#section-6">闪光点</a></li>
+  <li><a href="#section-7">缺点</a></li>
+</ul>
+
+<!-- excerpt start -->
+
+<h2 id="section">功能介绍</h2>
+
+<p><a href="http://www.pearlmountainsoft.com/videogif/">VideoGIF</a> 是一款截取视频内容生成 GIF (Graphics Interchange Format) 格式图片的工具。</p>
+
+<p>VideoGIF 支持</p>
+
+<ul>
+  <li>摄像头视频采集；</li>
+  <li>拖拽选择待转换内容的起止时间点；</li>
+  <li>区域裁剪，自定义图像尺寸；</li>
+  <li><strong>添加文字、图像元素</strong>，并设定出现的起止时间；</li>
+  <li>调整图片色彩指标，包括亮度、对比度等；</li>
+  <li>导出 GIF 时设定帧率/帧数+延迟，可自动优化文件体积。</li>
+</ul>
+
+<!-- excerpt end -->
+
+<p><strong>功能界面</strong>：</p>
+
+<p><a href="http://frank19900731.github.io/img/post/2015-2/16.png" class="img-up" title="功能界面"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-2/16.png" width="90%" title="功能界面" /></a></p>
+
+<p><strong>导出界面</strong>：</p>
+
+<p><a href="http://frank19900731.github.io/img/post/2015-2/17.png" class="img-up" title="导出界面"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-2/17.png" width="90%" title="导出界面" /></a></p>
+
+<p>VideoGIF 可以帮助我们方便地从影视作品中导出<strong>精（dou）彩（bi）</strong>片段，或从录屏中导出一段演示。</p>
+
+<p><a href="http://frank19900731.github.io/img/post/2015-2/2.gif" class="img-up" title="逗比片段"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-2/2.gif" width="80%" title="逗比片段" /></a></p>
+
+<p>除视频外，我们可能还需要将多幅图片拼成 GIF，VideoGIF 的制作方相应提供了 <a href="http://www.pearlmountainsoft.com/picgif/">PicGIF</a>，会在 <a href="#section-5">类似软件</a> 中提到。</p>
+
+<h2 id="section-1">界面设计</h2>
+
+<p>简洁美观。</p>
+
+<p><a href="http://frank19900731.github.io/img/post/2015-2/18.png" class="img-up" title="VideoGIF 界面"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-2/18.png" width="80%" title="VideoGIF 界面" /></a></p>
+
+<h2 id="section-2">易用性</h2>
+
+<p>使用方便，会拖拽起止范围、会设置总帧数/帧率即可。</p>
+
+<h2 id="section-3">稳定性</h2>
+
+<p>稳定性好。</p>
+
+<h2 id="section-4">跨平台</h2>
+
+<p>无。</p>
+
+<h2 id="section-5">类似软件</h2>
+
+<ul>
+  <li><a href="http://www.pearlmountainsoft.com/picgif/">PicGIF</a>，根据多幅图片生成 GIF，基本功能如裁剪、调色等同 VideoGIF，也<strong>支持视频输入</strong>，会首先根据用户的起止时间和帧率/帧数设置从视频中提取相应数量的图片，之后处理同多幅图片；</li>
+  <li><a href="http://www.helloresolven.com/portfolio/gifbrewery/">GIF Brewery</a>，除界面（略丑），功能与 VideoGIF 完全一致……</li>
+  <li><a href="http://www.cockos.com/licecap/">LICEcap</a>，<strong>录屏 + 转 GIF</strong>，损失一些定制灵活性，但操作快捷；</li>
+  <li><strong>Photoshop</strong> 可将多幅图片转 GIF，网上有相关 <a href="http://jingyan.baidu.com/article/9158e0006047daa2541228f3.html">教程</a>；</li>
+  <li>威锋网上有一篇 <a href="http://bbs.feng.com/read-htm-tid-6980293.html">Mac 下 GIF 制作软件</a> 的讨论，其中的软件在功能、界面上都不超过 VideoGIF、PicGIF；</li>
+  <li><strong>命令行工具</strong>，<a href="https://www.ffmpeg.org/">ffmpeg</a>（根据视频生成 GIF 动画）、<a href="http://www.lcdf.org/~eddietwo/gifsicle/">gifsicle</a>（GIF 的创建、拆解、编辑、优化等）
+    <ul>
+      <li>一个使用案例可见 <a href="http://www.ideawu.net/blog/archives/856.html">OS X 屏幕录制视频转 GIF 动画</a>。</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="section-6">闪光点</h2>
+
+<ul>
+  <li>功能完善，操作简便。</li>
+</ul>
+
+<h2 id="section-7">缺点</h2>
+
+<ul>
+  <li>不明白为什么要和 PicGIF 分为两个软件，就为了多挣一分钱么……</li>
+</ul>
+
+<p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2015/02/20/mei-zhou-yi-ruan-zhi-videogif/">http://frank19900731.github.io/blog/2015/02/20/mei-zhou-yi-ruan-zhi-videogif/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
+
+  ]]></description>
+</item>
+
+<item>
     <title>每周一软之 SiteSucker</title>
     <link>http://realjenius.com/blog/2015/02/12/mei-zhou-yi-ruan-zhi-sitesucker/</link>
     <author>R.J. Lorimer</author>
@@ -1458,89 +1561,6 @@
 <p><a href="http://frank19900731.github.io/img/post/2014-12/42.png" class="img-up" title="代码高亮预览"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-12/42.png" width="70%" title="代码高亮预览" /></a></p>
 
 <p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2014/12/21/mei-zhou-ruan-zhi-markdown-bi-ji-ruan-jian-ulysses-iii/">http://frank19900731.github.io/blog/2014/12/21/mei-zhou-ruan-zhi-markdown-bi-ji-ruan-jian-ulysses-iii/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
-
-  ]]></description>
-</item>
-
-<item>
-    <title>Wunderlist 添加快捷键启动</title>
-    <link>http://realjenius.com/blog/2014/12/20/wunderlist-tian-jia-kuai-jie-jian-qi-dong/</link>
-    <author>R.J. Lorimer</author>
-    <pubDate>2014-12-20T19:36:23+08:00</pubDate>
-    <guid>http://realjenius.com/blog/2014/12/20/wunderlist-tian-jia-kuai-jie-jian-qi-dong/</guid>
-    <description><![CDATA[
-     <!-- excerpt start -->
-<p>Wunderlist 可以设置全局快捷键快速添加新条目。按下快捷键，Wunderlist 软件启动，定位到 Index 组、 Add an item 输入框。</p>
-
-<p><a href="http://frank19900731.github.io/img/post/2014-12/33.png" class="img-up" title="Wunderlist 添加新条目"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-12/33.png" width="90%" title="Wunderlist 添加新条目" /></a></p>
-
-<p>这个功能其实一直被我用于 Wunderlist 的快速启动（在Dock里隐藏了…）。然而在 Wunderlist 的最近一次更新中，<strong>全局添加新条目不再能进入软件主体界面，而代之以快速输入框</strong>。</p>
-
-<p><a href="http://frank19900731.github.io/img/post/2014-12/32.png" class="img-up" title="Wunderlist 添加新条目"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-12/32.png" width="60%" title="Wunderlist 添加新条目" /></a></p>
-
-<p>考虑到依靠快捷键进入 Wunderlist 主界面的习惯已经根深蒂固，而 Wunderlist 本身又不再提供类似的功能，只能自己想办法。</p>
-
-<p>一种方式是借助 Alfred/Quicksilver 进行快速搜索，不过我还是懒得打字。然后想到了在 <code>System Preferences -&gt; Keyboard -&gt; Shortcuts</code> 里添加快捷键，不过支持用户自定义的只能是该程序菜单中已有的命令（但没有对应快捷键），而且还不是全局的。</p>
-
-<p>最后这个小任务是通过使用 Automator 定制了一个 Service 并关联快捷键完成的。</p>
-
-<!-- excerpt end -->
-
-<p>Automator 是 Mac 自带软件中的一个神器，顾名思义是能够将我们从繁重的体力活里解脱出来的，让电脑自动执行既定任务。此前用它做过文件重命名、图片尺寸批量调整的任务。</p>
-
-<p>Automator 可以创制不同种类的文件，但本质上都是工作流，遵循 <code>Input -&gt; Step-1 -&gt; Step-2 …</code> 的处理模式。其中，Application 除没有软件界面，与真实软件无二，可以显示于 Launchpad 和 Dock 中，而 Service 是这次任务所需要的。</p>
-
-<p><a href="http://frank19900731.github.io/img/post/2014-12/34.png" class="img-up" title="Automator 创建新文件"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-12/34.png" width="60%" title="Automator 创建新文件" /></a></p>
-
-<p>Automator 相当于一个拖拽式应用开发 IDE。在搜索框中输入 launch，将 Launch Application 拖拽到右边。Service 的输入选择 no input，而 Lanuch Application 自然选择 Wunderlist。保存文件，只需要指定文件名，因为保存目录默认是 <code>~/Library/Services</code>。</p>
-
-<p><a href="http://frank19900731.github.io/img/post/2014-12/35.png" class="img-up" title="Automator Service"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-12/35.png" width="90%" title="Automator Service" /></a></p>
-
-<p>此时在应用菜单的 Services 中就可以看到刚才创建的 Service（launch wunderlist），点击即可打开 Wunderlist 主界面。然而，并不是任意程序都有 Services 这一菜单项的，目前只发现了<strong>爱奇艺、搜狐影音客户端这两朵奇葩</strong>。</p>
-
-<p><a href="http://frank19900731.github.io/img/post/2014-12/36.png" class="img-up" title="Service"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-12/36.png" width="70%" title="Service" /></a></p>
-
-<p>接下来的任务就是给这个 Service 关联快捷键，在 <code>System Preferences -&gt; Keyboard -&gt; Shortcuts -&gt; Services</code> 中找到 General，其中就有我们刚才创建的 Service，设置快捷键即可。</p>
-
-<p><a href="http://frank19900731.github.io/img/post/2014-12/37.png" class="img-up" title="为 Service 添加快捷键"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-12/37.png" width="70%" title="为 Service 添加快捷键" /></a></p>
-
-<p>如法炮制，我们可以给 Hide All Applications 设置快捷键，相当于显示桌面的功能。然而在使用过程中发现，<strong>唯独在按下快捷键时处于 Focus 状态的窗口无法最小化，所以只能再跟着按一次 Command + M</strong>…</p>
-
-<p>Automator 给我们封装了很多模块功能，但不可能覆盖到所有的用户需求，所以支持用户脚本，脚本种类可以是 Apple Script、JavaScript、Shell Script（<strong>包括 Perl、Python、Ruby</strong>）。</p>
-
-<p>上面我们用到的启动应用程序的模块，相当于运行如下 Apple Script</p>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>启动应用程序</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-</pre></td><td class="code"><pre><code class="applescript"><span class="line"><span class="k">tell</span> <span class="nb">application</span> <span class="s2">&quot;Wunderlist&quot;</span> <span class="k">to</span> <span class="nb">launch</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<p>还有很多日常工作可以通过使用 Automator 来简化，比如</p>
-
-<ul>
-  <li>文件批量重命名；</li>
-  <li>图片批量尺寸调整，生成缩略图；</li>
-  <li><a href="http://luisroman.nl/post/40857635243/automating-ssh-logins-with-autossh-automator-and">开机自动 SSH 登录</a>；</li>
-  <li>快速打开一系列软件、网页；</li>
-  <li>一键退出所有程序；</li>
-  <li>根据选择的文本创建文件；</li>
-  <li>……</li>
-</ul>
-
-<p>当然，更多复杂功能的实现还有赖于对 Apple Script 等脚本的掌握。</p>
-
-<p>【阅读推荐】</p>
-
-<ul>
-  <li><a href="https://help.apple.com/automator/mac/10.10/index.html?localePath=en.lproj%23/aut6e8156d85">Automator Help</a></li>
-  <li><a href="http://computers.tutsplus.com/tutorials/10-awesome-uses-for-automator-explained--mac-15845">10 Awesome Uses for Automator Explained</a></li>
-  <li><a href="http://www.maclife.com/article/features/15_automator_and_applescripts_you_can%E2%80%99t_live_without">15 Automator and AppleScripts You Can’t Live Without</a></li>
-  <li><a href="http://luisroman.nl/post/40857635243/automating-ssh-logins-with-autossh-automator-and">Automating SSH logins with Autossh, Automator and Applescript</a></li>
-  <li><a href="http://mac.softpedia.com/get/Automator-Actions---Workflows/">Automator Actions &amp; Workflows for Downloads</a></li>
-  <li><a href="http://bbs.feng.com/read-htm-tid-8045539.html">【Automator】炮筒机器人流程实例</a>，内附 Apple Script 教程</li>
-  <li><a href="http://www.macworld.com/article/1133821/automatordownloads.html">8 great Automator downloads</a></li>
-</ul>
-
-<p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2014/12/20/wunderlist-tian-jia-kuai-jie-jian-qi-dong/">http://frank19900731.github.io/blog/2014/12/20/wunderlist-tian-jia-kuai-jie-jian-qi-dong/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
 
   ]]></description>
 </item>

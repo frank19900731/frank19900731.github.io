@@ -1,0 +1,294 @@
+<!-- layout/wx-default.html -->
+
+<!-- head.html -->
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <!-- 标签页标题 -->
+  <title>每周一软之 VideoGIF - Blog of 太极儒</title>
+  <meta name="author" content="Frank Song">
+  <!-- 定义description变量，如果有则用，没有则是正文，前150字 -->
+  
+  <meta name="description" content="目录 功能介绍 界面设计 易用性 稳定性 跨平台 类似软件 闪光点 缺点 功能介绍 VideoGIF 是一款截取视频内容生成 GIF (Graphics Interchange Format) 格式图片的工具。 VideoGIF 支持 摄像头视频采集； 拖拽选择待转换内容的起止时间点； 区域裁剪，自定义图像尺寸； 添加文字、图像元素，并设定出现的起止时间； 调整图片色彩指标，包括亮度、对比度等； 导出 GIF 时设定帧率/帧数+延迟，可自动优化文件体积。 功能界面： 导出界面： VideoGIF 可以帮助我们方便地从影视作品中导出精（dou）彩（bi）片段，或从录屏中导出一段演示。 除视频外，我们可能还需要将多幅图片拼成 GIF，VideoGIF 的制作方相应提供了 PicGIF，会在 类似软件 中提到。 界面设计 简洁美观。 易用性 使用方便，会拖拽起止范围、会设置总帧数/帧率即可。 稳定性 稳定性好。 跨平台 无。 类似软件 PicGIF，根据多幅图片生成 GIF，基本功能如裁剪、调色等同 VideoGIF，也支持视频输入，会首先根据用户的起止时间和帧率/帧数设置从视频中提取相应数量的图片，之后处理同多幅图片； GIF Brewery，除界面（略丑），功能与 VideoGIF 完全一致…… LICEcap，录屏 + 转 GIF，损失一些定制灵活性，但操作快捷； Photoshop 可将多幅图片转 GIF，网上有相关 教程； 威锋网上有一篇 Mac 下 GIF 制作软件 的讨论，其中的软件在功能、界面上都不超过 VideoGIF、PicGIF； 命令行工具，ffmpeg（根据视频生成 GIF 动画）、gifsicle（GIF 的创建、拆解、编辑、优化等） 一个使用案例可见 OS X 屏幕录制视频转 GIF 动画。 闪光点 功能完善，操作简便。 缺点 不明白为什么要和 PicGIF 分为两个软件，就为了多挣一分钱么…… ">
+  <meta name="keywords" content="mac软件, 每周一软, gif, VideoGIF, ffmpeg, PicGIF, GIF Brewery, Photoshop, gifsicle, LICEcap">
+  <meta name="baidu-site-verification" content="7O78rNJCOH" />
+  <meta name="360-site-verification" content="9ee6dda17557079b8855f9c8201b05bb" />
+  <meta name="msvalidate.01" content="408D13BCB6B6CE4973F6CD9E6A9E8195" />
+  <meta name="sogou_site_verification" content="CtgkJPDjga"/>
+  <meta name="chinaz-site-verification" content="081e7651-48c6-4c2f-a569-99321685eab1" />
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://frank19900731.github.io/wx/2015-02-20-mei-zhou-yi-ruan-zhi-videogif.html">
+  <!-- 网站小图标 -->
+  <link href="/favicon.ico" rel="icon">
+  <link href="/stylesheets/bootstrap/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="/stylesheets/bootstrap/responsive.css" rel="stylesheet" type="text/css">
+  <!-- 网站样式文件 -->
+  <link href="/stylesheets/styles.css" media="screen, projection" rel="stylesheet" type="text/css">
+
+  <link href="/atom.xml" rel="alternate" title="Blog of 太极儒" type="application/atom+xml">
+
+  <script src="/javascripts/modernizr.custom.js"></script>
+  <!-- jQuery -->
+  <!--script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script-->
+  <script src="/javascripts/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+
+  <!-- 其它js代码 -->
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <script src="/javascripts/jquery.sidr.min.js"></script>
+  <script src="/javascripts/ah-blue.js"></script>
+  <script type="text/javascript" src="/javascripts/fancybox/jquery.fancybox.pack.js"></script>
+  <link rel="stylesheet" type="text/css" href="/javascripts/fancybox/jquery.fancybox.css" media="screen" />
+
+  <link href="/stylesheets/component.css" rel="stylesheet" type="text/css">
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+        if ($(".img-up")) {
+            $(".img-up").fancybox();
+        }
+        if ($(".imgleft")) {
+            $(".imgleft").parent().parent().css("text-align", "left");
+        }
+        if ($(".imgright")) {
+            $(".imgright").parent().parent().css("text-align", "right");
+        }
+        if ($(".imgcenter")) {
+            $(".imgcenter").parent().parent().css("text-align", "center");
+        }
+        if ($(".imgleft-no-shadow")) {
+            $(".imgleft-no-shadow").parent().parent().css("text-align", "left");
+        }
+        if ($(".imgright-no-shadow")) {
+            $(".imgright-no-shadow").parent().parent().css("text-align", "right");
+        }
+        if ($(".imgcenter-no-shadow")) {
+            $(".imgcenter-no-shadow").parent().parent().css("text-align", "center");
+        }
+
+        if ($(".mod_lost_child_little")) {
+            $(".mod_lost_child_little").css("width", "100%");
+        }
+    });
+  </script>
+
+  <style>
+      body {
+          background-image: none;
+      }
+
+      tr.content {
+          line-height: 300%;
+          border-top: 1px dotted #000;
+      }
+
+      table.mulu {
+          width: 95%; margin: 10px auto 40px;
+      }
+
+      .gutter {
+          width: 7%;
+      }
+  </style>
+
+  <!-- custom/head.html -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      jax: ["input/TeX", "output/HTML-CSS"],
+      tex2jax: {
+        inlineMath: [ ['$', '$'], ["\\(", "\\)"] ],
+        displayMath: [ ['$$', '$$'], ["\\[", "\\]"] ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+      //,
+      //displayAlign: "left",
+      //displayIndent: "2em"
+    });
+
+    function addBlankTargetForLinks () {
+
+      $('a[href^="http"]').each(function(){
+
+        $(this).attr('target', '_blank');
+
+      });
+
+    }
+
+    $(document).bind('DOMNodeInserted', function(event) {
+
+      addBlankTargetForLinks();
+
+    });
+
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"></script>
+  <!-- google_analytics.html -->
+
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-51950124-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head> 
+
+<body style="background-color: rgba(255, 255, 255, 0.3);">
+
+<div class="row-fluid marketing">
+<div class="span2"> </div>
+<div class="span8">
+<div class="container-narrow" style="margin-top: 20px;">
+
+      <div class="masthead">
+        <ul class="nav nav-pills pull-right">
+          <li><a href="/wx/archives/">博客目录</a></li>
+          <li><a href="/blog/2015/02/20/mei-zhou-yi-ruan-zhi-videogif/">PC端阅读</a></li>
+        </ul>
+        <h3 class="muted">&nbsp;&nbsp;&nbsp;&nbsp;太极儒</h3>
+      </div>
+
+	  <hr style="width: 100%;">
+
+      <div style="padding: 8px 25px 8px 25px;">
+        <h1>
+          每周一软之 VideoGIF
+        </h1>
+
+        <div class="article-date" style="margin-bottom: 40px;">
+            <!-- post/date.html -->
+<!-- 文章日期显示 -->
+
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2015-02-20T19:46:58+08:00" pubdate data-updated="true">Feb 20<span>th</span>, 2015</time>
+        </div>
+      <p><strong>目录</strong></p>
+
+<ul id="markdown-toc">
+  <li><a href="#section">功能介绍</a></li>
+  <li><a href="#section-1">界面设计</a></li>
+  <li><a href="#section-2">易用性</a></li>
+  <li><a href="#section-3">稳定性</a></li>
+  <li><a href="#section-4">跨平台</a></li>
+  <li><a href="#section-5">类似软件</a></li>
+  <li><a href="#section-6">闪光点</a></li>
+  <li><a href="#section-7">缺点</a></li>
+</ul>
+
+<!-- excerpt start -->
+
+<h2 id="section">功能介绍</h2>
+
+<p><a href="http://www.pearlmountainsoft.com/videogif/">VideoGIF</a> 是一款截取视频内容生成 GIF (Graphics Interchange Format) 格式图片的工具。</p>
+
+<p>VideoGIF 支持</p>
+
+<ul>
+  <li>摄像头视频采集；</li>
+  <li>拖拽选择待转换内容的起止时间点；</li>
+  <li>区域裁剪，自定义图像尺寸；</li>
+  <li><strong>添加文字、图像元素</strong>，并设定出现的起止时间；</li>
+  <li>调整图片色彩指标，包括亮度、对比度等；</li>
+  <li>导出 GIF 时设定帧率/帧数+延迟，可自动优化文件体积。</li>
+</ul>
+
+<!-- excerpt end -->
+
+<p><strong>功能界面</strong>：</p>
+
+<p><a href="/img/post/2015-2/16.png" class="img-up" title="功能界面"><img class="imgcenter" src="/img/post/2015-2/16.png" width="90%" title="功能界面" /></a></p>
+
+<p><strong>导出界面</strong>：</p>
+
+<p><a href="/img/post/2015-2/17.png" class="img-up" title="导出界面"><img class="imgcenter" src="/img/post/2015-2/17.png" width="90%" title="导出界面" /></a></p>
+
+<p>VideoGIF 可以帮助我们方便地从影视作品中导出<strong>精（dou）彩（bi）</strong>片段，或从录屏中导出一段演示。</p>
+
+<p><a href="/img/post/2015-2/2.gif" class="img-up" title="逗比片段"><img class="imgcenter" src="/img/post/2015-2/2.gif" width="80%" title="逗比片段" /></a></p>
+
+<p>除视频外，我们可能还需要将多幅图片拼成 GIF，VideoGIF 的制作方相应提供了 <a href="http://www.pearlmountainsoft.com/picgif/">PicGIF</a>，会在 <a href="#section-5">类似软件</a> 中提到。</p>
+
+<h2 id="section-1">界面设计</h2>
+
+<p>简洁美观。</p>
+
+<p><a href="/img/post/2015-2/18.png" class="img-up" title="VideoGIF 界面"><img class="imgcenter" src="/img/post/2015-2/18.png" width="80%" title="VideoGIF 界面" /></a></p>
+
+<h2 id="section-2">易用性</h2>
+
+<p>使用方便，会拖拽起止范围、会设置总帧数/帧率即可。</p>
+
+<h2 id="section-3">稳定性</h2>
+
+<p>稳定性好。</p>
+
+<h2 id="section-4">跨平台</h2>
+
+<p>无。</p>
+
+<h2 id="section-5">类似软件</h2>
+
+<ul>
+  <li><a href="http://www.pearlmountainsoft.com/picgif/">PicGIF</a>，根据多幅图片生成 GIF，基本功能如裁剪、调色等同 VideoGIF，也<strong>支持视频输入</strong>，会首先根据用户的起止时间和帧率/帧数设置从视频中提取相应数量的图片，之后处理同多幅图片；</li>
+  <li><a href="http://www.helloresolven.com/portfolio/gifbrewery/">GIF Brewery</a>，除界面（略丑），功能与 VideoGIF 完全一致……</li>
+  <li><a href="http://www.cockos.com/licecap/">LICEcap</a>，<strong>录屏 + 转 GIF</strong>，损失一些定制灵活性，但操作快捷；</li>
+  <li><strong>Photoshop</strong> 可将多幅图片转 GIF，网上有相关 <a href="http://jingyan.baidu.com/article/9158e0006047daa2541228f3.html">教程</a>；</li>
+  <li>威锋网上有一篇 <a href="http://bbs.feng.com/read-htm-tid-6980293.html">Mac 下 GIF 制作软件</a> 的讨论，其中的软件在功能、界面上都不超过 VideoGIF、PicGIF；</li>
+  <li><strong>命令行工具</strong>，<a href="https://www.ffmpeg.org/">ffmpeg</a>（根据视频生成 GIF 动画）、<a href="http://www.lcdf.org/~eddietwo/gifsicle/">gifsicle</a>（GIF 的创建、拆解、编辑、优化等）
+    <ul>
+      <li>一个使用案例可见 <a href="http://www.ideawu.net/blog/archives/856.html">OS X 屏幕录制视频转 GIF 动画</a>。</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="section-6">闪光点</h2>
+
+<ul>
+  <li>功能完善，操作简便。</li>
+</ul>
+
+<h2 id="section-7">缺点</h2>
+
+<ul>
+  <li>不明白为什么要和 PicGIF 分为两个软件，就为了多挣一分钱么……</li>
+</ul>
+
+      <div style="margin-top: 30px;">
+      本文原载于 <a href="http://frank19900731.github.io" target="_blank">http://frank19900731.github.io</a> (为获得更好的阅读效果，请在PC端访问此链接)，作者宋成儒，微信号 frank19900731，微博 <a href="http://weibo.com/frank19900731" target="_blank">@太极儒</a> 。
+      </div>
+      </div>
+
+</div> <!-- /container -->
+</div>
+<div class="span2"></div>
+</div>
+
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1253436508'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s6.cnzz.com/z_stat.php%3Fid%3D1253436508%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+</body>
+</html>

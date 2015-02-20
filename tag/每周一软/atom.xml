@@ -1,5 +1,108 @@
 
 <item>
+    <title>每周一软之 VideoGIF</title>
+    <link>http://realjenius.com/blog/2015/02/20/mei-zhou-yi-ruan-zhi-videogif/</link>
+    <author>R.J. Lorimer</author>
+    <pubDate>2015-02-20T19:46:58+08:00</pubDate>
+    <guid>http://realjenius.com/blog/2015/02/20/mei-zhou-yi-ruan-zhi-videogif/</guid>
+    <description><![CDATA[
+     <p><strong>目录</strong></p>
+
+<ul id="markdown-toc">
+  <li><a href="#section">功能介绍</a></li>
+  <li><a href="#section-1">界面设计</a></li>
+  <li><a href="#section-2">易用性</a></li>
+  <li><a href="#section-3">稳定性</a></li>
+  <li><a href="#section-4">跨平台</a></li>
+  <li><a href="#section-5">类似软件</a></li>
+  <li><a href="#section-6">闪光点</a></li>
+  <li><a href="#section-7">缺点</a></li>
+</ul>
+
+<!-- excerpt start -->
+
+<h2 id="section">功能介绍</h2>
+
+<p><a href="http://www.pearlmountainsoft.com/videogif/">VideoGIF</a> 是一款截取视频内容生成 GIF (Graphics Interchange Format) 格式图片的工具。</p>
+
+<p>VideoGIF 支持</p>
+
+<ul>
+  <li>摄像头视频采集；</li>
+  <li>拖拽选择待转换内容的起止时间点；</li>
+  <li>区域裁剪，自定义图像尺寸；</li>
+  <li><strong>添加文字、图像元素</strong>，并设定出现的起止时间；</li>
+  <li>调整图片色彩指标，包括亮度、对比度等；</li>
+  <li>导出 GIF 时设定帧率/帧数+延迟，可自动优化文件体积。</li>
+</ul>
+
+<!-- excerpt end -->
+
+<p><strong>功能界面</strong>：</p>
+
+<p><a href="http://frank19900731.github.io/img/post/2015-2/16.png" class="img-up" title="功能界面"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-2/16.png" width="90%" title="功能界面" /></a></p>
+
+<p><strong>导出界面</strong>：</p>
+
+<p><a href="http://frank19900731.github.io/img/post/2015-2/17.png" class="img-up" title="导出界面"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-2/17.png" width="90%" title="导出界面" /></a></p>
+
+<p>VideoGIF 可以帮助我们方便地从影视作品中导出<strong>精（dou）彩（bi）</strong>片段，或从录屏中导出一段演示。</p>
+
+<p><a href="http://frank19900731.github.io/img/post/2015-2/2.gif" class="img-up" title="逗比片段"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-2/2.gif" width="80%" title="逗比片段" /></a></p>
+
+<p>除视频外，我们可能还需要将多幅图片拼成 GIF，VideoGIF 的制作方相应提供了 <a href="http://www.pearlmountainsoft.com/picgif/">PicGIF</a>，会在 <a href="#section-5">类似软件</a> 中提到。</p>
+
+<h2 id="section-1">界面设计</h2>
+
+<p>简洁美观。</p>
+
+<p><a href="http://frank19900731.github.io/img/post/2015-2/18.png" class="img-up" title="VideoGIF 界面"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-2/18.png" width="80%" title="VideoGIF 界面" /></a></p>
+
+<h2 id="section-2">易用性</h2>
+
+<p>使用方便，会拖拽起止范围、会设置总帧数/帧率即可。</p>
+
+<h2 id="section-3">稳定性</h2>
+
+<p>稳定性好。</p>
+
+<h2 id="section-4">跨平台</h2>
+
+<p>无。</p>
+
+<h2 id="section-5">类似软件</h2>
+
+<ul>
+  <li><a href="http://www.pearlmountainsoft.com/picgif/">PicGIF</a>，根据多幅图片生成 GIF，基本功能如裁剪、调色等同 VideoGIF，也<strong>支持视频输入</strong>，会首先根据用户的起止时间和帧率/帧数设置从视频中提取相应数量的图片，之后处理同多幅图片；</li>
+  <li><a href="http://www.helloresolven.com/portfolio/gifbrewery/">GIF Brewery</a>，除界面（略丑），功能与 VideoGIF 完全一致……</li>
+  <li><a href="http://www.cockos.com/licecap/">LICEcap</a>，<strong>录屏 + 转 GIF</strong>，损失一些定制灵活性，但操作快捷；</li>
+  <li><strong>Photoshop</strong> 可将多幅图片转 GIF，网上有相关 <a href="http://jingyan.baidu.com/article/9158e0006047daa2541228f3.html">教程</a>；</li>
+  <li>威锋网上有一篇 <a href="http://bbs.feng.com/read-htm-tid-6980293.html">Mac 下 GIF 制作软件</a> 的讨论，其中的软件在功能、界面上都不超过 VideoGIF、PicGIF；</li>
+  <li><strong>命令行工具</strong>，<a href="https://www.ffmpeg.org/">ffmpeg</a>（根据视频生成 GIF 动画）、<a href="http://www.lcdf.org/~eddietwo/gifsicle/">gifsicle</a>（GIF 的创建、拆解、编辑、优化等）
+    <ul>
+      <li>一个使用案例可见 <a href="http://www.ideawu.net/blog/archives/856.html">OS X 屏幕录制视频转 GIF 动画</a>。</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="section-6">闪光点</h2>
+
+<ul>
+  <li>功能完善，操作简便。</li>
+</ul>
+
+<h2 id="section-7">缺点</h2>
+
+<ul>
+  <li>不明白为什么要和 PicGIF 分为两个软件，就为了多挣一分钱么……</li>
+</ul>
+
+<p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2015/02/20/mei-zhou-yi-ruan-zhi-videogif/">http://frank19900731.github.io/blog/2015/02/20/mei-zhou-yi-ruan-zhi-videogif/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
+
+  ]]></description>
+</item>
+
+<item>
     <title>每周一软之 SiteSucker</title>
     <link>http://realjenius.com/blog/2015/02/12/mei-zhou-yi-ruan-zhi-sitesucker/</link>
     <author>R.J. Lorimer</author>
@@ -1458,179 +1561,6 @@
 <p><a href="http://frank19900731.github.io/img/post/2014-12/42.png" class="img-up" title="代码高亮预览"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-12/42.png" width="70%" title="代码高亮预览" /></a></p>
 
 <p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2014/12/21/mei-zhou-ruan-zhi-markdown-bi-ji-ruan-jian-ulysses-iii/">http://frank19900731.github.io/blog/2014/12/21/mei-zhou-ruan-zhi-markdown-bi-ji-ruan-jian-ulysses-iii/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
-
-  ]]></description>
-</item>
-
-<item>
-    <title>每周一软之日记软件 Chronories</title>
-    <link>http://realjenius.com/blog/2014/12/14/mei-zhou-ruan-zhi-ri-ji-ruan-jian-chronories/</link>
-    <author>R.J. Lorimer</author>
-    <pubDate>2014-12-14T11:13:48+08:00</pubDate>
-    <guid>http://realjenius.com/blog/2014/12/14/mei-zhou-ruan-zhi-ri-ji-ruan-jian-chronories/</guid>
-    <description><![CDATA[
-     <p><strong>目录</strong></p>
-
-<ul id="markdown-toc">
-  <li><a href="#section">前言</a></li>
-  <li><a href="#section-1">功能介绍</a></li>
-  <li><a href="#section-2">界面设计</a></li>
-  <li><a href="#section-3">易用性</a></li>
-  <li><a href="#section-4">稳定性</a></li>
-  <li><a href="#section-5">跨平台</a></li>
-  <li><a href="#section-6">类似软件</a></li>
-  <li><a href="#section-7">闪光点</a></li>
-  <li><a href="#section-8">缺点</a></li>
-</ul>
-
-<h2 id="section">前言</h2>
-
-<!-- excerpt start -->
-
-<p>打算写一个“<strong>每周一软</strong>”系列，主要记录我在 Mac 平台下的软件使用感受和建议。作为一个收藏控和工具控，我曾对自己接触过的 Mac 软件做过一个分类整理，详见 <a href="http://blog.sina.com.cn/s/blog_64ac3ab10101f4it.html">《Mac 实用软件及功能吐血总结》</a>。“<strong>每周一软</strong>”与这份总结不同，一来会有更为详尽的介绍，二来都是我在工作生活中使用频率较高的，算是优中选优。</p>
-
-<p>每篇介绍将分<code>功能介绍</code>、<code>界面设计</code>、<code>易用性</code>、<code>稳定性</code>、<code>跨平台</code>、<code>类似软件</code>、<code>闪光点</code>、<code>缺点</code>这八块，希望给大家一个较为全面的认识。</p>
-
-<p>第一个要推荐的软件是日记软件 —— <strong>Chronories</strong>。</p>
-
-<p>话说 Chronories 是一款下架停更的软件（但还是可以用的……），之所以把它放在第一个来介绍，一方面是因为自己用得久，有感情，再者它确实强大有用。</p>
-
-<h2 id="section-1">功能介绍</h2>
-
-<p>Chronories 是著名的 <a href="http://www.syniumsoftware.com/">Synium Software</a> 公司的产品。</p>
-
-<p>与其说它是一款日记软件，不如说是在<strong>记录日志</strong>。</p>
-
-<p>这一日志数据既有我们主动录入的，比如日常感想、心情、照片，也有被 Chronories 在后台默默记录下的丰富信息。</p>
-
-<p>Chronories 以天为单位，可以记录的内容类别如下</p>
-
-<p><a href="http://frank19900731.github.io/img/post/2014-12/26.png" class="img-up" title="Chronories 记录的条目"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-12/26.png" width="30%" title="Chronories 记录的条目" /></a></p>
-
-<ul>
-  <li>Diary Entry —— 日记条目</li>
-  <li>Your Mood —— 心情</li>
-  <li>Interesting Topics —— 感兴趣的话题</li>
-  <li>Places —— 地点</li>
-  <li>Contacts —— 联系人</li>
-  <li>@Computer Activity —— 一天中的电脑活跃度，表现为折线图</li>
-  <li>@Local Weather —— 本地天气</li>
-  <li>@Application Used —— 不同软件的使用时长</li>
-  <li>@Music —— 在 iTunes 听过的音乐</li>
-  <li>@RSS News Headlines —— 你所录入的 RSS 当天的更新</li>
-  <li>Desktop Screenshots —— 截屏</li>
-  <li>Other Images —— 其它录入的图片</li>
-  <li>iSight Photos —— 摄像头拍摄，大部分情况下是自拍……</li>
-  <li>@e-mails —— Mail 当日收到的邮件</li>
-  <li>@Chat Statistics —— Message 聊天记录</li>
-  <li>@Visited Websites —— 当日访问过的网站</li>
-  <li>@iCal Appointment —— iCal 中的安排</li>
-</ul>
-
-<!-- excerpt end -->
-
-<p>@开头的是 Chronories 默默为你记录的，其它则需要主动输入，我习惯每天给桌面和自己拍一张照片，选择自己当天的心情，再写一小段或总结或鼓励自己的话。</p>
-
-<p>默默记录的条件是<strong>开机启动 Chronories Agent</strong>，会在菜单栏中显示一个图标。我们可以设定在某时提醒自己做某项录入工作，比如我的设定是每天凌晨零点提醒桌面截屏、照照片，每天下午三点提醒录入日记条目、选择心情。</p>
-
-<p>我们可以通过单击菜单栏图标快速记录（拍照、截屏、心情），也可以选择打开 Chronories 主程序进行记录。Yosemite 更新后，菜单栏显示会出两个小问题，分别是</p>
-
-<ul>
-  <li>图标按下后颜色会变化，但变不回来了；</li>
-  <li>表情图片无法显示。</li>
-</ul>
-
-<p>不过都不影响正常功能。</p>
-
-<p>此外，Chronories 还提供以下功能</p>
-
-<ul>
-  <li>录入内容的汇总统计，比如你各种心情的总天数、软件使用总时长、电脑活跃度统计，支持简单定制，比如时间、图表类型；</li>
-  <li>全面的条件搜索，比如搜索 <strong>当天 e-Mails 记录中包含了 “apple”</strong> 且 <strong>当天心情很好</strong> 且 <strong>时间晚于 2014年12月13日</strong> 的日记；</li>
-  <li>设置访问密码；</li>
-  <li>导出备份、导入还原，还支持导入 MacJournal 格式的日记；</li>
-  <li>设置背景图片、字体。</li>
-</ul>
-
-<h2 id="section-2">界面设计</h2>
-
-<p>不难看。</p>
-
-<p>要知道，软件 About 的信息里，显示的是 <strong>© Synium Software GmbH, 2009-2010</strong>。</p>
-
-<p>主界面</p>
-
-<p><a href="http://frank19900731.github.io/img/post/2014-12/27.png" class="img-up" title="主界面1"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-12/27.png" width="80%" title="主界面1" /></a></p>
-
-<p><a href="http://frank19900731.github.io/img/post/2014-12/30.png" class="img-up" title="主界面2"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-12/30.png" width="80%" title="主界面2" /></a></p>
-
-<p>2014年软件使用情况统计</p>
-
-<p><a href="http://frank19900731.github.io/img/post/2014-12/28.png" class="img-up" title="软件使用情况统计"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-12/28.png" width="80%" title="软件使用情况统计" /></a></p>
-
-<p>2014年每日电脑活跃状况统计</p>
-
-<p><a href="http://frank19900731.github.io/img/post/2014-12/29.png" class="img-up" title="每日电脑活跃状况统计"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-12/29.png" width="80%" title="每日电脑活跃状况统计" /></a></p>
-
-<h2 id="section-3">易用性</h2>
-
-<p>十分简单，开机自启动就行，让它慢慢记去。</p>
-
-<h2 id="section-4">稳定性</h2>
-
-<p>从 Lion 用过来一直都稳定，在 Yosemite 上菜单栏显示有小问题，不过不影响功能。因为停止维护，未来无法预期。</p>
-
-<h2 id="section-5">跨平台</h2>
-
-<p>没有 Windows/Linux 支持。</p>
-
-<p>没有移动端支持。</p>
-
-<p>相信不少人的习惯是在 PC 端做文字记录，在移动端看，所以建议只在 Chronories 中写一点杂事、随感。</p>
-
-<h2 id="section-6">类似软件</h2>
-
-<p>MacJournal、Mémoires、DayOne 都是 <code>日记软件</code>，前两个中规中矩，DayOne 倒是可圈可点。</p>
-
-<p>DayOne 的主要优点/特点是</p>
-
-<ul>
-  <li>界面美观；</li>
-  <li>跨平台支持；</li>
-  <li>支持密码保护、自动备份、地理定位、标签、收藏、分享、导出 PDF 等；</li>
-  <li>支持 Markdown（很有限，比如列表、加粗）；</li>
-  <li>支持 <a href="https://dayone.zendesk.com/hc/en-us/articles/200258954-Day-One-Tools">Command Line</a>，有点丧心病狂……</li>
-</ul>
-
-<p>日记软件的可被取代性太强，最大的竞争对手就是 <code>笔记软件</code>，比如 Evernote、Ulysses 等。特别是对于<strong>理工学生党</strong>、<strong>技术青壮年</strong>，学习、工作日记不是文字加配图就能搞定的事情，还要有链接、代码、公式、表格等内容。</p>
-
-<p>面对同类软件的竞争，Chronories 可以骄傲的说：</p>
-
-<blockquote>
-  <p>虽然我的定位是日记软件，但绝不是简单记录“天气晴、心情好……”的那款。别的日记软件在我这里只浓缩为一个名叫 Diary Entry 的小小输入框，而我记的日记叫日志。我的人生信条是，啥都干，啥都行，不想当将军的厨师不是好裁缝！</p>
-</blockquote>
-
-<h2 id="section-7">闪光点</h2>
-
-<p>Chronories 最大的闪光点在于它默默积累下的<strong>结构化数据</strong>。</p>
-
-<p>导出 Chronories Archives 后，每天的数据会被整理在一个单独的文件夹下，包括图片、邮件、日记条目。</p>
-
-<p>信息汇总在 info.xml 中，结构如下：</p>
-
-<p><a href="http://frank19900731.github.io/img/post/2014-12/31.png" class="img-up" title="info.xml 结构"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-12/31.png" width="80%" title="info.xml 结构" /></a></p>
-
-<p>有了这些原始数据，再结合基本的统计、数据挖掘和数据可视化的知识，就可以做出很多有意思的小项目。</p>
-
-<h2 id="section-8">缺点</h2>
-
-<ol>
-  <li>日记文字输入框较简单，不支持复杂格式；</li>
-  <li>没有移动端支持；</li>
-  <li>厂商不再维护，具体原因见 <a href="http://www.syniumsoftware.com/support/faq/chronories/why_have_we_stopped_selling_chronories.html">官网说明</a>。</li>
-</ol>
-
-<p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2014/12/14/mei-zhou-ruan-zhi-ri-ji-ruan-jian-chronories/">http://frank19900731.github.io/blog/2014/12/14/mei-zhou-ruan-zhi-ri-ji-ruan-jian-chronories/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
 
   ]]></description>
 </item>

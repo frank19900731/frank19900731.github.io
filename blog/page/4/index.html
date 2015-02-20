@@ -163,7 +163,7 @@
     <button>Open Menu</button>
     <ul class="dl-menu">
         <li><a href="/">Home</a></li>
-        <li><a href="/archives/">Archives (42)</a></li>
+        <li><a href="/archives/">Archives (43)</a></li>
         <li>
             <a href="#">Categories (7)</a>
             <ul class="dl-submenu">
@@ -171,7 +171,7 @@
                 <li><a href="/blog/categories">All Categories (7)</a>
                 <li style="color: #CCCCCC; line-height: 150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Top 5</li>
 
-                <li><a href='/category/Mac 使用'>Mac 使用 (13)</a></li><li><a href='/category/面试求职'>面试求职 (13)</a></li><li><a href='/category/工作效率'>工作效率 (8)</a></li><li><a href='/category/网页开发'>网页开发 (4)</a></li><li><a href='/category/编程学习'>编程学习 (2)</a></li>
+                <li><a href='/category/Mac 使用'>Mac 使用 (14)</a></li><li><a href='/category/面试求职'>面试求职 (13)</a></li><li><a href='/category/工作效率'>工作效率 (8)</a></li><li><a href='/category/网页开发'>网页开发 (4)</a></li><li><a href='/category/编程学习'>编程学习 (2)</a></li>
             </ul>
         </li>
         <li><a href="/blog/tags">All Tags (48)</a>
@@ -244,6 +244,10 @@
 <ul>
 	
     <li>
+    	<a href="/blog/2015/02/20/mei-zhou-yi-ruan-zhi-videogif/">每周一软之 VideoGIF</a>
+    </li>
+    
+    <li>
     	<a href="/blog/2015/02/12/mei-zhou-yi-ruan-zhi-sitesucker/">每周一软之 SiteSucker</a>
     </li>
     
@@ -259,25 +263,21 @@
     	<a href="/blog/2015/01/31/mei-zhou-yi-ruan-zhi-blocs/">每周一软之 Blocs</a>
     </li>
     
-    <li>
-    	<a href="/blog/2015/01/26/mac-xia-an-zhuang-wecenter-bing-tian-jia-dai-ma-gao-liang-gong-neng/">Mac 下安装 WeCenter 并添加代码高亮功能</a>
-    </li>
-    
 </ul>
         </li>
 <li>
     <h3>Tags</h3>
     <ul class="tag-cloud">
-        <a style="font-size: 123%" href="/tag/Scala/">Scala</a>
+        <a style="font-size: 122%" href="/tag/Scala/">Scala</a>
 <a style="font-size: 210%" href="/tag/mac软件/">mac软件</a>
-<a style="font-size: 143%" href="/tag/效率/">效率</a>
-<a style="font-size: 143%" href="/tag/数据可视化/">数据可视化</a>
-<a style="font-size: 123%" href="/tag/时间管理/">时间管理</a>
-<a style="font-size: 123%" href="/tag/智力题/">智力题</a>
-<a style="font-size: 201%" href="/tag/每周一软/">每周一软</a>
-<a style="font-size: 157%" href="/tag/知识管理/">知识管理</a>
-<a style="font-size: 143%" href="/tag/笔试/">笔试</a>
-<a style="font-size: 184%" href="/tag/面试经验/">面试经验</a>
+<a style="font-size: 141%" href="/tag/效率/">效率</a>
+<a style="font-size: 141%" href="/tag/数据可视化/">数据可视化</a>
+<a style="font-size: 122%" href="/tag/时间管理/">时间管理</a>
+<a style="font-size: 122%" href="/tag/智力题/">智力题</a>
+<a style="font-size: 202%" href="/tag/每周一软/">每周一软</a>
+<a style="font-size: 155%" href="/tag/知识管理/">知识管理</a>
+<a style="font-size: 141%" href="/tag/笔试/">笔试</a>
+<a style="font-size: 181%" href="/tag/面试经验/">面试经验</a>
 
     </ul>
 </li><li>
@@ -304,6 +304,85 @@
 </article>
 
 
+
+
+<article style="background-color: rgba(255, 255, 255, 0.3); padding: 25px 25px 25px 25px; border-radius: 20px;">
+	<!-- article.html -->
+<!-- 文章展示，区分在索引页和文章页 -->
+<header>
+  <div class="article-tags">
+      <!-- post/categories.html -->
+<!-- 文章类别展示 -->
+
+
+<span class="categories" style="font-size: 16px;">
+  Categories:
+  
+    <a class='category' href='/category/网页开发/'>网页开发</a>
+  
+
+</span>
+
+
+  </div>
+  
+    <h1><a href="/blog/2014/12/09/wei-bo-qia-pian-wei-bo-shou-cang-de-ke-shi-hua/">
+      微博卡片 — 微博收藏的可视化
+    </a></h1>
+  
+  <!-- 给出发布时间 -->
+  <div class="article-date">
+      <!-- post/date.html -->
+<!-- 文章日期显示 -->
+
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-12-09T15:23:26+08:00" pubdate data-updated="true">Dec 9<span>th</span>, 2014</time></div>
+</header>
+<hr />
+
+<!-- 如果在索引中 -->
+
+  <section class="article-index">
+
+<p>平时自己会有一些新浪微博的收藏，主要是跟自己专业、兴趣相关的资讯、资料，随着积累的增多，如何有效回顾这些收藏成为了一个问题。</p>
+
+<p>使用新浪微博自带的收藏页面，感觉翻页浏览不便；后来会在收藏的同时，把微博内容、图片分门别类拷贝到笔记中，但又不便于可视化。于是萌生了自己做一个微博可视化页面的想法，采用较为流行的瀑布流布局，每一条微博以卡片的形式展示。给出 <a href="https://github.com/frank19900731/weibocard">项目地址</a>  和 <a href="http://frank19900731.github.io/weibocard-demo/">Demo</a>。</p>
+
+<p><a href="/img/post/2014-12/25.png" class="img-up" title="微博卡片 Demo"><img class="imgcenter" src="/img/post/2014-12/25.png" width="80%" title="微博卡片 Demo" /></a></p>
+
+<p>项目使用新浪微博 Python SDK 抓取已收藏的微博，mongodb 做存储，根据查询条件生成 json 文件供前端可视化，前端瀑布流是从 <a href="http://www.imooc.com/learn/101">这门课</a> 中学到的。多说一句，慕课网里关于前端的教学内容非常丰富，很适合我这种半瓶醋选手……</p>
+
+<p>我只简单地实现了时间区间的提取，不过有了微博数据和可视化骨架在，定制精细化的整理、阅读方式应该不难。</p>
+
+</section>
+  <a href="/blog/2014/12/09/wei-bo-qia-pian-wei-bo-shou-cang-de-ke-shi-hua/" style="background: #da3e10; color: #ffffff; border-radius: 5px; border: 4px solid #da3e10;">继续阅读</a>&nbsp;&nbsp;&nbsp;&nbsp;
+<!-- post/tags.html -->
+<!-- 文章标签展示 -->
+
+
+<span class="tags">
+  <font color="#777">Tags: </font>
+  
+    <a class='tag' href='/tag/Mongodb/'>Mongodb</a>, <a class='tag' href='/tag/Python/'>Python</a>, <a class='tag' href='/tag/数据可视化/'>数据可视化</a>, <a class='tag' href='/tag/瀑布流布局/'>瀑布流布局</a>
+  
+</span>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<span class="ds-thread-count" data-thread-key="/blog/2014/12/09/wei-bo-qia-pian-wei-bo-shou-cang-de-ke-shi-hua/" style="color: #777;"></span>
+
+
+
+
+</article>
 
 
 <article style="background-color: rgba(255, 255, 255, 0.3); padding: 25px 25px 25px 25px; border-radius: 20px;">
@@ -818,113 +897,6 @@
 </span>
 &nbsp;&nbsp;&nbsp;&nbsp;
 <span class="ds-thread-count" data-thread-key="/blog/2014/11/25/mian-shi-jing-yan-fen-xiang-si-pian/" style="color: #777;"></span>
-
-
-
-
-</article>
-
-
-<article style="background-color: rgba(255, 255, 255, 0.3); padding: 25px 25px 25px 25px; border-radius: 20px;">
-	<!-- article.html -->
-<!-- 文章展示，区分在索引页和文章页 -->
-<header>
-  <div class="article-tags">
-      <!-- post/categories.html -->
-<!-- 文章类别展示 -->
-
-
-<span class="categories" style="font-size: 16px;">
-  Categories:
-  
-    <a class='category' href='/category/面试求职/'>面试求职</a>
-  
-
-</span>
-
-
-  </div>
-  
-    <h1><a href="/blog/2014/11/25/mian-shi-jing-yan-fen-xiang-zhi-bian-cheng-yu-yan-ti/">
-      面试经验分享之编程语言题
-    </a></h1>
-  
-  <!-- 给出发布时间 -->
-  <div class="article-date">
-      <!-- post/date.html -->
-<!-- 文章日期显示 -->
-
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-11-25T10:13:30+08:00" pubdate data-updated="true">Nov 25<span>th</span>, 2014</time></div>
-</header>
-<hr />
-
-<!-- 如果在索引中 -->
-
-  <section class="article-index">
-
-<h2 id="section-1">概述</h2>
-
-<p>编程语言题这个设定太狭隘了，应该说是偏工程类的题目，其中有些带有经验性质。出题范围大概是操作系统、数据库、网络、面向对象编程思想、编程语言特性理解和语法掌握等。<strong>相关书籍或或网络教程当然是要看的，但并不意味着你都看了就能有好的发挥，要理论、实践两手抓</strong>。</p>
-
-<p>对于算法工程师岗位来说，这种题目大量出现在笔试试卷中，比如概念理解啦、判断程序的运行输出啦，可以参见我的博客 <a href="http://frank19900731.github.io/blog/2014/11/21/bai-du-teng-xun-yu-sou-hu-de-bi-shi-hui-yi/">《2014 年百度、腾讯与搜狐的校招笔试回忆》</a>。在这里插入分享在另外一家公司的笔试里遇到的一道有意思的题目。</p>
-
-<p>请问如下程序的输出。</p>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>一道笔试题</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-<span class="line-number">5</span>
-<span class="line-number">6</span>
-<span class="line-number">7</span>
-<span class="line-number">8</span>
-<span class="line-number">9</span>
-</pre></td><td class="code"><pre><code class="cpp"><span class="line"><span class="kt">double</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-</span><span class="line"><span class="kt">double</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">99</span><span class="p">;</span>
-</span><span class="line"><span class="k">while</span><span class="p">(</span><span class="kc">true</span><span class="p">)</span> <span class="p">{</span>
-</span><span class="line">	<span class="kt">double</span> <span class="n">c</span> <span class="o">=</span> <span class="p">(</span><span class="n">a</span><span class="o">+</span><span class="n">b</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span><span class="p">;</span>
-</span><span class="line">	<span class="k">if</span><span class="p">(</span><span class="n">c</span> <span class="o">==</span> <span class="n">a</span> <span class="o">||</span> <span class="n">c</span> <span class="o">==</span> <span class="n">b</span><span class="p">)</span> <span class="k">break</span><span class="p">;</span>
-</span><span class="line">	<span class="n">a</span> <span class="o">=</span> <span class="n">b</span><span class="p">;</span>
-</span><span class="line">	<span class="n">b</span> <span class="o">=</span> <span class="n">c</span><span class="p">;</span>
-</span><span class="line"><span class="p">}</span>
-</span><span class="line"><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="n">a</span><span class="p">;</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<p><strong>解答：</strong></p>
-
-<p style="color: #AAA;">
-
-浮点数判等，会无限循环么？由于浮点数精度有限，所以这个程序迭代个五六十次就终止了，又由于 cout 有默认的输出精度，所以输出结果应该是66。
-
-</p>
-
-<p>面试过程中虽然以算法为主，不过在让你纸上写代码、询问你项目经历的过程中，面试官也能考察出你的工程底子。以下我们分基础问题和进阶问题分别介绍。</p>
-
-</section>
-  <a href="/blog/2014/11/25/mian-shi-jing-yan-fen-xiang-zhi-bian-cheng-yu-yan-ti/" style="background: #da3e10; color: #ffffff; border-radius: 5px; border: 4px solid #da3e10;">继续阅读</a>&nbsp;&nbsp;&nbsp;&nbsp;
-<!-- post/tags.html -->
-<!-- 文章标签展示 -->
-
-
-<span class="tags">
-  <font color="#777">Tags: </font>
-  
-    <a class='tag' href='/tag/编程语言/'>编程语言</a>, <a class='tag' href='/tag/面试经验/'>面试经验</a>
-  
-</span>
-&nbsp;&nbsp;&nbsp;&nbsp;
-<span class="ds-thread-count" data-thread-key="/blog/2014/11/25/mian-shi-jing-yan-fen-xiang-zhi-bian-cheng-yu-yan-ti/" style="color: #777;"></span>
 
 
 
