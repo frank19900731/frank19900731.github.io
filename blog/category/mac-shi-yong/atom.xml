@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Mac 使用 | Blog of 太极儒]]></title>
   <link href="http://frank19900731.github.io/blog/category/mac-shi-yong/atom.xml" rel="self"/>
   <link href="http://frank19900731.github.io/"/>
-  <updated>2015-02-27T14:58:11+08:00</updated>
+  <updated>2015-02-28T00:50:32+08:00</updated>
   <id>http://frank19900731.github.io/</id>
   <author>
     <name><![CDATA[Frank Song]]></name>
@@ -52,15 +52,15 @@
 
 <p><strong>功能界面</strong>：</p>
 
-<p>{% img imgcenter /img/post/2015-2/16.png 90% 功能界面 %}</p>
+<p><a href="/img/post/2015-2/16.png" class="img-up" title="功能界面"><img class="imgcenter" src="/img/post/2015-2/16.png" width="90%" title="功能界面" ></a></p>
 
 <p><strong>导出界面</strong>：</p>
 
-<p>{% img imgcenter /img/post/2015-2/17.png 90% 导出界面 %}</p>
+<p><a href="/img/post/2015-2/17.png" class="img-up" title="导出界面"><img class="imgcenter" src="/img/post/2015-2/17.png" width="90%" title="导出界面" ></a></p>
 
 <p>VideoGIF 可以帮助我们方便地从影视作品中导出<strong>精（dou）彩（bi）</strong>片段，或从录屏中导出一段演示。</p>
 
-<p>{% img imgcenter /img/post/2015-2/2.gif 80% 逗比片段 %}</p>
+<p><a href="/img/post/2015-2/2.gif" class="img-up" title="逗比片段"><img class="imgcenter" src="/img/post/2015-2/2.gif" width="80%" title="逗比片段" ></a></p>
 
 <p>除视频外，我们可能还需要将多幅图片拼成 GIF，VideoGIF 的制作方相应提供了 <a href="http://www.pearlmountainsoft.com/picgif/">PicGIF</a>，会在 <a href="#section-5">类似软件</a> 中提到。</p>
 
@@ -68,7 +68,7 @@
 
 <p>简洁美观。</p>
 
-<p>{% img imgcenter /img/post/2015-2/18.png 80% VideoGIF 界面 %}</p>
+<p><a href="/img/post/2015-2/18.png" class="img-up" title="VideoGIF 界面"><img class="imgcenter" src="/img/post/2015-2/18.png" width="80%" title="VideoGIF 界面" ></a></p>
 
 <h2 id="section-2">易用性</h2>
 
@@ -202,7 +202,7 @@
   </li>
 </ul>
 
-<p>{% img imgcenter /img/post/2015-2/14.png 70% 登录下载 %}</p>
+<p><a href="/img/post/2015-2/14.png" class="img-up" title="登录下载"><img class="imgcenter" src="/img/post/2015-2/14.png" width="70%" title="登录下载" ></a></p>
 
 <ul>
   <li><strong>不希望抓取某些类型的文件，比如压缩包、视频等，该如何设置？</strong>
@@ -217,7 +217,7 @@
   </li>
 </ul>
 
-<p>{% img imgcenter /img/post/2015-2/13.png 60% 设置连接数 %}</p>
+<p><a href="/img/post/2015-2/13.png" class="img-up" title="设置连接数"><img class="imgcenter" src="/img/post/2015-2/13.png" width="60%" title="设置连接数" ></a></p>
 
 <ul>
   <li><strong>一些站点需要隔段时间抓去一次（比如博客），文件覆盖方式如何设置？</strong>
@@ -276,7 +276,7 @@
 
 <p>简单直接。</p>
 
-<p>{% img imgcenter /img/post/2015-2/15.png 75% SiteSucker 界面 %}</p>
+<p><a href="/img/post/2015-2/15.png" class="img-up" title="SiteSucker 界面"><img class="imgcenter" src="/img/post/2015-2/15.png" width="75%" title="SiteSucker 界面" ></a></p>
 
 <h2 id="section-2">易用性</h2>
 
@@ -307,7 +307,7 @@
   </li>
 </ul>
 
-<p>{% img imgcenter /img/post/2015-2/12.png 80% Adobe Acrobat 抓取页面 %}</p>
+<p><a href="/img/post/2015-2/12.png" class="img-up" title="Adobe Acrobat 抓取页面"><img class="imgcenter" src="/img/post/2015-2/12.png" width="80%" title="Adobe Acrobat 抓取页面" ></a></p>
 
 <ul>
   <li><a href="http://www.sentenzadesktop.com/easy-script-copier/">Easy Script Copier</a>
@@ -354,7 +354,7 @@
 
 <p>Mac 下通过<strong>右键菜单中的 Compress</strong> 生成的压缩包，在 Windows 下解压缩可能出现乱码，如下图所示。</p>
 
-<p>{% img imgcenter /img/post/2015-2/5.png 80% Windows 上解压缩乱码 %}</p>
+<p><a href="/img/post/2015-2/5.png" class="img-up" title="Windows 上解压缩乱码"><img class="imgcenter" src="/img/post/2015-2/5.png" width="80%" title="Windows 上解压缩乱码" ></a></p>
 
 <p>知乎上关于这个问题的 <a href="http://www.zhihu.com/question/19646289">解答</a> 是</p>
 
@@ -408,13 +408,13 @@ LC_ALL=
 
 <p>链接里给出的是 <a href="http://www.kekaosx.com/en/">Keka</a> 这个软件，下图是软件运行界面。</p>
 
-<p>{% img imgcenter /img/post/2015-2/6.png 45% Keka 运行界面 %}</p>
+<p><a href="/img/post/2015-2/6.png" class="img-up" title="Keka 运行界面"><img class="imgcenter" src="/img/post/2015-2/6.png" width="45%" title="Keka 运行界面" ></a></p>
 
 <p>将需要打入压缩包的文件拖拽到软件界面里即可执行压缩。Keka 可以勾选 <code>Exclude Mac resource forks</code> 选项，这样压缩包中就不会出现 <strong>__MACOSX</strong> 或  <strong>.DS_Store</strong> 文件。经测试，快压的乱码问题也随之消失。</p>
 
 <p>然而，由于此软件图标过于丑陋<strong>甚至会引发不适</strong>，使得一些用户不得不舍弃之。其实把 <code>/Applications/Keka.app/Contents/Resources</code> 下的 icns 图标文件替换下就好了。</p>
 
-<p>{% img imgcenter /img/post/2015-2/7.png 40% Keka Logo %}</p>
+<p><a href="/img/post/2015-2/7.png" class="img-up" title="Keka Logo"><img class="imgcenter" src="/img/post/2015-2/7.png" width="40%" title="Keka Logo" ></a></p>
 
 <p>以上为第一种方法。</p>
 
@@ -484,7 +484,7 @@ Usage: 7z <command /> [<switches>...] <archive_name> [<file_names>...]
 
 一个动态效果是
 
-{% img imgcenter /img/post/2015-2/1.gif 60% 运行效果 %}
+<a href="/img/post/2015-2/1.gif" class="img-up" title="运行效果"><img class="imgcenter" src="/img/post/2015-2/1.gif" width="60%" title="运行效果" ></a>
 
 以下是具体操作步骤。
 
@@ -497,19 +497,19 @@ Usage: 7z <command /> [<switches>...] <archive_name> [<file_names>...]
 
 操作完成后，Automator 的显示为
 
-{% img imgcenter /img/post/2015-2/8.png 90% Automator Compress with 7z %}
+<a href="/img/post/2015-2/8.png" class="img-up" title="Automator Compress with 7z"><img class="imgcenter" src="/img/post/2015-2/8.png" width="90%" title="Automator Compress with 7z" ></a>
 
 系统设置（System Preferences）显示为
 
-{% img imgcenter /img/post/2015-2/10.png 70% 系统设置 %}
+<a href="/img/post/2015-2/10.png" class="img-up" title="系统设置"><img class="imgcenter" src="/img/post/2015-2/10.png" width="70%" title="系统设置" ></a>
 
 右键菜单显示为
 
-{% img imgcenter /img/post/2015-2/9.png 40% 右键菜单 %}
+<a href="/img/post/2015-2/9.png" class="img-up" title="右键菜单"><img class="imgcenter" src="/img/post/2015-2/9.png" width="40%" title="右键菜单" ></a>
 
 关于**添加右键菜单项**可以参考 [Create Customize Shortcut In Mac’s Right Click Menu [Guide]](http://www.hongkiat.com/blog/customize-mac-right-click-menu/)。要注意的是，如果当前操作关联 5 个以上 Service，则这些 Service 会以二级菜单的形式显示，所以尽量在系统设置（System Preferences）-&gt; Keyboard 中把没用的勾选掉。
 
-{% img imgcenter /img/post/2015-2/11.png 60% 右键菜单，Service 较多 %}
+<a href="/img/post/2015-2/11.png" class="img-up" title="右键菜单，Service 较多"><img class="imgcenter" src="/img/post/2015-2/11.png" width="60%" title="右键菜单，Service 较多" ></a>
 
 最后介绍脚本编写，参考自 [How to set Mac OS X's Default Compression Format?](http://superuser.com/questions/91147/how-to-set-mac-os-xs-default-compression-format)，给出代码和注释版代码。
 
@@ -709,7 +709,7 @@ Available encodings are:
 
 <p>运行效果如下</p>
 
-<p>{% img imgcenter /img/post/2015-2/1.png 90% Blotter 运行效果 %}</p>
+<p><a href="/img/post/2015-2/1.png" class="img-up" title="Blotter 运行效果"><img class="imgcenter" src="/img/post/2015-2/1.png" width="90%" title="Blotter 运行效果" ></a></p>
 
 <p>从上到下，从左到右，依次显示的是<strong>日期</strong>、<strong>Reminders 待办事项</strong>、<strong>当前任务</strong>、<strong>日历提醒</strong>（节假日、纪念日等）和周任务视图。显示区域、大小及内在布局可调整。</p>
 
@@ -725,7 +725,7 @@ Available encodings are:
   <li>添加任务事项。</li>
 </ul>
 
-<p>{% img imgcenter /img/post/2015-2/2.png 70% Blotter 添加任务事项 %}</p>
+<p><a href="/img/post/2015-2/2.png" class="img-up" title="Blotter 添加任务事项"><img class="imgcenter" src="/img/post/2015-2/2.png" width="70%" title="Blotter 添加任务事项" ></a></p>
 
 <h2 id="section-1">界面设计</h2>
 
@@ -755,11 +755,11 @@ Available encodings are:
   <li>提供四种组织方式：<strong>日程</strong>（紧凑的事项列表）、<strong>日</strong>、<strong>周</strong>、<strong>月</strong>。</li>
 </ul>
 
-<p>{% img imgcenter /img/post/2015-2/4.png 70% Spotlife 设置 %}</p>
+<p><a href="/img/post/2015-2/4.png" class="img-up" title="Spotlife 设置"><img class="imgcenter" src="/img/post/2015-2/4.png" width="70%" title="Spotlife 设置" ></a></p>
 
 <p>下图是周组织视图。</p>
 
-<p>{% img imgcenter /img/post/2015-2/3.png 90% Spotlife 运行效果 %}</p>
+<p><a href="/img/post/2015-2/3.png" class="img-up" title="Spotlife 运行效果"><img class="imgcenter" src="/img/post/2015-2/3.png" width="90%" title="Spotlife 运行效果" ></a></p>
 
 <p>Spotlife 未提供新事项添加功能。</p>
 
@@ -803,7 +803,7 @@ Available encodings are:
   <li>创建一个 <strong>Web Page</strong>，用户可以在上面划分不同的 <strong>Bloc</strong>，页首导航（一个）、中部内容（多个）、页尾信息（多个），分别有<strong>布局模板</strong>供选择；</li>
 </ul>
 
-<p>{% img imgcenter /img/post/2015-1/20.png 90% 添加 Bloc %}</p>
+<p><a href="/img/post/2015-1/20.png" class="img-up" title="添加 Bloc"><img class="imgcenter" src="/img/post/2015-1/20.png" width="90%" title="添加 Bloc" ></a></p>
 
 <!-- excerpt end -->
 
@@ -811,13 +811,13 @@ Available encodings are:
   <li>在每个 <strong>Bloc</strong> 中可以添加 <strong>Brics</strong>，也就是文本、图片、按钮、链接等内容；</li>
 </ul>
 
-<p>{% img imgcenter /img/post/2015-1/21.png 90% 添加 Bric %}</p>
+<p><a href="/img/post/2015-1/21.png" class="img-up" title="添加 Bric"><img class="imgcenter" src="/img/post/2015-1/21.png" width="90%" title="添加 Bric" ></a></p>
 
 <ul>
   <li>对于 <strong>Page</strong>、<strong>Bloc</strong>、<strong>Brics</strong>，都可以进一步设置属性以调整显示效果。</li>
 </ul>
 
-<p>{% img imgcenter /img/post/2015-1/22.png 90% Image 控件的属性 %}</p>
+<p><a href="/img/post/2015-1/22.png" class="img-up" title="Image 控件的属性"><img class="imgcenter" src="/img/post/2015-1/22.png" width="90%" title="Image 控件的属性" ></a></p>
 
 <p>页面设置完成，可导出包含 HTML、图片、CSS、Javascript 等文件在内的文件夹，上传网页服务器供访问。</p>
 
@@ -827,7 +827,7 @@ Available encodings are:
 
 <p>美观精致。</p>
 
-<p>{% img imgcenter /img/post/2015-1/19.png 90% 软件界面 %}</p>
+<p><a href="/img/post/2015-1/19.png" class="img-up" title="软件界面"><img class="imgcenter" src="/img/post/2015-1/19.png" width="90%" title="软件界面" ></a></p>
 
 <h2 id="section-2">易用性</h2>
 

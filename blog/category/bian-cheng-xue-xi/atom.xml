@@ -4,7 +4,7 @@
   <title><![CDATA[Category: 编程学习 | Blog of 太极儒]]></title>
   <link href="http://frank19900731.github.io/blog/category/bian-cheng-xue-xi/atom.xml" rel="self"/>
   <link href="http://frank19900731.github.io/"/>
-  <updated>2015-02-27T14:58:11+08:00</updated>
+  <updated>2015-02-28T00:50:32+08:00</updated>
   <id>http://frank19900731.github.io/</id>
   <author>
     <name><![CDATA[Frank Song]]></name>
@@ -179,7 +179,7 @@ class Anagram(wordList: List[String]) {</p>
 
 <p>吴雪峰老师大致是按照如下的思维导图来讲述的，分四节课，前三节各一小时，第四节两个多小时……</p>
 
-<p>{% img imgcenter /img/post/2014-11/1.bmp 80% Scala 介绍思维导图 %}</p>
+<p><a href="/img/post/2014-11/1.bmp" class="img-up" title="Scala 介绍思维导图"><img class="imgcenter" src="/img/post/2014-11/1.bmp" width="80%" title="Scala 介绍思维导图" ></a></p>
 
 <h3 id="section-1">第一小节</h3>
 
@@ -284,9 +284,7 @@ res7: Boolean = false
 
 接下来讲到 [柯里化](http://baike.baidu.com/view/2804134.htm?fr=aladdin)，也就是
 
-{% blockquote %}
-把接受多个参数的函数变换成接受一个单一参数(最初函数的第一个参数)的函数，并且返回接受余下的参数且返回结果的新函数的技术。
-{% endblockquote %}
+<blockquote><p>把接受多个参数的函数变换成接受一个单一参数(最初函数的第一个参数)的函数，并且返回接受余下的参数且返回结果的新函数的技术。</p></blockquote>
 
 上面的高阶函数的柯里化形式为
 

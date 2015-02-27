@@ -4,7 +4,7 @@
   <title><![CDATA[Category: 工作效率 | Blog of 太极儒]]></title>
   <link href="http://frank19900731.github.io/blog/category/gong-zuo-xiao-lu/atom.xml" rel="self"/>
   <link href="http://frank19900731.github.io/"/>
-  <updated>2015-02-27T14:58:11+08:00</updated>
+  <updated>2015-02-28T00:50:32+08:00</updated>
   <id>http://frank19900731.github.io/</id>
   <author>
     <name><![CDATA[Frank Song]]></name>
@@ -129,7 +129,7 @@ $codeblock = str_replace(array(
 
 ## call geshi to render the code
 $codeblock = preg_replace_callback(
-	'/^(\{\{lang:([\w]+)\}\}\n|)(.*?)$/s', // {{lang:...}}greedy_code
+	'/^(\{\{lang:([\w]+)\}\}\n|)(.*?)$/s', // greedy_code
 	array($this, 'syntaxHighlight'),
 	$codeblock
 );
@@ -175,7 +175,7 @@ return $this-&gt;hashBlock($codeblock); } ```
 ```</p>
 
 <ul>
-  <li>在 {{{ 与 }}} 间先输入 {{lang:php}}，表示以下为 PHP 代码（其它格式可参见 <a href="http://qbnz.com/highlighter/">GeSHi 官网</a> 左边栏），然后正常输入代码并显示。</li>
+  <li>在 } 间先输入 ，表示以下为 PHP 代码（其它格式可参见 <a href="http://qbnz.com/highlighter/">GeSHi 官网</a> 左边栏），然后正常输入代码并显示。</li>
 </ul>
 
 <p>```robotframework 输入代码评论
@@ -200,7 +200,7 @@ protected function _doImages_inline_callback($matches) {
 
 <p>显示效果如下。</p>
 
-<p>{% img imgcenter /img/post/2015-1/15.png 90% 代码显示效果 %}</p>
+<p><a href="/img/post/2015-1/15.png" class="img-up" title="代码显示效果"><img class="imgcenter" src="/img/post/2015-1/15.png" width="90%" title="代码显示效果" ></a></p>
 
 <p>注意到我们的代码输入采用两空格缩进，显示起来较美观；想设置 n 空行，在代码输入中应有 n+2 空行。</p>
 
@@ -239,7 +239,7 @@ protected function _doImages_inline_callback($matches) {
 
 <p><a href="https://github.com/gollum/gollum">Gollum</a> 是一个轻量级的 Wiki 框架，可以管理以 Git Repository 形式存在的文件夹。相比于 Mediawiki，文档迁移性更灵活，界面也清新美观。支持多种文档格式，包括 Markdown、MediaWiki、Org-mode、Plain Text、reStructuredText、RDoc、Textile 等。</p>
 
-<p>{% img imgcenter /img/post/2015-1/1.png 90% Gollum 界面 %}</p>
+<p><a href="/img/post/2015-1/1.png" class="img-up" title="Gollum 界面"><img class="imgcenter" src="/img/post/2015-1/1.png" width="90%" title="Gollum 界面" ></a></p>
 
 <p>Gollum 自带公式输入支持，可自定义 MathJax 的配置；<strong>支持图片拖拽插入</strong>（并自动上传），这是让我觉得很方便的一点。美中不足的是，Gollum 不支持中文命名的文件，所以</p>
 
@@ -494,15 +494,7 @@ export PATH=$PATH:/Users/frank/.rvm/rubies/ruby-X.X.X/lib/ruby/gems/X.X.X/bin
 
 <p><strong>数据不能告诉你全部，但数据对真实情况的刻画比你自以为的更客观</strong>。</p>
 
-<p>{% blockquote %}</p>
-
-<p>数据可能给你当头棒喝，因为你在某些方面乏善可陈；</p>
-
-<p>数据可能让你羞愧难当，因为它拆穿了你的自以为是；</p>
-
-<p>数据可能令你懊悔不已，因为你看到了大把时间的浪费。</p>
-
-<p>{% endblockquote %}</p>
+<p><blockquote><p></p></p><p><p>数据可能给你当头棒喝，因为你在某些方面乏善可陈；</p></p><p><p>数据可能让你羞愧难当，因为它拆穿了你的自以为是；</p></p><p><p>数据可能令你懊悔不已，因为你看到了大把时间的浪费。</p></p><p><p></p></blockquote></p>
 
 <p><strong>希望在年末的细细回望，能督促自己在新的一年里过得更加充实，像个年轻人应该有的样子</strong>。</p>
 
@@ -658,9 +650,7 @@ export PATH=$PATH:/Users/frank/.rvm/rubies/ruby-X.X.X/lib/ruby/gems/X.X.X/bin
   <li>读了很多技术教程、博客，人文类书籍阅读很少。</li>
 </ul>
 
-<p>{% blockquote %}
-书读得少人就容易浮躁，视频看得多人就容易浮夸。
-{% endblockquote %}</p>
+<p><blockquote><p>书读得少人就容易浮躁，视频看得多人就容易浮夸。</p></blockquote></p>
 
 <p><strong>毕业了就不能以学生身份为借口，何况岁数也不小了，明年要踏踏实实在书籍阅读上给自己做一点规划</strong>。</p>
 

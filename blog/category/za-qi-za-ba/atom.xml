@@ -4,7 +4,7 @@
   <title><![CDATA[Category: 杂七杂八 | Blog of 太极儒]]></title>
   <link href="http://frank19900731.github.io/blog/category/za-qi-za-ba/atom.xml" rel="self"/>
   <link href="http://frank19900731.github.io/"/>
-  <updated>2015-02-27T14:58:11+08:00</updated>
+  <updated>2015-02-28T00:50:32+08:00</updated>
   <id>http://frank19900731.github.io/</id>
   <author>
     <name><![CDATA[Frank Song]]></name>
@@ -193,7 +193,7 @@
   </li>
 </ul>
 
-<p>{% img imgcenter /img/post/2014-12/1.png 80% 和 tsinghua.edu.cn 相似的网站 %}</p>
+<p><a href="/img/post/2014-12/1.png" class="img-up" title="和 tsinghua.edu.cn 相似的网站"><img class="imgcenter" src="/img/post/2014-12/1.png" width="80%" title="和 tsinghua.edu.cn 相似的网站" ></a></p>
 
 <ul>
   <li>数学相关
@@ -221,7 +221,7 @@ b = 1</p>
 <p>z = ((x/a)^2 - (y/b)^2) / 10
 ```</p>
 
-<p>{% img imgcenter /img/post/2014-12/2.png 80% Hyperbolic Paraboloid %}</p>
+<p><a href="/img/post/2014-12/2.png" class="img-up" title="Hyperbolic Paraboloid"><img class="imgcenter" src="/img/post/2014-12/2.png" width="80%" title="Hyperbolic Paraboloid" ></a></p>
 
 <!-- excerpt end -->
 

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: 网页开发 | Blog of 太极儒]]></title>
   <link href="http://frank19900731.github.io/blog/category/wang-ye-kai-fa/atom.xml" rel="self"/>
   <link href="http://frank19900731.github.io/"/>
-  <updated>2015-02-27T14:58:11+08:00</updated>
+  <updated>2015-02-28T00:50:32+08:00</updated>
   <id>http://frank19900731.github.io/</id>
   <author>
     <name><![CDATA[Frank Song]]></name>
@@ -180,7 +180,7 @@ git push gitlab source
 
 <p>如下图进入 Settings -&gt; Webhooks 创建一个钩子</p>
 
-<p>{% img imgcenter /img/post/2015-1/4.png 90% 钩子创建 %}</p>
+<p><a href="/img/post/2015-1/4.png" class="img-up" title="钩子创建"><img class="imgcenter" src="/img/post/2015-1/4.png" width="90%" title="钩子创建" ></a></p>
 
 <p>点击 <code>Test Hook</code> 发送模拟消息到你指定的 URL。</p>
 
@@ -227,7 +227,7 @@ chmod -R o+rwx /path/to/your/webcontent
 
 <p>使用新浪微博自带的收藏页面，感觉翻页浏览不便；后来会在收藏的同时，把微博内容、图片分门别类拷贝到笔记中，但又不便于可视化。于是萌生了自己做一个微博可视化页面的想法，采用较为流行的瀑布流布局，每一条微博以卡片的形式展示。给出 <a href="https://github.com/frank19900731/weibocard">项目地址</a>  和 <a href="http://frank19900731.github.io/weibocard-demo/">Demo</a>。</p>
 
-<p>{% img imgcenter /img/post/2014-12/25.png 80% 微博卡片 Demo %}</p>
+<p><a href="/img/post/2014-12/25.png" class="img-up" title="微博卡片 Demo"><img class="imgcenter" src="/img/post/2014-12/25.png" width="80%" title="微博卡片 Demo" ></a></p>
 
 <p>项目使用新浪微博 Python SDK 抓取已收藏的微博，mongodb 做存储，根据查询条件生成 json 文件供前端可视化，前端瀑布流是从 <a href="http://www.imooc.com/learn/101">这门课</a> 中学到的。多说一句，慕课网里关于前端的教学内容非常丰富，很适合我这种半瓶醋选手……</p>
 
@@ -302,13 +302,13 @@ chmod -R o+rwx /path/to/your/webcontent
   <li>窗口右侧添加临时目录</li>
 </ul>
 
-<p>{% img imgcenter /img/post/2014-10/10.jpg 80% 临时目录 %}</p>
+<p><a href="/img/post/2014-10/10.jpg" class="img-up" title="临时目录"><img class="imgcenter" src="/img/post/2014-10/10.jpg" width="80%" title="临时目录" ></a></p>
 
 <ul>
   <li>使用 dlmenu 整合访问入口</li>
 </ul>
 
-<p>{% img imgcenter /img/post/2014-10/11.jpg 35% dlmenu %}</p>
+<p><a href="/img/post/2014-10/11.jpg" class="img-up" title="dlmenu"><img class="imgcenter" src="/img/post/2014-10/11.jpg" width="35%" title="dlmenu" ></a></p>
 ]]></content>
   </entry>
   
@@ -402,14 +402,10 @@ also possible.</p>
 </ul>
 
 <p><code>objc 使用 blockquote 标签
-{% blockquote Bobby Willis http://google.com/search?q=pants the search for bobby's pants %}
-Wheeee!
-{% endblockquote %}
+<blockquote><p>Wheeee!</p><footer><strong>Bobby Willis</strong> <cite><a href='http://google.com/search?q=pants'>The Search for Bobby's Pants</a></cite></footer></blockquote>
 </code></p>
 
-<p>{% blockquote Bobby Willis http://google.com/search?q=pants the search for bobby’s pants %}
-Wheeee!
-{% endblockquote %}</p>
+<p><blockquote><p>Wheeee!</p><footer><strong>Bobby Willis</strong> <cite><a href='http://google.com/search?q=pants'>The Search for Bobby’s Pants</a></cite></footer></blockquote></p>
 
 <!-- excerpt end -->
 
@@ -485,52 +481,236 @@ many tildes as the starting line.
 </ul>
 
 <p><code>objc 导入文件中的代码
-{% include_code Test.js for download test.js %}
+<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>Test.js for download (test.js)</span> <a href='/downloads/code/test.js'>download</a></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="cm">/**</span>
+</span><span class='line'><span class="cm"> sample javascript from xui</span>
+</span><span class='line'><span class="cm"> */</span>
+</span><span class='line'>
+</span><span class='line'><span class="kd">var</span> <span class="kc">undefined</span><span class="p">,</span>
+</span><span class='line'>    <span class="nx">xui</span><span class="p">,</span>
+</span><span class='line'>    <span class="nb">window</span>     <span class="o">=</span> <span class="k">this</span><span class="p">,</span>
+</span><span class='line'>    <span class="nx">string</span>     <span class="o">=</span> <span class="k">new</span> <span class="nb">String</span><span class="p">(</span><span class="s1">&#39;string&#39;</span><span class="p">),</span>
+</span><span class='line'>    <span class="nb">document</span>   <span class="o">=</span> <span class="nb">window</span><span class="p">.</span><span class="nb">document</span><span class="p">,</span>
+</span><span class='line'>    <span class="nx">simpleExpr</span> <span class="o">=</span> <span class="sr">/^#?([\w-]+)$/</span><span class="p">,</span>
+</span><span class='line'>    <span class="nx">idExpr</span>     <span class="o">=</span> <span class="sr">/^#/</span><span class="p">,</span>
+</span><span class='line'>    <span class="nx">tagExpr</span>    <span class="o">=</span> <span class="sr">/&lt;([\w:]+)/</span><span class="p">,</span>
+</span><span class='line'>    <span class="nx">slice</span>      <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span> <span class="k">return</span> <span class="p">[].</span><span class="nx">slice</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="nx">e</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span> <span class="p">};</span>
+</span><span class='line'><span class="k">try</span> <span class="p">{</span> <span class="kd">var</span> <span class="nx">a</span> <span class="o">=</span> <span class="nx">slice</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">documentElement</span><span class="p">.</span><span class="nx">childNodes</span><span class="p">)[</span><span class="mi">0</span><span class="p">].</span><span class="nx">nodeType</span><span class="p">;</span> <span class="p">}</span>
+</span><span class='line'><span class="k">catch</span><span class="p">(</span><span class="nx">e</span><span class="p">){</span> <span class="nx">slice</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span> <span class="kd">var</span> <span class="nx">ret</span><span class="o">=</span><span class="p">[];</span> <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="nx">e</span><span class="p">[</span><span class="nx">i</span><span class="p">];</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span>
+</span><span class='line'>    <span class="nx">ret</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">e</span><span class="p">[</span><span class="nx">i</span><span class="p">]);</span> <span class="k">return</span> <span class="nx">ret</span><span class="p">;</span> <span class="p">};</span> <span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="nb">window</span><span class="p">.</span><span class="nx">x$</span> <span class="o">=</span> <span class="nb">window</span><span class="p">.</span><span class="nx">xui</span> <span class="o">=</span> <span class="nx">xui</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">q</span><span class="p">,</span> <span class="nx">context</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="k">return</span> <span class="k">new</span> <span class="nx">xui</span><span class="p">.</span><span class="nx">fn</span><span class="p">.</span><span class="nx">find</span><span class="p">(</span><span class="nx">q</span><span class="p">,</span> <span class="nx">context</span><span class="p">);</span>
+</span><span class='line'><span class="p">};</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
 </code></p>
 
-<p>{% include_code Test.js for download test.js %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>Test.js for download (test.js)</span> <a href='/downloads/code/test.js'>download</a></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="cm">/**</span>
+</span><span class='line'><span class="cm"> sample javascript from xui</span>
+</span><span class='line'><span class="cm"> */</span>
+</span><span class='line'>
+</span><span class='line'><span class="kd">var</span> <span class="kc">undefined</span><span class="p">,</span>
+</span><span class='line'>    <span class="nx">xui</span><span class="p">,</span>
+</span><span class='line'>    <span class="nb">window</span>     <span class="o">=</span> <span class="k">this</span><span class="p">,</span>
+</span><span class='line'>    <span class="nx">string</span>     <span class="o">=</span> <span class="k">new</span> <span class="nb">String</span><span class="p">(</span><span class="s1">&#39;string&#39;</span><span class="p">),</span>
+</span><span class='line'>    <span class="nb">document</span>   <span class="o">=</span> <span class="nb">window</span><span class="p">.</span><span class="nb">document</span><span class="p">,</span>
+</span><span class='line'>    <span class="nx">simpleExpr</span> <span class="o">=</span> <span class="sr">/^#?([\w-]+)$/</span><span class="p">,</span>
+</span><span class='line'>    <span class="nx">idExpr</span>     <span class="o">=</span> <span class="sr">/^#/</span><span class="p">,</span>
+</span><span class='line'>    <span class="nx">tagExpr</span>    <span class="o">=</span> <span class="sr">/&lt;([\w:]+)/</span><span class="p">,</span>
+</span><span class='line'>    <span class="nx">slice</span>      <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span> <span class="k">return</span> <span class="p">[].</span><span class="nx">slice</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="nx">e</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span> <span class="p">};</span>
+</span><span class='line'><span class="k">try</span> <span class="p">{</span> <span class="kd">var</span> <span class="nx">a</span> <span class="o">=</span> <span class="nx">slice</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">documentElement</span><span class="p">.</span><span class="nx">childNodes</span><span class="p">)[</span><span class="mi">0</span><span class="p">].</span><span class="nx">nodeType</span><span class="p">;</span> <span class="p">}</span>
+</span><span class='line'><span class="k">catch</span><span class="p">(</span><span class="nx">e</span><span class="p">){</span> <span class="nx">slice</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span> <span class="kd">var</span> <span class="nx">ret</span><span class="o">=</span><span class="p">[];</span> <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="nx">e</span><span class="p">[</span><span class="nx">i</span><span class="p">];</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span>
+</span><span class='line'>    <span class="nx">ret</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">e</span><span class="p">[</span><span class="nx">i</span><span class="p">]);</span> <span class="k">return</span> <span class="nx">ret</span><span class="p">;</span> <span class="p">};</span> <span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="nb">window</span><span class="p">.</span><span class="nx">x$</span> <span class="o">=</span> <span class="nb">window</span><span class="p">.</span><span class="nx">xui</span> <span class="o">=</span> <span class="nx">xui</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">q</span><span class="p">,</span> <span class="nx">context</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="k">return</span> <span class="k">new</span> <span class="nx">xui</span><span class="p">.</span><span class="nx">fn</span><span class="p">.</span><span class="nx">find</span><span class="p">(</span><span class="nx">q</span><span class="p">,</span> <span class="nx">context</span><span class="p">);</span>
+</span><span class='line'><span class="p">};</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <ul>
   <li>方法五：导入 gist 中的代码</li>
 </ul>
 
 <p><code>objc 导入 gist 中的代码
-{% gist 4321346 gistfile1.diff %}
+<div><script src='https://gist.github.com/4321346.js?file=gistfile1.diff'></script>
+<noscript><pre><code>@@ -590,7 +590,7 @@ class SpritesTest &lt; Test::Unit::TestCase
+  it &quot;should generate a sprite from nested folders&quot; do
+    css = render &lt;&lt;-SCSS
+-     @import &quot;nested/*.png&quot;;
++     @import &quot;nested/**/*.png&quot;;
+      @include all-nested-sprites;
+    SCSS
+    assert_correct css, &lt;&lt;-CSS</code></pre></noscript></div>
+
 </code></p>
 
-<p>{% gist 4321346 gistfile1.diff %}</p>
+<p><div><script src='https://gist.github.com/4321346.js?file=gistfile1.diff'></script>
+<noscript><pre><code>@@ -590,7 +590,7 @@ class SpritesTest &lt; Test::Unit::TestCase
+  it &quot;should generate a sprite from nested folders&quot; do
+    css = render &lt;&lt;-SCSS
+-     @import &quot;nested/*.png&quot;;
++     @import &quot;nested/**/*.png&quot;;
+      @include all-nested-sprites;
+    SCSS
+    assert_correct css, &lt;&lt;-CSS</code></pre></noscript></div>
+</p>
 
 <p><code>objc 导入 gist 中的代码
-{% gist 1059334 svg_bullets.rb %}
-{% gist 1059334 usage.scss %}
+<div><script src='https://gist.github.com/1059334.js?file=svg_bullets.rb'></script>
+<noscript><pre><code>require &#39;sass&#39;
+
+module Sass::Script::Functions
+  def svg_circle(radius, color, circle_type)
+    img = if circle_type.value == &quot;disc&quot;
+      %Q{&lt;circle cx=&quot;#{radius.value}&quot; cy=&quot;#{radius.value}&quot; r=&quot;#{radius.value}&quot;
+                          stroke-width=&quot;0&quot; fill=&quot;#{color}&quot;/&gt;}
+    else
+      %Q{&lt;circle cx=&quot;#{radius.value}&quot; cy=&quot;#{radius.value}&quot; r=&quot;#{radius.value}&quot;
+                          stroke=&quot;#{color}&quot; stroke-width=&quot;1&quot; fill=&quot;white&quot;/&gt;}
+    end
+    inline_image_string(svg_circle_envelope(img).gsub(/  +/, &#39; &#39;), &#39;image/svg+xml&#39;)
+  end
+  private
+  def svg_circle_envelope(content)
+    %Q{&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt; &lt;svg version=&quot;1.1&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;#{content}&lt;/svg&gt;}
+  end
+end
+</code></pre></noscript></div>
+
+<div><script src='https://gist.github.com/1059334.js?file=usage.scss'></script>
+<noscript><pre><code>// Draw a list style image in svg using the radius and color specified.
+@mixin colored-bullet($radius, $color, $type: disc) {
+  list-style-type: $type;
+  list-style-image: svg-circle($radius, $color, $type);
+}
+
+
+ul {
+  @include colored-bullet(2px, $green, disc);
+  ul {
+    @include colored-bullet(2px, $green, circle);
+  }
+}
+</code></pre></noscript></div>
+
 </code></p>
 
-<p>{% gist 1059334 svg_bullets.rb %}
-{% gist 1059334 usage.scss %}</p>
+<p><div><script src='https://gist.github.com/1059334.js?file=svg_bullets.rb'></script>
+<noscript><pre><code>require &#39;sass&#39;
+
+module Sass::Script::Functions
+  def svg_circle(radius, color, circle_type)
+    img = if circle_type.value == &quot;disc&quot;
+      %Q{&lt;circle cx=&quot;#{radius.value}&quot; cy=&quot;#{radius.value}&quot; r=&quot;#{radius.value}&quot;
+                          stroke-width=&quot;0&quot; fill=&quot;#{color}&quot;/&gt;}
+    else
+      %Q{&lt;circle cx=&quot;#{radius.value}&quot; cy=&quot;#{radius.value}&quot; r=&quot;#{radius.value}&quot;
+                          stroke=&quot;#{color}&quot; stroke-width=&quot;1&quot; fill=&quot;white&quot;/&gt;}
+    end
+    inline_image_string(svg_circle_envelope(img).gsub(/  +/, &#39; &#39;), &#39;image/svg+xml&#39;)
+  end
+  private
+  def svg_circle_envelope(content)
+    %Q{&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt; &lt;svg version=&quot;1.1&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;#{content}&lt;/svg&gt;}
+  end
+end
+</code></pre></noscript></div>
+
+<div><script src='https://gist.github.com/1059334.js?file=usage.scss'></script>
+<noscript><pre><code>// Draw a list style image in svg using the radius and color specified.
+@mixin colored-bullet($radius, $color, $type: disc) {
+  list-style-type: $type;
+  list-style-image: svg-circle($radius, $color, $type);
+}
+
+
+ul {
+  @include colored-bullet(2px, $green, disc);
+  ul {
+    @include colored-bullet(2px, $green, circle);
+  }
+}
+</code></pre></noscript></div>
+</p>
 
 <ul>
   <li>方法六：使用 codeblock 作标记</li>
 </ul>
 
 <p>``` objc 使用 codeblock 展示代码
-{% codeblock Coffeescript Tricks %}</p>
-
-<h1 id="given-an-alphabet">Given an alphabet:</h1>
-<p>alphabet = ‘abcdefghijklmnopqrstuvwxyz’</p>
-
-<h1 id="iterate-over-part-of-the-alphabet">Iterate over part of the alphabet:</h1>
-<p>console.log letter for letter in alphabet[4..8]
-{% endcodeblock %}
+<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>Coffeescript Tricks </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;h1 id="given-an-alphabet">Given an alphabet:&lt;/h1>
+</span><span class='line'>&lt;p>alphabet = ‘abcdefghijklmnopqrstuvwxyz’&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;h1 id="iterate-over-part-of-the-alphabet">Iterate over part of the alphabet:&lt;/h1>
+</span><span class='line'>&lt;p>console.log letter for letter in alphabet[4..8]</span></code></pre></td></tr></table></div></figure></notextile></div>
 ```</p>
 
-<p>{% codeblock Coffeescript Tricks %}</p>
-
-<h1 id="given-an-alphabet-1">Given an alphabet:</h1>
-<p>alphabet = ‘abcdefghijklmnopqrstuvwxyz’</p>
-
-<h1 id="iterate-over-part-of-the-alphabet-1">Iterate over part of the alphabet:</h1>
-<p>console.log letter for letter in alphabet[4..8]
-{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>Coffeescript Tricks </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;h1 id="given-an-alphabet-1">Given an alphabet:&lt;/h1>
+</span><span class='line'>&lt;p>alphabet = ‘abcdefghijklmnopqrstuvwxyz’&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;h1 id="iterate-over-part-of-the-alphabet-1">Iterate over part of the alphabet:&lt;/h1>
+</span><span class='line'>&lt;p>console.log letter for letter in alphabet[4..8]</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <h2 id="inline-code">使用 Inline Code</h2>
 
@@ -618,36 +798,33 @@ The following is a math block:</p>
 <h2 id="section-7">使用图片</h2>
 
 <p><code>objc 使用图片
-{% img imgright http://placekitten.com/320/250 40% Place Kitten #2 %}
+<a href="http://placekitten.com/320/250" class="img-up" title="Place Kitten #2"><img class="imgright" src="http://placekitten.com/320/250" width="40%" title="Place Kitten #2" ></a>
 </code></p>
 
-<p>{% img imgright http://placekitten.com/320/250 40% Place Kitten %}</p>
+<p><a href="http://placekitten.com/320/250" class="img-up" title="Place Kitten"><img class="imgright" src="http://placekitten.com/320/250" width="40%" title="Place Kitten" ></a></p>
 
 <p><code>objc 使用图片
-{% img imgcenter http://placekitten.com/300/500 40% 'Place Kitten #4' 'An image of a very cute kitten' %}
+<a href="http://placekitten.com/300/500" class="img-up" title="Place Kitten #4"><img class="imgcenter" src="http://placekitten.com/300/500" width="40%" title="Place Kitten #4" alt="An image of a very cute kitten"></a>
 </code></p>
 
-<p>{% img imgcenter http://placekitten.com/300/500 40% ‘Place Kitten #4’ ‘An image of a very cute kitten’ %}</p>
+<p><a href="http://placekitten.com/300/500" class="img-up" title="‘Place Kitten #4’ ‘An image of a very cute kitten’"><img class="imgcenter" src="http://placekitten.com/300/500" width="40%" title="‘Place Kitten #4’ ‘An image of a very cute kitten’" ></a></p>
 
 <p><code>objc 使用图片
-{% img imgleft /img/portrait.jpg 40% My Cartoon Portrait %}
+<a href="/img/portrait.jpg" class="img-up" title="My Cartoon Portrait"><img class="imgleft" src="/img/portrait.jpg" width="40%" title="My Cartoon Portrait" ></a>
 </code></p>
 
-<p>{% img imgleft /img/portrait.jpg 40% My Cartoon Portrait %}</p>
+<p><a href="/img/portrait.jpg" class="img-up" title="My Cartoon Portrait"><img class="imgleft" src="/img/portrait.jpg" width="40%" title="My Cartoon Portrait" ></a></p>
 
 <h2 id="pullquote">使用 pullquote</h2>
 
 <p><code>objc 使用 pullquote
-{% pullquote %}
+<span class='pullquote-right' data-pullquote='surround it like this'>
 Surround your paragraph with the pull quote tags. Then when you come to
-the text you want to pull, {" surround it like this "} and that's all there is to it.
-{% endpullquote %}
+the text you want to pull, surround it like this and that's all there is to it.
+</span>
 </code></p>
 
-<p>{% pullquote %}
-Surround your paragraph with the pull quote tags. Then when you come to
-the text you want to pull, {“ surround it like this “} and that’s all there is to it.
-{% endpullquote %}</p>
+<p>Surround your pullquote like this {" text to be quoted "}</p>
 
 <h2 id="section-8">使用表格</h2>
 
