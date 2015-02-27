@@ -4,7 +4,7 @@
   <title><![CDATA[Category: 面试求职 | Blog of 太极儒]]></title>
   <link href="http://frank19900731.github.io/blog/category/mian-shi-qiu-zhi/atom.xml" rel="self"/>
   <link href="http://frank19900731.github.io/"/>
-  <updated>2015-02-26T23:49:19+08:00</updated>
+  <updated>2015-02-27T14:58:11+08:00</updated>
   <id>http://frank19900731.github.io/</id>
   <author>
     <name><![CDATA[Frank Song]]></name>
@@ -571,7 +571,7 @@ cout&lt;&lt;a;
 
 <p>第一个问题曾在微博上引发热议。</p>
 
-<p><a href="/img/post/2014-11/3.png" class="img-up" title="微博提问"><img class="imgcenter" src="/img/post/2014-11/3.png" width="80%" title="微博提问" ></a></p>
+<p>{% img imgcenter /img/post/2014-11/3.png 80% 微博提问 %}</p>
 
 <p>这种问题既开放又确定。开放在于广度，涉及到的知识点与环节很多，你可以从你了解的部分去叙说；确定在于深度，每一个知识点或环节都是扎实的，不容信口开河。</p>
 

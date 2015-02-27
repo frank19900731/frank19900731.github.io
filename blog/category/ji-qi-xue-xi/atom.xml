@@ -4,7 +4,7 @@
   <title><![CDATA[Category: 机器学习 | Blog of 太极儒]]></title>
   <link href="http://frank19900731.github.io/blog/category/ji-qi-xue-xi/atom.xml" rel="self"/>
   <link href="http://frank19900731.github.io/"/>
-  <updated>2015-02-26T23:49:19+08:00</updated>
+  <updated>2015-02-27T14:58:11+08:00</updated>
   <id>http://frank19900731.github.io/</id>
   <author>
     <name><![CDATA[Frank Song]]></name>
@@ -52,51 +52,51 @@
 
 <p>PPT 的首页取自该项目的一个在线 <a href="http://demo.caffe.berkeleyvision.org">demo</a>，输入图片 url，识别物体类别。</p>
 
-<p><a href="/img/post/2014-12/3.png" class="img-up" title="DIY Deep Learning for Vision: the Caffe framework"><img class="imgcenter" src="/img/post/2014-12/3.png" width="80%" title="DIY Deep Learning for Vision: the Caffe framework" ></a></p>
+<p>{% img imgcenter /img/post/2014-12/3.png 80% DIY Deep Learning for Vision: the Caffe framework %}</p>
 
 <p>左边是浅层特征，各类别物体杂乱无章；右边是深度特征，一些类别有较为明显的分别。特别地，<strong>dog、bird、invertebrate</strong> 这三类动物类别离得较近，而 <strong>building、vehicle、commodity</strong> 这类无生命类别离得较近，可见深度特征的强大。</p>
 
-<p><a href="/img/post/2014-12/4.png" class="img-up" title="Why Deep Learning? - 1"><img class="imgcenter" src="/img/post/2014-12/4.png" width="80%" title="Why Deep Learning? - 1" ></a></p>
+<p>{% img imgcenter /img/post/2014-12/4.png 80% Why Deep Learning? - 1 %}</p>
 
 <p>此外，在深层结构当中，<strong>隐层神经元的激活可能与特定的物体类别有关</strong>，比如有的神经元对人像敏感，而有的对数字或建筑物敏感，最下面一层是闪光灯（或与之类似，比如反光的脑门……）效果。</p>
 
-<p><a href="/img/post/2014-12/5.png" class="img-up" title="Why Deep Learning? - 2"><img class="imgcenter" src="/img/post/2014-12/5.png" width="80%" title="Why Deep Learning? - 2" ></a></p>
+<p>{% img imgcenter /img/post/2014-12/5.png 80% Why Deep Learning? - 2 %}</p>
 
-<p><a href="/img/post/2014-12/6.png" class="img-up" title="What is Deep Learning?"><img class="imgcenter" src="/img/post/2014-12/6.png" width="80%" title="What is Deep Learning?" ></a></p>
+<p>{% img imgcenter /img/post/2014-12/6.png 80% What is Deep Learning? %}</p>
 
 <p>Caffe 的优势，网络结构的模块化和易表达是显然的，社区资源也同样强大，比如下两页内容。</p>
 
-<p><a href="/img/post/2014-12/7.png" class="img-up" title="Why Caffe? In one sip…"><img class="imgcenter" src="/img/post/2014-12/7.png" width="80%" title="Why Caffe? In one sip…" ></a></p>
+<p>{% img imgcenter /img/post/2014-12/7.png 80% Why Caffe? In one sip… %}</p>
 
 <p>Caffe 的 Reference Models 可供学术使用，比如 AlexNet、R-CNN、CaffeNet，包括模型定义、优化方法和预训练权重。</p>
 
-<p><a href="/img/post/2014-12/8.png" class="img-up" title="Reference Models"><img class="imgcenter" src="/img/post/2014-12/8.png" width="80%" title="Reference Models" ></a></p>
+<p>{% img imgcenter /img/post/2014-12/8.png 80% Reference Models %}</p>
 
 <p><a href="http://caffe.berkeleyvision.org/model_zoo.html">Model Zoo</a> 中有用户贡献的模型可供参考使用，比如 VGG、Network-in-Network。</p>
 
-<p><a href="/img/post/2014-12/9.png" class="img-up" title="Open Model Collection"><img class="imgcenter" src="/img/post/2014-12/9.png" width="80%" title="Open Model Collection" ></a></p>
+<p>{% img imgcenter /img/post/2014-12/9.png 80% Open Model Collection %}</p>
 
 <p>Caffe 支持丰富的模型表达形式，包括 DAGs、Weight Sharing 以及 Siamese Network。</p>
 
-<p><a href="/img/post/2014-12/10.png" class="img-up" title="Architectures"><img class="imgcenter" src="/img/post/2014-12/10.png" width="80%" title="Architectures" ></a></p>
+<p>{% img imgcenter /img/post/2014-12/10.png 80% Architectures %}</p>
 
-<p><a href="/img/post/2014-12/11.png" class="img-up" title="Brewing by the Numbers…"><img class="imgcenter" src="/img/post/2014-12/11.png" width="80%" title="Brewing by the Numbers…" ></a></p>
+<p>{% img imgcenter /img/post/2014-12/11.png 80% Brewing by the Numbers… %}</p>
 
 <p>网络和层定义采用 protobuf 的样式。</p>
 
-<p><a href="/img/post/2014-12/12.png" class="img-up" title="Net"><img class="imgcenter" src="/img/post/2014-12/12.png" width="80%" title="Net" ></a></p>
+<p>{% img imgcenter /img/post/2014-12/12.png 80% Net %}</p>
 
 <p>Layer 指的是权重和偏置，可以定义连接数、权重初始化方法等。</p>
 
-<p><a href="/img/post/2014-12/13.png" class="img-up" title="Layer"><img class="imgcenter" src="/img/post/2014-12/13.png" width="80%" title="Layer" ></a></p>
+<p>{% img imgcenter /img/post/2014-12/13.png 80% Layer %}</p>
 
 <p>Blob 是四维数据结构，保存节点上的数值以及模型参数，可以通过编程在 CPU 和 GPU 间传输。</p>
 
-<p><a href="/img/post/2014-12/14.png" class="img-up" title="Blob"><img class="imgcenter" src="/img/post/2014-12/14.png" width="80%" title="Blob" ></a></p>
+<p>{% img imgcenter /img/post/2014-12/14.png 80% Blob %}</p>
 
 <p>模型定义之外，还需要一个指定优化策略的配置文件，用以训练模型。</p>
 
-<p><a href="/img/post/2014-12/15.png" class="img-up" title="Solving: Training a Net"><img class="imgcenter" src="/img/post/2014-12/15.png" width="80%" title="Solving: Training a Net" ></a></p>
+<p>{% img imgcenter /img/post/2014-12/15.png 80% Solving: Training a Net %}</p>
 
 <p>使用 Caffe 训练的一般步骤就是</p>
 
@@ -109,37 +109,37 @@
 
 <p>此处给出了两个例子，<a href="http://nbviewer.ipython.org/github/BVLC/caffe/blob/dev/examples/hdf5_classification.ipynb">Logistic Regression</a>，<a href="http://nbviewer.ipython.org/github/BVLC/caffe/blob/dev/examples/hdf5_classification.ipynb">Learn LeNet on MNIST</a>，都很好 follow。</p>
 
-<p><a href="/img/post/2014-12/16.png" class="img-up" title="Step-by-Step Recipe"><img class="imgcenter" src="/img/post/2014-12/16.png" width="80%" title="Step-by-Step Recipe" ></a></p>
+<p>{% img imgcenter /img/post/2014-12/16.png 80% Step-by-Step Recipe%}</p>
 
 <p>调参中重点讲了一个 <a href="[Fine-tuning from ImageNet to Style](http://nbviewer.ipython.org/github/BVLC/caffe/blob/dev/examples/hdf5_classification.ipynb)">模型迁移的实例</a>，用某项任务已有模型的参数作为新任务模型的参数初始值，然后进行模型训练。</p>
 
-<p><a href="/img/post/2014-12/17.png" class="img-up" title="Fine-tuning Transferring learned weights to kick-start models"><img class="imgcenter" src="/img/post/2014-12/17.png" width="80%" title="Fine-tuning Transferring learned weights to kick-start models" ></a></p>
+<p>{% img imgcenter /img/post/2014-12/17.png 80% Fine-tuning Transferring learned weights to kick-start models %}</p>
 
 <p>模型训练一般由浅入深，逐步降低学习速率，以保持预训练参数的某些性质。</p>
 
-<p><a href="/img/post/2014-12/18.png" class="img-up" title="Fine-tuning Tricks"><img class="imgcenter" src="/img/post/2014-12/18.png" width="80%" title="Fine-tuning Tricks" ></a></p>
+<p>{% img imgcenter /img/post/2014-12/18.png 80% Fine-tuning Tricks %}</p>
 
 <p>接下来具体讲述了 Loss、Solver、DAG、Weight Sharing 的概念和配置。</p>
 
 <p>对同一模型，不同 Solver 的表现有差。</p>
 
-<p><a href="/img/post/2014-12/19.png" class="img-up" title="Solver Showdown: MNIST Autoencoder"><img class="imgcenter" src="/img/post/2014-12/19.png" width="80%" title="Solver Showdown: MNIST Autoencoder" ></a></p>
+<p>{% img imgcenter /img/post/2014-12/19.png 80% Solver Showdown: MNIST Autoencoder %}</p>
 
 <p>一般深度学习模型是线性形式的，比如 LeNet，而 Caffe 支持 DAG 形式的模型。</p>
 
-<p><a href="/img/post/2014-12/20.png" class="img-up" title="Nets are DAGs"><img class="imgcenter" src="/img/post/2014-12/20.png" width="80%" title="Nets are DAGs" ></a></p>
+<p>{% img imgcenter /img/post/2014-12/20.png 80% Nets are DAGs %}</p>
 
 <p>Caffe 的近期动向，CPU/GPU 并行化、Pythonification、Fully Convolutional Networks等。</p>
 
-<p><a href="/img/post/2014-12/21.png" class="img-up" title="NOW ROASTING"><img class="imgcenter" src="/img/post/2014-12/21.png" width="80%" title="NOW ROASTING" ></a></p>
+<p>{% img imgcenter /img/post/2014-12/21.png 80% NOW ROASTING%}</p>
 
 <p>Caffe 的团队，拜 Yangqing Jia 师兄……</p>
 
-<p><a href="/img/post/2014-12/22.png" class="img-up" title="Thanks to the Caffe crew"><img class="imgcenter" src="/img/post/2014-12/22.png" width="80%" title="Thanks to the Caffe crew" ></a></p>
+<p>{% img imgcenter /img/post/2014-12/22.png 80% Thanks to the Caffe crew %}</p>
 
 <p>文献参考。</p>
 
-<p><a href="/img/post/2014-12/23.png" class="img-up" title="References"><img class="imgcenter" src="/img/post/2014-12/23.png" width="80%" title="References" ></a></p>
+<p>{% img imgcenter /img/post/2014-12/23.png 80% References %}</p>
 
 <h2 id="section-2">提问</h2>
 
@@ -175,7 +175,7 @@
 
 <p>“盗取”一页 PPT 作为本文总结。</p>
 
-<p><a href="/img/post/2014-12/24.png" class="img-up" title="LAST SIP"><img class="imgcenter" src="/img/post/2014-12/24.png" width="80%" title="LAST SIP" ></a></p>
+<p>{% img imgcenter /img/post/2014-12/24.png 80% LAST SIP %}</p>
 ]]></content>
   </entry>
   

@@ -163,7 +163,7 @@
     <button>Open Menu</button>
     <ul class="dl-menu">
         <li><a href="/">Home</a></li>
-        <li><a href="/archives/">Archives (43)</a></li>
+        <li><a href="/archives/">Archives (44)</a></li>
         <li>
             <a href="#">Categories (7)</a>
             <ul class="dl-submenu">
@@ -174,7 +174,7 @@
                 <li><a href='/category/Mac 使用'>Mac 使用 (14)</a></li><li><a href='/category/面试求职'>面试求职 (13)</a></li><li><a href='/category/工作效率'>工作效率 (8)</a></li><li><a href='/category/网页开发'>网页开发 (4)</a></li><li><a href='/category/编程学习'>编程学习 (2)</a></li>
             </ul>
         </li>
-        <li><a href="/blog/tags">All Tags (48)</a>
+        <li><a href="/blog/tags">All Tags (49)</a>
         <li>
             <a href="#">Features</a>
             <ul class="dl-submenu">
@@ -244,6 +244,10 @@
 <ul>
 	
     <li>
+    	<a href="/blog/2015/02/27/fan-xiao-tu-zhong-guan-yu-xue-sheng-piao-de-xiao-cha-qu/">返校途中关于学生票的小插曲</a>
+    </li>
+    
+    <li>
     	<a href="/blog/2015/02/20/mei-zhou-yi-ruan-zhi-videogif/">每周一软之 VideoGIF</a>
     </li>
     
@@ -257,10 +261,6 @@
     
     <li>
     	<a href="/blog/2015/02/08/mei-zhou-yi-ruan-zhi-blotter/">每周一软之 Blotter</a>
-    </li>
-    
-    <li>
-    	<a href="/blog/2015/01/31/mei-zhou-yi-ruan-zhi-blocs/">每周一软之 Blocs</a>
     </li>
     
 </ul>
@@ -304,6 +304,95 @@
 </article>
 
 
+
+
+<article style="background-color: rgba(255, 255, 255, 0.3); padding: 25px 25px 25px 25px; border-radius: 20px;">
+	<!-- article.html -->
+<!-- 文章展示，区分在索引页和文章页 -->
+<header>
+  <div class="article-tags">
+      <!-- post/categories.html -->
+<!-- 文章类别展示 -->
+
+
+<span class="categories" style="font-size: 16px;">
+  Categories:
+  
+    <a class='category' href='/category/工作效率/'>工作效率</a>
+  
+
+</span>
+
+
+  </div>
+  
+    <h1><a href="/blog/2015/01/02/gollum-kai-ji-qi-dong-pei-zhi/">
+      Gollum 开机启动配置
+    </a></h1>
+  
+  <!-- 给出发布时间 -->
+  <div class="article-date">
+      <!-- post/date.html -->
+<!-- 文章日期显示 -->
+
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2015-01-02T09:31:32+08:00" pubdate data-updated="true">Jan 2<span>nd</span>, 2015</time></div>
+</header>
+<hr />
+
+<!-- 如果在索引中 -->
+
+  <section class="article-index">
+
+<h2 id="gollum-">Gollum 介绍</h2>
+
+<p><a href="https://github.com/gollum/gollum">Gollum</a> 是一个轻量级的 Wiki 框架，可以管理以 Git Repository 形式存在的文件夹。相比于 Mediawiki，文档迁移性更灵活，界面也清新美观。支持多种文档格式，包括 Markdown、MediaWiki、Org-mode、Plain Text、reStructuredText、RDoc、Textile 等。</p>
+
+<p><a href="/img/post/2015-1/1.png" class="img-up" title="Gollum 界面"><img class="imgcenter" src="/img/post/2015-1/1.png" width="90%" title="Gollum 界面" /></a></p>
+
+<p>Gollum 自带公式输入支持，可自定义 MathJax 的配置；<strong>支持图片拖拽插入</strong>（并自动上传），这是让我觉得很方便的一点。美中不足的是，Gollum 不支持中文命名的文件，所以</p>
+
+<ul>
+  <li>如果 Git Repository 中包含中文命名文档，则无法正确显示；</li>
+  <li>对于中文名称链接，Gollum 会将该名称<strong>转为拼音形式作为文件名</strong>，相应链接、文档标题也都是拼音；</li>
+  <li>如果上传图片是中文命名的，也无法正确显示。</li>
+</ul>
+
+<h2 id="section">安装</h2>
+
+<p>按照 <a href="https://github.com/gollum/gollum#installation">说明</a> 安装即可。</p>
+
+<p>Gollum 安装过程可能会比较慢，或者报 TIME_OUT 错误，可切换至 <a href="http://ruby.taobao.org/">淘宝镜像</a>。</p>
+
+</section>
+  <a href="/blog/2015/01/02/gollum-kai-ji-qi-dong-pei-zhi/" style="background: #da3e10; color: #ffffff; border-radius: 5px; border: 4px solid #da3e10;">继续阅读</a>&nbsp;&nbsp;&nbsp;&nbsp;
+<!-- post/tags.html -->
+<!-- 文章标签展示 -->
+
+
+<span class="tags">
+  <font color="#777">Tags: </font>
+  
+    <a class='tag' href='/tag/Gollum/'>Gollum</a>, <a class='tag' href='/tag/Ruby/'>Ruby</a>
+  
+</span>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<span class="ds-thread-count" data-thread-key="/blog/2015/01/02/gollum-kai-ji-qi-dong-pei-zhi/" style="color: #777;"></span>
+
+
+
+
+</article>
 
 
 <article style="background-color: rgba(255, 255, 255, 0.3); padding: 25px 25px 25px 25px; border-radius: 20px;">
@@ -739,115 +828,6 @@
 </span>
 &nbsp;&nbsp;&nbsp;&nbsp;
 <span class="ds-thread-count" data-thread-key="/blog/2014/12/20/wunderlist-tian-jia-kuai-jie-jian-qi-dong/" style="color: #777;"></span>
-
-
-
-
-</article>
-
-
-<article style="background-color: rgba(255, 255, 255, 0.3); padding: 25px 25px 25px 25px; border-radius: 20px;">
-	<!-- article.html -->
-<!-- 文章展示，区分在索引页和文章页 -->
-<header>
-  <div class="article-tags">
-      <!-- post/categories.html -->
-<!-- 文章类别展示 -->
-
-
-<span class="categories" style="font-size: 16px;">
-  Categories:
-  
-    <a class='category' href='/category/Mac 使用/'>Mac 使用</a>
-  
-
-</span>
-
-
-  </div>
-  
-    <h1><a href="/blog/2014/12/14/mei-zhou-ruan-zhi-ri-ji-ruan-jian-chronories/">
-      每周一软之日记软件 Chronories
-    </a></h1>
-  
-  <!-- 给出发布时间 -->
-  <div class="article-date">
-      <!-- post/date.html -->
-<!-- 文章日期显示 -->
-
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-12-14T11:13:48+08:00" pubdate data-updated="true">Dec 14<span>th</span>, 2014</time></div>
-</header>
-<hr />
-
-<!-- 如果在索引中 -->
-
-  <section class="article-index">
-
-<p>打算写一个“<strong>每周一软</strong>”系列，主要记录我在 Mac 平台下的软件使用感受和建议。作为一个收藏控和工具控，我曾对自己接触过的 Mac 软件做过一个分类整理，详见 <a href="http://blog.sina.com.cn/s/blog_64ac3ab10101f4it.html">《Mac 实用软件及功能吐血总结》</a>。“<strong>每周一软</strong>”与这份总结不同，一来会有更为详尽的介绍，二来都是我在工作生活中使用频率较高的，算是优中选优。</p>
-
-<p>每篇介绍将分<code>功能介绍</code>、<code>界面设计</code>、<code>易用性</code>、<code>稳定性</code>、<code>跨平台</code>、<code>类似软件</code>、<code>闪光点</code>、<code>缺点</code>这八块，希望给大家一个较为全面的认识。</p>
-
-<p>第一个要推荐的软件是日记软件 —— <strong>Chronories</strong>。</p>
-
-<p>话说 Chronories 是一款下架停更的软件（但还是可以用的……），之所以把它放在第一个来介绍，一方面是因为自己用得久，有感情，再者它确实强大有用。</p>
-
-<h2 id="section-1">功能介绍</h2>
-
-<p>Chronories 是著名的 <a href="http://www.syniumsoftware.com/">Synium Software</a> 公司的产品。</p>
-
-<p>与其说它是一款日记软件，不如说是在<strong>记录日志</strong>。</p>
-
-<p>这一日志数据既有我们主动录入的，比如日常感想、心情、照片，也有被 Chronories 在后台默默记录下的丰富信息。</p>
-
-<p>Chronories 以天为单位，可以记录的内容类别如下</p>
-
-<p><a href="/img/post/2014-12/26.png" class="img-up" title="Chronories 记录的条目"><img class="imgcenter" src="/img/post/2014-12/26.png" width="30%" title="Chronories 记录的条目" /></a></p>
-
-<ul>
-  <li>Diary Entry —— 日记条目</li>
-  <li>Your Mood —— 心情</li>
-  <li>Interesting Topics —— 感兴趣的话题</li>
-  <li>Places —— 地点</li>
-  <li>Contacts —— 联系人</li>
-  <li>@Computer Activity —— 一天中的电脑活跃度，表现为折线图</li>
-  <li>@Local Weather —— 本地天气</li>
-  <li>@Application Used —— 不同软件的使用时长</li>
-  <li>@Music —— 在 iTunes 听过的音乐</li>
-  <li>@RSS News Headlines —— 你所录入的 RSS 当天的更新</li>
-  <li>Desktop Screenshots —— 截屏</li>
-  <li>Other Images —— 其它录入的图片</li>
-  <li>iSight Photos —— 摄像头拍摄，大部分情况下是自拍……</li>
-  <li>@e-mails —— Mail 当日收到的邮件</li>
-  <li>@Chat Statistics —— Message 聊天记录</li>
-  <li>@Visited Websites —— 当日访问过的网站</li>
-  <li>@iCal Appointment —— iCal 中的安排</li>
-</ul>
-
-</section>
-  <a href="/blog/2014/12/14/mei-zhou-ruan-zhi-ri-ji-ruan-jian-chronories/" style="background: #da3e10; color: #ffffff; border-radius: 5px; border: 4px solid #da3e10;">继续阅读</a>&nbsp;&nbsp;&nbsp;&nbsp;
-<!-- post/tags.html -->
-<!-- 文章标签展示 -->
-
-
-<span class="tags">
-  <font color="#777">Tags: </font>
-  
-    <a class='tag' href='/tag/mac软件/'>mac软件</a>, <a class='tag' href='/tag/每周一软/'>每周一软</a>
-  
-</span>
-&nbsp;&nbsp;&nbsp;&nbsp;
-<span class="ds-thread-count" data-thread-key="/blog/2014/12/14/mei-zhou-ruan-zhi-ri-ji-ruan-jian-chronories/" style="color: #777;"></span>
 
 
 
