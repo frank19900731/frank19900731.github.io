@@ -4,7 +4,7 @@
   <title><![CDATA[Blog of 太极儒]]></title>
   <link href="http://frank19900731.github.io/atom.xml" rel="self"/>
   <link href="http://frank19900731.github.io/"/>
-  <updated>2015-02-28T00:50:32+08:00</updated>
+  <updated>2015-03-01T14:37:40+08:00</updated>
   <id>http://frank19900731.github.io/</id>
   <author>
     <name><![CDATA[Frank Song]]></name>
@@ -12,6 +12,156 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[每周一软之 Smart Scroll]]></title>
+    <link href="http://frank19900731.github.io/blog/2015/03/01/mei-zhou-yi-ruan-zhi-smart-scroll/"/>
+    <updated>2015-03-01T12:32:51+08:00</updated>
+    <id>http://frank19900731.github.io/blog/2015/03/01/mei-zhou-yi-ruan-zhi-smart-scroll</id>
+    <content type="html"><![CDATA[<p><strong>目录</strong></p>
+
+<ul id="markdown-toc">
+  <li><a href="#section">功能介绍</a></li>
+  <li><a href="#section-1">界面设计</a></li>
+  <li><a href="#section-2">易用性</a></li>
+  <li><a href="#section-3">稳定性</a></li>
+  <li><a href="#section-4">跨平台</a></li>
+  <li><a href="#section-5">类似软件</a></li>
+  <li><a href="#section-6">闪光点</a></li>
+  <li><a href="#section-7">缺点</a></li>
+</ul>
+
+<!-- excerpt start -->
+
+<h2 id="section">功能介绍</h2>
+
+<p><a href="http://www.marcmoini.com/sx_en.html">Smart Scroll</a> 一款<strong>鼠标/触摸板辅助软件</strong>，为滚轮或面板的滚动操作添加智能因素，显示于 System Preferences 面板中。</p>
+
+<p>Smart Scroll 主要有六大功能，与其界面设计相对应。</p>
+
+<ul>
+  <li>Scroll Wheel（鼠标设备） 设置
+    <ul>
+      <li>调节滚动的速度、方向（Reverse）、距离（Range for a single tick）与惯性（Inertia+）；</li>
+      <li>测试表明，<strong>在不同速度设置下</strong>，<strong>均可以实现平滑滚动</strong>；</li>
+      <li>Multi-Touch（触摸设备）中的功能设置同 Scroll Wheel。</li>
+    </ul>
+  </li>
+</ul>
+
+<p><a href="http://frank19900731.github.io/img/post/2015-3/1.png" class="img-up" title="Scroll Wheel+"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2015-3/1.png" width="80%" title="Scroll Wheel+" /></a></p>
+
+<!-- excerpt end -->
+
+<ul>
+  <li>Hover Scroll
+    <ul>
+      <li>可以设置窗口上下各一定区域，使得鼠标指针在该区域悬停时，窗口自动向上或向下滚动，速度可调整；</li>
+      <li>鼠标指针越接近窗口上/下部，窗口向上/下滚动的速度越快（<strong>可能引发视觉抖动</strong>）；</li>
+      <li>测试表明，鼠标指针需要<strong>以慢速进入设定区域</strong>，过快则无法触发 Hover Scroll。</li>
+    </ul>
+  </li>
+</ul>
+
+<p><a href="http://frank19900731.github.io/img/post/2015-3/3.png" class="img-up" title="Hover Scroll"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2015-3/3.png" width="80%" title="Hover Scroll" /></a></p>
+
+<ul>
+  <li>Auto Scroll
+    <ul>
+      <li>基于 Hover Scroll，以快捷键触发，鼠标指针被自动移到窗口下部，触发向下滚动操作。</li>
+    </ul>
+  </li>
+</ul>
+
+<p><a href="http://frank19900731.github.io/img/post/2015-3/4.png" class="img-up" title="Auto Scroll"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2015-3/4.png" width="80%" title="Auto Scroll" /></a></p>
+
+<ul>
+  <li>Grab Scroll
+    <ul>
+      <li>仅支持鼠标，拖拽页面滚动，类似于 <strong>PDF 阅读器中的手形图标拖动效果</strong>；</li>
+      <li>同样可以调节速度、方向与惯性；</li>
+      <li>Grab Scroll 可以采用快捷键+鼠标键的方式触发，以下图 <code>Option + Command + Secondary Button</code> 这一组合为例，需要先按下 Option 并<strong>保持</strong>，然后点击 Command（<strong>需抬起</strong>），之后按下鼠标右键方可拖动……</li>
+    </ul>
+  </li>
+</ul>
+
+<p><a href="http://frank19900731.github.io/img/post/2015-3/5.png" class="img-up" title="Grab Scroll"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2015-3/5.png" width="80%" title="Grab Scroll" /></a></p>
+
+<ul>
+  <li>Scroll Keys
+    <ul>
+      <li>滚动的快捷键操作，上下左右类似于箭头方向键；</li>
+      <li>测试表明，快捷键滚动比箭头方向键滚动<strong>步长更细</strong>，<strong>也更平滑</strong>；</li>
+    </ul>
+  </li>
+</ul>
+
+<p><a href="http://frank19900731.github.io/img/post/2015-3/6.png" class="img-up" title="Scroll Keys"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2015-3/6.png" width="80%" title="Scroll Keys" /></a></p>
+
+<ul>
+  <li>Vector Scroll
+    <ul>
+      <li>仅支持鼠标，鼠标键的点击释放构成向量，向量方向确定滚动方向，向量的模确定滚动速度；</li>
+      <li>如果设置 Secondary Button 触发，则右键菜单无法弹出，只能通过 Ctrl + Primary Button（鼠标左键） 查看。</li>
+    </ul>
+  </li>
+</ul>
+
+<p><a href="http://frank19900731.github.io/img/post/2015-3/7.png" class="img-up" title="Vector Scroll"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2015-3/7.png" width="80%" title="Vector Scroll" /></a></p>
+
+<h2 id="section-1">界面设计</h2>
+
+<p>界面设计较美观。</p>
+
+<h2 id="section-2">易用性</h2>
+
+<p>用法简单，只是初始需要设置适合自己使用习惯的参数。</p>
+
+<h2 id="section-3">稳定性</h2>
+
+<p>稳定性好。</p>
+
+<h2 id="section-4">跨平台</h2>
+
+<p>无。</p>
+
+<h2 id="section-5">类似软件</h2>
+
+<p>作为鼠标/触摸板辅助软件中的一款，Smart Scroll 专注于<strong>滚动的定制优化</strong>，而实际上这些设备有待发掘的远不止于此，以下两款软件可以提供更加丰富实用的定制功能。</p>
+
+<ul>
+  <li><a href="http://www.jitouch.com/">Jitouch</a> 也是安装后位于 System Preferences 中的一款软件，支持鼠标/触摸板手势、字符笔画识别，并可<strong>关联动作/快捷键</strong>。</li>
+</ul>
+
+<p><a href="http://frank19900731.github.io/img/post/2015-3/8.png" class="img-up" title="Jitouch"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2015-3/8.png" width="80%" title="Jitouch" /></a></p>
+
+<ul>
+  <li><a href="http://www.boastr.de/">Better Touch Tool</a> 是一款功能更加强大的辅助工具，几乎涵盖了 Smart Scroll、Jitouch 的所有功能，可定制项很多，有一种<strong>视觉压迫感</strong>，一看就是给 Geek 用的……
+    <ul>
+      <li>支持鼠标、触摸板、键盘快捷键、Apple Remote、Better Touch Tool 移动端（iOS）等的辅助功能定制；</li>
+      <li>手势、动作远较 Jitouch 丰富，也正因为多，<strong>一些手势的识别准确性会降低</strong>，<strong>定制项目多也更容易引发误操作</strong>。</li>
+    </ul>
+  </li>
+</ul>
+
+<p><a href="http://frank19900731.github.io/img/post/2015-3/9.png" class="img-up" title="Better Touch Tool"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2015-3/9.png" width="80%" title="Better Touch Tool" /></a></p>
+
+<h2 id="section-6">闪光点</h2>
+
+<ul>
+  <li>滚动速度可调，且效果平滑，Hover Scroll 与 Scroll Keys 也能做到平滑滚动。</li>
+</ul>
+
+<h2 id="section-7">缺点</h2>
+
+<ul>
+  <li>Grab Scroll、Vector Scroll 只能配合鼠标使用，对于只用触摸板的用户就鸡肋了，但这些功能完全可以配合触摸板使用（严格说 Vector Scroll 已经可以配合触摸板使用，但只能使用 Secondary Button 触发，而之前我们提到这会影响右键菜单的查看）；</li>
+  <li>Hover Scroll 速度快时有轻微抖动（当然，<strong>也很可能是我显卡差</strong>）。</li>
+</ul>
+
+<p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2015/03/01/mei-zhou-yi-ruan-zhi-smart-scroll/">http://frank19900731.github.io/blog/2015/03/01/mei-zhou-yi-ruan-zhi-smart-scroll/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[返校途中关于学生票的小插曲]]></title>
@@ -3788,29 +3938,6 @@
 </ol>
 
 <p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2014/12/14/mei-zhou-ruan-zhi-ri-ji-ruan-jian-chronories/">http://frank19900731.github.io/blog/2014/12/14/mei-zhou-ruan-zhi-ri-ji-ruan-jian-chronories/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[微博卡片 — 微博收藏的可视化]]></title>
-    <link href="http://frank19900731.github.io/blog/2014/12/09/wei-bo-qia-pian-wei-bo-shou-cang-de-ke-shi-hua/"/>
-    <updated>2014-12-09T15:23:26+08:00</updated>
-    <id>http://frank19900731.github.io/blog/2014/12/09/wei-bo-qia-pian-wei-bo-shou-cang-de-ke-shi-hua</id>
-    <content type="html"><![CDATA[<!-- excerpt start -->
-
-<p>平时自己会有一些新浪微博的收藏，主要是跟自己专业、兴趣相关的资讯、资料，随着积累的增多，如何有效回顾这些收藏成为了一个问题。</p>
-
-<p>使用新浪微博自带的收藏页面，感觉翻页浏览不便；后来会在收藏的同时，把微博内容、图片分门别类拷贝到笔记中，但又不便于可视化。于是萌生了自己做一个微博可视化页面的想法，采用较为流行的瀑布流布局，每一条微博以卡片的形式展示。给出 <a href="https://github.com/frank19900731/weibocard">项目地址</a>  和 <a href="http://frank19900731.github.io/weibocard-demo/">Demo</a>。</p>
-
-<p><a href="http://frank19900731.github.io/img/post/2014-12/25.png" class="img-up" title="微博卡片 Demo"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-12/25.png" width="80%" title="微博卡片 Demo" /></a></p>
-
-<p>项目使用新浪微博 Python SDK 抓取已收藏的微博，mongodb 做存储，根据查询条件生成 json 文件供前端可视化，前端瀑布流是从 <a href="http://www.imooc.com/learn/101">这门课</a> 中学到的。多说一句，慕课网里关于前端的教学内容非常丰富，很适合我这种半瓶醋选手……</p>
-
-<p>我只简单地实现了时间区间的提取，不过有了微博数据和可视化骨架在，定制精细化的整理、阅读方式应该不难。</p>
-
-<!-- excerpt end -->
-
-<p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2014/12/09/wei-bo-qia-pian-wei-bo-shou-cang-de-ke-shi-hua/">http://frank19900731.github.io/blog/2014/12/09/wei-bo-qia-pian-wei-bo-shou-cang-de-ke-shi-hua/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
 ]]></content>
   </entry>
   
