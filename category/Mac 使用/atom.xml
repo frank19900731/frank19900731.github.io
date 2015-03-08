@@ -1,5 +1,103 @@
 
 <item>
+    <title>每周一软之 FocusMask</title>
+    <link>http://realjenius.com/blog/2015/03/08/mei-zhou-yi-ruan-zhi-focusmask/</link>
+    <author>R.J. Lorimer</author>
+    <pubDate>2015-03-08T20:39:54+08:00</pubDate>
+    <guid>http://realjenius.com/blog/2015/03/08/mei-zhou-yi-ruan-zhi-focusmask/</guid>
+    <description><![CDATA[
+     <p><strong>目录</strong></p>
+
+<ul id="markdown-toc">
+  <li><a href="#section">功能介绍</a></li>
+  <li><a href="#section-1">界面设计</a></li>
+  <li><a href="#section-2">易用性</a></li>
+  <li><a href="#section-3">稳定性</a></li>
+  <li><a href="#section-4">跨平台</a></li>
+  <li><a href="#section-5">类似软件</a></li>
+  <li><a href="#section-6">闪光点</a></li>
+  <li><a href="#section-7">缺点</a></li>
+</ul>
+
+<!-- excerpt start -->
+
+<h2 id="section">功能介绍</h2>
+
+<p><a href="http://tentrip.net/focusmask/">FocusMask</a> 是一款效率软件，通过在屏幕上隔离出某一区域（其它区域被遮罩），使用户专注于某项工作，比如隔离出编辑环境以专注写作。</p>
+
+<p>FocusMask 虽然只是一招鲜，但个人觉得它提供的<strong>遮罩功能</strong>在日常工作学习中还是很实用的。类似于截图，FocusMask 的遮罩区域可以是框定的，也可以是当前窗口或视图，均可由快捷键触发。</p>
+
+<p><a href="http://frank19900731.github.io/img/post/2015-3/10.png" class="img-up" title="FocusMask 设置"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2015-3/10.png" width="80%" title="FocusMask 设置" /></a></p>
+
+<!-- excerpt end -->
+
+<p>以 Byword 写作为例，选定工作区域，之外的区域被遮罩。可以<strong>调整遮罩层的透明度</strong>，设定<strong>是否允许在工作区域外点击鼠标</strong>。</p>
+
+<p><a href="http://frank19900731.github.io/img/post/2015-3/11.png" class="img-up" title="区域框定"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-3/11.png" width="90%" title="区域框定" /></a></p>
+
+<p><a href="http://frank19900731.github.io/img/post/2015-3/12.png" class="img-up" title="运行效果"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-3/12.png" width="90%" title="运行效果" /></a></p>
+
+<p>如此，菜单栏、Docker 以及通知栏均不可见，可以在编辑区域安心工作了……</p>
+
+<h2 id="section-1">界面设计</h2>
+
+<p>界面设计简陋。</p>
+
+<h2 id="section-2">易用性</h2>
+
+<p>易于使用。</p>
+
+<h2 id="section-3">稳定性</h2>
+
+<p>稳定性好。</p>
+
+<h2 id="section-4">跨平台</h2>
+
+<p>无。</p>
+
+<h2 id="section-5">类似软件</h2>
+
+<p>迫使用户专注的一般做法是<code>屏蔽</code>。</p>
+
+<p><code>视觉屏蔽</code>，比如 FocusMask，又比如 <a href="http://willmore.eu/software/isolator/">Isolator</a>，后者将工作区域设置为处于输入焦点的软件，之外的区域同样是遮罩。Isolator 相比 FocusMask 为遮罩提供了更多选项，可以设置颜色，也可以设置滤镜，不过滤镜功能在 OS X 10.8 及以上的系统中已无法使用。</p>
+
+<p><code>听觉屏蔽</code>，推荐 <a href="https://coffitivity.com/">Coffitivity</a>，播放咖啡馆白噪音，网页版、PC 客户端、移动版均有提供。</p>
+
+<p>比<code>视觉屏蔽</code>、<code>听觉屏蔽</code>更彻底的是<code>接触屏蔽</code>，比如禁止浏览器对某些网址的访问，禁止某时段某些软件的开启。</p>
+
+<ul>
+  <li>命令行工具
+    <ul>
+      <li><a href="https://github.com/amoffat/focus">Focus</a>，Python 编写，可屏蔽网址；</li>
+      <li><a href="https://github.com/xtrementl/focus">Focus</a>，Python 编写，是一款强大的<strong>任务管理工具</strong>，除了可以屏蔽网址、软件，还可以给任务关联需要开启的软件、需要运行的脚本，也可以记录工作时间，生成简单的报告，称得上是极客工具；</li>
+    </ul>
+  </li>
+  <li>图形界面工具
+    <ul>
+      <li><a href="http://selfcontrolapp.com/">SelfControl</a> ，<a href="https://github.com/SelfControlApp/selfcontrol">开源软件</a>，可屏蔽网址；</li>
+      <li><a href="http://www.publicspace.net/Vitamin-R/">Vitamin-R</a>，大体是一款番茄工作法工具，可记录工作历史并生成图表，可于工作时段屏蔽指定软件，也可播放咖啡馆白噪音；</li>
+      <li><a href="https://heyfocus.com/">Focus</a> ，屏蔽指定网址、软件，也可以在命令行操作，曾是 <a href="https://github.com/bradjasper/Focus">开源软件</a>。</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="section-6">闪光点</h2>
+
+<ul>
+  <li>工作区域选择方式多样；</li>
+  <li>可以屏蔽工作区域外的鼠标点击。</li>
+</ul>
+
+<h2 id="section-7">缺点</h2>
+
+<p>遮罩区域样式单一，应允许自定义背景。</p>
+
+<p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2015/03/08/mei-zhou-yi-ruan-zhi-focusmask/">http://frank19900731.github.io/blog/2015/03/08/mei-zhou-yi-ruan-zhi-focusmask/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
+
+  ]]></description>
+</item>
+
+<item>
     <title>每周一软之 Smart Scroll</title>
     <link>http://realjenius.com/blog/2015/03/01/mei-zhou-yi-ruan-zhi-smart-scroll/</link>
     <author>R.J. Lorimer</author>
@@ -1620,101 +1718,6 @@
 </ul>
 
 <p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2015/01/11/mei-zhou-yi-ruan-zhi-xnconvert/">http://frank19900731.github.io/blog/2015/01/11/mei-zhou-yi-ruan-zhi-xnconvert/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
-
-  ]]></description>
-</item>
-
-<item>
-    <title>每周一软之 Sapiens</title>
-    <link>http://realjenius.com/blog/2015/01/04/mei-zhou-ruan-zhi-sapiens/</link>
-    <author>R.J. Lorimer</author>
-    <pubDate>2015-01-04T00:37:59+08:00</pubDate>
-    <guid>http://realjenius.com/blog/2015/01/04/mei-zhou-ruan-zhi-sapiens/</guid>
-    <description><![CDATA[
-     <p><strong>目录</strong></p>
-
-<ul id="markdown-toc">
-  <li><a href="#section">功能介绍</a></li>
-  <li><a href="#section-1">界面设计</a></li>
-  <li><a href="#section-2">易用性</a></li>
-  <li><a href="#section-3">稳定性</a></li>
-  <li><a href="#section-4">跨平台</a></li>
-  <li><a href="#section-5">类似软件</a></li>
-  <li><a href="#section-6">闪光点</a></li>
-  <li><a href="#section-7">缺点</a></li>
-</ul>
-
-<!-- excerpt start -->
-
-<p>在这么一个<strong>读图时代</strong>、<strong>看脸时代</strong>，软件的颜值也称得上一个重要的衡量指标。Sapien 除了有一张美丽的面孔，还有那么点小情趣，挺讨人喜欢的。</p>
-
-<h2 id="section">功能介绍</h2>
-
-<p>Sapiens 是一个软件快速启动工具，且目前只支持软件快速打开，没有打开文件、执行脚本啦什么旁的功能。</p>
-
-<p>Sapiens 除了通常的快捷键启动方式，还有<strong>画圈圈</strong>启动方式，具体见如下动态图。从动态图还可以看出它默认<strong>列举你最近用过的软件</strong>。</p>
-
-<p><a href="http://frank19900731.github.io/img/post/2015-1/1.gif" class="img-up" title="动态图"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-1/1.gif" width="70%" title="动态图" /></a></p>
-
-<blockquote><p>兰花指微翘，食指指尖在触摸板上看似不经意的划出那一弯圆月，美美的界面就映入眼帘，真真儿的是让人陶醉呢……</p></blockquote>
-
-<p><strong>转向顺时针、逆时针皆可</strong>，圈数触发可以设置在 1 - 3 圈，默认是 1.4 圈。经测试设置为 1 圈的时候，大概也就是<strong>一圈半</strong>能识别出的水平。注意<strong>手速稍快些</strong>，<strong>画的圆半径不要太小</strong>，试过几次就能很熟练了。</p>
-
-<!-- excerpt end -->
-
-<p>既漂亮又有情趣，倘若是无脑，那也就是平平啦，不过人家可是结合了人工智能的呦。</p>
-
-<p><a href="http://frank19900731.github.io/img/post/2015-1/3.png" class="img-up" title="Artificial Inteligence"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-1/3.png" width="70%" title="Artificial Inteligence" /></a></p>
-
-<p>把 <strong>About Sapiens’ Artificial Intelligence</strong> 那抄录下来。</p>
-
-<blockquote><p>Sapiens tries to predict the applications you will want to launch.</p><p>Sapiens understands what applications you use and learns how you interact with your Mac. For this reason it may take 2-3 days (it really depends how often you use your mac daily) for it to have enough brain power for making accurate predictions.</p><p>Also, as your habits change Sapiens keeps adapting to them by constantly learning from you.</p></blockquote>
-
-<p>就是说，你把人家来安装，我来把你细观察，你想吃饭我端碗，你想拉屎我递纸，把你伺候好好的，一辈子都随你意。</p>
-
-<h2 id="section-1">界面设计</h2>
-
-<p>提供五种布局，默认的如下图。</p>
-
-<p><a href="http://frank19900731.github.io/img/post/2015-1/2.png" class="img-up" title="Sapiens 图示"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-1/2.png" width="70%" title="Sapiens 图示" /></a></p>
-
-<p>可以设置 <strong>Desktop Mirroring Effect</strong>，圆内背景就是桌面背景加了遮罩的效果，配合上<strong>动态壁纸</strong>，确实八错。</p>
-
-<h2 id="section-2">易用性</h2>
-
-<p>傻瓜软件。</p>
-
-<h2 id="section-3">稳定性</h2>
-
-<p>稳定，未遇异常。</p>
-
-<h2 id="section-4">跨平台</h2>
-
-<p>无。</p>
-
-<h2 id="section-5">类似软件</h2>
-
-<p>提到快速启动软件，那头两把交椅自然就是 <a href="http://www.alfredapp.com/">Alfred</a> 和 <a href="http://qsapp.com/">QuickSilver</a> ，前者闭源收费（确切的说是高级功能收费），后者开源免费。</p>
-
-<p>二者都有很强的附加功能，比如文件搜索、删除、压缩、查看详情啦，脚本执行、iTunes 控制啦等。关于它们的对比网上有 <a href="http://www.v2ex.com/t/42050">很多讨论</a>，不在这里多说。 </p>
-
-<p>QuickSilver 有自己的插件列表，因为是开源的，所以也可以自己开发，不过门槛应该比较高吧？Alfred 有一个 Workflow 模式，是收费功能，可以通过撰写脚本、连接模块实现自己想要的功能，就相当于一个插件定制系统了（有点类似于 Automator），适合于普通程序员。</p>
-
-<p>本人最早使用的是 QucikSilver，习惯积累下来也就没有转到 Alfred，也是因为前者已经能够满足所需。最近尝试用用 Alfred，也别落伍太多，先从这个 <a href="https://github.com/hzlzh/AlfredWorkflow.com">Workflow 列表</a> 看起吧，这个 <a href="http://lucifr.com/2011/11/30/alfred-and-some-recommanded-extensions/">博客</a> 中也有很多 Alfred 相关内容。</p>
-
-<p>不过我还是有点想不明白为什么要把那么多功能都堆到这个小软件里，自动和手动差别就这么大么，还是说在追求些别的什么。</p>
-
-<p>最主要的原因是我还不够 Geek 吧……</p>
-
-<h2 id="section-6">闪光点</h2>
-
-<p>漂亮。</p>
-
-<h2 id="section-7">缺点</h2>
-
-<p>既然漂亮，就别要求那么高了。</p>
-
-<p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2015/01/04/mei-zhou-ruan-zhi-sapiens/">http://frank19900731.github.io/blog/2015/01/04/mei-zhou-ruan-zhi-sapiens/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
 
   ]]></description>
 </item>
