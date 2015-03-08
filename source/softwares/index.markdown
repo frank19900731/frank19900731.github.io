@@ -11,17 +11,19 @@ exclude_from_search: true
 
 <p style="text-align: center;">
 
+<a href="/blog/2015/03/08/mei-zhou-yi-ruan-zhi-focusmask/" target="_blank"><img class="imgcenter-no-shadow" src="/img/special/software/FocusMask.png" width="20%" title="FocusMask"></a>
+
 <a href="/blog/2015/03/01/mei-zhou-yi-ruan-zhi-smart-scroll/" target="_blank"><img class="imgcenter-no-shadow" src="/img/special/software/Smart-Scroll.png" width="20%" title="Smart Scroll"></a>
 
 <a href="/blog/2015/02/20/mei-zhou-yi-ruan-zhi-videogif/" target="_blank"><img class="imgcenter-no-shadow" src="/img/special/software/VideoGIF.png" width="20%" title="VideoGIF"></a>
 
 <a href="/blog/2015/02/12/mei-zhou-yi-ruan-zhi-sitesucker/" target="_blank"><img class="imgcenter-no-shadow" src="/img/special/software/SiteSucker.png" width="20%" title="SiteSucker"></a>
 
-<a href="/blog/2015/02/08/mei-zhou-yi-ruan-zhi-blotter/" target="_blank"><img class="imgcenter-no-shadow" src="/img/special/software/Blotter.png" width="20%" title="Blotter"></a>
-
 </p>
 
 <p style="text-align: center;">
+
+<a href="/blog/2015/02/08/mei-zhou-yi-ruan-zhi-blotter/" target="_blank"><img class="imgcenter-no-shadow" src="/img/special/software/Blotter.png" width="20%" title="Blotter"></a>
 
 <a href="/blog/2015/01/31/mei-zhou-yi-ruan-zhi-blocs/" target="_blank"><img class="imgcenter-no-shadow" src="/img/special/software/Blocs.png" width="20%" title="Blocs"></a>
 
@@ -29,17 +31,21 @@ exclude_from_search: true
 
 <a href="/blog/2015/01/18/mei-zhou-yi-ruan-zhi-wordify/" target="_blank"><img class="imgcenter-no-shadow" src="/img/special/software/Wordify.png" width="20%" title="Wordify"></a>
 
-<a href="/blog/2015/01/11/mei-zhou-yi-ruan-zhi-xnconvert/" target="_blank"><img class="imgcenter-no-shadow" src="/img/special/software/xnconvert.png" width="20%" title="XnConvert"></a>
-
 </p>
 
 <p style="text-align: center;">
+
+<a href="/blog/2015/01/11/mei-zhou-yi-ruan-zhi-xnconvert/" target="_blank"><img class="imgcenter-no-shadow" src="/img/special/software/xnconvert.png" width="20%" title="XnConvert"></a>
 
 <a href="/blog/2015/01/04/mei-zhou-ruan-zhi-sapiens/" target="_blank"><img class="imgcenter-no-shadow" src="/img/special/software/Sapiens.png" width="20%" title="Sapiens"></a>
 
 <a href="/blog/2014/12/28/mei-zhou-yi-ruan-zhi-proxifier/" target="_blank"><img class="imgcenter-no-shadow" src="/img/special/software/Proxifier.png" width="20%" title="Proxifier"></a>
 
 <a href="/blog/2014/12/21/mei-zhou-ruan-zhi-markdown-bi-ji-ruan-jian-ulysses-iii/" target="_blank"><img class="imgcenter-no-shadow" src="/img/special/software/Ulysses.png" width="20%" title="Ulysses"></a>
+
+</p>
+
+<p style="text-align: center;">
 
 <a href="/blog/2014/12/14/mei-zhou-ruan-zhi-ri-ji-ruan-jian-chronories/" target="_blank"><img class="imgcenter-no-shadow" src="/img/special/software/Chronories.png" width="20%" title="Chronories"></a>
 
