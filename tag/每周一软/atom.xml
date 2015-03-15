@@ -1,5 +1,128 @@
 
 <item>
+    <title>每周一软之 Soulver</title>
+    <link>http://realjenius.com/blog/2015/03/15/mei-zhou-yi-ruan-zhi-soulver/</link>
+    <author>R.J. Lorimer</author>
+    <pubDate>2015-03-15T18:21:49+08:00</pubDate>
+    <guid>http://realjenius.com/blog/2015/03/15/mei-zhou-yi-ruan-zhi-soulver/</guid>
+    <description><![CDATA[
+     <p><strong>目录</strong></p>
+
+<ul id="markdown-toc">
+  <li><a href="#section">功能介绍</a></li>
+  <li><a href="#section-1">界面设计</a></li>
+  <li><a href="#section-2">易用性</a></li>
+  <li><a href="#section-3">稳定性</a></li>
+  <li><a href="#section-4">跨平台</a></li>
+  <li><a href="#section-5">类似软件</a>    <ul>
+      <li><a href="#section-6">普通计算器</a></li>
+      <li><a href="#section-7">交互式编程环境</a></li>
+    </ul>
+  </li>
+  <li><a href="#section-8">闪光点</a></li>
+  <li><a href="#section-9">缺点</a></li>
+</ul>
+
+<!-- excerpt start -->
+
+<h2 id="section">功能介绍</h2>
+
+<p><a href="http://www.acqualia.com/soulver/">Soulver</a> 是一款智能计算器，允许<strong>计算公式与文档混排</strong>，提供汇率与股价的查询计算、变量定义、结果引用、版本保存、简单统计等功能。</p>
+
+<p>下面先以软件自带样例文件具体介绍其功能。</p>
+
+<p>Soulver 使用文档保存计算过程，文档格式为 XML，可导出 PDF 文件。</p>
+
+<p>这幅图显示了文档块定义（比如 Simple Math 粗体）、简单计算、以语义表示的计算、注释以及汇率转换、单位转换的用法。</p>
+
+<p><a href="http://frank19900731.github.io/img/post/2015-3/13.png" class="img-up" title="Soulver 使用样例一"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2015-3/13.png" width="100%" title="Soulver 使用样例一" /></a></p>
+
+<!-- excerpt end -->
+
+<p>这幅图显示了结果引用、变量、股票价格、函数的用法。</p>
+
+<p><a href="http://frank19900731.github.io/img/post/2015-3/14.png" class="img-up" title="Soulver 使用样例二"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2015-3/14.png" width="100%" title="Soulver 使用样例二" /></a></p>
+
+<p>结果引用、汇率、股票价格都是<strong>依赖某一个数值</strong>，当依赖值改变，使用此依赖值的计算结果也会随之变化。我们需要做的仅是列写公式，更新依赖值。</p>
+
+<p><a href="http://frank19900731.github.io/img/post/2015-3/15.png" class="img-up" title="汇率值、股票价格更新"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2015-3/15.png" width="90%" title="汇率值、股票价格更新" /></a></p>
+
+<p>上图 Variables 窗格中可以定义<strong>全局变量</strong>，对每个计算文档生效。</p>
+
+<p>可以在设置中修改支持中文输入，如下图所示。计算时可以切换弧度制、角度制，设置小数点保留精度。点击 Answer Palette 可以看到结果的其它表示形式，角度、分数、十进制、二进制、十六进制等。</p>
+
+<p><a href="http://frank19900731.github.io/img/post/2015-3/16.png" class="img-up" title="Soulver 使用样例三"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2015-3/16.png" width="100%" title="Soulver 使用样例三" /></a></p>
+
+<p>Soulver 所支持的函数列表、逻辑计算、单位换算表等详见 Reference。</p>
+
+<h2 id="section-1">界面设计</h2>
+
+<p>界面设计美观，自定义方便。</p>
+
+<h2 id="section-2">易用性</h2>
+
+<p>容易使用，参考 Reference 即可。</p>
+
+<h2 id="section-3">稳定性</h2>
+
+<p>稳定性好，有一个瑕疵见 <a href="#section-8">缺点</a> 第三条。</p>
+
+<h2 id="section-4">跨平台</h2>
+
+<p>提供 iOS 版本。</p>
+
+<h2 id="section-5">类似软件</h2>
+
+<h3 id="section-6">普通计算器</h3>
+
+<ul>
+  <li>Mac 自带计算器，可放置于边栏；</li>
+</ul>
+
+<p><a href="http://frank19900731.github.io/img/post/2015-3/19.png" class="img-up" title="Mac 自带计算器"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-3/19.png" width="40%" title="Mac 自带计算器" /></a></p>
+
+<ul>
+  <li>
+    <p><a href="https://itunes.apple.com/cn/app/numeric/id564960788?mt=12">Numeric</a> 特点是将输入区域映射到触摸板上，不必移动鼠标点击；</p>
+  </li>
+  <li>
+    <p><a href="https://itunes.apple.com/us/app/addism-the-calculator/id943947757?mt=12">Addism</a> 可进行简单的科学计算，可以保存、分享结果；</p>
+  </li>
+</ul>
+
+<p><a href="http://frank19900731.github.io/img/post/2015-3/18.png" class="img-up" title="Addism 界面"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2015-3/18.png" width="80%" title="Addism 界面" /></a></p>
+
+<ul>
+  <li><a href="http://getnumi.info/">Numi</a> 运行于菜单栏，和 Soulver 类似，也支持以语义定义简单计算。</li>
+</ul>
+
+<p><a href="http://frank19900731.github.io/img/post/2015-3/17.png" class="img-up" title="Numi 界面"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2015-3/17.png" width="70%" title="Numi 界面" /></a></p>
+
+<h3 id="section-7">交互式编程环境</h3>
+
+<p>对于理工科同学来说，以上计算功能还是不够的，一般会采用专门软件或编程语言，比如 Matlab、Mathematica、R、C、Python 等。<strong>联系 Soulver 文档与计算混排的特点</strong>，在相似软件中我推荐 <a href="http://yihui.name/knitr/">knitr</a> 和 <a href="http://ipython.org/notebook.html">iPython notebook</a>，可分别配合 R 与 Python 使用，<strong>用于生成图文数据详实的报告</strong>。此外，RStudio 提供了 <a href="http://www.rstudio.com/products/rstudio/download-server/">RStudio Server</a>，可以架设在个人服务器上提供网络访问，应付普通计算任务绰绰有余。</p>
+
+<h2 id="section-8">闪光点</h2>
+
+<ul>
+  <li>计算公式与文档混排，方便阅读、理解；</li>
+  <li>单位转换、汇率、股价等功能实用。</li>
+</ul>
+
+<h2 id="section-9">缺点</h2>
+
+<ul>
+  <li>函数库仍需扩展，min、max 函数竟都没有；</li>
+  <li>无法进行条件判断，功能受限；</li>
+  <li>文档中有大数字计算时，输入会异常卡顿，推测软件隔段时间计算文档每一行的结果，即便该行及该行的依赖未改变，应当予以优化。</li>
+</ul>
+
+<p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2015/03/15/mei-zhou-yi-ruan-zhi-soulver/">http://frank19900731.github.io/blog/2015/03/15/mei-zhou-yi-ruan-zhi-soulver/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
+
+  ]]></description>
+</item>
+
+<item>
     <title>每周一软之 FocusMask</title>
     <link>http://realjenius.com/blog/2015/03/08/mei-zhou-yi-ruan-zhi-focusmask/</link>
     <author>R.J. Lorimer</author>
@@ -1172,101 +1295,6 @@
 </ul>
 
 <p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2015/01/11/mei-zhou-yi-ruan-zhi-xnconvert/">http://frank19900731.github.io/blog/2015/01/11/mei-zhou-yi-ruan-zhi-xnconvert/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
-
-  ]]></description>
-</item>
-
-<item>
-    <title>每周一软之 Sapiens</title>
-    <link>http://realjenius.com/blog/2015/01/04/mei-zhou-ruan-zhi-sapiens/</link>
-    <author>R.J. Lorimer</author>
-    <pubDate>2015-01-04T00:37:59+08:00</pubDate>
-    <guid>http://realjenius.com/blog/2015/01/04/mei-zhou-ruan-zhi-sapiens/</guid>
-    <description><![CDATA[
-     <p><strong>目录</strong></p>
-
-<ul id="markdown-toc">
-  <li><a href="#section">功能介绍</a></li>
-  <li><a href="#section-1">界面设计</a></li>
-  <li><a href="#section-2">易用性</a></li>
-  <li><a href="#section-3">稳定性</a></li>
-  <li><a href="#section-4">跨平台</a></li>
-  <li><a href="#section-5">类似软件</a></li>
-  <li><a href="#section-6">闪光点</a></li>
-  <li><a href="#section-7">缺点</a></li>
-</ul>
-
-<!-- excerpt start -->
-
-<p>在这么一个<strong>读图时代</strong>、<strong>看脸时代</strong>，软件的颜值也称得上一个重要的衡量指标。Sapien 除了有一张美丽的面孔，还有那么点小情趣，挺讨人喜欢的。</p>
-
-<h2 id="section">功能介绍</h2>
-
-<p>Sapiens 是一个软件快速启动工具，且目前只支持软件快速打开，没有打开文件、执行脚本啦什么旁的功能。</p>
-
-<p>Sapiens 除了通常的快捷键启动方式，还有<strong>画圈圈</strong>启动方式，具体见如下动态图。从动态图还可以看出它默认<strong>列举你最近用过的软件</strong>。</p>
-
-<p><a href="http://frank19900731.github.io/img/post/2015-1/1.gif" class="img-up" title="动态图"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-1/1.gif" width="70%" title="动态图" /></a></p>
-
-<blockquote><p>兰花指微翘，食指指尖在触摸板上看似不经意的划出那一弯圆月，美美的界面就映入眼帘，真真儿的是让人陶醉呢……</p></blockquote>
-
-<p><strong>转向顺时针、逆时针皆可</strong>，圈数触发可以设置在 1 - 3 圈，默认是 1.4 圈。经测试设置为 1 圈的时候，大概也就是<strong>一圈半</strong>能识别出的水平。注意<strong>手速稍快些</strong>，<strong>画的圆半径不要太小</strong>，试过几次就能很熟练了。</p>
-
-<!-- excerpt end -->
-
-<p>既漂亮又有情趣，倘若是无脑，那也就是平平啦，不过人家可是结合了人工智能的呦。</p>
-
-<p><a href="http://frank19900731.github.io/img/post/2015-1/3.png" class="img-up" title="Artificial Inteligence"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-1/3.png" width="70%" title="Artificial Inteligence" /></a></p>
-
-<p>把 <strong>About Sapiens’ Artificial Intelligence</strong> 那抄录下来。</p>
-
-<blockquote><p>Sapiens tries to predict the applications you will want to launch.</p><p>Sapiens understands what applications you use and learns how you interact with your Mac. For this reason it may take 2-3 days (it really depends how often you use your mac daily) for it to have enough brain power for making accurate predictions.</p><p>Also, as your habits change Sapiens keeps adapting to them by constantly learning from you.</p></blockquote>
-
-<p>就是说，你把人家来安装，我来把你细观察，你想吃饭我端碗，你想拉屎我递纸，把你伺候好好的，一辈子都随你意。</p>
-
-<h2 id="section-1">界面设计</h2>
-
-<p>提供五种布局，默认的如下图。</p>
-
-<p><a href="http://frank19900731.github.io/img/post/2015-1/2.png" class="img-up" title="Sapiens 图示"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-1/2.png" width="70%" title="Sapiens 图示" /></a></p>
-
-<p>可以设置 <strong>Desktop Mirroring Effect</strong>，圆内背景就是桌面背景加了遮罩的效果，配合上<strong>动态壁纸</strong>，确实八错。</p>
-
-<h2 id="section-2">易用性</h2>
-
-<p>傻瓜软件。</p>
-
-<h2 id="section-3">稳定性</h2>
-
-<p>稳定，未遇异常。</p>
-
-<h2 id="section-4">跨平台</h2>
-
-<p>无。</p>
-
-<h2 id="section-5">类似软件</h2>
-
-<p>提到快速启动软件，那头两把交椅自然就是 <a href="http://www.alfredapp.com/">Alfred</a> 和 <a href="http://qsapp.com/">QuickSilver</a> ，前者闭源收费（确切的说是高级功能收费），后者开源免费。</p>
-
-<p>二者都有很强的附加功能，比如文件搜索、删除、压缩、查看详情啦，脚本执行、iTunes 控制啦等。关于它们的对比网上有 <a href="http://www.v2ex.com/t/42050">很多讨论</a>，不在这里多说。 </p>
-
-<p>QuickSilver 有自己的插件列表，因为是开源的，所以也可以自己开发，不过门槛应该比较高吧？Alfred 有一个 Workflow 模式，是收费功能，可以通过撰写脚本、连接模块实现自己想要的功能，就相当于一个插件定制系统了（有点类似于 Automator），适合于普通程序员。</p>
-
-<p>本人最早使用的是 QucikSilver，习惯积累下来也就没有转到 Alfred，也是因为前者已经能够满足所需。最近尝试用用 Alfred，也别落伍太多，先从这个 <a href="https://github.com/hzlzh/AlfredWorkflow.com">Workflow 列表</a> 看起吧，这个 <a href="http://lucifr.com/2011/11/30/alfred-and-some-recommanded-extensions/">博客</a> 中也有很多 Alfred 相关内容。</p>
-
-<p>不过我还是有点想不明白为什么要把那么多功能都堆到这个小软件里，自动和手动差别就这么大么，还是说在追求些别的什么。</p>
-
-<p>最主要的原因是我还不够 Geek 吧……</p>
-
-<h2 id="section-6">闪光点</h2>
-
-<p>漂亮。</p>
-
-<h2 id="section-7">缺点</h2>
-
-<p>既然漂亮，就别要求那么高了。</p>
-
-<p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2015/01/04/mei-zhou-ruan-zhi-sapiens/">http://frank19900731.github.io/blog/2015/01/04/mei-zhou-ruan-zhi-sapiens/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
 
   ]]></description>
 </item>

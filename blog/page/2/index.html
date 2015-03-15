@@ -163,7 +163,7 @@
     <button>Open Menu</button>
     <ul class="dl-menu">
         <li><a href="/">Home</a></li>
-        <li><a href="/archives/">Archives (46)</a></li>
+        <li><a href="/archives/">Archives (47)</a></li>
         <li>
             <a href="#">Categories (7)</a>
             <ul class="dl-submenu">
@@ -171,7 +171,7 @@
                 <li><a href="/blog/categories">All Categories (7)</a>
                 <li style="color: #CCCCCC; line-height: 150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Top 5</li>
 
-                <li><a href='/category/Mac 使用'>Mac 使用 (16)</a></li><li><a href='/category/面试求职'>面试求职 (13)</a></li><li><a href='/category/工作效率'>工作效率 (8)</a></li><li><a href='/category/网页开发'>网页开发 (4)</a></li><li><a href='/category/编程学习'>编程学习 (2)</a></li>
+                <li><a href='/category/Mac 使用'>Mac 使用 (17)</a></li><li><a href='/category/面试求职'>面试求职 (13)</a></li><li><a href='/category/工作效率'>工作效率 (8)</a></li><li><a href='/category/网页开发'>网页开发 (4)</a></li><li><a href='/category/编程学习'>编程学习 (2)</a></li>
             </ul>
         </li>
         <li><a href="/blog/tags">All Tags (49)</a>
@@ -244,6 +244,10 @@
 <ul>
 	
     <li>
+    	<a href="/blog/2015/03/15/mei-zhou-yi-ruan-zhi-soulver/">每周一软之 Soulver</a>
+    </li>
+    
+    <li>
     	<a href="/blog/2015/03/08/mei-zhou-yi-ruan-zhi-focusmask/">每周一软之 FocusMask</a>
     </li>
     
@@ -259,25 +263,21 @@
     	<a href="/blog/2015/02/20/mei-zhou-yi-ruan-zhi-videogif/">每周一软之 VideoGIF</a>
     </li>
     
-    <li>
-    	<a href="/blog/2015/02/12/mei-zhou-yi-ruan-zhi-sitesucker/">每周一软之 SiteSucker</a>
-    </li>
-    
 </ul>
         </li>
 <li>
     <h3>Tags</h3>
     <ul class="tag-cloud">
-        <a style="font-size: 121%" href="/tag/Scala/">Scala</a>
+        <a style="font-size: 120%" href="/tag/Scala/">Scala</a>
 <a style="font-size: 210%" href="/tag/mac软件/">mac软件</a>
-<a style="font-size: 139%" href="/tag/效率/">效率</a>
-<a style="font-size: 139%" href="/tag/数据可视化/">数据可视化</a>
-<a style="font-size: 121%" href="/tag/时间管理/">时间管理</a>
-<a style="font-size: 121%" href="/tag/智力题/">智力题</a>
+<a style="font-size: 138%" href="/tag/效率/">效率</a>
+<a style="font-size: 138%" href="/tag/数据可视化/">数据可视化</a>
+<a style="font-size: 120%" href="/tag/时间管理/">时间管理</a>
+<a style="font-size: 120%" href="/tag/智力题/">智力题</a>
 <a style="font-size: 204%" href="/tag/每周一软/">每周一软</a>
-<a style="font-size: 151%" href="/tag/知识管理/">知识管理</a>
-<a style="font-size: 139%" href="/tag/笔试/">笔试</a>
-<a style="font-size: 176%" href="/tag/面试经验/">面试经验</a>
+<a style="font-size: 150%" href="/tag/知识管理/">知识管理</a>
+<a style="font-size: 138%" href="/tag/笔试/">笔试</a>
+<a style="font-size: 174%" href="/tag/面试经验/">面试经验</a>
 
     </ul>
 </li><li>
@@ -304,6 +304,89 @@
 </article>
 
 
+
+
+<article style="background-color: rgba(255, 255, 255, 0.3); padding: 25px 25px 25px 25px; border-radius: 20px;">
+	<!-- article.html -->
+<!-- 文章展示，区分在索引页和文章页 -->
+<header>
+  <div class="article-tags">
+      <!-- post/categories.html -->
+<!-- 文章类别展示 -->
+
+
+<span class="categories" style="font-size: 16px;">
+  Categories:
+  
+    <a class='category' href='/category/Mac 使用/'>Mac 使用</a>
+  
+
+</span>
+
+
+  </div>
+  
+    <h1><a href="/blog/2015/02/11/jie-jue-mac-xia-zip-ya-suo-wen-jian-zai-windows-xia-xian-shi-luan-ma-de-wen-ti/">
+      解决 Mac 下 Zip 压缩文件在 Windows 中显示乱码的问题
+    </a></h1>
+  
+  <!-- 给出发布时间 -->
+  <div class="article-date">
+      <!-- post/date.html -->
+<!-- 文章日期显示 -->
+
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2015-02-11T21:14:26+08:00" pubdate data-updated="true">Feb 11<span>th</span>, 2015</time></div>
+</header>
+<hr />
+
+<!-- 如果在索引中 -->
+
+  <section class="article-index">
+
+<h2 id="section">问题描述</h2>
+
+<p>Mac 下通过<strong>右键菜单中的 Compress</strong> 生成的压缩包，在 Windows 下解压缩可能出现乱码，如下图所示。</p>
+
+<p><a href="/img/post/2015-2/5.png" class="img-up" title="Windows 上解压缩乱码"><img class="imgcenter" src="/img/post/2015-2/5.png" width="80%" title="Windows 上解压缩乱码" /></a></p>
+
+<p>知乎上关于这个问题的 <a href="http://www.zhihu.com/question/19646289">解答</a> 是</p>
+
+<blockquote>
+  <p>Mac OS X 系统自带的压缩程序对 zip 文件名用 UTF-8 编码，但 zip 文件头中没有声明 PKZIP 高版本增加的 Unicode 位。Windows 会认为文件名是 ANSI 编码，结果显示乱码。</p>
+</blockquote>
+
+<p>经过简单的资料阅读和测试，我大概验证了下这种解释。</p>
+
+</section>
+  <a href="/blog/2015/02/11/jie-jue-mac-xia-zip-ya-suo-wen-jian-zai-windows-xia-xian-shi-luan-ma-de-wen-ti/" style="background: #da3e10; color: #ffffff; border-radius: 5px; border: 4px solid #da3e10;">继续阅读</a>&nbsp;&nbsp;&nbsp;&nbsp;
+<!-- post/tags.html -->
+<!-- 文章标签展示 -->
+
+
+<span class="tags">
+  <font color="#777">Tags: </font>
+  
+    <a class='tag' href='/tag/7z/'>7z</a>, <a class='tag' href='/tag/乱码/'>乱码</a>, <a class='tag' href='/tag/压缩文件/'>压缩文件</a>
+  
+</span>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<span class="ds-thread-count" data-thread-key="/blog/2015/02/11/jie-jue-mac-xia-zip-ya-suo-wen-jian-zai-windows-xia-xian-shi-luan-ma-de-wen-ti/" style="color: #777;"></span>
+
+
+
+
+</article>
 
 
 <article style="background-color: rgba(255, 255, 255, 0.3); padding: 25px 25px 25px 25px; border-radius: 20px;">
@@ -721,99 +804,6 @@
 </span>
 &nbsp;&nbsp;&nbsp;&nbsp;
 <span class="ds-thread-count" data-thread-key="/blog/2015/01/18/mei-zhou-yi-ruan-zhi-wordify/" style="color: #777;"></span>
-
-
-
-
-</article>
-
-
-<article style="background-color: rgba(255, 255, 255, 0.3); padding: 25px 25px 25px 25px; border-radius: 20px;">
-	<!-- article.html -->
-<!-- 文章展示，区分在索引页和文章页 -->
-<header>
-  <div class="article-tags">
-      <!-- post/categories.html -->
-<!-- 文章类别展示 -->
-
-
-<span class="categories" style="font-size: 16px;">
-  Categories:
-  
-    <a class='category' href='/category/Mac 使用/'>Mac 使用</a>
-  
-
-</span>
-
-
-  </div>
-  
-    <h1><a href="/blog/2015/01/11/mei-zhou-yi-ruan-zhi-xnconvert/">
-      每周一软之 XnConvert
-    </a></h1>
-  
-  <!-- 给出发布时间 -->
-  <div class="article-date">
-      <!-- post/date.html -->
-<!-- 文章日期显示 -->
-
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2015-01-11T22:32:29+08:00" pubdate data-updated="true">Jan 11<span>th</span>, 2015</time></div>
-</header>
-<hr />
-
-<!-- 如果在索引中 -->
-
-  <section class="article-index">
-
-<h2 id="section">功能介绍</h2>
-
-<p><a href="http://www.xnview.com/en/xnconvert/">XnConvert</a> 是一个跨平台的图片批处理工具，提供 resize、crop、rotate、高斯模糊等在内的 80 多种图像操作，支持 <a href="http://www.xnview.com/en/xnconvert/#formats">500 余种图像格式</a>的读入、70 余种图像格式生成，可以定制输出图片的命名格式。XnConvert 比较适合照片整理（重命名、加水印等）、网页图片素材准备（图片放缩、加图像掩模、模糊等）等批处理任务。</p>
-
-<p>XnConvert 以<strong>工作流</strong>的方式定制图片的处理过程，使用起来非常简单。</p>
-
-<p>首先确定选择输入图片或图片文件夹。</p>
-
-<p><a href="/img/post/2015-1/5.png" class="img-up" title="输入图片"><img class="imgcenter" src="/img/post/2015-1/5.png" width="80%" title="输入图片" /></a></p>
-
-<p>然后在图片上定义操作行为和参数。</p>
-
-<p><a href="/img/post/2015-1/6.png" class="img-up" title="操作行为和参数"><img class="imgcenter" src="/img/post/2015-1/6.png" width="80%" title="操作行为和参数" /></a></p>
-
-<p>上图顺序定义了三种行为，<strong>核大小为 13*13 的高斯模糊</strong>，<strong>垂直翻转</strong>，<strong>长宽减半</strong>。Resize 中还有一些参数可调，比如填充模式（fit 或 fill 或 longest side 或 shortest side 等）和降采样方法（Bilinear、BSpline、Lanczos 等）。</p>
-
-<p>最后定义输出文件夹、输出文件格式和命名方式。</p>
-
-<p><a href="/img/post/2015-1/7.png" class="img-up" title="输出文件夹和命名方式"><img class="imgcenter" src="/img/post/2015-1/7.png" width="80%" title="输出文件夹和命名方式" /></a></p>
-
-<p>除输出到文件夹，还可以传给 Email 或 Zip 等。</p>
-
-<p>命名方式支持格式化表达，比如  <code>{Filename}_{Current Date [m_d_Y]}</code>。</p>
-
-</section>
-  <a href="/blog/2015/01/11/mei-zhou-yi-ruan-zhi-xnconvert/" style="background: #da3e10; color: #ffffff; border-radius: 5px; border: 4px solid #da3e10;">继续阅读</a>&nbsp;&nbsp;&nbsp;&nbsp;
-<!-- post/tags.html -->
-<!-- 文章标签展示 -->
-
-
-<span class="tags">
-  <font color="#777">Tags: </font>
-  
-    <a class='tag' href='/tag/mac软件/'>mac软件</a>, <a class='tag' href='/tag/每周一软/'>每周一软</a>
-  
-</span>
-&nbsp;&nbsp;&nbsp;&nbsp;
-<span class="ds-thread-count" data-thread-key="/blog/2015/01/11/mei-zhou-yi-ruan-zhi-xnconvert/" style="color: #777;"></span>
 
 
 
