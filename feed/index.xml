@@ -4,7 +4,7 @@
   <title><![CDATA[Blog of 太极儒]]></title>
   <link href="http://frank19900731.github.io/feed" rel="self"/>
   <link href="http://frank19900731.github.io/"/>
-  <updated>2015-03-18T20:06:14+08:00</updated>
+  <updated>2015-03-23T00:50:43+08:00</updated>
   <id>http://frank19900731.github.io/</id>
   <author>
     <name><![CDATA[Frank Song]]></name>
@@ -12,6 +12,52 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[每周一软之 Curio]]></title>
+    <link href="http://frank19900731.github.io/blog/2015/03/23/mei-zhou-yi-ruan-zhi-curio/"/>
+    <updated>2015-03-23T00:36:42+08:00</updated>
+    <id>http://frank19900731.github.io/blog/2015/03/23/mei-zhou-yi-ruan-zhi-curio</id>
+    <content type="html"><![CDATA[<p><strong>目录</strong></p>
+
+<ul id="markdown-toc">
+  <li><a href="#section">功能介绍</a></li>
+  <li><a href="#section-1">界面设计</a></li>
+  <li><a href="#section-2">易用性</a></li>
+  <li><a href="#section-3">稳定性</a></li>
+  <li><a href="#section-4">跨平台</a></li>
+  <li><a href="#section-5">类似软件</a></li>
+  <li><a href="#section-6">闪光点</a></li>
+  <li><a href="#section-7">缺点</a></li>
+</ul>
+
+<!-- excerpt start -->
+
+<p>毕业季，论文施工中，有空再补。。。</p>
+
+<p><a href="http://frank19900731.github.io/img/post/2015-3/1.gif" class="img-up" title="论文施工中"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-3/1.gif" width="40%" title="论文施工中" /></a></p>
+
+<!-- excerpt end -->
+
+<h2 id="section">功能介绍</h2>
+
+<h2 id="section-1">界面设计</h2>
+
+<h2 id="section-2">易用性</h2>
+
+<h2 id="section-3">稳定性</h2>
+
+<h2 id="section-4">跨平台</h2>
+
+<h2 id="section-5">类似软件</h2>
+
+<h2 id="section-6">闪光点</h2>
+
+<h2 id="section-7">缺点</h2>
+
+<p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2015/03/23/mei-zhou-yi-ruan-zhi-curio/">http://frank19900731.github.io/blog/2015/03/23/mei-zhou-yi-ruan-zhi-curio/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[每周一软之 Soulver]]></title>
@@ -3465,444 +3511,6 @@
 <script type="text/javascript" src="http://frank19900731.github.io/javascripts/mychart.js"></script>
 
 <p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2014/12/23/shu-shuo-2014/">http://frank19900731.github.io/blog/2014/12/23/shu-shuo-2014/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[每周一软之 Markdown 笔记软件 Ulysses III]]></title>
-    <link href="http://frank19900731.github.io/blog/2014/12/21/mei-zhou-ruan-zhi-markdown-bi-ji-ruan-jian-ulysses-iii/"/>
-    <updated>2014-12-21T11:08:22+08:00</updated>
-    <id>http://frank19900731.github.io/blog/2014/12/21/mei-zhou-ruan-zhi-markdown-bi-ji-ruan-jian-ulysses-iii</id>
-    <content type="html"><![CDATA[<p><strong>目录</strong></p>
-
-<ul id="markdown-toc">
-  <li><a href="#section">前言</a></li>
-  <li><a href="#section-1">功能介绍</a></li>
-  <li><a href="#section-2">界面设计</a></li>
-  <li><a href="#section-3">易用性</a></li>
-  <li><a href="#section-4">稳定性</a></li>
-  <li><a href="#section-5">跨平台</a></li>
-  <li><a href="#section-6">类似软件</a>    <ul>
-      <li><a href="#markdown-">Markdown 类软件</a>        <ul>
-          <li><a href="#section-7">文档查看类</a></li>
-          <li><a href="#section-8">文档编辑类</a></li>
-          <li><a href="#section-9">文档管理类</a></li>
-        </ul>
-      </li>
-      <li><a href="#markdown--1">非 Markdown 类软件</a></li>
-    </ul>
-  </li>
-  <li><a href="#section-10">闪光点</a></li>
-  <li><a href="#section-11">缺点</a>    <ul>
-      <li><a href="#section-12">方案一</a></li>
-      <li><a href="#section-13">方案二</a></li>
-    </ul>
-  </li>
-</ul>
-
-<h2 id="section">前言</h2>
-
-<!-- excerpt start -->
-
-<p>Ulysses III （下称 Ulysses）是一款 Markdown 笔记软件，五月份相识，暑假频繁接触，现已如胶似漆。根据 Chronories 的统计，2014年本人对 <a href="http://frank19900731.github.io/blog/2014/12/14/mei-zhou-ruan-zhi-ri-ji-ruan-jian-chronories/">Ulysses 的使用率仅次于 Chrome</a>，位列第二。</p>
-
-<p>Ulysses 是 AppStore 的 <strong>Best of 2013</strong> 之一，目前全球累计300多条评分，平均是四星半，可以从其漂亮的 <a href="http://www.ulyssesapp.com/">官方网站</a> 上获得概要介绍。</p>
-
-<p>Ulysses 在中国市场售价 283 软妹币，可以从官网下载 Demo 试用，也可以到 <a href="http://www.macgg.com/archives/category/mac%E8%BD%AF%E4%BB%B6">MacGG</a> 下载（你懂得），不过不是最新版本。考虑到 Ulysses 对自己这一年的成长帮助确实大，将来也很可能长期使用，狠狠心，买了作为送给自己的新年礼物了……虽然 AppStore 页面内容加载慢，扣费那可真叫一个快，前脚输入 Apple 账号密码，后脚信用卡扣费通知就到了，<strong>没有任何菊花延迟</strong>！</p>
-
-<p>言归正传，还是分八个方面加以分析，重点在 <a href="#section-6">类似软件</a>。</p>
-
-<!-- excerpt end -->
-
-<h2 id="section-1">功能介绍</h2>
-
-<p>市面上 Markdown 笔记软件主要有三种功能，<code>笔记查看</code>、<code>文本编辑</code>、<code>文档管理</code>，Ulysses 是综合了这三种功能的工具。</p>
-
-<p>在之前的 <a href="http://frank19900731.github.io/blog/2014/10/23/wo-de-zhi-shi-guan-li-jing-yan-yu-gong-ju-fen-xiang/#section-3">博客</a> 里也提到了，Ulysses 是三列模式，可以添加任意深度的目录结构，非常适合知识体系管理、长文档撰写等任务。在我看来，这是其优于 Evernote 的最重要一点。</p>
-
-<p><a href="http://frank19900731.github.io/img/post/2014-10/4.jpg" class="img-up" title="Ulysses 三列模式"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-10/4.jpg" width="80%" title="Ulysses 三列模式" /></a></p>
-
-<p>Ulysses 支持丰富的 Markdown 标签，包括粗体、斜体、删除、脚注、代码块、引用、列表、标记、图片、视频等。然而，Ulysses <strong>不支持代码高亮、表格和公式输入这三大功能</strong>，也不支持目录生成，目前有些<strong>变通的解决方案，下文会提到</strong>，但还是期待软件作者能够在今后的版本中添加支持。</p>
-
-<p>之所以说 Ulysses 是一个极佳的知识管理、写作软件，还因为它提供如下功能</p>
-
-<ul>
-  <li>丰富的导出格式，包括 HTML、ePub、PDF、RTF、Word、PlainText 以及发送到邮件，并有 <a href="http://styles.ulyssesapp.com/">模板支持</a>；</li>
-  <li>支持新窗口编辑，也可以快速用其它软件打开文档；</li>
-  <li>支持收藏与<strong>过滤器</strong>（相当于一个逻辑分组），提供多维的文档归类方式；</li>
-  <li>提供丰富统计信息，包括字、词、句、段落、页数，以及预计阅读时间；</li>
-  <li>支持为每篇文档添加笔记、关键词、图片附件；</li>
-  <li>支持写作目标设定，比如当前文档至少要写满2000字符；</li>
-  <li>搜索范围灵活，包括<strong>组内搜索、本地搜索和 Library</strong> （包括本地、iCloud端 和 Daedalus端）<strong>搜索</strong>。</li>
-  <li>提供 Menu Bar，便于标记的输入；</li>
-  <li>支持 Typewriter 模式，可以高亮当前行、显示段落总数；</li>
-  <li>支持文档预览、排序和编辑日期显示；</li>
-  <li>支持文档粘接（粘接后也可反操作），使文档可以模块化组合；</li>
-  <li>支持<strong>文档版本保存、还原</strong>，界面功能都类似于 Timemachine。</li>
-</ul>
-
-<p>一款写作软件都支持到版本保存了，其功能的细致、人性化程度我想也就不用再多说什么了……</p>
-
-<h2 id="section-2">界面设计</h2>
-
-<p><strong>素美人，简约不简单</strong>。</p>
-
-<p>主界面分为三列，编辑区外的两列可以分别隐藏，让你在内容与结构间从容切换。</p>
-
-<p>软件主题、编辑器主题都支持自由定制，<strong>淡妆浓抹总相宜</strong>。</p>
-
-<p><a href="http://frank19900731.github.io/img/post/2014-12/39.png" class="img-up" title="Ulysses 定制"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-12/39.png" width="60%" title="Ulysses 定制" /></a></p>
-
-<p>全屏模式尽显低调内涵，参加课程讲座，<strong>边听边记，无往不利</strong>。不少坐在我附近的童鞋都会问我，你用的这是啥软件。当然，如果 Ulysses 能内置支持录音（目前自己用的是 Pear Note），那就更完美了。</p>
-
-<p><a href="http://frank19900731.github.io/img/post/2014-12/38.png" class="img-up" title="Ulysses 全屏模式"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-12/38.png" width="80%" title="Ulysses 全屏模式" /></a></p>
-
-<p>有时候自己会 YY，如果大一的时候我就用的是 Mac，如果大一的时候就有 Stackoverflow、Coursera、Ulysses 等牛逼的资源、工具，那该有多幸福啊……只可惜我们能够把握的只有当下，知道了前进方向并出发应该就还不算晚，也希望通过自己的一点分享给后来人一点帮助。</p>
-
-<h2 id="section-3">易用性</h2>
-
-<p>傻瓜软件，预置说明文档。把能点的按钮都点一遍，也就清楚所有功能了……</p>
-
-<h2 id="section-4">稳定性</h2>
-
-<p>1.0.* 版本使用时出现过强杀假死导致文件名丢失的错误，现在用到 1.2.2，没再出现这样的问题。</p>
-
-<p>如果文档数量很多，软件启动会变慢，过滤器搜索过程可能会卡，<strong>最好能够将搜索词一次性粘贴进去，而不是逐个字母输入</strong>。</p>
-
-<p>目前看来软件原因造成文档丢失的可能性不大，但必要的备份还是要做的，文档存储路径是 <code>~/Library/Containers/com.soulmen.ulysses3/Data/Documents/Library</code>。</p>
-
-<h2 id="section-5">跨平台</h2>
-
-<p>不支持 Windows、Linux。</p>
-
-<p>Ulysses 支持 iCloud 同步和 Daedalus 同步，后者是 iOS 上的一个文本编辑客户端。</p>
-
-<p>麻烦的是，如果想将本地的文件夹同步到 Daedalus，不能简单的拖拽或者复制粘贴，需要手动克隆。一个好的习惯是，把需要同步阅读的文件夹创建在 Daedalus 下。一个巧办法是，直接操作 Finder 里的目录结构，ulgroup 后缀文件中标明了目录名称。</p>
-
-<h2 id="section-6">类似软件</h2>
-
-<h3 id="markdown-">Markdown 类软件</h3>
-
-<h4 id="section-7">文档查看类</h4>
-
-<ul>
-  <li><code>Marboo</code>
-    <ul>
-      <li>功能繁多，集成了 remark.js、emacs-org、csv、photo、vectab（曲谱）、reStructuredText、压缩文件（zip、tar.gz）等，佩服作者对于如此多工具的掌握，不过缺乏专为写作考虑的设计；</li>
-    </ul>
-  </li>
-  <li><code>Marked2</code>
-    <ul>
-      <li>支持精细的定制和检测
-        <ul>
-          <li>验证文档中链接的有效性；</li>
-          <li>Markdown 语法错误检查；</li>
-          <li>详细的统计信息，包括复杂词比例、可读性评分；</li>
-          <li>支持 MultiMarkdown、Discount 两种解析器；</li>
-          <li>支持 MathJax；</li>
-          <li>支持 CriticMarkup，跟踪文档修改；</li>
-          <li>支持丰富的导出格式；</li>
-          <li>集成了 <strong>Web Inspector</strong>，这是要弄啥类；</li>
-          <li>……</li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-</ul>
-
-<p>总的来说推荐 Marked2。</p>
-
-<h4 id="section-8">文档编辑类</h4>
-
-<p>文档编辑类注重<strong>写作体验</strong>，一般就是个大白框，全屏体验佳，适合写博客等。</p>
-
-<ul>
-  <li><code>马克飞象</code> 
-    <ul>
-      <li>支持Evernote，同步性好；</li>
-      <li>内生支持代码高亮、公式、图表；</li>
-      <li>按年收费；</li>
-    </ul>
-  </li>
-  <li><code>Erato、WriteRoom</code>
-    <ul>
-      <li>一般般；</li>
-    </ul>
-  </li>
-  <li><code>ByWord</code>
-    <ul>
-      <li>支持 <strong>Paragraph Focus、Line Focus</strong>，让人写起来舒服；</li>
-      <li>支持 Typewriter 模式；</li>
-      <li>高级版支持发布到 WordPress、Evernote 等；</li>
-    </ul>
-  </li>
-  <li><code>iA Writer Pro</code>
-    <ul>
-      <li>支持语法分析，标记名词、动词、副词、连词等，对我来说是没啥用；</li>
-      <li>支持只读模式；</li>
-    </ul>
-  </li>
-  <li><code>iA Writer</code> 
-    <ul>
-      <li>Focus Mode，玻璃纸效果，略丑；</li>
-    </ul>
-  </li>
-  <li><code>Typed</code>
-    <ul>
-      <li><strong>Zen Mode （禅模式）</strong>，<strong>进入全屏，半透明效果，播放灵动的轻音乐</strong>，有点类似于Relax Melodies；</li>
-      <li>界面设计优雅；</li>
-    </ul>
-  </li>
-  <li><code>Texts</code>、<code>Haroopad</code>
-    <ul>
-      <li><strong>内生支持代码高亮、公式、图表，适合科研、工程人员写作</strong>；</li>
-      <li><strong>后者免费</strong>；</li>
-    </ul>
-  </li>
-  <li><code>MacDown</code>，由 <a href="http://weibo.com/dinosaurliu">@永不停息的恐龙哥</a> 推荐
-    <ul>
-      <li><strong>内生支持代码高亮、公式</strong>，关键是 <a href="https://github.com/uranusjr/macdown">开源</a>；</li>
-    </ul>
-  </li>
-  <li><code>Mou</code> 
-    <ul>
-      <li>支持 Tumblr 和 Scriptogr.am 发布；</li>
-      <li>可模拟打字机的按键声音，喜好因人而异吧；</li>
-      <li>内生支持公式。</li>
-    </ul>
-  </li>
-</ul>
-
-<p>总的来说，<strong>文艺青年推荐 Byword、Typed</strong>，<strong>技术青年推荐 Haroopad、MacDown</strong>。</p>
-
-<h4 id="section-9">文档管理类</h4>
-
-<p>目前接触到的主要有五个，<code>Ulysses</code>、<code>Gitbook</code>、<code>Write</code>、<code>Quiver</code>、<code>Notebooks</code>，由于 Notebooks 基本上就是 Ulysses 的子集，所以只讨论前四个，<strong>功能支持仅指原生支持</strong>。</p>
-
-<p>下表向右滚动还有内容。</p>
-
-<div class="foo">
-  <table>
-    <thead>
-      <tr>
-        <th style="text-align: left">名称</th>
-        <th style="text-align: center">公式</th>
-        <th style="text-align: center">表格</th>
-        <th style="text-align: center">代码块</th>
-        <th style="text-align: center">代码高亮</th>
-        <th style="text-align: center">同步</th>
-        <th style="text-align: center">界面设计</th>
-        <th style="text-align: center">主题定制性</th>
-        <th style="text-align: center">三列模式</th>
-        <th style="text-align: left">特色</th>
-        <th style="text-align: left">缺点</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td style="text-align: left">Write</td>
-        <td style="text-align: center">否</td>
-        <td style="text-align: center">否</td>
-        <td style="text-align: center">否</td>
-        <td style="text-align: center">否</td>
-        <td style="text-align: center">Write App</td>
-        <td style="text-align: center">精美</td>
-        <td style="text-align: center">是</td>
-        <td style="text-align: center">是</td>
-        <td style="text-align: left">支持 Ftp、Tumblr、WordPress 账号发布</td>
-        <td style="text-align: left">专业性差，不适合科研、工程党</td>
-      </tr>
-      <tr>
-        <td style="text-align: left">Gitbook</td>
-        <td style="text-align: center">是</td>
-        <td style="text-align: center">是</td>
-        <td style="text-align: center">是</td>
-        <td style="text-align: center">是</td>
-        <td style="text-align: center">类 Github</td>
-        <td style="text-align: center">一般</td>
-        <td style="text-align: center">否</td>
-        <td style="text-align: center">是</td>
-        <td style="text-align: left">丰富的导出格式，精美电子书，PC、移动端通吃，便于分享</td>
-        <td style="text-align: left">内容要公开，样式单一</td>
-      </tr>
-      <tr>
-        <td style="text-align: left">Quiver</td>
-        <td style="text-align: center">是</td>
-        <td style="text-align: center">否</td>
-        <td style="text-align: center">是</td>
-        <td style="text-align: center">是</td>
-        <td style="text-align: center">Dropbox</td>
-        <td style="text-align: center">一般</td>
-        <td style="text-align: center">是</td>
-        <td style="text-align: center">否</td>
-        <td style="text-align: left">支持四种 cell，text、latex、markdown、code，文档可看性强</td>
-        <td style="text-align: left">结构扁平，同 Evernote</td>
-      </tr>
-      <tr>
-        <td style="text-align: left">Ulysses</td>
-        <td style="text-align: center">否</td>
-        <td style="text-align: center">否</td>
-        <td style="text-align: center">是</td>
-        <td style="text-align: center">否</td>
-        <td style="text-align: center">Daedalus</td>
-        <td style="text-align: center">典雅</td>
-        <td style="text-align: center">是</td>
-        <td style="text-align: center">是</td>
-        <td style="text-align: left">-</td>
-        <td style="text-align: left">-</td>
-      </tr>
-    </tbody>
-  </table>
-
-</div>
-
-<h3 id="markdown--1">非 Markdown 类软件</h3>
-
-<ul>
-  <li><code>Outline</code>，类似于 <code>OneNote</code>；</li>
-  <li><code>Evernote</code> / <code>YoudaoNote</code> / <code>WizNote</code>；</li>
-  <li><code>Emacs-org</code>；</li>
-  <li><code>Blogo</code>，对 WordPress 博客提供良好支持；</li>
-  <li><code>Wiki</code>，适用于 cross-reference 较多的场景。</li>
-</ul>
-
-<h2 id="section-10">闪光点</h2>
-
-<ul>
-  <li>优雅界面，特别是全屏模式；</li>
-  <li>三列组织模式；</li>
-  <li>文件版本快照；</li>
-  <li>过滤器组织方式；</li>
-  <li>丰富的导出格式以及样式模板。</li>
-</ul>
-
-<h2 id="section-11">缺点</h2>
-
-<ul>
-  <li>不支持文件夹的直接复制拷贝；</li>
-  <li>不支持文档的 cross-reference，写书/教程很需要，这一点 wiki、gitbook 做的很好；</li>
-  <li>没有内生支持公式、表格、代码高亮。</li>
-</ul>
-
-<p>对于最后一个缺点，我们之前提到有变通解决方案。</p>
-
-<h3 id="section-12">方案一</h3>
-
-<p>Ulysses 编写，采用其他软件解析、编译及导出，一个绝佳选择是 Marked2。</p>
-
-<p><a href="http://frank19900731.github.io/img/post/2014-12/40.png" class="img-up" title="导出到 Marked2"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-12/40.png" width="30%" title="导出到 Marked2" /></a></p>
-
-<h3 id="section-13">方案二</h3>
-
-<p>Ulysses 支持 Raw Source 输入，也就是说我们可以<strong>借助于 javascript 插件完成任务</strong>（如果 js 文件不在本地，则渲染需要联网），在文档前部安放 javascript 头即可。</p>
-
-<p><strong>借助 jQuery、MathJax 实现公式输入</strong>。~~表示 Raw Source，也即 Ulysses 本身不对其做解析。</p>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>公式支持</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-<span class="line-number">5</span>
-<span class="line-number">6</span>
-<span class="line-number">7</span>
-<span class="line-number">8</span>
-<span class="line-number">9</span>
-<span class="line-number">10</span>
-<span class="line-number">11</span>
-<span class="line-number">12</span>
-<span class="line-number">13</span>
-<span class="line-number">14</span>
-<span class="line-number">15</span>
-<span class="line-number">16</span>
-<span class="line-number">17</span>
-<span class="line-number">18</span>
-<span class="line-number">19</span>
-<span class="line-number">20</span>
-<span class="line-number">21</span>
-<span class="line-number">22</span>
-<span class="line-number">23</span>
-<span class="line-number">24</span>
-<span class="line-number">25</span>
-<span class="line-number">26</span>
-<span class="line-number">27</span>
-<span class="line-number">28</span>
-<span class="line-number">29</span>
-<span class="line-number">30</span>
-<span class="line-number">31</span>
-</pre></td><td class="code"><pre><code class="html"><span class="line">## Equations
-</span><span class="line">~~<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/x-mathjax-config&quot;</span><span class="nt">&gt;</span>
-</span><span class="line"><span class="o">~~</span>     <span class="nx">MathJax</span><span class="p">.</span><span class="nx">Hub</span><span class="p">.</span><span class="nx">Config</span><span class="p">({</span>
-</span><span class="line"><span class="o">~~</span>       <span class="nx">jax</span><span class="o">:</span> <span class="p">[</span><span class="s2">&quot;input/TeX&quot;</span><span class="p">,</span> <span class="s2">&quot;output/HTML-CSS&quot;</span><span class="p">],</span>
-</span><span class="line"><span class="o">~~</span>       <span class="nx">tex2jax</span><span class="o">:</span> <span class="p">{</span>
-</span><span class="line"><span class="o">~~</span>         <span class="nx">inlineMath</span><span class="o">:</span> <span class="p">[</span> <span class="p">[</span><span class="s1">&#39;$&#39;</span><span class="p">,</span> <span class="s1">&#39;$&#39;</span><span class="p">],</span> <span class="p">[</span><span class="s2">&quot;\\(&quot;</span><span class="p">,</span> <span class="s2">&quot;\\)&quot;</span><span class="p">]</span> <span class="p">],</span>
-</span><span class="line"><span class="o">~~</span>         <span class="nx">displayMath</span><span class="o">:</span> <span class="p">[</span> <span class="p">[</span><span class="s1">&#39;$$&#39;</span><span class="p">,</span> <span class="s1">&#39;$$&#39;</span><span class="p">],</span> <span class="p">[</span><span class="s2">&quot;\\[&quot;</span><span class="p">,</span> <span class="s2">&quot;\\]&quot;</span><span class="p">]</span> <span class="p">],</span>
-</span><span class="line"><span class="o">~~</span>         <span class="nx">processEscapes</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
-</span><span class="line"><span class="o">~~</span>         <span class="nx">skipTags</span><span class="o">:</span> <span class="p">[</span><span class="s1">&#39;script&#39;</span><span class="p">,</span> <span class="s1">&#39;noscript&#39;</span><span class="p">,</span> <span class="s1">&#39;style&#39;</span><span class="p">,</span> <span class="s1">&#39;textarea&#39;</span><span class="p">,</span> <span class="s1">&#39;pre&#39;</span><span class="p">,</span> <span class="s1">&#39;code&#39;</span><span class="p">]</span>
-</span><span class="line"><span class="o">~~</span>       <span class="p">}</span>
-</span><span class="line"><span class="o">~~</span>     <span class="p">});</span>
-</span><span class="line"><span class="o">~~</span>
-</span><span class="line"><span class="o">~~</span>     <span class="kd">function</span> <span class="nx">addBlankTargetForLinks</span> <span class="p">()</span> <span class="p">{</span>
-</span><span class="line"><span class="o">~~</span>       <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;a[href^=&quot;http&quot;]&#39;</span><span class="p">).</span><span class="nx">each</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
-</span><span class="line"><span class="o">~~</span>         <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">attr</span><span class="p">(</span><span class="s1">&#39;target&#39;</span><span class="p">,</span> <span class="s1">&#39;_blank&#39;</span><span class="p">);</span>
-</span><span class="line"><span class="o">~~</span>       <span class="p">});</span>
-</span><span class="line"><span class="o">~~</span>     <span class="p">}</span>
-</span><span class="line"><span class="o">~~</span>
-</span><span class="line"><span class="o">~~</span>     <span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">bind</span><span class="p">(</span><span class="s1">&#39;DOMNodeInserted&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">{</span>
-</span><span class="line"><span class="o">~~</span>       <span class="nx">addBlankTargetForLinks</span><span class="p">();</span>
-</span><span class="line"><span class="o">~~</span>     <span class="p">});</span>
-</span><span class="line"><span class="o">~~</span>
-</span><span class="line"><span class="o">~~</span> <span class="nt">&lt;/script&gt;</span>
-</span><span class="line">~~ <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;http://libs.baidu.com/jquery/1.9.1/jquery.min.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
-</span><span class="line">~~ <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML&quot;</span> <span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
-</span><span class="line">
-</span><span class="line">~~ <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;math/tex&quot;</span><span class="nt">&gt;</span>
-</span><span class="line"><span class="o">~~</span> <span class="nx">a</span><span class="o">^</span><span class="mi">2</span><span class="o">+</span><span class="nx">b</span>
-</span><span class="line"><span class="o">~~</span> <span class="nt">&lt;/script&gt;</span>
-</span><span class="line">~~ <span class="nt">&lt;br/&gt;</span>
-</span><span class="line">~~\(E=mc^2\)，$$x_{1,2} = \frac{-b \pm \sqrt{b^2-4ac}}{2b}.$$
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<p>预览效果</p>
-
-<p><a href="http://frank19900731.github.io/img/post/2014-12/41.png" class="img-up" title="公式输入预览"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-12/41.png" width="70%" title="公式输入预览" /></a></p>
-
-<p><strong>借助 highlightjs 实现代码高亮</strong>。</p>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>代码高亮支持</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-<span class="line-number">5</span>
-<span class="line-number">6</span>
-<span class="line-number">7</span>
-<span class="line-number">8</span>
-<span class="line-number">9</span>
-<span class="line-number">10</span>
-<span class="line-number">11</span>
-<span class="line-number">12</span>
-<span class="line-number">13</span>
-<span class="line-number">14</span>
-</pre></td><td class="code"><pre><code class="html"><span class="line">##Code
-</span><span class="line">~~ <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href=</span><span class="s">&quot;http://yandex.st/highlightjs/8.0/styles/monokai_sublime.min.css&quot;</span><span class="nt">&gt;</span>
-</span><span class="line">~~ <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;http://yandex.st/highlightjs/8.0/highlight.min.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
-</span><span class="line">~~ <span class="nt">&lt;script&gt;</span>
-</span><span class="line"><span class="o">~~</span> <span class="nx">hljs</span><span class="p">.</span><span class="nx">configure</span><span class="p">({</span><span class="nx">tabReplace</span><span class="o">:</span> <span class="s1">&#39;    &#39;</span><span class="p">});</span>
-</span><span class="line"><span class="o">~~</span> <span class="nx">hljs</span><span class="p">.</span><span class="nx">initHighlightingOnLoad</span><span class="p">();</span>
-</span><span class="line"><span class="o">~~</span> <span class="nt">&lt;/script&gt;</span>
-</span><span class="line">~~ <span class="nt">&lt;style </span><span class="na">type=</span><span class="s">&quot;text/css&quot;</span><span class="nt">&gt;</span>
-</span><span class="line"><span class="o">~~</span> <span class="nt">pre</span> <span class="p">{</span>
-</span><span class="line"><span class="o">~~</span>     <span class="k">padding</span><span class="o">:</span> <span class="m">5pt</span> <span class="m">5pt</span><span class="p">;</span>
-</span><span class="line"><span class="o">~~</span> <span class="p">}</span>
-</span><span class="line"><span class="o">~~</span> <span class="nt">&lt;/style&gt;</span>
-</span><span class="line">
-</span><span class="line">&#39;&#39; var tmp = new Array();
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<p>预览效果</p>
-
-<p><a href="http://frank19900731.github.io/img/post/2014-12/42.png" class="img-up" title="代码高亮预览"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-12/42.png" width="70%" title="代码高亮预览" /></a></p>
-
-<p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2014/12/21/mei-zhou-ruan-zhi-markdown-bi-ji-ruan-jian-ulysses-iii/">http://frank19900731.github.io/blog/2014/12/21/mei-zhou-ruan-zhi-markdown-bi-ji-ruan-jian-ulysses-iii/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
 ]]></content>
   </entry>
   
