@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Mac 使用 | Blog of 太极儒]]></title>
   <link href="http://frank19900731.github.io/blog/category/mac-shi-yong/atom.xml" rel="self"/>
   <link href="http://frank19900731.github.io/"/>
-  <updated>2015-03-26T01:57:51+08:00</updated>
+  <updated>2015-03-30T19:52:56+08:00</updated>
   <id>http://frank19900731.github.io/</id>
   <author>
     <name><![CDATA[Frank Song]]></name>
@@ -12,6 +12,50 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[每周一软之 GeekTool]]></title>
+    <link href="http://frank19900731.github.io/blog/2015/03/30/mei-zhou-yi-ruan-zhi-geektool/"/>
+    <updated>2015-03-30T19:48:49+08:00</updated>
+    <id>http://frank19900731.github.io/blog/2015/03/30/mei-zhou-yi-ruan-zhi-geektool</id>
+    <content type="html"><![CDATA[<p><strong>目录</strong></p>
+
+<ul id="markdown-toc">
+  <li><a href="#section">功能介绍</a></li>
+  <li><a href="#section-1">界面设计</a></li>
+  <li><a href="#section-2">易用性</a></li>
+  <li><a href="#section-3">稳定性</a></li>
+  <li><a href="#section-4">跨平台</a></li>
+  <li><a href="#section-5">类似软件</a></li>
+  <li><a href="#section-6">闪光点</a></li>
+  <li><a href="#section-7">缺点</a></li>
+</ul>
+
+<!-- excerpt start -->
+
+<p>毕业季，论文施工中，有空再补。。。</p>
+
+<p><a href="/img/post/2015-3/1.gif" class="img-up" title="论文施工中"><img class="imgcenter" src="/img/post/2015-3/1.gif" width="40%" title="论文施工中" ></a></p>
+
+<!-- excerpt end -->
+
+<h2 id="section">功能介绍</h2>
+
+<h2 id="section-1">界面设计</h2>
+
+<h2 id="section-2">易用性</h2>
+
+<h2 id="section-3">稳定性</h2>
+
+<h2 id="section-4">跨平台</h2>
+
+<h2 id="section-5">类似软件</h2>
+
+<h2 id="section-6">闪光点</h2>
+
+<h2 id="section-7">缺点</h2>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[每周一软之 Curio]]></title>
@@ -412,104 +456,6 @@
 <ul>
   <li>Grab Scroll、Vector Scroll 只能配合鼠标使用，对于只用触摸板的用户就鸡肋了，但这些功能完全可以配合触摸板使用（严格说 Vector Scroll 已经可以配合触摸板使用，但只能使用 Secondary Button 触发，而之前我们提到这会影响右键菜单的查看）；</li>
   <li>Hover Scroll 速度快时有轻微抖动（当然，<strong>也很可能是我显卡差</strong>）。</li>
-</ul>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[每周一软之 VideoGIF]]></title>
-    <link href="http://frank19900731.github.io/blog/2015/02/20/mei-zhou-yi-ruan-zhi-videogif/"/>
-    <updated>2015-02-20T19:46:58+08:00</updated>
-    <id>http://frank19900731.github.io/blog/2015/02/20/mei-zhou-yi-ruan-zhi-videogif</id>
-    <content type="html"><![CDATA[<p><strong>目录</strong></p>
-
-<ul id="markdown-toc">
-  <li><a href="#section">功能介绍</a></li>
-  <li><a href="#section-1">界面设计</a></li>
-  <li><a href="#section-2">易用性</a></li>
-  <li><a href="#section-3">稳定性</a></li>
-  <li><a href="#section-4">跨平台</a></li>
-  <li><a href="#section-5">类似软件</a></li>
-  <li><a href="#section-6">闪光点</a></li>
-  <li><a href="#section-7">缺点</a></li>
-</ul>
-
-<!-- excerpt start -->
-
-<h2 id="section">功能介绍</h2>
-
-<p><a href="http://www.pearlmountainsoft.com/videogif/">VideoGIF</a> 是一款截取视频内容生成 GIF (Graphics Interchange Format) 格式图片的工具。</p>
-
-<p>VideoGIF 支持</p>
-
-<ul>
-  <li>摄像头视频采集；</li>
-  <li>拖拽选择待转换内容的起止时间点；</li>
-  <li>区域裁剪，自定义图像尺寸；</li>
-  <li><strong>添加文字、图像元素</strong>，并设定出现的起止时间；</li>
-  <li>调整图片色彩指标，包括亮度、对比度等；</li>
-  <li>导出 GIF 时设定帧率/帧数+延迟，可自动优化文件体积。</li>
-</ul>
-
-<!-- excerpt end -->
-
-<p><strong>功能界面</strong>：</p>
-
-<p><a href="/img/post/2015-2/16.png" class="img-up" title="功能界面"><img class="imgcenter" src="/img/post/2015-2/16.png" width="90%" title="功能界面" ></a></p>
-
-<p><strong>导出界面</strong>：</p>
-
-<p><a href="/img/post/2015-2/17.png" class="img-up" title="导出界面"><img class="imgcenter" src="/img/post/2015-2/17.png" width="90%" title="导出界面" ></a></p>
-
-<p>VideoGIF 可以帮助我们方便地从影视作品中导出<strong>精（dou）彩（bi）</strong>片段，或从录屏中导出一段演示。</p>
-
-<p><a href="/img/post/2015-2/2.gif" class="img-up" title="逗比片段"><img class="imgcenter" src="/img/post/2015-2/2.gif" width="80%" title="逗比片段" ></a></p>
-
-<p>除视频外，我们可能还需要将多幅图片拼成 GIF，VideoGIF 的制作方相应提供了 <a href="http://www.pearlmountainsoft.com/picgif/">PicGIF</a>，会在 <a href="#section-5">类似软件</a> 中提到。</p>
-
-<h2 id="section-1">界面设计</h2>
-
-<p>简洁美观。</p>
-
-<p><a href="/img/post/2015-2/18.png" class="img-up" title="VideoGIF 界面"><img class="imgcenter" src="/img/post/2015-2/18.png" width="80%" title="VideoGIF 界面" ></a></p>
-
-<h2 id="section-2">易用性</h2>
-
-<p>使用方便，会拖拽起止范围、会设置总帧数/帧率即可。</p>
-
-<h2 id="section-3">稳定性</h2>
-
-<p>稳定性好。</p>
-
-<h2 id="section-4">跨平台</h2>
-
-<p>无。</p>
-
-<h2 id="section-5">类似软件</h2>
-
-<ul>
-  <li><a href="http://www.pearlmountainsoft.com/picgif/">PicGIF</a>，根据多幅图片生成 GIF，基本功能如裁剪、调色等同 VideoGIF，也<strong>支持视频输入</strong>，会首先根据用户的起止时间和帧率/帧数设置从视频中提取相应数量的图片，之后处理同多幅图片；</li>
-  <li><a href="http://www.helloresolven.com/portfolio/gifbrewery/">GIF Brewery</a>，除界面（略丑），功能与 VideoGIF 完全一致……</li>
-  <li><a href="http://www.cockos.com/licecap/">LICEcap</a>，<strong>录屏 + 转 GIF</strong>，损失一些定制灵活性，但操作快捷；</li>
-  <li><strong>Photoshop</strong> 可将多幅图片转 GIF，网上有相关 <a href="http://jingyan.baidu.com/article/9158e0006047daa2541228f3.html">教程</a>；</li>
-  <li>威锋网上有一篇 <a href="http://bbs.feng.com/read-htm-tid-6980293.html">Mac 下 GIF 制作软件</a> 的讨论，其中的软件在功能、界面上都不超过 VideoGIF、PicGIF；</li>
-  <li><strong>命令行工具</strong>，<a href="https://www.ffmpeg.org/">ffmpeg</a>（根据视频生成 GIF 动画）、<a href="http://www.lcdf.org/~eddietwo/gifsicle/">gifsicle</a>（GIF 的创建、拆解、编辑、优化等）
-    <ul>
-      <li>一个使用案例可见 <a href="http://www.ideawu.net/blog/archives/856.html">OS X 屏幕录制视频转 GIF 动画</a>。</li>
-    </ul>
-  </li>
-</ul>
-
-<h2 id="section-6">闪光点</h2>
-
-<ul>
-  <li>功能完善，操作简便。</li>
-</ul>
-
-<h2 id="section-7">缺点</h2>
-
-<ul>
-  <li>不明白为什么要和 PicGIF 分为两个软件，就为了多挣一分钱么……</li>
 </ul>
 ]]></content>
   </entry>

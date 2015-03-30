@@ -1,5 +1,54 @@
 
 <item>
+    <title>每周一软之 GeekTool</title>
+    <link>http://realjenius.com/blog/2015/03/30/mei-zhou-yi-ruan-zhi-geektool/</link>
+    <author>R.J. Lorimer</author>
+    <pubDate>2015-03-30T19:48:49+08:00</pubDate>
+    <guid>http://realjenius.com/blog/2015/03/30/mei-zhou-yi-ruan-zhi-geektool/</guid>
+    <description><![CDATA[
+     <p><strong>目录</strong></p>
+
+<ul id="markdown-toc">
+  <li><a href="#section">功能介绍</a></li>
+  <li><a href="#section-1">界面设计</a></li>
+  <li><a href="#section-2">易用性</a></li>
+  <li><a href="#section-3">稳定性</a></li>
+  <li><a href="#section-4">跨平台</a></li>
+  <li><a href="#section-5">类似软件</a></li>
+  <li><a href="#section-6">闪光点</a></li>
+  <li><a href="#section-7">缺点</a></li>
+</ul>
+
+<!-- excerpt start -->
+
+<p>毕业季，论文施工中，有空再补。。。</p>
+
+<p><a href="http://frank19900731.github.io/img/post/2015-3/1.gif" class="img-up" title="论文施工中"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-3/1.gif" width="40%" title="论文施工中" /></a></p>
+
+<!-- excerpt end -->
+
+<h2 id="section">功能介绍</h2>
+
+<h2 id="section-1">界面设计</h2>
+
+<h2 id="section-2">易用性</h2>
+
+<h2 id="section-3">稳定性</h2>
+
+<h2 id="section-4">跨平台</h2>
+
+<h2 id="section-5">类似软件</h2>
+
+<h2 id="section-6">闪光点</h2>
+
+<h2 id="section-7">缺点</h2>
+
+<p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2015/03/30/mei-zhou-yi-ruan-zhi-geektool/">http://frank19900731.github.io/blog/2015/03/30/mei-zhou-yi-ruan-zhi-geektool/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
+
+  ]]></description>
+</item>
+
+<item>
     <title>每周一软之 Curio</title>
     <link>http://realjenius.com/blog/2015/03/23/mei-zhou-yi-ruan-zhi-curio/</link>
     <author>R.J. Lorimer</author>
@@ -1532,85 +1581,6 @@
 </ul>
 
 <p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2015/01/31/mei-zhou-yi-ruan-zhi-blocs/">http://frank19900731.github.io/blog/2015/01/31/mei-zhou-yi-ruan-zhi-blocs/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
-
-  ]]></description>
-</item>
-
-<item>
-    <title>每周一软之 Bartender</title>
-    <link>http://realjenius.com/blog/2015/01/25/mei-zhou-yi-ruan-zhi-bartender/</link>
-    <author>R.J. Lorimer</author>
-    <pubDate>2015-01-25T23:46:08+08:00</pubDate>
-    <guid>http://realjenius.com/blog/2015/01/25/mei-zhou-yi-ruan-zhi-bartender/</guid>
-    <description><![CDATA[
-     <p><strong>目录</strong></p>
-
-<ul id="markdown-toc">
-  <li><a href="#section">功能介绍</a></li>
-  <li><a href="#section-1">界面设计</a></li>
-  <li><a href="#section-2">易用性</a></li>
-  <li><a href="#section-3">稳定性</a></li>
-  <li><a href="#section-4">跨平台</a></li>
-  <li><a href="#section-5">类似软件</a></li>
-  <li><a href="#section-6">闪光点</a></li>
-  <li><a href="#section-7">缺点</a></li>
-</ul>
-
-<!-- excerpt start -->
-
-<h2 id="section">功能介绍</h2>
-
-<p><a href="http://www.macbartender.com/">Bartender</a> 是一款菜单栏图标隐藏工具，对于小屏幕 Mac 或菜单栏长期驻留大量图标的俺有很大帮助。</p>
-
-<p>Bartender 运行时也显示在菜单栏中，可设置菜单栏其他图标（既包括系统图标也包括用户软件图标）显示于 Bartender 的子菜单中。</p>
-
-<p>设置界面：</p>
-
-<p><a href="http://frank19900731.github.io/img/post/2015-1/16.png" class="img-up" title="设置界面"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-1/16.png" width="80%" title="设置界面" /></a></p>
-
-<p>运行界面：</p>
-
-<p><a href="http://frank19900731.github.io/img/post/2015-1/17.png" class="img-up" title="运行界面"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-1/17.png" width="80%" title="运行界面" /></a></p>
-
-<p>对于可能显示通知信息的应用，比如 WeChat，可以设置应用图标在<strong>收到通知时跳出 Bartender 到系统菜单栏中显示一定时间</strong>。</p>
-
-<!-- excerpt end -->
-
-<h2 id="section-1">界面设计</h2>
-
-<p>界面美观。</p>
-
-<p>Bartender 显示在菜单栏中的图标既可以从应用给定的样式中选取，也可以是自定义图片。</p>
-
-<p><a href="http://frank19900731.github.io/img/post/2015-1/18.png" class="img-up" title="菜单栏图标设置"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-1/18.png" width="80%" title="菜单栏图标设置" /></a></p>
-
-<h2 id="section-2">易用性</h2>
-
-<p>简单易用。</p>
-
-<h2 id="section-3">稳定性</h2>
-
-<p>稳定性好，未发现过崩溃。</p>
-
-<h2 id="section-4">跨平台</h2>
-
-<p>无。</p>
-
-<h2 id="section-5">类似软件</h2>
-
-<p>类似软件很少，Bartender 本身就很强大了。一款名为 Broomstick 的软件可以指定菜单栏图标隐藏，跟 Bartender 相比逊色多了。</p>
-
-<h2 id="section-6">闪光点</h2>
-
-<ul>
-  <li>菜单项隐藏，节省空间。</li>
-</ul>
-
-<h2 id="section-7">缺点</h2>
-
-<p>无。</p>
-
-<p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2015/01/25/mei-zhou-yi-ruan-zhi-bartender/">http://frank19900731.github.io/blog/2015/01/25/mei-zhou-yi-ruan-zhi-bartender/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
 
   ]]></description>
 </item>
