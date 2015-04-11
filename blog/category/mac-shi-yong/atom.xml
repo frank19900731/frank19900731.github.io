@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Mac 使用 | Blog of 太极儒]]></title>
   <link href="http://frank19900731.github.io/blog/category/mac-shi-yong/atom.xml" rel="self"/>
   <link href="http://frank19900731.github.io/"/>
-  <updated>2015-04-10T00:11:34+08:00</updated>
+  <updated>2015-04-11T14:21:32+08:00</updated>
   <id>http://frank19900731.github.io/</id>
   <author>
     <name><![CDATA[Frank Song]]></name>
@@ -12,6 +12,50 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[每周一软之 Paste]]></title>
+    <link href="http://frank19900731.github.io/blog/2015/04/11/mei-zhou-yi-ruan-zhi-paste/"/>
+    <updated>2015-04-11T14:07:26+08:00</updated>
+    <id>http://frank19900731.github.io/blog/2015/04/11/mei-zhou-yi-ruan-zhi-paste</id>
+    <content type="html"><![CDATA[<p><strong>目录</strong></p>
+
+<ul id="markdown-toc">
+  <li><a href="#section">功能介绍</a></li>
+  <li><a href="#section-1">界面设计</a></li>
+  <li><a href="#section-2">易用性</a></li>
+  <li><a href="#section-3">稳定性</a></li>
+  <li><a href="#section-4">跨平台</a></li>
+  <li><a href="#section-5">类似软件</a></li>
+  <li><a href="#section-6">闪光点</a></li>
+  <li><a href="#section-7">缺点</a></li>
+</ul>
+
+<!-- excerpt start -->
+
+<p>毕业季，论文施工中，有空再补。。。</p>
+
+<p><a href="/img/post/2015-3/1.gif" class="img-up" title="论文施工中"><img class="imgcenter" src="/img/post/2015-3/1.gif" width="40%" title="论文施工中" ></a></p>
+
+<!-- excerpt end -->
+
+<h2 id="section">功能介绍</h2>
+
+<h2 id="section-1">界面设计</h2>
+
+<h2 id="section-2">易用性</h2>
+
+<h2 id="section-3">稳定性</h2>
+
+<h2 id="section-4">跨平台</h2>
+
+<h2 id="section-5">类似软件</h2>
+
+<h2 id="section-6">闪光点</h2>
+
+<h2 id="section-7">缺点</h2>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[每周一软之 TexPad]]></title>
@@ -260,99 +304,6 @@
   <li>无法进行条件判断，功能受限；</li>
   <li>文档中有大数字计算时，输入会异常卡顿，推测软件隔段时间计算文档每一行的结果，即便该行及该行的依赖未改变，应当予以优化。</li>
 </ul>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[每周一软之 FocusMask]]></title>
-    <link href="http://frank19900731.github.io/blog/2015/03/08/mei-zhou-yi-ruan-zhi-focusmask/"/>
-    <updated>2015-03-08T20:39:54+08:00</updated>
-    <id>http://frank19900731.github.io/blog/2015/03/08/mei-zhou-yi-ruan-zhi-focusmask</id>
-    <content type="html"><![CDATA[<p><strong>目录</strong></p>
-
-<ul id="markdown-toc">
-  <li><a href="#section">功能介绍</a></li>
-  <li><a href="#section-1">界面设计</a></li>
-  <li><a href="#section-2">易用性</a></li>
-  <li><a href="#section-3">稳定性</a></li>
-  <li><a href="#section-4">跨平台</a></li>
-  <li><a href="#section-5">类似软件</a></li>
-  <li><a href="#section-6">闪光点</a></li>
-  <li><a href="#section-7">缺点</a></li>
-</ul>
-
-<!-- excerpt start -->
-
-<h2 id="section">功能介绍</h2>
-
-<p><a href="http://tentrip.net/focusmask/">FocusMask</a> 是一款效率软件，通过在屏幕上隔离出某一区域（其它区域被遮罩），使用户专注于某项工作，比如隔离出编辑环境以专注写作。</p>
-
-<p>FocusMask 虽然只是一招鲜，但个人觉得它提供的<strong>遮罩功能</strong>在日常工作学习中还是很实用的。类似于截图，FocusMask 的遮罩区域可以是框定的，也可以是当前窗口或视图，均可由快捷键触发。</p>
-
-<p><a href="/img/post/2015-3/10.png" class="img-up" title="FocusMask 设置"><img class="imgcenter-no-shadow" src="/img/post/2015-3/10.png" width="80%" title="FocusMask 设置" ></a></p>
-
-<!-- excerpt end -->
-
-<p>以 Byword 写作为例，选定工作区域，之外的区域被遮罩。可以<strong>调整遮罩层的透明度</strong>，设定<strong>是否允许在工作区域外点击鼠标</strong>。</p>
-
-<p><a href="/img/post/2015-3/11.png" class="img-up" title="区域框定"><img class="imgcenter" src="/img/post/2015-3/11.png" width="90%" title="区域框定" ></a></p>
-
-<p><a href="/img/post/2015-3/12.png" class="img-up" title="运行效果"><img class="imgcenter" src="/img/post/2015-3/12.png" width="90%" title="运行效果" ></a></p>
-
-<p>如此，菜单栏、Docker 以及通知栏均不可见，可以在编辑区域安心工作了……</p>
-
-<h2 id="section-1">界面设计</h2>
-
-<p>界面设计简陋。</p>
-
-<h2 id="section-2">易用性</h2>
-
-<p>易于使用。</p>
-
-<h2 id="section-3">稳定性</h2>
-
-<p>稳定性好。</p>
-
-<h2 id="section-4">跨平台</h2>
-
-<p>无。</p>
-
-<h2 id="section-5">类似软件</h2>
-
-<p>迫使用户专注的一般做法是<code>屏蔽</code>。</p>
-
-<p><code>视觉屏蔽</code>，比如 FocusMask，又比如 <a href="http://willmore.eu/software/isolator/">Isolator</a>，后者将工作区域设置为处于输入焦点的软件，之外的区域同样是遮罩。Isolator 相比 FocusMask 为遮罩提供了更多选项，可以设置颜色，也可以设置滤镜，不过滤镜功能在 OS X 10.8 及以上的系统中已无法使用。</p>
-
-<p><code>听觉屏蔽</code>，推荐 <a href="https://coffitivity.com/">Coffitivity</a>，播放咖啡馆白噪音，网页版、PC 客户端、移动版均有提供。</p>
-
-<p>比<code>视觉屏蔽</code>、<code>听觉屏蔽</code>更彻底的是<code>接触屏蔽</code>，比如禁止浏览器对某些网址的访问，禁止某时段某些软件的开启。</p>
-
-<ul>
-  <li>命令行工具
-    <ul>
-      <li><a href="https://github.com/amoffat/focus">Focus</a>，Python 编写，可屏蔽网址；</li>
-      <li><a href="https://github.com/xtrementl/focus">Focus</a>，Python 编写，是一款强大的<strong>任务管理工具</strong>，除了可以屏蔽网址、软件，还可以给任务关联需要开启的软件、需要运行的脚本，也可以记录工作时间，生成简单的报告，称得上是极客工具；</li>
-    </ul>
-  </li>
-  <li>图形界面工具
-    <ul>
-      <li><a href="http://selfcontrolapp.com/">SelfControl</a> ，<a href="https://github.com/SelfControlApp/selfcontrol">开源软件</a>，可屏蔽网址；</li>
-      <li><a href="http://www.publicspace.net/Vitamin-R/">Vitamin-R</a>，大体是一款番茄工作法工具，可记录工作历史并生成图表，可于工作时段屏蔽指定软件，也可播放咖啡馆白噪音；</li>
-      <li><a href="https://heyfocus.com/">Focus</a> ，屏蔽指定网址、软件，也可以在命令行操作，曾是 <a href="https://github.com/bradjasper/Focus">开源软件</a>。</li>
-    </ul>
-  </li>
-</ul>
-
-<h2 id="section-6">闪光点</h2>
-
-<ul>
-  <li>工作区域选择方式多样；</li>
-  <li>可以屏蔽工作区域外的鼠标点击。</li>
-</ul>
-
-<h2 id="section-7">缺点</h2>
-
-<p>遮罩区域样式单一，应允许自定义背景。</p>
 ]]></content>
   </entry>
   

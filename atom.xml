@@ -4,7 +4,7 @@
   <title><![CDATA[Blog of 太极儒]]></title>
   <link href="http://frank19900731.github.io/atom.xml" rel="self"/>
   <link href="http://frank19900731.github.io/"/>
-  <updated>2015-04-10T00:11:34+08:00</updated>
+  <updated>2015-04-11T14:21:32+08:00</updated>
   <id>http://frank19900731.github.io/</id>
   <author>
     <name><![CDATA[Frank Song]]></name>
@@ -12,6 +12,52 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[每周一软之 Paste]]></title>
+    <link href="http://frank19900731.github.io/blog/2015/04/11/mei-zhou-yi-ruan-zhi-paste/"/>
+    <updated>2015-04-11T14:07:26+08:00</updated>
+    <id>http://frank19900731.github.io/blog/2015/04/11/mei-zhou-yi-ruan-zhi-paste</id>
+    <content type="html"><![CDATA[<p><strong>目录</strong></p>
+
+<ul id="markdown-toc">
+  <li><a href="#section">功能介绍</a></li>
+  <li><a href="#section-1">界面设计</a></li>
+  <li><a href="#section-2">易用性</a></li>
+  <li><a href="#section-3">稳定性</a></li>
+  <li><a href="#section-4">跨平台</a></li>
+  <li><a href="#section-5">类似软件</a></li>
+  <li><a href="#section-6">闪光点</a></li>
+  <li><a href="#section-7">缺点</a></li>
+</ul>
+
+<!-- excerpt start -->
+
+<p>毕业季，论文施工中，有空再补。。。</p>
+
+<p><a href="http://frank19900731.github.io/img/post/2015-3/1.gif" class="img-up" title="论文施工中"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-3/1.gif" width="40%" title="论文施工中" /></a></p>
+
+<!-- excerpt end -->
+
+<h2 id="section">功能介绍</h2>
+
+<h2 id="section-1">界面设计</h2>
+
+<h2 id="section-2">易用性</h2>
+
+<h2 id="section-3">稳定性</h2>
+
+<h2 id="section-4">跨平台</h2>
+
+<h2 id="section-5">类似软件</h2>
+
+<h2 id="section-6">闪光点</h2>
+
+<h2 id="section-7">缺点</h2>
+
+<p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2015/04/11/mei-zhou-yi-ruan-zhi-paste/">http://frank19900731.github.io/blog/2015/04/11/mei-zhou-yi-ruan-zhi-paste/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[每周一软之 TexPad]]></title>
@@ -3094,107 +3140,6 @@
 <p>不过也正是在查这种傻逼错误的过程里，自己才会去搜索大量资料反复调试，对相关工具的了解也更深。<strong>菜逼的提升，大抵如此吧 ^-^</strong>。</p>
 
 <p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2015/01/02/gollum-kai-ji-qi-dong-pei-zhi/">http://frank19900731.github.io/blog/2015/01/02/gollum-kai-ji-qi-dong-pei-zhi/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[每周一软之 Proxifier]]></title>
-    <link href="http://frank19900731.github.io/blog/2014/12/28/mei-zhou-yi-ruan-zhi-proxifier/"/>
-    <updated>2014-12-28T17:19:15+08:00</updated>
-    <id>http://frank19900731.github.io/blog/2014/12/28/mei-zhou-yi-ruan-zhi-proxifier</id>
-    <content type="html"><![CDATA[<p><strong>目录</strong></p>
-
-<ul id="markdown-toc">
-  <li><a href="#section">功能介绍</a></li>
-  <li><a href="#section-1">界面设计</a></li>
-  <li><a href="#section-2">易用性</a></li>
-  <li><a href="#section-3">稳定性</a></li>
-  <li><a href="#section-4">跨平台</a></li>
-  <li><a href="#section-5">类似软件</a></li>
-  <li><a href="#section-6">闪光点</a></li>
-  <li><a href="#section-7">缺点</a></li>
-</ul>
-
-<!-- excerpt start -->
-
-<p>周四以来，Mail 里无法查收/发送 Gmail 邮件，为此鼓捣了好一阵子。最后，考虑到好多移动设备也需要查看邮件，索性买一个 VPN 账号。简单对比了一下选择了 <a href="https://www.fengchinet.com/">风驰</a>，一方面速度、稳定性都很不错，另一方面 270 块能够支持 3 个设备同时登陆且无限时间还真是挺划算的，可谓物美价廉。注意要注册两个账号，一个用另一个的邀请链接购买，可返利 40% 并可提现到支付宝 。</p>
-
-<p>鼓捣的过程里接触到 Proxifier 等一干软件，在此把粗浅的认识记录下来。</p>
-
-<h2 id="section">功能介绍</h2>
-
-<p><a href="http://www.proxifier.com/documentation/v3/">Proxifier</a> 可以针对具体的应用设置网络代理，类似于 SwitchySharp 的 Auto Switch Mode，使得部分软件（网址或ip）使用代理访问网络，而其它软件（网址或ip）正常访问网络。</p>
-
-<ul>
-  <li>支持 Socks4、Socks5、Https、Http 协议的代理；</li>
-  <li>可配置代理服务器链，均衡流量，支持使用不同协议；</li>
-  <li>路由表形式配置不同应用程序的网络访问行为，可以是直连、禁止访问或代理三种形式；</li>
-  <li>访问行为可具体指明域名、IP和端口，支持通配符；</li>
-  <li>带有日志输出，可以配置级别，提供时时流量统计图示；</li>
-  <li>可配置通过代理服务器进行 DNS 解析。</li>
-</ul>
-
-<p><a href="http://chris.olstrom.com/privacy/proxy-types/">What is the Difference Between Proxy Types</a> 这篇文章简要讲解了 http、socks 代理以及 VPN 的优缺点，之前不甚了解。</p>
-
-<!-- excerpt end -->
-
-<h2 id="section-1">界面设计</h2>
-
-<p>界面设计普通。</p>
-
-<p><a href="http://frank19900731.github.io/img/post/2014-12/43.png" class="img-up" title="主界面与 Proxy 列表"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-12/43.png" width="80%" title="主界面与 Proxy 列表" /></a></p>
-
-<p><a href="http://frank19900731.github.io/img/post/2014-12/44.png" class="img-up" title="添加 Proxy"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2014-12/44.png" width="60%" title="添加 Proxy" /></a></p>
-
-<h2 id="section-2">易用性</h2>
-
-<p>容易使用。</p>
-
-<h2 id="section-3">稳定性</h2>
-
-<p>稳定性良好。</p>
-
-<h2 id="section-4">跨平台</h2>
-
-<p>支持 Windows、OS X。</p>
-
-<h2 id="section-5">类似软件</h2>
-
-<p>确切地说不是类似软件，而是相关软件。</p>
-
-<p>Proxifier 需要填写代理，可以在网上寻找相关服务（收费或免费），也可以自己搭建。</p>
-
-<ul>
-  <li><a href="https://github.com/goagent/goagent">goagent</a> 提供 http、https 代理（<a href="https://code.google.com/p/goagent/issues/detail?id=5988">似乎支持过 socks5 ？</a>），缺点是<strong>可能会隔段时间失效</strong>，<strong>需要更新 ip 列表</strong>。 </li>
-  <li><a href="http://www.ccproxy.com/">CCProxy</a> 一款知名的国产代理服务器软件，<a href="http://www.ccproxy.com/proxifier-tou-ming-dai-li.htm">配合 Proxifier 可以实现局域网共享网络访问</a>。</li>
-  <li><a href="https://github.com/shadowsocks/shadowsocks">Shadowsocks</a> 分服务器端和客户端，服务器端提供 socks 代理，用法可以是
-    <ul>
-      <li>把 VPN 转为代理进而共享；</li>
-      <li>部署到国外的 VPS 上，身边有同学这么做。</li>
-    </ul>
-  </li>
-  <li><a href="https://github.com/ohdarling/GoAgentX">GoAgentX</a> 集成了 goagent、Shadowsocks、SSH 等工具，提供图形界面配置。</li>
-</ul>
-
-<p>类似的网络工具还有很多，看得头都大了，挂一漏万，有一个好使就行。</p>
-
-<p>还有一个工具是在使用 VPN 时会用到的，就是 <a href="https://github.com/jimmyxu/chnroutes">chnroutes</a> 。chnroutes 通过 ip 配置实现 VPN 分流，减轻 VPN 负担，提高国内网站的访问速度。具体做法貌似是设置用 VPN 传输所有网络流量，但是会<strong>使用 route 命令将一些 ip 地址路由到非 VPN  线路的网关上</strong>。</p>
-
-<h2 id="section-6">闪光点</h2>
-
-<ul>
-  <li>配置灵活，可以为单个软件提供代理服务，特别是<strong>当该软件不提供代理设置的时候</strong>很有用。</li>
-</ul>
-
-<h2 id="section-7">缺点</h2>
-
-<p>其实我很想寻找一款能够<strong>指定某个应用是否使用 VPN 进行联网</strong>的软件，在我并不清楚该应用可能访问的 ip 范围的时候，chnroutes 难以提供帮助，而 Proxifier 显然也没法满足这种需求……</p>
-
-<p>一种做法是，在个人服务器/云主机上配置 VPN 和 chnroutes，在笔记本上使用 Proxifier 连接该 socks 代理，并配置相关应用程序的访问行为。</p>
-
-<p>2015.1.2 补充：在 <a href="http://www.weibo.com/1883627565">@连城404</a> 的 <a href="http://www.weibo.com/1883627565/BDFuZ9dX0">微博</a> 上看到他就是这种做法，用 SSH 隧道连接。</p>
-
-<p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2014/12/28/mei-zhou-yi-ruan-zhi-proxifier/">http://frank19900731.github.io/blog/2014/12/28/mei-zhou-yi-ruan-zhi-proxifier/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
 ]]></content>
   </entry>
   
