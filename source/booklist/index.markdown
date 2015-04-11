@@ -11,21 +11,24 @@ exclude_from_search: true
 
 ## 2015
 
+{% img imgcenter-no-shadow /img/feature/b-2015-16.jpeg 20% 只是为了好玩——Linux之父林纳斯自传 %}
+{% img imgcenter-no-shadow /img/feature/b-2015-15.jpeg 20% 枪炮、病菌与钢铁——人类社会的命运 %}
+{% img imgcenter-no-shadow /img/feature/b-2015-14.jpeg 20% 从黎明到衰落——西方文化生活五百年，1500年至今 %}
 {% img imgcenter-no-shadow /img/feature/b-2015-13.jpeg 20% 从0到1 %}
+
 {% img imgcenter-no-shadow /img/feature/b-2015-12.jpeg 20% 求医不如求己 2 %}
 {% img imgcenter-no-shadow /img/feature/b-2015-11.jpeg 20% 我们台湾这些年 2 %}
 {% img imgcenter-no-shadow /img/feature/b-2015-10.jpeg 20% 我们台湾这些年 %}
-
 {% img imgcenter-no-shadow /img/feature/b-2015-9.jpeg 20% 人月神话 %}
+
 {% img imgcenter-no-shadow /img/feature/b-2015-8.jpeg 20% 治大国：古代中国的正义两难 %}
 {% img imgcenter-no-shadow /img/feature/b-2015-7.jpeg 20% 把时间当作朋友 %}
 {% img imgcenter-no-shadow /img/feature/b-2015-6.jpeg 20%  中国模式：经验与困局 %}
-
 {% img imgcenter-no-shadow /img/feature/b-2015-5.jpeg 20% 何以中国：公元前2000年的中原图景 %}
+
 {% img imgcenter-no-shadow /img/feature/b-2015-4.jpeg 20% 大癫狂：非同寻常的大众幻想与群众性癫狂 %}
 {% img imgcenter-no-shadow /img/feature/b-2015-3.jpeg 20% 中国文明起源新探 %}
 {% img imgcenter-no-shadow /img/feature/b-2015-2.jpeg 20% 台北人 %}
-
 {% img imgcenter-no-shadow /img/feature/b-2015-1.jpeg 20% 杀戮的艰难 %}
 
 ## 2014
