@@ -263,6 +263,12 @@
         <lastmod>2015-04-11T14:10:38+08:00</lastmod>
     </url>
     <url>
+        <loc>
+            http://frank19900731.github.io/blog/2015/04/13/zai-sublime-zhong-pei-zhi-markdown-huan-jing/
+        </loc>
+        <lastmod>2015-04-13T14:29:45+08:00</lastmod>
+    </url>
+    <url>
         <loc>http://frank19900731.github.io/404.html</loc>
         <lastmod>2015-02-06T02:00:29+08:00</lastmod>
     </url>
@@ -276,7 +282,7 @@
     </url>
     <url>
         <loc>http://frank19900731.github.io/archives/</loc>
-        <lastmod>2015-04-11T14:10:38+08:00</lastmod>
+        <lastmod>2015-04-13T14:29:45+08:00</lastmod>
     </url>
     <url>
         <loc>http://frank19900731.github.io/assets/bootstrap/docs/about.html</loc>
@@ -300,7 +306,7 @@
     </url>
     <url>
         <loc>http://frank19900731.github.io/assets/bootstrap/docs/</loc>
-        <lastmod>2015-04-11T14:10:38+08:00</lastmod>
+        <lastmod>2015-04-13T14:29:45+08:00</lastmod>
     </url>
     <url>
         <loc>http://frank19900731.github.io/assets/bootstrap/docs/javascript.html</loc>
@@ -312,15 +318,15 @@
     </url>
     <url>
         <loc>http://frank19900731.github.io/blog/categories/</loc>
-        <lastmod>2015-04-11T14:10:38+08:00</lastmod>
+        <lastmod>2015-04-13T14:29:45+08:00</lastmod>
     </url>
     <url>
         <loc>http://frank19900731.github.io/blog/</loc>
-        <lastmod>2015-04-11T14:10:38+08:00</lastmod>
+        <lastmod>2015-04-13T14:29:45+08:00</lastmod>
     </url>
     <url>
         <loc>http://frank19900731.github.io/blog/tags/</loc>
-        <lastmod>2015-04-11T14:10:38+08:00</lastmod>
+        <lastmod>2015-04-13T14:29:45+08:00</lastmod>
     </url>
     <url>
         <loc>http://frank19900731.github.io/booklist/</loc>
@@ -332,7 +338,7 @@
     </url>
     <url>
         <loc>http://frank19900731.github.io/</loc>
-        <lastmod>2015-04-11T14:10:38+08:00</lastmod>
+        <lastmod>2015-04-13T14:29:45+08:00</lastmod>
     </url>
     <url>
         <loc>http://frank19900731.github.io/movielist/</loc>
@@ -631,11 +637,17 @@
         <lastmod>2015-04-11T14:11:35+08:00</lastmod>
     </url>
     <url>
+        <loc>
+            http://frank19900731.github.io/wx/2015-04-13-zai-sublime-zhong-pei-zhi-markdown-huan-jing.html
+        </loc>
+        <lastmod>2015-04-13T14:29:57+08:00</lastmod>
+    </url>
+    <url>
         <loc>http://frank19900731.github.io/wx/archives/</loc>
-        <lastmod>2015-04-11T14:10:38+08:00</lastmod>
+        <lastmod>2015-04-13T14:29:45+08:00</lastmod>
     </url>
     <url>
         <loc>http://frank19900731.github.io/archives//</loc>
-        <lastmod>2015-04-11T14:10:38+08:00</lastmod>
+        <lastmod>2015-04-13T14:29:45+08:00</lastmod>
     </url>
 </urlset>

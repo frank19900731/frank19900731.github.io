@@ -4,7 +4,7 @@
   <title><![CDATA[Category: 工作效率 | Blog of 太极儒]]></title>
   <link href="http://frank19900731.github.io/blog/category/gong-zuo-xiao-lu/atom.xml" rel="self"/>
   <link href="http://frank19900731.github.io/"/>
-  <updated>2015-04-11T14:26:35+08:00</updated>
+  <updated>2015-04-13T14:30:05+08:00</updated>
   <id>http://frank19900731.github.io/</id>
   <author>
     <name><![CDATA[Frank Song]]></name>
@@ -12,6 +12,231 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[在 Sublime 中配置 Markdown 环境]]></title>
+    <link href="http://frank19900731.github.io/blog/2015/04/13/zai-sublime-zhong-pei-zhi-markdown-huan-jing/"/>
+    <updated>2015-04-13T12:11:53+08:00</updated>
+    <id>http://frank19900731.github.io/blog/2015/04/13/zai-sublime-zhong-pei-zhi-markdown-huan-jing</id>
+    <content type="html"><![CDATA[<p><strong>目录</strong></p>
+
+<ul id="markdown-toc">
+  <li><a href="#package-control">Package Control</a></li>
+  <li><a href="#monokai-extended--markdown-extended">Monokai Extended &amp; Markdown Extended</a></li>
+  <li><a href="#markdownediting">MarkdownEditing</a></li>
+  <li><a href="#markdowntoc">MarkdownTOC</a></li>
+  <li><a href="#table-editor">Table Editor</a></li>
+  <li><a href="#markdown-preview">Markdown Preview</a></li>
+  <li><a href="#academicmarkdown">AcademicMarkdown</a></li>
+  <li><a href="#citer">Citer</a></li>
+  <li><a href="#pandoc">Pandoc</a></li>
+  <li><a href="#section">参考文档</a></li>
+</ul>
+
+<!-- excerpt start -->
+
+<p>最近在编写项目 Readme.md 文件的时候，发现 Sublime 默认对 Markdown 几乎没有支持，需要通过安装、配置插件（算上 Package Control 共 10 个）来完成。在此记录下完整过程（其实就是整合了网上资料，自己配置来用而已），非 OS X 系统快捷键有不同。</p>
+
+<h2 id="package-control">Package Control</h2>
+
+<p>通过包管理器 <a href="https://packagecontrol.io/">Package Control</a> 安装插件的好处就是便于自动更新。</p>
+
+<p>在 Sublime 中使用 Ctrl + ` 快捷键调出控制台，输入如下代码、回车，等待安装完成。</p>
+
+<p><code>python Package Contorl 安装
+import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)
+</code></p>
+
+<!-- excerpt end -->
+
+<h2 id="monokai-extended--markdown-extended">Monokai Extended &amp; Markdown Extended</h2>
+
+<p>Markdown 格式在 Sublime 中默认无高亮，很多主题也不支持 Markdown 的高亮（包括 Markdown 代码块内的代码），<a href="https://github.com/jonschlinkert/sublime-monokai-extended">Monokai Extended</a> 和 <a href="https://github.com/jonschlinkert/sublime-markdown-extended">Markdown Extended</a> 是一套解决方案。</p>
+
+<p>插件的安装方式是 Shift + Command + P 调出 Command Palette，输入 <strong>pci</strong>（模糊匹配），找到 <code>Package Control: Install Package</code>、回车，输入插件名称、回车，等待安装。</p>
+
+<p>注意需要将 Markdown 的文件格式与 Markdown Extended 这种语法关联起来，做法是点击 Sublime 右下角文档格式，在列表最上方名为 <code>Open all with current extension as</code> 二级列表中选择 Markdown Extended。一种临时设置方式可以是 Shift + Command + P 调出 Command Palette，输入 <strong>ssm</strong>，选择 <code>Set Syntax: Markdown Extended</code>。</p>
+
+<p>输入点内容看看，是舒服了不少。</p>
+
+<p><a href="/img/post/2015-4/3.png" class="img-up" title="Markdown 语法高亮"><img class="imgcenter" src="/img/post/2015-4/3.png" width="95%" title="Markdown 语法高亮" ></a></p>
+
+<h2 id="markdownediting">MarkdownEditing</h2>
+
+<p>在 Sublime 中编写 Markdown 还有一个直观的不适就是<strong>缺少辅助提示</strong>，比如输入 *，编辑器应当自动补上一个 *，并使光标保持在两 * 之间，又比如应当支持选中一段文字快捷键添加链接。</p>
+
+<p><a href="https://github.com/SublimeText-Markdown/MarkdownEditing">Markdown Editing</a> 提供了这些支持，它也提供配色方案（略丑）。</p>
+
+<p>个人常用的三个快捷键是：</p>
+
+<ul>
+  <li>Option + Command + K - 插入链接；</li>
+  <li>Option + Command + V - 粘贴为链接格式；</li>
+  <li>Shift + Command + K - 插入图片。</li>
+</ul>
+
+<h2 id="markdowntoc">MarkdownTOC</h2>
+
+<p>编写 heading 较多的长文档，希望能够自动生成目录方便跳转，<a href="https://github.com/naokazuterada/MarkdownTOC">MarkdownTOC</a> 可以帮助我们实现。</p>
+
+<p>安装完成需要对其做一定配置，方法是打开 Preferences -&gt; Package Settings -&gt; MarkdownTOC -&gt; Setting - User，键入以下配置：</p>
+
+<p><code>json MarkdownTOC 配置
+{
+  "default_autolink": true,
+  "default_bracket": "round",
+  "default_depth": 0
+}
+</code></p>
+
+<p>User Setting 覆盖 Default Setting，修改 User Setting 而非 Default Setting 是为了将来插件升级用户配置不被覆盖。配置文件都是 json 格式，上面的三个配置作用分别是：</p>
+
+<ul>
+  <li>目录以链接形式呈现；</li>
+  <li>链接以圆括号包裹；</li>
+  <li>无限目录深度。</li>
+</ul>
+
+<p>将光标置于文档首部，点击 Tools -&gt; MarkdownTOC -&gt; Insert TOC，会自动在文首生成目录，效果如下图。这个目录会随文档内容改变自动更新（可能需要保存来触发）。</p>
+
+<p><a href="/img/post/2015-4/2.png" class="img-up" title="Markdown 目录"><img class="imgcenter" src="/img/post/2015-4/2.png" width="95%" title="Markdown 目录" ></a></p>
+
+<h2 id="table-editor">Table Editor</h2>
+
+<p>键入表格是个体力活，<a href="https://github.com/vkocubinsky/SublimeTableEditor">Table Editor</a> 可以帮助我们减轻工作量。</p>
+
+<h2 id="markdown-preview">Markdown Preview</h2>
+
+<p>现在，<strong>代码、公式、表格、图片、链接、目录</strong>都齐活儿了，最后一步就是将 Markdown 文档渲染成我们想要的文档格式，<a href="https://github.com/revolunet/sublimetext-markdown-preview">Markdown Preview</a> 责无旁贷。</p>
+
+<p>安装后也需要进行一定配置：</p>
+
+<p><code>json Markdown Preview 配置
+{
+    "parser": "github",
+    "build_action": "browser",
+    "enable_mathjax": true,
+    "enable_uml": true,
+    "enable_highlight": true,
+    "enable_pygments": true,
+    "enabled_extensions": "github",
+    "enabled_parsers": ["github"],
+    "github_mode": "markdown",
+    "github_inject_header_ids": true,
+    "enable_autoreload": false
+}
+</code></p>
+
+<p>在以上配置中我们设定渲染样式为 github，渲染结束后用浏览器打开，开启 uml、mathjax、pygments 等支持，最重要的一个配置项是 <code>"github_inject_header_ids": true</code>，<strong>保证 heading 的 id 与 heading 内容一致</strong>，<strong>也就与 MarkdownTOC 生成的一致</strong>，<strong>也就恰好能够锚点定位</strong>。最后我们关闭了 autoreload，否则每当保存 Markdown 文件，后台都会进行一次渲染操作，你就会看到一颗彩虹糖在打转。</p>
+
+<p>使用快捷键 Shift + Command + B，选择 Build with Markdown，一会儿就能在弹出的浏览器框里看到渲染结果了。</p>
+
+<p><a href="/img/post/2015-4/1.png" class="img-up" title="Markdown 渲染结果"><img class="imgcenter" src="/img/post/2015-4/1.png" width="90%" title="Markdown 渲染结果" ></a></p>
+
+<h2 id="academicmarkdown">AcademicMarkdown</h2>
+
+<p>在查找资料的过程中发现可以用 Sublime + Markdown 写论文，就跟着学了一把。</p>
+
+<p><a href="https://packagecontrol.io/packages/AcademicMarkdown">AcademicMarkdown</a> 通过在 Markdown 文档中添加一定的信息，具体说是文件头，来帮助我们将 Markdown 文档渲染为符合指定论文格式的文章。以下文件头摘自插件作者给出的 <a href="/downloads/file/sample-paper.zip">样例</a>。</p>
+
+<p><code>text 文件头
+title: A sample paper  
+author: Donald Duck
+date: October 1, 2014
+csl: /Users/frank/Documents/My Markdown/sample-paper/chicago.csl
+abstract: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</code></p>
+
+<p>csl 是论文模板格式，更多格式可在 <a href="https://www.zotero.org/styles">Zotero Style Repository</a> 寻找。</p>
+
+<p>Academic 还允许指定 bib 文件，在 Markdown 文档内添加引用，格式是 <code>@citation_key</code>，下面介绍的 Citer 可以帮助我们管理引用。</p>
+
+<h2 id="citer">Citer</h2>
+
+<p>具体说，<a href="https://github.com/mangecoeur/Citer">Citer</a> 帮助我们搜索、插入引用。</p>
+
+<p>安装后需要进行一定配置：</p>
+
+<p>```json Citer 配置
+{
+    //REQUIRED:
+    “bibtex_file_path”: “/Users/frank/Documents/Mendeley/reference.bib”,</p>
+
+<pre><code>//OPTIONAL:
+
+//By default Citer Search looks for your keyword in the 
+//author, title, year, and Citekey (id) feilds
+"search_fields": ["author", "title", "year", "id"] ,
+//Default format is @Citekey
+"citation_format": "@%s",
+//list of scopes. Could be top level "text" or "source", or limit to
+// e.g "text.html.markdown"
+"completions_scopes": ["text"],
+"enable_completions": true } ```
+</code></pre>
+
+<p>只要修改 <code>bibtex_file_path</code> 即可，其它都是默认配置项，我的 bib 文件是由 <a href="https://www.mendeley.com/">Mendeley</a> 维护的。值得一提的是，AcademicMarkdown 支持在文件头指定其它 bib 文件，Citer 中的 bib 是全局的。</p>
+
+<p>Shift + Command + P 调出 Command Palette，输入 Citer，Show All 会列举全局 bib 文件中的所有项（如果是刚配置好可能结果为空，请稍作等待或重启 Sublime），Search 则显然用于搜索。</p>
+
+<h2 id="pandoc">Pandoc</h2>
+
+<p>最终由神器 <a href="https://github.com/tbfisher/sublimetext-Pandoc">Pandoc</a> 将 AcademicMarkdown 文档编译成论文。</p>
+
+<p>这个插件只是 Pandoc 的使用配置接口，需要在系统中手动安装 <a href="http://johnmacfarlane.net/pandoc/">Pandoc</a>，OS X 下我使用 <code>brew install pandoc</code> 安装。我们要用到的两个命令是 <code>pandoc</code> 和 <code>pandoc-citeproc</code>。除了 Pandoc，我们还需要配置 Latex 编译环境，我使用的是 <a href="http://tug.org/texlive/">TeX Live</a>。</p>
+
+<p>接下来配置 Pandoc 插件：</p>
+
+<p>```json Pandoc 配置
+{
+  “default”: {
+    <strong>“pandoc-path”: “/usr/local/bin/pandoc”</strong>,</p>
+
+<pre><code>"transformations": {
+
+...
+
+  "PDF": {
+    "scope": {
+      "text.html": "html",
+      "text.html.markdown": "markdown"
+    },
+    "pandoc-arguments": [
+      "-t", "pdf", **"--latex-engine=/usr/texbin/pdflatex"**, 
+      **"--filter=/usr/local/bin/pandoc-citeproc"**,
+      **"--bibliography=/Users/frank/Documents/Mendeley/reference.bib"**
+    ]
+  },
+
+  "Microsoft Word": {
+    "scope": {
+      "text.html": "html",
+      "text.html.markdown": "markdown"
+    },
+    "pandoc-arguments": [
+      "-t", "docx",
+      **"--filter=/usr/local/bin/pandoc-citeproc"**,
+      **"--bibliography=/Users/frank/Documents/Mendeley/reference.bib"**
+    ]
+  }
+},
+
+"pandoc-format-file": ["docx", "epub", "pdf", "odt"]   } } ```
+</code></pre>
+
+<p>修改内容以 ** 标出，主要是指定相关命令、文件的路径作为 pandoc 命令的参数。</p>
+
+<p>Shift + Command + P 调出 Command Palette，输入 Pandoc、选择 PDF 作为输出格式即可，这是一个<a href="/downloads/file/sample-paper.pdf">示例</a>。</p>
+
+<h2 id="section">参考文档</h2>
+
+<ul>
+  <li><a href="http://blog.cigrainger.com/2014/07/pandoc-markdown.html">Writing academic papers in Markdown using Pandoc</a></li>
+  <li><a href="http://nikolasander.com/writing-in-markdown/">Writing academic papers in Markdown using Sublime Text and Pandoc</a></li>
+  <li><a href="https://blog.mariusschulz.com/2014/12/16/how-to-set-up-sublime-text-for-a-vastly-better-markdown-writing-experience">How to Set Up Sublime Text for a Vastly Better Markdown Writing Experience</a></li>
+</ul>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Mac 下安装 WeCenter 并添加代码高亮功能]]></title>
@@ -856,191 +1081,6 @@ export PATH=$PATH:/Users/frank/.rvm/rubies/ruby-X.X.X/lib/ruby/gems/X.X.X/bin
 <p><strong>2014年12月8日第一次修订</strong></p>
 
 <p><strong>信息科学</strong> 一级分类 中补充 <strong>数据库</strong> 二级分类。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[一个工具控的效率观]]></title>
-    <link href="http://frank19900731.github.io/blog/2014/11/13/yi-ge-gong-ju-kong-de-xiao-lu-guan/"/>
-    <updated>2014-11-13T15:49:04+08:00</updated>
-    <id>http://frank19900731.github.io/blog/2014/11/13/yi-ge-gong-ju-kong-de-xiao-lu-guan</id>
-    <content type="html"><![CDATA[<p><strong>目录</strong></p>
-
-<ul id="markdown-toc">
-  <li><a href="#section">前言</a></li>
-  <li><a href="#section-1">时间轴</a>    <ul>
-      <li><a href="#section-2">2014年5月12日</a></li>
-      <li><a href="#section-3">2014年6月3日补充</a></li>
-      <li><a href="#section-4">2014年6月20日补充</a></li>
-      <li><a href="#section-5">2014年6月21日补充</a></li>
-      <li><a href="#section-6">2014年8月17日补充</a></li>
-      <li><a href="#section-7">2014年8月21日补充</a></li>
-      <li><a href="#section-8">2014年8月24日补充</a></li>
-      <li><a href="#section-9">2014年8月27日补充</a></li>
-      <li><a href="#section-10">2014年8月29日补充</a></li>
-      <li><a href="#section-11">2014年10月13日补充</a></li>
-      <li><a href="#section-12">2014年10月29日补充</a></li>
-      <li><a href="#section-13">2014年11月8日补充</a></li>
-      <li><a href="#section-14">2014年12月7日补充</a></li>
-      <li><a href="#section-15">2015年1月12日补充</a></li>
-    </ul>
-  </li>
-</ul>
-
-<!-- excerpt start -->
-
-<h2 id="section">前言</h2>
-
-<p><strong>这是一篇在不断更新中的文章，主要用于记录我在学习工作过程中为解决效率瓶颈而发掘的软件工具，以及该工具的使用体验和配套的工作方式。</strong></p>
-
-<ul>
-  <li><code>何为工具控？</code> 在使用 MacBook Pro 的近两年时间里，自己大大小小“使用”过超过1000款软件，常驻笔记本里的大概有700款，每周都会有添加删除，详细列表见 <a href="http://blog.sina.com.cn/s/blog_64ac3ab10101f4it.html">这篇文章</a>。“使用”的含义可就多了，可能是常用以至于开机自启动，可能是专门用于某项用途，也可能只是摸过、了解功能和适用场景。这么多软件，管理上主要使用 QuickSilver（因为自己最早用的就是这个，虽然现在大家更多提到的是 Alfred）。我觉得自己还担不起拜物教的名号，顶多是个实用主义者和收藏强迫症。工具对我的意义有两点，<strong>其一是提供了外界刺激，让我内在的学习动力有了平稳释放的渠道，比如记录美感刺激、时间规划刺激、任务消除刺激，其二是让我有了记录成长历程的手段，解放了大脑</strong>。</li>
-  <li><code>工具如何提高效率？</code>
-    <ul>
-      <li>加速知识记录、知识分享、知识利用的过程，质量也得到保障；</li>
-      <li>时间规划清晰合理，帮助自己应对纷繁复杂的事务和对象；</li>
-      <li>通常，工具是手脚的延伸，而这篇文章里将要提到的软件工具则是主要是感官和记忆的延伸，让大脑做更有意义的事情，也就是思考。</li>
-    </ul>
-  </li>
-  <li><code>为什么是 Mac？</code> 当然可以不是 Mac，只是这篇文章里的很多软件在别的操作系统上是没有的。Mac 在<strong>易用性</strong>（比如系统的升级，软件的安装卸载，强悍的 trackpad）的角度来看是最佳的，优秀的图形界面和基于 UNIX 的操作系统也算是在 Windows 和 Linux 之间取得了良好的折中，适用于科研工作者和程序猿（最近走访的一些企业要么是全 Mac，要么是 Mac 比例在提升），而 MacBook Air 的时尚感与轻便性（索尼的本感觉也有这样的特性）则赢得了白领、女性的青睐。其他方面的话不好评价优劣，毕竟我们大多数人对于 Windows和Linux的掌握也只是皮毛，别人在 Windows 下效率比你在 Mac 下高也是很正常的，因人而异。我不是果吹，但还是有一个比较矫情的想法，那就是我总感觉<strong>在 Mac 上是我在工作，而在 Windows 上是工在做我</strong>。</li>
-</ul>
-
-<p>现在 MacBook 已然不是高枝上的凤凰了，其他厂商的笔记本价格与 MacBook 持平或更贵的有很多，强烈建议有换电脑打算的时候给予考虑。有钱把手机换成 iPhone 6、6+，还不如攒个 MacBook，个人感觉性价比更高，<strong>壕请忽略我的话</strong>。</p>
-
-<!-- excerpt end -->
-
-<h2 id="section-1">时间轴</h2>
-
-<h3 id="section-2">2014年5月12日</h3>
-
-<p>最近这段时间使用Ulysses真是如有神助，</p>
-
-<ul>
-  <li>Markdown书写；</li>
-  <li>层次清晰分明，非常方便组织思路，文字有魂不零碎；</li>
-  <li>输出格式丰富，主题模板也很赞，直接看原稿就已经很舒服了；</li>
-  <li>界面清爽，全屏模式酷炫；</li>
-  <li>Typewriter 模式，写作代入感强；</li>
-  <li>支持版本保存，功能相当不鸡肋；</li>
-  <li>支持过滤器，虽然自己还没有用过；</li>
-  <li>可以附加笔记、图片、关键词和协作目标，有助于搜索，也可以作为效率上的督促。</li>
-</ul>
-
-<p>不足之处在于，不能够编辑公式，代码段比较简单，也不能输入表格。</p>
-
-<p>正在使用的有助效率提升的软件梳理</p>
-
-<ul>
-  <li><code>OmniFocus</code> GTD 工具，配合 iCalendar 使用爽歪歪，功能暂时掌握不全，但不耽误基本使用。</li>
-  <li><code>Evernote</code> 大有被取代之势，重要性在降低，记录一些零七碎八的事情。</li>
-  <li><code>FocusMask</code> 效率新贵，提高自身工作时注意力！！！</li>
-  <li><code>Papers</code> 支持文献阅读、批注与引用的好工具，可以和 iOS 设备同步。</li>
-  <li><code>Eggscellent</code> 番茄工作法，分段限时完成工作，把自己<strong>从无截止时间估计的低效率工作状态中拉出来</strong>。</li>
-  <li><code>Timeline 3D</code> 制作高逼格的时间计划表。</li>
-  <li><code>Ulysses</code> 出色的写作软件，之前说过，废话不表。</li>
-</ul>
-
-<p>期待日后更多的发现。</p>
-
-<h3 id="section-3">2014年6月3日补充</h3>
-
-<ul>
-  <li><code>Pocket</code> 极佳的网页保存待查工具，有 Mac、iOS 客户端以及 Chrome 插件，<strong>特别适用于记录问题解决过程中所查询的重要网页资料，省得要保留大量标签页或者来回翻找浏览历史</strong>。</li>
-  <li><code>Wunderlist</code> OmniFocus 的精细化补充，跨平台通用。</li>
-</ul>
-
-<h3 id="section-4">2014年6月20日补充</h3>
-
-<p>ICML、实习接踵而至，是时候 Papers（读 Paper）以及 Ulysses（会议记录，每日总结）发挥作用的时候了。最近要<strong>规范化记录的方式方法</strong>，让自己在暑假里高效运转起来。</p>
-
-<h3 id="section-5">2014年6月21日补充</h3>
-
-<p>今天被 Ulysses 坑到了，软件无响应，强制关闭，重新打开后部分文件夹和文件顺序错乱、名称显示错误，今后一定要<strong>注意备份</strong>。</p>
-
-<h3 id="section-6">2014年8月17日补充</h3>
-
-<p>Ulysses 虽然非常强大，但是有些事情做得还不是那么好，比如表格上不如 Numbers，而涉及到复杂计算和图表，Numbers 又不如 Excel。</p>
-
-<p>最近调试 ODPS 的过程中发现，还是需要 Numbers 做记录，才能够使得每一个步骤清晰明确，每一个对比结果记录可靠。</p>
-
-<h3 id="section-7">2014年8月21日补充</h3>
-
-<p>目前个人效率存在的三大瓶颈</p>
-
-<ul>
-  <li><strong>资料碎片化，需要跳跃式阅读的时候寻址消耗大</strong>；</li>
-  <li><strong>项目繁多，接头人、需求、目标、工期预计等需即时管理</strong>；</li>
-  <li><strong>文档管理体系亟待完善，不能沿用文件夹模式</strong>。</li>
-</ul>
-
-<p>Ulysses 搜索功能还很弱（注：当时系统还是装在机械硬盘上，后来在光驱位加了一块 1T 的 SSD 后，那都不是事儿了），要打造 Ulysses 周边生态环境。</p>
-
-<ul>
-  <li><code>Producteev</code> 可以创建 Network 和 Project，适合多项目跟踪，界面美观，可定制项丰富，满足多人协作需求。</li>
-  <li><code>iDocument</code> 可导入本地文件夹，也可以维护一个iDocument自身的目录，保存相关的文件，提供标签查找。</li>
-  <li><code>OneNote</code> 富文本、交互式文本定制，可以保存图片、生成表格、插入文件，排版布局方便，是对 Ulysses 的有益补充。</li>
-  <li><code>mediawiki</code> 网页版 wiki，常见于某些实验室的网站，优点是其索引、链接能力，便于分享，还可以输入表格、公式，大大弥补了 Ulysses 的不足。</li>
-</ul>
-
-<h3 id="section-8">2014年8月24日补充</h3>
-
-<p>补充使用体验</p>
-
-<ul>
-  <li><code>Producteev</code> 评论功能很赞，可以存储事件相关的命令行、网页链接、文件等，使得在众多事情的切换中保持脑袋不乱。</li>
-  <li><code>iDocument</code> 界面很棒，今后零散的微博文件分享也有方法保存啦！每一个文件都要打好 tag，方便搜索查找，目前 iDocument 还不支持文件的内容搜索，可以用 EasyFind 实现。</li>
-  <li><code>mediawiki</code> 从这两天的经验看，Ulysses 里面经常翻阅的东西就要考虑写到 mediawiki 中了，作为个人知识库的 cache。最最最重要的是，<strong>有效解决了诸如 Ulysses、Evernote 等笔记软件中笔记间无法加链接的问题</strong>。</li>
-</ul>
-
-<h3 id="section-9">2014年8月27日补充</h3>
-
-<ul>
-  <li><code>Octopress</code> 用法见 <a href="http://frank19900731.github.io/blog/2014/08/24/wo-de-di-yi-pian-octopress-bo-ke/">此篇博客</a>，配置见 <a href="http://frank19900731.github.io/blog/2014/10/16/octopress-gai-zao-ji-lu/">此篇博客</a>。养成知识输出与分享的习惯，争取让自己的博客小有名气。</li>
-  <li><code>Byword</code> 考察了不下十款 Mac 下的 Markdown 编辑器，最终敲定此软件。非常棒的界面设计，写起来很带感的说，段落聚焦（Paragraph Focus）的功能尤赞，专注写作的不二之选，Typewritter 模式也可用，支持字体的自定义，用于 Octopress 写作。</li>
-</ul>
-
-<h3 id="section-10">2014年8月29日补充</h3>
-
-<ul>
-  <li><code>Dash</code> API大全，程序员必备，从诞生伊始就开始关注，一直用到现在，作为一个收藏强迫症患者当然全部下载，<strong>光是索引文件就有40多G</strong>，但是心里满满的踏实感。支持代码片段存储，且在 Dash 开启时，支持在代码编辑器中使用缩写替换，问题在于没有办法进行云同步。</li>
-  <li><code>Gistify</code> 这是 gist 的比较好的 Mac 客户端，缺点是不能指定文件名和Description，优点是创建后自动生成的 url 在剪贴板里，可以到网页上进行修改。</li>
-  <li><code>PopClip</code> 万金油，插件丰富强大，功能在不断完善。</li>
-</ul>
-
-<h3 id="section-11">2014年10月13日补充</h3>
-
-<ul>
-  <li><code>Caffeinated</code> RSS阅读器，虽然还有这排版上的一些问题，但是其优雅的展示效果还是令我不能舍弃。最近花了大力气整理了各方面的RSS资源，希望能够养成此类阅读习惯，将碎片化的时间以及之前浪费在游戏等方面的时间充分利用起来。此外，<strong>这还相当于一个优质博客集合的入口，比起让这些链接沉睡在浏览器收藏夹里要好很多</strong>。</li>
-</ul>
-
-<h3 id="section-12">2014年10月29日补充</h3>
-
-<ul>
-  <li><code>SketchBookPro</code> <strong>配合 Wacom 手写输入板，记录公式快快哒</strong>。</li>
-</ul>
-
-<h3 id="section-13">2014年11月8日补充</h3>
-
-<ul>
-  <li><code>Notebooks</code> 较好的三列组织形式，支持 Markdown 语言，是较好的写书工具。</li>
-  <li><code>Gitbook</code> 类似于 pandoc，支持丰富格式导出，比如 epub、mobi、pdf、网页版，特别是网页版会有较好的传播价值。</li>
-  <li><code>Daum Equation Editor</code> Latex 公式书写利器，方便博客写作。</li>
-  <li><code>花瓣网（Chrome插件）</code> 图片采集神器，非常有于前端积累，<strong>给图片的高效保存提供了较完美的解决方案</strong>。</li>
-</ul>
-
-<h3 id="section-14">2014年12月7日补充</h3>
-
-<ul>
-  <li><code>Quiver</code> 分 Text、Latex、Code、Markdown 四种 Cell，文章撰写分块明细，界面美观，适合博客、工程报告写作。</li>
-</ul>
-
-<h3 id="section-15">2015年1月12日补充</h3>
-
-<ul>
-  <li><code>hypothes.is</code> 一款在网页上做标记、笔记和评论的 Chrome 插件，非常方便知识的就地保存整理，而不用麻烦的搬运到笔记中。</li>
-</ul>
-
-<p><strong>未完待续</strong></p>
 ]]></content>
   </entry>
   

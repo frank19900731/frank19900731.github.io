@@ -4,7 +4,7 @@
   <title><![CDATA[Blog of 太极儒]]></title>
   <link href="http://frank19900731.github.io/atom.xml" rel="self"/>
   <link href="http://frank19900731.github.io/"/>
-  <updated>2015-04-11T14:26:35+08:00</updated>
+  <updated>2015-04-13T14:30:05+08:00</updated>
   <id>http://frank19900731.github.io/</id>
   <author>
     <name><![CDATA[Frank Song]]></name>
@@ -12,6 +12,306 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[在 Sublime 中配置 Markdown 环境]]></title>
+    <link href="http://frank19900731.github.io/blog/2015/04/13/zai-sublime-zhong-pei-zhi-markdown-huan-jing/"/>
+    <updated>2015-04-13T12:11:53+08:00</updated>
+    <id>http://frank19900731.github.io/blog/2015/04/13/zai-sublime-zhong-pei-zhi-markdown-huan-jing</id>
+    <content type="html"><![CDATA[<p><strong>目录</strong></p>
+
+<ul id="markdown-toc">
+  <li><a href="#package-control">Package Control</a></li>
+  <li><a href="#monokai-extended--markdown-extended">Monokai Extended &amp; Markdown Extended</a></li>
+  <li><a href="#markdownediting">MarkdownEditing</a></li>
+  <li><a href="#markdowntoc">MarkdownTOC</a></li>
+  <li><a href="#table-editor">Table Editor</a></li>
+  <li><a href="#markdown-preview">Markdown Preview</a></li>
+  <li><a href="#academicmarkdown">AcademicMarkdown</a></li>
+  <li><a href="#citer">Citer</a></li>
+  <li><a href="#pandoc">Pandoc</a></li>
+  <li><a href="#section">参考文档</a></li>
+</ul>
+
+<!-- excerpt start -->
+
+<p>最近在编写项目 Readme.md 文件的时候，发现 Sublime 默认对 Markdown 几乎没有支持，需要通过安装、配置插件（算上 Package Control 共 10 个）来完成。在此记录下完整过程（其实就是整合了网上资料，自己配置来用而已），非 OS X 系统快捷键有不同。</p>
+
+<h2 id="package-control">Package Control</h2>
+
+<p>通过包管理器 <a href="https://packagecontrol.io/">Package Control</a> 安装插件的好处就是便于自动更新。</p>
+
+<p>在 Sublime 中使用 Ctrl + ` 快捷键调出控制台，输入如下代码、回车，等待安装完成。</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>Package Contorl 安装</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class="python"><span class="line"><span class="kn">import</span> <span class="nn">urllib.request</span><span class="o">,</span><span class="nn">os</span><span class="o">,</span><span class="nn">hashlib</span><span class="p">;</span> <span class="n">h</span> <span class="o">=</span> <span class="s">&#39;eb2297e1a458f27d836c04bb0cbaf282&#39;</span> <span class="o">+</span> <span class="s">&#39;d0e7a3098092775ccb37ca9d6b2e4b7d&#39;</span><span class="p">;</span> <span class="n">pf</span> <span class="o">=</span> <span class="s">&#39;Package Control.sublime-package&#39;</span><span class="p">;</span> <span class="n">ipp</span> <span class="o">=</span> <span class="n">sublime</span><span class="o">.</span><span class="n">installed_packages_path</span><span class="p">();</span> <span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">install_opener</span><span class="p">(</span> <span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">build_opener</span><span class="p">(</span> <span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">ProxyHandler</span><span class="p">())</span> <span class="p">);</span> <span class="n">by</span> <span class="o">=</span> <span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span> <span class="s">&#39;http://packagecontrol.io/&#39;</span> <span class="o">+</span> <span class="n">pf</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">&#39; &#39;</span><span class="p">,</span> <span class="s">&#39;%20&#39;</span><span class="p">))</span><span class="o">.</span><span class="n">read</span><span class="p">();</span> <span class="n">dh</span> <span class="o">=</span> <span class="n">hashlib</span><span class="o">.</span><span class="n">sha256</span><span class="p">(</span><span class="n">by</span><span class="p">)</span><span class="o">.</span><span class="n">hexdigest</span><span class="p">();</span> <span class="k">print</span><span class="p">(</span><span class="s">&#39;Error validating download (got </span><span class="si">%s</span><span class="s"> instead of </span><span class="si">%s</span><span class="s">), please try manual install&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">dh</span><span class="p">,</span> <span class="n">h</span><span class="p">))</span> <span class="k">if</span> <span class="n">dh</span> <span class="o">!=</span> <span class="n">h</span> <span class="k">else</span> <span class="nb">open</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span> <span class="n">ipp</span><span class="p">,</span> <span class="n">pf</span><span class="p">),</span> <span class="s">&#39;wb&#39;</span> <span class="p">)</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">by</span><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<!-- excerpt end -->
+
+<h2 id="monokai-extended--markdown-extended">Monokai Extended &amp; Markdown Extended</h2>
+
+<p>Markdown 格式在 Sublime 中默认无高亮，很多主题也不支持 Markdown 的高亮（包括 Markdown 代码块内的代码），<a href="https://github.com/jonschlinkert/sublime-monokai-extended">Monokai Extended</a> 和 <a href="https://github.com/jonschlinkert/sublime-markdown-extended">Markdown Extended</a> 是一套解决方案。</p>
+
+<p>插件的安装方式是 Shift + Command + P 调出 Command Palette，输入 <strong>pci</strong>（模糊匹配），找到 <code>Package Control: Install Package</code>、回车，输入插件名称、回车，等待安装。</p>
+
+<p>注意需要将 Markdown 的文件格式与 Markdown Extended 这种语法关联起来，做法是点击 Sublime 右下角文档格式，在列表最上方名为 <code>Open all with current extension as</code> 二级列表中选择 Markdown Extended。一种临时设置方式可以是 Shift + Command + P 调出 Command Palette，输入 <strong>ssm</strong>，选择 <code>Set Syntax: Markdown Extended</code>。</p>
+
+<p>输入点内容看看，是舒服了不少。</p>
+
+<p><a href="http://frank19900731.github.io/img/post/2015-4/3.png" class="img-up" title="Markdown 语法高亮"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-4/3.png" width="95%" title="Markdown 语法高亮" /></a></p>
+
+<h2 id="markdownediting">MarkdownEditing</h2>
+
+<p>在 Sublime 中编写 Markdown 还有一个直观的不适就是<strong>缺少辅助提示</strong>，比如输入 *，编辑器应当自动补上一个 *，并使光标保持在两 * 之间，又比如应当支持选中一段文字快捷键添加链接。</p>
+
+<p><a href="https://github.com/SublimeText-Markdown/MarkdownEditing">Markdown Editing</a> 提供了这些支持，它也提供配色方案（略丑）。</p>
+
+<p>个人常用的三个快捷键是：</p>
+
+<ul>
+  <li>Option + Command + K - 插入链接；</li>
+  <li>Option + Command + V - 粘贴为链接格式；</li>
+  <li>Shift + Command + K - 插入图片。</li>
+</ul>
+
+<h2 id="markdowntoc">MarkdownTOC</h2>
+
+<p>编写 heading 较多的长文档，希望能够自动生成目录方便跳转，<a href="https://github.com/naokazuterada/MarkdownTOC">MarkdownTOC</a> 可以帮助我们实现。</p>
+
+<p>安装完成需要对其做一定配置，方法是打开 Preferences -&gt; Package Settings -&gt; MarkdownTOC -&gt; Setting - User，键入以下配置：</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>MarkdownTOC 配置</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+</pre></td><td class="code"><pre><code class="json"><span class="line"><span class="p">{</span>
+</span><span class="line">  <span class="nt">&quot;default_autolink&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+</span><span class="line">  <span class="nt">&quot;default_bracket&quot;</span><span class="p">:</span> <span class="s2">&quot;round&quot;</span><span class="p">,</span>
+</span><span class="line">  <span class="nt">&quot;default_depth&quot;</span><span class="p">:</span> <span class="mi">0</span>
+</span><span class="line"><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>User Setting 覆盖 Default Setting，修改 User Setting 而非 Default Setting 是为了将来插件升级用户配置不被覆盖。配置文件都是 json 格式，上面的三个配置作用分别是：</p>
+
+<ul>
+  <li>目录以链接形式呈现；</li>
+  <li>链接以圆括号包裹；</li>
+  <li>无限目录深度。</li>
+</ul>
+
+<p>将光标置于文档首部，点击 Tools -&gt; MarkdownTOC -&gt; Insert TOC，会自动在文首生成目录，效果如下图。这个目录会随文档内容改变自动更新（可能需要保存来触发）。</p>
+
+<p><a href="http://frank19900731.github.io/img/post/2015-4/2.png" class="img-up" title="Markdown 目录"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-4/2.png" width="95%" title="Markdown 目录" /></a></p>
+
+<h2 id="table-editor">Table Editor</h2>
+
+<p>键入表格是个体力活，<a href="https://github.com/vkocubinsky/SublimeTableEditor">Table Editor</a> 可以帮助我们减轻工作量。</p>
+
+<h2 id="markdown-preview">Markdown Preview</h2>
+
+<p>现在，<strong>代码、公式、表格、图片、链接、目录</strong>都齐活儿了，最后一步就是将 Markdown 文档渲染成我们想要的文档格式，<a href="https://github.com/revolunet/sublimetext-markdown-preview">Markdown Preview</a> 责无旁贷。</p>
+
+<p>安装后也需要进行一定配置：</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>Markdown Preview 配置</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+<span class="line-number">11</span>
+<span class="line-number">12</span>
+<span class="line-number">13</span>
+</pre></td><td class="code"><pre><code class="json"><span class="line"><span class="p">{</span>
+</span><span class="line">    <span class="nt">&quot;parser&quot;</span><span class="p">:</span> <span class="s2">&quot;github&quot;</span><span class="p">,</span>
+</span><span class="line">    <span class="nt">&quot;build_action&quot;</span><span class="p">:</span> <span class="s2">&quot;browser&quot;</span><span class="p">,</span>
+</span><span class="line">    <span class="nt">&quot;enable_mathjax&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+</span><span class="line">    <span class="nt">&quot;enable_uml&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+</span><span class="line">    <span class="nt">&quot;enable_highlight&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+</span><span class="line">    <span class="nt">&quot;enable_pygments&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+</span><span class="line">    <span class="nt">&quot;enabled_extensions&quot;</span><span class="p">:</span> <span class="s2">&quot;github&quot;</span><span class="p">,</span>
+</span><span class="line">    <span class="nt">&quot;enabled_parsers&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;github&quot;</span><span class="p">],</span>
+</span><span class="line">    <span class="nt">&quot;github_mode&quot;</span><span class="p">:</span> <span class="s2">&quot;markdown&quot;</span><span class="p">,</span>
+</span><span class="line">    <span class="nt">&quot;github_inject_header_ids&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+</span><span class="line">    <span class="nt">&quot;enable_autoreload&quot;</span><span class="p">:</span> <span class="kc">false</span>
+</span><span class="line"><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>在以上配置中我们设定渲染样式为 github，渲染结束后用浏览器打开，开启 uml、mathjax、pygments 等支持，最重要的一个配置项是 <code>"github_inject_header_ids": true</code>，<strong>保证 heading 的 id 与 heading 内容一致</strong>，<strong>也就与 MarkdownTOC 生成的一致</strong>，<strong>也就恰好能够锚点定位</strong>。最后我们关闭了 autoreload，否则每当保存 Markdown 文件，后台都会进行一次渲染操作，你就会看到一颗彩虹糖在打转。</p>
+
+<p>使用快捷键 Shift + Command + B，选择 Build with Markdown，一会儿就能在弹出的浏览器框里看到渲染结果了。</p>
+
+<p><a href="http://frank19900731.github.io/img/post/2015-4/1.png" class="img-up" title="Markdown 渲染结果"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-4/1.png" width="90%" title="Markdown 渲染结果" /></a></p>
+
+<h2 id="academicmarkdown">AcademicMarkdown</h2>
+
+<p>在查找资料的过程中发现可以用 Sublime + Markdown 写论文，就跟着学了一把。</p>
+
+<p><a href="https://packagecontrol.io/packages/AcademicMarkdown">AcademicMarkdown</a> 通过在 Markdown 文档中添加一定的信息，具体说是文件头，来帮助我们将 Markdown 文档渲染为符合指定论文格式的文章。以下文件头摘自插件作者给出的 <a href="http://frank19900731.github.io/downloads/file/sample-paper.zip">样例</a>。</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>文件头</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+</pre></td><td class="code"><pre><code class="text"><span class="line">title: A sample paper
+</span><span class="line">author: Donald Duck
+</span><span class="line">date: October 1, 2014
+</span><span class="line">csl: /Users/frank/Documents/My Markdown/sample-paper/chicago.csl
+</span><span class="line">abstract: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>csl 是论文模板格式，更多格式可在 <a href="https://www.zotero.org/styles">Zotero Style Repository</a> 寻找。</p>
+
+<p>Academic 还允许指定 bib 文件，在 Markdown 文档内添加引用，格式是 <code>@citation_key</code>，下面介绍的 Citer 可以帮助我们管理引用。</p>
+
+<h2 id="citer">Citer</h2>
+
+<p>具体说，<a href="https://github.com/mangecoeur/Citer">Citer</a> 帮助我们搜索、插入引用。</p>
+
+<p>安装后需要进行一定配置：</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>Citer 配置</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+<span class="line-number">11</span>
+<span class="line-number">12</span>
+<span class="line-number">13</span>
+<span class="line-number">14</span>
+<span class="line-number">15</span>
+<span class="line-number">16</span>
+</pre></td><td class="code"><pre><code class="json"><span class="line"><span class="p">{</span>
+</span><span class="line">    <span class="err">//REQUIRED:</span>
+</span><span class="line">    <span class="nt">&quot;bibtex_file_path&quot;</span><span class="p">:</span> <span class="s2">&quot;/Users/frank/Documents/Mendeley/reference.bib&quot;</span><span class="p">,</span>
+</span><span class="line">
+</span><span class="line">    <span class="err">//OPTIONAL:</span>
+</span><span class="line">
+</span><span class="line">    <span class="err">//By</span> <span class="err">default</span> <span class="err">Citer</span> <span class="err">Search</span> <span class="err">looks</span> <span class="err">for</span> <span class="err">your</span> <span class="err">keyword</span> <span class="err">in</span> <span class="err">the</span>
+</span><span class="line">    <span class="err">//author,</span> <span class="err">title,</span> <span class="err">year,</span> <span class="err">and</span> <span class="err">Citekey</span> <span class="err">(id)</span> <span class="err">feilds</span>
+</span><span class="line">    <span class="nt">&quot;search_fields&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;author&quot;</span><span class="p">,</span> <span class="s2">&quot;title&quot;</span><span class="p">,</span> <span class="s2">&quot;year&quot;</span><span class="p">,</span> <span class="s2">&quot;id&quot;</span><span class="p">]</span> <span class="p">,</span>
+</span><span class="line">    <span class="err">//Default</span> <span class="err">format</span> <span class="err">is</span> <span class="err">@Citekey</span>
+</span><span class="line">    <span class="nt">&quot;citation_format&quot;</span><span class="p">:</span> <span class="s2">&quot;@%s&quot;</span><span class="p">,</span>
+</span><span class="line">    <span class="err">//list</span> <span class="err">of</span> <span class="err">scopes.</span> <span class="err">Could</span> <span class="err">be</span> <span class="err">top</span> <span class="err">level</span> <span class="nt">&quot;text&quot;</span> <span class="err">or</span> <span class="s2">&quot;source&quot;</span><span class="p">,</span> <span class="err">or</span> <span class="err">limit</span> <span class="err">to</span>
+</span><span class="line">    <span class="err">//</span> <span class="err">e.g</span> <span class="nt">&quot;text.html.markdown&quot;</span>
+</span><span class="line">    <span class="s2">&quot;completions_scopes&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;text&quot;</span><span class="p">],</span>
+</span><span class="line">    <span class="nt">&quot;enable_completions&quot;</span><span class="p">:</span> <span class="kc">true</span>
+</span><span class="line"><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>只要修改 <code>bibtex_file_path</code> 即可，其它都是默认配置项，我的 bib 文件是由 <a href="https://www.mendeley.com/">Mendeley</a> 维护的。值得一提的是，AcademicMarkdown 支持在文件头指定其它 bib 文件，Citer 中的 bib 是全局的。</p>
+
+<p>Shift + Command + P 调出 Command Palette，输入 Citer，Show All 会列举全局 bib 文件中的所有项（如果是刚配置好可能结果为空，请稍作等待或重启 Sublime），Search 则显然用于搜索。</p>
+
+<h2 id="pandoc">Pandoc</h2>
+
+<p>最终由神器 <a href="https://github.com/tbfisher/sublimetext-Pandoc">Pandoc</a> 将 AcademicMarkdown 文档编译成论文。</p>
+
+<p>这个插件只是 Pandoc 的使用配置接口，需要在系统中手动安装 <a href="http://johnmacfarlane.net/pandoc/">Pandoc</a>，OS X 下我使用 <code>brew install pandoc</code> 安装。我们要用到的两个命令是 <code>pandoc</code> 和 <code>pandoc-citeproc</code>。除了 Pandoc，我们还需要配置 Latex 编译环境，我使用的是 <a href="http://tug.org/texlive/">TeX Live</a>。</p>
+
+<p>接下来配置 Pandoc 插件：</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>Pandoc 配置</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+<span class="line-number">11</span>
+<span class="line-number">12</span>
+<span class="line-number">13</span>
+<span class="line-number">14</span>
+<span class="line-number">15</span>
+<span class="line-number">16</span>
+<span class="line-number">17</span>
+<span class="line-number">18</span>
+<span class="line-number">19</span>
+<span class="line-number">20</span>
+<span class="line-number">21</span>
+<span class="line-number">22</span>
+<span class="line-number">23</span>
+<span class="line-number">24</span>
+<span class="line-number">25</span>
+<span class="line-number">26</span>
+<span class="line-number">27</span>
+<span class="line-number">28</span>
+<span class="line-number">29</span>
+<span class="line-number">30</span>
+<span class="line-number">31</span>
+<span class="line-number">32</span>
+<span class="line-number">33</span>
+<span class="line-number">34</span>
+<span class="line-number">35</span>
+<span class="line-number">36</span>
+</pre></td><td class="code"><pre><code class="json"><span class="line"><span class="p">{</span>
+</span><span class="line">  <span class="nt">&quot;default&quot;</span><span class="p">:</span> <span class="p">{</span>
+</span><span class="line">    <span class="err">**</span><span class="nt">&quot;pandoc-path&quot;</span><span class="p">:</span> <span class="s2">&quot;/usr/local/bin/pandoc&quot;</span><span class="err">**</span><span class="p">,</span>
+</span><span class="line">
+</span><span class="line">    <span class="nt">&quot;transformations&quot;</span><span class="p">:</span> <span class="p">{</span>
+</span><span class="line">
+</span><span class="line">    <span class="err">...</span>
+</span><span class="line">
+</span><span class="line">      <span class="nt">&quot;PDF&quot;</span><span class="p">:</span> <span class="p">{</span>
+</span><span class="line">        <span class="nt">&quot;scope&quot;</span><span class="p">:</span> <span class="p">{</span>
+</span><span class="line">          <span class="nt">&quot;text.html&quot;</span><span class="p">:</span> <span class="s2">&quot;html&quot;</span><span class="p">,</span>
+</span><span class="line">          <span class="nt">&quot;text.html.markdown&quot;</span><span class="p">:</span> <span class="s2">&quot;markdown&quot;</span>
+</span><span class="line">        <span class="p">},</span>
+</span><span class="line">        <span class="nt">&quot;pandoc-arguments&quot;</span><span class="p">:</span> <span class="p">[</span>
+</span><span class="line">          <span class="s2">&quot;-t&quot;</span><span class="p">,</span> <span class="s2">&quot;pdf&quot;</span><span class="p">,</span> <span class="err">**</span><span class="s2">&quot;--latex-engine=/usr/texbin/pdflatex&quot;</span><span class="err">**</span><span class="p">,</span>
+</span><span class="line">          <span class="err">**</span><span class="s2">&quot;--filter=/usr/local/bin/pandoc-citeproc&quot;</span><span class="err">**</span><span class="p">,</span>
+</span><span class="line">          <span class="err">**</span><span class="s2">&quot;--bibliography=/Users/frank/Documents/Mendeley/reference.bib&quot;</span><span class="err">**</span>
+</span><span class="line">        <span class="p">]</span>
+</span><span class="line">      <span class="p">},</span>
+</span><span class="line">
+</span><span class="line">      <span class="nt">&quot;Microsoft Word&quot;</span><span class="p">:</span> <span class="p">{</span>
+</span><span class="line">        <span class="nt">&quot;scope&quot;</span><span class="p">:</span> <span class="p">{</span>
+</span><span class="line">          <span class="nt">&quot;text.html&quot;</span><span class="p">:</span> <span class="s2">&quot;html&quot;</span><span class="p">,</span>
+</span><span class="line">          <span class="nt">&quot;text.html.markdown&quot;</span><span class="p">:</span> <span class="s2">&quot;markdown&quot;</span>
+</span><span class="line">        <span class="p">},</span>
+</span><span class="line">        <span class="nt">&quot;pandoc-arguments&quot;</span><span class="p">:</span> <span class="p">[</span>
+</span><span class="line">          <span class="s2">&quot;-t&quot;</span><span class="p">,</span> <span class="s2">&quot;docx&quot;</span><span class="p">,</span>
+</span><span class="line">          <span class="err">**</span><span class="s2">&quot;--filter=/usr/local/bin/pandoc-citeproc&quot;</span><span class="err">**</span><span class="p">,</span>
+</span><span class="line">          <span class="err">**</span><span class="s2">&quot;--bibliography=/Users/frank/Documents/Mendeley/reference.bib&quot;</span><span class="err">**</span>
+</span><span class="line">        <span class="p">]</span>
+</span><span class="line">      <span class="p">}</span>
+</span><span class="line">    <span class="p">},</span>
+</span><span class="line">
+</span><span class="line">    <span class="nt">&quot;pandoc-format-file&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;docx&quot;</span><span class="p">,</span> <span class="s2">&quot;epub&quot;</span><span class="p">,</span> <span class="s2">&quot;pdf&quot;</span><span class="p">,</span> <span class="s2">&quot;odt&quot;</span><span class="p">]</span>
+</span><span class="line">  <span class="p">}</span>
+</span><span class="line"><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>修改内容以 ** 标出，主要是指定相关命令、文件的路径作为 pandoc 命令的参数。</p>
+
+<p>Shift + Command + P 调出 Command Palette，输入 Pandoc、选择 PDF 作为输出格式即可，这是一个<a href="http://frank19900731.github.io/downloads/file/sample-paper.pdf">示例</a>。</p>
+
+<h2 id="section">参考文档</h2>
+
+<ul>
+  <li><a href="http://blog.cigrainger.com/2014/07/pandoc-markdown.html">Writing academic papers in Markdown using Pandoc</a></li>
+  <li><a href="http://nikolasander.com/writing-in-markdown/">Writing academic papers in Markdown using Sublime Text and Pandoc</a></li>
+  <li><a href="https://blog.mariusschulz.com/2014/12/16/how-to-set-up-sublime-text-for-a-vastly-better-markdown-writing-experience">How to Set Up Sublime Text for a Vastly Better Markdown Writing Experience</a></li>
+</ul>
+
+<p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2015/04/13/zai-sublime-zhong-pei-zhi-markdown-huan-jing/">http://frank19900731.github.io/blog/2015/04/13/zai-sublime-zhong-pei-zhi-markdown-huan-jing/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[每周一软之 Paste]]></title>
@@ -2830,316 +3130,6 @@
 <p>既然漂亮，就别要求那么高了。</p>
 
 <p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2015/01/04/mei-zhou-ruan-zhi-sapiens/">http://frank19900731.github.io/blog/2015/01/04/mei-zhou-ruan-zhi-sapiens/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Gollum 开机启动配置]]></title>
-    <link href="http://frank19900731.github.io/blog/2015/01/02/gollum-kai-ji-qi-dong-pei-zhi/"/>
-    <updated>2015-01-02T09:31:32+08:00</updated>
-    <id>http://frank19900731.github.io/blog/2015/01/02/gollum-kai-ji-qi-dong-pei-zhi</id>
-    <content type="html"><![CDATA[<p><strong>目录</strong></p>
-
-<ul id="markdown-toc">
-  <li><a href="#gollum-">Gollum 介绍</a></li>
-  <li><a href="#section">安装</a></li>
-  <li><a href="#section-1">配置</a>    <ul>
-      <li><a href="#section-2">编码错误</a></li>
-      <li><a href="#mathjax">配置本地 MathJax</a></li>
-      <li><a href="#section-3">微调界面</a></li>
-      <li><a href="#js-">嵌入 JS 代码</a></li>
-    </ul>
-  </li>
-  <li><a href="#section-4">开机启动</a></li>
-  <li><a href="#section-5">总结</a></li>
-</ul>
-
-<!-- excerpt start -->
-
-<h2 id="gollum-">Gollum 介绍</h2>
-
-<p><a href="https://github.com/gollum/gollum">Gollum</a> 是一个轻量级的 Wiki 框架，可以管理以 Git Repository 形式存在的文件夹。相比于 Mediawiki，文档迁移性更灵活，界面也清新美观。支持多种文档格式，包括 Markdown、MediaWiki、Org-mode、Plain Text、reStructuredText、RDoc、Textile 等。</p>
-
-<p><a href="http://frank19900731.github.io/img/post/2015-1/1.png" class="img-up" title="Gollum 界面"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-1/1.png" width="90%" title="Gollum 界面" /></a></p>
-
-<p>Gollum 自带公式输入支持，可自定义 MathJax 的配置；<strong>支持图片拖拽插入</strong>（并自动上传），这是让我觉得很方便的一点。美中不足的是，Gollum 不支持中文命名的文件，所以</p>
-
-<ul>
-  <li>如果 Git Repository 中包含中文命名文档，则无法正确显示；</li>
-  <li>对于中文名称链接，Gollum 会将该名称<strong>转为拼音形式作为文件名</strong>，相应链接、文档标题也都是拼音；</li>
-  <li>如果上传图片是中文命名的，也无法正确显示。</li>
-</ul>
-
-<h2 id="section">安装</h2>
-
-<p>按照 <a href="https://github.com/gollum/gollum#installation">说明</a> 安装即可。</p>
-
-<p>Gollum 安装过程可能会比较慢，或者报 TIME_OUT 错误，可切换至 <a href="http://ruby.taobao.org/">淘宝镜像</a>。</p>
-
-<!-- excerpt end -->
-
-<h2 id="section-1">配置</h2>
-
-<h3 id="section-2">编码错误</h3>
-
-<p>编辑文档过程中，特别是使用非 Gollum 网页编辑器编辑文档<strong>并提交</strong>，可能会出现 <code>incompatible character encodings: UTF-8 and ASCII-8BIT</code> 编码错误，需要 <a href="https://github.com/gollum/gollum/issues/843">修改 gitlab-grit 中的 index.rb 代码的第 176 行</a> 如下</p>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>Gollum Encoding Fix</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-</pre></td><td class="code"><pre><code class="ruby"><span class="line"><span class="n">tree_contents</span><span class="o">[</span><span class="n">k</span><span class="o">]</span> <span class="o">=</span> <span class="s2">&quot;%s %s</span><span class="se">\0</span><span class="s2">%s&quot;</span> <span class="o">%</span> <span class="o">[</span><span class="n">tmode</span><span class="p">,</span> <span class="n">obj</span><span class="o">.</span><span class="n">name</span><span class="o">.</span><span class="n">force_encoding</span><span class="p">(</span><span class="s1">&#39;ASCII-8BIT&#39;</span><span class="p">),</span> <span class="n">sha</span><span class="o">]</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<p>也就是加入了强制编码。</p>
-
-<p>gitlab-grit 的路径，如果使用 rvm 的 ruby 安装，是 </p>
-
-<p><code>/Users/frank/.rvm/rubies/ruby-X.X.X/lib/ruby/gems/X.X.X/gems/gitlab-grit/lib/grit/index.rb</code></p>
-
-<p>如果使用系统 ruby 安装，则是</p>
-
-<p><code>/Library/Ruby/Gems/X.X.X/gems/gitlab-grit/lib/grit/index.rb</code> 。</p>
-
-<h3 id="mathjax">配置本地 MathJax</h3>
-
-<p>因为可能离线查看文档，所以最好将 MathJax 的请求引到本地，下载 <a href="https://github.com/mathjax/MathJax">MathJax</a> 到本地服务器即可，然后修改 Gollum 模板定义。</p>
-
-<p>同上述，文件路径是</p>
-
-<p><code>/Users/frank/.rvm/rubies/ruby-X.X.X/lib/ruby/gems/X.X.X/gems/gollum/lib/gollum/templates/layout.mustache</code></p>
-
-<p>或</p>
-
-<p><code>/Library/Ruby/Gems/X.X.X/gems/gollum/lib/gollum/templates/layout.mustache</code> 。</p>
-
-<p>第 54 行修改为</p>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>MathJax 请求修改</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-</pre></td><td class="code"><pre><code class="javascript"><span class="line"><span class="nx">j</span><span class="p">.</span><span class="nx">src</span> <span class="o">=</span> <span class="s1">&#39;//localhost/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML&#39;</span><span class="p">;</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<h3 id="section-3">微调界面</h3>
-
-<p>Gollum 的界面定制起来很方便，修改 gollum.css 或者 -&#45;css 参数指定都可以。</p>
-
-<p>gollum.css 的路径是</p>
-
-<p><code>/Users/frank/.rvm/rubies/ruby-X.X.X/lib/ruby/gems/X.X.X/gems/gollum/lib/gollum/public/gollum/css/gollum.css</code></p>
-
-<p>或</p>
-
-<p><code>/Library/Ruby/Gems/X.X.X/gems/gollum/lib/gollum/public/gollum/css/gollum.css</code> 。</p>
-
-<p>标题是 h1 、左浮动，菜单是 ul、右浮动。当标题较长时，二者配合搭配不好看，修改为</p>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>标题样式修改</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-<span class="line-number">5</span>
-<span class="line-number">6</span>
-<span class="line-number">7</span>
-<span class="line-number">8</span>
-</pre></td><td class="code"><pre><code class="css"><span class="line"><span class="nf">#head</span> <span class="nt">h1</span> <span class="p">{</span>
-</span><span class="line">  <span class="k">font-size</span><span class="o">:</span> <span class="m">1.5em</span><span class="p">;</span>
-</span><span class="line">  <span class="c">/* float: left; */</span>
-</span><span class="line">  <span class="k">line-height</span><span class="o">:</span> <span class="k">normal</span><span class="p">;</span>
-</span><span class="line">  <span class="c">/* margin: 0; */</span>
-</span><span class="line">  <span class="k">margin-bottom</span><span class="o">:</span> <span class="m">20px</span><span class="p">;</span>
-</span><span class="line">  <span class="k">padding</span><span class="o">:</span> <span class="m">0</span> <span class="m">0</span> <span class="m">0</span> <span class="m">0.667em</span><span class="p">;</span>
-</span><span class="line"><span class="p">}</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<p>现在我们改用 custom.css 做两处定制</p>
-
-<ul>
-  <li>二级列表与一级列表项目上下边缘的长度太大，因为默认样式只定义了 <code>ul</code>，没有考虑二级列表的情况，我们希望<strong>多级列表的行是等间距的</strong>；</li>
-  <li>表格内容（<code>tbody</code>）没有扩展到整个表格（<code>table</code>）区域，视觉效果是表格偏向页面左侧，我们希望<strong>表格居中、内容充满</strong>。</li>
-</ul>
-
-<p>在 Git Repository 的根目录下创建 custom.css，编辑内容为</p>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>二级列表与表格居中定制</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-<span class="line-number">5</span>
-<span class="line-number">6</span>
-<span class="line-number">7</span>
-<span class="line-number">8</span>
-<span class="line-number">9</span>
-<span class="line-number">10</span>
-<span class="line-number">11</span>
-<span class="line-number">12</span>
-<span class="line-number">13</span>
-<span class="line-number">14</span>
-<span class="line-number">15</span>
-</pre></td><td class="code"><pre><code class="css"><span class="line"><span class="nt">li</span> <span class="o">&gt;</span> <span class="nt">ul</span> <span class="p">{</span>
-</span><span class="line">  <span class="k">margin</span><span class="o">:</span> <span class="m">0</span> <span class="cp">!important</span><span class="p">;</span>
-</span><span class="line"><span class="p">}</span>
-</span><span class="line">
-</span><span class="line"><span class="nc">.center90</span> <span class="p">{</span>
-</span><span class="line">	<span class="k">margin</span><span class="o">:</span> <span class="m">0</span> <span class="k">auto</span> <span class="cp">!important</span><span class="p">;</span>
-</span><span class="line">	<span class="k">width</span><span class="o">:</span> <span class="m">90</span><span class="o">%</span><span class="p">;</span>
-</span><span class="line">	<span class="k">display</span><span class="o">:</span> <span class="n">table</span> <span class="cp">!important</span><span class="p">;</span>
-</span><span class="line"><span class="p">}</span>
-</span><span class="line">
-</span><span class="line"><span class="nc">.center80</span> <span class="p">{</span>
-</span><span class="line">	<span class="k">margin</span><span class="o">:</span> <span class="m">0</span> <span class="k">auto</span> <span class="cp">!important</span><span class="p">;</span>
-</span><span class="line">	<span class="k">width</span><span class="o">:</span> <span class="m">80</span><span class="o">%</span><span class="p">;</span>
-</span><span class="line">	<span class="k">display</span><span class="o">:</span> <span class="n">table</span> <span class="cp">!important</span><span class="p">;</span>
-</span><span class="line"><span class="p">}</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<p><code>center90</code> 表示表格宽度占父元素 90% 且居中显示，表格内容充满此区域。</p>
-
-<p>保存 custom.css，此时还看不到正确显示，需要 <code>git commit</code> 后查看。</p>
-
-<p>关于表格还要多说一句，如果想实现单元格的<strong>多列/行合并</strong>（columnspan/rowspan），Markdown 是做不到的，可以写 Html 代码，或者改用 MediaWiki 格式的文档。推荐一个 <a href="http://www.tablesgenerator.com/">在线表格生成器</a>（貌似在墙外），支持 Latex、HTML、Plain Text、Markdown、MediaWiki 格式的表格生成，也可参考 <a href="http://pub.lcair.com/index.php?title=MediaWiki%E8%AF%AD%E6%B3%95">MediaWiki 的语法</a>。</p>
-
-<p>那么问题来了，如何将表格的类定义为 <code>center90</code> 、<code>center80</code> ？</p>
-
-<p>MediaWiki 支持直接设置，而 Gollum 使用的 Markdown 编译器则不支持类的设定（本博客使用的 kramdown 是可以的）。一个简单的想法是使用内嵌 JS 代码进行设置，然而由于 Gollum 使用了 <a href="https://github.com/gollum/gollum/blob/master/docs/sanitization.md">Sanitization Rules</a>（相关代码在 <a href="https://github.com/gollum/gollum-lib">gollum-lib</a> 中），所以还是需要一番设置的，见下节介绍。</p>
-
-<h3 id="js-">嵌入 JS 代码</h3>
-
-<p>还是在根目录下，创建 config.rb，编辑内容为</p>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>让 Gollum 支持 script 标签和 src 属性</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-</pre></td><td class="code"><pre><code class="ruby"><span class="line"><span class="n">sanitizer</span> <span class="o">=</span> <span class="ss">Gollum</span><span class="p">:</span><span class="ss">:Sanitization</span><span class="o">.</span><span class="n">new</span>
-</span><span class="line"><span class="n">sanitizer</span><span class="o">.</span><span class="n">elements</span><span class="o">.</span><span class="n">concat</span> <span class="o">[</span><span class="s1">&#39;script&#39;</span><span class="o">]</span> <span class="c1"># Tags</span>
-</span><span class="line"><span class="n">sanitizer</span><span class="o">.</span><span class="n">attributes</span><span class="o">[</span><span class="ss">:all</span><span class="o">].</span><span class="n">push</span> <span class="s1">&#39;src&#39;</span> <span class="c1"># Attributes</span>
-</span><span class="line"><span class="ss">Precious</span><span class="p">:</span><span class="ss">:App</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="ss">:wiki_options</span><span class="p">,</span> <span class="p">{</span><span class="ss">:sanitization</span> <span class="o">=&gt;</span> <span class="n">sanitizer</span><span class="p">})</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<p>上段代码的作用是将 script 标签加入白名单，并支持 script 的 src 属性。为什么需要 src 呢，直接在 script 标签里写 JS 代码不行么？</p>
-
-<p>貌似这么直接整确实不行，script 标签里的内容在解析后会被套上一层 <code>CDATA</code> 标记，导致 JS 代码无法执行，不过我没有具体研究 CDATA 是什么时候被加进来的。<strong>改用 src 引入 JS 文件的方式是验证通过的</strong>，这样也能让 MD 文档显得比较干净。</p>
-
-<p>重启 Gollum，用 -&#45;config 指定 config.rb 的路径即可。</p>
-
-<h2 id="section-4">开机启动</h2>
-
-<p>通常步骤就是把在命令行启动的命令写成脚本，<a href="http://www.tanhao.me/talk/1287.html">按照一定方式加入开机启动</a> 就可以了。然而实际当中被<strong>坑惨了</strong>，主要因为我除了 Octopress 就没怎么用过 ruby。问题有二</p>
-
-<ul>
-  <li>Mac 自带的 ruby 是 2.0.0 的，也就是 <code>/usr/bin/ruby</code> 指定的那个，rvm 的版本与之并存，可以通过 <code>rvm system</code> 或者 <code>rvm use X.X.X</code> 来切换，按照我的 bash 环境变量配置，Gollum 被安装到 rvm 下的 ruby 中；</li>
-  <li>launchctl 的运行环境与 bash 不同，即便 <code>source ~/.bash_profile</code>，或者 <code>rvm use X.X.X</code>，<strong>环境变量里仍然只有系统自带的 ruby</strong>，想用 rvm 的 ruby 就得自己 export PATH。</li>
-</ul>
-
-<p>最后，成功配置开机启动的流程如下。</p>
-
-<ul>
-  <li><code>rvm system</code>，将 Gollum 安装在系统自带 ruby 里；</li>
-  <li>编写 plist 文件</li>
-</ul>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>开机启动 plist 文件</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-<span class="line-number">5</span>
-<span class="line-number">6</span>
-<span class="line-number">7</span>
-<span class="line-number">8</span>
-<span class="line-number">9</span>
-<span class="line-number">10</span>
-<span class="line-number">11</span>
-<span class="line-number">12</span>
-<span class="line-number">13</span>
-<span class="line-number">14</span>
-</pre></td><td class="code"><pre><code class="xml"><span class="line"><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span>
-</span><span class="line"><span class="cp">&lt;!DOCTYPE plist PUBLIC &quot;-//Apple//DTD PLIST 1.0//EN&quot; &quot;http://www.apple.com/DTDs/PropertyList-1.0.dtd&quot;&gt;</span>
-</span><span class="line"><span class="nt">&lt;plist</span> <span class="na">version=</span><span class="s">&quot;1.0&quot;</span><span class="nt">&gt;</span>
-</span><span class="line"><span class="nt">&lt;dict&gt;</span>
-</span><span class="line">    <span class="nt">&lt;key&gt;</span>Label<span class="nt">&lt;/key&gt;</span>
-</span><span class="line">    <span class="nt">&lt;string&gt;</span>com.frank.loginscript<span class="nt">&lt;/string&gt;</span>
-</span><span class="line">    <span class="nt">&lt;key&gt;</span>ProgramArguments<span class="nt">&lt;/key&gt;</span>
-</span><span class="line">    <span class="nt">&lt;array&gt;</span>
-</span><span class="line">        <span class="nt">&lt;string&gt;</span>/Users/frank/Documents/Startup/startup.sh<span class="nt">&lt;/string&gt;</span>
-</span><span class="line">    <span class="nt">&lt;/array&gt;</span>
-</span><span class="line">    <span class="nt">&lt;key&gt;</span>RunAtLoad<span class="nt">&lt;/key&gt;</span>
-</span><span class="line">    <span class="nt">&lt;true/&gt;</span>
-</span><span class="line"><span class="nt">&lt;/dict&gt;</span>
-</span><span class="line"><span class="nt">&lt;/plist&gt;</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<ul>
-  <li>创建 /usr/bin/gollum，根据 ruby 的配置加载 Gollum。</li>
-</ul>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>/usr/bin/gollum</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-<span class="line-number">5</span>
-<span class="line-number">6</span>
-<span class="line-number">7</span>
-<span class="line-number">8</span>
-<span class="line-number">9</span>
-<span class="line-number">10</span>
-<span class="line-number">11</span>
-<span class="line-number">12</span>
-<span class="line-number">13</span>
-<span class="line-number">14</span>
-<span class="line-number">15</span>
-<span class="line-number">16</span>
-<span class="line-number">17</span>
-<span class="line-number">18</span>
-<span class="line-number">19</span>
-<span class="line-number">20</span>
-<span class="line-number">21</span>
-<span class="line-number">22</span>
-<span class="line-number">23</span>
-</pre></td><td class="code"><pre><code class="bash"><span class="line"><span class="c">#!/usr/bin/env ruby_executable_hooks</span>
-</span><span class="line"><span class="c">#</span>
-</span><span class="line"><span class="c"># This file was generated by RubyGems.</span>
-</span><span class="line"><span class="c">#</span>
-</span><span class="line"><span class="c"># The application &#39;gollum&#39; is installed as part of a gem, and</span>
-</span><span class="line"><span class="c"># this file is here to facilitate running it.</span>
-</span><span class="line"><span class="c">#</span>
-</span><span class="line">
-</span><span class="line">require <span class="s1">&#39;rubygems&#39;</span>
-</span><span class="line">
-</span><span class="line"><span class="nv">version</span> <span class="o">=</span> <span class="s2">&quot;&gt;= 0&quot;</span>
-</span><span class="line">
-</span><span class="line"><span class="k">if </span>ARGV.first
-</span><span class="line">  <span class="nv">str</span> <span class="o">=</span> ARGV.first
-</span><span class="line">  <span class="nv">str</span> <span class="o">=</span> str.dup.force_encoding<span class="o">(</span><span class="s2">&quot;BINARY&quot;</span><span class="o">)</span> <span class="k">if </span>str.respond_to? :force_encoding
-</span><span class="line">  <span class="k">if </span><span class="nv">str</span> <span class="o">=</span>~ /<span class="se">\A</span>_<span class="o">(</span>.*<span class="o">)</span>_<span class="se">\z</span>/ and Gem::Version.correct?<span class="o">(</span><span class="nv">$1</span><span class="o">)</span> <span class="k">then</span>
-</span><span class="line"><span class="k">    </span><span class="nv">version</span> <span class="o">=</span> <span class="nv">$1</span>
-</span><span class="line">    ARGV.shift
-</span><span class="line">  end
-</span><span class="line">end
-</span><span class="line">
-</span><span class="line">gem <span class="s1">&#39;gollum&#39;</span>, version
-</span><span class="line">load Gem.bin_path<span class="o">(</span><span class="s1">&#39;gollum&#39;</span>, <span class="s1">&#39;gollum&#39;</span>, version<span class="o">)</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<ul>
-  <li>编写启动脚本，其中 <code>export PATH</code> 是为了指定 <code>ruby_executable_hooks</code> 的路径。查了一下，系统自带的 ruby 没这个可执行文件，虽然这里用的是 rvm ruby 里的，但没问题……如果不加，则会返回错误代码 127，找不到命令。</li>
-</ul>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>启动脚本</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-</pre></td><td class="code"><pre><code class="bash"><span class="line"><span class="nb">export </span><span class="nv">PATH</span><span class="o">=</span><span class="nv">$PATH</span>:/Users/frank/.rvm/rubies/ruby-X.X.X/lib/ruby/gems/X.X.X/bin
-</span><span class="line">/usr/bin/gollum --allow-upload dir --mathjax --show-all --config /Users/frank/gitlab/wiki-of-taijiru/config.rb --gollum-path /Users/frank/gitlab/wiki-of-taijiru
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<p><code>/usr/bin/gollum</code> 是为了方便以后全局使用而添加的，能根据我对 ruby 的切换调用相应的 Gollum。其实大可以把启动脚本直接写成</p>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>启动脚本（2）</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-</pre></td><td class="code"><pre><code class="bash"><span class="line">/Library/Ruby/Gems/X.X.X/gems/gollum/bin/gollum --allow-upload dir --mathjax --show-all --config /Users/frank/gitlab/wiki-of-taijiru/config.rb --gollum-path /Users/frank/gitlab/wiki-of-taijiru
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<h2 id="section-5">总结</h2>
-
-<p>本以为很简单的启动配置花了我好长时间，主要是对 ruby 开发环境配置的不熟悉和对 Launch Daemon 的环境变量不了解造成的。这让我想起大一时第一次配置 Apache 的情境，无论怎么修改 index.html，浏览器显示都没有变化。最后终于发现，我修改的是自己通过源码安装的 apache，而每次开关的是系统自带 apache……</p>
-
-<p>不过也正是在查这种傻逼错误的过程里，自己才会去搜索大量资料反复调试，对相关工具的了解也更深。<strong>菜逼的提升，大抵如此吧 ^-^</strong>。</p>
-
-<p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2015/01/02/gollum-kai-ji-qi-dong-pei-zhi/">http://frank19900731.github.io/blog/2015/01/02/gollum-kai-ji-qi-dong-pei-zhi/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
 ]]></content>
   </entry>
   

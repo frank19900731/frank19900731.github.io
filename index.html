@@ -163,7 +163,7 @@
     <button>Open Menu</button>
     <ul class="dl-menu">
         <li><a href="/">Home</a></li>
-        <li><a href="/archives/">Archives (51)</a></li>
+        <li><a href="/archives/">Archives (52)</a></li>
         <li>
             <a href="#">Categories (7)</a>
             <ul class="dl-submenu">
@@ -171,10 +171,10 @@
                 <li><a href="/blog/categories">All Categories (7)</a>
                 <li style="color: #CCCCCC; line-height: 150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Top 5</li>
 
-                <li><a href='/category/Mac 使用'>Mac 使用 (21)</a></li><li><a href='/category/面试求职'>面试求职 (13)</a></li><li><a href='/category/工作效率'>工作效率 (8)</a></li><li><a href='/category/网页开发'>网页开发 (4)</a></li><li><a href='/category/编程学习'>编程学习 (2)</a></li>
+                <li><a href='/category/Mac 使用'>Mac 使用 (21)</a></li><li><a href='/category/面试求职'>面试求职 (13)</a></li><li><a href='/category/工作效率'>工作效率 (9)</a></li><li><a href='/category/网页开发'>网页开发 (4)</a></li><li><a href='/category/编程学习'>编程学习 (2)</a></li>
             </ul>
         </li>
-        <li><a href="/blog/tags">All Tags (49)</a>
+        <li><a href="/blog/tags">All Tags (51)</a>
         <li>
             <a href="#">Features</a>
             <ul class="dl-submenu">
@@ -244,6 +244,10 @@
 <ul>
 	
     <li>
+    	<a href="/blog/2015/04/13/zai-sublime-zhong-pei-zhi-markdown-huan-jing/">在 Sublime 中配置 Markdown 环境</a>
+    </li>
+    
+    <li>
     	<a href="/blog/2015/04/11/mei-zhou-yi-ruan-zhi-paste/">每周一软之 Paste</a>
     </li>
     
@@ -257,10 +261,6 @@
     
     <li>
     	<a href="/blog/2015/03/23/mei-zhou-yi-ruan-zhi-curio/">每周一软之 Curio</a>
-    </li>
-    
-    <li>
-    	<a href="/blog/2015/03/15/mei-zhou-yi-ruan-zhi-soulver/">每周一软之 Soulver</a>
     </li>
     
 </ul>
@@ -304,6 +304,87 @@
 </article>
 
 
+
+
+<article style="background-color: rgba(255, 255, 255, 0.3); padding: 25px 25px 25px 25px; border-radius: 20px;">
+	<!-- article.html -->
+<!-- 文章展示，区分在索引页和文章页 -->
+<header>
+  <div class="article-tags">
+      <!-- post/categories.html -->
+<!-- 文章类别展示 -->
+
+
+<span class="categories" style="font-size: 16px;">
+  Categories:
+  
+    <a class='category' href='/category/工作效率/'>工作效率</a>
+  
+
+</span>
+
+
+  </div>
+  
+    <h1><a href="/blog/2015/04/13/zai-sublime-zhong-pei-zhi-markdown-huan-jing/">
+      在 Sublime 中配置 Markdown 环境
+    </a></h1>
+  
+  <!-- 给出发布时间 -->
+  <div class="article-date">
+      <!-- post/date.html -->
+<!-- 文章日期显示 -->
+
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2015-04-13T12:11:53+08:00" pubdate data-updated="true">Apr 13<span>th</span>, 2015</time></div>
+</header>
+<hr />
+
+<!-- 如果在索引中 -->
+
+  <section class="article-index">
+
+<p>最近在编写项目 Readme.md 文件的时候，发现 Sublime 默认对 Markdown 几乎没有支持，需要通过安装、配置插件（算上 Package Control 共 10 个）来完成。在此记录下完整过程（其实就是整合了网上资料，自己配置来用而已），非 OS X 系统快捷键有不同。</p>
+
+<h2 id="package-control">Package Control</h2>
+
+<p>通过包管理器 <a href="https://packagecontrol.io/">Package Control</a> 安装插件的好处就是便于自动更新。</p>
+
+<p>在 Sublime 中使用 Ctrl + ` 快捷键调出控制台，输入如下代码、回车，等待安装完成。</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>Package Contorl 安装</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class="python"><span class="line"><span class="kn">import</span> <span class="nn">urllib.request</span><span class="o">,</span><span class="nn">os</span><span class="o">,</span><span class="nn">hashlib</span><span class="p">;</span> <span class="n">h</span> <span class="o">=</span> <span class="s">&#39;eb2297e1a458f27d836c04bb0cbaf282&#39;</span> <span class="o">+</span> <span class="s">&#39;d0e7a3098092775ccb37ca9d6b2e4b7d&#39;</span><span class="p">;</span> <span class="n">pf</span> <span class="o">=</span> <span class="s">&#39;Package Control.sublime-package&#39;</span><span class="p">;</span> <span class="n">ipp</span> <span class="o">=</span> <span class="n">sublime</span><span class="o">.</span><span class="n">installed_packages_path</span><span class="p">();</span> <span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">install_opener</span><span class="p">(</span> <span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">build_opener</span><span class="p">(</span> <span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">ProxyHandler</span><span class="p">())</span> <span class="p">);</span> <span class="n">by</span> <span class="o">=</span> <span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span> <span class="s">&#39;http://packagecontrol.io/&#39;</span> <span class="o">+</span> <span class="n">pf</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">&#39; &#39;</span><span class="p">,</span> <span class="s">&#39;%20&#39;</span><span class="p">))</span><span class="o">.</span><span class="n">read</span><span class="p">();</span> <span class="n">dh</span> <span class="o">=</span> <span class="n">hashlib</span><span class="o">.</span><span class="n">sha256</span><span class="p">(</span><span class="n">by</span><span class="p">)</span><span class="o">.</span><span class="n">hexdigest</span><span class="p">();</span> <span class="k">print</span><span class="p">(</span><span class="s">&#39;Error validating download (got </span><span class="si">%s</span><span class="s"> instead of </span><span class="si">%s</span><span class="s">), please try manual install&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">dh</span><span class="p">,</span> <span class="n">h</span><span class="p">))</span> <span class="k">if</span> <span class="n">dh</span> <span class="o">!=</span> <span class="n">h</span> <span class="k">else</span> <span class="nb">open</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span> <span class="n">ipp</span><span class="p">,</span> <span class="n">pf</span><span class="p">),</span> <span class="s">&#39;wb&#39;</span> <span class="p">)</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">by</span><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+</section>
+  <a href="/blog/2015/04/13/zai-sublime-zhong-pei-zhi-markdown-huan-jing/" style="background: #da3e10; color: #ffffff; border-radius: 5px; border: 4px solid #da3e10;">继续阅读</a>&nbsp;&nbsp;&nbsp;&nbsp;
+<!-- post/tags.html -->
+<!-- 文章标签展示 -->
+
+
+<span class="tags">
+  <font color="#777">Tags: </font>
+  
+    <a class='tag' href='/tag/Markdown/'>Markdown</a>, <a class='tag' href='/tag/Sublime/'>Sublime</a>
+  
+</span>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<span class="ds-thread-count" data-thread-key="/blog/2015/04/13/zai-sublime-zhong-pei-zhi-markdown-huan-jing/" style="color: #777;"></span>
+
+
+
+
+</article>
 
 
 <article style="background-color: rgba(255, 255, 255, 0.3); padding: 25px 25px 25px 25px; border-radius: 20px;">
@@ -672,83 +753,6 @@
 </span>
 &nbsp;&nbsp;&nbsp;&nbsp;
 <span class="ds-thread-count" data-thread-key="/blog/2015/03/15/mei-zhou-yi-ruan-zhi-soulver/" style="color: #777;"></span>
-
-
-
-
-</article>
-
-
-<article style="background-color: rgba(255, 255, 255, 0.3); padding: 25px 25px 25px 25px; border-radius: 20px;">
-	<!-- article.html -->
-<!-- 文章展示，区分在索引页和文章页 -->
-<header>
-  <div class="article-tags">
-      <!-- post/categories.html -->
-<!-- 文章类别展示 -->
-
-
-<span class="categories" style="font-size: 16px;">
-  Categories:
-  
-    <a class='category' href='/category/Mac 使用/'>Mac 使用</a>
-  
-
-</span>
-
-
-  </div>
-  
-    <h1><a href="/blog/2015/03/08/mei-zhou-yi-ruan-zhi-focusmask/">
-      每周一软之 FocusMask
-    </a></h1>
-  
-  <!-- 给出发布时间 -->
-  <div class="article-date">
-      <!-- post/date.html -->
-<!-- 文章日期显示 -->
-
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2015-03-08T20:39:54+08:00" pubdate data-updated="true">Mar 8<span>th</span>, 2015</time></div>
-</header>
-<hr />
-
-<!-- 如果在索引中 -->
-
-  <section class="article-index">
-
-<h2 id="section">功能介绍</h2>
-
-<p><a href="http://tentrip.net/focusmask/">FocusMask</a> 是一款效率软件，通过在屏幕上隔离出某一区域（其它区域被遮罩），使用户专注于某项工作，比如隔离出编辑环境以专注写作。</p>
-
-<p>FocusMask 虽然只是一招鲜，但个人觉得它提供的<strong>遮罩功能</strong>在日常工作学习中还是很实用的。类似于截图，FocusMask 的遮罩区域可以是框定的，也可以是当前窗口或视图，均可由快捷键触发。</p>
-
-<p><a href="/img/post/2015-3/10.png" class="img-up" title="FocusMask 设置"><img class="imgcenter-no-shadow" src="/img/post/2015-3/10.png" width="80%" title="FocusMask 设置" /></a></p>
-
-</section>
-  <a href="/blog/2015/03/08/mei-zhou-yi-ruan-zhi-focusmask/" style="background: #da3e10; color: #ffffff; border-radius: 5px; border: 4px solid #da3e10;">继续阅读</a>&nbsp;&nbsp;&nbsp;&nbsp;
-<!-- post/tags.html -->
-<!-- 文章标签展示 -->
-
-
-<span class="tags">
-  <font color="#777">Tags: </font>
-  
-    <a class='tag' href='/tag/mac软件/'>mac软件</a>, <a class='tag' href='/tag/每周一软/'>每周一软</a>
-  
-</span>
-&nbsp;&nbsp;&nbsp;&nbsp;
-<span class="ds-thread-count" data-thread-key="/blog/2015/03/08/mei-zhou-yi-ruan-zhi-focusmask/" style="color: #777;"></span>
 
 
 

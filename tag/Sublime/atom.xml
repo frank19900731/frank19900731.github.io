@@ -1,0 +1,303 @@
+
+<item>
+    <title>在 Sublime 中配置 Markdown 环境</title>
+    <link>http://realjenius.com/blog/2015/04/13/zai-sublime-zhong-pei-zhi-markdown-huan-jing/</link>
+    <author>R.J. Lorimer</author>
+    <pubDate>2015-04-13T12:11:53+08:00</pubDate>
+    <guid>http://realjenius.com/blog/2015/04/13/zai-sublime-zhong-pei-zhi-markdown-huan-jing/</guid>
+    <description><![CDATA[
+     <p><strong>目录</strong></p>
+
+<ul id="markdown-toc">
+  <li><a href="#package-control">Package Control</a></li>
+  <li><a href="#monokai-extended--markdown-extended">Monokai Extended &amp; Markdown Extended</a></li>
+  <li><a href="#markdownediting">MarkdownEditing</a></li>
+  <li><a href="#markdowntoc">MarkdownTOC</a></li>
+  <li><a href="#table-editor">Table Editor</a></li>
+  <li><a href="#markdown-preview">Markdown Preview</a></li>
+  <li><a href="#academicmarkdown">AcademicMarkdown</a></li>
+  <li><a href="#citer">Citer</a></li>
+  <li><a href="#pandoc">Pandoc</a></li>
+  <li><a href="#section">参考文档</a></li>
+</ul>
+
+<!-- excerpt start -->
+
+<p>最近在编写项目 Readme.md 文件的时候，发现 Sublime 默认对 Markdown 几乎没有支持，需要通过安装、配置插件（算上 Package Control 共 10 个）来完成。在此记录下完整过程（其实就是整合了网上资料，自己配置来用而已），非 OS X 系统快捷键有不同。</p>
+
+<h2 id="package-control">Package Control</h2>
+
+<p>通过包管理器 <a href="https://packagecontrol.io/">Package Control</a> 安装插件的好处就是便于自动更新。</p>
+
+<p>在 Sublime 中使用 Ctrl + ` 快捷键调出控制台，输入如下代码、回车，等待安装完成。</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>Package Contorl 安装</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class="python"><span class="line"><span class="kn">import</span> <span class="nn">urllib.request</span><span class="o">,</span><span class="nn">os</span><span class="o">,</span><span class="nn">hashlib</span><span class="p">;</span> <span class="n">h</span> <span class="o">=</span> <span class="s">&#39;eb2297e1a458f27d836c04bb0cbaf282&#39;</span> <span class="o">+</span> <span class="s">&#39;d0e7a3098092775ccb37ca9d6b2e4b7d&#39;</span><span class="p">;</span> <span class="n">pf</span> <span class="o">=</span> <span class="s">&#39;Package Control.sublime-package&#39;</span><span class="p">;</span> <span class="n">ipp</span> <span class="o">=</span> <span class="n">sublime</span><span class="o">.</span><span class="n">installed_packages_path</span><span class="p">();</span> <span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">install_opener</span><span class="p">(</span> <span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">build_opener</span><span class="p">(</span> <span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">ProxyHandler</span><span class="p">())</span> <span class="p">);</span> <span class="n">by</span> <span class="o">=</span> <span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span> <span class="s">&#39;http://packagecontrol.io/&#39;</span> <span class="o">+</span> <span class="n">pf</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">&#39; &#39;</span><span class="p">,</span> <span class="s">&#39;%20&#39;</span><span class="p">))</span><span class="o">.</span><span class="n">read</span><span class="p">();</span> <span class="n">dh</span> <span class="o">=</span> <span class="n">hashlib</span><span class="o">.</span><span class="n">sha256</span><span class="p">(</span><span class="n">by</span><span class="p">)</span><span class="o">.</span><span class="n">hexdigest</span><span class="p">();</span> <span class="k">print</span><span class="p">(</span><span class="s">&#39;Error validating download (got </span><span class="si">%s</span><span class="s"> instead of </span><span class="si">%s</span><span class="s">), please try manual install&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">dh</span><span class="p">,</span> <span class="n">h</span><span class="p">))</span> <span class="k">if</span> <span class="n">dh</span> <span class="o">!=</span> <span class="n">h</span> <span class="k">else</span> <span class="nb">open</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span> <span class="n">ipp</span><span class="p">,</span> <span class="n">pf</span><span class="p">),</span> <span class="s">&#39;wb&#39;</span> <span class="p">)</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">by</span><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<!-- excerpt end -->
+
+<h2 id="monokai-extended--markdown-extended">Monokai Extended &amp; Markdown Extended</h2>
+
+<p>Markdown 格式在 Sublime 中默认无高亮，很多主题也不支持 Markdown 的高亮（包括 Markdown 代码块内的代码），<a href="https://github.com/jonschlinkert/sublime-monokai-extended">Monokai Extended</a> 和 <a href="https://github.com/jonschlinkert/sublime-markdown-extended">Markdown Extended</a> 是一套解决方案。</p>
+
+<p>插件的安装方式是 Shift + Command + P 调出 Command Palette，输入 <strong>pci</strong>（模糊匹配），找到 <code>Package Control: Install Package</code>、回车，输入插件名称、回车，等待安装。</p>
+
+<p>注意需要将 Markdown 的文件格式与 Markdown Extended 这种语法关联起来，做法是点击 Sublime 右下角文档格式，在列表最上方名为 <code>Open all with current extension as</code> 二级列表中选择 Markdown Extended。一种临时设置方式可以是 Shift + Command + P 调出 Command Palette，输入 <strong>ssm</strong>，选择 <code>Set Syntax: Markdown Extended</code>。</p>
+
+<p>输入点内容看看，是舒服了不少。</p>
+
+<p><a href="http://frank19900731.github.io/img/post/2015-4/3.png" class="img-up" title="Markdown 语法高亮"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-4/3.png" width="95%" title="Markdown 语法高亮" /></a></p>
+
+<h2 id="markdownediting">MarkdownEditing</h2>
+
+<p>在 Sublime 中编写 Markdown 还有一个直观的不适就是<strong>缺少辅助提示</strong>，比如输入 *，编辑器应当自动补上一个 *，并使光标保持在两 * 之间，又比如应当支持选中一段文字快捷键添加链接。</p>
+
+<p><a href="https://github.com/SublimeText-Markdown/MarkdownEditing">Markdown Editing</a> 提供了这些支持，它也提供配色方案（略丑）。</p>
+
+<p>个人常用的三个快捷键是：</p>
+
+<ul>
+  <li>Option + Command + K - 插入链接；</li>
+  <li>Option + Command + V - 粘贴为链接格式；</li>
+  <li>Shift + Command + K - 插入图片。</li>
+</ul>
+
+<h2 id="markdowntoc">MarkdownTOC</h2>
+
+<p>编写 heading 较多的长文档，希望能够自动生成目录方便跳转，<a href="https://github.com/naokazuterada/MarkdownTOC">MarkdownTOC</a> 可以帮助我们实现。</p>
+
+<p>安装完成需要对其做一定配置，方法是打开 Preferences -&gt; Package Settings -&gt; MarkdownTOC -&gt; Setting - User，键入以下配置：</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>MarkdownTOC 配置</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+</pre></td><td class="code"><pre><code class="json"><span class="line"><span class="p">{</span>
+</span><span class="line">  <span class="nt">&quot;default_autolink&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+</span><span class="line">  <span class="nt">&quot;default_bracket&quot;</span><span class="p">:</span> <span class="s2">&quot;round&quot;</span><span class="p">,</span>
+</span><span class="line">  <span class="nt">&quot;default_depth&quot;</span><span class="p">:</span> <span class="mi">0</span>
+</span><span class="line"><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>User Setting 覆盖 Default Setting，修改 User Setting 而非 Default Setting 是为了将来插件升级用户配置不被覆盖。配置文件都是 json 格式，上面的三个配置作用分别是：</p>
+
+<ul>
+  <li>目录以链接形式呈现；</li>
+  <li>链接以圆括号包裹；</li>
+  <li>无限目录深度。</li>
+</ul>
+
+<p>将光标置于文档首部，点击 Tools -&gt; MarkdownTOC -&gt; Insert TOC，会自动在文首生成目录，效果如下图。这个目录会随文档内容改变自动更新（可能需要保存来触发）。</p>
+
+<p><a href="http://frank19900731.github.io/img/post/2015-4/2.png" class="img-up" title="Markdown 目录"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-4/2.png" width="95%" title="Markdown 目录" /></a></p>
+
+<h2 id="table-editor">Table Editor</h2>
+
+<p>键入表格是个体力活，<a href="https://github.com/vkocubinsky/SublimeTableEditor">Table Editor</a> 可以帮助我们减轻工作量。</p>
+
+<h2 id="markdown-preview">Markdown Preview</h2>
+
+<p>现在，<strong>代码、公式、表格、图片、链接、目录</strong>都齐活儿了，最后一步就是将 Markdown 文档渲染成我们想要的文档格式，<a href="https://github.com/revolunet/sublimetext-markdown-preview">Markdown Preview</a> 责无旁贷。</p>
+
+<p>安装后也需要进行一定配置：</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>Markdown Preview 配置</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+<span class="line-number">11</span>
+<span class="line-number">12</span>
+<span class="line-number">13</span>
+</pre></td><td class="code"><pre><code class="json"><span class="line"><span class="p">{</span>
+</span><span class="line">    <span class="nt">&quot;parser&quot;</span><span class="p">:</span> <span class="s2">&quot;github&quot;</span><span class="p">,</span>
+</span><span class="line">    <span class="nt">&quot;build_action&quot;</span><span class="p">:</span> <span class="s2">&quot;browser&quot;</span><span class="p">,</span>
+</span><span class="line">    <span class="nt">&quot;enable_mathjax&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+</span><span class="line">    <span class="nt">&quot;enable_uml&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+</span><span class="line">    <span class="nt">&quot;enable_highlight&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+</span><span class="line">    <span class="nt">&quot;enable_pygments&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+</span><span class="line">    <span class="nt">&quot;enabled_extensions&quot;</span><span class="p">:</span> <span class="s2">&quot;github&quot;</span><span class="p">,</span>
+</span><span class="line">    <span class="nt">&quot;enabled_parsers&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;github&quot;</span><span class="p">],</span>
+</span><span class="line">    <span class="nt">&quot;github_mode&quot;</span><span class="p">:</span> <span class="s2">&quot;markdown&quot;</span><span class="p">,</span>
+</span><span class="line">    <span class="nt">&quot;github_inject_header_ids&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+</span><span class="line">    <span class="nt">&quot;enable_autoreload&quot;</span><span class="p">:</span> <span class="kc">false</span>
+</span><span class="line"><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>在以上配置中我们设定渲染样式为 github，渲染结束后用浏览器打开，开启 uml、mathjax、pygments 等支持，最重要的一个配置项是 <code>"github_inject_header_ids": true</code>，<strong>保证 heading 的 id 与 heading 内容一致</strong>，<strong>也就与 MarkdownTOC 生成的一致</strong>，<strong>也就恰好能够锚点定位</strong>。最后我们关闭了 autoreload，否则每当保存 Markdown 文件，后台都会进行一次渲染操作，你就会看到一颗彩虹糖在打转。</p>
+
+<p>使用快捷键 Shift + Command + B，选择 Build with Markdown，一会儿就能在弹出的浏览器框里看到渲染结果了。</p>
+
+<p><a href="http://frank19900731.github.io/img/post/2015-4/1.png" class="img-up" title="Markdown 渲染结果"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-4/1.png" width="90%" title="Markdown 渲染结果" /></a></p>
+
+<h2 id="academicmarkdown">AcademicMarkdown</h2>
+
+<p>在查找资料的过程中发现可以用 Sublime + Markdown 写论文，就跟着学了一把。</p>
+
+<p><a href="https://packagecontrol.io/packages/AcademicMarkdown">AcademicMarkdown</a> 通过在 Markdown 文档中添加一定的信息，具体说是文件头，来帮助我们将 Markdown 文档渲染为符合指定论文格式的文章。以下文件头摘自插件作者给出的 <a href="http://frank19900731.github.io/downloads/file/sample-paper.zip">样例</a>。</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>文件头</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+</pre></td><td class="code"><pre><code class="text"><span class="line">title: A sample paper
+</span><span class="line">author: Donald Duck
+</span><span class="line">date: October 1, 2014
+</span><span class="line">csl: /Users/frank/Documents/My Markdown/sample-paper/chicago.csl
+</span><span class="line">abstract: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>csl 是论文模板格式，更多格式可在 <a href="https://www.zotero.org/styles">Zotero Style Repository</a> 寻找。</p>
+
+<p>Academic 还允许指定 bib 文件，在 Markdown 文档内添加引用，格式是 <code>@citation_key</code>，下面介绍的 Citer 可以帮助我们管理引用。</p>
+
+<h2 id="citer">Citer</h2>
+
+<p>具体说，<a href="https://github.com/mangecoeur/Citer">Citer</a> 帮助我们搜索、插入引用。</p>
+
+<p>安装后需要进行一定配置：</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>Citer 配置</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+<span class="line-number">11</span>
+<span class="line-number">12</span>
+<span class="line-number">13</span>
+<span class="line-number">14</span>
+<span class="line-number">15</span>
+<span class="line-number">16</span>
+</pre></td><td class="code"><pre><code class="json"><span class="line"><span class="p">{</span>
+</span><span class="line">    <span class="err">//REQUIRED:</span>
+</span><span class="line">    <span class="nt">&quot;bibtex_file_path&quot;</span><span class="p">:</span> <span class="s2">&quot;/Users/frank/Documents/Mendeley/reference.bib&quot;</span><span class="p">,</span>
+</span><span class="line">
+</span><span class="line">    <span class="err">//OPTIONAL:</span>
+</span><span class="line">
+</span><span class="line">    <span class="err">//By</span> <span class="err">default</span> <span class="err">Citer</span> <span class="err">Search</span> <span class="err">looks</span> <span class="err">for</span> <span class="err">your</span> <span class="err">keyword</span> <span class="err">in</span> <span class="err">the</span>
+</span><span class="line">    <span class="err">//author,</span> <span class="err">title,</span> <span class="err">year,</span> <span class="err">and</span> <span class="err">Citekey</span> <span class="err">(id)</span> <span class="err">feilds</span>
+</span><span class="line">    <span class="nt">&quot;search_fields&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;author&quot;</span><span class="p">,</span> <span class="s2">&quot;title&quot;</span><span class="p">,</span> <span class="s2">&quot;year&quot;</span><span class="p">,</span> <span class="s2">&quot;id&quot;</span><span class="p">]</span> <span class="p">,</span>
+</span><span class="line">    <span class="err">//Default</span> <span class="err">format</span> <span class="err">is</span> <span class="err">@Citekey</span>
+</span><span class="line">    <span class="nt">&quot;citation_format&quot;</span><span class="p">:</span> <span class="s2">&quot;@%s&quot;</span><span class="p">,</span>
+</span><span class="line">    <span class="err">//list</span> <span class="err">of</span> <span class="err">scopes.</span> <span class="err">Could</span> <span class="err">be</span> <span class="err">top</span> <span class="err">level</span> <span class="nt">&quot;text&quot;</span> <span class="err">or</span> <span class="s2">&quot;source&quot;</span><span class="p">,</span> <span class="err">or</span> <span class="err">limit</span> <span class="err">to</span>
+</span><span class="line">    <span class="err">//</span> <span class="err">e.g</span> <span class="nt">&quot;text.html.markdown&quot;</span>
+</span><span class="line">    <span class="s2">&quot;completions_scopes&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;text&quot;</span><span class="p">],</span>
+</span><span class="line">    <span class="nt">&quot;enable_completions&quot;</span><span class="p">:</span> <span class="kc">true</span>
+</span><span class="line"><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>只要修改 <code>bibtex_file_path</code> 即可，其它都是默认配置项，我的 bib 文件是由 <a href="https://www.mendeley.com/">Mendeley</a> 维护的。值得一提的是，AcademicMarkdown 支持在文件头指定其它 bib 文件，Citer 中的 bib 是全局的。</p>
+
+<p>Shift + Command + P 调出 Command Palette，输入 Citer，Show All 会列举全局 bib 文件中的所有项（如果是刚配置好可能结果为空，请稍作等待或重启 Sublime），Search 则显然用于搜索。</p>
+
+<h2 id="pandoc">Pandoc</h2>
+
+<p>最终由神器 <a href="https://github.com/tbfisher/sublimetext-Pandoc">Pandoc</a> 将 AcademicMarkdown 文档编译成论文。</p>
+
+<p>这个插件只是 Pandoc 的使用配置接口，需要在系统中手动安装 <a href="http://johnmacfarlane.net/pandoc/">Pandoc</a>，OS X 下我使用 <code>brew install pandoc</code> 安装。我们要用到的两个命令是 <code>pandoc</code> 和 <code>pandoc-citeproc</code>。除了 Pandoc，我们还需要配置 Latex 编译环境，我使用的是 <a href="http://tug.org/texlive/">TeX Live</a>。</p>
+
+<p>接下来配置 Pandoc 插件：</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>Pandoc 配置</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+<span class="line-number">11</span>
+<span class="line-number">12</span>
+<span class="line-number">13</span>
+<span class="line-number">14</span>
+<span class="line-number">15</span>
+<span class="line-number">16</span>
+<span class="line-number">17</span>
+<span class="line-number">18</span>
+<span class="line-number">19</span>
+<span class="line-number">20</span>
+<span class="line-number">21</span>
+<span class="line-number">22</span>
+<span class="line-number">23</span>
+<span class="line-number">24</span>
+<span class="line-number">25</span>
+<span class="line-number">26</span>
+<span class="line-number">27</span>
+<span class="line-number">28</span>
+<span class="line-number">29</span>
+<span class="line-number">30</span>
+<span class="line-number">31</span>
+<span class="line-number">32</span>
+<span class="line-number">33</span>
+<span class="line-number">34</span>
+<span class="line-number">35</span>
+<span class="line-number">36</span>
+</pre></td><td class="code"><pre><code class="json"><span class="line"><span class="p">{</span>
+</span><span class="line">  <span class="nt">&quot;default&quot;</span><span class="p">:</span> <span class="p">{</span>
+</span><span class="line">    <span class="err">**</span><span class="nt">&quot;pandoc-path&quot;</span><span class="p">:</span> <span class="s2">&quot;/usr/local/bin/pandoc&quot;</span><span class="err">**</span><span class="p">,</span>
+</span><span class="line">
+</span><span class="line">    <span class="nt">&quot;transformations&quot;</span><span class="p">:</span> <span class="p">{</span>
+</span><span class="line">
+</span><span class="line">    <span class="err">...</span>
+</span><span class="line">
+</span><span class="line">      <span class="nt">&quot;PDF&quot;</span><span class="p">:</span> <span class="p">{</span>
+</span><span class="line">        <span class="nt">&quot;scope&quot;</span><span class="p">:</span> <span class="p">{</span>
+</span><span class="line">          <span class="nt">&quot;text.html&quot;</span><span class="p">:</span> <span class="s2">&quot;html&quot;</span><span class="p">,</span>
+</span><span class="line">          <span class="nt">&quot;text.html.markdown&quot;</span><span class="p">:</span> <span class="s2">&quot;markdown&quot;</span>
+</span><span class="line">        <span class="p">},</span>
+</span><span class="line">        <span class="nt">&quot;pandoc-arguments&quot;</span><span class="p">:</span> <span class="p">[</span>
+</span><span class="line">          <span class="s2">&quot;-t&quot;</span><span class="p">,</span> <span class="s2">&quot;pdf&quot;</span><span class="p">,</span> <span class="err">**</span><span class="s2">&quot;--latex-engine=/usr/texbin/pdflatex&quot;</span><span class="err">**</span><span class="p">,</span>
+</span><span class="line">          <span class="err">**</span><span class="s2">&quot;--filter=/usr/local/bin/pandoc-citeproc&quot;</span><span class="err">**</span><span class="p">,</span>
+</span><span class="line">          <span class="err">**</span><span class="s2">&quot;--bibliography=/Users/frank/Documents/Mendeley/reference.bib&quot;</span><span class="err">**</span>
+</span><span class="line">        <span class="p">]</span>
+</span><span class="line">      <span class="p">},</span>
+</span><span class="line">
+</span><span class="line">      <span class="nt">&quot;Microsoft Word&quot;</span><span class="p">:</span> <span class="p">{</span>
+</span><span class="line">        <span class="nt">&quot;scope&quot;</span><span class="p">:</span> <span class="p">{</span>
+</span><span class="line">          <span class="nt">&quot;text.html&quot;</span><span class="p">:</span> <span class="s2">&quot;html&quot;</span><span class="p">,</span>
+</span><span class="line">          <span class="nt">&quot;text.html.markdown&quot;</span><span class="p">:</span> <span class="s2">&quot;markdown&quot;</span>
+</span><span class="line">        <span class="p">},</span>
+</span><span class="line">        <span class="nt">&quot;pandoc-arguments&quot;</span><span class="p">:</span> <span class="p">[</span>
+</span><span class="line">          <span class="s2">&quot;-t&quot;</span><span class="p">,</span> <span class="s2">&quot;docx&quot;</span><span class="p">,</span>
+</span><span class="line">          <span class="err">**</span><span class="s2">&quot;--filter=/usr/local/bin/pandoc-citeproc&quot;</span><span class="err">**</span><span class="p">,</span>
+</span><span class="line">          <span class="err">**</span><span class="s2">&quot;--bibliography=/Users/frank/Documents/Mendeley/reference.bib&quot;</span><span class="err">**</span>
+</span><span class="line">        <span class="p">]</span>
+</span><span class="line">      <span class="p">}</span>
+</span><span class="line">    <span class="p">},</span>
+</span><span class="line">
+</span><span class="line">    <span class="nt">&quot;pandoc-format-file&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;docx&quot;</span><span class="p">,</span> <span class="s2">&quot;epub&quot;</span><span class="p">,</span> <span class="s2">&quot;pdf&quot;</span><span class="p">,</span> <span class="s2">&quot;odt&quot;</span><span class="p">]</span>
+</span><span class="line">  <span class="p">}</span>
+</span><span class="line"><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>修改内容以 ** 标出，主要是指定相关命令、文件的路径作为 pandoc 命令的参数。</p>
+
+<p>Shift + Command + P 调出 Command Palette，输入 Pandoc、选择 PDF 作为输出格式即可，这是一个<a href="http://frank19900731.github.io/downloads/file/sample-paper.pdf">示例</a>。</p>
+
+<h2 id="section">参考文档</h2>
+
+<ul>
+  <li><a href="http://blog.cigrainger.com/2014/07/pandoc-markdown.html">Writing academic papers in Markdown using Pandoc</a></li>
+  <li><a href="http://nikolasander.com/writing-in-markdown/">Writing academic papers in Markdown using Sublime Text and Pandoc</a></li>
+  <li><a href="https://blog.mariusschulz.com/2014/12/16/how-to-set-up-sublime-text-for-a-vastly-better-markdown-writing-experience">How to Set Up Sublime Text for a Vastly Better Markdown Writing Experience</a></li>
+</ul>
+
+<p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2015/04/13/zai-sublime-zhong-pei-zhi-markdown-huan-jing/">http://frank19900731.github.io/blog/2015/04/13/zai-sublime-zhong-pei-zhi-markdown-huan-jing/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
+
+  ]]></description>
+</item>
