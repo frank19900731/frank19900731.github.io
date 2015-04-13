@@ -109,7 +109,7 @@ User Setting 覆盖 Default Setting，修改 User Setting 而非 Default Setting
 
 使用快捷键 Shift + Command + B，选择 Build with Markdown，一会儿就能在弹出的浏览器框里看到渲染结果了。
 
-{% img imgcenter /img/post/2015-4/1.png 95% Markdown 渲染结果 %}
+{% img imgcenter /img/post/2015-4/1.png 90% Markdown 渲染结果 %}
 
 ## AcademicMarkdown
 
