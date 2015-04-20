@@ -4,7 +4,7 @@
   <title><![CDATA[Blog of 太极儒]]></title>
   <link href="http://frank19900731.github.io/atom.xml" rel="self"/>
   <link href="http://frank19900731.github.io/"/>
-  <updated>2015-04-20T13:41:45+08:00</updated>
+  <updated>2015-04-20T22:04:39+08:00</updated>
   <id>http://frank19900731.github.io/</id>
   <author>
     <name><![CDATA[Frank Song]]></name>
@@ -12,6 +12,110 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[每周一软之 1Password]]></title>
+    <link href="http://frank19900731.github.io/blog/2015/04/20/mei-zhou-yi-ruan-zhi-1password/"/>
+    <updated>2015-04-20T21:00:45+08:00</updated>
+    <id>http://frank19900731.github.io/blog/2015/04/20/mei-zhou-yi-ruan-zhi-1password</id>
+    <content type="html"><![CDATA[<p><strong>目录</strong></p>
+
+<ul id="markdown-toc">
+  <li><a href="#section">功能介绍</a></li>
+  <li><a href="#section-1">界面设计</a></li>
+  <li><a href="#section-2">易用性</a></li>
+  <li><a href="#section-3">稳定性</a></li>
+  <li><a href="#section-4">跨平台</a></li>
+  <li><a href="#section-5">类似软件</a></li>
+  <li><a href="#section-6">闪光点</a></li>
+  <li><a href="#section-7">缺点</a></li>
+</ul>
+
+<!-- excerpt start -->
+
+<p>毕业季，论文施工中，有空再补。。。</p>
+
+<p><a href="http://frank19900731.github.io/img/post/2015-3/1.gif" class="img-up" title="论文施工中"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-3/1.gif" width="40%" title="论文施工中" /></a></p>
+
+<!-- excerpt end -->
+
+<h2 id="section">功能介绍</h2>
+
+<h2 id="section-1">界面设计</h2>
+
+<h2 id="section-2">易用性</h2>
+
+<h2 id="section-3">稳定性</h2>
+
+<h2 id="section-4">跨平台</h2>
+
+<h2 id="section-5">类似软件</h2>
+
+<h2 id="section-6">闪光点</h2>
+
+<h2 id="section-7">缺点</h2>
+
+<p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2015/04/20/mei-zhou-yi-ruan-zhi-1password/">http://frank19900731.github.io/blog/2015/04/20/mei-zhou-yi-ruan-zhi-1password/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Yosemite 10.10.3 更新后 Finder 剩余容量显示错误问题的解决]]></title>
+    <link href="http://frank19900731.github.io/blog/2015/04/20/yosemite-10-dot-10-dot-3-geng-xin-hou-finder-sheng-yu-rong-liang-xian-shi-cuo-wu-wen-ti-de-jie-jue/"/>
+    <updated>2015-04-20T19:38:24+08:00</updated>
+    <id>http://frank19900731.github.io/blog/2015/04/20/yosemite-10-dot-10-dot-3-geng-xin-hou-finder-sheng-yu-rong-liang-xian-shi-cuo-wu-wen-ti-de-jie-jue</id>
+    <content type="html"><![CDATA[<!-- excerpt start -->
+
+<p>最近刚升级过 Yosemite 10.10.3，使用中发现 Finder 状态栏的剩余容量信息信息显示错误：</p>
+
+<p><a href="http://frank19900731.github.io/img/post/2015-4/4.png" class="img-up" title="剩余容量错误"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-4/4.png" width="90%" title="剩余容量错误" /></a></p>
+
+<p>查看关于本机、Disk Utility 以及 <code>df -h</code> 命令输出的剩余容量是正常的，重启电脑、关闭 TotalFinder 插件、使用 Disk Utility 修复磁盘（权限）都无法修正错误。求助苹果热线，<strong>一如既往的毫无帮助</strong>。</p>
+
+<p>后来在苹果的技术支持社区发现了相关帖子 <a href="https://discussions.apple.com/thread/6983320?start=0&amp;tstart=0">10.10.3 Finder Status Bar information is wrong, TB not GB</a>，给出的建议是重新设置 NVRAM 和 SMC。</p>
+
+<!-- excerpt end -->
+
+<p>按照技术支持里的说法，NVRAM（非易失随机访问内存）存储了一些系统经常访问的数据与设置，比如屏幕分辨率、启动盘等。既然重设 NVRAM 可以修正状态栏的信息错误，那可以推测，剩余空间信息可能被写在其中（？）。NVRAM 的重新设置方法如下，一两秒的时间就可以完成重置。</p>
+
+<blockquote>
+  <p>Resetting NVRAM</p>
+
+  <ul>
+    <li>Shut down your Mac.</li>
+    <li>Locate the following keys on the keyboard: Command (⌘), Option, P, and R. </li>
+    <li>Turn on your Mac.</li>
+    <li>Press and hold the Command-Option-P-R keys immediately after you hear the startup sound.</li>
+    <li>Hold these keys until the computer restarts and you hear the startup sound for a second time.</li>
+    <li>Release the keys.</li>
+  </ul>
+</blockquote>
+
+<p>再来看 <a href="https://support.apple.com/en-us/HT201295">SMC 的功能</a>，我并不很理解这与 Finder 状态栏信息有什么关系，不过读了重设 SMC 的步骤后也就照做了，因为我们平时无意中会经常重新设置它，就是插拔电源这么简单。</p>
+
+<blockquote>
+  <p>On Mac Pro, iMac, Mac mini, and Xserve</p>
+
+  <p>To reset the SMC on Intel-based Mac Pro, iMac, and Mac mini computers, as well as Xserve:</p>
+
+  <ul>
+    <li>Shut down the computer.</li>
+    <li>Unplug the power cord.</li>
+    <li>Wait fifteen seconds.</li>
+    <li>Attach the power cord.</li>
+    <li>Wait five seconds, then press the power button to turn on the computer.</li>
+  </ul>
+</blockquote>
+
+<p>备份系统，第一次修复尝试失败。考虑到 <a href="https://discussions.apple.com/thread/6983320?start=0&amp;tstart=0">帖子</a> 里提到可能是 Time Machine 带来的影响，所以<strong>禁用了 Time Machine 后进行第二次尝试</strong>，状态栏恢复正确显示。此后开启 Time Machine、重启机器等操作后，错误未复现。</p>
+
+<p>最后想说的是，通过若干次笔记本相关的技术咨询，对苹果公司客服团队中<strong>基础客服的专业性</strong>实在不敢恭维（高级客服接触不多，不敢妄下结论）。他们解决问题的思路是用解决方案套问题，而不是根据问题表现分析原因进而解决，实在不行就建议<strong>重装系统</strong>。撇开解决方案不提，对于每打一次咨询热线都要报一次产品序列号、姓名和手机的做法我也是很不理解，想来对于顺丰客服能够快速调取我历史下单记录询问我是否和之前下单地点相同的做法，我真应该点 32 个赞了。</p>
+
+<p><a href="http://frank19900731.github.io/img/post/2015-4/1.jpg" class="img-up" title="点32个赞"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-4/1.jpg" width="70%" title="点32个赞" /></a></p>
+
+<p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2015/04/20/yosemite-10-dot-10-dot-3-geng-xin-hou-finder-sheng-yu-rong-liang-xian-shi-cuo-wu-wen-ti-de-jie-jue/">http://frank19900731.github.io/blog/2015/04/20/yosemite-10-dot-10-dot-3-geng-xin-hou-finder-sheng-yu-rong-liang-xian-shi-cuo-wu-wen-ti-de-jie-jue/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[在 Sublime 中配置 Markdown 环境]]></title>
@@ -2770,366 +2874,6 @@
 </ul>
 
 <p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2015/01/11/mei-zhou-yi-ruan-zhi-xnconvert/">http://frank19900731.github.io/blog/2015/01/11/mei-zhou-yi-ruan-zhi-xnconvert/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[用 Webhook 在 Gitlab 中实现类 Github Pages 效果]]></title>
-    <link href="http://frank19900731.github.io/blog/2015/01/10/shi-yong-webhook-zai-gitlab-zhong-shi-xian-lei-github-pages-xiao-guo/"/>
-    <updated>2015-01-10T21:35:56+08:00</updated>
-    <id>http://frank19900731.github.io/blog/2015/01/10/shi-yong-webhook-zai-gitlab-zhong-shi-xian-lei-github-pages-xiao-guo</id>
-    <content type="html"><![CDATA[<p><strong>目录</strong></p>
-
-<ul id="markdown-toc">
-  <li><a href="#gitlab">Gitlab</a></li>
-  <li><a href="#web-hooks">Web hooks</a></li>
-  <li><a href="#section">操作步骤</a>    <ul>
-      <li><a href="#project">创建 Project，提交代码</a></li>
-      <li><a href="#web-hooks-1">关联 Web hooks</a></li>
-      <li><a href="#web-hooks-">Web hooks 逻辑</a></li>
-    </ul>
-  </li>
-</ul>
-
-<!-- excerpt start -->
-
-<h2 id="gitlab">Gitlab</h2>
-
-<p><a href="https://gitlab.com/gitlab-org/gitlab-ce/tree/master">Gitlab</a> 是一个与 Github 极为相似的可视化版本管理系统，它基于 Git、Ruby on Rails、Redis 等工具框架，目前支持 Ubuntu、Debian、CentOS 在内的部分 *inx 操作系统，<strong>不考虑支持 Windows</strong>，详见 <a href="https://gitlab.com/gitlab-org/gitlab-ce/blob/master/doc/install/requirements.md">Requirements</a>。Gitlab 既有收费企业版，也有免费开源社区版本，被超过十万家机构广泛应用，安装方法及相关文档可以在 <a href="http://doc.gitlab.com/ce/">这里</a> 找到。</p>
-
-<p>最简单的安装方式是下载 Omnibus 安装包进行安装，在 <a href="https://about.gitlab.com/downloads/">这里</a> 根据系统下载安装包，安装方法是</p>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>Gitlab Omnibus Package 安装</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-<span class="line-number">5</span>
-</pre></td><td class="code"><pre><code class="bash"><span class="line"><span class="c"># Ubuntu/Debian:</span>
-</span><span class="line">sudo dpkg -i gitlab_x.x.x-omnibus.xxx.deb
-</span><span class="line">
-</span><span class="line"><span class="c"># CentOS:</span>
-</span><span class="line">sudo rpm -Uvh gitlab-x.x.x_xxx.rpm
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<p>系统初始登录账号是 <code>root</code>，密码是 <code>5iveL!fe</code>，登录后修改密码，为自己创建用户（组）。</p>
-
-<p>Gitlab 的基本使用体验和 Github 是无差的，不过并不提供 <a href="https://pages.github.com/">Github Pages</a> 的功能：</p>
-
-<blockquote>
-  <p>Hosted directly from your GitHub repository. Just edit, push, and your changes are live.</p>
-</blockquote>
-
-<p>其实 Github Pages 的最大吸引力是<strong>免费的空间</strong>和<strong>免除服务器设置</strong>，如果单纯要实现 <code>Just edit, push, and your changes are live</code> 这一功能，可以借助 Web hooks。</p>
-
-<!-- excerpt end -->
-
-<h2 id="web-hooks">Web hooks</h2>
-
-<p>Gitlab 中 Web hooks 的概念当然也和 Github 没差，给予的解释是</p>
-
-<blockquote>
-  <p>Project web hooks allow you to trigger an URL if new code is pushed or a new issue is created.</p>
-
-  <p>You can configure web hooks to listen for specific events like pushes, issues or merge requests. GitLab will send a POST request with data to the web hook URL.</p>
-
-  <p>Web hooks can be used to update an external issue tracker, trigger CI builds, update a backup mirror, or even deploy to your production server.</p>
-</blockquote>
-
-<p>我们想要实现的是让 push events 触发 production server 上的内容更新，更具体的说，是让我 <strong>Octopress 博客的 master 分支的 push 操作</strong>，触发<strong>网页服务器的内容更新</strong>。</p>
-
-<p>push 操作发送的 post 请求内容示例如下。</p>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>push 操作的 post 请求示例</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-<span class="line-number">5</span>
-<span class="line-number">6</span>
-<span class="line-number">7</span>
-<span class="line-number">8</span>
-<span class="line-number">9</span>
-<span class="line-number">10</span>
-<span class="line-number">11</span>
-<span class="line-number">12</span>
-<span class="line-number">13</span>
-<span class="line-number">14</span>
-<span class="line-number">15</span>
-<span class="line-number">16</span>
-<span class="line-number">17</span>
-<span class="line-number">18</span>
-<span class="line-number">19</span>
-<span class="line-number">20</span>
-<span class="line-number">21</span>
-<span class="line-number">22</span>
-<span class="line-number">23</span>
-<span class="line-number">24</span>
-<span class="line-number">25</span>
-<span class="line-number">26</span>
-<span class="line-number">27</span>
-<span class="line-number">28</span>
-<span class="line-number">29</span>
-<span class="line-number">30</span>
-<span class="line-number">31</span>
-<span class="line-number">32</span>
-<span class="line-number">33</span>
-<span class="line-number">34</span>
-<span class="line-number">35</span>
-<span class="line-number">36</span>
-<span class="line-number">37</span>
-</pre></td><td class="code"><pre><code class="json"><span class="line"><span class="p">{</span>
-</span><span class="line">  <span class="nt">&quot;before&quot;</span><span class="p">:</span> <span class="s2">&quot;95790bf891e76fee5e1747ab589903a6a1f80f22&quot;</span><span class="p">,</span>
-</span><span class="line">  <span class="nt">&quot;after&quot;</span><span class="p">:</span> <span class="s2">&quot;da1560886d4f094c3e6c9ef40349f7d38b5d27d7&quot;</span><span class="p">,</span>
-</span><span class="line">  <span class="nt">&quot;ref&quot;</span><span class="p">:</span> <span class="s2">&quot;refs/heads/master&quot;</span><span class="p">,</span>
-</span><span class="line">  <span class="nt">&quot;user_id&quot;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span>
-</span><span class="line">  <span class="nt">&quot;user_name&quot;</span><span class="p">:</span> <span class="s2">&quot;John Smith&quot;</span><span class="p">,</span>
-</span><span class="line">  <span class="nt">&quot;project_id&quot;</span><span class="p">:</span> <span class="mi">15</span><span class="p">,</span>
-</span><span class="line">  <span class="nt">&quot;repository&quot;</span><span class="p">:</span> <span class="p">{</span>
-</span><span class="line">    <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Diaspora&quot;</span><span class="p">,</span>
-</span><span class="line">    <span class="nt">&quot;url&quot;</span><span class="p">:</span> <span class="s2">&quot;git@example.com:diaspora.git&quot;</span><span class="p">,</span>
-</span><span class="line">    <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
-</span><span class="line">    <span class="nt">&quot;homepage&quot;</span><span class="p">:</span> <span class="s2">&quot;http://example.com/diaspora&quot;</span>
-</span><span class="line">  <span class="p">},</span>
-</span><span class="line">  <span class="nt">&quot;commits&quot;</span><span class="p">:</span> <span class="p">[</span>
-</span><span class="line">    <span class="p">{</span>
-</span><span class="line">      <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;b6568db1bc1dcd7f8b4d5a946b0b91f9dacd7327&quot;</span><span class="p">,</span>
-</span><span class="line">      <span class="nt">&quot;message&quot;</span><span class="p">:</span> <span class="s2">&quot;Update Catalan translation to e38cb41.&quot;</span><span class="p">,</span>
-</span><span class="line">      <span class="nt">&quot;timestamp&quot;</span><span class="p">:</span> <span class="s2">&quot;2011-12-12T14:27:31+02:00&quot;</span><span class="p">,</span>
-</span><span class="line">      <span class="nt">&quot;url&quot;</span><span class="p">:</span> <span class="s2">&quot;http://example.com/diaspora/commits/b6568db1bc1dcd7f8b4d5a946b0b91f9dacd7327&quot;</span><span class="p">,</span>
-</span><span class="line">      <span class="nt">&quot;author&quot;</span><span class="p">:</span> <span class="p">{</span>
-</span><span class="line">        <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Jordi Mallach&quot;</span><span class="p">,</span>
-</span><span class="line">        <span class="nt">&quot;email&quot;</span><span class="p">:</span> <span class="s2">&quot;jordi@softcatala.org&quot;</span>
-</span><span class="line">      <span class="p">}</span>
-</span><span class="line">    <span class="p">},</span>
-</span><span class="line">    <span class="p">{</span>
-</span><span class="line">      <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;da1560886d4f094c3e6c9ef40349f7d38b5d27d7&quot;</span><span class="p">,</span>
-</span><span class="line">      <span class="nt">&quot;message&quot;</span><span class="p">:</span> <span class="s2">&quot;fixed readme&quot;</span><span class="p">,</span>
-</span><span class="line">      <span class="nt">&quot;timestamp&quot;</span><span class="p">:</span> <span class="s2">&quot;2012-01-03T23:36:29+02:00&quot;</span><span class="p">,</span>
-</span><span class="line">      <span class="nt">&quot;url&quot;</span><span class="p">:</span> <span class="s2">&quot;http://example.com/diaspora/commits/da1560886d4f094c3e6c9ef40349f7d38b5d27d7&quot;</span><span class="p">,</span>
-</span><span class="line">      <span class="nt">&quot;author&quot;</span><span class="p">:</span> <span class="p">{</span>
-</span><span class="line">        <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;GitLab dev user&quot;</span><span class="p">,</span>
-</span><span class="line">        <span class="nt">&quot;email&quot;</span><span class="p">:</span> <span class="s2">&quot;gitlabdev@dv6700.(none)&quot;</span>
-</span><span class="line">      <span class="p">}</span>
-</span><span class="line">    <span class="p">}</span>
-</span><span class="line">  <span class="p">],</span>
-</span><span class="line">  <span class="nt">&quot;total_commits_count&quot;</span><span class="p">:</span> <span class="mi">4</span>
-</span><span class="line"><span class="p">}</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<p>我们只需要关注 <code>ref: refs/heads/master</code>，保证是 <strong>master</strong> 分支的 push 操作，而非其它分支（比如 source）。</p>
-
-<p>官方提供了一个 ruby 版本的 webhook 接收逻辑。</p>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>print_http_body.rb</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-<span class="line-number">5</span>
-<span class="line-number">6</span>
-<span class="line-number">7</span>
-<span class="line-number">8</span>
-<span class="line-number">9</span>
-<span class="line-number">10</span>
-<span class="line-number">11</span>
-</pre></td><td class="code"><pre><code class="ruby"><span class="line"><span class="nb">require</span> <span class="s1">&#39;webrick&#39;</span>
-</span><span class="line">
-</span><span class="line"><span class="n">server</span> <span class="o">=</span> <span class="ss">WEBrick</span><span class="p">:</span><span class="ss">:HTTPServer</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="ss">:Port</span> <span class="o">=&gt;</span> <span class="no">ARGV</span><span class="o">.</span><span class="n">first</span><span class="p">)</span>
-</span><span class="line"><span class="n">server</span><span class="o">.</span><span class="n">mount_proc</span> <span class="s1">&#39;/&#39;</span> <span class="k">do</span> <span class="o">|</span><span class="n">req</span><span class="p">,</span> <span class="n">res</span><span class="o">|</span>
-</span><span class="line">  <span class="nb">puts</span> <span class="n">req</span><span class="o">.</span><span class="n">body</span>
-</span><span class="line"><span class="k">end</span>
-</span><span class="line">
-</span><span class="line"><span class="nb">trap</span> <span class="s1">&#39;INT&#39;</span> <span class="k">do</span>
-</span><span class="line">  <span class="n">server</span><span class="o">.</span><span class="n">shutdown</span>
-</span><span class="line"><span class="k">end</span>
-</span><span class="line"><span class="n">server</span><span class="o">.</span><span class="n">start</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<p>运行 <code>ruby print_http_body.rb 8000</code> 即可监听 push 事件。</p>
-
-<p>我的打算是在自己现有的 Apache 服务器上，用 PHP 写这个简单逻辑。</p>
-
-<h2 id="section">操作步骤</h2>
-
-<p>将 Github 上的 Octorpess 博客迁移到 Gitlab 上的步骤如下。</p>
-
-<h3 id="project">创建 Project，提交代码</h3>
-
-<p>在 Gitlab 中创建 Project，在本地 Octopress Repository 文件夹下执行</p>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>添加 Gitlab 远端版本库</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-<span class="line-number">5</span>
-<span class="line-number">6</span>
-</pre></td><td class="code"><pre><code class="bash"><span class="line">git remote add gitlab http://example.com/username/octopress.git
-</span><span class="line">git push -u gitlab <span class="nb">source</span>:source
-</span><span class="line">
-</span><span class="line"><span class="nb">cd </span>_deploy
-</span><span class="line">git remote add gitlab http://example.com/username/octopress.git
-</span><span class="line">git push -u gitlab master:master
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<p>gitlab 是自定义远端版本库的名称，以后可以向 Github 和自己搭建的 Gitlab 分别提交 master、source 分支的更改。</p>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>向 Github、Gitlab 提交更改</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-<span class="line-number">5</span>
-<span class="line-number">6</span>
-<span class="line-number">7</span>
-<span class="line-number">8</span>
-<span class="line-number">9</span>
-</pre></td><td class="code"><pre><code class="bash"><span class="line"><span class="c"># github</span>
-</span><span class="line">rake deploy
-</span><span class="line">git push origin <span class="nb">source</span>
-</span><span class="line">
-</span><span class="line"><span class="c"># gitlab</span>
-</span><span class="line"><span class="nb">cd </span>_deploy
-</span><span class="line">git push gitlab master
-</span><span class="line"><span class="nb">cd</span> ..
-</span><span class="line">git push gitlab <span class="nb">source</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<p>我们希望 <code>git push gitlab master</code> 触发服务器内容更新。</p>
-
-<h3 id="web-hooks-1">关联 Web hooks</h3>
-
-<p>如下图进入 Settings -&gt; Webhooks 创建一个钩子</p>
-
-<p><a href="http://frank19900731.github.io/img/post/2015-1/4.png" class="img-up" title="钩子创建"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-1/4.png" width="90%" title="钩子创建" /></a></p>
-
-<p>点击 <code>Test Hook</code> 发送模拟消息到你指定的 URL。</p>
-
-<h3 id="web-hooks-">Web hooks 逻辑</h3>
-
-<p>编写 PHP 脚本如下</p>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>Web hooks 逻辑</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-<span class="line-number">5</span>
-<span class="line-number">6</span>
-<span class="line-number">7</span>
-</pre></td><td class="code"><pre><code class="php"><span class="line"><span class="o">&lt;?</span><span class="nx">php</span>
-</span><span class="line">
-</span><span class="line">    <span class="nv">$de_json</span> <span class="o">=</span>  <span class="nb">json_decode</span><span class="p">(</span><span class="nv">$GLOBALS</span><span class="p">[</span><span class="s1">&#39;HTTP_RAW_POST_DATA&#39;</span><span class="p">],</span> <span class="k">TRUE</span><span class="p">);</span>
-</span><span class="line">    <span class="k">if</span> <span class="p">(</span><span class="nv">$de_json</span><span class="p">[</span><span class="s1">&#39;ref&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;refs/heads/master&quot;</span><span class="p">)</span> <span class="c1">// pull only when master branch updated</span>
-</span><span class="line">        <span class="nb">shell_exec</span><span class="p">(</span><span class="s2">&quot;cd /path/to/your/webcontent;/usr/bin/git pull http://example.com/username/octopress.git&quot;</span><span class="p">);</span>
-</span><span class="line">
-</span><span class="line"><span class="cp">?&gt;</span><span class="x"></span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<p>识别是 master 分支的更新提交，就到网页目录下更新内容。</p>
-
-<p>测试中发现 PHP 里嵌入的 shell 命令无法执行，而在命令行中可以执行。网上查询可能是 safe_mode 设置的问题或者 <code>shell_exec</code> 在设置中被 disable 掉，又或者是 shell 执行环境的问题，不过最后确认的原因还是<strong>权限问题</strong>。</p>
-
-<p>我把 Octopress 的内容放在 lighttpd 中，而 PHP 的运行环境是 Apache，后者的实际运行用户是 <code>www-data</code>（在 PHP 代码中执行 <code>whoami</code> 可知），而非登录用户或者 <code>root</code>，所以要改变 <code>www-data</code> 对于目录或文件的权限。</p>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>权限变更</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-</pre></td><td class="code"><pre><code class="bash"><span class="line">chmod o+rwx /usr/bin/git
-</span><span class="line">chmod -R o+rwx /path/to/your/webcontent
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<p>让 <code>www-data</code> 有权限执行 git 命令，并操作网页内容文件夹。</p>
-
-<p>到这里，已经将 Octopress 迁移到 Gitlab 上，并完成 修改 -&gt; 提交 -&gt; 自动更新的功能。</p>
-
-<p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2015/01/10/shi-yong-webhook-zai-gitlab-zhong-shi-xian-lei-github-pages-xiao-guo/">http://frank19900731.github.io/blog/2015/01/10/shi-yong-webhook-zai-gitlab-zhong-shi-xian-lei-github-pages-xiao-guo/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[每周一软之 Sapiens]]></title>
-    <link href="http://frank19900731.github.io/blog/2015/01/04/mei-zhou-ruan-zhi-sapiens/"/>
-    <updated>2015-01-04T00:37:59+08:00</updated>
-    <id>http://frank19900731.github.io/blog/2015/01/04/mei-zhou-ruan-zhi-sapiens</id>
-    <content type="html"><![CDATA[<p><strong>目录</strong></p>
-
-<ul id="markdown-toc">
-  <li><a href="#section">功能介绍</a></li>
-  <li><a href="#section-1">界面设计</a></li>
-  <li><a href="#section-2">易用性</a></li>
-  <li><a href="#section-3">稳定性</a></li>
-  <li><a href="#section-4">跨平台</a></li>
-  <li><a href="#section-5">类似软件</a></li>
-  <li><a href="#section-6">闪光点</a></li>
-  <li><a href="#section-7">缺点</a></li>
-</ul>
-
-<!-- excerpt start -->
-
-<p>在这么一个<strong>读图时代</strong>、<strong>看脸时代</strong>，软件的颜值也称得上一个重要的衡量指标。Sapien 除了有一张美丽的面孔，还有那么点小情趣，挺讨人喜欢的。</p>
-
-<h2 id="section">功能介绍</h2>
-
-<p>Sapiens 是一个软件快速启动工具，且目前只支持软件快速打开，没有打开文件、执行脚本啦什么旁的功能。</p>
-
-<p>Sapiens 除了通常的快捷键启动方式，还有<strong>画圈圈</strong>启动方式，具体见如下动态图。从动态图还可以看出它默认<strong>列举你最近用过的软件</strong>。</p>
-
-<p><a href="http://frank19900731.github.io/img/post/2015-1/1.gif" class="img-up" title="动态图"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-1/1.gif" width="70%" title="动态图" /></a></p>
-
-<blockquote><p>兰花指微翘，食指指尖在触摸板上看似不经意的划出那一弯圆月，美美的界面就映入眼帘，真真儿的是让人陶醉呢……</p></blockquote>
-
-<p><strong>转向顺时针、逆时针皆可</strong>，圈数触发可以设置在 1 - 3 圈，默认是 1.4 圈。经测试设置为 1 圈的时候，大概也就是<strong>一圈半</strong>能识别出的水平。注意<strong>手速稍快些</strong>，<strong>画的圆半径不要太小</strong>，试过几次就能很熟练了。</p>
-
-<!-- excerpt end -->
-
-<p>既漂亮又有情趣，倘若是无脑，那也就是平平啦，不过人家可是结合了人工智能的呦。</p>
-
-<p><a href="http://frank19900731.github.io/img/post/2015-1/3.png" class="img-up" title="Artificial Inteligence"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-1/3.png" width="70%" title="Artificial Inteligence" /></a></p>
-
-<p>把 <strong>About Sapiens’ Artificial Intelligence</strong> 那抄录下来。</p>
-
-<blockquote><p>Sapiens tries to predict the applications you will want to launch.</p><p>Sapiens understands what applications you use and learns how you interact with your Mac. For this reason it may take 2-3 days (it really depends how often you use your mac daily) for it to have enough brain power for making accurate predictions.</p><p>Also, as your habits change Sapiens keeps adapting to them by constantly learning from you.</p></blockquote>
-
-<p>就是说，你把人家来安装，我来把你细观察，你想吃饭我端碗，你想拉屎我递纸，把你伺候好好的，一辈子都随你意。</p>
-
-<h2 id="section-1">界面设计</h2>
-
-<p>提供五种布局，默认的如下图。</p>
-
-<p><a href="http://frank19900731.github.io/img/post/2015-1/2.png" class="img-up" title="Sapiens 图示"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-1/2.png" width="70%" title="Sapiens 图示" /></a></p>
-
-<p>可以设置 <strong>Desktop Mirroring Effect</strong>，圆内背景就是桌面背景加了遮罩的效果，配合上<strong>动态壁纸</strong>，确实八错。</p>
-
-<h2 id="section-2">易用性</h2>
-
-<p>傻瓜软件。</p>
-
-<h2 id="section-3">稳定性</h2>
-
-<p>稳定，未遇异常。</p>
-
-<h2 id="section-4">跨平台</h2>
-
-<p>无。</p>
-
-<h2 id="section-5">类似软件</h2>
-
-<p>提到快速启动软件，那头两把交椅自然就是 <a href="http://www.alfredapp.com/">Alfred</a> 和 <a href="http://qsapp.com/">QuickSilver</a> ，前者闭源收费（确切的说是高级功能收费），后者开源免费。</p>
-
-<p>二者都有很强的附加功能，比如文件搜索、删除、压缩、查看详情啦，脚本执行、iTunes 控制啦等。关于它们的对比网上有 <a href="http://www.v2ex.com/t/42050">很多讨论</a>，不在这里多说。 </p>
-
-<p>QuickSilver 有自己的插件列表，因为是开源的，所以也可以自己开发，不过门槛应该比较高吧？Alfred 有一个 Workflow 模式，是收费功能，可以通过撰写脚本、连接模块实现自己想要的功能，就相当于一个插件定制系统了（有点类似于 Automator），适合于普通程序员。</p>
-
-<p>本人最早使用的是 QucikSilver，习惯积累下来也就没有转到 Alfred，也是因为前者已经能够满足所需。最近尝试用用 Alfred，也别落伍太多，先从这个 <a href="https://github.com/hzlzh/AlfredWorkflow.com">Workflow 列表</a> 看起吧，这个 <a href="http://lucifr.com/2011/11/30/alfred-and-some-recommanded-extensions/">博客</a> 中也有很多 Alfred 相关内容。</p>
-
-<p>不过我还是有点想不明白为什么要把那么多功能都堆到这个小软件里，自动和手动差别就这么大么，还是说在追求些别的什么。</p>
-
-<p>最主要的原因是我还不够 Geek 吧……</p>
-
-<h2 id="section-6">闪光点</h2>
-
-<p>漂亮。</p>
-
-<h2 id="section-7">缺点</h2>
-
-<p>既然漂亮，就别要求那么高了。</p>
-
-<p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2015/01/04/mei-zhou-ruan-zhi-sapiens/">http://frank19900731.github.io/blog/2015/01/04/mei-zhou-ruan-zhi-sapiens/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
 ]]></content>
   </entry>
   

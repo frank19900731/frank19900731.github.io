@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Mac 使用 | Blog of 太极儒]]></title>
   <link href="http://frank19900731.github.io/blog/category/mac-shi-yong/atom.xml" rel="self"/>
   <link href="http://frank19900731.github.io/"/>
-  <updated>2015-04-20T13:41:45+08:00</updated>
+  <updated>2015-04-20T22:04:39+08:00</updated>
   <id>http://frank19900731.github.io/</id>
   <author>
     <name><![CDATA[Frank Song]]></name>
@@ -12,6 +12,106 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[每周一软之 1Password]]></title>
+    <link href="http://frank19900731.github.io/blog/2015/04/20/mei-zhou-yi-ruan-zhi-1password/"/>
+    <updated>2015-04-20T21:00:45+08:00</updated>
+    <id>http://frank19900731.github.io/blog/2015/04/20/mei-zhou-yi-ruan-zhi-1password</id>
+    <content type="html"><![CDATA[<p><strong>目录</strong></p>
+
+<ul id="markdown-toc">
+  <li><a href="#section">功能介绍</a></li>
+  <li><a href="#section-1">界面设计</a></li>
+  <li><a href="#section-2">易用性</a></li>
+  <li><a href="#section-3">稳定性</a></li>
+  <li><a href="#section-4">跨平台</a></li>
+  <li><a href="#section-5">类似软件</a></li>
+  <li><a href="#section-6">闪光点</a></li>
+  <li><a href="#section-7">缺点</a></li>
+</ul>
+
+<!-- excerpt start -->
+
+<p>毕业季，论文施工中，有空再补。。。</p>
+
+<p><a href="/img/post/2015-3/1.gif" class="img-up" title="论文施工中"><img class="imgcenter" src="/img/post/2015-3/1.gif" width="40%" title="论文施工中" ></a></p>
+
+<!-- excerpt end -->
+
+<h2 id="section">功能介绍</h2>
+
+<h2 id="section-1">界面设计</h2>
+
+<h2 id="section-2">易用性</h2>
+
+<h2 id="section-3">稳定性</h2>
+
+<h2 id="section-4">跨平台</h2>
+
+<h2 id="section-5">类似软件</h2>
+
+<h2 id="section-6">闪光点</h2>
+
+<h2 id="section-7">缺点</h2>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Yosemite 10.10.3 更新后 Finder 剩余容量显示错误问题的解决]]></title>
+    <link href="http://frank19900731.github.io/blog/2015/04/20/yosemite-10-dot-10-dot-3-geng-xin-hou-finder-sheng-yu-rong-liang-xian-shi-cuo-wu-wen-ti-de-jie-jue/"/>
+    <updated>2015-04-20T19:38:24+08:00</updated>
+    <id>http://frank19900731.github.io/blog/2015/04/20/yosemite-10-dot-10-dot-3-geng-xin-hou-finder-sheng-yu-rong-liang-xian-shi-cuo-wu-wen-ti-de-jie-jue</id>
+    <content type="html"><![CDATA[<!-- excerpt start -->
+
+<p>最近刚升级过 Yosemite 10.10.3，使用中发现 Finder 状态栏的剩余容量信息信息显示错误：</p>
+
+<p><a href="/img/post/2015-4/4.png" class="img-up" title="剩余容量错误"><img class="imgcenter" src="/img/post/2015-4/4.png" width="90%" title="剩余容量错误" ></a></p>
+
+<p>查看关于本机、Disk Utility 以及 <code>df -h</code> 命令输出的剩余容量是正常的，重启电脑、关闭 TotalFinder 插件、使用 Disk Utility 修复磁盘（权限）都无法修正错误。求助苹果热线，<strong>一如既往的毫无帮助</strong>。</p>
+
+<p>后来在苹果的技术支持社区发现了相关帖子 <a href="https://discussions.apple.com/thread/6983320?start=0&amp;tstart=0">10.10.3 Finder Status Bar information is wrong, TB not GB</a>，给出的建议是重新设置 NVRAM 和 SMC。</p>
+
+<!-- excerpt end -->
+
+<p>按照技术支持里的说法，NVRAM（非易失随机访问内存）存储了一些系统经常访问的数据与设置，比如屏幕分辨率、启动盘等。既然重设 NVRAM 可以修正状态栏的信息错误，那可以推测，剩余空间信息可能被写在其中（？）。NVRAM 的重新设置方法如下，一两秒的时间就可以完成重置。</p>
+
+<blockquote>
+  <p>Resetting NVRAM</p>
+
+  <ul>
+    <li>Shut down your Mac.</li>
+    <li>Locate the following keys on the keyboard: Command (⌘), Option, P, and R. </li>
+    <li>Turn on your Mac.</li>
+    <li>Press and hold the Command-Option-P-R keys immediately after you hear the startup sound.</li>
+    <li>Hold these keys until the computer restarts and you hear the startup sound for a second time.</li>
+    <li>Release the keys.</li>
+  </ul>
+</blockquote>
+
+<p>再来看 <a href="https://support.apple.com/en-us/HT201295">SMC 的功能</a>，我并不很理解这与 Finder 状态栏信息有什么关系，不过读了重设 SMC 的步骤后也就照做了，因为我们平时无意中会经常重新设置它，就是插拔电源这么简单。</p>
+
+<blockquote>
+  <p>On Mac Pro, iMac, Mac mini, and Xserve</p>
+
+  <p>To reset the SMC on Intel-based Mac Pro, iMac, and Mac mini computers, as well as Xserve:</p>
+
+  <ul>
+    <li>Shut down the computer.</li>
+    <li>Unplug the power cord.</li>
+    <li>Wait fifteen seconds.</li>
+    <li>Attach the power cord.</li>
+    <li>Wait five seconds, then press the power button to turn on the computer.</li>
+  </ul>
+</blockquote>
+
+<p>备份系统，第一次修复尝试失败。考虑到 <a href="https://discussions.apple.com/thread/6983320?start=0&amp;tstart=0">帖子</a> 里提到可能是 Time Machine 带来的影响，所以<strong>禁用了 Time Machine 后进行第二次尝试</strong>，状态栏恢复正确显示。此后开启 Time Machine、重启机器等操作后，错误未复现。</p>
+
+<p>最后想说的是，通过若干次笔记本相关的技术咨询，对苹果公司客服团队中<strong>基础客服的专业性</strong>实在不敢恭维（高级客服接触不多，不敢妄下结论）。他们解决问题的思路是用解决方案套问题，而不是根据问题表现分析原因进而解决，实在不行就建议<strong>重装系统</strong>。撇开解决方案不提，对于每打一次咨询热线都要报一次产品序列号、姓名和手机的做法我也是很不理解，想来对于顺丰客服能够快速调取我历史下单记录询问我是否和之前下单地点相同的做法，我真应该点 32 个赞了。</p>
+
+<p><a href="/img/post/2015-4/1.jpg" class="img-up" title="点32个赞"><img class="imgcenter" src="/img/post/2015-4/1.jpg" width="70%" title="点32个赞" ></a></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[每周一软之 Paste]]></title>
@@ -142,168 +242,6 @@
 <h2 id="section-6">闪光点</h2>
 
 <h2 id="section-7">缺点</h2>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[每周一软之 Curio]]></title>
-    <link href="http://frank19900731.github.io/blog/2015/03/23/mei-zhou-yi-ruan-zhi-curio/"/>
-    <updated>2015-03-23T00:36:42+08:00</updated>
-    <id>http://frank19900731.github.io/blog/2015/03/23/mei-zhou-yi-ruan-zhi-curio</id>
-    <content type="html"><![CDATA[<p><strong>目录</strong></p>
-
-<ul id="markdown-toc">
-  <li><a href="#section">功能介绍</a></li>
-  <li><a href="#section-1">界面设计</a></li>
-  <li><a href="#section-2">易用性</a></li>
-  <li><a href="#section-3">稳定性</a></li>
-  <li><a href="#section-4">跨平台</a></li>
-  <li><a href="#section-5">类似软件</a></li>
-  <li><a href="#section-6">闪光点</a></li>
-  <li><a href="#section-7">缺点</a></li>
-</ul>
-
-<!-- excerpt start -->
-
-<p>毕业季，论文施工中，有空再补。。。</p>
-
-<p><a href="/img/post/2015-3/1.gif" class="img-up" title="论文施工中"><img class="imgcenter" src="/img/post/2015-3/1.gif" width="40%" title="论文施工中" ></a></p>
-
-<!-- excerpt end -->
-
-<h2 id="section">功能介绍</h2>
-
-<h2 id="section-1">界面设计</h2>
-
-<h2 id="section-2">易用性</h2>
-
-<h2 id="section-3">稳定性</h2>
-
-<h2 id="section-4">跨平台</h2>
-
-<h2 id="section-5">类似软件</h2>
-
-<h2 id="section-6">闪光点</h2>
-
-<h2 id="section-7">缺点</h2>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[每周一软之 Soulver]]></title>
-    <link href="http://frank19900731.github.io/blog/2015/03/15/mei-zhou-yi-ruan-zhi-soulver/"/>
-    <updated>2015-03-15T18:21:49+08:00</updated>
-    <id>http://frank19900731.github.io/blog/2015/03/15/mei-zhou-yi-ruan-zhi-soulver</id>
-    <content type="html"><![CDATA[<p><strong>目录</strong></p>
-
-<ul id="markdown-toc">
-  <li><a href="#section">功能介绍</a></li>
-  <li><a href="#section-1">界面设计</a></li>
-  <li><a href="#section-2">易用性</a></li>
-  <li><a href="#section-3">稳定性</a></li>
-  <li><a href="#section-4">跨平台</a></li>
-  <li><a href="#section-5">类似软件</a>    <ul>
-      <li><a href="#section-6">普通计算器</a></li>
-      <li><a href="#section-7">交互式编程环境</a></li>
-    </ul>
-  </li>
-  <li><a href="#section-8">闪光点</a></li>
-  <li><a href="#section-9">缺点</a></li>
-</ul>
-
-<!-- excerpt start -->
-
-<h2 id="section">功能介绍</h2>
-
-<p><a href="http://www.acqualia.com/soulver/">Soulver</a> 是一款智能计算器，允许<strong>计算公式与文档混排</strong>，提供汇率与股价的查询计算、变量定义、结果引用、版本保存、简单统计等功能。</p>
-
-<p>下面先以软件自带样例文件具体介绍其功能。</p>
-
-<p>Soulver 使用文档保存计算过程，文档格式为 XML，可导出 PDF 文件。</p>
-
-<p>这幅图显示了文档块定义（比如 Simple Math 粗体）、简单计算、以语义表示的计算、注释以及汇率转换、单位转换的用法。</p>
-
-<p><a href="/img/post/2015-3/13.png" class="img-up" title="Soulver 使用样例一"><img class="imgcenter-no-shadow" src="/img/post/2015-3/13.png" width="100%" title="Soulver 使用样例一" ></a></p>
-
-<!-- excerpt end -->
-
-<p>这幅图显示了结果引用、变量、股票价格、函数的用法。</p>
-
-<p><a href="/img/post/2015-3/14.png" class="img-up" title="Soulver 使用样例二"><img class="imgcenter-no-shadow" src="/img/post/2015-3/14.png" width="100%" title="Soulver 使用样例二" ></a></p>
-
-<p>结果引用、汇率、股票价格都是<strong>依赖某一个数值</strong>，当依赖值改变，使用此依赖值的计算结果也会随之变化。我们需要做的仅是列写公式，更新依赖值。</p>
-
-<p><a href="/img/post/2015-3/15.png" class="img-up" title="汇率值、股票价格更新"><img class="imgcenter-no-shadow" src="/img/post/2015-3/15.png" width="90%" title="汇率值、股票价格更新" ></a></p>
-
-<p>上图 Variables 窗格中可以定义<strong>全局变量</strong>，对每个计算文档生效。</p>
-
-<p>可以在设置中修改支持中文输入，如下图所示。计算时可以切换弧度制、角度制，设置小数点保留精度。点击 Answer Palette 可以看到结果的其它表示形式，角度、分数、十进制、二进制、十六进制等。</p>
-
-<p><a href="/img/post/2015-3/16.png" class="img-up" title="Soulver 使用样例三"><img class="imgcenter-no-shadow" src="/img/post/2015-3/16.png" width="100%" title="Soulver 使用样例三" ></a></p>
-
-<p>Soulver 所支持的函数列表、逻辑计算、单位换算表等详见 Reference。</p>
-
-<h2 id="section-1">界面设计</h2>
-
-<p>界面设计美观，自定义方便。</p>
-
-<h2 id="section-2">易用性</h2>
-
-<p>容易使用，参考 Reference 即可。</p>
-
-<h2 id="section-3">稳定性</h2>
-
-<p>稳定性好，有一个瑕疵见 <a href="#section-8">缺点</a> 第三条。</p>
-
-<h2 id="section-4">跨平台</h2>
-
-<p>提供 iOS 版本。</p>
-
-<h2 id="section-5">类似软件</h2>
-
-<h3 id="section-6">普通计算器</h3>
-
-<ul>
-  <li>Mac 自带计算器，可放置于边栏；</li>
-</ul>
-
-<p><a href="/img/post/2015-3/19.png" class="img-up" title="Mac 自带计算器"><img class="imgcenter" src="/img/post/2015-3/19.png" width="40%" title="Mac 自带计算器" ></a></p>
-
-<ul>
-  <li>
-    <p><a href="https://itunes.apple.com/cn/app/numeric/id564960788?mt=12">Numeric</a> 特点是将输入区域映射到触摸板上，不必移动鼠标点击；</p>
-  </li>
-  <li>
-    <p><a href="https://itunes.apple.com/us/app/addism-the-calculator/id943947757?mt=12">Addism</a> 可进行简单的科学计算，可以保存、分享结果；</p>
-  </li>
-</ul>
-
-<p><a href="/img/post/2015-3/18.png" class="img-up" title="Addism 界面"><img class="imgcenter-no-shadow" src="/img/post/2015-3/18.png" width="80%" title="Addism 界面" ></a></p>
-
-<ul>
-  <li><a href="http://getnumi.info/">Numi</a> 运行于菜单栏，和 Soulver 类似，也支持以语义定义简单计算。</li>
-</ul>
-
-<p><a href="/img/post/2015-3/17.png" class="img-up" title="Numi 界面"><img class="imgcenter-no-shadow" src="/img/post/2015-3/17.png" width="70%" title="Numi 界面" ></a></p>
-
-<h3 id="section-7">交互式编程环境</h3>
-
-<p>对于理工科同学来说，以上计算功能还是不够的，一般会采用专门软件或编程语言，比如 Matlab、Mathematica、R、C、Python 等。<strong>联系 Soulver 文档与计算混排的特点</strong>，在相似软件中我推荐 <a href="http://yihui.name/knitr/">knitr</a> 和 <a href="http://ipython.org/notebook.html">iPython notebook</a>，可分别配合 R 与 Python 使用，<strong>用于生成图文数据详实的报告</strong>。此外，RStudio 提供了 <a href="http://www.rstudio.com/products/rstudio/download-server/">RStudio Server</a>，可以架设在个人服务器上提供网络访问，应付普通计算任务绰绰有余。</p>
-
-<h2 id="section-8">闪光点</h2>
-
-<ul>
-  <li>计算公式与文档混排，方便阅读、理解；</li>
-  <li>单位转换、汇率、股价等功能实用。</li>
-</ul>
-
-<h2 id="section-9">缺点</h2>
-
-<ul>
-  <li>函数库仍需扩展，min、max 函数竟都没有；</li>
-  <li>无法进行条件判断，功能受限；</li>
-  <li>文档中有大数字计算时，输入会异常卡顿，推测软件隔段时间计算文档每一行的结果，即便该行及该行的依赖未改变，应当予以优化。</li>
-</ul>
 ]]></content>
   </entry>
   

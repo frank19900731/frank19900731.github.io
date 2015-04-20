@@ -1,5 +1,115 @@
 
 <item>
+    <title>每周一软之 1Password</title>
+    <link>http://realjenius.com/blog/2015/04/20/mei-zhou-yi-ruan-zhi-1password/</link>
+    <author>R.J. Lorimer</author>
+    <pubDate>2015-04-20T21:00:45+08:00</pubDate>
+    <guid>http://realjenius.com/blog/2015/04/20/mei-zhou-yi-ruan-zhi-1password/</guid>
+    <description><![CDATA[
+     <p><strong>目录</strong></p>
+
+<ul id="markdown-toc">
+  <li><a href="#section">功能介绍</a></li>
+  <li><a href="#section-1">界面设计</a></li>
+  <li><a href="#section-2">易用性</a></li>
+  <li><a href="#section-3">稳定性</a></li>
+  <li><a href="#section-4">跨平台</a></li>
+  <li><a href="#section-5">类似软件</a></li>
+  <li><a href="#section-6">闪光点</a></li>
+  <li><a href="#section-7">缺点</a></li>
+</ul>
+
+<!-- excerpt start -->
+
+<p>毕业季，论文施工中，有空再补。。。</p>
+
+<p><a href="http://frank19900731.github.io/img/post/2015-3/1.gif" class="img-up" title="论文施工中"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-3/1.gif" width="40%" title="论文施工中" /></a></p>
+
+<!-- excerpt end -->
+
+<h2 id="section">功能介绍</h2>
+
+<h2 id="section-1">界面设计</h2>
+
+<h2 id="section-2">易用性</h2>
+
+<h2 id="section-3">稳定性</h2>
+
+<h2 id="section-4">跨平台</h2>
+
+<h2 id="section-5">类似软件</h2>
+
+<h2 id="section-6">闪光点</h2>
+
+<h2 id="section-7">缺点</h2>
+
+<p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2015/04/20/mei-zhou-yi-ruan-zhi-1password/">http://frank19900731.github.io/blog/2015/04/20/mei-zhou-yi-ruan-zhi-1password/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
+
+  ]]></description>
+</item>
+
+<item>
+    <title>Yosemite 10.10.3 更新后 Finder 剩余容量显示错误问题的解决</title>
+    <link>http://realjenius.com/blog/2015/04/20/yosemite-10-dot-10-dot-3-geng-xin-hou-finder-sheng-yu-rong-liang-xian-shi-cuo-wu-wen-ti-de-jie-jue/</link>
+    <author>R.J. Lorimer</author>
+    <pubDate>2015-04-20T19:38:24+08:00</pubDate>
+    <guid>http://realjenius.com/blog/2015/04/20/yosemite-10-dot-10-dot-3-geng-xin-hou-finder-sheng-yu-rong-liang-xian-shi-cuo-wu-wen-ti-de-jie-jue/</guid>
+    <description><![CDATA[
+     <!-- excerpt start -->
+
+<p>最近刚升级过 Yosemite 10.10.3，使用中发现 Finder 状态栏的剩余容量信息信息显示错误：</p>
+
+<p><a href="http://frank19900731.github.io/img/post/2015-4/4.png" class="img-up" title="剩余容量错误"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-4/4.png" width="90%" title="剩余容量错误" /></a></p>
+
+<p>查看关于本机、Disk Utility 以及 <code>df -h</code> 命令输出的剩余容量是正常的，重启电脑、关闭 TotalFinder 插件、使用 Disk Utility 修复磁盘（权限）都无法修正错误。求助苹果热线，<strong>一如既往的毫无帮助</strong>。</p>
+
+<p>后来在苹果的技术支持社区发现了相关帖子 <a href="https://discussions.apple.com/thread/6983320?start=0&amp;tstart=0">10.10.3 Finder Status Bar information is wrong, TB not GB</a>，给出的建议是重新设置 NVRAM 和 SMC。</p>
+
+<!-- excerpt end -->
+
+<p>按照技术支持里的说法，NVRAM（非易失随机访问内存）存储了一些系统经常访问的数据与设置，比如屏幕分辨率、启动盘等。既然重设 NVRAM 可以修正状态栏的信息错误，那可以推测，剩余空间信息可能被写在其中（？）。NVRAM 的重新设置方法如下，一两秒的时间就可以完成重置。</p>
+
+<blockquote>
+  <p>Resetting NVRAM</p>
+
+  <ul>
+    <li>Shut down your Mac.</li>
+    <li>Locate the following keys on the keyboard: Command (⌘), Option, P, and R. </li>
+    <li>Turn on your Mac.</li>
+    <li>Press and hold the Command-Option-P-R keys immediately after you hear the startup sound.</li>
+    <li>Hold these keys until the computer restarts and you hear the startup sound for a second time.</li>
+    <li>Release the keys.</li>
+  </ul>
+</blockquote>
+
+<p>再来看 <a href="https://support.apple.com/en-us/HT201295">SMC 的功能</a>，我并不很理解这与 Finder 状态栏信息有什么关系，不过读了重设 SMC 的步骤后也就照做了，因为我们平时无意中会经常重新设置它，就是插拔电源这么简单。</p>
+
+<blockquote>
+  <p>On Mac Pro, iMac, Mac mini, and Xserve</p>
+
+  <p>To reset the SMC on Intel-based Mac Pro, iMac, and Mac mini computers, as well as Xserve:</p>
+
+  <ul>
+    <li>Shut down the computer.</li>
+    <li>Unplug the power cord.</li>
+    <li>Wait fifteen seconds.</li>
+    <li>Attach the power cord.</li>
+    <li>Wait five seconds, then press the power button to turn on the computer.</li>
+  </ul>
+</blockquote>
+
+<p>备份系统，第一次修复尝试失败。考虑到 <a href="https://discussions.apple.com/thread/6983320?start=0&amp;tstart=0">帖子</a> 里提到可能是 Time Machine 带来的影响，所以<strong>禁用了 Time Machine 后进行第二次尝试</strong>，状态栏恢复正确显示。此后开启 Time Machine、重启机器等操作后，错误未复现。</p>
+
+<p>最后想说的是，通过若干次笔记本相关的技术咨询，对苹果公司客服团队中<strong>基础客服的专业性</strong>实在不敢恭维（高级客服接触不多，不敢妄下结论）。他们解决问题的思路是用解决方案套问题，而不是根据问题表现分析原因进而解决，实在不行就建议<strong>重装系统</strong>。撇开解决方案不提，对于每打一次咨询热线都要报一次产品序列号、姓名和手机的做法我也是很不理解，想来对于顺丰客服能够快速调取我历史下单记录询问我是否和之前下单地点相同的做法，我真应该点 32 个赞了。</p>
+
+<p><a href="http://frank19900731.github.io/img/post/2015-4/1.jpg" class="img-up" title="点32个赞"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-4/1.jpg" width="70%" title="点32个赞" /></a></p>
+
+<p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2015/04/20/yosemite-10-dot-10-dot-3-geng-xin-hou-finder-sheng-yu-rong-liang-xian-shi-cuo-wu-wen-ti-de-jie-jue/">http://frank19900731.github.io/blog/2015/04/20/yosemite-10-dot-10-dot-3-geng-xin-hou-finder-sheng-yu-rong-liang-xian-shi-cuo-wu-wen-ti-de-jie-jue/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
+
+  ]]></description>
+</item>
+
+<item>
     <title>每周一软之 Paste</title>
     <link>http://realjenius.com/blog/2015/04/11/mei-zhou-yi-ruan-zhi-paste/</link>
     <author>R.J. Lorimer</author>
@@ -668,796 +778,6 @@
 </ul>
 
 <p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2015/02/20/mei-zhou-yi-ruan-zhi-videogif/">http://frank19900731.github.io/blog/2015/02/20/mei-zhou-yi-ruan-zhi-videogif/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
-
-  ]]></description>
-</item>
-
-<item>
-    <title>每周一软之 SiteSucker</title>
-    <link>http://realjenius.com/blog/2015/02/12/mei-zhou-yi-ruan-zhi-sitesucker/</link>
-    <author>R.J. Lorimer</author>
-    <pubDate>2015-02-12T01:38:02+08:00</pubDate>
-    <guid>http://realjenius.com/blog/2015/02/12/mei-zhou-yi-ruan-zhi-sitesucker/</guid>
-    <description><![CDATA[
-     <p><strong>目录</strong></p>
-
-<ul id="markdown-toc">
-  <li><a href="#section">功能介绍</a></li>
-  <li><a href="#section-1">界面设计</a></li>
-  <li><a href="#section-2">易用性</a></li>
-  <li><a href="#section-3">稳定性</a></li>
-  <li><a href="#section-4">跨平台</a></li>
-  <li><a href="#section-5">类似软件</a></li>
-  <li><a href="#section-6">闪光点</a></li>
-  <li><a href="#section-7">缺点</a></li>
-</ul>
-
-<!-- excerpt start -->
-
-<h2 id="section">功能介绍</h2>
-
-<p><a href="http://www.sitesucker.us/mac/mac.html">SiteSucker</a> 是一款站点下载软件，<strong>复制站点结构</strong>，<strong>下载相关资源文件</strong>，包括 HTML、JS、CSS、图片、视频等，以方便离线查看。</p>
-
-<p>离线查看主要有两种原因，一种是觉得很有价值，比如 API 文档，需要随时查看；另一种就是网页反应太慢，不如一次性下载完成，本地快速查看。基于第二种原因，我用 SiteSucker 对 <a href="https://www.openproject.org/">OpenProject 站点</a> 做了 <a href="http://frank19900731.github.io/ebook/openproject/">镜像</a>，看起来不错的样子。</p>
-
-<p>作为一款爬虫软件，SiteSucker 的下载设置和 wget、curl 等命令行工具的参数设置是相似的，它的优势主要体现在：</p>
-
-<ol>
-  <li>图形化界面操作，免除参数记忆，配置可以保存再利用；</li>
-  <li>可以方便地暂停、继续、终止、保存抓取过程；</li>
-  <li>自带详细的日志输出，为参数调整提供有价值的参考。</li>
-</ol>
-
-<p>图形界面设置的精细程度毕竟不如命令行工具，不过对于常见的教程备份、博客备份等需求，我觉得还是绰绰有余的；而更复杂的任务，可能需要<strong>根据抓取结果迭代调整参数设置</strong>来完成。对于一些 <strong>JS 效果复杂</strong>的网页，可能不仅是 SiteSucker，连 wget 都无法胜任了（因为没法模拟一些人为操作去获取链接）。</p>
-
-<!-- excerpt end -->
-
-<p>接下来，我大概从一个用户需求的角度介绍 SiteSucker 的功能。</p>
-
-<ul>
-  <li><strong>首先指定种子 url 作为起始，从抓取页面中提取新的 url 作为接下来的抓取目标，可想而知这个过程可能无穷尽的进行下去，如何界定范围？</strong>
-    <ul>
-      <li>SiteSucker 对 <code>Path Constraints</code> 提供 5 种设置，假设种子 url 是 http://frank19900731.github.io/wx/archives/
-        <ul>
-          <li><strong>None</strong>  无限制 ；</li>
-          <li><strong>Host</strong>  与种子 url 属同一个（子）域，即 http://frank19900731.github.io/*；</li>
-          <li><strong>Subdomains</strong>   可以是其它子域（也包括父域），比如 http://hello.github.io/<em>，http://github.io/</em>，但不可以是国家代码子域，比如（如果有的话）http://frank19900731.github.io.hk；</li>
-          <li><strong>Directory</strong>  与种子 url 属于统一路径，即 http://frank19900731.github.io/wx/archives/*；</li>
-          <li><strong>Paths Settings</strong>  当前 url + 自定义 <code>Paths Settings</code>。</li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-  <li><strong>接上条，如何自定义</strong> <code>Paths Settings</code> <strong>?</strong>
-    <ul>
-      <li><code>Paths to Include</code> &amp; <code>Paths to Exclude</code>，顾名思义定义希望被抓取/不希望被抓取的模式；</li>
-      <li>可以采用正则表达式定义；</li>
-      <li>不论 <code>Path Constraints</code> 的选择，<code>Paths Settings</code> 始终是生效的，引用 <a href="http://ricks-apps.com/osx/sitesucker/archive/2.x/2.6.x/2.6/manuals/en/pgs/Overview.html">官方教程</a> 的一段话总结 <strong>SiteSucker 如何判定一个 url 是否该被抓取</strong>：</li>
-    </ul>
-  </li>
-</ul>
-
-<blockquote>
-  <p>If this is the <strong>original URL</strong> (that is, the URL specified in the Web URL text box), then SiteSucker downloads the file.</p>
-
-  <p>Otherwise, if the URL begins with one of the strings (or matches one of the regular expressions) in the <strong>Paths to Exclude</strong> text box, then the file is not downloaded.</p>
-
-  <p>Otherwise, if the URL meets the requirements of the current <strong>Path Constraint</strong> setting, then the file is downloaded.</p>
-
-  <p>Otherwise, if the URL begins with one of the strings (or matches one of the regular expressions) in the <strong>Paths to Include</strong> text box, then SiteSucker downloads the file.</p>
-
-  <p>Otherwise, if the <strong>Include Supporting Files</strong> setting is on and the URL references a non-HTML file type, then SiteSucker downloads the file.</p>
-
-  <p>Otherwise, SiteSucker does not download the file.</p>
-</blockquote>
-
-<ul>
-  <li><strong>设置了</strong>  <code>Path Constraints</code>、<code>Paths Settings</code>，<strong>但还是可能有抓取遗漏，如何查看漏抓 url ？</strong>
-    <ul>
-      <li>勾选 <code>Export External Links</code>，下载目录中名为 _ExternalLinks.html 的文件记录了漏抓 url，可以将他们填入 <code>Paths Settings</code>，重新抓取。</li>
-    </ul>
-  </li>
-  <li><strong>一些网站需要登录才能抓取，在 SiteSucker 中如何处理？</strong>
-    <ul>
-      <li>一种登录方式是<strong>弹出框</strong>，比如路由器管理页面，SiteSucker 会首先查询 Keychain 中的密码记录，如果没有则弹出登陆框让用户输入；</li>
-      <li>另一种登录方式是<strong>页面登录</strong>，比如人人网。菜单栏点击 Control -&gt; Open Browser 弹出浏览框，在浏览框中登录即可下载，如下图所示。</li>
-    </ul>
-  </li>
-</ul>
-
-<p><a href="http://frank19900731.github.io/img/post/2015-2/14.png" class="img-up" title="登录下载"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-2/14.png" width="70%" title="登录下载" /></a></p>
-
-<ul>
-  <li><strong>不希望抓取某些类型的文件，比如压缩包、视频等，该如何设置？</strong>
-    <ul>
-      <li><code>File Types</code> 中选择 <code>Disallow Specified File Types</code>，然后指定相关文件类型。</li>
-    </ul>
-  </li>
-  <li><strong>希望同时抓取多个网页，怎样设置连接数？</strong>
-    <ul>
-      <li>Preferences 中可以设置连接数，如下图。</li>
-    </ul>
-  </li>
-</ul>
-
-<p><a href="http://frank19900731.github.io/img/post/2015-2/13.png" class="img-up" title="设置连接数"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-2/13.png" width="60%" title="设置连接数" /></a></p>
-
-<ul>
-  <li><strong>一些站点需要隔段时间抓去一次（比如博客），文件覆盖方式如何设置？</strong>
-    <ul>
-      <li><code>File Replacement</code> 提供三种选择
-        <ul>
-          <li><strong>Never</strong>  不覆盖；</li>
-          <li><strong>Always</strong>  总是覆盖；</li>
-          <li><strong>With Newer</strong>  保留较新的那个。</li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-  <li><strong>如何将 HTML 中的文件链接（如 JS、CSS）修改为本地引用？</strong>
-    <ul>
-      <li><code>File Modification</code> 设置为 <strong>Localize</strong></li>
-    </ul>
-  </li>
-  <li><strong>如何突破 robots.txt 的限制（不建议）？</strong>
-    <ul>
-      <li>勾选 <code>Ignore Robot Exclusions</code>。</li>
-    </ul>
-  </li>
-  <li><strong>如何查看抓取日志？</strong>
-    <ul>
-      <li><code>Logs</code> 中勾选日志级别，log 文件会生成在已设置的下载文件夹中，有如下格式的记录。分析未抓取链接的原因，进行可能的参数调整。</li>
-    </ul>
-  </li>
-</ul>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>SiteSucker 日志记录</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-<span class="line-number">5</span>
-<span class="line-number">6</span>
-<span class="line-number">7</span>
-<span class="line-number">8</span>
-<span class="line-number">9</span>
-<span class="line-number">10</span>
-<span class="line-number">11</span>
-<span class="line-number">12</span>
-<span class="line-number">13</span>
-<span class="line-number">14</span>
-<span class="line-number">15</span>
-<span class="line-number">16</span>
-<span class="line-number">17</span>
-<span class="line-number">18</span>
-<span class="line-number">19</span>
-</pre></td><td class="code"><pre><code class="bash"><span class="line">2/12/15, 11:55:35 AM - MEDIA TYPE: <span class="s2">&quot;http://frank19900731.github.io/&quot;</span> has a media <span class="nb">type </span>of
-</span><span class="line">	text/html
-</span><span class="line">...
-</span><span class="line">2/12/15, 11:55:35 AM - WARNING: Unable to download <span class="s2">&quot;http://blog.sina.com/frank19900731&quot;</span>,
-</span><span class="line">	referenced from <span class="s2">&quot;http://frank19900731.github.io&quot;</span>,
-</span><span class="line">	because its path is not allowed
-</span><span class="line">2/12/15, 11:55:35 AM - WARNING: Unable to download <span class="s2">&quot;http://weibo.sina.com/frank19900731&quot;</span>,
-</span><span class="line">	referenced from <span class="s2">&quot;http://frank19900731.github.io&quot;</span>,
-</span><span class="line">	because its path is not allowed
-</span><span class="line">...
-</span><span class="line">2/12/15, 11:55:35 AM - WARNING: May not be able to follow all links on <span class="s2">&quot;http://frank19900731.github.io&quot;</span>
-</span><span class="line">	because it uses JavaScript
-</span><span class="line">2/12/15, 11:55:35 AM - HISTORY: Downloaded <span class="s2">&quot;http://frank19900731.github.io&quot;</span>
-</span><span class="line">2/12/15, 11:55:35 AM - MEDIA TYPE: <span class="s2">&quot;http://frank19900731.github.io/favicon.ico&quot;</span> has a media <span class="nb">type </span>of
-</span><span class="line">	image/x-icon
-</span><span class="line">2/12/15, 11:55:36 AM - HISTORY: Downloaded <span class="s2">&quot;http://frank19900731.github.io/favicon.ico&quot;</span>
-</span><span class="line">2/12/15, 11:55:36 AM - MEDIA TYPE: <span class="s2">&quot;http://frank19900731.github.io/javascripts/modernizr.custom.js&quot;</span> has a media <span class="nb">type </span>of
-</span><span class="line">	application/javascript
-</span><span class="line">...
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<p>其它参数诸如最大扩展层数、默认页面编码、超时设置等都是网页抓取的基本设置，不再讨论。更多功能使用详见 <a href="http://ricks-apps.com/osx/sitesucker/archive/2.x/2.6.x/2.6/manuals/en/pgs/Overview.html">官方教程</a>。</p>
-
-<h2 id="section-1">界面设计</h2>
-
-<p>简单直接。</p>
-
-<p><a href="http://frank19900731.github.io/img/post/2015-2/15.png" class="img-up" title="SiteSucker 界面"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-2/15.png" width="75%" title="SiteSucker 界面" /></a></p>
-
-<h2 id="section-2">易用性</h2>
-
-<p>如<a href="#section">功能介绍</a>中所述，不同站点的提取难度不尽相同，摸索<strong>一套行之有效的参数</strong>的过程可能会比较复杂。</p>
-
-<h2 id="section-3">稳定性</h2>
-
-<p>稳定性好。</p>
-
-<h2 id="section-4">跨平台</h2>
-
-<p>支持 <a href="http://www.sitesucker.us/ios/ios.html">iOS</a>，网页站点可以打包在 iOS 和 OSX 间传输，对应 File -&gt; (Un)Pack Downloads 的功能。</p>
-
-<h2 id="section-5">类似软件</h2>
-
-<ul>
-  <li>命令行工具 <a href="http://curl.haxx.se/">curl</a>、 <a href="https://www.gnu.org/software/wget/">wget</a>
-    <ul>
-      <li><strong>上手简单</strong>，以 wget 为例，抓取一般站点只需 <code>wget -r -p -np -k url</code> 一条命令；</li>
-      <li>深入研究一下，可以进行更精细的设置，也可二次开发；</li>
-      <li>也有单条 wget 处理不好的情况，比如一些页面代码中可见 <code>css?v=x.x.x</code> 的写法，一般是为了 <a href="http://blog.csdn.net/zanychou/article/details/8813076">清除客户端缓存</a>，但 wget 会将其直接保存为 <code>css?v=x.x.x</code>（于是离线站点无法加载这一文件），可见这个 <a href="http://superuser.com/questions/703435/using-wget-to-download-css-with-get-params">提问</a>，而不是像 SiteSucker 那样识别并保存为 css 文件。</li>
-    </ul>
-  </li>
-  <li>Adobe Acrobat
-    <ul>
-      <li>Adobe Acrobat 支持<strong>从网页创建 PDF</strong>，也可以抓取站点，如下图。</li>
-    </ul>
-  </li>
-</ul>
-
-<p><a href="http://frank19900731.github.io/img/post/2015-2/12.png" class="img-up" title="Adobe Acrobat 抓取页面"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-2/12.png" width="80%" title="Adobe Acrobat 抓取页面" /></a></p>
-
-<ul>
-  <li><a href="http://www.sentenzadesktop.com/easy-script-copier/">Easy Script Copier</a>
-    <ul>
-      <li>抓取单个页面及相应的 JS、CSS，<strong>扒取网页格式</strong>很管用。</li>
-    </ul>
-  </li>
-  <li>网页抓取框架，如 <a href="http://nutch.apache.org/">Apache Nutch</a>、<a href="https://github.com/scrapy/scrapy">Scrapy</a> 等，功能自然更强大，对普通用户有较高的使用门槛。然而，对于大多数日常需求，还是有种<strong>大炮打蚊子</strong>的赶脚。</li>
-</ul>
-
-<h2 id="section-6">闪光点</h2>
-
-<ul>
-  <li>可视化定制，功能丰富，特别是支持<strong>登录抓取</strong>。</li>
-</ul>
-
-<h2 id="section-7">缺点</h2>
-
-<p>官网上有介绍 SiteSucker 的 <a href="http://www.sitesucker.us/mac/limitations.html">Limitations</a>。</p>
-
-<p>总的来说是良心之作，硬要说缺点不如说是建议：如果能有一个插件系统，用户可以开发、分享网页处理过程中某个具体处理环节的代码就更好了。</p>
-
-<p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2015/02/12/mei-zhou-yi-ruan-zhi-sitesucker/">http://frank19900731.github.io/blog/2015/02/12/mei-zhou-yi-ruan-zhi-sitesucker/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
-
-  ]]></description>
-</item>
-
-<item>
-    <title>解决 Mac 下 zip 压缩文件在 Windows 中显示乱码的问题</title>
-    <link>http://realjenius.com/blog/2015/02/11/jie-jue-mac-xia-zip-ya-suo-wen-jian-zai-windows-xia-xian-shi-luan-ma-de-wen-ti/</link>
-    <author>R.J. Lorimer</author>
-    <pubDate>2015-02-11T21:14:26+08:00</pubDate>
-    <guid>http://realjenius.com/blog/2015/02/11/jie-jue-mac-xia-zip-ya-suo-wen-jian-zai-windows-xia-xian-shi-luan-ma-de-wen-ti/</guid>
-    <description><![CDATA[
-     <p><strong>目录</strong></p>
-
-<ul id="markdown-toc">
-  <li><a href="#section">问题描述</a></li>
-  <li><a href="#section-1">解决方案</a>    <ul>
-      <li><a href="#keka">Keka</a></li>
-      <li><a href="#p7zip-">右键菜单添加 p7zip 压缩</a></li>
-    </ul>
-  </li>
-  <li><a href="#section-2">总结</a></li>
-  <li><a href="#section-3">附录</a>    <ul>
-      <li><a href="#the-unarchiver-cmd-tools-">The Unarchiver Cmd Tools 支持的编码格式</a></li>
-    </ul>
-  </li>
-</ul>
-
-<!-- excerpt start -->
-
-<h2 id="section">问题描述</h2>
-
-<p>Mac 下通过<strong>右键菜单中的 Compress</strong> 生成的压缩包，在 Windows 下解压缩可能出现乱码，如下图所示。</p>
-
-<p><a href="http://frank19900731.github.io/img/post/2015-2/5.png" class="img-up" title="Windows 上解压缩乱码"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-2/5.png" width="80%" title="Windows 上解压缩乱码" /></a></p>
-
-<p>知乎上关于这个问题的 <a href="http://www.zhihu.com/question/19646289">解答</a> 是</p>
-
-<blockquote>
-  <p>Mac OS X 系统自带的压缩程序对 zip 文件名用 UTF-8 编码，但 zip 文件头中没有声明 PKZIP 高版本增加的 Unicode 位。Windows 会认为文件名是 ANSI 编码，结果显示乱码。</p>
-</blockquote>
-
-<p>经过简单的资料阅读和测试，我大概验证了下这种解释。</p>
-
-<!-- excerpt end -->
-
-<p>用 <code>locale</code> 命令查看我的 MBP 系统编码，确实是 UTF-8。</p>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>系统编码</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-<span class="line-number">5</span>
-<span class="line-number">6</span>
-<span class="line-number">7</span>
-<span class="line-number">8</span>
-<span class="line-number">9</span>
-</pre></td><td class="code"><pre><code class="bash"><span class="line"><span class="nv">$&gt;</span> locale
-</span><span class="line"><span class="nv">LANG</span><span class="o">=</span><span class="s2">&quot;zh_CN.UTF-8&quot;</span>
-</span><span class="line"><span class="nv">LC_COLLATE</span><span class="o">=</span><span class="s2">&quot;zh_CN.UTF-8&quot;</span>
-</span><span class="line"><span class="nv">LC_CTYPE</span><span class="o">=</span><span class="s2">&quot;zh_CN.UTF-8&quot;</span>
-</span><span class="line"><span class="nv">LC_MESSAGES</span><span class="o">=</span><span class="s2">&quot;zh_CN.UTF-8&quot;</span>
-</span><span class="line"><span class="nv">LC_MONETARY</span><span class="o">=</span><span class="s2">&quot;zh_CN.UTF-8&quot;</span>
-</span><span class="line"><span class="nv">LC_NUMERIC</span><span class="o">=</span><span class="s2">&quot;zh_CN.UTF-8&quot;</span>
-</span><span class="line"><span class="nv">LC_TIME</span><span class="o">=</span><span class="s2">&quot;zh_CN.UTF-8&quot;</span>
-</span><span class="line"><span class="nv">LC_ALL</span><span class="o">=</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<p>关于 <a href="http://baike.baidu.com/subview/185282/6215666.htm">ANSI 编码</a> ，在中文 Windows 系统中可能是 GBK 编码，而在其他语言的 Windows 系统又可能是别的。可以想见，Mac 下打出的压缩包在不同语言的 Windows 下会<strong>乱得各具特色</strong>。</p>
-
-<p>当然，并不是所有解压缩软件都会一股脑地用 ANSI 编码进行解压。有的解压软件能够<strong>自动识别（文件名）编码</strong>并不确定的时候请使用者选择，比如 Mac 下的 <a href="http://unarchiver.c3.cx/unarchiver">The Unarchiver</a>。根据我在中文 Win7 下的测试，不同的解压缩软件对压缩文件的默认“理解”也是不同的，快压会解出乱码，而 7zip、Winrar 则可以正确解码。</p>
-
-<p>一种直观的想法是，可以<strong>对文件名给出统一编码格式</strong>或者<strong>将编码写进压缩文件供解压缩程序读取</strong>。然而，<a href="http://marcosc.com/2008/12/zip-files-and-encoding-i-hate-you/">Zip files and Encoding – I hate you.</a> 中提到</p>
-
-<blockquote>
-  <p>The Zip spec does not seem to know that there are normalization models for UTF-8, when there are actually 4 (or more, because there is some non-standard ones too!). The Zip file gives no guidance as to how file names inside zip files are to be normalized.</p>
-
-  <p>…</p>
-
-  <p>The Zip spec says that the only supported encodings are CP437 and UTF-8, but everyone has ignored that. Implementers just encode file names however they want (usually byte for byte as they are in the OS… </p>
-</blockquote>
-
-<p>很遗憾，<strong>Mac 自带的 zip 命令</strong>就属于最后一句中 Implementers。虽然我不是很清楚“<strong>文件头中没有声明 PKZIP 高版本增加的 Unicode 位</strong>”中的细节，不过后来通过比较发现，无乱码和有乱码的 zip 文件，以 16进制方式查看时，文件名中<strong>中文字符的编码是一样的</strong>，<strong>不同之处确实在 zip 文件头</strong>。</p>
-
-<h2 id="section-1">解决方案</h2>
-
-<h3 id="keka">Keka</h3>
-
-<p>知乎 <a href="http://www.zhihu.com/question/19646289">解答</a> 中顺带给出了解决方案</p>
-
-<blockquote>
-  <p>解决方法：用第三方软件。我推荐 Keka，支持格式多，加密、分卷、压缩比调节等功能都有，还支持中文菜单和界面。最重要的：免费。详细介绍在 <a href="http://t.cn/hGy98k">http://t.cn/hGy98k</a></p>
-</blockquote>
-
-<p>链接里给出的是 <a href="http://www.kekaosx.com/en/">Keka</a> 这个软件，下图是软件运行界面。</p>
-
-<p><a href="http://frank19900731.github.io/img/post/2015-2/6.png" class="img-up" title="Keka 运行界面"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-2/6.png" width="45%" title="Keka 运行界面" /></a></p>
-
-<p>将需要打入压缩包的文件拖拽到软件界面里即可执行压缩。Keka 可以勾选 <code>Exclude Mac resource forks</code> 选项，这样压缩包中就不会出现 <strong>__MACOSX</strong> 或  <strong>.DS_Store</strong> 文件。经测试，快压的乱码问题也随之消失。</p>
-
-<p>然而，由于此软件图标过于丑陋<strong>甚至会引发不适</strong>，使得一些用户不得不舍弃之。其实把 <code>/Applications/Keka.app/Contents/Resources</code> 下的 icns 图标文件替换下就好了。</p>
-
-<p><a href="http://frank19900731.github.io/img/post/2015-2/7.png" class="img-up" title="Keka Logo"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-2/7.png" width="40%" title="Keka Logo" /></a></p>
-
-<p>以上为第一种方法。</p>
-
-<ol>
-  <li><a href="http://www.kekaosx.com/en/">Keka</a>，可行。不过每次<strong>打开软件并拖拽文件</strong>的操作会略显繁琐。</li>
-  <li>上传到百度文库然后下载，无效。</li>
-  <li>使用 YemuZip 等号称与 Windows 兼容的软件，无效，仅能删除 .DS_Store 一类的文件。</li>
-  <li>修改后缀 zip 为 rar，无效。</li>
-  <li>使用 p7zip 命令行，可行。</li>
-</ol>
-
-<p>2 - 4 分别是网上给出的“可行”方案，由于没有触及<strong>文件名编码格式</strong>这个核心问题，所以都不可行。</p>
-
-<p>第 5 种方案 7z 命令行是可行的，且可以集成到右键菜单中，使用方便，下一段中会介绍。其实 <strong>Keka 也是基于 7z 压缩的</strong>，一方面可见 <code>/Applications/Keka.app/Contents/Resources</code> 目录下的可执行文件，另一方面，我对比了 Keka 和 7z 对同一个文本文件的压缩结果，<strong>二进制表示完全一致</strong>。</p>
-
-<h3 id="p7zip-">右键菜单添加 p7zip 压缩</h3>
-
-<p>首先通过 <code>brew install p7zip</code> 安装 p7zip，其它安装方式可见 <a href="http://www.7-zip.org/download.html">官网</a>。</p>
-
-<p>7z 命令的使用方法是</p>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>7z help</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-<span class="line-number">5</span>
-<span class="line-number">6</span>
-<span class="line-number">7</span>
-<span class="line-number">8</span>
-<span class="line-number">9</span>
-<span class="line-number">10</span>
-<span class="line-number">11</span>
-<span class="line-number">12</span>
-<span class="line-number">13</span>
-<span class="line-number">14</span>
-<span class="line-number">15</span>
-<span class="line-number">16</span>
-<span class="line-number">17</span>
-<span class="line-number">18</span>
-<span class="line-number">19</span>
-<span class="line-number">20</span>
-<span class="line-number">21</span>
-<span class="line-number">22</span>
-<span class="line-number">23</span>
-<span class="line-number">24</span>
-<span class="line-number">25</span>
-<span class="line-number">26</span>
-<span class="line-number">27</span>
-<span class="line-number">28</span>
-<span class="line-number">29</span>
-<span class="line-number">30</span>
-<span class="line-number">31</span>
-<span class="line-number">32</span>
-<span class="line-number">33</span>
-<span class="line-number">34</span>
-</pre></td><td class="code"><pre><code class="bash"><span class="line"><span class="nv">$&gt;</span> 7z
-</span><span class="line">Usage: 7z &lt;<span class="nb">command</span>&gt; <span class="o">[</span>&lt;switches&gt;...<span class="o">]</span> &lt;archive_name&gt; <span class="o">[</span>&lt;file_names&gt;...<span class="o">]</span>
-</span><span class="line">       <span class="o">[</span>&lt;@listfiles...&gt;<span class="o">]</span>
-</span><span class="line">
-</span><span class="line">&lt;Commands&gt;
-</span><span class="line">  a: Add files to archive
-</span><span class="line">  b: Benchmark
-</span><span class="line">  d: Delete files from archive
-</span><span class="line">  e: Extract files from archive <span class="o">(</span>without using directory names<span class="o">)</span>
-</span><span class="line">  l: List contents of archive
-</span><span class="line">  t: Test integrity of archive
-</span><span class="line">  u: Update files to archive
-</span><span class="line">  x: eXtract files with full paths
-</span><span class="line">&lt;Switches&gt;
-</span><span class="line">  -ai<span class="o">[</span>r<span class="o">[</span>-|0<span class="o">]]{</span>@listfile|!wildcard<span class="o">}</span>: Include archives
-</span><span class="line">  -ax<span class="o">[</span>r<span class="o">[</span>-|0<span class="o">]]{</span>@listfile|!wildcard<span class="o">}</span>: eXclude archives
-</span><span class="line">  -bd: Disable percentage indicator
-</span><span class="line">  -i<span class="o">[</span>r<span class="o">[</span>-|0<span class="o">]]{</span>@listfile|!wildcard<span class="o">}</span>: Include filenames
-</span><span class="line">  -m<span class="o">{</span>Parameters<span class="o">}</span>: <span class="nb">set </span>compression Method
-</span><span class="line">  -o<span class="o">{</span>Directory<span class="o">}</span>: <span class="nb">set </span>Output directory
-</span><span class="line">  -p<span class="o">{</span>Password<span class="o">}</span>: <span class="nb">set </span>Password
-</span><span class="line">  -r<span class="o">[</span>-|0<span class="o">]</span>: Recurse subdirectories
-</span><span class="line">  -scs<span class="o">{</span>UTF-8 | WIN | DOS<span class="o">}</span>: <span class="nb">set </span>charset <span class="k">for </span>list files
-</span><span class="line">  -sfx<span class="o">[{</span>name<span class="o">}]</span>: Create SFX archive
-</span><span class="line">  -si<span class="o">[{</span>name<span class="o">}]</span>: <span class="nb">read </span>data from stdin
-</span><span class="line">  -slt: show technical information <span class="k">for </span>l <span class="o">(</span>List<span class="o">)</span> <span class="nb">command</span>
-</span><span class="line">  -so: write data to stdout
-</span><span class="line">  -ssc<span class="o">[</span>-<span class="o">]</span>: <span class="nb">set </span>sensitive <span class="k">case </span>mode
-</span><span class="line">  -t<span class="o">{</span>Type<span class="o">}</span>: Set <span class="nb">type </span>of archive
-</span><span class="line">  -u<span class="o">[</span>-<span class="o">][</span>p#<span class="o">][</span>q#<span class="o">][</span>r#<span class="o">][</span>x#<span class="o">][</span>y#<span class="o">][</span>z#<span class="o">][</span>!newArchiveName<span class="o">]</span>: Update options
-</span><span class="line">  -v<span class="o">{</span>Size<span class="o">}[</span>b|k|m|g<span class="o">]</span>: Create volumes
-</span><span class="line">  -w<span class="o">[{</span>path<span class="o">}]</span>: assign Work directory. Empty path means a temporary directory
-</span><span class="line">  -x<span class="o">[</span>r<span class="o">[</span>-|0<span class="o">]]]{</span>@listfile|!wildcard<span class="o">}</span>: eXclude filenames
-</span><span class="line">  -y: assume Yes on all queries
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<p>我们将要用到的参数是</p>
-
-<ul>
-  <li>a 添加文件到压缩包；</li>
-  <li>-t 压缩文件格式；</li>
-  <li>-r 递归调用；</li>
-  <li>-xr@ 列表文件，记录不希望被打入压缩包的文件/文件夹的名称。</li>
-</ul>
-
-<p>我们希望在 Automator 中创建一个服务，接收文件名或文件夹名作为输入参数，编写脚本调用 7z 命令对输入文件进行压缩并输出到源文件夹；添加这个服务到右键菜单中，用法与系统自带的 Compress 相同，我们将其命名为 <code>Compress with 7z</code>。</p>
-
-<p>一个动态效果是</p>
-
-<p><a href="http://frank19900731.github.io/img/post/2015-2/1.gif" class="img-up" title="运行效果"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-2/1.gif" width="60%" title="运行效果" /></a></p>
-
-<p>以下是具体操作步骤。</p>
-
-<ul>
-  <li>打开 Automator，新建服务（Service）；</li>
-  <li>Service receives selected <strong>files or folders</strong>, in <strong>any application</strong>；</li>
-  <li>搜索框输入 shell，拖拽 Run Shell Script 到右侧；</li>
-  <li>输入压缩脚本（之后详述）；</li>
-  <li>保存，将这个系统服务命名为 <code>Compress with 7z</code>；</li>
-  <li>进入 系统设置（System Preferences），选择 Keyboard -&gt; Shortcuts -&gt; Services，在 Files and Folders 列表中找到 <code>Compress with 7z</code>，勾选，设置快捷键（可选，如果无效则可能是冲突，换个试试）。</li>
-</ul>
-
-<p>操作完成后，Automator 的显示为</p>
-
-<p><a href="http://frank19900731.github.io/img/post/2015-2/8.png" class="img-up" title="Automator Compress with 7z"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-2/8.png" width="90%" title="Automator Compress with 7z" /></a></p>
-
-<p>系统设置（System Preferences）显示为</p>
-
-<p><a href="http://frank19900731.github.io/img/post/2015-2/10.png" class="img-up" title="系统设置"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-2/10.png" width="70%" title="系统设置" /></a></p>
-
-<p>右键菜单显示为</p>
-
-<p><a href="http://frank19900731.github.io/img/post/2015-2/9.png" class="img-up" title="右键菜单"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-2/9.png" width="40%" title="右键菜单" /></a></p>
-
-<p>关于<strong>添加右键菜单项</strong>可以参考 <a href="http://www.hongkiat.com/blog/customize-mac-right-click-menu/">Create Customize Shortcut In Mac’s Right Click Menu [Guide]</a>。要注意的是，如果当前操作关联 5 个以上 Service，则这些 Service 会以二级菜单的形式显示，所以尽量在系统设置（System Preferences）-&gt; Keyboard 中把没用的勾选掉。</p>
-
-<p><a href="http://frank19900731.github.io/img/post/2015-2/11.png" class="img-up" title="右键菜单，Service 较多"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-2/11.png" width="60%" title="右键菜单，Service 较多" /></a></p>
-
-<p>最后介绍脚本编写，参考自 <a href="http://superuser.com/questions/91147/how-to-set-mac-os-xs-default-compression-format">How to set Mac OS X’s Default Compression Format?</a>，给出代码和注释版代码。</p>
-
-<p>代码</p>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>压缩脚本</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-<span class="line-number">5</span>
-<span class="line-number">6</span>
-<span class="line-number">7</span>
-<span class="line-number">8</span>
-<span class="line-number">9</span>
-<span class="line-number">10</span>
-<span class="line-number">11</span>
-<span class="line-number">12</span>
-<span class="line-number">13</span>
-<span class="line-number">14</span>
-</pre></td><td class="code"><pre><code class="bash"><span class="line"><span class="nb">set</span> -e
-</span><span class="line"><span class="nv">compress_method</span><span class="o">=</span><span class="s2">&quot;7z&quot;</span>
-</span><span class="line"><span class="o">[[</span> <span class="nv">$# </span><span class="o">=</span> 1 <span class="o">]]</span> <span class="o">&amp;&amp;</span> <span class="nv">name</span><span class="o">=</span><span class="k">${</span><span class="nv">1</span><span class="p">##*/</span><span class="k">}</span> <span class="o">||</span> <span class="nv">name</span><span class="o">=</span>archive
-</span><span class="line"><span class="nv">base</span><span class="o">=</span><span class="k">${</span><span class="nv">1</span><span class="p">%/*</span><span class="k">}</span>
-</span><span class="line"><span class="nb">cd</span> <span class="s2">&quot;$base&quot;</span>
-</span><span class="line">
-</span><span class="line"><span class="nv">i</span><span class="o">=</span>2
-</span><span class="line"><span class="o">[[</span> -e <span class="s2">&quot;$name.$compress_method&quot;</span> <span class="o">]]</span> <span class="o">&amp;&amp;</span> <span class="nv">name</span><span class="o">=</span><span class="s2">&quot;$name-$i&quot;</span>
-</span><span class="line"><span class="k">while</span> <span class="o">[[</span> -e <span class="s2">&quot;$name.$compress_method&quot;</span> <span class="o">]]</span>; <span class="k">do </span><span class="nv">name</span><span class="o">=</span><span class="s2">&quot;${name%??}-$((++i))&quot;</span>; <span class="k">done</span>
-</span><span class="line">
-</span><span class="line"><span class="nb">echo</span> <span class="s2">&quot;.DS_Store&quot;</span> &gt;&gt; .exclude_file_list
-</span><span class="line">/usr/local/bin/7z a -r -t<span class="s2">&quot;$compress_method&quot;</span> ./<span class="s2">&quot;$name.$compress_method&quot;</span> <span class="s2">&quot;${@#&quot;</span><span class="nv">$base</span><span class="s2">&quot;/}&quot;</span> -xr@.exclude_file_list
-</span><span class="line">rm .exclude_file_list
-</span><span class="line">open -R ./<span class="s2">&quot;$name.$compress_method&quot;</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<p>注释版代码</p>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>压缩脚本 注释版</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-<span class="line-number">5</span>
-<span class="line-number">6</span>
-<span class="line-number">7</span>
-<span class="line-number">8</span>
-<span class="line-number">9</span>
-<span class="line-number">10</span>
-<span class="line-number">11</span>
-<span class="line-number">12</span>
-<span class="line-number">13</span>
-<span class="line-number">14</span>
-<span class="line-number">15</span>
-<span class="line-number">16</span>
-<span class="line-number">17</span>
-<span class="line-number">18</span>
-<span class="line-number">19</span>
-<span class="line-number">20</span>
-<span class="line-number">21</span>
-<span class="line-number">22</span>
-<span class="line-number">23</span>
-<span class="line-number">24</span>
-<span class="line-number">25</span>
-<span class="line-number">26</span>
-<span class="line-number">27</span>
-</pre></td><td class="code"><pre><code class="bash"><span class="line"><span class="nb">set</span> -e
-</span><span class="line"><span class="c"># 设置压缩文件格式，可以修改为 zip、rar 等</span>
-</span><span class="line"><span class="nv">compress_method</span><span class="o">=</span><span class="s2">&quot;7z&quot;</span>
-</span><span class="line"><span class="c"># 如果只有一个文件，则将压缩包命名为 文件名.7z；</span>
-</span><span class="line"><span class="c"># 如果有多个文件，则将压缩包命名为 archive.7z。</span>
-</span><span class="line"><span class="c"># ${1##*/} 的写法是路径模式匹配，参见 http://blog.sina.com.cn/s/blog_ac9fdc0b0101ls9n.html</span>
-</span><span class="line"><span class="o">[[</span> <span class="nv">$# </span><span class="o">=</span> 1 <span class="o">]]</span> <span class="o">&amp;&amp;</span> <span class="nv">name</span><span class="o">=</span><span class="k">${</span><span class="nv">1</span><span class="p">##*/</span><span class="k">}</span> <span class="o">||</span> <span class="nv">name</span><span class="o">=</span>archive
-</span><span class="line"><span class="c"># ${1%/*} 仍是路径模式匹配，获得待压缩文件、文件夹所在的文件夹</span>
-</span><span class="line"><span class="nv">base</span><span class="o">=</span><span class="k">${</span><span class="nv">1</span><span class="p">%/*</span><span class="k">}</span>
-</span><span class="line"><span class="nb">cd</span> <span class="s2">&quot;$base&quot;</span>
-</span><span class="line">
-</span><span class="line"><span class="c"># 新压缩包编号递增，防止重名</span>
-</span><span class="line"><span class="nv">i</span><span class="o">=</span>2
-</span><span class="line"><span class="o">[[</span> -e <span class="s2">&quot;$name.$compress_method&quot;</span> <span class="o">]]</span> <span class="o">&amp;&amp;</span> <span class="nv">name</span><span class="o">=</span><span class="s2">&quot;$name-$i&quot;</span>
-</span><span class="line"><span class="c"># ${name%??} 仍是路径模式匹配，删除最后两个字符，可以想见，编号是两位数及以上就不对了，不过 0-9 共 10 个也是够了</span>
-</span><span class="line"><span class="k">while</span> <span class="o">[[</span> -e <span class="s2">&quot;$name.$compress_method&quot;</span> <span class="o">]]</span>; <span class="k">do </span><span class="nv">name</span><span class="o">=</span><span class="s2">&quot;${name%??}-$((++i))&quot;</span>; <span class="k">done</span>
-</span><span class="line">
-</span><span class="line"><span class="c"># 创建列表文件，该文件记录不希望被打入压缩包的文件/文件夹的名称，可以使用正则表达式</span>
-</span><span class="line"><span class="nb">echo</span> <span class="s2">&quot;.DS_Store&quot;</span> &gt;&gt; .exclude_file_list
-</span><span class="line"><span class="c"># 调用 7z 进行压缩</span>
-</span><span class="line"><span class="c"># ${@#&quot;$base&quot;/} 是路径匹配，去除输入的文件列表的路径前缀</span>
-</span><span class="line"><span class="c"># -xr@.exclude_file_list 指定列表文件</span>
-</span><span class="line">/usr/local/bin/7z a -r -t<span class="s2">&quot;$compress_method&quot;</span> ./<span class="s2">&quot;$name.$compress_method&quot;</span> <span class="s2">&quot;${@#&quot;</span><span class="nv">$base</span><span class="s2">&quot;/}&quot;</span> -xr@.exclude_file_list
-</span><span class="line"><span class="c"># 删除列表文件</span>
-</span><span class="line">rm .exclude_file_list
-</span><span class="line"><span class="c"># 打开 Finder，显示压缩结果</span>
-</span><span class="line">open -R ./<span class="s2">&quot;$name.$compress_method&quot;</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<h2 id="section-2">总结</h2>
-
-<p>本文总结、探讨了网上关于 <strong>Mac 下的 Zip 压缩包在 Windows 中显示乱码</strong>这一问题的成因与解决方案，并提出了一个<strong>右键菜单添加 p7zip 压缩</strong>的解决方案。</p>
-
-<p>最后，要推荐 <a href="http://unarchiver.c3.cx/commandline">The Unarchiver Cmd Tools</a>，支持不同平台、支持文件名编码的自动识别或指定编码，相信会对常在 Linux、Windows 间转运压缩包的同学有所帮助。</p>
-
-<h2 id="section-3">附录</h2>
-
-<h3 id="the-unarchiver-cmd-tools-">The Unarchiver Cmd Tools 支持的编码格式</h3>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>支持的编码格式</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-<span class="line-number">5</span>
-<span class="line-number">6</span>
-<span class="line-number">7</span>
-<span class="line-number">8</span>
-<span class="line-number">9</span>
-<span class="line-number">10</span>
-<span class="line-number">11</span>
-<span class="line-number">12</span>
-<span class="line-number">13</span>
-<span class="line-number">14</span>
-<span class="line-number">15</span>
-<span class="line-number">16</span>
-<span class="line-number">17</span>
-<span class="line-number">18</span>
-<span class="line-number">19</span>
-<span class="line-number">20</span>
-<span class="line-number">21</span>
-<span class="line-number">22</span>
-<span class="line-number">23</span>
-<span class="line-number">24</span>
-<span class="line-number">25</span>
-<span class="line-number">26</span>
-<span class="line-number">27</span>
-<span class="line-number">28</span>
-<span class="line-number">29</span>
-<span class="line-number">30</span>
-<span class="line-number">31</span>
-<span class="line-number">32</span>
-<span class="line-number">33</span>
-<span class="line-number">34</span>
-<span class="line-number">35</span>
-<span class="line-number">36</span>
-<span class="line-number">37</span>
-<span class="line-number">38</span>
-<span class="line-number">39</span>
-<span class="line-number">40</span>
-<span class="line-number">41</span>
-<span class="line-number">42</span>
-<span class="line-number">43</span>
-<span class="line-number">44</span>
-<span class="line-number">45</span>
-<span class="line-number">46</span>
-<span class="line-number">47</span>
-<span class="line-number">48</span>
-<span class="line-number">49</span>
-<span class="line-number">50</span>
-<span class="line-number">51</span>
-<span class="line-number">52</span>
-<span class="line-number">53</span>
-<span class="line-number">54</span>
-<span class="line-number">55</span>
-<span class="line-number">56</span>
-<span class="line-number">57</span>
-<span class="line-number">58</span>
-<span class="line-number">59</span>
-<span class="line-number">60</span>
-<span class="line-number">61</span>
-<span class="line-number">62</span>
-<span class="line-number">63</span>
-<span class="line-number">64</span>
-<span class="line-number">65</span>
-<span class="line-number">66</span>
-<span class="line-number">67</span>
-<span class="line-number">68</span>
-<span class="line-number">69</span>
-<span class="line-number">70</span>
-<span class="line-number">71</span>
-<span class="line-number">72</span>
-<span class="line-number">73</span>
-<span class="line-number">74</span>
-<span class="line-number">75</span>
-<span class="line-number">76</span>
-<span class="line-number">77</span>
-<span class="line-number">78</span>
-<span class="line-number">79</span>
-<span class="line-number">80</span>
-<span class="line-number">81</span>
-<span class="line-number">82</span>
-<span class="line-number">83</span>
-<span class="line-number">84</span>
-<span class="line-number">85</span>
-<span class="line-number">86</span>
-<span class="line-number">87</span>
-<span class="line-number">88</span>
-<span class="line-number">89</span>
-<span class="line-number">90</span>
-<span class="line-number">91</span>
-<span class="line-number">92</span>
-<span class="line-number">93</span>
-<span class="line-number">94</span>
-<span class="line-number">95</span>
-<span class="line-number">96</span>
-<span class="line-number">97</span>
-<span class="line-number">98</span>
-<span class="line-number">99</span>
-<span class="line-number">100</span>
-<span class="line-number">101</span>
-<span class="line-number">102</span>
-<span class="line-number">103</span>
-</pre></td><td class="code"><pre><code class="bash"><span class="line"><span class="nv">$&gt;</span> unar -encoding list
-</span><span class="line">Available encodings are:
-</span><span class="line">  * macintosh: Western <span class="o">(</span>Mac OS Roman<span class="o">)</span>
-</span><span class="line">  * x-mac-japanese: Japanese <span class="o">(</span>Mac OS<span class="o">)</span>
-</span><span class="line">  * x-mac-trad-chinese: Traditional Chinese <span class="o">(</span>Mac OS<span class="o">)</span>
-</span><span class="line">  * x-mac-korean: Korean <span class="o">(</span>Mac OS<span class="o">)</span>
-</span><span class="line">  * x-mac-arabic: Arabic <span class="o">(</span>Mac OS<span class="o">)</span>
-</span><span class="line">  * x-mac-hebrew: Hebrew <span class="o">(</span>Mac OS<span class="o">)</span>
-</span><span class="line">  * x-mac-greek: Greek <span class="o">(</span>Mac OS<span class="o">)</span>
-</span><span class="line">  * x-mac-cyrillic: Cyrillic <span class="o">(</span>Mac OS<span class="o">)</span>
-</span><span class="line">  * x-mac-devanagari: Devanagari <span class="o">(</span>Mac OS<span class="o">)</span>
-</span><span class="line">  * x-mac-gurmukhi: Gurmukhi <span class="o">(</span>Mac OS<span class="o">)</span>
-</span><span class="line">  * x-mac-gujarati: Gujarati <span class="o">(</span>Mac OS<span class="o">)</span>
-</span><span class="line">  * x-mac-thai: Thai <span class="o">(</span>Mac OS<span class="o">)</span>
-</span><span class="line">  * x-mac-simp-chinese: Simplified Chinese <span class="o">(</span>Mac OS<span class="o">)</span>
-</span><span class="line">  * x-mac-tibetan: Tibetan <span class="o">(</span>Mac OS<span class="o">)</span>
-</span><span class="line">  * x-mac-centraleurroman: Central European <span class="o">(</span>Mac OS<span class="o">)</span>
-</span><span class="line">  * x-mac-symbol: Symbol <span class="o">(</span>Mac OS<span class="o">)</span>
-</span><span class="line">  * x-mac-dingbats: Dingbats <span class="o">(</span>Mac OS<span class="o">)</span>
-</span><span class="line">  * x-mac-turkish: Turkish <span class="o">(</span>Mac OS<span class="o">)</span>
-</span><span class="line">  * x-mac-croatian: Croatian <span class="o">(</span>Mac OS<span class="o">)</span>
-</span><span class="line">  * x-mac-icelandic: Icelandic <span class="o">(</span>Mac OS<span class="o">)</span>
-</span><span class="line">  * x-mac-romanian: Romanian <span class="o">(</span>Mac OS<span class="o">)</span>
-</span><span class="line">  * x-mac-celtic: Celtic <span class="o">(</span>Mac OS<span class="o">)</span>
-</span><span class="line">  * x-mac-gaelic: Gaelic <span class="o">(</span>Mac OS<span class="o">)</span>
-</span><span class="line">  * x-mac-farsi: Farsi <span class="o">(</span>Mac OS<span class="o">)</span>
-</span><span class="line">  * x-mac-ukrainian: Cyrillic <span class="o">(</span>Mac OS Ukrainian<span class="o">)</span>
-</span><span class="line">  * x-mac-inuit: Inuit <span class="o">(</span>Mac OS<span class="o">)</span>
-</span><span class="line">  * utf-16: Unicode <span class="o">(</span>UTF-16<span class="o">)</span>
-</span><span class="line">  * utf-7: Unicode <span class="o">(</span>UTF-7<span class="o">)</span>
-</span><span class="line">  * utf-8: Unicode <span class="o">(</span>UTF-8<span class="o">)</span>
-</span><span class="line">  * utf-32: Unicode <span class="o">(</span>UTF-32<span class="o">)</span>
-</span><span class="line">  * utf-16be: Unicode <span class="o">(</span>UTF-16BE<span class="o">)</span>
-</span><span class="line">  * utf-16le: Unicode <span class="o">(</span>UTF-16LE<span class="o">)</span>
-</span><span class="line">  * utf-32be: Unicode <span class="o">(</span>UTF-32BE<span class="o">)</span>
-</span><span class="line">  * utf-32le: Unicode <span class="o">(</span>UTF-32LE<span class="o">)</span>
-</span><span class="line">  * iso-8859-1: Western <span class="o">(</span>ISO Latin 1<span class="o">)</span>
-</span><span class="line">  * iso-8859-2: Central European <span class="o">(</span>ISO Latin 2<span class="o">)</span>
-</span><span class="line">  * iso-8859-3: Western <span class="o">(</span>ISO Latin 3<span class="o">)</span>
-</span><span class="line">  * iso-8859-4: Central European <span class="o">(</span>ISO Latin 4<span class="o">)</span>
-</span><span class="line">  * iso-8859-5: Cyrillic <span class="o">(</span>ISO 8859-5<span class="o">)</span>
-</span><span class="line">  * iso-8859-6: Arabic <span class="o">(</span>ISO 8859-6<span class="o">)</span>
-</span><span class="line">  * iso-8859-7: Greek <span class="o">(</span>ISO 8859-7<span class="o">)</span>
-</span><span class="line">  * iso-8859-8: Hebrew <span class="o">(</span>ISO 8859-8<span class="o">)</span>
-</span><span class="line">  * iso-8859-9: Turkish <span class="o">(</span>ISO Latin 5<span class="o">)</span>
-</span><span class="line">  * iso-8859-10: Nordic <span class="o">(</span>ISO Latin 6<span class="o">)</span>
-</span><span class="line">  * iso-8859-11: Thai <span class="o">(</span>ISO 8859-11<span class="o">)</span>
-</span><span class="line">  * iso-8859-13: Baltic <span class="o">(</span>ISO Latin 7<span class="o">)</span>
-</span><span class="line">  * iso-8859-14: Celtic <span class="o">(</span>ISO Latin 8<span class="o">)</span>
-</span><span class="line">  * iso-8859-15: Western <span class="o">(</span>ISO Latin 9<span class="o">)</span>
-</span><span class="line">  * iso-8859-16: Romanian <span class="o">(</span>ISO Latin 10<span class="o">)</span>
-</span><span class="line">  * cp437: Latin-US <span class="o">(</span>DOS<span class="o">)</span>
-</span><span class="line">  * cp737: Greek <span class="o">(</span>DOS<span class="o">)</span>
-</span><span class="line">  * cp775: Baltic <span class="o">(</span>DOS<span class="o">)</span>
-</span><span class="line">  * cp850: Western <span class="o">(</span>DOS Latin 1<span class="o">)</span>
-</span><span class="line">  * cp851: Greek <span class="o">(</span>DOS Greek 1<span class="o">)</span>
-</span><span class="line">  * cp852: Central European <span class="o">(</span>DOS Latin 2<span class="o">)</span>
-</span><span class="line">  * cp855: Cyrillic <span class="o">(</span>DOS<span class="o">)</span>
-</span><span class="line">  * cp857: Turkish <span class="o">(</span>DOS<span class="o">)</span>
-</span><span class="line">  * cp860: Portuguese <span class="o">(</span>DOS<span class="o">)</span>
-</span><span class="line">  * cp861: Icelandic <span class="o">(</span>DOS<span class="o">)</span>
-</span><span class="line">  * cp862: Hebrew <span class="o">(</span>DOS<span class="o">)</span>
-</span><span class="line">  * cp863: Canadian French <span class="o">(</span>DOS<span class="o">)</span>
-</span><span class="line">  * cp864: Arabic <span class="o">(</span>DOS<span class="o">)</span>
-</span><span class="line">  * cp865: Nordic <span class="o">(</span>DOS<span class="o">)</span>
-</span><span class="line">  * cp866: Russian <span class="o">(</span>DOS<span class="o">)</span>
-</span><span class="line">  * cp869: Greek <span class="o">(</span>DOS Greek 2<span class="o">)</span>
-</span><span class="line">  * cp874: Thai <span class="o">(</span>Windows, DOS<span class="o">)</span>
-</span><span class="line">  * cp932: Japanese <span class="o">(</span>Windows, DOS<span class="o">)</span>
-</span><span class="line">  * cp936: Simplified Chinese <span class="o">(</span>Windows, DOS<span class="o">)</span>
-</span><span class="line">  * cp949: Korean <span class="o">(</span>Windows, DOS<span class="o">)</span>
-</span><span class="line">  * cp950: Traditional Chinese <span class="o">(</span>Windows, DOS<span class="o">)</span>
-</span><span class="line">  * windows-1252: Western <span class="o">(</span>Windows Latin 1<span class="o">)</span>
-</span><span class="line">  * windows-1250: Central European <span class="o">(</span>Windows Latin 2<span class="o">)</span>
-</span><span class="line">  * windows-1251: Cyrillic <span class="o">(</span>Windows<span class="o">)</span>
-</span><span class="line">  * windows-1253: Greek <span class="o">(</span>Windows<span class="o">)</span>
-</span><span class="line">  * windows-1254: Turkish <span class="o">(</span>Windows Latin 5<span class="o">)</span>
-</span><span class="line">  * windows-1255: Hebrew <span class="o">(</span>Windows<span class="o">)</span>
-</span><span class="line">  * windows-1256: Arabic <span class="o">(</span>Windows<span class="o">)</span>
-</span><span class="line">  * windows-1257: Baltic <span class="o">(</span>Windows<span class="o">)</span>
-</span><span class="line">  * windows-1258: Vietnamese <span class="o">(</span>Windows<span class="o">)</span>
-</span><span class="line">  * us-ascii: Western <span class="o">(</span>ASCII<span class="o">)</span>
-</span><span class="line">  * Shift_JIS: Japanese <span class="o">(</span>Shift JIS X0213<span class="o">)</span>
-</span><span class="line">  * GBK: Chinese <span class="o">(</span>GBK<span class="o">)</span>
-</span><span class="line">  * gb18030: Chinese <span class="o">(</span>GB 18030<span class="o">)</span>
-</span><span class="line">  * iso-2022-jp: Japanese <span class="o">(</span>ISO 2022-JP<span class="o">)</span>
-</span><span class="line">  * iso-2022-jp-2: Japanese <span class="o">(</span>ISO 2022-JP-2<span class="o">)</span>
-</span><span class="line">  * iso-2022-jp-1: Japanese <span class="o">(</span>ISO 2022-JP-1<span class="o">)</span>
-</span><span class="line">  * iso-2022-cn: Chinese <span class="o">(</span>ISO 2022-CN<span class="o">)</span>
-</span><span class="line">  * iso-2022-kr: Korean <span class="o">(</span>ISO 2022-KR<span class="o">)</span>
-</span><span class="line">  * euc-jp: Japanese <span class="o">(</span>EUC<span class="o">)</span>
-</span><span class="line">  * gb2312: Simplified Chinese <span class="o">(</span>GB 2312<span class="o">)</span>
-</span><span class="line">  * euc-tw: Traditional Chinese <span class="o">(</span>EUC<span class="o">)</span>
-</span><span class="line">  * euc-kr: Korean <span class="o">(</span>EUC<span class="o">)</span>
-</span><span class="line">  * shift_jis: Japanese <span class="o">(</span>Shift JIS<span class="o">)</span>
-</span><span class="line">  * koi8-r: Cyrillic <span class="o">(</span>KOI8-R<span class="o">)</span>
-</span><span class="line">  * big5: Traditional Chinese <span class="o">(</span>Big 5<span class="o">)</span>
-</span><span class="line">  * x-mac-roman-latin1: Western <span class="o">(</span>Mac Mail<span class="o">)</span>
-</span><span class="line">  * hz-gb-2312: Simplified Chinese <span class="o">(</span>HZ GB 2312<span class="o">)</span>
-</span><span class="line">  * big5-hkscs: Traditional Chinese <span class="o">(</span>Big 5 HKSCS<span class="o">)</span>
-</span><span class="line">  * koi8-u: Ukrainian <span class="o">(</span>KOI8-U<span class="o">)</span>
-</span><span class="line">  * x-nextstep: Western <span class="o">(</span>NextStep<span class="o">)</span>
-</span><span class="line">  * ibm037: Western <span class="o">(</span>EBCDIC Latin 1<span class="o">)</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2015/02/11/jie-jue-mac-xia-zip-ya-suo-wen-jian-zai-windows-xia-xian-shi-luan-ma-de-wen-ti/">http://frank19900731.github.io/blog/2015/02/11/jie-jue-mac-xia-zip-ya-suo-wen-jian-zai-windows-xia-xian-shi-luan-ma-de-wen-ti/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
 
   ]]></description>
 </item>
