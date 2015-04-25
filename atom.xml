@@ -4,7 +4,7 @@
   <title><![CDATA[Blog of 太极儒]]></title>
   <link href="http://frank19900731.github.io/atom.xml" rel="self"/>
   <link href="http://frank19900731.github.io/"/>
-  <updated>2015-04-25T13:08:32+08:00</updated>
+  <updated>2015-04-25T17:29:35+08:00</updated>
   <id>http://frank19900731.github.io/</id>
   <author>
     <name><![CDATA[Frank Song]]></name>
@@ -12,6 +12,109 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[每周一软之 Napkin]]></title>
+    <link href="http://frank19900731.github.io/blog/2015/04/25/mei-zhou-yi-ruan-zhi-napkin/"/>
+    <updated>2015-04-25T17:24:57+08:00</updated>
+    <id>http://frank19900731.github.io/blog/2015/04/25/mei-zhou-yi-ruan-zhi-napkin</id>
+    <content type="html"><![CDATA[<p><strong>目录</strong></p>
+
+<ul id="markdown-toc">
+  <li><a href="#section">功能介绍</a></li>
+  <li><a href="#section-1">界面设计</a></li>
+  <li><a href="#section-2">易用性</a></li>
+  <li><a href="#section-3">稳定性</a></li>
+  <li><a href="#section-4">跨平台</a></li>
+  <li><a href="#section-5">类似软件</a></li>
+  <li><a href="#section-6">闪光点</a></li>
+  <li><a href="#section-7">缺点</a></li>
+</ul>
+
+<!-- excerpt start -->
+
+<p>毕业季，论文施工中，有空再补。。。</p>
+
+<p><a href="http://frank19900731.github.io/img/post/2015-3/1.gif" class="img-up" title="论文施工中"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-3/1.gif" width="40%" title="论文施工中" /></a></p>
+
+<!-- excerpt end -->
+
+<h2 id="section">功能介绍</h2>
+
+<h2 id="section-1">界面设计</h2>
+
+<h2 id="section-2">易用性</h2>
+
+<h2 id="section-3">稳定性</h2>
+
+<h2 id="section-4">跨平台</h2>
+
+<h2 id="section-5">类似软件</h2>
+
+<h2 id="section-6">闪光点</h2>
+
+<h2 id="section-7">缺点</h2>
+
+<p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2015/04/25/mei-zhou-yi-ruan-zhi-napkin/">http://frank19900731.github.io/blog/2015/04/25/mei-zhou-yi-ruan-zhi-napkin/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Yosemite 加速安装]]></title>
+    <link href="http://frank19900731.github.io/blog/2015/04/25/yosemite-jia-su-an-zhuang/"/>
+    <updated>2015-04-25T16:06:29+08:00</updated>
+    <id>http://frank19900731.github.io/blog/2015/04/25/yosemite-jia-su-an-zhuang</id>
+    <content type="html"><![CDATA[<!-- excerpt start -->
+
+<p>有些人或物是不禁夸的，稍不留神就整一出幺蛾子，OS X 就是如此。昨日重启电脑后只显示禁止图标，无法进入系统。</p>
+
+<p><a href="http://frank19900731.github.io/img/post/2015-4/6.png" class="img-up" title="禁止图标"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-4/6.png" width="30%" title="禁止图标" /></a></p>
+
+<p>Shift + Command + V 尝试进入恢复模式，日志输出倒数第二行显示 <code>pci pause: SDXC </code>，之后仍会跳出禁止图标，且与日志交叠，导致最后一行日志看不清……按照官方给出的 <a href="https://support.apple.com/en-us/HT204325">解决方案</a> 修复磁盘（权限）、重建 NVRAM 等无效。</p>
+
+<p>重启之前，我大概做了如下几项操作：</p>
+
+<ul>
+  <li>CleanMyMac 清理系统垃圾；</li>
+  <li>AppStore 安装系统更新，主要是更新 iMovie 和一个名为 Pro Video Formats 的更新，让我纳闷的是后者已经在我的系统更新中出现了三次，每次的更新版本号、更新说明、更新文件大小都是一模一样的；</li>
+  <li>Time Machine 备份。</li>
+</ul>
+
+<p><a href="http://frank19900731.github.io/img/post/2015-4/7.png" class="img-up" title="一模一样的更新"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-4/7.png" width="90%" title="一模一样的更新" /></a></p>
+
+<p>清理完垃圾，在没有完成 AppStore 更新和 Time Machine 备份的情况下，我通过正常途径关闭了电脑，就再没起来。</p>
+
+<p>苹果客服（我又无耻的打了客服，虽然帮助还是有限）向我表示曾遇到过<strong>用户使用类似 CleanMyMac 的第三方工具清理后重启无法进入系统</strong>的案例。也是，谁让 AppStore、Time Machine 都是苹果亲儿子。之前使用 CleanMyMac 清理系统都是直接输入密码、给予权限，确实没关心具体删除了哪些内容，以后不用就是了。</p>
+
+<!-- excerpt end -->
+
+<p><strong>对于目前系统和恢复模式都无法进入的情况，客服又祭出重装系统的方法，我可耻地从了</strong>。大概有三种解决方案： </p>
+
+<ol>
+  <li>开机 Command + R，选择 Reinstall 系统，<strong>用户文件、系统设置等都不会丢失</strong>，但也存在无法修复当前错误的可能（我很纳闷既然是 CleanMyMac 误删，那重装系统后为何仍旧可能无法进入系统，客服没有给出解答，只是说遇到过此类情况）；</li>
+  <li>使用 Time Machine 还原，问题在于<strong>最近一次备份的系统可能就是错的</strong>，可能需要还原更早的时间节点，而该时间节点后的新文件难于找回，未备份的则更找不回了；</li>
+  <li>使用另外一块硬盘安装系统，类似于 WinPE，读取原系统盘中的文件进行备份，或者干脆把原系统盘拆出来用硬盘读取器备份，然后使用第二种方法。</li>
+</ol>
+
+<p>显然第一种方法最简便。虽然当初安装 OS X 的时候没有分区操作，但重装系统还是可以做到不影响用户文件的。跟 AppStore 进行系统版本升级一样，都是先从苹果的服务器下载系统安装文件，安装末尾遇到了与之前博文 <a href="http://frank19900731.github.io/blog/2014/10/18/yosemite-sheng-ji-ji-hou-xu/">《Yosemite 升级及后续 》</a> 里提到的相同的问题：最后一分钟无比漫长。</p>
+
+<p>这次深入查询的结果是：<strong>系统更新过程中会将 /user/local 文件夹移出，然后在系统安装末尾再一点点拷贝回来</strong>。<strong>当时我就蒙逼了</strong>，Homebrew、TexLive 都在里面，而且 TexLive 还是 2011、2014 两个版本，这不闹呢么。打开日志（Comand  + L），发现确实在进行拷贝，1s 大概输出 10个文件名吧。虽说找到了 <a href="https://jimlindley.com/blog/yosemite-upgrade-homebrew-tips/">加速建议</a>，但安装过程中是妥妥儿用不了了。我的 /usr/local 文件夹大小 20 G（很多是历史遗留物），20G 的零七八碎的文件拷贝也就花了六七个小时吧 ==</p>
+
+<p><a href="http://frank19900731.github.io/img/post/2015-4/9.png" class="img-up" title="local 文件夹大小"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2015-4/9.png" width="100%" title="local 文件夹大小" /></a></p>
+
+<p>加速的方法很简单，就是把 /usr/local 文件夹在更新前移出 /usr 文件夹，在更新后再移动回来，但此时系统会有一个新的 /usr/local 文件夹，所以不是简单地移动，而是 merge。按 <a href="https://jimlindley.com/blog/yosemite-upgrade-homebrew-tips/">加速建议</a> 的做法，merge 也很耗时，我不清楚是否可以将新的 /usr/local merge 到老的上然后直接做替换，这种快速做法如果只是造成某些日志的断档，似乎就是可行的，以后再重装的话可以试下。</p>
+
+<p>一觉醒来，系统可以进入，用户文件没有变化，Tex、Homebrew 运行正常，截至目前只发现三处有改动：</p>
+
+<ol>
+  <li>系统设置中隐私设置的软件来源变成默认设置，即来自 AppStore 和通过验证的开发者；</li>
+  <li>Server 中 Apache 的设置被重置，幸好有备份；</li>
+  <li>JDK 1.6 被清除（因为默认装在 /System/Library 下，其它版本都无影响），<a href="https://support.apple.com/kb/DL1572?viewlocale=en_US&amp;locale=en_US">下载</a> 重装即可。</li>
+</ol>
+
+<p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2015/04/25/yosemite-jia-su-an-zhuang/">http://frank19900731.github.io/blog/2015/04/25/yosemite-jia-su-an-zhuang/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[每周一软之 1Password]]></title>
@@ -2601,279 +2704,6 @@
 <p>无。</p>
 
 <p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2015/01/25/mei-zhou-yi-ruan-zhi-bartender/">http://frank19900731.github.io/blog/2015/01/25/mei-zhou-yi-ruan-zhi-bartender/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[每周一软之 Wordify]]></title>
-    <link href="http://frank19900731.github.io/blog/2015/01/18/mei-zhou-yi-ruan-zhi-wordify/"/>
-    <updated>2015-01-18T15:43:55+08:00</updated>
-    <id>http://frank19900731.github.io/blog/2015/01/18/mei-zhou-yi-ruan-zhi-wordify</id>
-    <content type="html"><![CDATA[<p><strong>目录</strong></p>
-
-<ul id="markdown-toc">
-  <li><a href="#section">功能介绍</a></li>
-  <li><a href="#section-1">界面设计</a></li>
-  <li><a href="#section-2">易用性</a></li>
-  <li><a href="#section-3">稳定性</a></li>
-  <li><a href="#section-4">跨平台</a></li>
-  <li><a href="#section-5">类似软件</a>    <ul>
-      <li><a href="#section-6">标签云</a></li>
-      <li><a href="#section-7">艺术字</a></li>
-      <li><a href="#ascii-">ASCII 码字符画</a></li>
-    </ul>
-  </li>
-  <li><a href="#section-8">闪光点</a></li>
-  <li><a href="#section-9">缺点</a></li>
-</ul>
-
-<!-- excerpt start -->
-
-<h2 id="section">功能介绍</h2>
-
-<p><a href="http://www.wordifyapp.com/">Wordify</a> 是一款字符画生成软件。用户选择图片，并可指定或调整</p>
-
-<ul>
-  <li>关键词</li>
-  <li>单词数目</li>
-  <li>单词排布方向（水平、垂直、随机）</li>
-  <li>字体、颜色</li>
-  <li>输出文件格式</li>
-  <li><strong>图像二值化结果</strong></li>
-</ul>
-
-<p>最终得到一幅略显酷炫的字符画。</p>
-
-<p><strong>原图</strong>：</p>
-
-<p><a href="http://frank19900731.github.io/img/post/2015-1/1.JPG" class="img-up" title="原图"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-1/1.JPG" width="60%" title="原图" /></a></p>
-
-<!-- excerpt end -->
-
-<p><strong>二值化调整</strong>：</p>
-
-<p><a href="http://frank19900731.github.io/img/post/2015-1/8.png" class="img-up" title="二值化调整"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-1/8.png" width="80%" title="二值化调整" /></a></p>
-
-<p><strong>字符画结果</strong>：</p>
-
-<p><a href="http://frank19900731.github.io/img/post/2015-1/9.png" class="img-up" title="字符画生成结果"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-1/9.png" width="90%" title="字符画生成结果" /></a></p>
-
-<p>生成效果是随机的，可多次调整取最佳；单词重复设置相当于提高相应单词的权重。</p>
-
-<h2 id="section-1">界面设计</h2>
-
-<p>美观清爽。</p>
-
-<p><a href="http://frank19900731.github.io/img/post/2015-1/10.png" class="img-up" title="Wordify 界面"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-1/10.png" width="80%" title="Wordify 界面" /></a></p>
-
-<h2 id="section-2">易用性</h2>
-
-<p>简洁易用。</p>
-
-<h2 id="section-3">稳定性</h2>
-
-<p>运行稳定。</p>
-
-<h2 id="section-4">跨平台</h2>
-
-<p>支持 iOS。</p>
-
-<h2 id="section-5">类似软件</h2>
-
-<p>字符画并不止 Wordify 生成的这种样式，其它相关工具介绍如下。</p>
-
-<h3 id="section-6">标签云</h3>
-
-<ul>
-  <li><a href="http://www.jasondavies.com/wordcloud/#%2F%2Fwww.jasondavies.com%2Fwordtree%2Fcat-in-the-hat.txt">D3</a> </li>
-  <li><a href="http://115.28.18.88/keywordExtractDemo">清语</a></li>
-  <li>WordPack，一款 iOS 应用</li>
-</ul>
-
-<p><strong>D3 Word Cloud</strong></p>
-
-<p><a href="http://frank19900731.github.io/img/post/2015-1/11.png" class="img-up" title="D3 Word Cloud"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-1/11.png" width="80%" title="D3 Word Cloud" /></a></p>
-
-<h3 id="section-7">艺术字</h3>
-
-<ul>
-  <li><a href="http://www.figlet.org/">figlet</a>，a program for making large letters out of ordinary text</li>
-  <li><a href="https://github.com/viisual/ASCII-Decorator">ASCII-Decorator</a>， 基于 figlet 的 Sublime 插件</li>
-</ul>
-
-<p><strong>Figlet 效果</strong></p>
-
-<p><a href="http://frank19900731.github.io/img/post/2015-1/12.png" class="img-up" title="Figlet 效果"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-1/12.png" width="80%" title="Figlet 效果" /></a></p>
-
-<h3 id="ascii-">ASCII 码字符画</h3>
-
-<ul>
-  <li>Mac 应用
-    <ul>
-      <li><a href="http://www.jave.de/">Jave</a>，Java Ascii Versatile Editor，原始而古老，用起来费劲……</li>
-      <li><a href="http://monodraw.helftone.com/">Monodraw</a>，Powerful ASCII art editor，开发中，<strong>未开放下载</strong></li>
-      <li><a href="https://itunes.apple.com/us/app/sweetie/id547106404?mt=12">Sweetie</a>，算是可用软件中功能较全、效果较好的一个，见下图</li>
-    </ul>
-  </li>
-  <li>iOS 应用
-    <ul>
-      <li>Image2Ascii</li>
-    </ul>
-  </li>
-  <li>在线转换
-    <ul>
-      <li><a href="http://www.typorganism.com/asciiomatic/">1</a>，要求 JPEG 格式，尺寸是 60*50</li>
-      <li><a href="http://www.degraeve.com/img2txt.php">2</a></li>
-      <li><a href="http://life.chacuo.net/convertphoto2char">3</a></li>
-    </ul>
-  </li>
-  <li>编程实现
-    <ul>
-      <li><a href="http://everet.org/python-ascii-art.html">Python 生成字符画</a></li>
-      <li><a href="http://www.zoneky.com/blog/2014/07/10/ASCII-Art-algorithms/">Javascript 生成字符画</a></li>
-    </ul>
-  </li>
-</ul>
-
-<p><strong>Sweetie 效果</strong></p>
-
-<p><a href="http://frank19900731.github.io/img/post/2015-1/13.png" class="img-up" title="Sweetie 效果"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-1/13.png" width="80%" title="Sweetie 效果" /></a></p>
-
-<p><strong>Image2Ascii 效果</strong></p>
-
-<p><a href="http://frank19900731.github.io/img/post/2015-1/14.png" class="img-up" title="Image2Ascii 效果"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-1/14.png" width="70%" title="Image2Ascii 效果" /></a></p>
-
-<h2 id="section-8">闪光点</h2>
-
-<p>定制较丰富，界面与生成的图片都很美观。</p>
-
-<h2 id="section-9">缺点</h2>
-
-<p>想得到一幅满意的字符画需要反复尝试，希望有更细致的交互式调整。</p>
-
-<p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2015/01/18/mei-zhou-yi-ruan-zhi-wordify/">http://frank19900731.github.io/blog/2015/01/18/mei-zhou-yi-ruan-zhi-wordify/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[每周一软之 XnConvert]]></title>
-    <link href="http://frank19900731.github.io/blog/2015/01/11/mei-zhou-yi-ruan-zhi-xnconvert/"/>
-    <updated>2015-01-11T22:32:29+08:00</updated>
-    <id>http://frank19900731.github.io/blog/2015/01/11/mei-zhou-yi-ruan-zhi-xnconvert</id>
-    <content type="html"><![CDATA[<p><strong>目录</strong></p>
-
-<ul id="markdown-toc">
-  <li><a href="#section">功能介绍</a></li>
-  <li><a href="#section-1">界面设计</a></li>
-  <li><a href="#section-2">易用性</a></li>
-  <li><a href="#section-3">稳定性</a></li>
-  <li><a href="#section-4">跨平台</a></li>
-  <li><a href="#section-5">类似软件</a></li>
-  <li><a href="#section-6">闪光点</a></li>
-  <li><a href="#section-7">缺点</a></li>
-</ul>
-
-<!-- excerpt start -->
-
-<h2 id="section">功能介绍</h2>
-
-<p><a href="http://www.xnview.com/en/xnconvert/">XnConvert</a> 是一个跨平台的图片批处理工具，提供 resize、crop、rotate、高斯模糊等在内的 80 多种图像操作，支持 <a href="http://www.xnview.com/en/xnconvert/#formats">500 余种图像格式</a>的读入、70 余种图像格式生成，可以定制输出图片的命名格式。XnConvert 比较适合照片整理（重命名、加水印等）、网页图片素材准备（图片放缩、加图像掩模、模糊等）等批处理任务。</p>
-
-<p>XnConvert 以<strong>工作流</strong>的方式定制图片的处理过程，使用起来非常简单。</p>
-
-<p>首先确定选择输入图片或图片文件夹。</p>
-
-<p><a href="http://frank19900731.github.io/img/post/2015-1/5.png" class="img-up" title="输入图片"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-1/5.png" width="80%" title="输入图片" /></a></p>
-
-<p>然后在图片上定义操作行为和参数。</p>
-
-<p><a href="http://frank19900731.github.io/img/post/2015-1/6.png" class="img-up" title="操作行为和参数"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-1/6.png" width="80%" title="操作行为和参数" /></a></p>
-
-<p>上图顺序定义了三种行为，<strong>核大小为 13*13 的高斯模糊</strong>，<strong>垂直翻转</strong>，<strong>长宽减半</strong>。Resize 中还有一些参数可调，比如填充模式（fit 或 fill 或 longest side 或 shortest side 等）和降采样方法（Bilinear、BSpline、Lanczos 等）。</p>
-
-<p>最后定义输出文件夹、输出文件格式和命名方式。</p>
-
-<p><a href="http://frank19900731.github.io/img/post/2015-1/7.png" class="img-up" title="输出文件夹和命名方式"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-1/7.png" width="80%" title="输出文件夹和命名方式" /></a></p>
-
-<p>除输出到文件夹，还可以传给 Email 或 Zip 等。</p>
-
-<p>命名方式支持格式化表达，比如  <code>{Filename}_{Current Date [m_d_Y]}</code>。</p>
-
-<!-- excerpt end -->
-
-<p>XnConvert 的工作流有两种保存方式，一种是后缀名为 xbs 的 XML 格式文件，可以被 XnConvert 重新载入。</p>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>xbs 文件示例</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-<span class="line-number">5</span>
-<span class="line-number">6</span>
-<span class="line-number">7</span>
-<span class="line-number">8</span>
-<span class="line-number">9</span>
-</pre></td><td class="code"><pre><code class="xml"><span class="line"><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span><span class="nt">&lt;XnView_script</span> <span class="na">version=</span><span class="s">&quot;1.0&quot;</span> <span class="na">name=</span><span class="s">&quot;a&quot;</span><span class="nt">&gt;</span>
-</span><span class="line">    <span class="nt">&lt;Gaussian_blur</span> <span class="na">size=</span><span class="s">&quot;13&quot;</span><span class="nt">/&gt;</span>
-</span><span class="line">    <span class="nt">&lt;Mirror</span> <span class="na">method=</span><span class="s">&quot;0&quot;</span><span class="nt">/&gt;</span>
-</span><span class="line">    <span class="nt">&lt;Resize</span> <span class="na">mode=</span><span class="s">&quot;4&quot;</span> <span class="na">width=</span><span class="s">&quot;50&quot;</span> <span class="na">height=</span><span class="s">&quot;50&quot;</span> <span class="na">unit=</span><span class="s">&quot;1&quot;</span> <span class="na">ratio=</span><span class="s">&quot;true&quot;</span> <span class="na">orientation=</span><span class="s">&quot;false&quot;</span> <span class="na">enlarge=</span><span class="s">&quot;0&quot;</span> <span class="na">resample=</span><span class="s">&quot;7&quot;</span> <span class="na">gamma_correct=</span><span class="s">&quot;false&quot;</span><span class="nt">/&gt;</span>
-</span><span class="line">    <span class="nt">&lt;Output</span> <span class="na">folder=</span><span class="s">&quot;/Users/frank/Desktop/&quot;</span> <span class="na">filename=</span><span class="s">&quot;modified&quot;</span> <span class="na">case=</span><span class="s">&quot;0&quot;</span> <span class="na">format=</span><span class="s">&quot;JPEG&quot;</span><span class="nt">&gt;</span>
-</span><span class="line">        <span class="nt">&lt;Options</span> <span class="na">overwrite=</span><span class="s">&quot;1&quot;</span> <span class="na">orgDate=</span><span class="s">&quot;false&quot;</span> <span class="na">keepMeta=</span><span class="s">&quot;true&quot;</span> <span class="na">keepICC=</span><span class="s">&quot;false&quot;</span> <span class="na">keepFolder=</span><span class="s">&quot;false&quot;</span> <span class="na">delOrg=</span><span class="s">&quot;false&quot;</span> <span class="na">multipage=</span><span class="s">&quot;false&quot;</span> <span class="na">allPages=</span><span class="s">&quot;false&quot;</span> <span class="na">openExplorer=</span><span class="s">&quot;false&quot;</span> <span class="na">openBrowser=</span><span class="s">&quot;false&quot;</span> <span class="na">clearItems=</span><span class="s">&quot;false&quot;</span><span class="nt">/&gt;</span>
-</span><span class="line">        <span class="nt">&lt;JPEG</span> <span class="na">quality=</span><span class="s">&quot;80&quot;</span> <span class="na">progressive=</span><span class="s">&quot;false&quot;</span> <span class="na">optimizeHuffman=</span><span class="s">&quot;false&quot;</span> <span class="na">rebuildThumb=</span><span class="s">&quot;true&quot;</span> <span class="na">orgQuality=</span><span class="s">&quot;false&quot;</span> <span class="na">DCTMethod=</span><span class="s">&quot;0&quot;</span> <span class="na">subSampling=</span><span class="s">&quot;0&quot;</span> <span class="na">smoothFactor=</span><span class="s">&quot;0&quot;</span><span class="nt">/&gt;</span>
-</span><span class="line">    <span class="nt">&lt;/Output&gt;</span>
-</span><span class="line"><span class="nt">&lt;/XnView_script&gt;</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<p>另一种是导出为命令行，可以用 <a href="http://www.xnview.com/en/nconvert/">nconvert</a> 执行。nconvert 是免费的命令行工具，XnConvert 只是它的可视化壳子。<code>nconvert -help</code> 显示支持的 80 种操作和众多图片文件格式。</p>
-
-<p>以之前定义的工作流为例，导出如下命令行。</p>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>nconvert 命令示例</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-</pre></td><td class="code"><pre><code class="bash"><span class="line">nconvert -gauss 13 -yflip -ratio -rtype lanczos -resize 50% 50%
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<h2 id="section-1">界面设计</h2>
-
-<p>实用无美感。</p>
-
-<h2 id="section-2">易用性</h2>
-
-<p>简单直接，非常易用。</p>
-
-<h2 id="section-3">稳定性</h2>
-
-<p>稳定，不会因文件数量大而崩溃。</p>
-
-<h2 id="section-4">跨平台</h2>
-
-<p>Windows、Mac、Linux 通用。</p>
-
-<h2 id="section-5">类似软件</h2>
-
-<p><code>Photoshop</code>、<code>Acorn</code> 等图片处理软件功能强大，门槛相应也高，消耗资源多。<code>Photoshop</code> 支持<strong>动作录制批处理</strong>。</p>
-
-<p><code>Image Smith</code> 也是一款比较全能的图片批处理软件，但经验是使用中容易崩溃；<code>PhotoResize Pro</code> 功能较少，主要是图片大小调整和重命名。 </p>
-
-<p>Matlab、Python、R 等编程语言都能找到自己的图片处理工具箱（自带或者开源的），有一定的学习成本，需要可视化界面的话得自己编写。</p>
-
-<p><code>Automator</code> 支持一些图片操作，可以编写工作流。</p>
-
-<p>Mac 自带 <code>sips</code> 命令支持一些图片操作，其它图片处理相关的命令行或包应该还有不少，就不继续查找列举了。</p>
-
-<h2 id="section-6">闪光点</h2>
-
-<ul>
-  <li>提供命令行工具，方便嵌入到程序中使用；</li>
-  <li>工作流操作模式，可保存重用。</li>
-</ul>
-
-<h2 id="section-7">缺点</h2>
-
-<ul>
-  <li>软件界面简陋；</li>
-  <li>命令行工具不开源。</li>
-</ul>
-
-<p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2015/01/11/mei-zhou-yi-ruan-zhi-xnconvert/">http://frank19900731.github.io/blog/2015/01/11/mei-zhou-yi-ruan-zhi-xnconvert/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
 ]]></content>
   </entry>
   

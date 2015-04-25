@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Mac 使用 | Blog of 太极儒]]></title>
   <link href="http://frank19900731.github.io/blog/category/mac-shi-yong/atom.xml" rel="self"/>
   <link href="http://frank19900731.github.io/"/>
-  <updated>2015-04-25T13:08:32+08:00</updated>
+  <updated>2015-04-25T17:29:35+08:00</updated>
   <id>http://frank19900731.github.io/</id>
   <author>
     <name><![CDATA[Frank Song]]></name>
@@ -12,6 +12,105 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[每周一软之 Napkin]]></title>
+    <link href="http://frank19900731.github.io/blog/2015/04/25/mei-zhou-yi-ruan-zhi-napkin/"/>
+    <updated>2015-04-25T17:24:57+08:00</updated>
+    <id>http://frank19900731.github.io/blog/2015/04/25/mei-zhou-yi-ruan-zhi-napkin</id>
+    <content type="html"><![CDATA[<p><strong>目录</strong></p>
+
+<ul id="markdown-toc">
+  <li><a href="#section">功能介绍</a></li>
+  <li><a href="#section-1">界面设计</a></li>
+  <li><a href="#section-2">易用性</a></li>
+  <li><a href="#section-3">稳定性</a></li>
+  <li><a href="#section-4">跨平台</a></li>
+  <li><a href="#section-5">类似软件</a></li>
+  <li><a href="#section-6">闪光点</a></li>
+  <li><a href="#section-7">缺点</a></li>
+</ul>
+
+<!-- excerpt start -->
+
+<p>毕业季，论文施工中，有空再补。。。</p>
+
+<p><a href="/img/post/2015-3/1.gif" class="img-up" title="论文施工中"><img class="imgcenter" src="/img/post/2015-3/1.gif" width="40%" title="论文施工中" ></a></p>
+
+<!-- excerpt end -->
+
+<h2 id="section">功能介绍</h2>
+
+<h2 id="section-1">界面设计</h2>
+
+<h2 id="section-2">易用性</h2>
+
+<h2 id="section-3">稳定性</h2>
+
+<h2 id="section-4">跨平台</h2>
+
+<h2 id="section-5">类似软件</h2>
+
+<h2 id="section-6">闪光点</h2>
+
+<h2 id="section-7">缺点</h2>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Yosemite 加速安装]]></title>
+    <link href="http://frank19900731.github.io/blog/2015/04/25/yosemite-jia-su-an-zhuang/"/>
+    <updated>2015-04-25T16:06:29+08:00</updated>
+    <id>http://frank19900731.github.io/blog/2015/04/25/yosemite-jia-su-an-zhuang</id>
+    <content type="html"><![CDATA[<!-- excerpt start -->
+
+<p>有些人或物是不禁夸的，稍不留神就整一出幺蛾子，OS X 就是如此。昨日重启电脑后只显示禁止图标，无法进入系统。</p>
+
+<p><a href="/img/post/2015-4/6.png" class="img-up" title="禁止图标"><img class="imgcenter" src="/img/post/2015-4/6.png" width="30%" title="禁止图标" ></a></p>
+
+<p>Shift + Command + V 尝试进入恢复模式，日志输出倒数第二行显示 <code>pci pause: SDXC </code>，之后仍会跳出禁止图标，且与日志交叠，导致最后一行日志看不清……按照官方给出的 <a href="https://support.apple.com/en-us/HT204325">解决方案</a> 修复磁盘（权限）、重建 NVRAM 等无效。</p>
+
+<p>重启之前，我大概做了如下几项操作：</p>
+
+<ul>
+  <li>CleanMyMac 清理系统垃圾；</li>
+  <li>AppStore 安装系统更新，主要是更新 iMovie 和一个名为 Pro Video Formats 的更新，让我纳闷的是后者已经在我的系统更新中出现了三次，每次的更新版本号、更新说明、更新文件大小都是一模一样的；</li>
+  <li>Time Machine 备份。</li>
+</ul>
+
+<p><a href="/img/post/2015-4/7.png" class="img-up" title="一模一样的更新"><img class="imgcenter" src="/img/post/2015-4/7.png" width="90%" title="一模一样的更新" ></a></p>
+
+<p>清理完垃圾，在没有完成 AppStore 更新和 Time Machine 备份的情况下，我通过正常途径关闭了电脑，就再没起来。</p>
+
+<p>苹果客服（我又无耻的打了客服，虽然帮助还是有限）向我表示曾遇到过<strong>用户使用类似 CleanMyMac 的第三方工具清理后重启无法进入系统</strong>的案例。也是，谁让 AppStore、Time Machine 都是苹果亲儿子。之前使用 CleanMyMac 清理系统都是直接输入密码、给予权限，确实没关心具体删除了哪些内容，以后不用就是了。</p>
+
+<!-- excerpt end -->
+
+<p><strong>对于目前系统和恢复模式都无法进入的情况，客服又祭出重装系统的方法，我可耻地从了</strong>。大概有三种解决方案： </p>
+
+<ol>
+  <li>开机 Command + R，选择 Reinstall 系统，<strong>用户文件、系统设置等都不会丢失</strong>，但也存在无法修复当前错误的可能（我很纳闷既然是 CleanMyMac 误删，那重装系统后为何仍旧可能无法进入系统，客服没有给出解答，只是说遇到过此类情况）；</li>
+  <li>使用 Time Machine 还原，问题在于<strong>最近一次备份的系统可能就是错的</strong>，可能需要还原更早的时间节点，而该时间节点后的新文件难于找回，未备份的则更找不回了；</li>
+  <li>使用另外一块硬盘安装系统，类似于 WinPE，读取原系统盘中的文件进行备份，或者干脆把原系统盘拆出来用硬盘读取器备份，然后使用第二种方法。</li>
+</ol>
+
+<p>显然第一种方法最简便。虽然当初安装 OS X 的时候没有分区操作，但重装系统还是可以做到不影响用户文件的。跟 AppStore 进行系统版本升级一样，都是先从苹果的服务器下载系统安装文件，安装末尾遇到了与之前博文 <a href="http://frank19900731.github.io/blog/2014/10/18/yosemite-sheng-ji-ji-hou-xu/">《Yosemite 升级及后续 》</a> 里提到的相同的问题：最后一分钟无比漫长。</p>
+
+<p>这次深入查询的结果是：<strong>系统更新过程中会将 /user/local 文件夹移出，然后在系统安装末尾再一点点拷贝回来</strong>。<strong>当时我就蒙逼了</strong>，Homebrew、TexLive 都在里面，而且 TexLive 还是 2011、2014 两个版本，这不闹呢么。打开日志（Comand  + L），发现确实在进行拷贝，1s 大概输出 10个文件名吧。虽说找到了 <a href="https://jimlindley.com/blog/yosemite-upgrade-homebrew-tips/">加速建议</a>，但安装过程中是妥妥儿用不了了。我的 /usr/local 文件夹大小 20 G（很多是历史遗留物），20G 的零七八碎的文件拷贝也就花了六七个小时吧 ==</p>
+
+<p><a href="/img/post/2015-4/9.png" class="img-up" title="local 文件夹大小"><img class="imgcenter-no-shadow" src="/img/post/2015-4/9.png" width="100%" title="local 文件夹大小" ></a></p>
+
+<p>加速的方法很简单，就是把 /usr/local 文件夹在更新前移出 /usr 文件夹，在更新后再移动回来，但此时系统会有一个新的 /usr/local 文件夹，所以不是简单地移动，而是 merge。按 <a href="https://jimlindley.com/blog/yosemite-upgrade-homebrew-tips/">加速建议</a> 的做法，merge 也很耗时，我不清楚是否可以将新的 /usr/local merge 到老的上然后直接做替换，这种快速做法如果只是造成某些日志的断档，似乎就是可行的，以后再重装的话可以试下。</p>
+
+<p>一觉醒来，系统可以进入，用户文件没有变化，Tex、Homebrew 运行正常，截至目前只发现三处有改动：</p>
+
+<ol>
+  <li>系统设置中隐私设置的软件来源变成默认设置，即来自 AppStore 和通过验证的开发者；</li>
+  <li>Server 中 Apache 的设置被重置，幸好有备份；</li>
+  <li>JDK 1.6 被清除（因为默认装在 /System/Library 下，其它版本都无影响），<a href="https://support.apple.com/kb/DL1572?viewlocale=en_US&amp;locale=en_US">下载</a> 重装即可。</li>
+</ol>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[每周一软之 1Password]]></title>
@@ -118,94 +217,6 @@
     <link href="http://frank19900731.github.io/blog/2015/04/11/mei-zhou-yi-ruan-zhi-paste/"/>
     <updated>2015-04-11T14:07:26+08:00</updated>
     <id>http://frank19900731.github.io/blog/2015/04/11/mei-zhou-yi-ruan-zhi-paste</id>
-    <content type="html"><![CDATA[<p><strong>目录</strong></p>
-
-<ul id="markdown-toc">
-  <li><a href="#section">功能介绍</a></li>
-  <li><a href="#section-1">界面设计</a></li>
-  <li><a href="#section-2">易用性</a></li>
-  <li><a href="#section-3">稳定性</a></li>
-  <li><a href="#section-4">跨平台</a></li>
-  <li><a href="#section-5">类似软件</a></li>
-  <li><a href="#section-6">闪光点</a></li>
-  <li><a href="#section-7">缺点</a></li>
-</ul>
-
-<!-- excerpt start -->
-
-<p>毕业季，论文施工中，有空再补。。。</p>
-
-<p><a href="/img/post/2015-3/1.gif" class="img-up" title="论文施工中"><img class="imgcenter" src="/img/post/2015-3/1.gif" width="40%" title="论文施工中" ></a></p>
-
-<!-- excerpt end -->
-
-<h2 id="section">功能介绍</h2>
-
-<h2 id="section-1">界面设计</h2>
-
-<h2 id="section-2">易用性</h2>
-
-<h2 id="section-3">稳定性</h2>
-
-<h2 id="section-4">跨平台</h2>
-
-<h2 id="section-5">类似软件</h2>
-
-<h2 id="section-6">闪光点</h2>
-
-<h2 id="section-7">缺点</h2>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[每周一软之 TexPad]]></title>
-    <link href="http://frank19900731.github.io/blog/2015/04/07/mei-zhou-yi-ruan-zhi-texpad/"/>
-    <updated>2015-04-07T13:12:18+08:00</updated>
-    <id>http://frank19900731.github.io/blog/2015/04/07/mei-zhou-yi-ruan-zhi-texpad</id>
-    <content type="html"><![CDATA[<p><strong>目录</strong></p>
-
-<ul id="markdown-toc">
-  <li><a href="#section">功能介绍</a></li>
-  <li><a href="#section-1">界面设计</a></li>
-  <li><a href="#section-2">易用性</a></li>
-  <li><a href="#section-3">稳定性</a></li>
-  <li><a href="#section-4">跨平台</a></li>
-  <li><a href="#section-5">类似软件</a></li>
-  <li><a href="#section-6">闪光点</a></li>
-  <li><a href="#section-7">缺点</a></li>
-</ul>
-
-<!-- excerpt start -->
-
-<p>毕业季，论文施工中，有空再补。。。</p>
-
-<p><a href="/img/post/2015-3/1.gif" class="img-up" title="论文施工中"><img class="imgcenter" src="/img/post/2015-3/1.gif" width="40%" title="论文施工中" ></a></p>
-
-<!-- excerpt end -->
-
-<h2 id="section">功能介绍</h2>
-
-<h2 id="section-1">界面设计</h2>
-
-<h2 id="section-2">易用性</h2>
-
-<h2 id="section-3">稳定性</h2>
-
-<h2 id="section-4">跨平台</h2>
-
-<h2 id="section-5">类似软件</h2>
-
-<h2 id="section-6">闪光点</h2>
-
-<h2 id="section-7">缺点</h2>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[每周一软之 GeekTool]]></title>
-    <link href="http://frank19900731.github.io/blog/2015/03/30/mei-zhou-yi-ruan-zhi-geektool/"/>
-    <updated>2015-03-30T19:48:49+08:00</updated>
-    <id>http://frank19900731.github.io/blog/2015/03/30/mei-zhou-yi-ruan-zhi-geektool</id>
     <content type="html"><![CDATA[<p><strong>目录</strong></p>
 
 <ul id="markdown-toc">

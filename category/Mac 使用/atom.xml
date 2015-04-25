@@ -1,5 +1,114 @@
 
 <item>
+    <title>每周一软之 Napkin</title>
+    <link>http://realjenius.com/blog/2015/04/25/mei-zhou-yi-ruan-zhi-napkin/</link>
+    <author>R.J. Lorimer</author>
+    <pubDate>2015-04-25T17:24:57+08:00</pubDate>
+    <guid>http://realjenius.com/blog/2015/04/25/mei-zhou-yi-ruan-zhi-napkin/</guid>
+    <description><![CDATA[
+     <p><strong>目录</strong></p>
+
+<ul id="markdown-toc">
+  <li><a href="#section">功能介绍</a></li>
+  <li><a href="#section-1">界面设计</a></li>
+  <li><a href="#section-2">易用性</a></li>
+  <li><a href="#section-3">稳定性</a></li>
+  <li><a href="#section-4">跨平台</a></li>
+  <li><a href="#section-5">类似软件</a></li>
+  <li><a href="#section-6">闪光点</a></li>
+  <li><a href="#section-7">缺点</a></li>
+</ul>
+
+<!-- excerpt start -->
+
+<p>毕业季，论文施工中，有空再补。。。</p>
+
+<p><a href="http://frank19900731.github.io/img/post/2015-3/1.gif" class="img-up" title="论文施工中"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-3/1.gif" width="40%" title="论文施工中" /></a></p>
+
+<!-- excerpt end -->
+
+<h2 id="section">功能介绍</h2>
+
+<h2 id="section-1">界面设计</h2>
+
+<h2 id="section-2">易用性</h2>
+
+<h2 id="section-3">稳定性</h2>
+
+<h2 id="section-4">跨平台</h2>
+
+<h2 id="section-5">类似软件</h2>
+
+<h2 id="section-6">闪光点</h2>
+
+<h2 id="section-7">缺点</h2>
+
+<p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2015/04/25/mei-zhou-yi-ruan-zhi-napkin/">http://frank19900731.github.io/blog/2015/04/25/mei-zhou-yi-ruan-zhi-napkin/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
+
+  ]]></description>
+</item>
+
+<item>
+    <title>Yosemite 加速安装</title>
+    <link>http://realjenius.com/blog/2015/04/25/yosemite-jia-su-an-zhuang/</link>
+    <author>R.J. Lorimer</author>
+    <pubDate>2015-04-25T16:06:29+08:00</pubDate>
+    <guid>http://realjenius.com/blog/2015/04/25/yosemite-jia-su-an-zhuang/</guid>
+    <description><![CDATA[
+     <!-- excerpt start -->
+
+<p>有些人或物是不禁夸的，稍不留神就整一出幺蛾子，OS X 就是如此。昨日重启电脑后只显示禁止图标，无法进入系统。</p>
+
+<p><a href="http://frank19900731.github.io/img/post/2015-4/6.png" class="img-up" title="禁止图标"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-4/6.png" width="30%" title="禁止图标" /></a></p>
+
+<p>Shift + Command + V 尝试进入恢复模式，日志输出倒数第二行显示 <code>pci pause: SDXC </code>，之后仍会跳出禁止图标，且与日志交叠，导致最后一行日志看不清……按照官方给出的 <a href="https://support.apple.com/en-us/HT204325">解决方案</a> 修复磁盘（权限）、重建 NVRAM 等无效。</p>
+
+<p>重启之前，我大概做了如下几项操作：</p>
+
+<ul>
+  <li>CleanMyMac 清理系统垃圾；</li>
+  <li>AppStore 安装系统更新，主要是更新 iMovie 和一个名为 Pro Video Formats 的更新，让我纳闷的是后者已经在我的系统更新中出现了三次，每次的更新版本号、更新说明、更新文件大小都是一模一样的；</li>
+  <li>Time Machine 备份。</li>
+</ul>
+
+<p><a href="http://frank19900731.github.io/img/post/2015-4/7.png" class="img-up" title="一模一样的更新"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-4/7.png" width="90%" title="一模一样的更新" /></a></p>
+
+<p>清理完垃圾，在没有完成 AppStore 更新和 Time Machine 备份的情况下，我通过正常途径关闭了电脑，就再没起来。</p>
+
+<p>苹果客服（我又无耻的打了客服，虽然帮助还是有限）向我表示曾遇到过<strong>用户使用类似 CleanMyMac 的第三方工具清理后重启无法进入系统</strong>的案例。也是，谁让 AppStore、Time Machine 都是苹果亲儿子。之前使用 CleanMyMac 清理系统都是直接输入密码、给予权限，确实没关心具体删除了哪些内容，以后不用就是了。</p>
+
+<!-- excerpt end -->
+
+<p><strong>对于目前系统和恢复模式都无法进入的情况，客服又祭出重装系统的方法，我可耻地从了</strong>。大概有三种解决方案： </p>
+
+<ol>
+  <li>开机 Command + R，选择 Reinstall 系统，<strong>用户文件、系统设置等都不会丢失</strong>，但也存在无法修复当前错误的可能（我很纳闷既然是 CleanMyMac 误删，那重装系统后为何仍旧可能无法进入系统，客服没有给出解答，只是说遇到过此类情况）；</li>
+  <li>使用 Time Machine 还原，问题在于<strong>最近一次备份的系统可能就是错的</strong>，可能需要还原更早的时间节点，而该时间节点后的新文件难于找回，未备份的则更找不回了；</li>
+  <li>使用另外一块硬盘安装系统，类似于 WinPE，读取原系统盘中的文件进行备份，或者干脆把原系统盘拆出来用硬盘读取器备份，然后使用第二种方法。</li>
+</ol>
+
+<p>显然第一种方法最简便。虽然当初安装 OS X 的时候没有分区操作，但重装系统还是可以做到不影响用户文件的。跟 AppStore 进行系统版本升级一样，都是先从苹果的服务器下载系统安装文件，安装末尾遇到了与之前博文 <a href="http://frank19900731.github.io/blog/2014/10/18/yosemite-sheng-ji-ji-hou-xu/">《Yosemite 升级及后续 》</a> 里提到的相同的问题：最后一分钟无比漫长。</p>
+
+<p>这次深入查询的结果是：<strong>系统更新过程中会将 /user/local 文件夹移出，然后在系统安装末尾再一点点拷贝回来</strong>。<strong>当时我就蒙逼了</strong>，Homebrew、TexLive 都在里面，而且 TexLive 还是 2011、2014 两个版本，这不闹呢么。打开日志（Comand  + L），发现确实在进行拷贝，1s 大概输出 10个文件名吧。虽说找到了 <a href="https://jimlindley.com/blog/yosemite-upgrade-homebrew-tips/">加速建议</a>，但安装过程中是妥妥儿用不了了。我的 /usr/local 文件夹大小 20 G（很多是历史遗留物），20G 的零七八碎的文件拷贝也就花了六七个小时吧 ==</p>
+
+<p><a href="http://frank19900731.github.io/img/post/2015-4/9.png" class="img-up" title="local 文件夹大小"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2015-4/9.png" width="100%" title="local 文件夹大小" /></a></p>
+
+<p>加速的方法很简单，就是把 /usr/local 文件夹在更新前移出 /usr 文件夹，在更新后再移动回来，但此时系统会有一个新的 /usr/local 文件夹，所以不是简单地移动，而是 merge。按 <a href="https://jimlindley.com/blog/yosemite-upgrade-homebrew-tips/">加速建议</a> 的做法，merge 也很耗时，我不清楚是否可以将新的 /usr/local merge 到老的上然后直接做替换，这种快速做法如果只是造成某些日志的断档，似乎就是可行的，以后再重装的话可以试下。</p>
+
+<p>一觉醒来，系统可以进入，用户文件没有变化，Tex、Homebrew 运行正常，截至目前只发现三处有改动：</p>
+
+<ol>
+  <li>系统设置中隐私设置的软件来源变成默认设置，即来自 AppStore 和通过验证的开发者；</li>
+  <li>Server 中 Apache 的设置被重置，幸好有备份；</li>
+  <li>JDK 1.6 被清除（因为默认装在 /System/Library 下，其它版本都无影响），<a href="https://support.apple.com/kb/DL1572?viewlocale=en_US&amp;locale=en_US">下载</a> 重装即可。</li>
+</ol>
+
+<p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2015/04/25/yosemite-jia-su-an-zhuang/">http://frank19900731.github.io/blog/2015/04/25/yosemite-jia-su-an-zhuang/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
+
+  ]]></description>
+</item>
+
+<item>
     <title>每周一软之 1Password</title>
     <link>http://realjenius.com/blog/2015/04/20/mei-zhou-yi-ruan-zhi-1password/</link>
     <author>R.J. Lorimer</author>
@@ -522,262 +631,6 @@
 <p>遮罩区域样式单一，应允许自定义背景。</p>
 
 <p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2015/03/08/mei-zhou-yi-ruan-zhi-focusmask/">http://frank19900731.github.io/blog/2015/03/08/mei-zhou-yi-ruan-zhi-focusmask/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
-
-  ]]></description>
-</item>
-
-<item>
-    <title>每周一软之 Smart Scroll</title>
-    <link>http://realjenius.com/blog/2015/03/01/mei-zhou-yi-ruan-zhi-smart-scroll/</link>
-    <author>R.J. Lorimer</author>
-    <pubDate>2015-03-01T12:32:51+08:00</pubDate>
-    <guid>http://realjenius.com/blog/2015/03/01/mei-zhou-yi-ruan-zhi-smart-scroll/</guid>
-    <description><![CDATA[
-     <p><strong>目录</strong></p>
-
-<ul id="markdown-toc">
-  <li><a href="#section">功能介绍</a></li>
-  <li><a href="#section-1">界面设计</a></li>
-  <li><a href="#section-2">易用性</a></li>
-  <li><a href="#section-3">稳定性</a></li>
-  <li><a href="#section-4">跨平台</a></li>
-  <li><a href="#section-5">类似软件</a></li>
-  <li><a href="#section-6">闪光点</a></li>
-  <li><a href="#section-7">缺点</a></li>
-</ul>
-
-<!-- excerpt start -->
-
-<h2 id="section">功能介绍</h2>
-
-<p><a href="http://www.marcmoini.com/sx_en.html">Smart Scroll</a> 一款<strong>鼠标/触摸板辅助软件</strong>，为滚轮或面板的滚动操作添加智能因素，显示于 System Preferences 面板中。</p>
-
-<p>Smart Scroll 主要有六大功能，与其界面设计相对应。</p>
-
-<ul>
-  <li>Scroll Wheel（鼠标设备） 设置
-    <ul>
-      <li>调节滚动的速度、方向（Reverse）、距离（Range for a single tick）与惯性（Inertia+）；</li>
-      <li>测试表明，<strong>在不同速度设置下</strong>，<strong>均可以实现平滑滚动</strong>；</li>
-      <li>Multi-Touch（触摸设备）中的功能设置同 Scroll Wheel。</li>
-    </ul>
-  </li>
-</ul>
-
-<p><a href="http://frank19900731.github.io/img/post/2015-3/1.png" class="img-up" title="Scroll Wheel+"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2015-3/1.png" width="80%" title="Scroll Wheel+" /></a></p>
-
-<!-- excerpt end -->
-
-<ul>
-  <li>Hover Scroll
-    <ul>
-      <li>可以设置窗口上下各一定区域，使得鼠标指针在该区域悬停时，窗口自动向上或向下滚动，速度可调整；</li>
-      <li>鼠标指针越接近窗口上/下部，窗口向上/下滚动的速度越快（<strong>可能引发视觉抖动</strong>）；</li>
-      <li>测试表明，鼠标指针需要<strong>以慢速进入设定区域</strong>，过快则无法触发 Hover Scroll。</li>
-    </ul>
-  </li>
-</ul>
-
-<p><a href="http://frank19900731.github.io/img/post/2015-3/3.png" class="img-up" title="Hover Scroll"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2015-3/3.png" width="80%" title="Hover Scroll" /></a></p>
-
-<ul>
-  <li>Auto Scroll
-    <ul>
-      <li>基于 Hover Scroll，以快捷键触发，鼠标指针被自动移到窗口下部，触发向下滚动操作。</li>
-    </ul>
-  </li>
-</ul>
-
-<p><a href="http://frank19900731.github.io/img/post/2015-3/4.png" class="img-up" title="Auto Scroll"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2015-3/4.png" width="80%" title="Auto Scroll" /></a></p>
-
-<ul>
-  <li>Grab Scroll
-    <ul>
-      <li>仅支持鼠标，拖拽页面滚动，类似于 <strong>PDF 阅读器中的手形图标拖动效果</strong>；</li>
-      <li>同样可以调节速度、方向与惯性；</li>
-      <li>Grab Scroll 可以采用快捷键+鼠标键的方式触发，以下图 <code>Option + Command + Secondary Button</code> 这一组合为例，需要先按下 Option 并<strong>保持</strong>，然后点击 Command（<strong>需抬起</strong>），之后按下鼠标右键方可拖动……</li>
-    </ul>
-  </li>
-</ul>
-
-<p><a href="http://frank19900731.github.io/img/post/2015-3/5.png" class="img-up" title="Grab Scroll"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2015-3/5.png" width="80%" title="Grab Scroll" /></a></p>
-
-<ul>
-  <li>Scroll Keys
-    <ul>
-      <li>滚动的快捷键操作，上下左右类似于箭头方向键；</li>
-      <li>测试表明，快捷键滚动比箭头方向键滚动<strong>步长更细</strong>，<strong>也更平滑</strong>；</li>
-    </ul>
-  </li>
-</ul>
-
-<p><a href="http://frank19900731.github.io/img/post/2015-3/6.png" class="img-up" title="Scroll Keys"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2015-3/6.png" width="80%" title="Scroll Keys" /></a></p>
-
-<ul>
-  <li>Vector Scroll
-    <ul>
-      <li>仅支持鼠标，鼠标键的点击释放构成向量，向量方向确定滚动方向，向量的模确定滚动速度；</li>
-      <li>如果设置 Secondary Button 触发，则右键菜单无法弹出，只能通过 Ctrl + Primary Button（鼠标左键） 查看。</li>
-    </ul>
-  </li>
-</ul>
-
-<p><a href="http://frank19900731.github.io/img/post/2015-3/7.png" class="img-up" title="Vector Scroll"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2015-3/7.png" width="80%" title="Vector Scroll" /></a></p>
-
-<h2 id="section-1">界面设计</h2>
-
-<p>界面设计较美观。</p>
-
-<h2 id="section-2">易用性</h2>
-
-<p>用法简单，只是初始需要设置适合自己使用习惯的参数。</p>
-
-<h2 id="section-3">稳定性</h2>
-
-<p>稳定性好。</p>
-
-<h2 id="section-4">跨平台</h2>
-
-<p>无。</p>
-
-<h2 id="section-5">类似软件</h2>
-
-<p>作为鼠标/触摸板辅助软件中的一款，Smart Scroll 专注于<strong>滚动的定制优化</strong>，而实际上这些设备有待发掘的远不止于此，以下两款软件可以提供更加丰富实用的定制功能。</p>
-
-<ul>
-  <li><a href="http://www.jitouch.com/">Jitouch</a> 也是安装后位于 System Preferences 中的一款软件，支持鼠标/触摸板手势、字符笔画识别，并可<strong>关联动作/快捷键</strong>。</li>
-</ul>
-
-<p><a href="http://frank19900731.github.io/img/post/2015-3/8.png" class="img-up" title="Jitouch"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2015-3/8.png" width="80%" title="Jitouch" /></a></p>
-
-<ul>
-  <li><a href="http://www.boastr.de/">Better Touch Tool</a> 是一款功能更加强大的辅助工具，几乎涵盖了 Smart Scroll、Jitouch 的所有功能，可定制项很多，有一种<strong>视觉压迫感</strong>，一看就是给 Geek 用的……
-    <ul>
-      <li>支持鼠标、触摸板、键盘快捷键、Apple Remote、Better Touch Tool 移动端（iOS）等的辅助功能定制；</li>
-      <li>手势、动作远较 Jitouch 丰富，也正因为多，<strong>一些手势的识别准确性会降低</strong>，<strong>定制项目多也更容易引发误操作</strong>。</li>
-    </ul>
-  </li>
-</ul>
-
-<p><a href="http://frank19900731.github.io/img/post/2015-3/9.png" class="img-up" title="Better Touch Tool"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2015-3/9.png" width="80%" title="Better Touch Tool" /></a></p>
-
-<h2 id="section-6">闪光点</h2>
-
-<ul>
-  <li>滚动速度可调，且效果平滑，Hover Scroll 与 Scroll Keys 也能做到平滑滚动。</li>
-</ul>
-
-<h2 id="section-7">缺点</h2>
-
-<ul>
-  <li>Grab Scroll、Vector Scroll 只能配合鼠标使用，对于只用触摸板的用户就鸡肋了，但这些功能完全可以配合触摸板使用（严格说 Vector Scroll 已经可以配合触摸板使用，但只能使用 Secondary Button 触发，而之前我们提到这会影响右键菜单的查看）；</li>
-  <li>Hover Scroll 速度快时有轻微抖动（当然，<strong>也很可能是我显卡差</strong>）。</li>
-</ul>
-
-<p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2015/03/01/mei-zhou-yi-ruan-zhi-smart-scroll/">http://frank19900731.github.io/blog/2015/03/01/mei-zhou-yi-ruan-zhi-smart-scroll/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
-
-  ]]></description>
-</item>
-
-<item>
-    <title>每周一软之 VideoGIF</title>
-    <link>http://realjenius.com/blog/2015/02/20/mei-zhou-yi-ruan-zhi-videogif/</link>
-    <author>R.J. Lorimer</author>
-    <pubDate>2015-02-20T19:46:58+08:00</pubDate>
-    <guid>http://realjenius.com/blog/2015/02/20/mei-zhou-yi-ruan-zhi-videogif/</guid>
-    <description><![CDATA[
-     <p><strong>目录</strong></p>
-
-<ul id="markdown-toc">
-  <li><a href="#section">功能介绍</a></li>
-  <li><a href="#section-1">界面设计</a></li>
-  <li><a href="#section-2">易用性</a></li>
-  <li><a href="#section-3">稳定性</a></li>
-  <li><a href="#section-4">跨平台</a></li>
-  <li><a href="#section-5">类似软件</a></li>
-  <li><a href="#section-6">闪光点</a></li>
-  <li><a href="#section-7">缺点</a></li>
-</ul>
-
-<!-- excerpt start -->
-
-<h2 id="section">功能介绍</h2>
-
-<p><a href="http://www.pearlmountainsoft.com/videogif/">VideoGIF</a> 是一款截取视频内容生成 GIF (Graphics Interchange Format) 格式图片的工具。</p>
-
-<p>VideoGIF 支持</p>
-
-<ul>
-  <li>摄像头视频采集；</li>
-  <li>拖拽选择待转换内容的起止时间点；</li>
-  <li>区域裁剪，自定义图像尺寸；</li>
-  <li><strong>添加文字、图像元素</strong>，并设定出现的起止时间；</li>
-  <li>调整图片色彩指标，包括亮度、对比度等；</li>
-  <li>导出 GIF 时设定帧率/帧数+延迟，可自动优化文件体积。</li>
-</ul>
-
-<!-- excerpt end -->
-
-<p><strong>功能界面</strong>：</p>
-
-<p><a href="http://frank19900731.github.io/img/post/2015-2/16.png" class="img-up" title="功能界面"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-2/16.png" width="90%" title="功能界面" /></a></p>
-
-<p><strong>导出界面</strong>：</p>
-
-<p><a href="http://frank19900731.github.io/img/post/2015-2/17.png" class="img-up" title="导出界面"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-2/17.png" width="90%" title="导出界面" /></a></p>
-
-<p>VideoGIF 可以帮助我们方便地从影视作品中导出<strong>精（dou）彩（bi）</strong>片段，或从录屏中导出一段演示。</p>
-
-<p><a href="http://frank19900731.github.io/img/post/2015-2/2.gif" class="img-up" title="逗比片段"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-2/2.gif" width="80%" title="逗比片段" /></a></p>
-
-<p>除视频外，我们可能还需要将多幅图片拼成 GIF，VideoGIF 的制作方相应提供了 <a href="http://www.pearlmountainsoft.com/picgif/">PicGIF</a>，会在 <a href="#section-5">类似软件</a> 中提到。</p>
-
-<h2 id="section-1">界面设计</h2>
-
-<p>简洁美观。</p>
-
-<p><a href="http://frank19900731.github.io/img/post/2015-2/18.png" class="img-up" title="VideoGIF 界面"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-2/18.png" width="80%" title="VideoGIF 界面" /></a></p>
-
-<h2 id="section-2">易用性</h2>
-
-<p>使用方便，会拖拽起止范围、会设置总帧数/帧率即可。</p>
-
-<h2 id="section-3">稳定性</h2>
-
-<p>稳定性好。</p>
-
-<h2 id="section-4">跨平台</h2>
-
-<p>无。</p>
-
-<h2 id="section-5">类似软件</h2>
-
-<ul>
-  <li><a href="http://www.pearlmountainsoft.com/picgif/">PicGIF</a>，根据多幅图片生成 GIF，基本功能如裁剪、调色等同 VideoGIF，也<strong>支持视频输入</strong>，会首先根据用户的起止时间和帧率/帧数设置从视频中提取相应数量的图片，之后处理同多幅图片；</li>
-  <li><a href="http://www.helloresolven.com/portfolio/gifbrewery/">GIF Brewery</a>，除界面（略丑），功能与 VideoGIF 完全一致……</li>
-  <li><a href="http://www.cockos.com/licecap/">LICEcap</a>，<strong>录屏 + 转 GIF</strong>，损失一些定制灵活性，但操作快捷；</li>
-  <li><strong>Photoshop</strong> 可将多幅图片转 GIF，网上有相关 <a href="http://jingyan.baidu.com/article/9158e0006047daa2541228f3.html">教程</a>；</li>
-  <li>威锋网上有一篇 <a href="http://bbs.feng.com/read-htm-tid-6980293.html">Mac 下 GIF 制作软件</a> 的讨论，其中的软件在功能、界面上都不超过 VideoGIF、PicGIF；</li>
-  <li><strong>命令行工具</strong>，<a href="https://www.ffmpeg.org/">ffmpeg</a>（根据视频生成 GIF 动画）、<a href="http://www.lcdf.org/~eddietwo/gifsicle/">gifsicle</a>（GIF 的创建、拆解、编辑、优化等）
-    <ul>
-      <li>一个使用案例可见 <a href="http://www.ideawu.net/blog/archives/856.html">OS X 屏幕录制视频转 GIF 动画</a>。</li>
-    </ul>
-  </li>
-</ul>
-
-<h2 id="section-6">闪光点</h2>
-
-<ul>
-  <li>功能完善，操作简便。</li>
-</ul>
-
-<h2 id="section-7">缺点</h2>
-
-<ul>
-  <li>不明白为什么要和 PicGIF 分为两个软件，就为了多挣一分钱么……</li>
-</ul>
-
-<p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2015/02/20/mei-zhou-yi-ruan-zhi-videogif/">http://frank19900731.github.io/blog/2015/02/20/mei-zhou-yi-ruan-zhi-videogif/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
 
   ]]></description>
 </item>
