@@ -11,17 +11,19 @@ exclude_from_search: true
 
 <p style="text-align: center;">
 
+<a href="/blog/2015/04/25/mei-zhou-yi-ruan-zhi-napkin/" target="_blank"><img class="imgcenter-no-shadow" src="/img/special/software/Napkin.png" width="20%" title="Napkin"></a>
+
 <a href="/blog/2015/04/20/mei-zhou-yi-ruan-zhi-1password/" target="_blank"><img class="imgcenter-no-shadow" src="/img/special/software/1Password.png" width="20%" title="1Password"></a>
 
 <a href="/blog/2015/04/11/mei-zhou-yi-ruan-zhi-paste/" target="_blank"><img class="imgcenter-no-shadow" src="/img/special/software/Paste.png" width="20%" title="Paste"></a>
 
 <a href="/blog/2015/04/07/mei-zhou-yi-ruan-zhi-texpad/" target="_blank"><img class="imgcenter-no-shadow" src="/img/special/software/TexPad.png" width="20%" title="TexPad"></a>
 
-<a href="/blog/2015/03/30/mei-zhou-yi-ruan-zhi-geektool/" target="_blank"><img class="imgcenter-no-shadow" src="/img/special/software/GeekTool.png" width="20%" title="GeekTool"></a>
-
 </p>
 
 <p style="text-align: center;">
+
+<a href="/blog/2015/03/30/mei-zhou-yi-ruan-zhi-geektool/" target="_blank"><img class="imgcenter-no-shadow" src="/img/special/software/GeekTool.png" width="20%" title="GeekTool"></a>
 
 <a href="/blog/2015/03/23/mei-zhou-yi-ruan-zhi-curio/" target="_blank"><img class="imgcenter-no-shadow" src="/img/special/software/Curio.png" width="20%" title="Curio"></a>
 
@@ -29,11 +31,11 @@ exclude_from_search: true
 
 <a href="/blog/2015/03/08/mei-zhou-yi-ruan-zhi-focusmask/" target="_blank"><img class="imgcenter-no-shadow" src="/img/special/software/FocusMask.png" width="20%" title="FocusMask"></a>
 
-<a href="/blog/2015/03/01/mei-zhou-yi-ruan-zhi-smart-scroll/" target="_blank"><img class="imgcenter-no-shadow" src="/img/special/software/Smart-Scroll.png" width="20%" title="Smart Scroll"></a>
-
 </p>
 
 <p style="text-align: center;">
+
+<a href="/blog/2015/03/01/mei-zhou-yi-ruan-zhi-smart-scroll/" target="_blank"><img class="imgcenter-no-shadow" src="/img/special/software/Smart-Scroll.png" width="20%" title="Smart Scroll"></a>
 
 <a href="/blog/2015/02/20/mei-zhou-yi-ruan-zhi-videogif/" target="_blank"><img class="imgcenter-no-shadow" src="/img/special/software/VideoGIF.png" width="20%" title="VideoGIF"></a>
 
@@ -41,11 +43,11 @@ exclude_from_search: true
 
 <a href="/blog/2015/02/08/mei-zhou-yi-ruan-zhi-blotter/" target="_blank"><img class="imgcenter-no-shadow" src="/img/special/software/Blotter.png" width="20%" title="Blotter"></a>
 
-<a href="/blog/2015/01/31/mei-zhou-yi-ruan-zhi-blocs/" target="_blank"><img class="imgcenter-no-shadow" src="/img/special/software/Blocs.png" width="20%" title="Blocs"></a>
-
 </p>
 
 <p style="text-align: center;">
+
+<a href="/blog/2015/01/31/mei-zhou-yi-ruan-zhi-blocs/" target="_blank"><img class="imgcenter-no-shadow" src="/img/special/software/Blocs.png" width="20%" title="Blocs"></a>
 
 <a href="/blog/2015/01/25/mei-zhou-yi-ruan-zhi-bartender/" target="_blank"><img class="imgcenter-no-shadow" src="/img/special/software/Bartender.png" width="20%" title="Bartender"></a>
 
@@ -53,11 +55,11 @@ exclude_from_search: true
 
 <a href="/blog/2015/01/11/mei-zhou-yi-ruan-zhi-xnconvert/" target="_blank"><img class="imgcenter-no-shadow" src="/img/special/software/xnconvert.png" width="20%" title="XnConvert"></a>
 
-<a href="/blog/2015/01/04/mei-zhou-ruan-zhi-sapiens/" target="_blank"><img class="imgcenter-no-shadow" src="/img/special/software/Sapiens.png" width="20%" title="Sapiens"></a>
-
 </p>
 
 <p style="text-align: center;">
+
+<a href="/blog/2015/01/04/mei-zhou-ruan-zhi-sapiens/" target="_blank"><img class="imgcenter-no-shadow" src="/img/special/software/Sapiens.png" width="20%" title="Sapiens"></a>
 
 <a href="/blog/2014/12/28/mei-zhou-yi-ruan-zhi-proxifier/" target="_blank"><img class="imgcenter-no-shadow" src="/img/special/software/Proxifier.png" width="20%" title="Proxifier"></a>
 
