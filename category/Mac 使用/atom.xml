@@ -1,5 +1,122 @@
 
 <item>
+    <title>每周一软之 Sublime</title>
+    <link>http://realjenius.com/blog/2015/05/03/mei-zhou-yi-ruan-zhi-sublime/</link>
+    <author>R.J. Lorimer</author>
+    <pubDate>2015-05-03T11:50:44+08:00</pubDate>
+    <guid>http://realjenius.com/blog/2015/05/03/mei-zhou-yi-ruan-zhi-sublime/</guid>
+    <description><![CDATA[
+     <p><strong>目录</strong></p>
+
+<ul id="markdown-toc">
+  <li><a href="#section">功能介绍</a></li>
+  <li><a href="#section-1">界面设计</a></li>
+  <li><a href="#section-2">易用性</a></li>
+  <li><a href="#section-3">稳定性</a></li>
+  <li><a href="#section-4">跨平台</a></li>
+  <li><a href="#section-5">类似软件</a></li>
+  <li><a href="#section-6">闪光点</a></li>
+  <li><a href="#section-7">缺点</a></li>
+</ul>
+
+<!-- excerpt start -->
+
+<p>论文肿算写完鸟，会一点点把落下的每周一软补回来。</p>
+
+<h2 id="section">功能介绍</h2>
+
+<p>每周一软不打算介绍开发工具，只是觉得 Sublime 对普通人的工作学习也有很大帮助，所以将它选入主题。</p>
+
+<p><a href="http://www.sublimetext.com/">Sublime Text</a> 是一款轻量级的编辑器，最初多用于前端开发（现在也是这样吧），堪比瑞士军刀，现在也逐渐受到非前端程序员的喜爱。一些人会拿它与 Emacs、Vim、Eclipse、Jet Brains 系列作比较，我觉得还是看使用目的和个人习惯吧。Sublime 精简美观，上手比 Emacs、Vim 简单，功能上是它们的子集，取而代之也是无稽之谈；相比 IntelliJ IDEA、RubyMine 等 IDE，Sublime 在项目的支持上更弱，但做小规模开发还是绰绰有余的。</p>
+
+<p>对有情怀的程序员来说，Emacs 或 Vim 是世界上雷打不动的最佳编辑器，这是无法撼动的<strong>人生哲学</strong>，但对于俺这种功利主义普通程序员来说，还是啥得劲儿用啥，Vim 还在慢慢学（对使用 Vim 如飞的人只能羡慕嫉妒恨），远程开发优先版本控制和目录挂载。</p>
+
+<p>事先声明，以下介绍的<strong>大部分功能在别的软件中也有</strong>……</p>
+
+<!-- excerpt end -->
+
+<p>Sublime 上手简单、易用性强主要体现在：</p>
+
+<ul>
+  <li><strong>功能查找方便</strong>
+    <ul>
+      <li>快捷键要常用才记得牢，所以 Vim 中我只能记住一小部分。Sublime 的菜单栏提供了较丰富的编辑功能，比如行排序、随机打乱行、分屏等，方便调用。</li>
+      <li>Sublime 提供了 Command Palette （Mac 下快捷键为 Shift + Command + P）进行命令搜索，支持模糊匹配，方便查询、调用自带功能和插件功能。</li>
+    </ul>
+  </li>
+  <li><strong>插件系统强大</strong>
+    <ul>
+      <li>插件是软件功能的扩展，能在满足用户需求的同时减少软件本身的系统占用，之后我们会介绍一些普通用户也能用得到的插件。</li>
+      <li>主题也是一种插件，一个赏心悦目的编辑界面无疑能够提高用户的写作效率。</li>
+    </ul>
+  </li>
+  <li><strong>可定制性强</strong>
+    <ul>
+      <li>Sublime 的插件功能使用 Python 实现，辅之以 json 文件作配置，编写者有基本的 Python 开发知识就足够。</li>
+      <li>Sublime 的配置都是 json 文件，区分用户配置和系统配置，前者覆盖后者。这样做能够防止用户定义设置被软件或插件更新覆盖，也方便配置的移植。</li>
+    </ul>
+  </li>
+</ul>
+
+<p>系统自带功能中，个人脚着最实用的是 Goto Anything。一个常见场景是，打开某个目录，需要不断点击子文件夹找到某个文件进行编辑，之后又要到另外一个子文件夹打开别的文件，这时有一个<strong>支持路径模糊匹配的文件搜索</strong>就会方便很多。Mac 下 Command + P 调用 Goto Anything，可以跳转到文件、跳转到行或跳转到符号。再者就是<strong>多点编辑</strong>功能，可自行查询学习。</p>
+
+<p>随便搜一下“Sublime 插件推荐”就有很多结果，这里只介绍一些<strong>普通用户适用的插件</strong>。</p>
+
+<ul>
+  <li>Markdown 系列，详见<a href="http://frank19900731.github.io/blog/2015/04/13/zai-sublime-zhong-pei-zhi-markdown-huan-jing/">《在 Sublime 中配置 Markdown 环境》</a>，插件安装方式也见该文；</li>
+  <li><strong>ConvertToUTF8</strong>，对 Sublime 现有文件编码支持的扩展，如支持 GBK；</li>
+  <li><strong>Advanced New File</strong>，新建文件时指定路径，而不必先找到文件夹再右键 New File；</li>
+  <li><strong>SideBarEnhancements</strong>，必装插件，扩展侧边栏功能，如 Open With、Find Advanced 等，其中 Find in Folder 功能用起来很带劲；</li>
+  <li><strong>SyncdSideBar</strong>，在侧边栏目录结构中同步定位到当前打开的文件，配合 Goto Anything 使用；</li>
+  <li><strong>FileHistory/LocalHistory</strong>，文件备份；</li>
+  <li><strong>Trimmer</strong>，删除行末空白字符，无论是编程还是撰写文档都会用到；</li>
+  <li><strong>SFTP</strong>，通过 FTP 映射本地目录和远程目录，使得编辑同步，但实际用起来并不方便，不如使用 <a href="http://fuse.sourceforge.net/sshfs.html">SSHFS</a> 进行目录挂载来得方便，前提是网速够快；</li>
+  <li><strong>Sublimall</strong>，在不同的 Sublime 安装间同步配置；</li>
+  <li><strong>Evernote</strong>，操作 Evernote 文档； </li>
+  <li><strong>DictionaryAutoComplete</strong>，英文单词自动补全；</li>
+  <li><strong>PlainTasks</strong>，一个 todo list 工具，待办事项记录在后缀名为 todo 的文档中，提供了一个简单效率软件所应具有的全部功能，包括新建条目、完成、取消、截止日期、开始时间、暂停时间、结束时间、归档等，还可以链接文件与网址。</li>
+</ul>
+
+<p>对最后一个插件 PlainTasks 要多说两句，现在我习惯于在写作或代码项目下建立一个 todo 文件，把以前写在 Readme 文件里的进度和待添加特性挪到这里。todo 文件其实就是文本文件，在没有 Sublime 的情况下也是可以查看、编辑的。当然，这只是一个简便的选择，没法跟 Emacs 下的 orgmode 比啦。</p>
+
+<h2 id="section-1">界面设计</h2>
+
+<p>简洁美观，会让一些人觉得是<strong>编辑器中的花瓶</strong>，其实是有货滴。</p>
+
+<p><a href="http://frank19900731.github.io/img/post/2015-5/1.png" class="img-up" title="Sublime 界面展示"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2015-5/1.png" width="100%" title="Sublime 界面展示" /></a></p>
+
+<h2 id="section-2">易用性</h2>
+
+<p>对普通用户有一定上手难度，但带来的效率提升远大于付出的努力，学习性价比高。</p>
+
+<h2 id="section-3">稳定性</h2>
+
+<p>总的来说是稳定的，但有过几次需要重启电脑才能正常工作的情况，原因未知。</p>
+
+<h2 id="section-4">跨平台</h2>
+
+<p>Windows、Linux、OS X 均可，只有图形界面。</p>
+
+<h2 id="section-5">类似软件</h2>
+
+<p>CodeRunner，Foobar，CodePad，TextMate 等都是代码编辑器，总体以 TextMate 名气大、功能全面，但它<strong>绚烂绽放的菊花图标</strong>让我颇为羞涩，Mac 下 CodeRunner 也很知名。Visual Studio Code 也是近期不能不提的代码编辑器，微软粉的最爱吧。</p>
+
+<p>文本编辑器推荐可见<a href="http://frank19900731.github.io/blog/2014/12/21/mei-zhou-ruan-zhi-markdown-bi-ji-ruan-jian-ulysses-iii/">《每周一软之 Markdown 笔记软件 Ulysses III》</a>，Ulysses III 最近更名为 Ulysses，改版之后运行效率优化不少，但界面美观性大不如前，特别是蝴蝶图标吓到不少对虫子有阴影的用户。还发现一款名为 Storyist 的软件，本来是用于小说、剧本写作的，但用来成体系地写一份学习笔记也是很不错的，类似 Gitbook。</p>
+
+<h2 id="section-6">闪光点</h2>
+
+<p>学习性价比高。</p>
+
+<h2 id="section-7">缺点</h2>
+
+<p>可以提很多，但想了想这不就是个编辑器嘛。如果觉得不适用，说明应该找找插件或换用更强大的工具了，比如 Vim、Emacs，排名不分先后……</p>
+
+<p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2015/05/03/mei-zhou-yi-ruan-zhi-sublime/">http://frank19900731.github.io/blog/2015/05/03/mei-zhou-yi-ruan-zhi-sublime/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
+
+  ]]></description>
+</item>
+
+<item>
     <title>每周一软之 Napkin</title>
     <link>http://realjenius.com/blog/2015/04/25/mei-zhou-yi-ruan-zhi-napkin/</link>
     <author>R.J. Lorimer</author>
@@ -533,104 +650,6 @@
 </ul>
 
 <p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2015/03/15/mei-zhou-yi-ruan-zhi-soulver/">http://frank19900731.github.io/blog/2015/03/15/mei-zhou-yi-ruan-zhi-soulver/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
-
-  ]]></description>
-</item>
-
-<item>
-    <title>每周一软之 FocusMask</title>
-    <link>http://realjenius.com/blog/2015/03/08/mei-zhou-yi-ruan-zhi-focusmask/</link>
-    <author>R.J. Lorimer</author>
-    <pubDate>2015-03-08T20:39:54+08:00</pubDate>
-    <guid>http://realjenius.com/blog/2015/03/08/mei-zhou-yi-ruan-zhi-focusmask/</guid>
-    <description><![CDATA[
-     <p><strong>目录</strong></p>
-
-<ul id="markdown-toc">
-  <li><a href="#section">功能介绍</a></li>
-  <li><a href="#section-1">界面设计</a></li>
-  <li><a href="#section-2">易用性</a></li>
-  <li><a href="#section-3">稳定性</a></li>
-  <li><a href="#section-4">跨平台</a></li>
-  <li><a href="#section-5">类似软件</a></li>
-  <li><a href="#section-6">闪光点</a></li>
-  <li><a href="#section-7">缺点</a></li>
-</ul>
-
-<!-- excerpt start -->
-
-<h2 id="section">功能介绍</h2>
-
-<p><a href="http://tentrip.net/focusmask/">FocusMask</a> 是一款效率软件，通过在屏幕上隔离出某一区域（其它区域被遮罩），使用户专注于某项工作，比如隔离出编辑环境以专注写作。</p>
-
-<p>FocusMask 虽然只是一招鲜，但个人觉得它提供的<strong>遮罩功能</strong>在日常工作学习中还是很实用的。类似于截图，FocusMask 的遮罩区域可以是框定的，也可以是当前窗口或视图，均可由快捷键触发。</p>
-
-<p><a href="http://frank19900731.github.io/img/post/2015-3/10.png" class="img-up" title="FocusMask 设置"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2015-3/10.png" width="80%" title="FocusMask 设置" /></a></p>
-
-<!-- excerpt end -->
-
-<p>以 Byword 写作为例，选定工作区域，之外的区域被遮罩。可以<strong>调整遮罩层的透明度</strong>，设定<strong>是否允许在工作区域外点击鼠标</strong>。</p>
-
-<p><a href="http://frank19900731.github.io/img/post/2015-3/11.png" class="img-up" title="区域框定"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-3/11.png" width="90%" title="区域框定" /></a></p>
-
-<p><a href="http://frank19900731.github.io/img/post/2015-3/12.png" class="img-up" title="运行效果"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-3/12.png" width="90%" title="运行效果" /></a></p>
-
-<p>如此，菜单栏、Docker 以及通知栏均不可见，可以在编辑区域安心工作了……</p>
-
-<h2 id="section-1">界面设计</h2>
-
-<p>界面设计简陋。</p>
-
-<h2 id="section-2">易用性</h2>
-
-<p>易于使用。</p>
-
-<h2 id="section-3">稳定性</h2>
-
-<p>稳定性好。</p>
-
-<h2 id="section-4">跨平台</h2>
-
-<p>无。</p>
-
-<h2 id="section-5">类似软件</h2>
-
-<p>迫使用户专注的一般做法是<code>屏蔽</code>。</p>
-
-<p><code>视觉屏蔽</code>，比如 FocusMask，又比如 <a href="http://willmore.eu/software/isolator/">Isolator</a>，后者将工作区域设置为处于输入焦点的软件，之外的区域同样是遮罩。Isolator 相比 FocusMask 为遮罩提供了更多选项，可以设置颜色，也可以设置滤镜，不过滤镜功能在 OS X 10.8 及以上的系统中已无法使用。</p>
-
-<p><code>听觉屏蔽</code>，推荐 <a href="https://coffitivity.com/">Coffitivity</a>，播放咖啡馆白噪音，网页版、PC 客户端、移动版均有提供。</p>
-
-<p>比<code>视觉屏蔽</code>、<code>听觉屏蔽</code>更彻底的是<code>接触屏蔽</code>，比如禁止浏览器对某些网址的访问，禁止某时段某些软件的开启。</p>
-
-<ul>
-  <li>命令行工具
-    <ul>
-      <li><a href="https://github.com/amoffat/focus">Focus</a>，Python 编写，可屏蔽网址；</li>
-      <li><a href="https://github.com/xtrementl/focus">Focus</a>，Python 编写，是一款强大的<strong>任务管理工具</strong>，除了可以屏蔽网址、软件，还可以给任务关联需要开启的软件、需要运行的脚本，也可以记录工作时间，生成简单的报告，称得上是极客工具；</li>
-    </ul>
-  </li>
-  <li>图形界面工具
-    <ul>
-      <li><a href="http://selfcontrolapp.com/">SelfControl</a> ，<a href="https://github.com/SelfControlApp/selfcontrol">开源软件</a>，可屏蔽网址；</li>
-      <li><a href="http://www.publicspace.net/Vitamin-R/">Vitamin-R</a>，大体是一款番茄工作法工具，可记录工作历史并生成图表，可于工作时段屏蔽指定软件，也可播放咖啡馆白噪音；</li>
-      <li><a href="https://heyfocus.com/">Focus</a> ，屏蔽指定网址、软件，也可以在命令行操作，曾是 <a href="https://github.com/bradjasper/Focus">开源软件</a>。</li>
-    </ul>
-  </li>
-</ul>
-
-<h2 id="section-6">闪光点</h2>
-
-<ul>
-  <li>工作区域选择方式多样；</li>
-  <li>可以屏蔽工作区域外的鼠标点击。</li>
-</ul>
-
-<h2 id="section-7">缺点</h2>
-
-<p>遮罩区域样式单一，应允许自定义背景。</p>
-
-<p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2015/03/08/mei-zhou-yi-ruan-zhi-focusmask/">http://frank19900731.github.io/blog/2015/03/08/mei-zhou-yi-ruan-zhi-focusmask/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
 
   ]]></description>
 </item>

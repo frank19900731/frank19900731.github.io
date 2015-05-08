@@ -1,5 +1,122 @@
 
 <item>
+    <title>每周一软之 Sublime</title>
+    <link>http://realjenius.com/blog/2015/05/03/mei-zhou-yi-ruan-zhi-sublime/</link>
+    <author>R.J. Lorimer</author>
+    <pubDate>2015-05-03T11:50:44+08:00</pubDate>
+    <guid>http://realjenius.com/blog/2015/05/03/mei-zhou-yi-ruan-zhi-sublime/</guid>
+    <description><![CDATA[
+     <p><strong>目录</strong></p>
+
+<ul id="markdown-toc">
+  <li><a href="#section">功能介绍</a></li>
+  <li><a href="#section-1">界面设计</a></li>
+  <li><a href="#section-2">易用性</a></li>
+  <li><a href="#section-3">稳定性</a></li>
+  <li><a href="#section-4">跨平台</a></li>
+  <li><a href="#section-5">类似软件</a></li>
+  <li><a href="#section-6">闪光点</a></li>
+  <li><a href="#section-7">缺点</a></li>
+</ul>
+
+<!-- excerpt start -->
+
+<p>论文肿算写完鸟，会一点点把落下的每周一软补回来。</p>
+
+<h2 id="section">功能介绍</h2>
+
+<p>每周一软不打算介绍开发工具，只是觉得 Sublime 对普通人的工作学习也有很大帮助，所以将它选入主题。</p>
+
+<p><a href="http://www.sublimetext.com/">Sublime Text</a> 是一款轻量级的编辑器，最初多用于前端开发（现在也是这样吧），堪比瑞士军刀，现在也逐渐受到非前端程序员的喜爱。一些人会拿它与 Emacs、Vim、Eclipse、Jet Brains 系列作比较，我觉得还是看使用目的和个人习惯吧。Sublime 精简美观，上手比 Emacs、Vim 简单，功能上是它们的子集，取而代之也是无稽之谈；相比 IntelliJ IDEA、RubyMine 等 IDE，Sublime 在项目的支持上更弱，但做小规模开发还是绰绰有余的。</p>
+
+<p>对有情怀的程序员来说，Emacs 或 Vim 是世界上雷打不动的最佳编辑器，这是无法撼动的<strong>人生哲学</strong>，但对于俺这种功利主义普通程序员来说，还是啥得劲儿用啥，Vim 还在慢慢学（对使用 Vim 如飞的人只能羡慕嫉妒恨），远程开发优先版本控制和目录挂载。</p>
+
+<p>事先声明，以下介绍的<strong>大部分功能在别的软件中也有</strong>……</p>
+
+<!-- excerpt end -->
+
+<p>Sublime 上手简单、易用性强主要体现在：</p>
+
+<ul>
+  <li><strong>功能查找方便</strong>
+    <ul>
+      <li>快捷键要常用才记得牢，所以 Vim 中我只能记住一小部分。Sublime 的菜单栏提供了较丰富的编辑功能，比如行排序、随机打乱行、分屏等，方便调用。</li>
+      <li>Sublime 提供了 Command Palette （Mac 下快捷键为 Shift + Command + P）进行命令搜索，支持模糊匹配，方便查询、调用自带功能和插件功能。</li>
+    </ul>
+  </li>
+  <li><strong>插件系统强大</strong>
+    <ul>
+      <li>插件是软件功能的扩展，能在满足用户需求的同时减少软件本身的系统占用，之后我们会介绍一些普通用户也能用得到的插件。</li>
+      <li>主题也是一种插件，一个赏心悦目的编辑界面无疑能够提高用户的写作效率。</li>
+    </ul>
+  </li>
+  <li><strong>可定制性强</strong>
+    <ul>
+      <li>Sublime 的插件功能使用 Python 实现，辅之以 json 文件作配置，编写者有基本的 Python 开发知识就足够。</li>
+      <li>Sublime 的配置都是 json 文件，区分用户配置和系统配置，前者覆盖后者。这样做能够防止用户定义设置被软件或插件更新覆盖，也方便配置的移植。</li>
+    </ul>
+  </li>
+</ul>
+
+<p>系统自带功能中，个人脚着最实用的是 Goto Anything。一个常见场景是，打开某个目录，需要不断点击子文件夹找到某个文件进行编辑，之后又要到另外一个子文件夹打开别的文件，这时有一个<strong>支持路径模糊匹配的文件搜索</strong>就会方便很多。Mac 下 Command + P 调用 Goto Anything，可以跳转到文件、跳转到行或跳转到符号。再者就是<strong>多点编辑</strong>功能，可自行查询学习。</p>
+
+<p>随便搜一下“Sublime 插件推荐”就有很多结果，这里只介绍一些<strong>普通用户适用的插件</strong>。</p>
+
+<ul>
+  <li>Markdown 系列，详见<a href="http://frank19900731.github.io/blog/2015/04/13/zai-sublime-zhong-pei-zhi-markdown-huan-jing/">《在 Sublime 中配置 Markdown 环境》</a>，插件安装方式也见该文；</li>
+  <li><strong>ConvertToUTF8</strong>，对 Sublime 现有文件编码支持的扩展，如支持 GBK；</li>
+  <li><strong>Advanced New File</strong>，新建文件时指定路径，而不必先找到文件夹再右键 New File；</li>
+  <li><strong>SideBarEnhancements</strong>，必装插件，扩展侧边栏功能，如 Open With、Find Advanced 等，其中 Find in Folder 功能用起来很带劲；</li>
+  <li><strong>SyncdSideBar</strong>，在侧边栏目录结构中同步定位到当前打开的文件，配合 Goto Anything 使用；</li>
+  <li><strong>FileHistory/LocalHistory</strong>，文件备份；</li>
+  <li><strong>Trimmer</strong>，删除行末空白字符，无论是编程还是撰写文档都会用到；</li>
+  <li><strong>SFTP</strong>，通过 FTP 映射本地目录和远程目录，使得编辑同步，但实际用起来并不方便，不如使用 <a href="http://fuse.sourceforge.net/sshfs.html">SSHFS</a> 进行目录挂载来得方便，前提是网速够快；</li>
+  <li><strong>Sublimall</strong>，在不同的 Sublime 安装间同步配置；</li>
+  <li><strong>Evernote</strong>，操作 Evernote 文档； </li>
+  <li><strong>DictionaryAutoComplete</strong>，英文单词自动补全；</li>
+  <li><strong>PlainTasks</strong>，一个 todo list 工具，待办事项记录在后缀名为 todo 的文档中，提供了一个简单效率软件所应具有的全部功能，包括新建条目、完成、取消、截止日期、开始时间、暂停时间、结束时间、归档等，还可以链接文件与网址。</li>
+</ul>
+
+<p>对最后一个插件 PlainTasks 要多说两句，现在我习惯于在写作或代码项目下建立一个 todo 文件，把以前写在 Readme 文件里的进度和待添加特性挪到这里。todo 文件其实就是文本文件，在没有 Sublime 的情况下也是可以查看、编辑的。当然，这只是一个简便的选择，没法跟 Emacs 下的 orgmode 比啦。</p>
+
+<h2 id="section-1">界面设计</h2>
+
+<p>简洁美观，会让一些人觉得是<strong>编辑器中的花瓶</strong>，其实是有货滴。</p>
+
+<p><a href="http://frank19900731.github.io/img/post/2015-5/1.png" class="img-up" title="Sublime 界面展示"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2015-5/1.png" width="100%" title="Sublime 界面展示" /></a></p>
+
+<h2 id="section-2">易用性</h2>
+
+<p>对普通用户有一定上手难度，但带来的效率提升远大于付出的努力，学习性价比高。</p>
+
+<h2 id="section-3">稳定性</h2>
+
+<p>总的来说是稳定的，但有过几次需要重启电脑才能正常工作的情况，原因未知。</p>
+
+<h2 id="section-4">跨平台</h2>
+
+<p>Windows、Linux、OS X 均可，只有图形界面。</p>
+
+<h2 id="section-5">类似软件</h2>
+
+<p>CodeRunner，Foobar，CodePad，TextMate 等都是代码编辑器，总体以 TextMate 名气大、功能全面，但它<strong>绚烂绽放的菊花图标</strong>让我颇为羞涩，Mac 下 CodeRunner 也很知名。Visual Studio Code 也是近期不能不提的代码编辑器，微软粉的最爱吧。</p>
+
+<p>文本编辑器推荐可见<a href="http://frank19900731.github.io/blog/2014/12/21/mei-zhou-ruan-zhi-markdown-bi-ji-ruan-jian-ulysses-iii/">《每周一软之 Markdown 笔记软件 Ulysses III》</a>，Ulysses III 最近更名为 Ulysses，改版之后运行效率优化不少，但界面美观性大不如前，特别是蝴蝶图标吓到不少对虫子有阴影的用户。还发现一款名为 Storyist 的软件，本来是用于小说、剧本写作的，但用来成体系地写一份学习笔记也是很不错的，类似 Gitbook。</p>
+
+<h2 id="section-6">闪光点</h2>
+
+<p>学习性价比高。</p>
+
+<h2 id="section-7">缺点</h2>
+
+<p>可以提很多，但想了想这不就是个编辑器嘛。如果觉得不适用，说明应该找找插件或换用更强大的工具了，比如 Vim、Emacs，排名不分先后……</p>
+
+<p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2015/05/03/mei-zhou-yi-ruan-zhi-sublime/">http://frank19900731.github.io/blog/2015/05/03/mei-zhou-yi-ruan-zhi-sublime/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
+
+  ]]></description>
+</item>
+
+<item>
     <title>每周一软之 Napkin</title>
     <link>http://realjenius.com/blog/2015/04/25/mei-zhou-yi-ruan-zhi-napkin/</link>
     <author>R.J. Lorimer</author>
@@ -663,109 +780,6 @@
 </ul>
 
 <p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2015/03/01/mei-zhou-yi-ruan-zhi-smart-scroll/">http://frank19900731.github.io/blog/2015/03/01/mei-zhou-yi-ruan-zhi-smart-scroll/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
-
-  ]]></description>
-</item>
-
-<item>
-    <title>每周一软之 VideoGIF</title>
-    <link>http://realjenius.com/blog/2015/02/20/mei-zhou-yi-ruan-zhi-videogif/</link>
-    <author>R.J. Lorimer</author>
-    <pubDate>2015-02-20T19:46:58+08:00</pubDate>
-    <guid>http://realjenius.com/blog/2015/02/20/mei-zhou-yi-ruan-zhi-videogif/</guid>
-    <description><![CDATA[
-     <p><strong>目录</strong></p>
-
-<ul id="markdown-toc">
-  <li><a href="#section">功能介绍</a></li>
-  <li><a href="#section-1">界面设计</a></li>
-  <li><a href="#section-2">易用性</a></li>
-  <li><a href="#section-3">稳定性</a></li>
-  <li><a href="#section-4">跨平台</a></li>
-  <li><a href="#section-5">类似软件</a></li>
-  <li><a href="#section-6">闪光点</a></li>
-  <li><a href="#section-7">缺点</a></li>
-</ul>
-
-<!-- excerpt start -->
-
-<h2 id="section">功能介绍</h2>
-
-<p><a href="http://www.pearlmountainsoft.com/videogif/">VideoGIF</a> 是一款截取视频内容生成 GIF (Graphics Interchange Format) 格式图片的工具。</p>
-
-<p>VideoGIF 支持</p>
-
-<ul>
-  <li>摄像头视频采集；</li>
-  <li>拖拽选择待转换内容的起止时间点；</li>
-  <li>区域裁剪，自定义图像尺寸；</li>
-  <li><strong>添加文字、图像元素</strong>，并设定出现的起止时间；</li>
-  <li>调整图片色彩指标，包括亮度、对比度等；</li>
-  <li>导出 GIF 时设定帧率/帧数+延迟，可自动优化文件体积。</li>
-</ul>
-
-<!-- excerpt end -->
-
-<p><strong>功能界面</strong>：</p>
-
-<p><a href="http://frank19900731.github.io/img/post/2015-2/16.png" class="img-up" title="功能界面"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-2/16.png" width="90%" title="功能界面" /></a></p>
-
-<p><strong>导出界面</strong>：</p>
-
-<p><a href="http://frank19900731.github.io/img/post/2015-2/17.png" class="img-up" title="导出界面"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-2/17.png" width="90%" title="导出界面" /></a></p>
-
-<p>VideoGIF 可以帮助我们方便地从影视作品中导出<strong>精（dou）彩（bi）</strong>片段，或从录屏中导出一段演示。</p>
-
-<p><a href="http://frank19900731.github.io/img/post/2015-2/2.gif" class="img-up" title="逗比片段"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-2/2.gif" width="80%" title="逗比片段" /></a></p>
-
-<p>除视频外，我们可能还需要将多幅图片拼成 GIF，VideoGIF 的制作方相应提供了 <a href="http://www.pearlmountainsoft.com/picgif/">PicGIF</a>，会在 <a href="#section-5">类似软件</a> 中提到。</p>
-
-<h2 id="section-1">界面设计</h2>
-
-<p>简洁美观。</p>
-
-<p><a href="http://frank19900731.github.io/img/post/2015-2/18.png" class="img-up" title="VideoGIF 界面"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-2/18.png" width="80%" title="VideoGIF 界面" /></a></p>
-
-<h2 id="section-2">易用性</h2>
-
-<p>使用方便，会拖拽起止范围、会设置总帧数/帧率即可。</p>
-
-<h2 id="section-3">稳定性</h2>
-
-<p>稳定性好。</p>
-
-<h2 id="section-4">跨平台</h2>
-
-<p>无。</p>
-
-<h2 id="section-5">类似软件</h2>
-
-<ul>
-  <li><a href="http://www.pearlmountainsoft.com/picgif/">PicGIF</a>，根据多幅图片生成 GIF，基本功能如裁剪、调色等同 VideoGIF，也<strong>支持视频输入</strong>，会首先根据用户的起止时间和帧率/帧数设置从视频中提取相应数量的图片，之后处理同多幅图片；</li>
-  <li><a href="http://www.helloresolven.com/portfolio/gifbrewery/">GIF Brewery</a>，除界面（略丑），功能与 VideoGIF 完全一致……</li>
-  <li><a href="http://www.cockos.com/licecap/">LICEcap</a>，<strong>录屏 + 转 GIF</strong>，损失一些定制灵活性，但操作快捷；</li>
-  <li><strong>Photoshop</strong> 可将多幅图片转 GIF，网上有相关 <a href="http://jingyan.baidu.com/article/9158e0006047daa2541228f3.html">教程</a>；</li>
-  <li>威锋网上有一篇 <a href="http://bbs.feng.com/read-htm-tid-6980293.html">Mac 下 GIF 制作软件</a> 的讨论，其中的软件在功能、界面上都不超过 VideoGIF、PicGIF；</li>
-  <li><strong>命令行工具</strong>，<a href="https://www.ffmpeg.org/">ffmpeg</a>（根据视频生成 GIF 动画）、<a href="http://www.lcdf.org/~eddietwo/gifsicle/">gifsicle</a>（GIF 的创建、拆解、编辑、优化等）
-    <ul>
-      <li>一个使用案例可见 <a href="http://www.ideawu.net/blog/archives/856.html">OS X 屏幕录制视频转 GIF 动画</a>。</li>
-    </ul>
-  </li>
-</ul>
-
-<h2 id="section-6">闪光点</h2>
-
-<ul>
-  <li>功能完善，操作简便。</li>
-</ul>
-
-<h2 id="section-7">缺点</h2>
-
-<ul>
-  <li>不明白为什么要和 PicGIF 分为两个软件，就为了多挣一分钱么……</li>
-</ul>
-
-<p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2015/02/20/mei-zhou-yi-ruan-zhi-videogif/">http://frank19900731.github.io/blog/2015/02/20/mei-zhou-yi-ruan-zhi-videogif/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
 
   ]]></description>
 </item>

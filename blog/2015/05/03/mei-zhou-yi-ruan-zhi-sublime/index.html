@@ -1,0 +1,638 @@
+<!-- layout/default.html -->
+
+<!-- head.html -->
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <!-- 标签页标题 -->
+  <title>每周一软之 Sublime - Blog of 太极儒</title>
+  <meta name="author" content="Frank Song">
+  <!-- 定义description变量，如果有则用，没有则是正文，前150字 -->
+  
+  <meta name="description" content="Categories: Mac 使用 每周一软之 Sublime May 3rd, 2015 您可能正在移动设备阅读本文，为获得更好的阅读体验，请点击 移动阅读入口 目录 功能介绍 界面设计 易用性 稳定性 跨平台 类似软件 闪光点 缺点 论文肿算写完鸟，会一点点把落下的每周一软补回来。 功能介绍 每周一软不打算介绍开发工具，只是觉得 Sublime 对普通人的工作学习也有很大帮助，所以将它选入主题。 Sublime Text 是一款轻量级的编辑器，最初多用于前端开发（现在也是这样吧），堪比瑞士军刀，现在也逐渐受到非前端程序员的喜爱。一些人会拿它与 Emacs、Vim、Eclipse、Jet Brains 系列作比较，我觉得还是看使用目的和个人习惯吧。Sublime 精简美观，上手比 Emacs、Vim 简单，功能上是它们的子集，取而代之也是无稽之谈；相比 IntelliJ IDEA、RubyMine 等 IDE，Sublime 在项目的支持上更弱，但做小规模开发还是绰绰有余的。 对有情怀的程序员来说，Emacs 或 Vim 是世界上雷打不动的最佳编辑器，这是无法撼动的人生哲学，但对于俺这种功利主义普通程序员来说，还是啥得劲儿用啥，Vim 还在慢慢学（对使用 Vim 如飞的人只能羡慕嫉妒恨），远程开发优先版本控制和目录挂载。 事先声明，以下介绍的大部分功能在别的软件中也有…… Sublime 上手简单、易用性强主要体现在： 功能查找方便 快捷键要常用才记得牢，所以 Vim 中我只能记住一小部分。Sublime 的菜单栏提供了较丰富的编辑功能，比如行排序、随机打乱行、分屏等，方便调用。 Sublime 提供了 Command Palette （Mac 下快捷键为 Shift + Command + P）进行命令搜索，支持模糊匹配，方便查询、调用自带功能和插件功能。 插件系统强大 插件是软件功能的扩展，能在满足用户需求的同时减少软件本身的系统占用，之后我们会介绍一些普通用户也能用得到的插件。 主题也是一种插件，一个赏心悦目的编辑界面无疑能够提高用户的写作效率。 可定制性强 Sublime 的插件功能使用 Python 实现，辅之以 json 文件作配置，编写者有基本的 Python 开发知识就足够。 Sublime 的配置都是 json 文件，区分用户配置和系统配置 &hellip;">
+  <meta name="keywords" content="mac软件, 每周一软, Sublime, 插件, Emacs, Vim, Eclipse, Jet Brains, IntelliJ IDEA, RubyMine, Python, josn, 多点编辑, Markdown, SSHFS, PlainTasks, orgmode, CodeRunner, Foobar, CodePad, TextMate, Visual Studio Code, Ulysses, Storyist">
+  <meta name="baidu-site-verification" content="7O78rNJCOH" />
+  <meta name="360-site-verification" content="9ee6dda17557079b8855f9c8201b05bb" />
+  <meta name="msvalidate.01" content="408D13BCB6B6CE4973F6CD9E6A9E8195" />
+  <meta name="sogou_site_verification" content="CtgkJPDjga"/>
+  <meta name="chinaz-site-verification" content="081e7651-48c6-4c2f-a569-99321685eab1" />
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="wb:webmaster" content="051ef053540cbffd" />
+
+  
+  <link rel="canonical" href="http://frank19900731.github.io/blog/2015/05/03/mei-zhou-yi-ruan-zhi-sublime">
+  <!-- 网站小图标 -->
+  <link href="/favicon.ico" rel="icon">
+  <!-- 网站样式文件 -->
+  <link href="/stylesheets/styles.css" media="screen, projection" rel="stylesheet" type="text/css">
+
+  <link href="/atom.xml" rel="alternate" title="Blog of 太极儒" type="application/atom+xml">
+
+  <script src="/javascripts/modernizr.custom.js"></script>
+  <!-- jQuery -->
+  <!--script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script-->
+  <script src="/javascripts/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+
+  <!-- 其它js代码 -->
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <script src="/javascripts/jquery.sidr.min.js"></script>
+  <script src="/javascripts/snowfall.jquery.min.js"></script>
+  <script src="/javascripts/ah-blue.js"></script>
+  <script type="text/javascript" src="/javascripts/fancybox/jquery.fancybox.pack.js"></script>
+  <link rel="stylesheet" type="text/css" href="/javascripts/fancybox/jquery.fancybox.css" media="screen" />
+
+  <link href="/stylesheets/component.css" rel="stylesheet" type="text/css">
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+        // $(document).snowfall({image :"/images/flake.png",
+        //     minSize: 20, maxSize:40,
+        //     flakeCount: 20, maxSpeed: 3});
+
+        if ($(".img-up")) {
+            $(".img-up").fancybox();
+        }
+        if ($(".imgleft")) {
+            $(".imgleft").parent().parent().css("text-align", "left");
+        }
+        if ($(".imgright")) {
+            $(".imgright").parent().parent().css("text-align", "right");
+        }
+        if ($(".imgcenter")) {
+            $(".imgcenter").parent().parent().css("text-align", "center");
+        }
+        if ($(".imgleft-no-shadow")) {
+            $(".imgleft-no-shadow").parent().parent().css("text-align", "left");
+        }
+        if ($(".imgright-no-shadow")) {
+            $(".imgright-no-shadow").parent().parent().css("text-align", "right");
+        }
+        if ($(".imgcenter-no-shadow")) {
+            $(".imgcenter-no-shadow").parent().parent().css("text-align", "center");
+        }
+
+        if ($(".mod_lost_child_little")) {
+            $(".mod_lost_child_little").css("width", "100%");
+        }
+
+        var isMobile = {
+            Android: function() {
+                return navigator.userAgent.match(/Android/i) ? true : false;
+            },
+            BlackBerry: function() {
+                return navigator.userAgent.match(/BlackBerry/i) ? true : false;
+            },
+            iOS: function() {
+                return navigator.userAgent.match(/iPhone|iPad|iPod/i) ? true : false;
+            },
+            Windows: function() {
+                return navigator.userAgent.match(/IEMobile/i) ? true : false;
+            },
+            any: function() {
+                return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Windows());
+            }
+        };
+
+        if( isMobile.any() )
+        {
+            $('.wx-entrance').show();
+        }
+    });
+  </script>
+
+  <!-- custom/head.html -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      jax: ["input/TeX", "output/HTML-CSS"],
+      tex2jax: {
+        inlineMath: [ ['$', '$'], ["\\(", "\\)"] ],
+        displayMath: [ ['$$', '$$'], ["\\[", "\\]"] ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+      //,
+      //displayAlign: "left",
+      //displayIndent: "2em"
+    });
+
+    function addBlankTargetForLinks () {
+
+      $('a[href^="http"]').each(function(){
+
+        $(this).attr('target', '_blank');
+
+      });
+
+    }
+
+    $(document).bind('DOMNodeInserted', function(event) {
+
+      addBlankTargetForLinks();
+
+    });
+
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"></script>
+  <!-- google_analytics.html -->
+
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-51950124-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head> 
+
+<body onload="onLoadSet()"   >
+  <!-- header.html -->
+<!-- custom/header.html -->
+<!-- 搜索和菜单导航 -->
+<!--
+<div class="aux-container">
+    <a id="nav-toggle" href="#sidr"></a>
+    <a id="search-toggle"></a>
+</div> -->
+
+<div id="dl-menu" class="dl-menuwrapper">
+    <button>Open Menu</button>
+    <ul class="dl-menu">
+        <li><a href="/">Home</a></li>
+        <li><a href="/archives/">Archives (57)</a></li>
+        <li>
+            <a href="#">Categories (7)</a>
+            <ul class="dl-submenu">
+                <li class="dl-back"><a href="#">Back</a></li>
+                <li><a href="/blog/categories">All Categories (7)</a>
+                <li style="color: #CCCCCC; line-height: 150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Top 5</li>
+
+                <li><a href='/category/Mac 使用'>Mac 使用 (26)</a></li><li><a href='/category/面试求职'>面试求职 (13)</a></li><li><a href='/category/工作效率'>工作效率 (9)</a></li><li><a href='/category/网页开发'>网页开发 (4)</a></li><li><a href='/category/编程学习'>编程学习 (2)</a></li>
+            </ul>
+        </li>
+        <li><a href="/blog/tags">All Tags (52)</a>
+        <li>
+            <a href="#">Features</a>
+            <ul class="dl-submenu">
+                <li class="dl-back"><a href="#">Back</a></li>
+                <li><a href="/booklist">Book List</a></li>
+                <li><a href="/movielist">Movie List</a></li>
+                <li><a href="/activities">Activities</a></li>
+                <li><a href="/softwares">Softwares</a></li>
+                <li><a href="/towrite">Things to Write</a></li>
+            </ul>
+        </li>
+        <li><a href="/about">About</a></li>
+    </ul>
+</div><!-- /dl-menuwrapper -->
+
+<div class="aux-container">
+
+</div>
+
+
+<div style="height: 30px;"></div>
+
+
+
+  <div class="main-container">
+    <div class="main wrapper clearfix">
+    	
+    	<aside>
+			
+                <div class="search-container">
+                    <form action="/search" method="get">
+                        <fieldset role="search">
+                            <input type="text" class="search-field" id="search-query" name="q" placeholder="Search" autocomplete="off">
+                            <input class="submit" type="submit" value=""/>
+                        </fieldset>
+                    </form>
+                </div>
+			
+            <!-- navigation.html -->
+<!-- custom/navigation.html -->
+<div id="main-nav">
+    <nav>
+        <ul>
+        	<li>
+        		<ul>
+                    <!--li><a href="http://songchengru.eicp.net" target="_blank">Personal Page</a-->
+                    <li><a href="/atom.xml" target="_blank">RSS Subscription</a></li>
+        			<li>Sina Blog - <a href="http://blog.sina.com/frank19900731" target="_blank">士不可以不弘毅</a></li>
+                    <li>Sina Weibo - <a href="http://weibo.sina.com/frank19900731" target="_blank">@太极儒</a></li>
+                    <li>Github - <a href="http://github.com/frank19900731" target="_blank">frank19900731</a></li>
+                    <li>Mail to Me - <a href="mailto:scr_0731@126.com" target="_blank">scr at 126</a></li>
+        		</ul>
+        	</li>
+
+                
+                <!-- asides/features.html -->
+<li>
+    <!-- features -->
+    <h3>Features</h3>
+    <ul>
+        <li><a href="/booklist">Book List</a> / <a href="/movielist">Movie List</a></li>
+        <li><a href="/activities">Activities</a></li>
+        <li><a href="/softwares">Softwares</a></li>
+        <li><a href="/towrite">To Write</a></li>
+        <li><a href="/weibo">Weibo Favorites</a></li>
+    </ul>
+</li><!-- asides/recent_posts.html -->
+        <li>
+<!-- 最近发布的文章 -->
+<h3>Recent Posts</h3>
+<ul>
+	
+    <li>
+    	<a href="/blog/2015/05/03/mei-zhou-yi-ruan-zhi-sublime/">每周一软之 Sublime</a>
+    </li>
+    
+    <li>
+    	<a href="/blog/2015/04/25/mei-zhou-yi-ruan-zhi-napkin/">每周一软之 Napkin</a>
+    </li>
+    
+    <li>
+    	<a href="/blog/2015/04/25/yosemite-jia-su-an-zhuang/">Yosemite 加速安装</a>
+    </li>
+    
+    <li>
+    	<a href="/blog/2015/04/20/mei-zhou-yi-ruan-zhi-1password/">每周一软之 1Password</a>
+    </li>
+    
+    <li>
+    	<a href="/blog/2015/04/20/yosemite-10-dot-10-dot-3-geng-xin-hou-finder-sheng-yu-rong-liang-xian-shi-cuo-wu-wen-ti-de-jie-jue/">Yosemite 10.10.3 更新后 Finder 剩余容量显示错误问题的解决</a>
+    </li>
+    
+</ul>
+        </li>
+<li>
+    <h3>Tags</h3>
+    <ul class="tag-cloud">
+        <a style="font-size: 132%" href="/tag/Yosemite/">Yosemite</a>
+<a style="font-size: 210%" href="/tag/mac软件/">mac软件</a>
+<a style="font-size: 132%" href="/tag/效率/">效率</a>
+<a style="font-size: 132%" href="/tag/数据可视化/">数据可视化</a>
+<a style="font-size: 117%" href="/tag/时间管理/">时间管理</a>
+<a style="font-size: 117%" href="/tag/智力题/">智力题</a>
+<a style="font-size: 207%" href="/tag/每周一软/">每周一软</a>
+<a style="font-size: 143%" href="/tag/知识管理/">知识管理</a>
+<a style="font-size: 132%" href="/tag/笔试/">笔试</a>
+<a style="font-size: 164%" href="/tag/面试经验/">面试经验</a>
+
+    </ul>
+</li><li>
+    <h3>Recent Comments</h3>
+    <ul class="ds-recent-comments" data-num-items="5" style="margin-right: 38px;">
+    </ul>
+</li><li>
+<h3>Recent Visitors</h3>
+<ul class="ds-recent-visitors"></ul>
+</li>
+                
+
+        </ul>
+    </nav>
+</div>
+		</aside>
+		
+      <!-- layouts/post.html -->
+<!-- 带内容 -->
+<div>
+<article style="background-color: rgba(255, 255, 255, 0.3); padding: 25px 25px 25px 25px; border-radius: 20px;">
+	<!-- article.html -->
+<!-- 文章展示，区分在索引页和文章页 -->
+<header>
+  <div class="article-tags">
+      <!-- post/categories.html -->
+<!-- 文章类别展示 -->
+
+
+<span class="categories" style="font-size: 16px;">
+  Categories:
+  
+    <a class='category' href='/category/Mac 使用/'>Mac 使用</a>
+  
+
+</span>
+
+
+  </div>
+  
+    <h1>
+      每周一软之 Sublime
+    </h1>
+  
+  <!-- 给出发布时间 -->
+  <div class="article-date">
+      <!-- post/date.html -->
+<!-- 文章日期显示 -->
+
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2015-05-03T11:50:44+08:00" pubdate data-updated="true">May 3<span>rd</span>, 2015</time></div>
+</header>
+<hr />
+
+<!-- 如果在索引中 -->
+
+<div class="wx-entrance" style="margin-bottom: 20px; display: none;">
+    您可能正在移动设备阅读本文，为获得更好的阅读体验，请点击 <a href="/wx/2015-05-08-mei-zhou-yi-ruan-zhi-sublime.html">移动阅读入口</a>
+</div>
+  <!-- 直接展示出内容 -->
+  <section class="article-detail" style="margin-bottom: 20px;"><p><strong>目录</strong></p>
+
+<ul id="markdown-toc">
+  <li><a href="#section">功能介绍</a></li>
+  <li><a href="#section-1">界面设计</a></li>
+  <li><a href="#section-2">易用性</a></li>
+  <li><a href="#section-3">稳定性</a></li>
+  <li><a href="#section-4">跨平台</a></li>
+  <li><a href="#section-5">类似软件</a></li>
+  <li><a href="#section-6">闪光点</a></li>
+  <li><a href="#section-7">缺点</a></li>
+</ul>
+
+<!-- excerpt start -->
+
+<p>论文肿算写完鸟，会一点点把落下的每周一软补回来。</p>
+
+<h2 id="section">功能介绍</h2>
+
+<p>每周一软不打算介绍开发工具，只是觉得 Sublime 对普通人的工作学习也有很大帮助，所以将它选入主题。</p>
+
+<p><a href="http://www.sublimetext.com/">Sublime Text</a> 是一款轻量级的编辑器，最初多用于前端开发（现在也是这样吧），堪比瑞士军刀，现在也逐渐受到非前端程序员的喜爱。一些人会拿它与 Emacs、Vim、Eclipse、Jet Brains 系列作比较，我觉得还是看使用目的和个人习惯吧。Sublime 精简美观，上手比 Emacs、Vim 简单，功能上是它们的子集，取而代之也是无稽之谈；相比 IntelliJ IDEA、RubyMine 等 IDE，Sublime 在项目的支持上更弱，但做小规模开发还是绰绰有余的。</p>
+
+<p>对有情怀的程序员来说，Emacs 或 Vim 是世界上雷打不动的最佳编辑器，这是无法撼动的<strong>人生哲学</strong>，但对于俺这种功利主义普通程序员来说，还是啥得劲儿用啥，Vim 还在慢慢学（对使用 Vim 如飞的人只能羡慕嫉妒恨），远程开发优先版本控制和目录挂载。</p>
+
+<p>事先声明，以下介绍的<strong>大部分功能在别的软件中也有</strong>……</p>
+
+<!-- excerpt end -->
+
+<p>Sublime 上手简单、易用性强主要体现在：</p>
+
+<ul>
+  <li><strong>功能查找方便</strong>
+    <ul>
+      <li>快捷键要常用才记得牢，所以 Vim 中我只能记住一小部分。Sublime 的菜单栏提供了较丰富的编辑功能，比如行排序、随机打乱行、分屏等，方便调用。</li>
+      <li>Sublime 提供了 Command Palette （Mac 下快捷键为 Shift + Command + P）进行命令搜索，支持模糊匹配，方便查询、调用自带功能和插件功能。</li>
+    </ul>
+  </li>
+  <li><strong>插件系统强大</strong>
+    <ul>
+      <li>插件是软件功能的扩展，能在满足用户需求的同时减少软件本身的系统占用，之后我们会介绍一些普通用户也能用得到的插件。</li>
+      <li>主题也是一种插件，一个赏心悦目的编辑界面无疑能够提高用户的写作效率。</li>
+    </ul>
+  </li>
+  <li><strong>可定制性强</strong>
+    <ul>
+      <li>Sublime 的插件功能使用 Python 实现，辅之以 json 文件作配置，编写者有基本的 Python 开发知识就足够。</li>
+      <li>Sublime 的配置都是 json 文件，区分用户配置和系统配置，前者覆盖后者。这样做能够防止用户定义设置被软件或插件更新覆盖，也方便配置的移植。</li>
+    </ul>
+  </li>
+</ul>
+
+<p>系统自带功能中，个人脚着最实用的是 Goto Anything。一个常见场景是，打开某个目录，需要不断点击子文件夹找到某个文件进行编辑，之后又要到另外一个子文件夹打开别的文件，这时有一个<strong>支持路径模糊匹配的文件搜索</strong>就会方便很多。Mac 下 Command + P 调用 Goto Anything，可以跳转到文件、跳转到行或跳转到符号。再者就是<strong>多点编辑</strong>功能，可自行查询学习。</p>
+
+<p>随便搜一下“Sublime 插件推荐”就有很多结果，这里只介绍一些<strong>普通用户适用的插件</strong>。</p>
+
+<ul>
+  <li>Markdown 系列，详见<a href="/blog/2015/04/13/zai-sublime-zhong-pei-zhi-markdown-huan-jing/">《在 Sublime 中配置 Markdown 环境》</a>，插件安装方式也见该文；</li>
+  <li><strong>ConvertToUTF8</strong>，对 Sublime 现有文件编码支持的扩展，如支持 GBK；</li>
+  <li><strong>Advanced New File</strong>，新建文件时指定路径，而不必先找到文件夹再右键 New File；</li>
+  <li><strong>SideBarEnhancements</strong>，必装插件，扩展侧边栏功能，如 Open With、Find Advanced 等，其中 Find in Folder 功能用起来很带劲；</li>
+  <li><strong>SyncdSideBar</strong>，在侧边栏目录结构中同步定位到当前打开的文件，配合 Goto Anything 使用；</li>
+  <li><strong>FileHistory/LocalHistory</strong>，文件备份；</li>
+  <li><strong>Trimmer</strong>，删除行末空白字符，无论是编程还是撰写文档都会用到；</li>
+  <li><strong>SFTP</strong>，通过 FTP 映射本地目录和远程目录，使得编辑同步，但实际用起来并不方便，不如使用 <a href="http://fuse.sourceforge.net/sshfs.html">SSHFS</a> 进行目录挂载来得方便，前提是网速够快；</li>
+  <li><strong>Sublimall</strong>，在不同的 Sublime 安装间同步配置；</li>
+  <li><strong>Evernote</strong>，操作 Evernote 文档； </li>
+  <li><strong>DictionaryAutoComplete</strong>，英文单词自动补全；</li>
+  <li><strong>PlainTasks</strong>，一个 todo list 工具，待办事项记录在后缀名为 todo 的文档中，提供了一个简单效率软件所应具有的全部功能，包括新建条目、完成、取消、截止日期、开始时间、暂停时间、结束时间、归档等，还可以链接文件与网址。</li>
+</ul>
+
+<p>对最后一个插件 PlainTasks 要多说两句，现在我习惯于在写作或代码项目下建立一个 todo 文件，把以前写在 Readme 文件里的进度和待添加特性挪到这里。todo 文件其实就是文本文件，在没有 Sublime 的情况下也是可以查看、编辑的。当然，这只是一个简便的选择，没法跟 Emacs 下的 orgmode 比啦。</p>
+
+<h2 id="section-1">界面设计</h2>
+
+<p>简洁美观，会让一些人觉得是<strong>编辑器中的花瓶</strong>，其实是有货滴。</p>
+
+<p><a href="/img/post/2015-5/1.png" class="img-up" title="Sublime 界面展示"><img class="imgcenter-no-shadow" src="/img/post/2015-5/1.png" width="100%" title="Sublime 界面展示" /></a></p>
+
+<h2 id="section-2">易用性</h2>
+
+<p>对普通用户有一定上手难度，但带来的效率提升远大于付出的努力，学习性价比高。</p>
+
+<h2 id="section-3">稳定性</h2>
+
+<p>总的来说是稳定的，但有过几次需要重启电脑才能正常工作的情况，原因未知。</p>
+
+<h2 id="section-4">跨平台</h2>
+
+<p>Windows、Linux、OS X 均可，只有图形界面。</p>
+
+<h2 id="section-5">类似软件</h2>
+
+<p>CodeRunner，Foobar，CodePad，TextMate 等都是代码编辑器，总体以 TextMate 名气大、功能全面，但它<strong>绚烂绽放的菊花图标</strong>让我颇为羞涩，Mac 下 CodeRunner 也很知名。Visual Studio Code 也是近期不能不提的代码编辑器，微软粉的最爱吧。</p>
+
+<p>文本编辑器推荐可见<a href="http://frank19900731.github.io/blog/2014/12/21/mei-zhou-ruan-zhi-markdown-bi-ji-ruan-jian-ulysses-iii/">《每周一软之 Markdown 笔记软件 Ulysses III》</a>，Ulysses III 最近更名为 Ulysses，改版之后运行效率优化不少，但界面美观性大不如前，特别是蝴蝶图标吓到不少对虫子有阴影的用户。还发现一款名为 Storyist 的软件，本来是用于小说、剧本写作的，但用来成体系地写一份学习笔记也是很不错的，类似 Gitbook。</p>
+
+<h2 id="section-6">闪光点</h2>
+
+<p>学习性价比高。</p>
+
+<h2 id="section-7">缺点</h2>
+
+<p>可以提很多，但想了想这不就是个编辑器嘛。如果觉得不适用，说明应该找找插件或换用更强大的工具了，比如 Vim、Emacs，排名不分先后……</p>
+
+<p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2015/05/03/mei-zhou-yi-ruan-zhi-sublime/">http://frank19900731.github.io/blog/2015/05/03/mei-zhou-yi-ruan-zhi-sublime/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
+</section>
+
+<!-- post/tags.html -->
+<!-- 文章标签展示 -->
+
+
+<span class="tags">
+  <font color="#777">Tags: </font>
+  
+    <a class='tag' href='/tag/mac软件/'>mac软件</a>, <a class='tag' href='/tag/每周一软/'>每周一软</a>
+  
+</span>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<span class="ds-thread-count" data-thread-key="" style="color: #777;"></span>
+
+
+<!-- JiaThis Button BEGIN -->
+<div class="jiathis_style" style="margin-top: 40px;">
+    <span class="jiathis_txt">分享到：</span>
+    <a class="jiathis_button_tsina">新浪微博</a>
+    <a class="jiathis_button_tqq">腾讯微博</a>
+    <a class="jiathis_button_renren">人人网</a>
+    <a class="jiathis_button_weixin">微信</a>
+    <a class="jiathis_button_douban">豆瓣</a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
+    <a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1406956593484740" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+        <div style="height: 40px;"></div>
+
+
+
+
+    <div style="width: 100%; margin-top: 30px;">
+        <span style="float:left">
+             <a href="/blog/2015/04/25/mei-zhou-yi-ruan-zhi-napkin/">« 每周一软之 Napkin</a> 
+        </span>
+        <span style="float:right">
+            
+        </span>
+    </div>
+
+	
+	  <section class="comments" style="padding-top: 30px;">
+	    <div id="disqus_thread" aria-live="polite"><!-- post/disqus_thread.html -->
+<!--
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+-->
+
+<!-- 多说评论框 start -->
+<div class="ds-thread" data-thread-key="/blog/2015/05/03/mei-zhou-yi-ruan-zhi-sublime/" data-title="每周一软之 Sublime" data-url="http://frank19900731.github.io/blog/2015/05/03/mei-zhou-yi-ruan-zhi-sublime/" style="margin-top: 40px;"></div>
+<!-- 多说评论框 end -->
+
+
+<h3 style="margin-top: 40px;">Commented Most This Month</h3>
+<!-- 多说热评文章 start -->
+<ul class="ds-top-threads" data-range="monthly" data-num-items="6"></ul>
+<!-- 多说热评文章 end --></div>
+	  </section>
+	
+</article>
+</div>
+
+    </div>
+  </div>
+  <!-- footer.html -->
+<!-- custom/footer.html -->
+<!-- 页脚 -->
+
+
+  <!-- after_footer.html -->
+<!-- custom/after_footer.html -->
+<!-- 加入评论 -->
+
+
+
+
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+    var duoshuoQuery = {short_name:"frank19900731-blog"};
+    (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0]
+                || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+</script>
+<!-- 多说公共JS代码 end -->
+
+
+<!--
+
+
+<script type="text/javascript">
+      var disqus_shortname = 'frank-octopress';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://frank19900731.github.io/blog/2015/05/03/mei-zhou-yi-ruan-zhi-sublime/';
+        var disqus_url = 'http://frank19900731.github.io/blog/2015/05/03/mei-zhou-yi-ruan-zhi-sublime/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+
+-->
+
+
+  <script src="/javascripts/jquery.dlmenu.js"></script>
+<script type="text/javascript">
+    $(function() {
+        $('#dl-menu').dlmenu();
+    });
+
+    function onLoadSet() {
+
+    }
+
+</script>
+  <a id="gotop" href="#">
+    <span>▲</span>
+</a>
+<div id="float-index">
+</div>
+
+<script type="text/javascript">
+    $(function(){
+        $(window).scroll(function(){  //只要窗口滚动,就触发下面代码
+            var scrollt = document.documentElement.scrollTop + document.body.scrollTop; //获取滚动后的高度
+            if( scrollt >300 ){  //判断滚动后高度超过200px,就显示
+                $("#gotop").fadeIn(400); //淡出
+            }else{
+                $("#gotop").stop().fadeOut(400); //如果返回或者没有超过,就淡入.必须加上stop()停止之前动画,否则会出现闪动
+            }
+
+            if(scrollt > 1300) {
+                $("#float-index").fadeIn(400);
+            } else {
+                $("#float-index").stop().fadeOut(10);
+            }
+        });
+        $("#gotop").click(function(){ //当点击标签的时候,使用animate在200毫秒的时间内,滚到顶部
+            $("html,body").animate({scrollTop:"0px"},200);
+        });
+
+        if ($("#markdown-toc").length > 0) {
+            $("#markdown-toc").clone(true).appendTo("#float-index");
+        } else {
+            $("#float-index").remove();
+        }
+    });
+</script>
+
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1253436508'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s6.cnzz.com/z_stat.php%3Fid%3D1253436508%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+</body>
+</html>
