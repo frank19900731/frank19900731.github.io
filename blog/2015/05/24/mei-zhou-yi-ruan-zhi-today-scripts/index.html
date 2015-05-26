@@ -1,0 +1,572 @@
+<!-- layout/default.html -->
+
+<!-- head.html -->
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <!-- 标签页标题 -->
+  <title>每周一软之 Today Scripts - Blog of 太极儒</title>
+  <meta name="author" content="Frank Song">
+  <!-- 定义description变量，如果有则用，没有则是正文，前150字 -->
+  
+  <meta name="description" content=" Categories: Mac 使用 每周一软之 Today Scripts May 24th, 2015 您可能正在移动设备阅读本文，为获得更好的阅读体验，请点击 移动阅读入口 目录 功能介绍 界面设计 易用性 稳定性 跨平台 类似软件 闪光点 缺点 毕业季，答辩准备中，有空再补。。。 功能介绍 界面设计 易用性 稳定性 跨平台 类似软件 闪光点 缺点 原文地址: http://frank19900731.github.io/blog/2015/05/24/mei-zhou-yi-ruan-zhi-today-scripts/ 作者 Frank Song&nbsp; 发布于 http://frank19900731.github.io&nbsp; 转载请注明 Tags: mac软件, 每周一软 &nbsp;&nbsp;&nbsp;&nbsp; 分享到： 新浪微博 腾讯微博 人人网 微信 豆瓣 更多 « 每周一软之 HoudahSpot <!--
+Please enable JavaScript to view the comments powered by Disqus.
+--> Commented Most This Month ">
+  <meta name="keywords" content="mac软件, 每周一软, Today Scripts">
+  <meta name="baidu-site-verification" content="7O78rNJCOH" />
+  <meta name="360-site-verification" content="9ee6dda17557079b8855f9c8201b05bb" />
+  <meta name="msvalidate.01" content="408D13BCB6B6CE4973F6CD9E6A9E8195" />
+  <meta name="sogou_site_verification" content="CtgkJPDjga"/>
+  <meta name="chinaz-site-verification" content="081e7651-48c6-4c2f-a569-99321685eab1" />
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="wb:webmaster" content="051ef053540cbffd" />
+
+  
+  <link rel="canonical" href="http://frank19900731.github.io/blog/2015/05/24/mei-zhou-yi-ruan-zhi-today-scripts">
+  <!-- 网站小图标 -->
+  <link href="/favicon.ico" rel="icon">
+  <!-- 网站样式文件 -->
+  <link href="/stylesheets/styles.css" media="screen, projection" rel="stylesheet" type="text/css">
+
+  <link href="/atom.xml" rel="alternate" title="Blog of 太极儒" type="application/atom+xml">
+
+  <script src="/javascripts/modernizr.custom.js"></script>
+  <!-- jQuery -->
+  <!--script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script-->
+  <script src="/javascripts/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+
+  <!-- 其它js代码 -->
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <script src="/javascripts/jquery.sidr.min.js"></script>
+  <script src="/javascripts/snowfall.jquery.min.js"></script>
+  <script src="/javascripts/ah-blue.js"></script>
+  <script type="text/javascript" src="/javascripts/fancybox/jquery.fancybox.pack.js"></script>
+  <link rel="stylesheet" type="text/css" href="/javascripts/fancybox/jquery.fancybox.css" media="screen" />
+
+  <link href="/stylesheets/component.css" rel="stylesheet" type="text/css">
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+        // $(document).snowfall({image :"/images/flake.png",
+        //     minSize: 20, maxSize:40,
+        //     flakeCount: 20, maxSpeed: 3});
+
+        if ($(".img-up")) {
+            $(".img-up").fancybox();
+        }
+        if ($(".imgleft")) {
+            $(".imgleft").parent().parent().css("text-align", "left");
+        }
+        if ($(".imgright")) {
+            $(".imgright").parent().parent().css("text-align", "right");
+        }
+        if ($(".imgcenter")) {
+            $(".imgcenter").parent().parent().css("text-align", "center");
+        }
+        if ($(".imgleft-no-shadow")) {
+            $(".imgleft-no-shadow").parent().parent().css("text-align", "left");
+        }
+        if ($(".imgright-no-shadow")) {
+            $(".imgright-no-shadow").parent().parent().css("text-align", "right");
+        }
+        if ($(".imgcenter-no-shadow")) {
+            $(".imgcenter-no-shadow").parent().parent().css("text-align", "center");
+        }
+
+        if ($(".mod_lost_child_little")) {
+            $(".mod_lost_child_little").css("width", "100%");
+        }
+
+        var isMobile = {
+            Android: function() {
+                return navigator.userAgent.match(/Android/i) ? true : false;
+            },
+            BlackBerry: function() {
+                return navigator.userAgent.match(/BlackBerry/i) ? true : false;
+            },
+            iOS: function() {
+                return navigator.userAgent.match(/iPhone|iPad|iPod/i) ? true : false;
+            },
+            Windows: function() {
+                return navigator.userAgent.match(/IEMobile/i) ? true : false;
+            },
+            any: function() {
+                return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Windows());
+            }
+        };
+
+        if( isMobile.any() )
+        {
+            $('.wx-entrance').show();
+        }
+    });
+  </script>
+
+  <!-- custom/head.html -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      jax: ["input/TeX", "output/HTML-CSS"],
+      tex2jax: {
+        inlineMath: [ ['$', '$'], ["\\(", "\\)"] ],
+        displayMath: [ ['$$', '$$'], ["\\[", "\\]"] ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+      //,
+      //displayAlign: "left",
+      //displayIndent: "2em"
+    });
+
+    function addBlankTargetForLinks () {
+
+      $('a[href^="http"]').each(function(){
+
+        $(this).attr('target', '_blank');
+
+      });
+
+    }
+
+    $(document).bind('DOMNodeInserted', function(event) {
+
+      addBlankTargetForLinks();
+
+    });
+
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"></script>
+  <!-- google_analytics.html -->
+
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-51950124-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head> 
+
+<body onload="onLoadSet()"   >
+  <!-- header.html -->
+<!-- custom/header.html -->
+<!-- 搜索和菜单导航 -->
+<!--
+<div class="aux-container">
+    <a id="nav-toggle" href="#sidr"></a>
+    <a id="search-toggle"></a>
+</div> -->
+
+<div id="dl-menu" class="dl-menuwrapper">
+    <button>Open Menu</button>
+    <ul class="dl-menu">
+        <li><a href="/">Home</a></li>
+        <li><a href="/archives/">Archives (60)</a></li>
+        <li>
+            <a href="#">Categories (7)</a>
+            <ul class="dl-submenu">
+                <li class="dl-back"><a href="#">Back</a></li>
+                <li><a href="/blog/categories">All Categories (7)</a>
+                <li style="color: #CCCCCC; line-height: 150%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Top 5</li>
+
+                <li><a href='/category/Mac 使用'>Mac 使用 (29)</a></li><li><a href='/category/面试求职'>面试求职 (13)</a></li><li><a href='/category/工作效率'>工作效率 (9)</a></li><li><a href='/category/网页开发'>网页开发 (4)</a></li><li><a href='/category/编程学习'>编程学习 (2)</a></li>
+            </ul>
+        </li>
+        <li><a href="/blog/tags">All Tags (52)</a>
+        <li>
+            <a href="#">Features</a>
+            <ul class="dl-submenu">
+                <li class="dl-back"><a href="#">Back</a></li>
+                <li><a href="/booklist">Book List</a></li>
+                <li><a href="/movielist">Movie List</a></li>
+                <li><a href="/activities">Activities</a></li>
+                <li><a href="/softwares">Softwares</a></li>
+                <li><a href="/towrite">Things to Write</a></li>
+            </ul>
+        </li>
+        <li><a href="/about">About</a></li>
+    </ul>
+</div><!-- /dl-menuwrapper -->
+
+<div class="aux-container">
+
+</div>
+
+
+<div style="height: 30px;"></div>
+
+
+
+  <div class="main-container">
+    <div class="main wrapper clearfix">
+    	
+    	<aside>
+			
+                <div class="search-container">
+                    <form action="/search" method="get">
+                        <fieldset role="search">
+                            <input type="text" class="search-field" id="search-query" name="q" placeholder="Search" autocomplete="off">
+                            <input class="submit" type="submit" value=""/>
+                        </fieldset>
+                    </form>
+                </div>
+			
+            <!-- navigation.html -->
+<!-- custom/navigation.html -->
+<div id="main-nav">
+    <nav>
+        <ul>
+        	<li>
+        		<ul>
+                    <!--li><a href="http://songchengru.eicp.net" target="_blank">Personal Page</a-->
+                    <li><a href="/atom.xml" target="_blank">RSS Subscription</a></li>
+        			<li>Sina Blog - <a href="http://blog.sina.com/frank19900731" target="_blank">士不可以不弘毅</a></li>
+                    <li>Sina Weibo - <a href="http://weibo.sina.com/frank19900731" target="_blank">@太极儒</a></li>
+                    <li>Github - <a href="http://github.com/frank19900731" target="_blank">frank19900731</a></li>
+                    <li>Mail to Me - <a href="mailto:scr_0731@126.com" target="_blank">scr at 126</a></li>
+        		</ul>
+        	</li>
+
+                
+                <!-- asides/features.html -->
+<li>
+    <!-- features -->
+    <h3>Features</h3>
+    <ul>
+        <li><a href="/booklist">Book List</a> / <a href="/movielist">Movie List</a></li>
+        <li><a href="/activities">Activities</a></li>
+        <li><a href="/softwares">Softwares</a></li>
+        <li><a href="/towrite">To Write</a></li>
+        <li><a href="/weibo">Weibo Favorites</a></li>
+    </ul>
+</li><!-- asides/recent_posts.html -->
+        <li>
+<!-- 最近发布的文章 -->
+<h3>Recent Posts</h3>
+<ul>
+	
+    <li>
+    	<a href="/blog/2015/05/24/mei-zhou-yi-ruan-zhi-today-scripts/">每周一软之 Today Scripts</a>
+    </li>
+    
+    <li>
+    	<a href="/blog/2015/05/17/mei-zhou-yi-ruan-zhi-houdahspot/">每周一软之 HoudahSpot</a>
+    </li>
+    
+    <li>
+    	<a href="/blog/2015/05/10/mei-zhou-yi-ruan-zhi-disk-sensei/">每周一软之 Disk Sensei</a>
+    </li>
+    
+    <li>
+    	<a href="/blog/2015/05/03/mei-zhou-yi-ruan-zhi-sublime/">每周一软之 Sublime</a>
+    </li>
+    
+    <li>
+    	<a href="/blog/2015/04/25/mei-zhou-yi-ruan-zhi-napkin/">每周一软之 Napkin</a>
+    </li>
+    
+</ul>
+        </li>
+<li>
+    <h3>Tags</h3>
+    <ul class="tag-cloud">
+        <a style="font-size: 130%" href="/tag/Yosemite/">Yosemite</a>
+<a style="font-size: 210%" href="/tag/mac软件/">mac软件</a>
+<a style="font-size: 130%" href="/tag/效率/">效率</a>
+<a style="font-size: 130%" href="/tag/数据可视化/">数据可视化</a>
+<a style="font-size: 116%" href="/tag/时间管理/">时间管理</a>
+<a style="font-size: 116%" href="/tag/智力题/">智力题</a>
+<a style="font-size: 207%" href="/tag/每周一软/">每周一软</a>
+<a style="font-size: 141%" href="/tag/知识管理/">知识管理</a>
+<a style="font-size: 130%" href="/tag/笔试/">笔试</a>
+<a style="font-size: 162%" href="/tag/面试经验/">面试经验</a>
+
+    </ul>
+</li><li>
+    <h3>Recent Comments</h3>
+    <ul class="ds-recent-comments" data-num-items="5" style="margin-right: 38px;">
+    </ul>
+</li><li>
+<h3>Recent Visitors</h3>
+<ul class="ds-recent-visitors"></ul>
+</li>
+                
+
+        </ul>
+    </nav>
+</div>
+		</aside>
+		
+      <!-- layouts/post.html -->
+<!-- 带内容 -->
+<div>
+<article style="background-color: rgba(255, 255, 255, 0.3); padding: 25px 25px 25px 25px; border-radius: 20px;">
+	<!-- article.html -->
+<!-- 文章展示，区分在索引页和文章页 -->
+<header>
+  <div class="article-tags">
+      <!-- post/categories.html -->
+<!-- 文章类别展示 -->
+
+
+<span class="categories" style="font-size: 16px;">
+  Categories:
+  
+    <a class='category' href='/category/Mac 使用/'>Mac 使用</a>
+  
+
+</span>
+
+
+  </div>
+  
+    <h1>
+      每周一软之 Today Scripts
+    </h1>
+  
+  <!-- 给出发布时间 -->
+  <div class="article-date">
+      <!-- post/date.html -->
+<!-- 文章日期显示 -->
+
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2015-05-24T20:45:37+08:00" pubdate data-updated="true">May 24<span>th</span>, 2015</time></div>
+</header>
+<hr />
+
+<!-- 如果在索引中 -->
+
+<div class="wx-entrance" style="margin-bottom: 20px; display: none;">
+    您可能正在移动设备阅读本文，为获得更好的阅读体验，请点击 <a href="/wx/2015-05-24-mei-zhou-yi-ruan-zhi-today-scripts.html">移动阅读入口</a>
+</div>
+  <!-- 直接展示出内容 -->
+  <section class="article-detail" style="margin-bottom: 20px;"><p><strong>目录</strong></p>
+
+<ul id="markdown-toc">
+  <li><a href="#section">功能介绍</a></li>
+  <li><a href="#section-1">界面设计</a></li>
+  <li><a href="#section-2">易用性</a></li>
+  <li><a href="#section-3">稳定性</a></li>
+  <li><a href="#section-4">跨平台</a></li>
+  <li><a href="#section-5">类似软件</a></li>
+  <li><a href="#section-6">闪光点</a></li>
+  <li><a href="#section-7">缺点</a></li>
+</ul>
+
+<!-- excerpt start -->
+
+<p>毕业季，答辩准备中，有空再补。。。</p>
+
+<p><a href="/img/post/2015-3/1.gif" class="img-up" title="答辩准备中"><img class="imgcenter" src="/img/post/2015-3/1.gif" width="40%" title="答辩准备中" /></a></p>
+
+<!-- excerpt end -->
+
+<h2 id="section">功能介绍</h2>
+
+<h2 id="section-1">界面设计</h2>
+
+<h2 id="section-2">易用性</h2>
+
+<h2 id="section-3">稳定性</h2>
+
+<h2 id="section-4">跨平台</h2>
+
+<h2 id="section-5">类似软件</h2>
+
+<h2 id="section-6">闪光点</h2>
+
+<h2 id="section-7">缺点</h2>
+
+<p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2015/05/24/mei-zhou-yi-ruan-zhi-today-scripts/">http://frank19900731.github.io/blog/2015/05/24/mei-zhou-yi-ruan-zhi-today-scripts/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
+</section>
+
+<!-- post/tags.html -->
+<!-- 文章标签展示 -->
+
+
+<span class="tags">
+  <font color="#777">Tags: </font>
+  
+    <a class='tag' href='/tag/mac软件/'>mac软件</a>, <a class='tag' href='/tag/每周一软/'>每周一软</a>
+  
+</span>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<span class="ds-thread-count" data-thread-key="" style="color: #777;"></span>
+
+
+<!-- JiaThis Button BEGIN -->
+<div class="jiathis_style" style="margin-top: 40px;">
+    <span class="jiathis_txt">分享到：</span>
+    <a class="jiathis_button_tsina">新浪微博</a>
+    <a class="jiathis_button_tqq">腾讯微博</a>
+    <a class="jiathis_button_renren">人人网</a>
+    <a class="jiathis_button_weixin">微信</a>
+    <a class="jiathis_button_douban">豆瓣</a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
+    <a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1406956593484740" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+        <div style="height: 40px;"></div>
+
+
+
+
+    <div style="width: 100%; margin-top: 30px;">
+        <span style="float:left">
+             <a href="/blog/2015/05/17/mei-zhou-yi-ruan-zhi-houdahspot/">« 每周一软之 HoudahSpot</a> 
+        </span>
+        <span style="float:right">
+            
+        </span>
+    </div>
+
+	
+	  <section class="comments" style="padding-top: 30px;">
+	    <div id="disqus_thread" aria-live="polite"><!-- post/disqus_thread.html -->
+<!--
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+-->
+
+<!-- 多说评论框 start -->
+<div class="ds-thread" data-thread-key="/blog/2015/05/24/mei-zhou-yi-ruan-zhi-today-scripts/" data-title="每周一软之 Today Scripts" data-url="http://frank19900731.github.io/blog/2015/05/24/mei-zhou-yi-ruan-zhi-today-scripts/" style="margin-top: 40px;"></div>
+<!-- 多说评论框 end -->
+
+
+<h3 style="margin-top: 40px;">Commented Most This Month</h3>
+<!-- 多说热评文章 start -->
+<ul class="ds-top-threads" data-range="monthly" data-num-items="6"></ul>
+<!-- 多说热评文章 end --></div>
+	  </section>
+	
+</article>
+</div>
+
+    </div>
+  </div>
+  <!-- footer.html -->
+<!-- custom/footer.html -->
+<!-- 页脚 -->
+
+
+  <!-- after_footer.html -->
+<!-- custom/after_footer.html -->
+<!-- 加入评论 -->
+
+
+
+
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+    var duoshuoQuery = {short_name:"frank19900731-blog"};
+    (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0]
+                || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+</script>
+<!-- 多说公共JS代码 end -->
+
+
+<!--
+
+
+<script type="text/javascript">
+      var disqus_shortname = 'frank-octopress';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://frank19900731.github.io/blog/2015/05/24/mei-zhou-yi-ruan-zhi-today-scripts/';
+        var disqus_url = 'http://frank19900731.github.io/blog/2015/05/24/mei-zhou-yi-ruan-zhi-today-scripts/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+
+-->
+
+
+  <script src="/javascripts/jquery.dlmenu.js"></script>
+<script type="text/javascript">
+    $(function() {
+        $('#dl-menu').dlmenu();
+    });
+
+    function onLoadSet() {
+
+    }
+
+</script>
+  <a id="gotop" href="#">
+    <span>▲</span>
+</a>
+<div id="float-index">
+</div>
+
+<script type="text/javascript">
+    $(function(){
+        $(window).scroll(function(){  //只要窗口滚动,就触发下面代码
+            var scrollt = document.documentElement.scrollTop + document.body.scrollTop; //获取滚动后的高度
+            if( scrollt >300 ){  //判断滚动后高度超过200px,就显示
+                $("#gotop").fadeIn(400); //淡出
+            }else{
+                $("#gotop").stop().fadeOut(400); //如果返回或者没有超过,就淡入.必须加上stop()停止之前动画,否则会出现闪动
+            }
+
+            if(scrollt > 1300) {
+                $("#float-index").fadeIn(400);
+            } else {
+                $("#float-index").stop().fadeOut(10);
+            }
+        });
+        $("#gotop").click(function(){ //当点击标签的时候,使用animate在200毫秒的时间内,滚到顶部
+            $("html,body").animate({scrollTop:"0px"},200);
+        });
+
+        if ($("#markdown-toc").length > 0) {
+            $("#markdown-toc").clone(true).appendTo("#float-index");
+        } else {
+            $("#float-index").remove();
+        }
+    });
+</script>
+
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1253436508'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s6.cnzz.com/z_stat.php%3Fid%3D1253436508%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+</body>
+</html>

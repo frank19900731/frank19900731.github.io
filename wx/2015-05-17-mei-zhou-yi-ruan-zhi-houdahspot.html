@@ -1,0 +1,285 @@
+<!-- layout/wx-default.html -->
+
+<!-- head.html -->
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <!-- 标签页标题 -->
+  <title>每周一软之 HoudahSpot - Blog of 太极儒</title>
+  <meta name="author" content="Frank Song">
+  <!-- 定义description变量，如果有则用，没有则是正文，前150字 -->
+  
+  <meta name="description" content="目录 功能介绍 界面设计 易用性 稳定性 跨平台 类似软件 闪光点 缺点 功能介绍 HoudahSpot 是一款文件搜索工具，典型的功能强大界面糙，见过的没见过的功能都浓缩在四列之中。HoudahSpot 的搜索基于 Spotlight，搜索速度快，但也受限于索引更新。 HoudahSpot 提供了丰富的查询条件和过滤功能。常见的查询条件有文本内容、文件类型、文件大小、最近打开时间等，还包括近 300 种与特定文件类型相关的属性，比如图片尺寸。这些查询条件各自可以做精细定制，也可以以逻辑与或非的关系进行组合。选中搜索结果中的一项，最右侧列显示了该文件的详细信息、预览和文本预览。详细信息的各项可以作为过滤条件对搜索结果进行筛选，预览显示该文件在默认打开程序中的效果，文本显示文件的文本信息（如果有）、高亮搜索关键词。 HoudahSpot 除可以指定搜索路径，还可以跳过某些路径，与一般搜索软件不同的是路径可以是多个文件夹的组合。 HoudahSpot 允许我们将上述查询条件保存为片段（Snippet）或模板（Template），便于今后重复使用或微调。 HoudahSpot 提供的高级搜索功能和便捷操作还包括： 支持输入如 kind:wordProcessing date:thisYear 的搜索语句，详见 Advanced Features 一节； 一次查询以标签页形式展现，可同时展示多个标签页； 支持拖拽文件到查询条件上以修改查询条件与该文件相符； 支持查询结果格式化拷贝，可直接粘贴到 Excel中； 支持添加全局热键唤起搜索框，和 Spotlight 类似； 支持 AppleScript 调用，详见 AppleScript 一节； 支持 Calendar、Reminder 和 Contacts 搜索。 界面设计 简暴。 易用性 简单易用。 稳定性 稳定性好。 跨平台 仅 OS X。 类似软件 Spotlight、Finder 提供了 OS X 基本的文件搜索功能，只有文件名、标签等有限的搜索条件。 Alfred、QuickSilver 也支持简单的文件搜索，可以设置待索引的文件夹和目录深度，全盘索引压力较大也没有必要。 EasyFind 是一款免费的轻量级搜索工具，在了解 HoudahSpot 以前常用。题外话，写这篇博客的时候才知道它居然和大名鼎鼎的 &hellip;">
+  <meta name="keywords" content="mac软件, 每周一软, HoudahSpot, 文件搜索, 查询条件, 过滤条件, Spotlight, AppleScript, Calendar, Reminder, Contacts, Finder, Alfred, QuickSilver, EasyFind, DEVONnote, find, Sublime, SideBarEnhancements">
+  <meta name="baidu-site-verification" content="7O78rNJCOH" />
+  <meta name="360-site-verification" content="9ee6dda17557079b8855f9c8201b05bb" />
+  <meta name="msvalidate.01" content="408D13BCB6B6CE4973F6CD9E6A9E8195" />
+  <meta name="sogou_site_verification" content="CtgkJPDjga"/>
+  <meta name="chinaz-site-verification" content="081e7651-48c6-4c2f-a569-99321685eab1" />
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://frank19900731.github.io/wx/2015-05-17-mei-zhou-yi-ruan-zhi-houdahspot.html">
+  <!-- 网站小图标 -->
+  <link href="/favicon.ico" rel="icon">
+  <link href="/stylesheets/bootstrap/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="/stylesheets/bootstrap/responsive.css" rel="stylesheet" type="text/css">
+  <!-- 网站样式文件 -->
+  <link href="/stylesheets/styles.css" media="screen, projection" rel="stylesheet" type="text/css">
+
+  <link href="/atom.xml" rel="alternate" title="Blog of 太极儒" type="application/atom+xml">
+
+  <script src="/javascripts/modernizr.custom.js"></script>
+  <!-- jQuery -->
+  <!--script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script-->
+  <script src="/javascripts/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+
+  <!-- 其它js代码 -->
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <script src="/javascripts/jquery.sidr.min.js"></script>
+  <script src="/javascripts/ah-blue.js"></script>
+  <script type="text/javascript" src="/javascripts/fancybox/jquery.fancybox.pack.js"></script>
+  <link rel="stylesheet" type="text/css" href="/javascripts/fancybox/jquery.fancybox.css" media="screen" />
+
+  <link href="/stylesheets/component.css" rel="stylesheet" type="text/css">
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+        if ($(".img-up")) {
+            $(".img-up").fancybox();
+        }
+        if ($(".imgleft")) {
+            $(".imgleft").parent().parent().css("text-align", "left");
+        }
+        if ($(".imgright")) {
+            $(".imgright").parent().parent().css("text-align", "right");
+        }
+        if ($(".imgcenter")) {
+            $(".imgcenter").parent().parent().css("text-align", "center");
+        }
+        if ($(".imgleft-no-shadow")) {
+            $(".imgleft-no-shadow").parent().parent().css("text-align", "left");
+        }
+        if ($(".imgright-no-shadow")) {
+            $(".imgright-no-shadow").parent().parent().css("text-align", "right");
+        }
+        if ($(".imgcenter-no-shadow")) {
+            $(".imgcenter-no-shadow").parent().parent().css("text-align", "center");
+        }
+
+        if ($(".mod_lost_child_little")) {
+            $(".mod_lost_child_little").css("width", "100%");
+        }
+    });
+  </script>
+
+  <style>
+      body {
+          background-image: none;
+      }
+
+      tr.content {
+          line-height: 300%;
+          border-top: 1px dotted #000;
+      }
+
+      table.mulu {
+          width: 95%; margin: 10px auto 40px;
+      }
+
+      .gutter {
+          width: 7%;
+      }
+  </style>
+
+  <!-- custom/head.html -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      jax: ["input/TeX", "output/HTML-CSS"],
+      tex2jax: {
+        inlineMath: [ ['$', '$'], ["\\(", "\\)"] ],
+        displayMath: [ ['$$', '$$'], ["\\[", "\\]"] ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+      //,
+      //displayAlign: "left",
+      //displayIndent: "2em"
+    });
+
+    function addBlankTargetForLinks () {
+
+      $('a[href^="http"]').each(function(){
+
+        $(this).attr('target', '_blank');
+
+      });
+
+    }
+
+    $(document).bind('DOMNodeInserted', function(event) {
+
+      addBlankTargetForLinks();
+
+    });
+
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"></script>
+  <!-- google_analytics.html -->
+
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-51950124-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head> 
+
+<body style="background-color: rgba(255, 255, 255, 0.3);">
+
+<div class="row-fluid marketing">
+<div class="span2"> </div>
+<div class="span8">
+<div class="container-narrow" style="margin-top: 20px;">
+
+      <div class="masthead">
+        <ul class="nav nav-pills pull-right">
+          <li><a href="/wx/archives/">博客目录</a></li>
+          <li><a href="/blog/2015/05/17/mei-zhou-yi-ruan-zhi-houdahspot/">PC端阅读</a></li>
+        </ul>
+        <h3 class="muted">&nbsp;&nbsp;&nbsp;&nbsp;太极儒</h3>
+      </div>
+
+	  <hr style="width: 100%;">
+
+      <div style="padding: 8px 25px 8px 25px;">
+        <h1>
+          每周一软之 HoudahSpot
+        </h1>
+
+        <div class="article-date" style="margin-bottom: 40px;">
+            <!-- post/date.html -->
+<!-- 文章日期显示 -->
+
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2015-05-17T20:50:29+08:00" pubdate data-updated="true">May 17<span>th</span>, 2015</time>
+        </div>
+      <p><strong>目录</strong></p>
+
+<ul id="markdown-toc">
+  <li><a href="#section">功能介绍</a></li>
+  <li><a href="#section-1">界面设计</a></li>
+  <li><a href="#section-2">易用性</a></li>
+  <li><a href="#section-3">稳定性</a></li>
+  <li><a href="#section-4">跨平台</a></li>
+  <li><a href="#section-5">类似软件</a></li>
+  <li><a href="#section-6">闪光点</a></li>
+  <li><a href="#section-7">缺点</a></li>
+</ul>
+
+<h2 id="section">功能介绍</h2>
+
+<!-- excerpt start -->
+
+<p><a href="http://www.houdah.com/houdahSpot/">HoudahSpot</a> 是一款文件搜索工具，典型的功能强大界面糙，见过的没见过的功能都浓缩在四列之中。<strong>HoudahSpot 的搜索基于 Spotlight</strong>，<strong>搜索速度快</strong>，但也<strong>受限于索引更新</strong>。</p>
+
+<p><a href="/img/post/2015-5/8.png" class="img-up" title="HoudahSpot 软件界面"><img class="imgcenter-no-shadow" src="/img/post/2015-5/8.png" width="99%" title="HoudahSpot 软件界面" /></a></p>
+
+<p>HoudahSpot 提供了丰富的查询条件和过滤功能。常见的查询条件有文本内容、文件类型、文件大小、最近打开时间等，还包括<strong>近 300 种与特定文件类型相关的属性</strong>，比如图片尺寸。这些查询条件各自可以做精细定制，也可以<strong>以逻辑与或非的关系进行组合</strong>。选中搜索结果中的一项，最右侧列显示了该文件的详细信息、预览和文本预览。详细信息的各项可以作为过滤条件对搜索结果进行筛选，预览显示该文件在默认打开程序中的效果，文本显示文件的文本信息（如果有）、<strong>高亮搜索关键词</strong>。</p>
+
+<!-- excerpt end -->
+
+<p>HoudahSpot 除可以指定搜索路径，还可以跳过某些路径，与一般搜索软件不同的是<strong>路径可以是多个文件夹的组合</strong>。</p>
+
+<p>HoudahSpot 允许我们将上述<strong>查询条件保存为片段</strong>（Snippet）<strong>或模板</strong>（Template），便于今后重复使用或微调。</p>
+
+<p>HoudahSpot 提供的高级搜索功能和便捷操作还包括：</p>
+
+<ul>
+  <li>支持输入如 <code>kind:wordProcessing date:thisYear</code> 的搜索语句，详见 <a href="http://www.houdah.com/houdahSpot/help/4.0/HoudahSpot%20Help%20EN.pdf">Advanced Features</a> 一节；</li>
+  <li>一次查询以<strong>标签页</strong>形式展现，可同时展示多个标签页；</li>
+  <li>支持拖拽文件到查询条件上以修改查询条件与该文件相符；</li>
+  <li>支持<strong>查询结果格式化拷贝</strong>，可直接粘贴到 Excel中；</li>
+  <li>支持添加全局热键唤起搜索框，和 Spotlight 类似；</li>
+  <li>支持 AppleScript 调用，详见 <a href="http://www.houdah.com/houdahSpot/help/4.0/HoudahSpot%20Help%20EN.pdf">AppleScript</a> 一节；</li>
+  <li>支持 Calendar、Reminder 和 Contacts 搜索。</li>
+</ul>
+
+<h2 id="section-1">界面设计</h2>
+
+<p>简暴。</p>
+
+<h2 id="section-2">易用性</h2>
+
+<p>简单易用。</p>
+
+<h2 id="section-3">稳定性</h2>
+
+<p>稳定性好。</p>
+
+<h2 id="section-4">跨平台</h2>
+
+<p>仅 OS X。</p>
+
+<h2 id="section-5">类似软件</h2>
+
+<p>Spotlight、Finder 提供了 OS X 基本的文件搜索功能，只有文件名、标签等有限的搜索条件。</p>
+
+<p><a href="http://www.alfredapp.com/">Alfred</a>、<a href="http://qsapp.com/">QuickSilver</a> 也支持简单的文件搜索，可以设置待索引的文件夹和目录深度，全盘索引压力较大也没有必要。</p>
+
+<p><a href="http://www.devontechnologies.com/products/freeware.html">EasyFind</a> 是一款免费的轻量级搜索工具，在了解 HoudahSpot 以前常用。题外话，写这篇博客的时候才知道它居然和大名鼎鼎的 <a href="http://www.devontechnologies.com/products/devonnote.html">DEVONnote</a> 出自同一家公司。EasyFind 的好处是不只依赖于索引，所以可以<strong>实时查询</strong>。</p>
+
+<p>当然，说到文件搜索，<a href="http://unixhelp.ed.ac.uk/CGI/man-cgi?find">find</a> 命令自然不能不提，用法网上有很多，此处不展开。</p>
+
+<p>如果搜索目标是文本文件的内容，那一些编辑器也是可用的，比如 Sublime 的插件 <a href="https://github.com/titoBouzout/SideBarEnhancements">SideBarEnhancements</a> 提供了 Find Advanced 功能。虽然说到底是封装了命令行，但毕竟也省去了记忆参数的麻烦。</p>
+
+<h2 id="section-6">闪光点</h2>
+
+<ul>
+  <li>标签式管理；</li>
+  <li>查询条件可以保存为模板；</li>
+  <li>搜索可跳过某些路径，路径可指定多个文件夹；</li>
+  <li>查询结果可以格式化拷贝。</li>
+</ul>
+
+<h2 id="section-7">缺点</h2>
+
+<p>功能实在强大，长得丑点也就忍了。</p>
+
+      <div style="margin-top: 30px;">
+      本文原载于 <a href="http://frank19900731.github.io" target="_blank">http://frank19900731.github.io</a> (为获得更好的阅读效果，请在PC端访问此链接)，作者宋成儒，微信号 frank19900731，微博 <a href="http://weibo.com/frank19900731" target="_blank">@太极儒</a> 。
+      </div>
+      </div>
+
+</div> <!-- /container -->
+</div>
+<div class="span2"></div>
+</div>
+
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1253436508'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s6.cnzz.com/z_stat.php%3Fid%3D1253436508%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+</body>
+</html>

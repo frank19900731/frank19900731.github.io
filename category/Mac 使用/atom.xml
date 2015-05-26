@@ -1,5 +1,245 @@
 
 <item>
+    <title>每周一软之 Today Scripts</title>
+    <link>http://realjenius.com/blog/2015/05/24/mei-zhou-yi-ruan-zhi-today-scripts/</link>
+    <author>R.J. Lorimer</author>
+    <pubDate>2015-05-24T20:45:37+08:00</pubDate>
+    <guid>http://realjenius.com/blog/2015/05/24/mei-zhou-yi-ruan-zhi-today-scripts/</guid>
+    <description><![CDATA[
+     <p><strong>目录</strong></p>
+
+<ul id="markdown-toc">
+  <li><a href="#section">功能介绍</a></li>
+  <li><a href="#section-1">界面设计</a></li>
+  <li><a href="#section-2">易用性</a></li>
+  <li><a href="#section-3">稳定性</a></li>
+  <li><a href="#section-4">跨平台</a></li>
+  <li><a href="#section-5">类似软件</a></li>
+  <li><a href="#section-6">闪光点</a></li>
+  <li><a href="#section-7">缺点</a></li>
+</ul>
+
+<!-- excerpt start -->
+
+<p>毕业季，答辩准备中，有空再补。。。</p>
+
+<p><a href="http://frank19900731.github.io/img/post/2015-3/1.gif" class="img-up" title="答辩准备中"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-3/1.gif" width="40%" title="答辩准备中" /></a></p>
+
+<!-- excerpt end -->
+
+<h2 id="section">功能介绍</h2>
+
+<h2 id="section-1">界面设计</h2>
+
+<h2 id="section-2">易用性</h2>
+
+<h2 id="section-3">稳定性</h2>
+
+<h2 id="section-4">跨平台</h2>
+
+<h2 id="section-5">类似软件</h2>
+
+<h2 id="section-6">闪光点</h2>
+
+<h2 id="section-7">缺点</h2>
+
+<p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2015/05/24/mei-zhou-yi-ruan-zhi-today-scripts/">http://frank19900731.github.io/blog/2015/05/24/mei-zhou-yi-ruan-zhi-today-scripts/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
+
+  ]]></description>
+</item>
+
+<item>
+    <title>每周一软之 HoudahSpot</title>
+    <link>http://realjenius.com/blog/2015/05/17/mei-zhou-yi-ruan-zhi-houdahspot/</link>
+    <author>R.J. Lorimer</author>
+    <pubDate>2015-05-17T20:50:29+08:00</pubDate>
+    <guid>http://realjenius.com/blog/2015/05/17/mei-zhou-yi-ruan-zhi-houdahspot/</guid>
+    <description><![CDATA[
+     <p><strong>目录</strong></p>
+
+<ul id="markdown-toc">
+  <li><a href="#section">功能介绍</a></li>
+  <li><a href="#section-1">界面设计</a></li>
+  <li><a href="#section-2">易用性</a></li>
+  <li><a href="#section-3">稳定性</a></li>
+  <li><a href="#section-4">跨平台</a></li>
+  <li><a href="#section-5">类似软件</a></li>
+  <li><a href="#section-6">闪光点</a></li>
+  <li><a href="#section-7">缺点</a></li>
+</ul>
+
+<h2 id="section">功能介绍</h2>
+
+<!-- excerpt start -->
+
+<p><a href="http://www.houdah.com/houdahSpot/">HoudahSpot</a> 是一款文件搜索工具，典型的功能强大界面糙，见过的没见过的功能都浓缩在四列之中。<strong>HoudahSpot 的搜索基于 Spotlight</strong>，<strong>搜索速度快</strong>，但也<strong>受限于索引更新</strong>。</p>
+
+<p><a href="http://frank19900731.github.io/img/post/2015-5/8.png" class="img-up" title="HoudahSpot 软件界面"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2015-5/8.png" width="99%" title="HoudahSpot 软件界面" /></a></p>
+
+<p>HoudahSpot 提供了丰富的查询条件和过滤功能。常见的查询条件有文本内容、文件类型、文件大小、最近打开时间等，还包括<strong>近 300 种与特定文件类型相关的属性</strong>，比如图片尺寸。这些查询条件各自可以做精细定制，也可以<strong>以逻辑与或非的关系进行组合</strong>。选中搜索结果中的一项，最右侧列显示了该文件的详细信息、预览和文本预览。详细信息的各项可以作为过滤条件对搜索结果进行筛选，预览显示该文件在默认打开程序中的效果，文本显示文件的文本信息（如果有）、<strong>高亮搜索关键词</strong>。</p>
+
+<!-- excerpt end -->
+
+<p>HoudahSpot 除可以指定搜索路径，还可以跳过某些路径，与一般搜索软件不同的是<strong>路径可以是多个文件夹的组合</strong>。</p>
+
+<p>HoudahSpot 允许我们将上述<strong>查询条件保存为片段</strong>（Snippet）<strong>或模板</strong>（Template），便于今后重复使用或微调。</p>
+
+<p>HoudahSpot 提供的高级搜索功能和便捷操作还包括：</p>
+
+<ul>
+  <li>支持输入如 <code>kind:wordProcessing date:thisYear</code> 的搜索语句，详见 <a href="http://www.houdah.com/houdahSpot/help/4.0/HoudahSpot%20Help%20EN.pdf">Advanced Features</a> 一节；</li>
+  <li>一次查询以<strong>标签页</strong>形式展现，可同时展示多个标签页；</li>
+  <li>支持拖拽文件到查询条件上以修改查询条件与该文件相符；</li>
+  <li>支持<strong>查询结果格式化拷贝</strong>，可直接粘贴到 Excel中；</li>
+  <li>支持添加全局热键唤起搜索框，和 Spotlight 类似；</li>
+  <li>支持 AppleScript 调用，详见 <a href="http://www.houdah.com/houdahSpot/help/4.0/HoudahSpot%20Help%20EN.pdf">AppleScript</a> 一节；</li>
+  <li>支持 Calendar、Reminder 和 Contacts 搜索。</li>
+</ul>
+
+<h2 id="section-1">界面设计</h2>
+
+<p>简暴。</p>
+
+<h2 id="section-2">易用性</h2>
+
+<p>简单易用。</p>
+
+<h2 id="section-3">稳定性</h2>
+
+<p>稳定性好。</p>
+
+<h2 id="section-4">跨平台</h2>
+
+<p>仅 OS X。</p>
+
+<h2 id="section-5">类似软件</h2>
+
+<p>Spotlight、Finder 提供了 OS X 基本的文件搜索功能，只有文件名、标签等有限的搜索条件。</p>
+
+<p><a href="http://www.alfredapp.com/">Alfred</a>、<a href="http://qsapp.com/">QuickSilver</a> 也支持简单的文件搜索，可以设置待索引的文件夹和目录深度，全盘索引压力较大也没有必要。</p>
+
+<p><a href="http://www.devontechnologies.com/products/freeware.html">EasyFind</a> 是一款免费的轻量级搜索工具，在了解 HoudahSpot 以前常用。题外话，写这篇博客的时候才知道它居然和大名鼎鼎的 <a href="http://www.devontechnologies.com/products/devonnote.html">DEVONnote</a> 出自同一家公司。EasyFind 的好处是不只依赖于索引，所以可以<strong>实时查询</strong>。</p>
+
+<p>当然，说到文件搜索，<a href="http://unixhelp.ed.ac.uk/CGI/man-cgi?find">find</a> 命令自然不能不提，用法网上有很多，此处不展开。</p>
+
+<p>如果搜索目标是文本文件的内容，那一些编辑器也是可用的，比如 Sublime 的插件 <a href="https://github.com/titoBouzout/SideBarEnhancements">SideBarEnhancements</a> 提供了 Find Advanced 功能。虽然说到底是封装了命令行，但毕竟也省去了记忆参数的麻烦。</p>
+
+<h2 id="section-6">闪光点</h2>
+
+<ul>
+  <li>标签式管理；</li>
+  <li>查询条件可以保存为模板；</li>
+  <li>搜索可跳过某些路径，路径可指定多个文件夹；</li>
+  <li>查询结果可以格式化拷贝。</li>
+</ul>
+
+<h2 id="section-7">缺点</h2>
+
+<p>功能实在强大，长得丑点也就忍了。</p>
+
+<p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2015/05/17/mei-zhou-yi-ruan-zhi-houdahspot/">http://frank19900731.github.io/blog/2015/05/17/mei-zhou-yi-ruan-zhi-houdahspot/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
+
+  ]]></description>
+</item>
+
+<item>
+    <title>每周一软之 Disk Sensei</title>
+    <link>http://realjenius.com/blog/2015/05/10/mei-zhou-yi-ruan-zhi-disk-sensei/</link>
+    <author>R.J. Lorimer</author>
+    <pubDate>2015-05-10T20:49:48+08:00</pubDate>
+    <guid>http://realjenius.com/blog/2015/05/10/mei-zhou-yi-ruan-zhi-disk-sensei/</guid>
+    <description><![CDATA[
+     <p><strong>目录</strong></p>
+
+<ul id="markdown-toc">
+  <li><a href="#section">功能介绍</a></li>
+  <li><a href="#section-1">界面设计</a></li>
+  <li><a href="#section-2">易用性</a></li>
+  <li><a href="#section-3">稳定性</a></li>
+  <li><a href="#section-4">跨平台</a></li>
+  <li><a href="#section-5">类似软件</a></li>
+  <li><a href="#section-6">闪光点</a></li>
+  <li><a href="#section-7">缺点</a></li>
+</ul>
+
+<h2 id="section">功能介绍</h2>
+
+<!-- excerpt start -->
+
+<p><a href="https://www.cindori.org/software/disksensei/">Disk Sensei</a> 是一款磁盘工具软件，与知名软件 <a href="https://www.cindori.org/software/trimenabler/">Trim Enabler</a> 来自同一软件厂商。前者除包含后者功能外，还提供了磁盘信息检测、健康度评估、垃圾清理、优化设置、基准检测、可视化分析和读写监控等功能。这些功能（除优化设置、Trim 设置）普遍存在于其它磁盘管理或系统优化软件中，Disk Sensei 算是功能全面的一个，界面设计也很美观，如下图，显示的是磁盘信息。</p>
+
+<p><a href="http://frank19900731.github.io/img/post/2015-5/2.png" class="img-up" title="磁盘信息"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2015-5/2.png" width="80%" title="磁盘信息" /></a></p>
+
+<p><a href="http://en.wikipedia.org/wiki/Trim_%28computing%29">Trim</a> 指令的主要功能是<strong>标记文件删除并通知固态硬盘相应的磁盘存储空间可回收</strong>，使得固态硬盘可以早做垃圾回收和磁盘优化，从而<strong>提高固态硬盘的读写速度并减少读写请求数</strong>。这一指令在 OS X 中默认关闭，<strong>每次系统更新后也都是关闭</strong>，可以通过 Trim Enabler 等工具激活。</p>
+
+<!-- excerpt end -->
+
+<p>优化设置是我觉得做的比较贴心的一项功能，包括四点：</p>
+
+<ul>
+  <li>瞬间移动下的磁盘保护，关闭可以省电；</li>
+  <li>本地 Time Machine，关闭可以省空间，减少磁盘读写，延长磁盘使用寿命；</li>
+  <li>深度睡眠状态下内存数据会被写入磁盘，关闭可以省空间；</li>
+  <li>文件访问记录，关闭可以减少磁盘读写，延长磁盘使用寿命。</li>
+</ul>
+
+<p><a href="http://frank19900731.github.io/img/post/2015-5/4.png" class="img-up" title="优化设置"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2015-5/4.png" width="80%" title="优化设置" /></a></p>
+
+<p>我们完全可以通过手工设置（可能是终端中输入命令行）来控制这些功能，只是 Disk Sensei 把它们简化为开关就更方便一些。</p>
+
+<p>磁盘可视化显示是很有用的功能，比如便于在磁盘空间有异常变化时分析原因，<a href="https://www.apple.com/osx/server/features/">OS X Server</a> 的日志就曾吞噬过我几百 G 的空间。可视化不但能帮我们寻找大文件，也能寻找大文件夹。</p>
+
+<p><a href="http://frank19900731.github.io/img/post/2015-5/5.png" class="img-up" title="磁盘可视化"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2015-5/5.png" width="80%" title="磁盘可视化" /></a></p>
+
+<p>最后要说的磁盘读写监控，比 Activity Monitor 更精细一些，可以点击进程查看其详细的读写操作。</p>
+
+<p><a href="http://frank19900731.github.io/img/post/2015-5/6.png" class="img-up" title="各进程磁盘读写"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2015-5/6.png" width="80%" title="各进程磁盘读写" /></a></p>
+
+<p><a href="http://frank19900731.github.io/img/post/2015-5/7.png" class="img-up" title="磁盘读写实时统计"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2015-5/7.png" width="80%" title="磁盘读写实时统计" /></a></p>
+
+<h2 id="section-1">界面设计</h2>
+
+<p>界面设计清新美观。</p>
+
+<h2 id="section-2">易用性</h2>
+
+<p>简单易用。</p>
+
+<h2 id="section-3">稳定性</h2>
+
+<p>普通功能稳定，磁盘基准测试和可视化扫描时会占用大量资源，可能崩溃。特别是可视化扫描，多次出现耗尽 16G 系统内存的情况，后来发现在扫描前先选择 clear results 就会好很多。</p>
+
+<h2 id="section-4">跨平台</h2>
+
+<p>仅在 OS X 下。</p>
+
+<h2 id="section-5">类似软件</h2>
+
+<p><a href="http://mainmenuapp.com/">MainMenu</a>、<a href="https://apps.adnx.com/en">xScan</a> 等都是老牌系统维护、监控软件，包含了一定的磁盘监控功能。</p>
+
+<p><a href="http://daisydiskapp.com/">DaisyDisk</a>、<a href="https://nektony.com/disk-inspector">Disk Inspector</a> 均为磁盘可视化工具，功能大同小异，只是前者可以 <strong>Scan as Administrator</strong>，且具有预览功能。</p>
+
+<p>Disk Utility 是系统小工具，可以实现磁盘权限修复、错误修复等功能；Activity Monitor 也是系统小工具，可以简单观察磁盘读写。</p>
+
+<h2 id="section-6">闪光点</h2>
+
+<ul>
+  <li>功能全面，且集成四项优化功能；</li>
+  <li>界面清新美观。</li>
+</ul>
+
+<h2 id="section-7">缺点</h2>
+
+<ul>
+  <li>可视化扫描时没有进度条，容易崩溃。</li>
+</ul>
+
+<p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2015/05/10/mei-zhou-yi-ruan-zhi-disk-sensei/">http://frank19900731.github.io/blog/2015/05/10/mei-zhou-yi-ruan-zhi-disk-sensei/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
+
+  ]]></description>
+</item>
+
+<item>
     <title>每周一软之 Sublime</title>
     <link>http://realjenius.com/blog/2015/05/03/mei-zhou-yi-ruan-zhi-sublime/</link>
     <author>R.J. Lorimer</author>
@@ -429,227 +669,6 @@
 <h2 id="section-7">缺点</h2>
 
 <p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2015/04/07/mei-zhou-yi-ruan-zhi-texpad/">http://frank19900731.github.io/blog/2015/04/07/mei-zhou-yi-ruan-zhi-texpad/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
-
-  ]]></description>
-</item>
-
-<item>
-    <title>每周一软之 GeekTool</title>
-    <link>http://realjenius.com/blog/2015/03/30/mei-zhou-yi-ruan-zhi-geektool/</link>
-    <author>R.J. Lorimer</author>
-    <pubDate>2015-03-30T19:48:49+08:00</pubDate>
-    <guid>http://realjenius.com/blog/2015/03/30/mei-zhou-yi-ruan-zhi-geektool/</guid>
-    <description><![CDATA[
-     <p><strong>目录</strong></p>
-
-<ul id="markdown-toc">
-  <li><a href="#section">功能介绍</a></li>
-  <li><a href="#section-1">界面设计</a></li>
-  <li><a href="#section-2">易用性</a></li>
-  <li><a href="#section-3">稳定性</a></li>
-  <li><a href="#section-4">跨平台</a></li>
-  <li><a href="#section-5">类似软件</a></li>
-  <li><a href="#section-6">闪光点</a></li>
-  <li><a href="#section-7">缺点</a></li>
-</ul>
-
-<!-- excerpt start -->
-
-<p>毕业季，论文施工中，有空再补。。。</p>
-
-<p><a href="http://frank19900731.github.io/img/post/2015-3/1.gif" class="img-up" title="论文施工中"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-3/1.gif" width="40%" title="论文施工中" /></a></p>
-
-<!-- excerpt end -->
-
-<h2 id="section">功能介绍</h2>
-
-<h2 id="section-1">界面设计</h2>
-
-<h2 id="section-2">易用性</h2>
-
-<h2 id="section-3">稳定性</h2>
-
-<h2 id="section-4">跨平台</h2>
-
-<h2 id="section-5">类似软件</h2>
-
-<h2 id="section-6">闪光点</h2>
-
-<h2 id="section-7">缺点</h2>
-
-<p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2015/03/30/mei-zhou-yi-ruan-zhi-geektool/">http://frank19900731.github.io/blog/2015/03/30/mei-zhou-yi-ruan-zhi-geektool/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
-
-  ]]></description>
-</item>
-
-<item>
-    <title>每周一软之 Curio</title>
-    <link>http://realjenius.com/blog/2015/03/23/mei-zhou-yi-ruan-zhi-curio/</link>
-    <author>R.J. Lorimer</author>
-    <pubDate>2015-03-23T00:36:42+08:00</pubDate>
-    <guid>http://realjenius.com/blog/2015/03/23/mei-zhou-yi-ruan-zhi-curio/</guid>
-    <description><![CDATA[
-     <p><strong>目录</strong></p>
-
-<ul id="markdown-toc">
-  <li><a href="#section">功能介绍</a></li>
-  <li><a href="#section-1">界面设计</a></li>
-  <li><a href="#section-2">易用性</a></li>
-  <li><a href="#section-3">稳定性</a></li>
-  <li><a href="#section-4">跨平台</a></li>
-  <li><a href="#section-5">类似软件</a></li>
-  <li><a href="#section-6">闪光点</a></li>
-  <li><a href="#section-7">缺点</a></li>
-</ul>
-
-<!-- excerpt start -->
-
-<p>毕业季，论文施工中，有空再补。。。</p>
-
-<p><a href="http://frank19900731.github.io/img/post/2015-3/1.gif" class="img-up" title="论文施工中"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-3/1.gif" width="40%" title="论文施工中" /></a></p>
-
-<!-- excerpt end -->
-
-<h2 id="section">功能介绍</h2>
-
-<h2 id="section-1">界面设计</h2>
-
-<h2 id="section-2">易用性</h2>
-
-<h2 id="section-3">稳定性</h2>
-
-<h2 id="section-4">跨平台</h2>
-
-<h2 id="section-5">类似软件</h2>
-
-<h2 id="section-6">闪光点</h2>
-
-<h2 id="section-7">缺点</h2>
-
-<p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2015/03/23/mei-zhou-yi-ruan-zhi-curio/">http://frank19900731.github.io/blog/2015/03/23/mei-zhou-yi-ruan-zhi-curio/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
-
-  ]]></description>
-</item>
-
-<item>
-    <title>每周一软之 Soulver</title>
-    <link>http://realjenius.com/blog/2015/03/15/mei-zhou-yi-ruan-zhi-soulver/</link>
-    <author>R.J. Lorimer</author>
-    <pubDate>2015-03-15T18:21:49+08:00</pubDate>
-    <guid>http://realjenius.com/blog/2015/03/15/mei-zhou-yi-ruan-zhi-soulver/</guid>
-    <description><![CDATA[
-     <p><strong>目录</strong></p>
-
-<ul id="markdown-toc">
-  <li><a href="#section">功能介绍</a></li>
-  <li><a href="#section-1">界面设计</a></li>
-  <li><a href="#section-2">易用性</a></li>
-  <li><a href="#section-3">稳定性</a></li>
-  <li><a href="#section-4">跨平台</a></li>
-  <li><a href="#section-5">类似软件</a>    <ul>
-      <li><a href="#section-6">普通计算器</a></li>
-      <li><a href="#section-7">交互式编程环境</a></li>
-    </ul>
-  </li>
-  <li><a href="#section-8">闪光点</a></li>
-  <li><a href="#section-9">缺点</a></li>
-</ul>
-
-<!-- excerpt start -->
-
-<h2 id="section">功能介绍</h2>
-
-<p><a href="http://www.acqualia.com/soulver/">Soulver</a> 是一款智能计算器，允许<strong>计算公式与文档混排</strong>，提供汇率与股价的查询计算、变量定义、结果引用、版本保存、简单统计等功能。</p>
-
-<p>下面先以软件自带样例文件具体介绍其功能。</p>
-
-<p>Soulver 使用文档保存计算过程，文档格式为 XML，可导出 PDF 文件。</p>
-
-<p>这幅图显示了文档块定义（比如 Simple Math 粗体）、简单计算、以语义表示的计算、注释以及汇率转换、单位转换的用法。</p>
-
-<p><a href="http://frank19900731.github.io/img/post/2015-3/13.png" class="img-up" title="Soulver 使用样例一"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2015-3/13.png" width="100%" title="Soulver 使用样例一" /></a></p>
-
-<!-- excerpt end -->
-
-<p>这幅图显示了结果引用、变量、股票价格、函数的用法。</p>
-
-<p><a href="http://frank19900731.github.io/img/post/2015-3/14.png" class="img-up" title="Soulver 使用样例二"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2015-3/14.png" width="100%" title="Soulver 使用样例二" /></a></p>
-
-<p>结果引用、汇率、股票价格都是<strong>依赖某一个数值</strong>，当依赖值改变，使用此依赖值的计算结果也会随之变化。我们需要做的仅是列写公式，更新依赖值。</p>
-
-<p><a href="http://frank19900731.github.io/img/post/2015-3/15.png" class="img-up" title="汇率值、股票价格更新"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2015-3/15.png" width="90%" title="汇率值、股票价格更新" /></a></p>
-
-<p>上图 Variables 窗格中可以定义<strong>全局变量</strong>，对每个计算文档生效。</p>
-
-<p>可以在设置中修改支持中文输入，如下图所示。计算时可以切换弧度制、角度制，设置小数点保留精度。点击 Answer Palette 可以看到结果的其它表示形式，角度、分数、十进制、二进制、十六进制等。</p>
-
-<p><a href="http://frank19900731.github.io/img/post/2015-3/16.png" class="img-up" title="Soulver 使用样例三"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2015-3/16.png" width="100%" title="Soulver 使用样例三" /></a></p>
-
-<p>Soulver 所支持的函数列表、逻辑计算、单位换算表等详见 Reference。</p>
-
-<h2 id="section-1">界面设计</h2>
-
-<p>界面设计美观，自定义方便。</p>
-
-<h2 id="section-2">易用性</h2>
-
-<p>容易使用，参考 Reference 即可。</p>
-
-<h2 id="section-3">稳定性</h2>
-
-<p>稳定性好，有一个瑕疵见 <a href="#section-8">缺点</a> 第三条。</p>
-
-<h2 id="section-4">跨平台</h2>
-
-<p>提供 iOS 版本。</p>
-
-<h2 id="section-5">类似软件</h2>
-
-<h3 id="section-6">普通计算器</h3>
-
-<ul>
-  <li>Mac 自带计算器，可放置于边栏；</li>
-</ul>
-
-<p><a href="http://frank19900731.github.io/img/post/2015-3/19.png" class="img-up" title="Mac 自带计算器"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-3/19.png" width="40%" title="Mac 自带计算器" /></a></p>
-
-<ul>
-  <li>
-    <p><a href="https://itunes.apple.com/cn/app/numeric/id564960788?mt=12">Numeric</a> 特点是将输入区域映射到触摸板上，不必移动鼠标点击；</p>
-  </li>
-  <li>
-    <p><a href="https://itunes.apple.com/us/app/addism-the-calculator/id943947757?mt=12">Addism</a> 可进行简单的科学计算，可以保存、分享结果；</p>
-  </li>
-</ul>
-
-<p><a href="http://frank19900731.github.io/img/post/2015-3/18.png" class="img-up" title="Addism 界面"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2015-3/18.png" width="80%" title="Addism 界面" /></a></p>
-
-<ul>
-  <li><a href="http://getnumi.info/">Numi</a> 运行于菜单栏，和 Soulver 类似，也支持以语义定义简单计算。</li>
-</ul>
-
-<p><a href="http://frank19900731.github.io/img/post/2015-3/17.png" class="img-up" title="Numi 界面"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2015-3/17.png" width="70%" title="Numi 界面" /></a></p>
-
-<h3 id="section-7">交互式编程环境</h3>
-
-<p>对于理工科同学来说，以上计算功能还是不够的，一般会采用专门软件或编程语言，比如 Matlab、Mathematica、R、C、Python 等。<strong>联系 Soulver 文档与计算混排的特点</strong>，在相似软件中我推荐 <a href="http://yihui.name/knitr/">knitr</a> 和 <a href="http://ipython.org/notebook.html">iPython notebook</a>，可分别配合 R 与 Python 使用，<strong>用于生成图文数据详实的报告</strong>。此外，RStudio 提供了 <a href="http://www.rstudio.com/products/rstudio/download-server/">RStudio Server</a>，可以架设在个人服务器上提供网络访问，应付普通计算任务绰绰有余。</p>
-
-<h2 id="section-8">闪光点</h2>
-
-<ul>
-  <li>计算公式与文档混排，方便阅读、理解；</li>
-  <li>单位转换、汇率、股价等功能实用。</li>
-</ul>
-
-<h2 id="section-9">缺点</h2>
-
-<ul>
-  <li>函数库仍需扩展，min、max 函数竟都没有；</li>
-  <li>无法进行条件判断，功能受限；</li>
-  <li>文档中有大数字计算时，输入会异常卡顿，推测软件隔段时间计算文档每一行的结果，即便该行及该行的依赖未改变，应当予以优化。</li>
-</ul>
-
-<p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2015/03/15/mei-zhou-yi-ruan-zhi-soulver/">http://frank19900731.github.io/blog/2015/03/15/mei-zhou-yi-ruan-zhi-soulver/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
 
   ]]></description>
 </item>

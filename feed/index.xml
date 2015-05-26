@@ -4,7 +4,7 @@
   <title><![CDATA[Blog of 太极儒]]></title>
   <link href="http://frank19900731.github.io/feed" rel="self"/>
   <link href="http://frank19900731.github.io/"/>
-  <updated>2015-05-24T14:25:53+08:00</updated>
+  <updated>2015-05-27T00:18:24+08:00</updated>
   <id>http://frank19900731.github.io/</id>
   <author>
     <name><![CDATA[Frank Song]]></name>
@@ -12,6 +12,237 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[每周一软之 Today Scripts]]></title>
+    <link href="http://frank19900731.github.io/blog/2015/05/24/mei-zhou-yi-ruan-zhi-today-scripts/"/>
+    <updated>2015-05-24T20:45:37+08:00</updated>
+    <id>http://frank19900731.github.io/blog/2015/05/24/mei-zhou-yi-ruan-zhi-today-scripts</id>
+    <content type="html"><![CDATA[<p><strong>目录</strong></p>
+
+<ul id="markdown-toc">
+  <li><a href="#section">功能介绍</a></li>
+  <li><a href="#section-1">界面设计</a></li>
+  <li><a href="#section-2">易用性</a></li>
+  <li><a href="#section-3">稳定性</a></li>
+  <li><a href="#section-4">跨平台</a></li>
+  <li><a href="#section-5">类似软件</a></li>
+  <li><a href="#section-6">闪光点</a></li>
+  <li><a href="#section-7">缺点</a></li>
+</ul>
+
+<!-- excerpt start -->
+
+<p>毕业季，答辩准备中，有空再补。。。</p>
+
+<p><a href="http://frank19900731.github.io/img/post/2015-3/1.gif" class="img-up" title="答辩准备中"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-3/1.gif" width="40%" title="答辩准备中" /></a></p>
+
+<!-- excerpt end -->
+
+<h2 id="section">功能介绍</h2>
+
+<h2 id="section-1">界面设计</h2>
+
+<h2 id="section-2">易用性</h2>
+
+<h2 id="section-3">稳定性</h2>
+
+<h2 id="section-4">跨平台</h2>
+
+<h2 id="section-5">类似软件</h2>
+
+<h2 id="section-6">闪光点</h2>
+
+<h2 id="section-7">缺点</h2>
+
+<p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2015/05/24/mei-zhou-yi-ruan-zhi-today-scripts/">http://frank19900731.github.io/blog/2015/05/24/mei-zhou-yi-ruan-zhi-today-scripts/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[每周一软之 HoudahSpot]]></title>
+    <link href="http://frank19900731.github.io/blog/2015/05/17/mei-zhou-yi-ruan-zhi-houdahspot/"/>
+    <updated>2015-05-17T20:50:29+08:00</updated>
+    <id>http://frank19900731.github.io/blog/2015/05/17/mei-zhou-yi-ruan-zhi-houdahspot</id>
+    <content type="html"><![CDATA[<p><strong>目录</strong></p>
+
+<ul id="markdown-toc">
+  <li><a href="#section">功能介绍</a></li>
+  <li><a href="#section-1">界面设计</a></li>
+  <li><a href="#section-2">易用性</a></li>
+  <li><a href="#section-3">稳定性</a></li>
+  <li><a href="#section-4">跨平台</a></li>
+  <li><a href="#section-5">类似软件</a></li>
+  <li><a href="#section-6">闪光点</a></li>
+  <li><a href="#section-7">缺点</a></li>
+</ul>
+
+<h2 id="section">功能介绍</h2>
+
+<!-- excerpt start -->
+
+<p><a href="http://www.houdah.com/houdahSpot/">HoudahSpot</a> 是一款文件搜索工具，典型的功能强大界面糙，见过的没见过的功能都浓缩在四列之中。<strong>HoudahSpot 的搜索基于 Spotlight</strong>，<strong>搜索速度快</strong>，但也<strong>受限于索引更新</strong>。</p>
+
+<p><a href="http://frank19900731.github.io/img/post/2015-5/8.png" class="img-up" title="HoudahSpot 软件界面"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2015-5/8.png" width="99%" title="HoudahSpot 软件界面" /></a></p>
+
+<p>HoudahSpot 提供了丰富的查询条件和过滤功能。常见的查询条件有文本内容、文件类型、文件大小、最近打开时间等，还包括<strong>近 300 种与特定文件类型相关的属性</strong>，比如图片尺寸。这些查询条件各自可以做精细定制，也可以<strong>以逻辑与或非的关系进行组合</strong>。选中搜索结果中的一项，最右侧列显示了该文件的详细信息、预览和文本预览。详细信息的各项可以作为过滤条件对搜索结果进行筛选，预览显示该文件在默认打开程序中的效果，文本显示文件的文本信息（如果有）、<strong>高亮搜索关键词</strong>。</p>
+
+<!-- excerpt end -->
+
+<p>HoudahSpot 除可以指定搜索路径，还可以跳过某些路径，与一般搜索软件不同的是<strong>路径可以是多个文件夹的组合</strong>。</p>
+
+<p>HoudahSpot 允许我们将上述<strong>查询条件保存为片段</strong>（Snippet）<strong>或模板</strong>（Template），便于今后重复使用或微调。</p>
+
+<p>HoudahSpot 提供的高级搜索功能和便捷操作还包括：</p>
+
+<ul>
+  <li>支持输入如 <code>kind:wordProcessing date:thisYear</code> 的搜索语句，详见 <a href="http://www.houdah.com/houdahSpot/help/4.0/HoudahSpot%20Help%20EN.pdf">Advanced Features</a> 一节；</li>
+  <li>一次查询以<strong>标签页</strong>形式展现，可同时展示多个标签页；</li>
+  <li>支持拖拽文件到查询条件上以修改查询条件与该文件相符；</li>
+  <li>支持<strong>查询结果格式化拷贝</strong>，可直接粘贴到 Excel中；</li>
+  <li>支持添加全局热键唤起搜索框，和 Spotlight 类似；</li>
+  <li>支持 AppleScript 调用，详见 <a href="http://www.houdah.com/houdahSpot/help/4.0/HoudahSpot%20Help%20EN.pdf">AppleScript</a> 一节；</li>
+  <li>支持 Calendar、Reminder 和 Contacts 搜索。</li>
+</ul>
+
+<h2 id="section-1">界面设计</h2>
+
+<p>简暴。</p>
+
+<h2 id="section-2">易用性</h2>
+
+<p>简单易用。</p>
+
+<h2 id="section-3">稳定性</h2>
+
+<p>稳定性好。</p>
+
+<h2 id="section-4">跨平台</h2>
+
+<p>仅 OS X。</p>
+
+<h2 id="section-5">类似软件</h2>
+
+<p>Spotlight、Finder 提供了 OS X 基本的文件搜索功能，只有文件名、标签等有限的搜索条件。</p>
+
+<p><a href="http://www.alfredapp.com/">Alfred</a>、<a href="http://qsapp.com/">QuickSilver</a> 也支持简单的文件搜索，可以设置待索引的文件夹和目录深度，全盘索引压力较大也没有必要。</p>
+
+<p><a href="http://www.devontechnologies.com/products/freeware.html">EasyFind</a> 是一款免费的轻量级搜索工具，在了解 HoudahSpot 以前常用。题外话，写这篇博客的时候才知道它居然和大名鼎鼎的 <a href="http://www.devontechnologies.com/products/devonnote.html">DEVONnote</a> 出自同一家公司。EasyFind 的好处是不只依赖于索引，所以可以<strong>实时查询</strong>。</p>
+
+<p>当然，说到文件搜索，<a href="http://unixhelp.ed.ac.uk/CGI/man-cgi?find">find</a> 命令自然不能不提，用法网上有很多，此处不展开。</p>
+
+<p>如果搜索目标是文本文件的内容，那一些编辑器也是可用的，比如 Sublime 的插件 <a href="https://github.com/titoBouzout/SideBarEnhancements">SideBarEnhancements</a> 提供了 Find Advanced 功能。虽然说到底是封装了命令行，但毕竟也省去了记忆参数的麻烦。</p>
+
+<h2 id="section-6">闪光点</h2>
+
+<ul>
+  <li>标签式管理；</li>
+  <li>查询条件可以保存为模板；</li>
+  <li>搜索可跳过某些路径，路径可指定多个文件夹；</li>
+  <li>查询结果可以格式化拷贝。</li>
+</ul>
+
+<h2 id="section-7">缺点</h2>
+
+<p>功能实在强大，长得丑点也就忍了。</p>
+
+<p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2015/05/17/mei-zhou-yi-ruan-zhi-houdahspot/">http://frank19900731.github.io/blog/2015/05/17/mei-zhou-yi-ruan-zhi-houdahspot/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[每周一软之 Disk Sensei]]></title>
+    <link href="http://frank19900731.github.io/blog/2015/05/10/mei-zhou-yi-ruan-zhi-disk-sensei/"/>
+    <updated>2015-05-10T20:49:48+08:00</updated>
+    <id>http://frank19900731.github.io/blog/2015/05/10/mei-zhou-yi-ruan-zhi-disk-sensei</id>
+    <content type="html"><![CDATA[<p><strong>目录</strong></p>
+
+<ul id="markdown-toc">
+  <li><a href="#section">功能介绍</a></li>
+  <li><a href="#section-1">界面设计</a></li>
+  <li><a href="#section-2">易用性</a></li>
+  <li><a href="#section-3">稳定性</a></li>
+  <li><a href="#section-4">跨平台</a></li>
+  <li><a href="#section-5">类似软件</a></li>
+  <li><a href="#section-6">闪光点</a></li>
+  <li><a href="#section-7">缺点</a></li>
+</ul>
+
+<h2 id="section">功能介绍</h2>
+
+<!-- excerpt start -->
+
+<p><a href="https://www.cindori.org/software/disksensei/">Disk Sensei</a> 是一款磁盘工具软件，与知名软件 <a href="https://www.cindori.org/software/trimenabler/">Trim Enabler</a> 来自同一软件厂商。前者除包含后者功能外，还提供了磁盘信息检测、健康度评估、垃圾清理、优化设置、基准检测、可视化分析和读写监控等功能。这些功能（除优化设置、Trim 设置）普遍存在于其它磁盘管理或系统优化软件中，Disk Sensei 算是功能全面的一个，界面设计也很美观，如下图，显示的是磁盘信息。</p>
+
+<p><a href="http://frank19900731.github.io/img/post/2015-5/2.png" class="img-up" title="磁盘信息"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2015-5/2.png" width="80%" title="磁盘信息" /></a></p>
+
+<p><a href="http://en.wikipedia.org/wiki/Trim_%28computing%29">Trim</a> 指令的主要功能是<strong>标记文件删除并通知固态硬盘相应的磁盘存储空间可回收</strong>，使得固态硬盘可以早做垃圾回收和磁盘优化，从而<strong>提高固态硬盘的读写速度并减少读写请求数</strong>。这一指令在 OS X 中默认关闭，<strong>每次系统更新后也都是关闭</strong>，可以通过 Trim Enabler 等工具激活。</p>
+
+<!-- excerpt end -->
+
+<p>优化设置是我觉得做的比较贴心的一项功能，包括四点：</p>
+
+<ul>
+  <li>瞬间移动下的磁盘保护，关闭可以省电；</li>
+  <li>本地 Time Machine，关闭可以省空间，减少磁盘读写，延长磁盘使用寿命；</li>
+  <li>深度睡眠状态下内存数据会被写入磁盘，关闭可以省空间；</li>
+  <li>文件访问记录，关闭可以减少磁盘读写，延长磁盘使用寿命。</li>
+</ul>
+
+<p><a href="http://frank19900731.github.io/img/post/2015-5/4.png" class="img-up" title="优化设置"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2015-5/4.png" width="80%" title="优化设置" /></a></p>
+
+<p>我们完全可以通过手工设置（可能是终端中输入命令行）来控制这些功能，只是 Disk Sensei 把它们简化为开关就更方便一些。</p>
+
+<p>磁盘可视化显示是很有用的功能，比如便于在磁盘空间有异常变化时分析原因，<a href="https://www.apple.com/osx/server/features/">OS X Server</a> 的日志就曾吞噬过我几百 G 的空间。可视化不但能帮我们寻找大文件，也能寻找大文件夹。</p>
+
+<p><a href="http://frank19900731.github.io/img/post/2015-5/5.png" class="img-up" title="磁盘可视化"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2015-5/5.png" width="80%" title="磁盘可视化" /></a></p>
+
+<p>最后要说的磁盘读写监控，比 Activity Monitor 更精细一些，可以点击进程查看其详细的读写操作。</p>
+
+<p><a href="http://frank19900731.github.io/img/post/2015-5/6.png" class="img-up" title="各进程磁盘读写"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2015-5/6.png" width="80%" title="各进程磁盘读写" /></a></p>
+
+<p><a href="http://frank19900731.github.io/img/post/2015-5/7.png" class="img-up" title="磁盘读写实时统计"><img class="imgcenter-no-shadow" src="http://frank19900731.github.io/img/post/2015-5/7.png" width="80%" title="磁盘读写实时统计" /></a></p>
+
+<h2 id="section-1">界面设计</h2>
+
+<p>界面设计清新美观。</p>
+
+<h2 id="section-2">易用性</h2>
+
+<p>简单易用。</p>
+
+<h2 id="section-3">稳定性</h2>
+
+<p>普通功能稳定，磁盘基准测试和可视化扫描时会占用大量资源，可能崩溃。特别是可视化扫描，多次出现耗尽 16G 系统内存的情况，后来发现在扫描前先选择 clear results 就会好很多。</p>
+
+<h2 id="section-4">跨平台</h2>
+
+<p>仅在 OS X 下。</p>
+
+<h2 id="section-5">类似软件</h2>
+
+<p><a href="http://mainmenuapp.com/">MainMenu</a>、<a href="https://apps.adnx.com/en">xScan</a> 等都是老牌系统维护、监控软件，包含了一定的磁盘监控功能。</p>
+
+<p><a href="http://daisydiskapp.com/">DaisyDisk</a>、<a href="https://nektony.com/disk-inspector">Disk Inspector</a> 均为磁盘可视化工具，功能大同小异，只是前者可以 <strong>Scan as Administrator</strong>，且具有预览功能。</p>
+
+<p>Disk Utility 是系统小工具，可以实现磁盘权限修复、错误修复等功能；Activity Monitor 也是系统小工具，可以简单观察磁盘读写。</p>
+
+<h2 id="section-6">闪光点</h2>
+
+<ul>
+  <li>功能全面，且集成四项优化功能；</li>
+  <li>界面清新美观。</li>
+</ul>
+
+<h2 id="section-7">缺点</h2>
+
+<ul>
+  <li>可视化扫描时没有进度条，容易崩溃。</li>
+</ul>
+
+<p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2015/05/10/mei-zhou-yi-ruan-zhi-disk-sensei/">http://frank19900731.github.io/blog/2015/05/10/mei-zhou-yi-ruan-zhi-disk-sensei/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[每周一软之 Sublime]]></title>
@@ -2229,519 +2460,6 @@
 </span></code></pre></td></tr></table></div></figure></notextile></div>
 
 <p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2015/02/11/jie-jue-mac-xia-zip-ya-suo-wen-jian-zai-windows-xia-xian-shi-luan-ma-de-wen-ti/">http://frank19900731.github.io/blog/2015/02/11/jie-jue-mac-xia-zip-ya-suo-wen-jian-zai-windows-xia-xian-shi-luan-ma-de-wen-ti/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[每周一软之 Blotter]]></title>
-    <link href="http://frank19900731.github.io/blog/2015/02/08/mei-zhou-yi-ruan-zhi-blotter/"/>
-    <updated>2015-02-08T21:13:06+08:00</updated>
-    <id>http://frank19900731.github.io/blog/2015/02/08/mei-zhou-yi-ruan-zhi-blotter</id>
-    <content type="html"><![CDATA[<p><strong>目录</strong></p>
-
-<ul id="markdown-toc">
-  <li><a href="#section">功能介绍</a></li>
-  <li><a href="#section-1">界面设计</a></li>
-  <li><a href="#section-2">易用性</a></li>
-  <li><a href="#section-3">稳定性</a></li>
-  <li><a href="#section-4">跨平台</a></li>
-  <li><a href="#section-5">类似软件</a></li>
-  <li><a href="#section-6">闪光点</a></li>
-  <li><a href="#section-7">缺点</a></li>
-</ul>
-
-<!-- excerpt start -->
-
-<h2 id="section">功能介绍</h2>
-
-<p><a href="http://wireload.net/products/blotter/">Blotter</a> 是一款桌面日历软件，功能是将 Mac 自带 Calendar 软件的内容显示于桌面，作为提醒、便于查看。</p>
-
-<p>运行效果如下</p>
-
-<p><a href="http://frank19900731.github.io/img/post/2015-2/1.png" class="img-up" title="Blotter 运行效果"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-2/1.png" width="90%" title="Blotter 运行效果" /></a></p>
-
-<p>从上到下，从左到右，依次显示的是<strong>日期</strong>、<strong>Reminders 待办事项</strong>、<strong>当前任务</strong>、<strong>日历提醒</strong>（节假日、纪念日等）和周任务视图。显示区域、大小及内在布局可调整。</p>
-
-<p>上图是日历的前景显示模式，可清楚查看任务描述，也可设定日历过一段时间<strong>暗淡显示</strong>，以突出桌面背景。</p>
-
-<!-- excerpt end -->
-
-<p>通过快捷键，用户可以</p>
-
-<ul>
-  <li>使日历前景显示；</li>
-  <li>查看上周/下周事项；</li>
-  <li>添加任务事项。</li>
-</ul>
-
-<p><a href="http://frank19900731.github.io/img/post/2015-2/2.png" class="img-up" title="Blotter 添加任务事项"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-2/2.png" width="70%" title="Blotter 添加任务事项" /></a></p>
-
-<h2 id="section-1">界面设计</h2>
-
-<p>界面美观，布局调整随意，主题无法设置。</p>
-
-<h2 id="section-2">易用性</h2>
-
-<p>简单易用。</p>
-
-<h2 id="section-3">稳定性</h2>
-
-<p>无崩溃体验。</p>
-
-<h2 id="section-4">跨平台</h2>
-
-<p>无。</p>
-
-<h2 id="section-5">类似软件</h2>
-
-<p>桌面日历软件尚有 DateLine、Rainlendar、<a href="http://www.chronosnet.com/Products/spotlife.html">Spotlife</a> 可供选择，不过前两个软件的颜值实在不敢恭维。</p>
-
-<p>相比 Blotter， Spotlife 的最大优势在于<strong>界面可定制性更强</strong>，</p>
-
-<ul>
-  <li>可设置天气显示；</li>
-  <li>提供主题选择和背景颜色的简单定制；</li>
-  <li>提供四种组织方式：<strong>日程</strong>（紧凑的事项列表）、<strong>日</strong>、<strong>周</strong>、<strong>月</strong>。</li>
-</ul>
-
-<p><a href="http://frank19900731.github.io/img/post/2015-2/4.png" class="img-up" title="Spotlife 设置"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-2/4.png" width="70%" title="Spotlife 设置" /></a></p>
-
-<p>下图是周组织视图。</p>
-
-<p><a href="http://frank19900731.github.io/img/post/2015-2/3.png" class="img-up" title="Spotlife 运行效果"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-2/3.png" width="90%" title="Spotlife 运行效果" /></a></p>
-
-<p>Spotlife 未提供新事项添加功能。</p>
-
-<h2 id="section-6">闪光点</h2>
-
-<p>默认界面美观，布局合理。</p>
-
-<h2 id="section-7">缺点</h2>
-
-<p>未提供样式自定义选项。</p>
-
-<p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2015/02/08/mei-zhou-yi-ruan-zhi-blotter/">http://frank19900731.github.io/blog/2015/02/08/mei-zhou-yi-ruan-zhi-blotter/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[每周一软之 Blocs]]></title>
-    <link href="http://frank19900731.github.io/blog/2015/01/31/mei-zhou-yi-ruan-zhi-blocs/"/>
-    <updated>2015-01-31T16:19:58+08:00</updated>
-    <id>http://frank19900731.github.io/blog/2015/01/31/mei-zhou-yi-ruan-zhi-blocs</id>
-    <content type="html"><![CDATA[<p><strong>目录</strong></p>
-
-<ul id="markdown-toc">
-  <li><a href="#section">功能介绍</a></li>
-  <li><a href="#section-1">界面设计</a></li>
-  <li><a href="#section-2">易用性</a></li>
-  <li><a href="#section-3">稳定性</a></li>
-  <li><a href="#section-4">跨平台</a></li>
-  <li><a href="#section-5">类似软件</a></li>
-  <li><a href="#section-6">闪光点</a></li>
-  <li><a href="#section-7">缺点</a></li>
-</ul>
-
-<!-- excerpt start -->
-
-<h2 id="section">功能介绍</h2>
-
-<p><a href="http://blocsapp.com/">Blocs</a> 是一款拖拽式网页生成器，页面布局基于 Bootstrap，主要帮助用户生成 <a href="https://www.meteor.com/">此类样式</a> 的页面（Blocs <a href="http://blocsapp.com/">官方主页</a> 也是这种风格）。这款工具<strong>用户友好度很高</strong>，<strong>不会网页编程</strong>或者<strong>对 Bootstrap 不熟悉</strong>人可以用它快速定制特定风格的主页（可用作产品介绍、个人主页或博客模板），之后可在导出的网页代码基础上进行二次开发，实现<strong>布局调整</strong>或<strong>动态效果</strong>。</p>
-
-<p>软件使用的大致思路是</p>
-
-<ul>
-  <li>创建一个 <strong>Web Page</strong>，用户可以在上面划分不同的 <strong>Bloc</strong>，页首导航（一个）、中部内容（多个）、页尾信息（多个），分别有<strong>布局模板</strong>供选择；</li>
-</ul>
-
-<p><a href="http://frank19900731.github.io/img/post/2015-1/20.png" class="img-up" title="添加 Bloc"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-1/20.png" width="90%" title="添加 Bloc" /></a></p>
-
-<!-- excerpt end -->
-
-<ul>
-  <li>在每个 <strong>Bloc</strong> 中可以添加 <strong>Brics</strong>，也就是文本、图片、按钮、链接等内容；</li>
-</ul>
-
-<p><a href="http://frank19900731.github.io/img/post/2015-1/21.png" class="img-up" title="添加 Bric"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-1/21.png" width="90%" title="添加 Bric" /></a></p>
-
-<ul>
-  <li>对于 <strong>Page</strong>、<strong>Bloc</strong>、<strong>Brics</strong>，都可以进一步设置属性以调整显示效果。</li>
-</ul>
-
-<p><a href="http://frank19900731.github.io/img/post/2015-1/22.png" class="img-up" title="Image 控件的属性"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-1/22.png" width="90%" title="Image 控件的属性" /></a></p>
-
-<p>页面设置完成，可导出包含 HTML、图片、CSS、Javascript 等文件在内的文件夹，上传网页服务器供访问。</p>
-
-<p>在此附上我用 Blocs 制作的 <a href="http://frank19900731.github.io/demo/poem/index.html">Demo</a>，配图、配色比较马虎……</p>
-
-<h2 id="section-1">界面设计</h2>
-
-<p>美观精致。</p>
-
-<p><a href="http://frank19900731.github.io/img/post/2015-1/19.png" class="img-up" title="软件界面"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-1/19.png" width="90%" title="软件界面" /></a></p>
-
-<h2 id="section-2">易用性</h2>
-
-<p>简单易用。</p>
-
-<h2 id="section-3">稳定性</h2>
-
-<p>未发现崩溃。</p>
-
-<h2 id="section-4">跨平台</h2>
-
-<p>无。</p>
-
-<h2 id="section-5">类似软件</h2>
-
-<p>程序员可能会选用 <a href="http://www.jetbrains.com/webstorm/">WebStorm</a>、<a href="http://www.sublimetext.com/">Sublime</a> 等软件作为自己网页编程的 IDE，而小白用户则需要借助类似 Blocs 的软件，从而实现少写代码、甚至不写代码制作网页的目的。这些快捷工具在应付简单任务的时候可能比 Webstorm、Sublime 等更高效，所以我自己也会用到。它们大致可以分为四类，✔︎ <strong>表示推荐</strong>。</p>
-
-<ul>
-  <li>编码式
-    <ul>
-      <li>✔︎ <a href="http://xpressive.org/">Xpressive</a>，定制细致，适合网页开发初学者；</li>
-      <li><a href="http://www.panic.com/coda/">Coda</a>，较简陋；</li>
-    </ul>
-  </li>
-  <li>拖拽式
-    <ul>
-      <li>✔︎ <a href="http://www.macaw.co/">Macaw</a>，适合设计师使用；</li>
-      <li>✔︎ <a href="http://www.google.com/webdesigner/">Google Web Designer</a>，翻墙可用，有详细的<a href="https://support.google.com/webdesigner/?hl=zh-Hans#topic=3178270">帮助文档</a>；</li>
-      <li><a href="http://sparkle.cx/">Sparkle</a>，比 Macaw 功能简单，也不错；</li>
-      <li><a href="http://www.karelia.com/products/sandvox/">Sandvox</a>，样式老套；</li>
-      <li><a href="http://www.softpress.com/freeway-pro/">Freeway Pro</a>，样式老套；</li>
-    </ul>
-  </li>
-  <li>混合式
-    <ul>
-      <li>✔︎ <a href="http://muse.adobe.com/">Adobe Muse</a>，教程多多，功能强大，<strong>非常推荐</strong>；</li>
-      <li><a href="http://realmacsoftware.com/rapidweaver">Rapid Weaver</a>，功能普通；</li>
-      <li><a href="http://www.theescapers.com/lucid/index.html">Lucid</a>，非网页设计，官方介绍相当于一个 JavaScript Lego，可视化添加 JS 动态效果，比如 json 文件的异步加载、处理；</li>
-      <li><a href="http://www.theescapers.com/flux/index.html">Flux</a>，和 Lucid 属于同一公司，样式老套；</li>
-    </ul>
-  </li>
-  <li>模板管理式
-    <ul>
-      <li>✔︎ <a href="http://cactusformac.com/">Cactus</a>，使用 Django 模板生成博客、相册、个人信息三种静态网站，样式简单，但<strong>清新耐看</strong>；</li>
-      <li>✔︎ <a href="http://www.getblogo.com/">Blogo</a>，WordPress 站点管理，PC 端查看、编写、发布；</li>
-      <li><a href="http://serverpress.com/products/desktopserver/">Desktop Server</a>，WordPress 部署与管理，小白专属。</li>
-    </ul>
-  </li>
-</ul>
-
-<h2 id="section-6">闪光点</h2>
-
-<ul>
-  <li>较短时间的学习、操作就可以生成<strong>美观</strong>、<strong>实用</strong>的网页，这是它相比类似软件最大的优势。</li>
-</ul>
-
-<h2 id="section-7">缺点</h2>
-
-<ul>
-  <li>网页元素的属性定制还不够丰富（比如网页标题都无处修改），希望<strong>允许添加 CSS 代码</strong>（像 Xpressive 那样）；</li>
-  <li>用户无法添加模板，只能使用软件自带的，想修改布局，只能去编辑导出的网页；</li>
-  <li>拖拽式编辑器，没有代码查看、编辑的功能，至少可以<strong>增加一个使用其它编辑器打开的按键</strong>，方便二次开发。</li>
-</ul>
-
-<p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2015/01/31/mei-zhou-yi-ruan-zhi-blocs/">http://frank19900731.github.io/blog/2015/01/31/mei-zhou-yi-ruan-zhi-blocs/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Mac 下安装 WeCenter 并添加代码高亮功能]]></title>
-    <link href="http://frank19900731.github.io/blog/2015/01/26/mac-xia-an-zhuang-wecenter-bing-tian-jia-dai-ma-gao-liang-gong-neng/"/>
-    <updated>2015-01-26T02:02:10+08:00</updated>
-    <id>http://frank19900731.github.io/blog/2015/01/26/mac-xia-an-zhuang-wecenter-bing-tian-jia-dai-ma-gao-liang-gong-neng</id>
-    <content type="html"><![CDATA[<p><strong>目录</strong></p>
-
-<ul id="markdown-toc">
-  <li><a href="#wecenter">为什么选择 WeCenter</a></li>
-  <li><a href="#wecenter-">WeCenter 安装</a></li>
-  <li><a href="#section">代码高亮定制</a></li>
-  <li><a href="#section-1">参考代码</a></li>
-</ul>
-
-<!-- excerpt start -->
-
-<h2 id="wecenter">为什么选择 WeCenter</h2>
-
-<p>最近考虑将部分笔记任务从 Ulysses 中分离出来，于是想到给自己建一个类似知乎的问答系统。我会将对一些<strong>技术问题的解决和概念理解</strong>录入问答系统，可视化界面和搜索功能方便自己日后查看、查询。</p>
-
-<p>一圈 <a href="http://www.oschina.net/project/tag/299/qa">选下来</a>，觉得 WeCenter 不错，主要考虑到</p>
-
-<ul>
-  <li>界面更美观，也有 <a href="http://www.wecenter.com/category/templates/">模板</a>，无须太多定制；</li>
-  <li>PHP + mysql + Bootstrap，对我而言二次开发上手容易些；</li>
-  <li>功能、界面与知乎类似，满足我的全部需求。</li>
-</ul>
-
-<h2 id="wecenter-">WeCenter 安装</h2>
-
-<p>接下来就是 <a href="http://www.wecenter.com/downloads/">下载</a> 安装。WeCenter 要求 PHP 支持 FreeType 以显示验证码，而 Mac 自带的 PHP 无此支持，所以需要重新编译 PHP。</p>
-
-<p>采用 homebrew 安装方式，方便今后管理 PHP 的其它扩展支持，具体安装方式如下。</p>
-
-<!-- excerpt end -->
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>使用 brew 编译安装 PHP</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-</pre></td><td class="code"><pre><code class="bash"><span class="line">brew update
-</span><span class="line">brew tap homebrew/dupes
-</span><span class="line">brew tap josegonzalez/homebrew-php
-</span><span class="line">brew install php55 --with-gmp --with-imap --with-tidy --with-debug --with-mysql<span class="o">=</span>/usr/local/mysql --without-snmp
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<p>mysql 是我从 <a href="http://dev.mysql.com/downloads/mysql/">官网</a> 下载安装包安装的，默认路径是 <code>/usr/local/mysql</code>；<code>--without-snmp</code> 选项的加入可以消除 <strong>Error 139 - make: *** [ext/phar/phar.php]</strong> 的编译问题，不影响后续使用。关于这个编译问题，网上有说可以通过 <code>brew uninstall openssl</code> 解决，不过尝试无效，还有说清空 brew 所有安装，感觉代价太大了……</p>
-
-<p><code>brew options php55</code> 查看其它编译选项。brew 会自动下载安装 FreeType、jpeg 等模块，然后编译 PHP 5.5。 </p>
-
-<p>编译成功后，在 <code>/usr/local/Cellar/php55/5.5.20/libexec/apache2</code> 目录下会存在一个名为 <code>libphp5.so</code> 的模块，可用于在 apache 的配置文件中替换系统 PHP。</p>
-
-<p>我所使用的 apache 是 <a href="http://www.apple.com/osx/server/">Server</a>  自带的，考虑到它提供很多应用支持，比如 VPN、Wiki 等。配置文件不是通常的 httpd.conf，而是 <code>/Library/Server/Web/Config/apache2/httpd_server_app.conf</code>，修改如下。</p>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>修改 apache 配置文件</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-</pre></td><td class="code"><pre><code class="bash"><span class="line"><span class="c"># LoadModule php5_module libexec/apache2/libphp5.so</span>
-</span><span class="line">LoadModule php5_module /usr/local/Cellar/php55/5.5.20/libexec/apache2/libphp5.so
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<p>当然，要注意配置文件修改前后 apache 的关闭与重启。</p>
-
-<h2 id="section">代码高亮定制</h2>
-
-<p>WeCenter 基本设置容易上手，<a href="http://wenda.wecenter.com/">社区</a> 里有不少介绍，只是在代码高亮定制方面，官方未提供，社区讨论也少，缺乏适用于新版本 WeCenter 的方法。在这个 <a href="http://wenda.wecenter.com/question/22147">问题</a> 的启发下，自己初步实现了<strong>对 WeCenter 3.0.2 的代码高亮支持</strong>。</p>
-
-<p><a href="http://wenda.wecenter.com/question/22147">问题</a> 中的做法是使用 <a href="http://qbnz.com/highlighter/">GeSHi</a> 进行代码渲染，MediaWiki 选用的也是这个。将 <a href="http://wenda.wecenter.com/question/22147">问题</a> 提供的 <a href="http://wenda.wecenter.com/file/download/file_name-U2VydmljZXMuemlw__url-aHR0cDovL3dlbmRhLndlY2VudGVyLmNvbS91cGxvYWRzL3F1ZXN0aW9ucy8yMDE1MDEyNC9jMzIxNzNkZWY5MzA2N2IwMjFhYjIzMDUyYmNiYTZmYQ==">代码</a> 解压缩到 <code>wecenter-root/system/Services</code> 中，<strong>注意不要覆盖 Markdown.php</strong>，我们要自己修改，操作步骤如下，文末附有参考代码压缩包。</p>
-
-<ul>
-  <li>在 Markdown.php 头部引入 GeSHi Parser。</li>
-</ul>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>引入GeSHi Parser</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-<span class="line-number">5</span>
-</pre></td><td class="code"><pre><code class="php"><span class="line"><span class="k">include</span><span class="p">(</span><span class="nb">dirname</span><span class="p">(</span><span class="nb">dirname</span><span class="p">(</span><span class="k">__FILE__</span><span class="p">))</span> <span class="o">.</span> <span class="s1">&#39;/Services/geshi/geshi.php&#39;</span><span class="p">);</span>
-</span><span class="line">
-</span><span class="line"><span class="c1">// Load umodified Michel Fortin&#39;s PHP Markdown Extra: http://michelf.com/projects/php-markdown/</span>
-</span><span class="line"><span class="nb">define</span><span class="p">(</span><span class="s1">&#39;MARKDOWN_PARSER_CLASS&#39;</span><span class="p">,</span>  <span class="s1">&#39;MarkdownExtraGeshi_Parser&#39;</span><span class="p">);</span>
-</span><span class="line"><span class="k">include</span><span class="p">(</span><span class="nb">dirname</span><span class="p">(</span><span class="nb">dirname</span><span class="p">(</span><span class="k">__FILE__</span><span class="p">))</span> <span class="o">.</span> <span class="s1">&#39;/Services/markdown_extra/markdown.php&#39;</span><span class="p">);</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<ul>
-  <li>原样添加 <a href="http://wenda.wecenter.com/question/22147">问题</a> 代码中调用 GeSHi Parser 进行代码解析的函数 syntaxHighlight 。</li>
-</ul>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>调用 GeSHi Parser 进行代码解析</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-<span class="line-number">5</span>
-</pre></td><td class="code"><pre><code class="php"><span class="line"><span class="k">protected</span> <span class="k">function</span> <span class="nf">syntaxHighlight</span><span class="p">(</span><span class="nv">$matches</span><span class="p">)</span>
-</span><span class="line"><span class="p">{</span>
-</span><span class="line">	<span class="nv">$geshi</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">GeSHi</span><span class="p">(</span><span class="nv">$matches</span><span class="p">[</span><span class="mi">3</span><span class="p">],</span> <span class="k">empty</span><span class="p">(</span><span class="nv">$matches</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span> <span class="o">?</span> <span class="s2">&quot;txt&quot;</span> <span class="o">:</span> <span class="nv">$matches</span><span class="p">[</span><span class="mi">2</span><span class="p">]);</span>
-</span><span class="line">	<span class="k">return</span> <span class="nv">$geshi</span><span class="o">-&gt;</span><span class="na">parse_code</span><span class="p">();</span>
-</span><span class="line"><span class="p">}</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<ul>
-  <li>修改 _doCodeBlocks_callback 函数。</li>
-</ul>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>_doCodeBlocks_callback</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-<span class="line-number">5</span>
-<span class="line-number">6</span>
-<span class="line-number">7</span>
-<span class="line-number">8</span>
-<span class="line-number">9</span>
-<span class="line-number">10</span>
-<span class="line-number">11</span>
-<span class="line-number">12</span>
-<span class="line-number">13</span>
-<span class="line-number">14</span>
-<span class="line-number">15</span>
-<span class="line-number">16</span>
-<span class="line-number">17</span>
-<span class="line-number">18</span>
-<span class="line-number">19</span>
-<span class="line-number">20</span>
-<span class="line-number">21</span>
-<span class="line-number">22</span>
-<span class="line-number">23</span>
-<span class="line-number">24</span>
-<span class="line-number">25</span>
-<span class="line-number">26</span>
-<span class="line-number">27</span>
-<span class="line-number">28</span>
-<span class="line-number">29</span>
-<span class="line-number">30</span>
-<span class="line-number">31</span>
-<span class="line-number">32</span>
-<span class="line-number">33</span>
-<span class="line-number">34</span>
-<span class="line-number">35</span>
-<span class="line-number">36</span>
-<span class="line-number">37</span>
-<span class="line-number">38</span>
-<span class="line-number">39</span>
-<span class="line-number">40</span>
-<span class="line-number">41</span>
-<span class="line-number">42</span>
-<span class="line-number">43</span>
-<span class="line-number">44</span>
-<span class="line-number">45</span>
-<span class="line-number">46</span>
-<span class="line-number">47</span>
-<span class="line-number">48</span>
-</pre></td><td class="code"><pre><code class="php"><span class="line"><span class="k">protected</span> <span class="k">function</span> <span class="nf">_doCodeBlocks_callback</span><span class="p">(</span><span class="nv">$matches</span><span class="p">)</span> <span class="p">{</span>
-</span><span class="line">	<span class="nv">$codeblock</span> <span class="o">=</span> <span class="nv">$matches</span><span class="p">[</span><span class="mi">1</span><span class="p">];</span>
-</span><span class="line">
-</span><span class="line">	<span class="c1"># outdent 会去掉行首tab/多空格，不采用，直接按照输入代码样式来，建议代码缩进为2空格</span>
-</span><span class="line">	<span class="c1">// $codeblock = $this-&gt;outdent($codeblock);</span>
-</span><span class="line">	<span class="c1">// $codeblock = htmlspecialchars($codeblock, ENT_NOQUOTES);</span>
-</span><span class="line">
-</span><span class="line">	<span class="c1"># trim leading newlines and trailing newlines</span>
-</span><span class="line">	<span class="nv">$codeblock</span> <span class="o">=</span> <span class="nb">preg_replace</span><span class="p">(</span><span class="s1">&#39;/\A\n+|\n+\z/&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="nv">$codeblock</span><span class="p">);</span>
-</span><span class="line">	
-</span><span class="line">	<span class="c1"># 替换特殊字符，可能不完善</span>
-</span><span class="line">	<span class="nv">$codeblock</span> <span class="o">=</span> <span class="nb">str_replace</span><span class="p">(</span><span class="k">array</span><span class="p">(</span>
-</span><span class="line">		<span class="s1">&#39;&amp;lt;&#39;</span><span class="p">,</span>
-</span><span class="line">		<span class="s1">&#39;&amp;quot;&#39;</span><span class="p">,</span>
-</span><span class="line">		<span class="s1">&#39;&amp;amp;&#39;</span>
-</span><span class="line">	<span class="p">),</span> <span class="k">array</span><span class="p">(</span>
-</span><span class="line">		<span class="s1">&#39;&lt;&#39;</span><span class="p">,</span>
-</span><span class="line">		<span class="s1">&#39;&quot;&#39;</span><span class="p">,</span>
-</span><span class="line">		<span class="s1">&#39;&amp;&#39;</span>
-</span><span class="line">	<span class="p">),</span> <span class="nv">$codeblock</span><span class="p">);</span>
-</span><span class="line">
-</span><span class="line">	<span class="c1">## call geshi to render the code</span>
-</span><span class="line">	<span class="nv">$codeblock</span> <span class="o">=</span> <span class="nb">preg_replace_callback</span><span class="p">(</span>
-</span><span class="line">		<span class="s1">&#39;/^(\{\{lang:([\w]+)\}\}\n|)(.*?)$/s&#39;</span><span class="p">,</span> <span class="c1">// greedy_code</span>
-</span><span class="line">		<span class="k">array</span><span class="p">(</span><span class="nv">$this</span><span class="p">,</span> <span class="s1">&#39;syntaxHighlight&#39;</span><span class="p">),</span>
-</span><span class="line">		<span class="nv">$codeblock</span>
-</span><span class="line">	<span class="p">);</span>
-</span><span class="line">
-</span><span class="line">	<span class="c1">// 将代码每一行包裹入 &lt;p&gt;</span>
-</span><span class="line">	<span class="nv">$codeblock</span> <span class="o">=</span> <span class="nb">preg_replace</span><span class="p">(</span><span class="s1">&#39;/^(.+?)$/m&#39;</span><span class="p">,</span> <span class="s1">&#39;&lt;p&gt;${1}&lt;/p&gt;&#39;</span><span class="p">,</span> <span class="nv">$codeblock</span><span class="p">);</span>
-</span><span class="line">	<span class="nv">$codeblock</span> <span class="o">=</span> <span class="nb">str_replace</span><span class="p">(</span><span class="k">array</span><span class="p">(</span> <span class="c1"># 特殊处理第一行和最后一行</span>
-</span><span class="line">		<span class="s1">&#39;style=&quot;font-family:monospace;&quot;&gt;&#39;</span><span class="p">,</span>
-</span><span class="line">		<span class="s1">&#39;&lt;/pre&gt;&#39;</span>
-</span><span class="line">	<span class="p">),</span> <span class="k">array</span><span class="p">(</span>
-</span><span class="line">		<span class="s1">&#39;style=&quot;font-family:monospace;&quot;&gt;&lt;p&gt;&#39;</span><span class="p">,</span>
-</span><span class="line">		<span class="s1">&#39;&lt;/p&gt;&lt;/pre&gt;&#39;</span>
-</span><span class="line">	<span class="p">),</span> <span class="nx">substr</span><span class="p">(</span><span class="nv">$codeblock</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="nb">strlen</span><span class="p">(</span><span class="nv">$codeblock</span><span class="p">)</span> <span class="o">-</span> <span class="mi">7</span><span class="p">));</span>
-</span><span class="line">
-</span><span class="line">	<span class="c1"># GeSHi 已添加 &lt;pre&gt; 标签</span>
-</span><span class="line">	<span class="c1">// $codeblock = &quot;&lt;pre class=\&quot;prettyprint\&quot;&gt;$codeblock\n&lt;/pre&gt;&quot;;</span>
-</span><span class="line">
-</span><span class="line">	<span class="c1"># 输出测试</span>
-</span><span class="line">	<span class="c1">// $fp = fopen(&quot;/Library/Server/Web/Data/Sites/Default/qa/test.txt&quot;, &#39;w&#39;);</span>
-</span><span class="line">	<span class="c1">// fwrite($fp, $codeblock);</span>
-</span><span class="line">	<span class="c1">// fclose($fp);</span>
-</span><span class="line">
-</span><span class="line">	<span class="k">return</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">hashBlock</span><span class="p">(</span><span class="nv">$codeblock</span><span class="p">);</span>
-</span><span class="line"><span class="p">}</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<ul>
-  <li>修改样式代码 <code>wecenter-root/static/css/default/common.css</code>，使超过显示区域长度的代码可横向滚动查看。</li>
-</ul>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>修改 common.css</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-<span class="line-number">5</span>
-<span class="line-number">6</span>
-<span class="line-number">7</span>
-<span class="line-number">8</span>
-<span class="line-number">9</span>
-<span class="line-number">10</span>
-<span class="line-number">11</span>
-<span class="line-number">12</span>
-<span class="line-number">13</span>
-</pre></td><td class="code"><pre><code class="css"><span class="line"><span class="c">/* 注释掉下面这一行，两个选择器分开写，.wmd-preview pre 不变，.markitup-box pre 的 overflow 属性为 scroll */</span>
-</span><span class="line"><span class="c">/*.wmd-preview pre, .markitup-box pre {padding: 16px;line-height: 20px;overflow: hidden; border: none; border-radius: 3px; background-color: #f7f7f7;font-size: 14px;}*/</span>
-</span><span class="line"><span class="nc">.wmd-preview</span> <span class="nt">pre</span> <span class="p">{</span><span class="k">padding</span><span class="o">:</span> <span class="m">16px</span><span class="p">;</span><span class="k">line-height</span><span class="o">:</span> <span class="m">20px</span><span class="p">;</span><span class="k">overflow</span><span class="o">:</span> <span class="k">hidden</span><span class="p">;</span> <span class="k">border</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span> <span class="k">border</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span> <span class="m">3px</span><span class="p">;</span> <span class="k">background-color</span><span class="o">:</span> <span class="m">#f7f7f7</span><span class="p">;</span><span class="k">font-size</span><span class="o">:</span> <span class="m">14px</span><span class="p">;}</span>
-</span><span class="line"><span class="nc">.markitup-box</span> <span class="nt">pre</span> <span class="p">{</span><span class="k">padding</span><span class="o">:</span> <span class="m">16px</span><span class="p">;</span><span class="k">line-height</span><span class="o">:</span> <span class="m">20px</span><span class="p">;</span><span class="k">overflow</span><span class="o">:</span> <span class="k">scroll</span><span class="p">;</span> <span class="k">border</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span> <span class="k">border</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span> <span class="m">3px</span><span class="p">;</span> <span class="k">background-color</span><span class="o">:</span> <span class="m">#f7f7f7</span><span class="p">;</span><span class="k">font-size</span><span class="o">:</span> <span class="m">14px</span><span class="p">;}</span>
-</span><span class="line">
-</span><span class="line"><span class="o">...</span>
-</span><span class="line">
-</span><span class="line">
-</span><span class="line"><span class="c">/* 末尾添加自定义属性  */</span>
-</span><span class="line"><span class="nc">.markitup-box</span> <span class="nt">pre</span> <span class="o">&gt;</span> <span class="nt">p</span> <span class="p">{</span>
-</span><span class="line">	<span class="k">display</span><span class="o">:</span> <span class="k">inline</span><span class="o">-</span><span class="k">block</span><span class="p">;</span>
-</span><span class="line">	<span class="k">padding</span><span class="o">:</span> <span class="m">0</span> <span class="cp">!important</span><span class="p">;</span>
-</span><span class="line"><span class="p">}</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<ul>
-  <li>在 {{{ 与 }}} 间先输入 {{lang:php}}，表示以下为 PHP 代码（其它格式可参见 <a href="http://qbnz.com/highlighter/">GeSHi 官网</a> 左边栏），然后正常输入代码并显示。</li>
-</ul>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>输入代码评论</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-<span class="line-number">5</span>
-<span class="line-number">6</span>
-<span class="line-number">7</span>
-<span class="line-number">8</span>
-<span class="line-number">9</span>
-<span class="line-number">10</span>
-<span class="line-number">11</span>
-<span class="line-number">12</span>
-<span class="line-number">13</span>
-<span class="line-number">14</span>
-<span class="line-number">15</span>
-<span class="line-number">16</span>
-<span class="line-number">17</span>
-<span class="line-number">18</span>
-<span class="line-number">19</span>
-<span class="line-number">20</span>
-<span class="line-number">21</span>
-</pre></td><td class="code"><pre><code class="robotframework"><span class="line"><span class="c">protected function _doImages_inline_callback($matches) {</span><span class="p"></span>
-</span><span class="line"><span class="p">  </span><span class="c">$whole_match = $matches[1];</span><span class="p"></span>
-</span><span class="line"><span class="p">  </span><span class="c">$alt_text = $matches[2];</span><span class="p"></span>
-</span><span class="line"><span class="p">  </span><span class="c">$url = $matches[3] == &#39;&#39; ? $matches[4] : $matches[3];</span><span class="p"></span>
-</span><span class="line"><span class="p">  </span><span class="c">$title = &amp;$matches[7];</span><span class="p"></span>
-</span><span class="line">
-</span><span class="line">
-</span><span class="line">
-</span><span class="line"><span class="p">  </span><span class="c">$alt_text = $this-&gt;encodeAttribute($alt_text);</span><span class="p"></span>
-</span><span class="line"><span class="p">  </span><span class="c">$url = $this-&gt;encodeAttribute($url);</span><span class="p"></span>
-</span><span class="line"><span class="p">  </span><span class="c">$result = &quot;&lt;img src=\&quot;$url\&quot; alt=\&quot;$alt_text\&quot;&quot;;</span><span class="p"></span>
-</span><span class="line"><span class="p">  </span><span class="c">if (isset($title)) {</span><span class="p"></span>
-</span><span class="line"><span class="p">    </span><span class="c">$title = $this-&gt;encodeAttribute($title);</span><span class="p"></span>
-</span><span class="line"><span class="p">    </span><span class="c">$result .= &quot; title=\&quot;$title\&quot;&quot;; # $title already quoted</span><span class="p"></span>
-</span><span class="line"><span class="p">  </span><span class="c">}</span><span class="p"></span>
-</span><span class="line"><span class="p">  </span><span class="c">$result .= $this-&gt;empty_element_suffix;</span><span class="p"></span>
-</span><span class="line">
-</span><span class="line">
-</span><span class="line">
-</span><span class="line"><span class="p">  </span><span class="c">return $this-&gt;hashPart($result);</span><span class="p"></span>
-</span><span class="line"><span class="c">}</span><span class="p"></span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<p>显示效果如下。</p>
-
-<p><a href="http://frank19900731.github.io/img/post/2015-1/15.png" class="img-up" title="代码显示效果"><img class="imgcenter" src="http://frank19900731.github.io/img/post/2015-1/15.png" width="90%" title="代码显示效果" /></a></p>
-
-<p>注意到我们的代码输入采用两空格缩进，显示起来较美观；想设置 n 空行，在代码输入中应有 n+2 空行。</p>
-
-<p>至此，初步实现了 WeCenter 3.0.2 中的代码高亮功能，剩余工作就是在实践中微调，比如 <strong>Shell 脚本行注释的 # 可能会被 Markdown 解析成标题</strong>，可以自定义转义进行处理，诸如此类。</p>
-
-<h2 id="section-1">参考代码</h2>
-
-<p>附 <a href="http://frank19900731.github.io/downloads/file/Services.rar">参考代码</a>。</p>
-
-<p class="post-footer">原文地址: <a href="http://frank19900731.github.io/blog/2015/01/26/mac-xia-an-zhuang-wecenter-bing-tian-jia-dai-ma-gao-liang-gong-neng/">http://frank19900731.github.io/blog/2015/01/26/mac-xia-an-zhuang-wecenter-bing-tian-jia-dai-ma-gao-liang-gong-neng/</a><br /> 作者 <a href="http://frank19900731.github.io">Frank Song</a>&nbsp; 发布于 <a href="http://frank19900731.github.io">http://frank19900731.github.io</a>&nbsp; 转载请注明</p>
 ]]></content>
   </entry>
   
