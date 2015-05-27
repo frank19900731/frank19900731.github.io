@@ -21,7 +21,7 @@ __目录__
 
 [Today Scripts](https://github.com/SamRothCA/Today-Scripts) 是一款开源的通知栏插件，顾名思义是可以编写脚本并将结果显示于通知栏的 Today 面板。功能用法上它和此前我们介绍的 [GeekTool](http://http://frank19900731.github.io/blog/2015/03/30/mei-zhou-yi-ruan-zhi-geektool/) 类似，只不过前者占据桌面，而后者顺应 Yosemite 的潮流以通知栏插件形式出现。
 
-从自身使用习惯的来看，通知中心出场率很低，偶尔访问一般是为了叉掉已有通知。我的第三方插件主要来自社交、效率、文摘类软件，它们的作用是提醒、展示，也是快速访问入口，但我第一想到的还是通过 Alfred 这种快速启动工具打开软件查看。我个人比较喜欢的两款第三方插件是 [MonthlyCal](http://doublerew.net/en/app/os-x/monthlycal/) 和 [iStat Mini](http://bjango.com/mac/istatmini/)，前者是一款待办事项日历，数据来自 Calendar，后者是系统状态监控。还有一款名为 [Stat](https://itunes.apple.com/us/app/stat/id931063335?mt=12) 的软件，可以指定 Git 管理的文件夹，在 Finder 中显示文件状态（新增、修改等），并在通知栏里显示状态变化文件的数量信息，不过当前软件版本对新建文件数的统计总是 0……
+从自身使用习惯的来看，通知中心出场率很低，偶尔访问一般是为了叉掉已有通知。我的第三方插件主要来自社交、效率、文摘类软件，它们的作用是提醒、展示，也是快速访问入口，但我第一想到的还是通过 Alfred 这种快速启动工具打开软件查看。个人比较喜欢的两款第三方插件是 [MonthlyCal](http://doublerew.net/en/app/os-x/monthlycal/) 和 [iStat Mini](http://bjango.com/mac/istatmini/)，前者是一款待办事项日历，数据来自 Calendar，后者是系统状态监控。还有一款名为 [Stat](https://itunes.apple.com/us/app/stat/id931063335?mt=12) 的软件，可以指定 Git 管理的文件夹，在 Finder 中显示文件状态（新增、修改等），并在通知栏里显示状态变化文件的数量信息，不过当前软件版本对新建文件数的统计总是 0……
 
 {% img imgcenter /img/post/2015-5/11.png 50% iStat Mini %}
 
