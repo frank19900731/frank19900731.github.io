@@ -215,7 +215,7 @@
   <li>加解密操作过程中，<strong>均有一份完整的原始文件或加密文件保存在磁盘中</strong>，防止加解密失败导致数据丢失。</li>
 </ul>
 
-<p><a href="/img/post/2015-5/15.png" class="img-up" title="安全删除"><img class="imgcenter-no-shadow" src="/img/post/2015-5/15.png" width="65%" title="安全删除" /></a></p>
+<p><a href="/img/post/2015-5/15.png" class="img-up" title="安全删除"><img class="imgcenter" src="/img/post/2015-5/15.png" width="65%" title="安全删除" /></a></p>
 
 <!-- excerpt end -->
 
@@ -239,7 +239,7 @@
 
 <p>设计美观。</p>
 
-<p><a href="/img/post/2015-5/14.png" class="img-up" title="Hider 2 主界面"><img class="imgcenter" src="/img/post/2015-5/14.png" width="90%" title="Hider 2 主界面" /></a></p>
+<p><a href="/img/post/2015-5/14.png" class="img-up" title="Hider 2 主界面"><img class="imgcenter-no-shadow" src="/img/post/2015-5/14.png" width="90%" title="Hider 2 主界面" /></a></p>
 
 <h2 id="section-2">易用性</h2>
 
@@ -290,13 +290,13 @@
 <p>Espionage 采取的措施主要是：</p>
 
 <ul>
-  <li>支持用户创建多个 Vault，不同 Vault 有不同密码，如此用户可以创建虚假 Vault 和虚假文件；</li>
+  <li>支持用户创建多个 Vault，不同 Vault 对应不同密码，如此用户可以创建虚假 Vault 和虚假文件；</li>
   <li>软件初始化时帮助用户随机创建虚假 Vault 和虚假文件。</li>
 </ul>
 
 <p>软件作者认为，当犯罪分子威胁人质时，人质可以输入密码进入假 Vault，或者还原一套假文件，这就算是合理性推诿了。然而，只要犯罪分子稍微研究一下 Espionage 的机制，人质就得遭殃了。</p>
 
-<p>Vault 中的每个文件夹在数据目录中都以 sparsebundle 格式的文件存在，而不同 Vault 的 sparsebundle 文件是混在一起的。虽然无法知道有多少个 Vault、哪个 sparsebundle 存储的是虚假文件，但只要真实文件混在其中，犯罪分子就可以要求人质逐个解密，只要还有 sparsebundle 无法打开，就说明还有 Vault 密码没有交代出来。更奇葩的事情是，系统生成的虚假 Vault 密码人质是不知道的，对于无法打开的 sparsebundle，可能是人质真的不知道密码，但犯罪分子心里想的却是：你 TM 糊弄鬼呢？</p>
+<p>Vault 中的每个文件夹在数据目录中都以 sparsebundle 格式的文件存在，而不同 Vault 的 sparsebundle 文件是混在一起的。虽然无法知道有多少个 Vault、哪个 sparsebundle 存储的是虚假文件，但只要真实文件混在其中，犯罪分子就可以要求人质逐个解密，只要还有 sparsebundle 无法打开，就说明还有 Vault 密码没有交代出来。更奇葩的是，系统生成的虚假 Vault 密码人质是不知道的，对于无法打开的 sparsebundle，可能是人质真的不知道密码，但犯罪分子心里想的却是：你 TM 糊弄鬼呢？</p>
 
 <p>那将 sparsebundle 后缀名去掉可否解决上述问题呢？理论上是不行的，因为该类型文件的二进制表示中有固定编码，还是会被搜索出来。</p>
 
@@ -308,7 +308,7 @@
   <li>犯罪分子得到文件后无法验证真伪，或在证伪前就放走了人质。</li>
 </ul>
 
-<p>我不是很了解合理性推诿方面的研究，只能凭感觉想出几点：</p>
+<p>我不是很了解合理性推诿方面的研究，但也没蠢到轻信 Espionage，凭感觉想了几条起码的要求：</p>
 
 <ul>
   <li><strong>加密隐藏机制封闭，而不是曝光于大众视野</strong>；</li>
@@ -317,13 +317,13 @@
   <li>可<strong>设置文件自毁的触发条件</strong>，比如输入某个密码或输错密码多次。</li>
 </ul>
 
-<p>大部分人一辈子也不会负责保存比人命还重要的数据，所以这几点也只是想想而已。对于日常私密数据，用两三种不同的加密软件嵌套加密，注意数据的物理转移和安全删除，已经算得上稳妥了，毕竟大家隐藏小电影的方式也只是嵌套文件夹 + 重命名而已。</p>
+<p>大部分人一辈子也不会负责保存比人命还重要的数据，所以这几条也只是想想而已。对于日常私密数据，<strong>用两三种不同的加密软件嵌套加密，注意数据的物理转移和安全删除</strong>，已经算得上稳妥了，毕竟大家隐藏小电影的方式也只是嵌套文件夹 + 重命名而已。</p>
 
 <p>最后要提到的是 <a href="http://macpaw.com/encrypto">Encrypto</a>，它是 MacPaw 推出的与 Hider 2 相配套的软件，功能是使加密文件可分享，类似于加密的压缩文件。Encrypto 兼有 OS X 和 Windows 客户端，界面设计美观，加解密操作简单。</p>
 
-<p><a href="/img/post/2015-5/16.png" class="img-up" title="设置密码"><img class="imgcenter" src="/img/post/2015-5/16.png" width="60%" title="设置密码" /></a></p>
+<p><a href="/img/post/2015-5/16.png" class="img-up" title="设置密码"><img class="imgcenter-no-shadow" src="/img/post/2015-5/16.png" width="60%" title="设置密码" /></a></p>
 
-<p><a href="/img/post/2015-5/17.png" class="img-up" title="加密中"><img class="imgcenter" src="/img/post/2015-5/17.png" width="60%" title="加密中" /></a></p>
+<p><a href="/img/post/2015-5/17.png" class="img-up" title="加密中"><img class="imgcenter-no-shadow" src="/img/post/2015-5/17.png" width="60%" title="加密中" /></a></p>
 
 <p>Encrypto 加密文件相比压缩文件的好处是文件格式相对小众，修改后缀名能让安全系数更高一些。然而，查看加密文件的二进制表示发现有固定的 4 字节头部，所以还是可能被针对的。</p>
 
