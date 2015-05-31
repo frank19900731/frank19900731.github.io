@@ -1,0 +1,356 @@
+<!-- layout/wx-default.html -->
+
+<!-- head.html -->
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <!-- 标签页标题 -->
+  <title>每周一软之 Hider 2 - Blog of 太极儒</title>
+  <meta name="author" content="Frank Song">
+  <!-- 定义description变量，如果有则用，没有则是正文，前150字 -->
+  
+  <meta name="description" content="目录 功能介绍 界面设计 易用性 稳定性 跨平台 类似软件 闪光点 缺点 功能介绍 Hider 2 （曾用名 MacHider）是一款文件夹加密隐藏工具，与 CleanMyMac 来自同一厂商 MacPaw。Hider 的加密隐藏的主要做法可以概括为： 用户设置软件访问密码，可以添加文件或文件夹并切换其显示/隐藏，也可以类似 1PassWord 等软件直接添加 Secure Note； 系统自动生成密钥，使用 AES-256 进行加解密，密钥和具体加解密流程对用户透明； 加密操作保持加密文件夹的目录结构，分别随机打乱文件名与后缀名中的字符（比如 photo.jpg 变成 othpo.pjg），对每个文件进行单独加密，保存加密结果到用户设置的全局 Vault 中，同时对源文件进行安全删除（见下图）； 解密操作还原目录结构，删除（似乎不是安全删除）加密文件； 加解密操作过程中，均有一份完整的原始文件或加密文件保存在磁盘中，防止加解密失败导致数据丢失。 对于保持目录结构仅打乱命名的作法（目的应该是降低被搜索到的可能性吧，也只是降低而已）我是不太喜欢的，如果他人知晓文件名或后缀名，那么通过简单的枚举搜索就能够发现隐藏文件的存在，特别是在中文命名的情况下。虽然不知道密钥密码还是无法解析文件内容，但既然是隐藏为什么不做得更彻底一些呢。 Hider 2 对加密文件大小没有限制，只是在用户添加大文件（夹）时给出警告，如果文件需要经常切换显示、隐藏，自然还是分开处理更好。Hider 2 加解密速度大致相当，在固态硬盘、i5 CPU 条件下实测，100M 文件耗时几秒，1G 耗时 几十秒，3G 耗时约两分钟，单个文件大小几 K 到几 M 不等。 和大多数隐藏加密软件一样，忘记密码则无法恢复数据，所以 Hider 2 会建议用户将密码保存到 Key Chain 当中，不过更稳妥的方式自然是死记…… Hider 2 的特性还包括： 支持创建 Group，便于文档分类管理； 支持识别文件在 Finder 中被指定的 Tag，便于查询； 支持外置硬盘，会在该硬盘上创建 Vault 以隐藏文件。 当然，也有 Hider 2 无法加密或不便加密的文件，前者比如说 Vault 自身，后者比如软件，因为解密后的软件无法通过 GateKeeper 校验。 界面设计 设计美观。 易用性 简单易用。 &hellip;">
+  <meta name="keywords" content="mac软件, 每周一软, Hider 2, 1PassWord, CleanMyMac, MacPaw, AES, Vault, Key Chain, GateKeeper, Apimac Secret Folder, Finder, LameSecure, FileVault, Disk Utility, rar, Espionage, Plausible Deniability, sparsebundle, Encrypto">
+  <meta name="baidu-site-verification" content="7O78rNJCOH" />
+  <meta name="360-site-verification" content="9ee6dda17557079b8855f9c8201b05bb" />
+  <meta name="msvalidate.01" content="408D13BCB6B6CE4973F6CD9E6A9E8195" />
+  <meta name="sogou_site_verification" content="CtgkJPDjga"/>
+  <meta name="chinaz-site-verification" content="081e7651-48c6-4c2f-a569-99321685eab1" />
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://frank19900731.github.io/wx/2015-05-31-mei-zhou-yi-ruan-zhi-hider-2.html">
+  <!-- 网站小图标 -->
+  <link href="/favicon.ico" rel="icon">
+  <link href="/stylesheets/bootstrap/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="/stylesheets/bootstrap/responsive.css" rel="stylesheet" type="text/css">
+  <!-- 网站样式文件 -->
+  <link href="/stylesheets/styles.css" media="screen, projection" rel="stylesheet" type="text/css">
+
+  <link href="/atom.xml" rel="alternate" title="Blog of 太极儒" type="application/atom+xml">
+
+  <script src="/javascripts/modernizr.custom.js"></script>
+  <!-- jQuery -->
+  <!--script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script-->
+  <script src="/javascripts/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+
+  <!-- 其它js代码 -->
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <script src="/javascripts/jquery.sidr.min.js"></script>
+  <script src="/javascripts/ah-blue.js"></script>
+  <script type="text/javascript" src="/javascripts/fancybox/jquery.fancybox.pack.js"></script>
+  <link rel="stylesheet" type="text/css" href="/javascripts/fancybox/jquery.fancybox.css" media="screen" />
+
+  <link href="/stylesheets/component.css" rel="stylesheet" type="text/css">
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+        if ($(".img-up")) {
+            $(".img-up").fancybox();
+        }
+        if ($(".imgleft")) {
+            $(".imgleft").parent().parent().css("text-align", "left");
+        }
+        if ($(".imgright")) {
+            $(".imgright").parent().parent().css("text-align", "right");
+        }
+        if ($(".imgcenter")) {
+            $(".imgcenter").parent().parent().css("text-align", "center");
+        }
+        if ($(".imgleft-no-shadow")) {
+            $(".imgleft-no-shadow").parent().parent().css("text-align", "left");
+        }
+        if ($(".imgright-no-shadow")) {
+            $(".imgright-no-shadow").parent().parent().css("text-align", "right");
+        }
+        if ($(".imgcenter-no-shadow")) {
+            $(".imgcenter-no-shadow").parent().parent().css("text-align", "center");
+        }
+
+        if ($(".mod_lost_child_little")) {
+            $(".mod_lost_child_little").css("width", "100%");
+        }
+    });
+  </script>
+
+  <style>
+      body {
+          background-image: none;
+      }
+
+      tr.content {
+          line-height: 300%;
+          border-top: 1px dotted #000;
+      }
+
+      table.mulu {
+          width: 95%; margin: 10px auto 40px;
+      }
+
+      .gutter {
+          width: 7%;
+      }
+  </style>
+
+  <!-- custom/head.html -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      jax: ["input/TeX", "output/HTML-CSS"],
+      tex2jax: {
+        inlineMath: [ ['$', '$'], ["\\(", "\\)"] ],
+        displayMath: [ ['$$', '$$'], ["\\[", "\\]"] ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+      //,
+      //displayAlign: "left",
+      //displayIndent: "2em"
+    });
+
+    function addBlankTargetForLinks () {
+
+      $('a[href^="http"]').each(function(){
+
+        $(this).attr('target', '_blank');
+
+      });
+
+    }
+
+    $(document).bind('DOMNodeInserted', function(event) {
+
+      addBlankTargetForLinks();
+
+    });
+
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"></script>
+  <!-- google_analytics.html -->
+
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-51950124-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head> 
+
+<body style="background-color: rgba(255, 255, 255, 0.3);">
+
+<div class="row-fluid marketing">
+<div class="span2"> </div>
+<div class="span8">
+<div class="container-narrow" style="margin-top: 20px;">
+
+      <div class="masthead">
+        <ul class="nav nav-pills pull-right">
+          <li><a href="/wx/archives/">博客目录</a></li>
+          <li><a href="/blog/2015/05/31/mei-zhou-yi-ruan-zhi-hider-2/">PC端阅读</a></li>
+        </ul>
+        <h3 class="muted">&nbsp;&nbsp;&nbsp;&nbsp;太极儒</h3>
+      </div>
+
+	  <hr style="width: 100%;">
+
+      <div style="padding: 8px 25px 8px 25px;">
+        <h1>
+          每周一软之 Hider 2
+        </h1>
+
+        <div class="article-date" style="margin-bottom: 40px;">
+            <!-- post/date.html -->
+<!-- 文章日期显示 -->
+
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2015-05-31T19:14:44+08:00" pubdate data-updated="true">May 31<span>st</span>, 2015</time>
+        </div>
+      <p><strong>目录</strong></p>
+
+<ul id="markdown-toc">
+  <li><a href="#section">功能介绍</a></li>
+  <li><a href="#section-1">界面设计</a></li>
+  <li><a href="#section-2">易用性</a></li>
+  <li><a href="#section-3">稳定性</a></li>
+  <li><a href="#section-4">跨平台</a></li>
+  <li><a href="#section-5">类似软件</a></li>
+  <li><a href="#section-6">闪光点</a></li>
+  <li><a href="#section-7">缺点</a></li>
+</ul>
+
+<h2 id="section">功能介绍</h2>
+
+<!-- excerpt start -->
+
+<p><a href="http://macpaw.com/hider">Hider 2</a> （曾用名 MacHider）是一款文件夹加密隐藏工具，与 <a href="http://macpaw.com/cleanmymac">CleanMyMac</a> 来自同一厂商 <a href="http://macpaw.com/">MacPaw</a>。Hider 的加密隐藏的主要做法可以概括为：</p>
+
+<ul>
+  <li>用户设置软件访问密码，可以添加文件或文件夹并切换其显示/隐藏，也可以类似 1PassWord 等软件直接添加 Secure Note；</li>
+  <li>系统自动生成密钥，使用 AES-256 进行加解密，密钥和具体加解密流程对用户透明；</li>
+  <li>加密操作保持加密文件夹的目录结构，<strong>分别随机打乱文件名与后缀名中的字符</strong>（比如 photo.jpg 变成 othpo.pjg），<strong>对每个文件进行单独加密</strong>，保存加密结果到用户设置的全局 Vault 中，同时<strong>对源文件进行安全删除</strong>（见下图）； </li>
+  <li>解密操作还原目录结构，删除（似乎不是安全删除）加密文件；</li>
+  <li>加解密操作过程中，<strong>均有一份完整的原始文件或加密文件保存在磁盘中</strong>，防止加解密失败导致数据丢失。</li>
+</ul>
+
+<p><a href="/img/post/2015-5/15.png" class="img-up" title="安全删除"><img class="imgcenter-no-shadow" src="/img/post/2015-5/15.png" width="65%" title="安全删除" /></a></p>
+
+<!-- excerpt end -->
+
+<p>对于保持目录结构仅打乱命名的作法（目的应该是降低被搜索到的可能性吧，也只是降低而已）我是不太喜欢的，如果他人知晓文件名或后缀名，那么通过简单的枚举搜索就能够发现隐藏文件的存在，<strong>特别是在中文命名的情况下</strong>。虽然不知道密钥密码还是无法解析文件内容，但既然是隐藏为什么不做得更彻底一些呢。</p>
+
+<p>Hider 2 对加密文件大小没有限制，只是在用户添加大文件（夹）时给出警告，如果文件需要经常切换显示、隐藏，自然还是分开处理更好。Hider 2 加解密速度大致相当，在固态硬盘、i5 CPU 条件下实测，100M 文件耗时几秒，1G 耗时 几十秒，3G 耗时约两分钟，单个文件大小几 K 到几 M 不等。</p>
+
+<p>和大多数隐藏加密软件一样，<strong>忘记密码则无法恢复数据</strong>，所以 Hider 2 会建议用户将密码保存到 Key Chain 当中，不过更稳妥的方式自然是死记……</p>
+
+<p>Hider 2 的特性还包括：</p>
+
+<ul>
+  <li>支持创建 Group，便于文档分类管理；</li>
+  <li>支持识别文件在 Finder 中被指定的 Tag，便于查询；</li>
+  <li>支持外置硬盘，会在该硬盘上创建 Vault 以隐藏文件。</li>
+</ul>
+
+<p>当然，也有 Hider 2 无法加密或不便加密的文件，前者比如说 Vault 自身，后者比如软件，因为解密后的软件无法通过 <a href="https://support.apple.com/en-gb/HT202491">GateKeeper</a> 校验。</p>
+
+<h2 id="section-1">界面设计</h2>
+
+<p>设计美观。</p>
+
+<p><a href="/img/post/2015-5/14.png" class="img-up" title="Hider 2 主界面"><img class="imgcenter" src="/img/post/2015-5/14.png" width="90%" title="Hider 2 主界面" /></a></p>
+
+<h2 id="section-2">易用性</h2>
+
+<p>简单易用。</p>
+
+<h2 id="section-3">稳定性</h2>
+
+<p>稳定性好。</p>
+
+<h2 id="section-4">跨平台</h2>
+
+<p>仅 OS X。</p>
+
+<h2 id="section-5">类似软件</h2>
+
+<p>一般地，文件的加密隐藏主要有三种形式。</p>
+
+<ul>
+  <li>不加密隐藏
+    <ul>
+      <li><a href="http://www.apimac.com/mac/secretfolder/">Apimac Secret Folder</a> 属于此类，前者仅在文件名前加 <code>.</code>，使成为系统隐藏文件，不够安全；</li>
+    </ul>
+  </li>
+  <li>设置访问密码
+    <ul>
+      <li><strong>Finder 不支持对文件夹或文件夹设置访问密码</strong>；</li>
+      <li>LameSecure 是早期 OS X 中的一款支持对文件夹设置密码的第三方应用，不过现在似乎已经不可用，而且也有相应的 <a href="https://discussions.apple.com/thread/3208638?tstart=0">规避手段</a>，也不够安全；</li>
+    </ul>
+  </li>
+  <li>内容加密，<strong>通常只能暴力破解，较安全</strong>
+    <ul>
+      <li>全盘加密
+        <ul>
+          <li><a href="https://support.apple.com/en-us/HT204837">FileVault</a>是 OS X 的自带功能，<strong>需要登录密码解密磁盘</strong>，也即无法设置自动登录，如果私密文件仅占磁盘较小容量则不合适；</li>
+        </ul>
+      </li>
+      <li>指定文件加密
+        <ul>
+          <li>Disk Utility 中 <a href="https://support.apple.com/en-us/HT201599">新建磁盘映像</a> 的功能可以设置密码和加密方式；</li>
+          <li>rar 等压缩文件也可以设置密码，压缩的同时会对文件内容加密，比如 rar 采用 AES 算法加密； </li>
+          <li><a href="https://www.espionageapp.com/">Espionage</a> 是一款与 Hider 2 功能类似的软件，号称可以做到 Plausible Deniability（合理性推诿），不过我觉得有点吹大了，以下作简要讨论。</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p>Espionage 采取的措施主要是：</p>
+
+<ul>
+  <li>支持用户创建多个 Vault，不同 Vault 有不同密码，如此用户可以创建虚假 Vault 和虚假文件；</li>
+  <li>软件初始化时帮助用户随机创建虚假 Vault 和虚假文件。</li>
+</ul>
+
+<p>软件作者认为，当犯罪分子威胁人质时，人质可以输入密码进入假 Vault，或者还原一套假文件，这就算是合理性推诿了。然而，只要犯罪分子稍微研究一下 Espionage 的机制，人质就得遭殃了。</p>
+
+<p>Vault 中的每个文件夹在数据目录中都以 sparsebundle 格式的文件存在，而不同 Vault 的 sparsebundle 文件是混在一起的。虽然无法知道有多少个 Vault、哪个 sparsebundle 存储的是虚假文件，但只要真实文件混在其中，犯罪分子就可以要求人质逐个解密，只要还有 sparsebundle 无法打开，就说明还有 Vault 密码没有交代出来。更奇葩的事情是，系统生成的虚假 Vault 密码人质是不知道的，对于无法打开的 sparsebundle，可能是人质真的不知道密码，但犯罪分子心里想的却是：你 TM 糊弄鬼呢？</p>
+
+<p>那将 sparsebundle 后缀名去掉可否解决上述问题呢？理论上是不行的，因为该类型文件的二进制表示中有固定编码，还是会被搜索出来。</p>
+
+<p>总的来说，Espionage 宣称的合理性推诿的成立场合是：</p>
+
+<ul>
+  <li>犯罪分子太菜，眼睁睁的看你在 Espionage 界面输入密码骗他，就是不去了解软件的工作机制；</li>
+  <li>虚假文件创建水平高，在内容、时间戳、大小等各方面都能以假乱真；</li>
+  <li>犯罪分子得到文件后无法验证真伪，或在证伪前就放走了人质。</li>
+</ul>
+
+<p>我不是很了解合理性推诿方面的研究，只能凭感觉想出几点：</p>
+
+<ul>
+  <li><strong>加密隐藏机制封闭，而不是曝光于大众视野</strong>；</li>
+  <li>加密文件的伪装性要高，可以是分布式存储；</li>
+  <li>结合真实文件有针对性的作假，而不是随机作假；</li>
+  <li>可<strong>设置文件自毁的触发条件</strong>，比如输入某个密码或输错密码多次。</li>
+</ul>
+
+<p>大部分人一辈子也不会负责保存比人命还重要的数据，所以这几点也只是想想而已。对于日常私密数据，用两三种不同的加密软件嵌套加密，注意数据的物理转移和安全删除，已经算得上稳妥了，毕竟大家隐藏小电影的方式也只是嵌套文件夹 + 重命名而已。</p>
+
+<p>最后要提到的是 <a href="http://macpaw.com/encrypto">Encrypto</a>，它是 MacPaw 推出的与 Hider 2 相配套的软件，功能是使加密文件可分享，类似于加密的压缩文件。Encrypto 兼有 OS X 和 Windows 客户端，界面设计美观，加解密操作简单。</p>
+
+<p><a href="/img/post/2015-5/16.png" class="img-up" title="设置密码"><img class="imgcenter" src="/img/post/2015-5/16.png" width="60%" title="设置密码" /></a></p>
+
+<p><a href="/img/post/2015-5/17.png" class="img-up" title="加密中"><img class="imgcenter" src="/img/post/2015-5/17.png" width="60%" title="加密中" /></a></p>
+
+<p>Encrypto 加密文件相比压缩文件的好处是文件格式相对小众，修改后缀名能让安全系数更高一些。然而，查看加密文件的二进制表示发现有固定的 4 字节头部，所以还是可能被针对的。</p>
+
+<h2 id="section-6">闪光点</h2>
+
+<ul>
+  <li>加解密操作简单快捷；</li>
+  <li>对原始数据有安全删除操作；</li>
+  <li>有 Encrypto 作为配套应用，便于加密文件分享。</li>
+</ul>
+
+<h2 id="section-7">缺点</h2>
+
+<ul>
+  <li>加密文件仍保持目录结构，文件名和后缀名只作字符乱序。</li>
+</ul>
+
+      <div style="margin-top: 30px;">
+      本文原载于 <a href="http://frank19900731.github.io" target="_blank">http://frank19900731.github.io</a> (为获得更好的阅读效果，请在PC端访问此链接)，作者宋成儒，微信号 frank19900731，微博 <a href="http://weibo.com/frank19900731" target="_blank">@太极儒</a> 。
+      </div>
+      </div>
+
+</div> <!-- /container -->
+</div>
+<div class="span2"></div>
+</div>
+
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1253436508'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s6.cnzz.com/z_stat.php%3Fid%3D1253436508%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+</body>
+</html>
