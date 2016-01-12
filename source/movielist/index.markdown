@@ -36,7 +36,7 @@ exclude_from_search: true
 {% img imgcenter-no-shadow /img/feature/m-2015-39.jpeg 20% 九层妖塔 %}
 {% img imgcenter-no-shadow /img/feature/m-2015-38.jpeg 20% 解救吾先生 %}
 {% img imgcenter-no-shadow /img/feature/m-2015-37.jpeg 20% 夏洛特烦恼 %}
-{% img imgcenter-no-shadow /img/feature/m-2015-36.jpeg 20% 12怒汉：大审判 %}
+{% img imgcenter-no-shadow /img/feature/m-2015-36.jpeg 20% 十二怒汉：大审判 %}
 
 {% img imgcenter-no-shadow /img/feature/m-2015-35.jpeg 20% 十二公民 %}
 {% img imgcenter-no-shadow /img/feature/m-2015-34.jpeg 20% 破风 %}
