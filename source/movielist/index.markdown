@@ -11,8 +11,11 @@ exclude_from_search: true
 
 ## 2016
 
+{% img imgcenter-no-shadow /img/feature/m-2016-6.jpeg 20% 家在水草丰茂的地方 %}
+{% img imgcenter-no-shadow /img/feature/m-2016-5.jpeg 20% 东北偏北 %}
 {% img imgcenter-no-shadow /img/feature/m-2016-4.jpeg 20% 师父 %}
 {% img imgcenter-no-shadow /img/feature/m-2016-3.jpeg 20% 寻龙诀 %}
+
 {% img imgcenter-no-shadow /img/feature/m-2016-2.jpeg 20% 唐人街探案 %}
 {% img imgcenter-no-shadow /img/feature/m-2016-1.jpeg 20% 老炮儿 %}
 
