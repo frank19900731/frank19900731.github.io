@@ -11,12 +11,22 @@ exclude_from_search: true
 
 ## 2016
 
+
+{% img imgcenter-no-shadow /img/feature/m-2016-13.jpeg 20% 功夫熊猫3 %}
+{% img imgcenter-no-shadow /img/feature/m-2016-12.jpeg 20% 奇谋妙计五福星 %}
+{% img imgcenter-no-shadow /img/feature/m-2016-11.jpeg 20% 摩登保镖 %}
+{% img imgcenter-no-shadow /img/feature/m-2016-10.jpeg 20% 奇葩说 %}
+
+{% img imgcenter-no-shadow /img/feature/m-2016-9.jpeg 20% 我的青春期 %}
+{% img imgcenter-no-shadow /img/feature/m-2016-8.jpeg 20% 舌尖上的新年 %}
+{% img imgcenter-no-shadow /img/feature/m-2016-7.jpeg 20% 一帮坏家伙 %}
 {% img imgcenter-no-shadow /img/feature/m-2016-6.jpeg 20% 家在水草丰茂的地方 %}
+
 {% img imgcenter-no-shadow /img/feature/m-2016-5.jpeg 20% 东北偏北 %}
 {% img imgcenter-no-shadow /img/feature/m-2016-4.jpeg 20% 师父 %}
 {% img imgcenter-no-shadow /img/feature/m-2016-3.jpeg 20% 寻龙诀 %}
-
 {% img imgcenter-no-shadow /img/feature/m-2016-2.jpeg 20% 唐人街探案 %}
+
 {% img imgcenter-no-shadow /img/feature/m-2016-1.jpeg 20% 老炮儿 %}
 
 ## 2015
